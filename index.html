@@ -1301,6 +1301,84 @@ main{
  .ui-badge{font-size:9px}
 }
 
+/* v3.1 mobile layout hardening: keep long labels and fixed navigation inside the viewport. */
+@media(max-width:980px){
+ main{padding-bottom:calc(112px + env(safe-area-inset-bottom))}
+ .mobile{
+  bottom:calc(10px + env(safe-area-inset-bottom));
+  min-height:72px;
+  padding:6px 4px;
+ }
+ .mobile button{min-width:0;min-height:58px;padding:8px 2px}
+ .section,.card,.qcard,.block,.panel,.engine-card,.review-card,.release-card,.sourcebox,.resultbox{min-width:0}
+ .row,.head,.weekly-hero,.calendar-hero,.today-schedule-main{min-width:0}
+ .row>*,.head>*,.weekly-hero>*,.calendar-hero>*,.today-schedule-main>*{min-width:0}
+ .searchbar,.courtfilters,.examfilters,.amendfilters,.treefilters,.quizsetup,.import-settings,.import-filter,.note-editor,.focus-bind,.recall-toolbar,.countdown-config{min-width:0}
+ .searchbar input,.searchbar select,.courtfilters input,.courtfilters select,.quizsetup>*{min-width:0;max-width:100%;width:100%}
+ .contexttabs{min-width:0;overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none}
+ .contexttabs::-webkit-scrollbar{display:none}
+ .contexttabs button{flex:0 0 auto;white-space:nowrap}
+ .quizsetup{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .quizsetup select,.quizsetup input,.quizsetup .btn{min-height:48px}
+}
+@media(max-width:650px){
+ body{overflow-x:hidden}
+ .top{display:block}
+ .top>div:first-child{min-width:0}
+ .top h1{font-size:clamp(20px,5.7vw,24px);line-height:1.3;overflow-wrap:anywhere}
+ .top p{line-height:1.55}
+ .top-actions{
+  width:100%;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:7px;
+  align-items:stretch;
+  margin-top:10px;
+ }
+ .top-actions .command-open-btn{min-width:0;white-space:nowrap}
+ .top-actions .font-control{grid-column:1/-1;order:3;width:100%}
+ .font-control{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr) minmax(0,1fr)}
+ .font-control .btn{width:100%;min-width:0}
+ .contextbar{margin:0 0 12px;padding:8px;border-radius:16px;overflow:hidden}
+ .contexttabs{padding-bottom:1px}
+ .searchbar{grid-template-columns:minmax(0,1fr)}
+ .quizsetup{gap:8px;margin-bottom:12px}
+ .quizsetup select,.quizsetup input,.quizsetup .btn{font-size:14px}
+ .source-row{grid-template-columns:minmax(0,78px) minmax(0,1fr);align-items:start}
+ .source-row>*{min-width:0}
+ .source-row>*:last-child{grid-column:2;justify-self:start}
+ .modal{
+  width:100%;
+  max-width:100%;
+  align-items:flex-start;
+  padding:max(8px,env(safe-area-inset-top)) 8px calc(12px + env(safe-area-inset-bottom));
+  overflow:hidden;
+ }
+ .modalbox{
+  width:100%;
+  max-width:100%;
+  max-height:calc(100dvh - 16px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+  border-radius:22px;
+  overflow:auto;
+  overscroll-behavior:contain;
+ }
+ .modalhead{padding:14px 14px 12px;gap:8px;align-items:flex-start}
+ .modalhead>div{min-width:0}
+ .modalhead h2{font-size:18px;line-height:1.35;overflow-wrap:anywhere}
+ .modalhead .meta{font-size:12px;line-height:1.6;overflow-wrap:anywhere}
+ .close{flex:0 0 38px}
+ .detail{padding:12px 12px 24px}
+ .memory,.trap{font-size:13px;line-height:1.65;overflow-wrap:anywhere}
+ .radar,.diff-legend{gap:6px}
+ .block{padding:12px;margin-top:10px}
+ .block h3{line-height:1.45}
+ .diff{gap:10px}
+ .panel h3{padding:10px 12px}
+ .text{padding:12px;font-size:14px;line-height:1.75;overflow-wrap:anywhere;word-break:break-word}
+ .block p,.block li{overflow-wrap:anywhere}
+ .links a{min-height:40px;display:inline-flex;align-items:center}
+}
+
 </style>
 </head><body>
 <div class="shell">
