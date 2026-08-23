@@ -1,0 +1,306 @@
+{
+  "id": "police_duty",
+  "name": "警察勤務條例",
+  "pcode": "D0080026",
+  "fetchedAt": "2026-08-23T10:11:28.129Z",
+  "latest": "2008-07-02",
+  "history": [
+    {
+      "sequence": 5,
+      "date": "2008-07-02",
+      "rocDate": "97/07/02",
+      "rocYear": 97,
+      "raw": "總統華總一義字第 09700112231 號令修正\n公布第 5～7、11、12、15、17、19、24、25 條條文",
+      "articles": [
+        "5",
+        "6",
+        "7",
+        "11",
+        "12",
+        "15",
+        "17",
+        "19",
+        "24",
+        "25"
+      ]
+    },
+    {
+      "sequence": 4,
+      "date": "2007-07-04",
+      "rocDate": "96/07/04",
+      "rocYear": 96,
+      "raw": "總統華總一義字第 09600083731 號令修正\n公布第 11 條條文",
+      "articles": [
+        "11"
+      ]
+    },
+    {
+      "sequence": 3,
+      "date": "2000-07-05",
+      "rocDate": "89/07/05",
+      "rocYear": 89,
+      "raw": "總統（89）華總（一）義字第 8900166190\n號令修正公布第 6～8 條條文",
+      "articles": [
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "sequence": 2,
+      "date": "1986-11-10",
+      "rocDate": "75/11/10",
+      "rocYear": 75,
+      "raw": "總統（75）華總（一）義字第 5686 號令\n修正公布全文 29 條",
+      "articles": []
+    },
+    {
+      "sequence": 1,
+      "date": "1972-08-28",
+      "rocDate": "61/08/28",
+      "rocYear": 61,
+      "raw": "總統（61）台統（一）義字第 859 號\n令制定公布全文 31 條\n\n:::\n\n最新訊息\n\n中央法規\n\n司法解釋\n\n條約協定\n\n兩岸協議\n\n綜合查詢\n\n跨機關檢索\n\n法治宣導專區\n\n智慧查找\n\n法律扶助\n\n創意教案\n\n法律時事漫談\n\n網站使用說明\n\n網站使用手冊\n\n會員服務介紹\n\n網站單元簡介\n\n法規資料檢索範圍\n\n資料更新頻率說明\n\n資訊服務\n\n全國法規連結圖示\n\n全國法規作業要點\n\n法規名稱英譯標準表\n\n相關網站\n\n訂閱電子報\n\n瀏覽人次總計\n\n1,613,092,331人\n\n本月瀏覽人次\n\n11,050,155人\n\n目前使用人次\n\n1,831人\n\n電子報訂閱人數\n\n222,808人\n\n本網站係提供法規之最新動態資訊及資料檢索，並不提供法規及法律諮詢之服務。\n\n若有任何法律上的疑義，建議您可逕向發布法規之主管機關洽詢。\n\n本網站法規資料係由政府各機關提供之電子檔或書面文字登打製作，若與各法規主管機關之公布文字有所不同，仍以各法規主管機關之公布資料為準。\n\n部分資料內容，使用特殊文字或符號，如欲詳閱內容，請連結至司法院網站下載造字檔。\n\n全國法規資料庫之內容每週五定期更新，當週發布之法律、命令資料，將於完成法規整編作業後，於下週五更新上線。\n\n法規整編資料截止日：民國 115 年 08 月 14 日 \n\n瀏覽人次總計：1,613,092,331人\n\n本月瀏覽人次：11,050,155人\n\n目前使用人次：1,831人\n\n電子報訂閱：222,808人\n\n│ 政府網站資料開放宣告 │ 隱私權保護宣告 │ 資訊安全政策 │ Q & A │ 意見回饋 │ API文件 │ \n\n本網站由法務部全國法規資料庫工作小組維運管理...\n\n法務部地址：100204 台北市重慶南路一段130號　電話：(02)2191-0189\n\n第二辦公室地址：100006 台北市貴陽街1段235號　電話：(02)2191-0189\n\n回上方\n\n$(function () {\n\n// === 統一綁定 GA 追蹤事件 ===\n$('.ga-track-link').on('click keypress', function (e) {\n// 如果是鍵盤事件，確認是按下 Enter 鍵 (keyCode 13) 才觸發\nif (e.type === 'keypress' && e.which !== 13) {\nreturn;\n}\n\nvar category = $(this).data('ga-category');\nvar action = $(this).data('ga-action');\n\n// 呼叫原本的 GA 追蹤函數\nif (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice(category, action, '', '');\n}\n});\n\n// 綁定登出確認視窗\n$('.logout-link').on('click', function () {\nif (!confirm('確定登出？')) {\nreturn false; // 若使用者按取消，則不執行跳轉\n}\n});\n\nvar b = 'ONEBAR';\n$(\"#btnSubscribe,#btnUnsubscribe\").on(\"click\", function (event) {\n//var email = $.trim($(\"#txtEMail\").val());\n//if (email == \"\") {\n// event.preventDefault();\n// alert('請您輸入電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else if (false == IsEMail(email)) {\n// event.preventDefault();\n// alert('請您輸入正確電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else {\n// GoogleAnanlytice('中文', '訂閱電子報', '', '');\n//}\nvar email = $.trim($(\"#txtEMail\").val());\n//if (!validateEmail(email)) {\n// alert('請您輸入正確電子郵件地址。');\n// return false;\n//}\n\n});\n$('#btnQall').on(\"click\", function () {\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse if (keyword.indexOf($.trim($(\"#keyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsQall').on(\"click\", function () {\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else {\nGoogleAnanlytice(\"中文\"",
+      "articles": []
+    }
+  ],
+  "windowEvents": [],
+  "articles": {
+    "1": {
+      "text": "本條例依警察法第三條規定制定之。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=1&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "2": {
+      "text": "警察機關執行勤務，依本條例行之。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=2&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "3": {
+      "text": "警察勤務之實施，應晝夜執行，普及轄區，並以行政警察為中心，其他各種警察配合之。\n\n第 二 章 勤務機構",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=3&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "4": {
+      "text": "警察勤務機構，區分為基本單位、執行機構及規劃監督機構。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=4&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "5": {
+      "text": "警察勤務區（以下簡稱警勤區），為警察勤務基本單位，由員警一人負責。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=5&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "6": {
+      "text": "警勤區依下列規定劃分：\n一、依自治區域，以一村里劃設一警勤區；村里過小者，得以二以上村里劃設一警勤區；村里過大者，得將一村里劃設二以上警勤區。\n二、依人口疏密，以二千人口或五百戶以下劃設一警勤區。\n前項警勤區之劃分，應參酌治安狀況、地區特性、警力多寡、工作繁簡、面積廣狹、交通電信設施及未來發展趨勢等情形，適當調整之。\n刑事、外事警察，得配合警勤區劃分其責任區。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=6&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "7": {
+      "text": "警察分駐所、派出所為勤務執行機構，負責警勤區之規劃、勤務執行及督導。\n前項分駐所、派出所設置基準，由內政部警政署定之。\n偏遠警勤區不能與其他警勤區聯合實施共同勤務者，得設警察駐在所，由員警單獨執行勤務。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=7&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "8": {
+      "text": "直轄市、縣（市）警察機關，於都市人口稠密或郊區治安特殊區域，因應警察設備情況及警力需要，得集中機動使用，免設分駐所、派出所，將勤務人員集中於警察分局，編為勤務隊（組），輪流服勤。\n警察局於必要時，得設警衛派出所，在特定地區執行守護任務。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=8&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "9": {
+      "text": "警察分局為勤務規劃監督及重點性勤務執行機構，負責規劃、指揮、管制、督導及考核轄區各勤務執行機構之勤務實施，並執行重點性勤務。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=9&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "10": {
+      "text": "警察局為勤務規劃監督機構，負責轄區警察勤務之規劃、指揮、管制、督導及考核，並對重點性勤務，得逕為執行。\n\n第 三 章 勤務方式",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=10&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "11": {
+      "text": "警察勤務方式如下：\n一、勤區查察：於警勤區內，由警勤區員警執行之，以家戶訪查方式，擔任犯罪預防、為民服務及社會治安調查等任務；其家戶訪查辦法，由內政部定之。\n二、巡邏：劃分巡邏區（線），由服勤人員循指定區（線）巡視，以查察奸宄，防止危害為主；並執行檢查、取締、盤詰及其他一般警察勤務。\n三、臨檢：於公共場所或指定處所、路段，由服勤人員擔任臨場檢查或路檢，執行取締、盤查及有關法令賦予之勤務。\n四、守望：於衝要地點或事故特多地區，設置崗位或劃定區域，由服勤人員在一定位置瞭望，擔任警戒、警衛、管制；並受理報告、解釋疑難、整理交通秩序及執行一般警察勤務。\n五、值班：於勤務機構設置值勤臺，由服勤人員值守之，以擔任通訊連絡、傳達命令、接受報告為主；必要時，並得站立門首瞭望附近地帶，擔任守望等勤務。\n六、備勤：服勤人員在勤務機構內整裝待命，以備突發事件之機動使用，或臨時勤務之派遣。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=11&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "12": {
+      "text": "勤區查察為個別勤務，由警勤區員警專責擔任。巡邏、臨檢、守望、值班及備勤為共同勤務，由服勤人員按勤務分配表輪流交替互換實施之。\n前項共同勤務得視服勤人數及轄區治安情形，採用巡邏及其他方式互換之，但均以巡邏為主。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=12&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "13": {
+      "text": "巡邏勤務應視轄區面積及治安、地理、交通情形，分別採用步巡、車巡、騎巡、船巡、空中巡邏等方式實施之。\n巡邏勤務應視需要彈性調整巡邏區（線），採定線及不定線；並注意逆線、順線，於定時、不定時交互行之。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=13&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "14": {
+      "text": "各級勤務機構因治安需要，得指派人員編組機動隊（組），運用組合警力，在指定地區執行巡邏、路檢、臨檢等勤務以達成取締、檢肅、查緝等法定任務；並得保留預備警力，機動使用。\n\n第 四 章 勤務時間",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=14&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "15": {
+      "text": "每日勤務時間為二十四小時，其起迄時間自零時起至二十四時止。零時至六時為深夜勤，十八時至二十四時為夜勤，餘為日勤。勤務交接時間，由警察局定之。\n服勤人員每日勤務以八小時為原則；必要時，得視實際情形酌量延長之。服勤人員每週輪休全日二次，遇有臨時事故得停止之；並得視治安狀況需要，在勤務機構待命服勤。\n前項延長服勤、停止輪休或待命服勤之時間，酌予補假。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=15&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "16": {
+      "text": "服勤時間之分配，以勤四、息八為原則，或採其他適合實際需要之時間分配。\n聯合服勤時間各種勤務方式互換，應視警力及工作量之差異，每次二至四小時，遇有特殊情形，得縮短或延伸之。但勤區查察時間，得斟酌勞逸情形每日二至四小時。\n服勤人員每日應有連續八小時之睡眠時間，深夜勤務以不超過四小時為度。但有特殊任務，得變更之。\n\n第 五 章 勤務規劃",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=16&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "17": {
+      "text": "勤務規劃監督機構對勤務執行機構服勤人員之編組、服勤方式之互換及服勤時間之分配，應妥予規劃，訂定勤務基準表，互換輪流實施，並注意下列事項：\n一、勤務時間必須循環銜接，不留空隙。\n二、勤務方式應視需要互換，使每人普遍輪流服勤。\n三、分派勤務，力求勞逸平均，動靜工作務使均勻，藉以調節精神體力。\n四、經常控制適當機動警力，以備缺勤替班，並協助突發事件之處理。\n五、每人須有進修或接受常年訓練之時間。\n前項勤務編配，採行三班輪替或其他適合實際需要之分班服勤。如勤務執行機構人員置三人至五人者，得另採半日更替制；置二人者，得另採全日更替制；其夜間值班，均改為值宿。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=17&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "18": {
+      "text": "勤務執行機構應依勤務基準表，就治安狀況及所掌握之警力，按日排定勤務分配表執行之，並陳報上級備查；變更時亦同。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=18&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "19": {
+      "text": "警察局基於事實需要，須將個別勤務與共同勤務分別實施時，得以分局或分駐所、派出所為單位，指派員警專責執行勤區查察；必要時，得將其警勤區擴大之，並另指派員警輪服共同勤務。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=19&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "20": {
+      "text": "警察局或分局設有各種警察隊（組）者，應依其任務，分派人員，服行各該專屬勤務，構成轄區點、線、面，整體勤務之實施。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=20&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "21": {
+      "text": "勤務機構因臨時執行特別勤務，必須變更平時勤務編配者，服勤人員應依其上級命令服行之。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=21&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "22": {
+      "text": "各級警察機關之勤務指揮中心，統一調度、指揮、管制所屬警力，執行各種勤務。轄區內發生重大災害、事故或其他案件時，得洽請非所屬或附近他轄區警力協助之。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=22&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "23": {
+      "text": "警察勤務之裝備機具，按需要配備之。\n前項裝備機具配備標準，由內政部警政署定之。\n\n第 六 章 勤前教育",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=23&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "24": {
+      "text": "勤務執行前，應舉行勤前教育，其種類區分如下：\n一、基層勤前教育：以分駐所、派出所為實施單位。\n二、聯合勤前教育：以分局為實施單位。\n三、專案勤前教育：於執行專案或臨時特定勤務前實施。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=24&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "25": {
+      "text": "勤前教育施教內容如下：\n一、檢查儀容、服裝、服勤裝備及機具。\n二、宣達重要政令。\n三、勤務檢討及當日工作重點提示。\n前項勤前教育之實施，由警察機關視所轄勤務機構實際情形，規定其實施方式、時間及次數。\n\n第 七 章 勤務督導",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=25&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "26": {
+      "text": "各級警察機關為激勵服勤人員工作士氣，指導工作方法及考核勤務績效，應實施勤務督導及獎懲。\n黎明、黃昏、暴風、雨、雪、重要節日及特殊地區，應加強勤務督導。\n\n第 八 章 附則",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=26&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "27": {
+      "text": "本條例之規定，於各專業警察機關執行各該專屬勤務時準用之。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=27&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "28": {
+      "text": "各級警察機關應擬訂實施細則，陳報其上級警察機關核准施行。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=28&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "29": {
+      "text": "本條例自公布日施行。\n\n:::\n\n最新訊息\n\n中央法規\n\n司法解釋\n\n條約協定\n\n兩岸協議\n\n綜合查詢\n\n跨機關檢索\n\n法治宣導專區\n\n智慧查找\n\n法律扶助\n\n創意教案\n\n法律時事漫談\n\n網站使用說明\n\n網站使用手冊\n\n會員服務介紹\n\n網站單元簡介\n\n法規資料檢索範圍\n\n資料更新頻率說明\n\n資訊服務\n\n全國法規連結圖示\n\n全國法規作業要點\n\n法規名稱英譯標準表\n\n相關網站\n\n訂閱電子報\n\n瀏覽人次總計\n\n1,613,092,332人\n\n本月瀏覽人次\n\n11,050,156人\n\n目前使用人次\n\n1,832人\n\n電子報訂閱人數\n\n222,808人\n\n本網站係提供法規之最新動態資訊及資料檢索，並不提供法規及法律諮詢之服務。\n\n若有任何法律上的疑義，建議您可逕向發布法規之主管機關洽詢。\n\n本網站法規資料係由政府各機關提供之電子檔或書面文字登打製作，若與各法規主管機關之公布文字有所不同，仍以各法規主管機關之公布資料為準。\n\n部分資料內容，使用特殊文字或符號，如欲詳閱內容，請連結至司法院網站下載造字檔。\n\n全國法規資料庫之內容每週五定期更新，當週發布之法律、命令資料，將於完成法規整編作業後，於下週五更新上線。\n\n法規整編資料截止日：民國 115 年 08 月 14 日\n\n瀏覽人次總計：1,613,092,332人\n\n本月瀏覽人次：11,050,156人\n\n目前使用人次：1,832人\n\n電子報訂閱：222,808人\n\n│ 政府網站資料開放宣告 │ 隱私權保護宣告 │ 資訊安全政策 │ Q & A │ 意見回饋 │ API文件 │\n\n本網站由法務部全國法規資料庫工作小組維運管理...\n\n法務部地址：100204 台北市重慶南路一段130號　電話：(02)2191-0189\n\n第二辦公室地址：100006 台北市貴陽街1段235號　電話：(02)2191-0189\n\n回上方\n\n$(function () {\n\n// === 統一綁定 GA 追蹤事件 ===\n$('.ga-track-link').on('click keypress', function (e) {\n// 如果是鍵盤事件，確認是按下 Enter 鍵 (keyCode 13) 才觸發\nif (e.type === 'keypress' && e.which !== 13) {\nreturn;\n}\n\nvar category = $(this).data('ga-category');\nvar action = $(this).data('ga-action');\n\n// 呼叫原本的 GA 追蹤函數\nif (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice(category, action, '', '');\n}\n});\n\n// 綁定登出確認視窗\n$('.logout-link').on('click', function () {\nif (!confirm('確定登出？')) {\nreturn false; // 若使用者按取消，則不執行跳轉\n}\n});\n\nvar b = 'ONEBAR';\n$(\"#btnSubscribe,#btnUnsubscribe\").on(\"click\", function (event) {\n//var email = $.trim($(\"#txtEMail\").val());\n//if (email == \"\") {\n// event.preventDefault();\n// alert('請您輸入電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else if (false == IsEMail(email)) {\n// event.preventDefault();\n// alert('請您輸入正確電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else {\n// GoogleAnanlytice('中文', '訂閱電子報', '', '');\n//}\nvar email = $.trim($(\"#txtEMail\").val());\n//if (!validateEmail(email)) {\n// alert('請您輸入正確電子郵件地址。');\n// return false;\n//}\n\n});\n$('#btnQall').on(\"click\", function () {\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse if (keyword.indexOf($.trim($(\"#keyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsQall').on(\"click\", function () {\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else if (keyword.indexOf($.trim($(\"#msKeyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n//20210217 再檢索收合、展開功能\n$(\"#btnOpen\").click(function () {\nif ($('#ulDeepSearch').hasClass('overflow-hidden')) {\n$(this).html(\"收合\");\n$(this).prop('title', '隱藏部分「再檢索」篩選條件，僅顯示一行');\n$(\"#ulDeepSearch\").removeClass(\"overflow-hidden\").addClass(\"overflow-inherit\");\n}\nelse {\n$(this).html(\"展開\");\n$(this).prop('title', '顯示所有目前「再檢索」篩選條件');\n$(\"#ulDeepSearch\").removeClass(\"overflow-inherit\").addClass(\"overflow-hidden\");\n}\n});\n$(\"#btnHelp\").click(function () {\nOpenKeyWordHelp();\nreturn false;\n});\n// 綁定整合查詢的 Enter 鍵事件\n$('#keyword').keypress(function (e) {\nif (e.which == 13) {\ne.preventDefault();\n$('#btnQall').click();\n}\n});\n// --- 新增：綁定整合查詢的 Enter 鍵事件 (行動版) ---\n$('#msKeyword').keypress(function (e) {\nif (e.which == 13) {\ne.preventDefault();\n$('#btnMsQall').click();\n}\n});\n\n$('#dropdownMenu').attr('data-bs-toggle', 'dropdown');\n$('#unitlist').on(\"click\", \"a\", function (e) {\ne.preventDefault();\nvar $this = $(this).parent();\nvar a = $(this).html();\nb = $this.data(\"value\");\n$this.addClass(\"select\").siblings().removeClass(\"select\");\n$(\"#dropdownMenu\").html(a);\n$('#hidVal').val(b);\n});\n//$('#keyword').on('input propertychange paste keypress', function () {\n// BindAutocomplete('#keyword', b);\n//});\nBindAutocompletes('#keyword', b);\nfunction BindAutocompletes(orl, stype) {\n\n$(orl).autocomplete({\nsource: function (request, response) {\n$.ajax({\nurl: \"../controls/GetTermList.ashx\",\ntype: 'post',\ndataType: \"json\",\ndata: {\nterm: request.term, type: stype\n},\nsuccess: function (data) {\nresponse(data);\n}\n});\n},\nminLength: 1, //至少輸入幾個字元才開始給提示\nfocus: function (event, ui) {\nreturn false;\n},\nselect: function (event, ui) {\nif ($.trim(ui.item.PCODE).length == 0)\n$(this).val(ui.item.TERM);\nelse\nlocation.href = \"../Hot/AddHotLaw.ashx?pcode=\" + encodeURIComponent(ui.item.PCODE);\n\nreturn false;\n},\nmessages: { noResults: '', results: function () { } }//不顯示結果文字\n}).data(\"ui-autocomplete\")._renderItem = function (ul, item) {\nif ($.trim(item.PCODE) != \"\")\nreturn $(\"<li class='line'>\")\n.append(\"<span class='label label-info'>直接連結</span><a>\" + item.TERM + \"</a>\")\n.appendTo(ul);\nelse {\nif (ul.find(\".label-usual\").length == 0)\nreturn $(\"<li>\")\n.append(\"<span class='label label-info label-usual'>常用詞彙</span><a>\" + item.TERM + \"</a>\")\n.appendTo(ul);\nelse\nreturn $(\"<li>\")\n.append(\"<a>\" + item.TERM + \"</a>\")\n.appendTo(ul);\n}\n};\n}\n});\nfunction validateEmail(email) {\nif (email.includes(\"%\")) {\nreturn false;\n}\nreturn true;\n}\nfunction OpenKeyWordHelp() {\nvar a = \"/Service/KeyWordHelp.aspx\";\nTINY.box.show({ iframe: a, width: 810, height: 680 });\n//return false;\n}\nfunction GetRequest() {\nvar url = location.search;\nvar theRequest = new Object();\nif (url.indexOf(\"?\") != -1) {\nvar str = url.substr(1);\nstrs = str.split(\"&\");\nfor (var i = 0; i < strs.length; i++) {\ntheRequest[strs[i].split(\"=\")[0]] = decodeURI(strs[i].split(\"=\")[1]);\n}\n}\nreturn theRequest;\n}\n\n//20210218 再檢索-收合/展開 按鈕判斷顯示時機(若檢索字詞有多行，才要顯示收合/展開，需依照版面尺寸更換條件)\nvar urlParams = GetRequest();\n//var keyword = '';\nvar keyword = urlParams[\"kw\"] ? urlParams[\"kw\"] : \"\";\n\nif (document.body.clientWidth + 17 > 1200) {\nif (keyword != null && keyword.length > 26) {\n$(\"#btnOpen\").removeClass(\"display-none\");\n}\n} else {\nif (keyword != null && keyword.length > 19) {\n$(\"#btnOpen\").removeClass(\"display-none\");\n}\n}\n\n$(function () {\n$('[data-fancybox]').fancybox({\ntoolbar: false,\nsmallBtn: true,\niframe: {\ncss: {\nwidth: '400px',\nheight: '170px'\n}\n}\n});\n});",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=29&pcode=D0080026",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+      "fetchedAt": "2026-08-23T10:11:28.129Z",
+      "ok": true,
+      "source": "LawAll"
+    }
+  },
+  "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080026",
+  "fullTextOk": true,
+  "fullArticleCount": 29,
+  "fullTextError": null,
+  "source": "https://law.moj.gov.tw/LawClass/LawHistory.aspx?pcode=D0080026"
+}

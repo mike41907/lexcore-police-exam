@@ -1,0 +1,73 @@
+{
+  "exam": "中央警察大學警佐班第1類",
+  "format": {
+    "single": {
+      "count": 20,
+      "points": 2,
+      "wrongPenalty": -0.6666666666666666
+    },
+    "multiple": {
+      "count": 20,
+      "points": 3,
+      "optionCount": 5,
+      "perOption": 0.6,
+      "blankQuestion": 0
+    },
+    "durationMinutes": 80
+  },
+  "sources": [
+    {
+      "rocYear": 115,
+      "classNo": 46,
+      "announcement": "https://se.cpu.edu.tw/p/404-1006-45581-1.php",
+      "published": "2026-03-07",
+      "corrections": [
+        {
+          "published": "2026-03-18",
+          "url": "https://se.cpu.edu.tw/p/404-1006-45649.php",
+          "note": "115年3月16日試題釋疑會議後更正版"
+        }
+      ],
+      "questionArchivePattern": "試題公告",
+      "answerPattern": "試題解答",
+      "status": "official"
+    },
+    {
+      "rocYear": 114,
+      "classNo": 45,
+      "announcement": "https://se.cpu.edu.tw/p/404-1006-44002.php",
+      "published": "2025-03-08",
+      "corrections": [
+        {
+          "published": "2025-03-18",
+          "url": "https://se.cpu.edu.tw/p/406-1006-44127%2Cr257.php?Lang=zh-tw",
+          "note": "第1次試題釋疑會議後更正版"
+        },
+        {
+          "published": "2025-03-24",
+          "url": "https://se.cpu.edu.tw/p/406-1006-44152%2Cr257.php",
+          "note": "第2次試題釋疑會議後修正版"
+        }
+      ],
+      "questionArchivePattern": "試題公告",
+      "answerPattern": "試題解答",
+      "status": "official"
+    },
+    {
+      "rocYear": 113,
+      "classNo": 44,
+      "announcement": "https://se.cpu.edu.tw/p/404-1006-42251.php",
+      "published": "2024-03-09",
+      "corrections": [
+        {
+          "published": "2024-03-26",
+          "url": "https://se.cpu.edu.tw/p/404-1006-42418.php",
+          "note": "113年3月18日試題釋疑會議後更正版"
+        }
+      ],
+      "questionArchivePattern": "試題公告",
+      "answerPattern": "試題解答",
+      "status": "official"
+    }
+  ]
+}

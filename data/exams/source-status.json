@@ -1,0 +1,26 @@
+{
+  "checkedAt": null,
+  "years": [
+    {
+      "year": 115,
+      "ok": false,
+      "warnings": [
+        "尚未於 GitHub Actions 執行"
+      ]
+    },
+    {
+      "year": 114,
+      "ok": false,
+      "warnings": [
+        "尚未於 GitHub Actions 執行"
+      ]
+    },
+    {
+      "year": 113,
+      "ok": false,
+      "warnings": [
+        "尚未於 GitHub Actions 執行"
+      ]
+    }
+  ]
+}

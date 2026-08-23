@@ -1,0 +1,948 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0f172a">
+<title>警察升遷戰情室 V0.11</title>
+<style>
+:root{
+  --bg:#f3f6fb;--card:#fff;--text:#0f172a;--muted:#64748b;--line:#e2e8f0;
+  --accent:#2563eb;--accent2:#dbeafe;--good:#047857;--goodbg:#ecfdf5;
+  --bad:#b91c1c;--badbg:#fef2f2;--warn:#92400e;--warnbg:#fffbeb;
+  --shadow:0 10px 30px rgba(15,23,42,.07)
+}
+[data-theme="dark"]{
+  --bg:#07111f;--card:#0f172a;--text:#f8fafc;--muted:#94a3b8;--line:#26344a;
+  --accent:#60a5fa;--accent2:#172554;--good:#34d399;--goodbg:#052e2b;
+  --bad:#f87171;--badbg:#450a0a;--warn:#fbbf24;--warnbg:#422006;
+  --shadow:0 10px 30px rgba(0,0,0,.28)
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif}
+.wrap{max-width:1220px;margin:auto;padding:16px 14px 72px}
+header{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:14px}
+h1{font-size:22px;margin:0}.sub{font-size:13px;color:var(--muted);margin-top:5px;line-height:1.6}
+.topbar{display:flex;gap:8px}
+button{border:0;border-radius:12px;padding:10px 13px;font-size:14px;font-weight:750;cursor:pointer}
+.btn-primary{background:var(--accent);color:white}.btn-soft{background:var(--accent2);color:var(--text)}
+.btn-ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+.icon{width:42px;height:42px;padding:0;display:grid;place-items:center}
+.tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;background:var(--card);border:1px solid var(--line);padding:4px;border-radius:14px;margin-bottom:14px}
+.tab{background:transparent;color:var(--muted);padding:10px 6px}.tab.active{background:var(--accent);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+.card{grid-column:span 12;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:var(--shadow)}
+@media(min-width:800px){.half{grid-column:span 6}.third{grid-column:span 4}.twothird{grid-column:span 8}.quarter{grid-column:span 3}}
+h2{font-size:17px;margin:0 0 13px}h3{font-size:14px;margin:18px 0 9px}
+label,.label{font-size:13px;color:var(--muted);display:block;margin-bottom:6px}
+.score{font-size:44px;font-weight:850;letter-spacing:-1.5px;line-height:1.05;margin:7px 0}
+.kpi{font-size:27px;font-weight:850;line-height:1.1;margin:6px 0}
+.muted{color:var(--muted)}.positive{color:var(--good)}.negative{color:var(--bad)}.warn{color:var(--warn)}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.pill{border:1px solid var(--line);background:var(--bg);border-radius:999px;padding:7px 10px;font-size:12px}
+.form-grid{display:grid;grid-template-columns:1fr;gap:11px}
+@media(min-width:640px){.two{grid-template-columns:repeat(2,1fr)}.three{grid-template-columns:repeat(3,1fr)}.four{grid-template-columns:repeat(4,1fr)}}
+input,select,textarea{width:100%;background:var(--bg);color:var(--text);border:1px solid var(--line);border-radius:11px;padding:10px 11px;font-size:14px;outline:none}
+input:focus,select:focus{border-color:var(--accent)}
+input[readonly]{opacity:.82}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.note{font-size:12px;color:var(--muted);line-height:1.65;margin-top:9px}
+.callout{padding:11px 13px;border-radius:13px;font-size:12px;line-height:1.65}
+.callout.good{background:var(--goodbg);color:var(--good)}.callout.bad{background:var(--badbg);color:var(--bad)}.callout.warn{background:var(--warnbg);color:var(--warn)}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:760px}
+th,td{padding:9px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+th{font-size:11px;color:var(--muted);background:var(--card)}
+.right{text-align:right}.center{text-align:center}
+.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:13px}
+.breakdown{display:grid;grid-template-columns:1fr auto;gap:8px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:13px}
+.breakdown:last-child{border-bottom:0}
+.progress{height:11px;background:var(--bg);border-radius:99px;overflow:hidden;margin-top:10px;border:1px solid var(--line)}
+.progress>div{height:100%;background:var(--accent);width:0%}
+.hidden{display:none!important}.small{font-size:11px}
+.metric{display:flex;justify-content:space-between;align-items:flex-end;gap:10px}
+.metric .value{font-size:28px;font-weight:850}
+.statrow{display:grid;grid-template-columns:1fr auto;gap:8px;padding:7px 0;border-bottom:1px dashed var(--line);font-size:13px}
+.hero{background:linear-gradient(135deg,var(--card),var(--bg))}
+footer{margin-top:18px;color:var(--muted);font-size:12px;line-height:1.65}
+@media(max-width:620px){.tabs{grid-template-columns:repeat(2,1fr)}.score{font-size:38px}}
+
+/* V0.9 dashboard clarity */
+.dashboard-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;grid-column:span 12}
+.kpi-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:var(--shadow);min-height:142px;display:flex;flex-direction:column;justify-content:space-between}
+.kpi-card .kpi-title{font-size:12px;color:var(--muted);font-weight:700}
+.kpi-card .kpi-number{font-size:34px;font-weight:900;letter-spacing:-1.2px;line-height:1.05;margin:8px 0}
+.kpi-card .kpi-foot{font-size:12px;color:var(--muted);line-height:1.5}
+.section-head{grid-column:span 12;display:flex;align-items:center;justify-content:space-between;gap:12px;margin:4px 2px -2px}
+.section-head h2{margin:0;font-size:15px}
+.quick-entry{grid-column:span 12}
+.quick-entry-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.quick-entry input{font-size:22px;font-weight:800;text-align:center;padding:14px 10px}
+.quick-entry label{text-align:center;font-weight:700}
+.compact-actions{display:grid;grid-template-columns:2fr 1fr 1fr;gap:8px;margin-top:12px}
+.progress-card{grid-column:span 7}.status-card{grid-column:span 5}
+.goal-top{display:flex;align-items:flex-end;justify-content:space-between;gap:12px}
+.goal-main{font-size:30px;font-weight:900}.goal-percent{font-size:18px;font-weight:800;color:var(--accent)}
+.mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+.mini-box{background:var(--bg);border:1px solid var(--line);border-radius:13px;padding:11px}
+.mini-box span{display:block;font-size:11px;color:var(--muted);margin-bottom:4px}.mini-box b{font-size:18px}
+.exam-summary{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.exam-summary .mini-box b{font-size:22px}
+.advanced-hint{font-size:11px;color:var(--muted);text-align:right}
+@media(max-width:900px){.dashboard-kpis{grid-template-columns:repeat(2,1fr)}.progress-card,.status-card{grid-column:span 12}}
+@media(max-width:620px){
+  .wrap{padding:12px 10px 60px}.sub{font-size:12px}.dashboard-kpis{grid-template-columns:1fr 1fr;gap:8px}.kpi-card{min-height:124px;padding:13px}.kpi-card .kpi-number{font-size:29px}
+  .quick-entry-grid{grid-template-columns:1fr 1fr}.quick-entry input{font-size:20px}.compact-actions{grid-template-columns:1fr 1fr}.compact-actions .btn-primary{grid-column:span 2}
+  .mini-grid{grid-template-columns:1fr 1fr 1fr}.tabs{position:sticky;top:0;z-index:20;box-shadow:0 6px 18px rgba(15,23,42,.08)}
+  .card{padding:14px;border-radius:16px}.section-head{margin-top:6px}.score{font-size:36px}.kpi{font-size:24px}
+}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div>
+    <h1>警察升遷戰情室 <span class="muted" style="font-size:13px">V0.11</span></h1>
+    <div class="sub">首頁只看核心戰情；平常更新嘉獎、小功、大功，系統自動重算116年資績與警佐班成績。</div>
+  </div>
+  <div class="topbar">
+    <button class="btn-ghost icon" id="themeBtn" title="切換深淺色">◐</button>
+    <button class="btn-ghost icon" id="exportBtn" title="匯出備份">⇩</button>
+  </div>
+</header>
+
+<div class="tabs">
+  <button class="tab active" data-tab="dashboard">戰情首頁</button>
+  <button class="tab" data-tab="data">積分資料</button>
+  <button class="tab" data-tab="future">未來模擬</button>
+  <button class="tab" data-tab="exam">警佐班模擬</button>
+</div>
+
+<section id="dashboardTab">
+  <div class="grid">
+    <div class="section-head"><h2>核心戰情</h2><span class="advanced-hint">詳細設定放在其他分頁，首頁只看最重要數字</span></div>
+    <div class="dashboard-kpis">
+      <div class="kpi-card">
+        <div><div class="kpi-title">人事正式資績</div><div class="kpi-number" id="dashOfficialScore">—</div></div>
+        <div class="kpi-foot" id="dashOfficialStatus">尚未輸入人事正式資績</div>
+      </div>
+      <div class="kpi-card">
+        <div><div class="kpi-title"><span id="dashTargetYear">116</span> 年預估資績</div><div class="kpi-number" id="dashFutureQual">0.00</div></div>
+        <div class="kpi-foot">目前系統資績 <b id="dashCurrentQual">0.00</b>｜差異 <b id="dashCalibrationDiff">—</b></div>
+      </div>
+      <div class="kpi-card">
+        <div><div class="kpi-title">嘉獎進度</div><div class="kpi-number" id="goalProgressText">0 / 150</div></div>
+        <div class="kpi-foot"><b id="goalPercent">0%</b>｜距截止日 <b id="daysLeft">—</b></div>
+      </div>
+      <div class="kpi-card">
+        <div><div class="kpi-title">警佐班預估總成績</div><div class="kpi-number" id="dashExamTotal">—</div></div>
+        <div class="kpi-foot" id="dashExamStatus">依未來資績＋預估筆試計算</div>
+      </div>
+    </div>
+
+    <div class="section-head"><h2><span id="cyQuickYear">115</span> 年即時更新</h2><span class="advanced-hint">平常主要只需要改這裡</span></div>
+    <div class="card quick-entry">
+      <div class="quick-entry-grid">
+        <div><label>嘉獎</label><input id="cyRewardInput" type="number" min="0" step="1" inputmode="numeric" placeholder="0"></div>
+        <div><label>小功／記功</label><input id="cyMeritInput" type="number" min="0" step="1" inputmode="numeric" placeholder="0"></div>
+        <div><label>大功</label><input id="cyBigMeritInput" type="number" min="0" step="1" inputmode="numeric" placeholder="0"></div>
+        <div><label>警察獎章</label><input id="cyPoliceMedalInput" type="number" min="0" step="1" inputmode="numeric" placeholder="0"></div>
+      </div>
+      <div class="compact-actions">
+        <button class="btn-primary" id="saveCurrentYearAwards">儲存並重算</button>
+        <button class="btn-soft" id="addOneReward">＋1 嘉獎</button>
+        <button class="btn-soft" id="addOneMerit">＋1 小功</button>
+      </div>
+      <div class="mini-grid">
+        <div class="mini-box"><span>今年獎勵積分</span><b id="cyAwardPoints">0.00</b></div>
+        <div class="mini-box"><span>嘉獎</span><b id="dashCYReward">0</b></div>
+        <div class="mini-box"><span>小功</span><b id="dashCYMerit">0</b></div>
+        <div class="mini-box" style="display:none"><span>大功</span><b id="dashCYBigMerit">0</b></div>
+        <div class="mini-box" style="display:none"><span>警察獎章</span><b id="dashCYPoliceMedal">0</b></div>
+        <div class="mini-box" style="display:none"><span>獎懲積分</span><b id="dashCYAwardScore">0.00</b></div>
+        <div style="display:none"><b id="cyGoalMini">0 / 150</b></div>
+      </div>
+    </div>
+
+    <div class="section-head"><h2>今年進度</h2></div>
+    <div class="card progress-card">
+      <div class="goal-top">
+        <div>
+          <div class="label">嘉獎目標</div>
+          <div class="goal-main"><span id="goalProgressTextMirror">0</span> 支</div>
+        </div>
+        <div style="min-width:130px">
+          <label>目標支數</label>
+          <input id="dashboardRewardGoal" type="number" min="0" step="1" inputmode="numeric" value="150">
+        </div>
+      </div>
+      <div class="progress"><div id="goalProgressBar"></div></div>
+      <div class="note" id="goalPaceText">—</div>
+      <div class="note" id="daysLeftNote"></div>
+    </div>
+    <div class="card status-card">
+      <h2>116 年考試重點</h2>
+      <div class="exam-summary">
+        <div class="mini-box"><span>自訂目標筆試</span><b id="dashRequiredWritten">—</b></div>
+        <div class="mini-box"><span>五年情境通過</span><b id="historyPassRate">—</b></div>
+      </div>
+      <div class="note" id="dashRequiredNote"></div>
+      <div class="note" id="historyPassNote"></div>
+    </div>
+
+    <div class="card half">
+      <h2>嘉獎 vs 筆試</h2>
+      <div class="statrow"><span>＋10 支嘉獎</span><b id="gain10Rewards">—</b></div>
+      <div class="statrow"><span>筆試＋10 分</span><b id="gain10Written">—</b></div>
+      <div style="display:none"><b id="gain1Qual">—</b><b id="gain1Written">—</b></div>
+      <div class="note">看哪一種對最終總成績的提升比較大。</div>
+    </div>
+    <div class="card half">
+      <h2>系統結論</h2>
+      <div id="quickConclusion" class="callout warn">先到「積分資料」填入基本資料與歷年獎懲。</div>
+    </div>
+  </div>
+</section>
+
+<section id="dataTab" class="hidden">
+  <div class="grid">
+    <div class="card twothird">
+      <div class="label">目前推估資績／遷調積分</div>
+      <div class="score" id="currentMigration">0.00</div>
+      <div class="meta">
+        <span class="pill">自動年度滾動</span>
+        <span class="pill">歷史資料可逐年維護</span>
+      </div>
+    </div>
+    <div class="card third">
+      <div class="label">目前推估陞職積分</div>
+      <div class="kpi" id="currentPromotion">—</div>
+      <div class="note" id="currentPromotionNote"></div>
+    </div>
+
+    <div class="card">
+      <h2>人事正式資績校正</h2>
+      <div class="form-grid four">
+        <div><label>人事正式資績</label><input id="officialScore" type="number" step="0.01" placeholder="例如 86.55"></div>
+        <div><label>正式資績日期</label><input id="officialDate" type="date"></div>
+        <div><label>系統計算值</label><input id="calculatedScore" type="text" readonly></div>
+        <div><label>差異</label><input id="calibrationDiff" type="text" readonly></div>
+      </div>
+      <div id="calibrationStatus" class="callout warn" style="margin-top:12px">輸入人事正式資績後，即可檢查系統是否與人事核算一致。</div>
+      <div class="actions">
+        <button class="btn-primary" id="saveOfficial">儲存正式資績</button>
+        <button class="btn-soft" id="load8655Case">載入 86.55 校正案例</button>
+      </div>
+      <div class="note">校正案例：學歷7、考試3、年資8.40、考績17.50、獎懲47.65、訓練2、外語1，總資績應為86.55。</div>
+    </div>
+
+    <div class="card">
+      <h2>一、固定資料</h2>
+      <div class="form-grid four">
+        <div><label>學歷</label><select id="edu">
+          <option value="0">未設定</option><option value="1">國中以下 1</option><option value="2">高中職 2</option>
+          <option value="3">警校／警專警員班 3</option><option value="5">專科 5</option><option value="7">大學 7</option>
+          <option value="9">碩士 9</option><option value="11">博士 11</option>
+        </select></div>
+        <div><label>考試</label><select id="examLevel">
+          <option value="0">未設定</option><option value="1">初等／五等 1</option><option value="2">普考／四等 2</option>
+          <option value="3">高考三級／三等／升等 3</option><option value="4">高考二級／二等 4</option><option value="5">高考一級／一等 5</option>
+        </select></div>
+        <div><label>非主管年資（月）</label><input id="nonSupMonths" type="number" min="0" step="1" value="0"></div>
+        <div><label>主管年資（月）</label><input id="supMonths" type="number" min="0" step="1" value="0"></div>
+        <div><label>訓練進修（最高4）</label><input id="training" type="number" min="0" max="4" step="0.1" value="0"></div>
+        <div><label>外語能力（最高4）</label><input id="language" type="number" min="0" max="4" step="0.1" value="0"></div>
+        <div><label>年資附加／獎章／其他</label><input id="otherAdd" type="number" step="0.01" value="0"></div>
+        <div><label>歷史未建檔補正</label><input id="legacyAdj" type="number" step="0.01" value="0"></div>
+        <div><label>目前序列</label><select id="sequence">
+          <option value="">請選擇</option><option value="7">第七序列</option><option value="8">第八序列</option>
+          <option value="9">第九序列</option><option value="10">第十序列</option><option value="11">第十一序列</option>
+        </select></div>
+        <div><label>個別選項＋綜合考評</label><input id="subjectiveScore" type="number" min="0" max="20" step="0.1" value="0"></div>
+      </div>
+      <div class="note">年資：非主管每月0.1分、主管每月0.15分。若你目前只知道人事核定總分、尚未補完歷史資料，可暫時把差額填在「歷史未建檔補正」；等歷年明細補齊後，記得把補正歸零，避免重複計分。</div>
+    </div>
+
+    <div class="card">
+      <h2>二、歷年考績</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>年度</th><th>考績</th><th>原始分</th><th>目前權重</th><th>目前採計</th></tr></thead>
+          <tbody id="perfRows"></tbody>
+        </table>
+      </div>
+      <div class="note">甲等3分、乙等2分。系統依計算基準年度自動判斷最近5年全額、第6年起減半。</div>
+    </div>
+
+    <div class="card">
+      <h2>三、歷年行政獎懲</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>年度</th><th>嘉獎</th><th>小功／記功</th><th>大功</th><th>警察獎章</th><th>申誡</th><th>記過</th><th>大過</th><th>原始分</th><th>權重</th><th>採計分</th></tr></thead>
+          <tbody id="awardRows"></tbody>
+        </table>
+      </div>
+      <div class="note">嘉獎±0.1、記功±0.3、記大功±1。系統會依目標截止年度自動重算權重，不需要再手動填「跨年度減少」。</div>
+    </div>
+  </div>
+</section>
+
+<section id="futureTab" class="hidden">
+  <div class="grid">
+    <div class="card twothird">
+      <div class="label"><span id="futureYearLabel">116</span>年預估資績</div>
+      <div class="score" id="futureMigration">0.00</div>
+      <div id="futureDelta" style="font-weight:800">較目前 +0.00</div>
+      <div class="meta">
+        <span class="pill">系統自動重算舊年度權重</span>
+        <span class="pill">截止日 <b id="futureCutoffPill">—</b></span>
+      </div>
+    </div>
+    <div class="card third">
+      <div class="label">預估陞職積分</div>
+      <div class="kpi" id="futurePromotion">—</div>
+      <div class="note" id="futurePromotionNote"></div>
+    </div>
+
+    <div class="card">
+      <h2>目標設定</h2>
+      <div class="form-grid four">
+        <div><label>目標報考年度（民國）</label><input id="targetYear" type="number" min="115" max="130" value="116"></div>
+        <div><label>預估資績截止日</label><input id="cutoffDate" type="date"></div>
+        <div><label>年度嘉獎目標</label><input id="rewardGoal" type="number" min="0" step="1" value="150"></div>
+        <div><label>預估筆試總分</label><input id="forecastWritten" type="number" step="0.01" value="280"></div>
+        <div><label>截止日前額外嘉獎</label><input id="futureReward" type="number" min="0" step="1" value="0"></div>
+        <div><label>截止日前額外記功</label><input id="futureMerit" type="number" min="0" step="1" value="0"></div>
+        <div><label>截止日前額外大功</label><input id="futureBigMerit" type="number" min="0" step="1" value="0"></div>
+        <div><label>額外新增非主管年資（月）</label><input id="futureNonSupMonths" type="number" min="0" step="1" value="12"></div>
+        <div><label>額外新增主管年資（月）</label><input id="futureSupMonths" type="number" min="0" step="1" value="0"></div>
+        <div><label>新增考績分（如確定可採）</label><input id="futurePerformance" type="number" step="0.1" value="0"></div>
+        <div>
+  <label>目標線加成（%）</label>
+  <input id="targetLinePercent" type="number" step="0.1" value="0" placeholder="例如 5">
+  <div class="note">例如輸入 5，目標線＝該年度最低錄取分 × 1.05。</div>
+</div>
+        <div><label>參考年度</label><select id="refYear"></select></div>
+      </div>
+      <div class="actions">
+        <button class="btn-soft" id="fillToGoal">自動填入「尚差嘉獎」</button>
+        <button class="btn-ghost" id="setDefaultCutoff">截止日設為115/11/30</button>
+      </div>
+      <div class="note">去年佐三類資績計分截止到113/11/30；本版預設用115/11/30模擬116年，但你可依當年度簡章自行修改。新增考績預設0，避免在截止日前尚未形成正式年終考績時高估。</div>
+    </div>
+
+    <div class="card half">
+      <h2>年度滾動拆解</h2>
+      <div id="futureBreakdown"></div>
+    </div>
+    <div class="card half">
+      <h2>目標反算</h2>
+      <div class="form-grid two">
+        <div><label>希望達到的資績</label><input id="targetQualScore" type="number" step="0.01" value="200"></div>
+        <div><label>約還需要嘉獎</label><div class="kpi" id="neededRewards">—</div></div>
+      </div>
+      <div class="note">以其他條件不變、1支嘉獎＝0.1分反算。</div>
+    </div>
+  </div>
+</section>
+
+<section id="examTab" class="hidden">
+  <div class="grid">
+    <div class="card">
+      <div class="label">以「未來模擬資績」＋預估筆試計算</div>
+      <div class="score" id="examTotal">—</div>
+      <div id="examStatus" class="callout warn">請先設定未來資績與預估筆試。</div>
+      <div class="meta">
+        <span class="pill">資績 <b id="examQualView">—</b></span>
+        <span class="pill">筆試 <b id="examWrittenView">—</b></span>
+        <span class="pill">參考 <b id="examRefView">115年</b></span>
+      </div>
+    </div>
+
+    <div class="card half">
+      <h2>正式公式拆解</h2>
+      <div class="breakdown"><span>筆試標準化（50%）</span><b id="writtenPart">—</b></div>
+      <div class="breakdown"><span>資績標準化（50%）</span><b id="qualPart">—</b></div>
+      <div class="breakdown"><span>參考年最低錄取</span><b id="cutoffView">—</b></div>
+      <div class="breakdown"><span>目標線</span><b id="safeCutoffView">—</b></div>
+      <div class="breakdown"><span>目標線加成</span><b id="targetPctView">0%</b></div>
+      <div class="breakdown"><span>距目標線</span><b id="safeMarginView">—</b></div>
+    </div>
+
+    <div class="card half">
+      <h2>反算筆試門檻</h2>
+      <div class="label">以目前預估資績達到目標線</div>
+      <div class="kpi" id="requiredWritten">—</div>
+      <div class="note" id="requiredWrittenNote"></div>
+      <div class="progress"><div id="requiredProgress"></div></div>
+    </div>
+
+    <div class="card">
+      <h2>111～115年五年情境回測</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>年度</th><th>最低錄取</th><th>最高筆試</th><th>最高資績</th><th>你的模擬總成績</th><th>與錄取線差距</th><th>結果</th></tr></thead>
+          <tbody id="scenarioRows"></tbody>
+        </table>
+      </div>
+      <div class="note">這是「歷史情境回測」，不是統計上的真實錄取機率；未來年度最高筆試、最高資績與錄取線尚未發生。</div>
+      <div class="note">「歷年最低錄取線」是該年度實際錄取結果；「目標線加成」是你自己設定的規劃幅度，例如 +5% 代表最低錄取線乘以 1.05。目標線加成設為 0% 時，系統直接以所選年度最低錄取線作為基準。</div>
+    </div>
+
+    <div class="card half">
+      <h2>邊際效益比較</h2>
+      <div class="statrow"><span>＋10支嘉獎</span><b id="examGain10Rewards">—</b></div>
+      <div class="statrow"><span>＋50支嘉獎</span><b id="examGain50Rewards">—</b></div>
+      <div class="statrow"><span>筆試＋5分</span><b id="examGain5Written">—</b></div>
+      <div class="statrow"><span>筆試＋10分</span><b id="examGain10Written">—</b></div>
+      <div class="note" id="efficiencyNote"></div>
+    </div>
+
+    <div class="card half">
+      <h2>近5年原始資料</h2>
+      <div class="table-wrap">
+        <table style="min-width:600px">
+          <thead><tr><th>年度</th><th>報名</th><th>名額</th><th>錄取率</th><th>最低錄取</th><th>最高筆試</th><th>最高資績</th></tr></thead>
+          <tbody id="historyRows"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="actions" style="margin-top:14px">
+  <button class="btn-ghost" id="importBtn">匯入備份</button>
+  <input class="hidden" id="importFile" type="file" accept="application/json">
+  <button class="btn-ghost" id="clearBtn">清除全部資料</button>
+</div>
+
+<footer>
+本工具供個人規劃與試算，不取代人事單位正式核定、當年度招生簡章或錄取結果。警佐班總成績採「筆試50%＋資績50%」標準化公式；歷史情境僅供規劃參考。
+</footer>
+</div>
+
+<script>
+const KEY="police-promotion-warroom-v011";
+const PREVKEY_V010="police-promotion-warroom-v010";
+const PREVKEY_V09="police-promotion-warroom-v09";
+const PREVKEY_V08="police-promotion-warroom-v08";
+const PREVKEY_V07="police-promotion-warroom-v07";
+const PREVKEY_V06="police-promotion-warroom-v06";
+const PREVKEY_V05="police-promotion-warroom-v05";
+const PREVKEY="police-promotion-sim-v04";
+const $=id=>document.getElementById(id);
+const today=new Date();
+const currentROC=today.getFullYear()-1911;
+const history={
+  115:{applicants:310,slots:60,rate:19.35,cutoff:69.19,maxWritten:325.47,maxQual:201.40},
+  114:{applicants:357,slots:65,rate:18.20,cutoff:64.47,maxWritten:305.14,maxQual:210.45},
+  113:{applicants:220,slots:80,rate:36.36,cutoff:59.14,maxWritten:303.87,maxQual:192.15},
+  112:{applicants:253,slots:65,rate:25.69,cutoff:57.90,maxWritten:322.93,maxQual:209.96},
+  111:{applicants:356,slots:80,rate:22.47,cutoff:66.73,maxWritten:300.27,maxQual:187.24}
+};
+function uid(){return crypto.randomUUID?crypto.randomUUID():String(Date.now()+Math.random())}
+function num(v){const n=Number(v);return Number.isFinite(n)?n:0}
+function fmt(v){return (Math.round(num(v)*100)/100).toFixed(2)}
+function rocDate(iso){
+  if(!iso)return "—"; const d=new Date(iso+"T00:00:00"); if(isNaN(d))return "—";
+  return `${d.getFullYear()-1911}/${String(d.getMonth()+1).padStart(2,"0")}/${String(d.getDate()).padStart(2,"0")}`;
+}
+function defaultPerf(){
+  const arr=[]; for(let y=currentROC-7;y<=currentROC-1;y++)arr.push({id:uid(),year:y,grade:""}); return arr;
+}
+function defaultAwards(){
+  const arr=[]; for(let y=currentROC-7;y<=currentROC;y++)arr.push({id:uid(),year:y,reward:0,merit:0,bigMerit:0,policeMedal:0,admonition:0,demerit:0,bigDemerit:0}); return arr;
+}
+let state={
+  theme:"light",tab:"dashboard",
+  base:{edu:0,examLevel:0,nonSupMonths:0,supMonths:0,training:0,language:0,otherAdd:0,legacyAdj:0,sequence:"",subjectiveScore:0,officialScore:"",officialDate:""},
+  performance:defaultPerf(),awards:defaultAwards(),
+  future:{
+    targetYear:currentROC+1,cutoffDate:`${today.getFullYear()}-11-30`,rewardGoal:150,forecastWritten:280,
+    reward:0,merit:0,bigMerit:0,nonSupMonths:12,supMonths:0,performance:0,safetyMargin:0,targetLinePercent:0,refYear:115,targetQual:200
+  }
+};
+function save(){localStorage.setItem(KEY,JSON.stringify(state))}
+function load(){
+  try{
+    const raw=localStorage.getItem(KEY);
+    if(raw) state={...state,...JSON.parse(raw)};
+    else{
+      const prev010=localStorage.getItem(PREVKEY_V010);
+      if(prev010){
+        const p010=JSON.parse(prev010);
+        state={...state,...p010};
+      }
+      const prev09=localStorage.getItem(PREVKEY_V09);
+      if(prev09){
+        const p09=JSON.parse(prev09);
+        state={...state,...p09};
+      }
+      const prev08=localStorage.getItem(PREVKEY_V08);
+      if(prev08){
+        const p08=JSON.parse(prev08);
+        state={...state,...p08};
+      }
+      const prev07=!prev08?localStorage.getItem(PREVKEY_V07):null;
+      if(prev07){
+        const p07=JSON.parse(prev07);
+        state={...state,...p07};
+      }
+      const prev06=!prev07?localStorage.getItem(PREVKEY_V06):null;
+      if(prev06){
+        const p06=JSON.parse(prev06);
+        state={...state,...p06};
+      }
+      const prev05=!prev06?localStorage.getItem(PREVKEY_V05):null;
+      if(prev05){
+        const p05=JSON.parse(prev05);
+        state={...state,...p05};
+        state.base={...state.base,...(p05.base||{}),officialScore:"",officialDate:""};
+      }
+      const prev=!prev05?localStorage.getItem(PREVKEY):null;
+      if(prev){
+        const o=JSON.parse(prev);
+        if(o.score){
+          state.base.edu=num(o.score.edu);state.base.examLevel=num(o.score.exam);state.base.nonSupMonths=num(o.score.nonSupMonths);
+          state.base.supMonths=num(o.score.supMonths);state.base.training=num(o.score.training);state.base.language=num(o.score.language);
+          state.base.otherAdd=num(o.score.otherAdd);state.base.legacyAdj=num(o.score.performanceScore)+num(o.score.awardScore)+num(o.score.manualAdj);
+          state.base.sequence=o.score.sequence||"";state.base.subjectiveScore=num(o.score.subjectiveScore);
+        }
+        if(o.future){
+          state.future.targetYear=num(o.future.targetYear)||currentROC+1;
+          state.future.rewardGoal=150;state.future.reward=num(o.future.reward);state.future.merit=num(o.future.merit);state.future.bigMerit=num(o.future.bigMerit);
+          state.future.nonSupMonths=num(o.future.nonSupMonths);state.future.supMonths=num(o.future.supMonths);
+          state.future.performance=num(o.future.performance);state.future.forecastWritten=num(o.exam?.myWritten)||280;
+          state.future.refYear=num(o.exam?.refYear)||115;
+        }
+        state.theme=o.theme||"light";
+      }
+    }
+  }catch(e){}
+  state.base={edu:0,examLevel:0,nonSupMonths:0,supMonths:0,training:0,language:0,otherAdd:0,legacyAdj:0,sequence:"",subjectiveScore:0,...(state.base||{})};
+  state.performance=Array.isArray(state.performance)&&state.performance.length?state.performance:defaultPerf();
+  state.awards=Array.isArray(state.awards)&&state.awards.length?state.awards:defaultAwards();
+  state.awards=state.awards.map(r=>({policeMedal:0,...r}));
+  state.future={targetYear:currentROC+1,cutoffDate:`${today.getFullYear()}-11-30`,rewardGoal:150,forecastWritten:280,reward:0,merit:0,bigMerit:0,nonSupMonths:12,supMonths:0,performance:0,safetyMargin:0,targetLinePercent:0,refYear:115,targetQual:200,...(state.future||{})};
+  hydrate(); render();
+}
+function hydrate(){
+  document.documentElement.dataset.theme=state.theme==="dark"?"dark":"light";
+  Object.keys(state.base).forEach(k=>{if($(k))$(k).value=state.base[k]});
+  if($("officialScore")) $("officialScore").value=state.base.officialScore??"";
+  if($("officialDate")) $("officialDate").value=state.base.officialDate??"";
+  const f=state.future;
+  $("targetYear").value=f.targetYear;$("cutoffDate").value=f.cutoffDate;$("rewardGoal").value=f.rewardGoal;$("forecastWritten").value=f.forecastWritten;
+  $("futureReward").value=f.reward;$("futureMerit").value=f.merit;$("futureBigMerit").value=f.bigMerit;$("futureNonSupMonths").value=f.nonSupMonths;
+  $("futureSupMonths").value=f.supMonths;$("futurePerformance").value=f.performance;
+  if($("targetLinePercent")) $("targetLinePercent").value=f.targetLinePercent??0;
+  $("targetQualScore").value=f.targetQual;
+  $("refYear").innerHTML=Object.keys(history).sort((a,b)=>b-a).map(y=>`<option value="${y}">${y}年</option>`).join("");
+  $("refYear").value=f.refYear;
+  if($("dashboardRewardGoal")) $("dashboardRewardGoal").value=f.rewardGoal;
+  setTab(state.tab||"dashboard");
+}
+function setTab(tab){
+  state.tab=tab;
+  ["dashboard","data","future","exam"].forEach(t=>$(t+"Tab").classList.toggle("hidden",t!==tab));
+  document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("active",b.dataset.tab===tab)); save();
+}
+document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>setTab(b.dataset.tab));
+
+function perfRaw(grade){return grade==="甲"?3:grade==="乙"?2:0}
+function awardRaw(r){return num(r.reward)*.1+num(r.merit)*.3+num(r.bigMerit)+num(r.policeMedal)*2-num(r.admonition)*.1-num(r.demerit)*.3-num(r.bigDemerit)}
+function weightForYear(year,anchorYear){
+  year=num(year); anchorYear=num(anchorYear);
+  return year>=anchorYear-4 && year<=anchorYear ? 1 : (year<anchorYear-4 ? .5 : 0);
+}
+function cutoffYear(){const d=new Date(state.future.cutoffDate+"T00:00:00"); return isNaN(d)?currentROC:d.getFullYear()-1911}
+function latestCompletedPerfYear(anchorYear){
+  return anchorYear-1;
+}
+function currentAnchorYear(){return currentROC}
+function calculateAt(anchorYear,includeFuture=false){
+  const b=state.base;
+  const perfAnchor=latestCompletedPerfYear(anchorYear);
+  const perf=state.performance.reduce((s,r)=>s+perfRaw(r.grade)*weightForYear(r.year,perfAnchor),0);
+  const awards=state.awards.reduce((s,r)=>s+awardRaw(r)*weightForYear(r.year,anchorYear),0);
+  const service=num(b.nonSupMonths)*.1+num(b.supMonths)*.15;
+  let total=num(b.edu)+num(b.examLevel)+service+Math.min(4,num(b.training))+Math.min(4,num(b.language))+num(b.otherAdd)+num(b.legacyAdj)+perf+awards;
+  const parts={edu:num(b.edu),exam:num(b.examLevel),service,training:Math.min(4,num(b.training)),language:Math.min(4,num(b.language)),other:num(b.otherAdd)+num(b.legacyAdj),perf,awards};
+  if(includeFuture){
+    const f=state.future;
+    const futureAwards=num(f.reward)*.1+num(f.merit)*.3+num(f.bigMerit);
+    const futureService=num(f.nonSupMonths)*.1+num(f.supMonths)*.15;
+    const futurePerf=num(f.performance);
+    total+=futureAwards+futureService+futurePerf;
+    parts.futureAwards=futureAwards;parts.futureService=futureService;parts.futurePerf=futurePerf;
+  }
+  return {total,parts};
+}
+function promotionFrom(migration){
+  const seq=num(state.base.sequence); if(seq<7||seq>11)return null;
+  let common=migration*.8;if(seq<=10)common=Math.min(common,80);
+  return {common,total:common+num(state.base.subjectiveScore)};
+}
+function currentCalc(){return calculateAt(currentAnchorYear(),false)}
+function futureCalc(){return calculateAt(cutoffYear(),true)}
+
+function renderPerf(){
+  const anchor=latestCompletedPerfYear(currentAnchorYear()),body=$("perfRows");body.innerHTML="";
+  [...state.performance].sort((a,b)=>b.year-a.year).forEach(r=>{
+    const w=weightForYear(r.year,anchor),raw=perfRaw(r.grade),tr=document.createElement("tr");
+    tr.innerHTML=`<td>${r.year}</td><td><select data-p="${r.id}">
+      <option value="" ${r.grade===""?"selected":""}>未填</option><option value="甲" ${r.grade==="甲"?"selected":""}>甲等</option><option value="乙" ${r.grade==="乙"?"selected":""}>乙等</option>
+    </select></td><td>${fmt(raw)}</td><td>${w===1?"×1":w===.5?"×0.5":"未採"}</td><td><b>${fmt(raw*w)}</b></td>`;
+    body.appendChild(tr);
+  });
+  body.querySelectorAll("[data-p]").forEach(x=>x.onchange=()=>{const r=state.performance.find(r=>r.id===x.dataset.p);if(r)r.grade=x.value;save();render()});
+}
+function renderAwards(){
+  const anchor=currentAnchorYear(),body=$("awardRows");body.innerHTML="";
+  [...state.awards].sort((a,b)=>b.year-a.year).forEach(r=>{
+    const w=weightForYear(r.year,anchor),raw=awardRaw(r),tr=document.createElement("tr");
+    tr.innerHTML=`<td><b>${r.year}</b></td>
+    ${["reward","merit","bigMerit","policeMedal","admonition","demerit","bigDemerit"].map(k=>`<td><input style="min-width:64px" type="number" min="0" step="1" value="${num(r[k])}" data-a="${r.id}" data-k="${k}"></td>`).join("")}
+    <td>${fmt(raw)}</td><td>${w===1?"×1":"×0.5"}</td><td><b>${fmt(raw*w)}</b></td>`;
+    body.appendChild(tr);
+  });
+  body.querySelectorAll("[data-a]").forEach(x=>x.onchange=()=>{const r=state.awards.find(r=>r.id===x.dataset.a);if(r)r[x.dataset.k]=num(x.value);save();render()});
+}
+function currentYearRewards(){
+  const r=state.awards.find(r=>num(r.year)===currentROC);return r?num(r.reward):0;
+}
+function currentYearAwardRow(){
+  let r=state.awards.find(r=>num(r.year)===currentROC);
+  if(!r){r={id:uid(),year:currentROC,reward:0,merit:0,bigMerit:0,policeMedal:0,admonition:0,demerit:0,bigDemerit:0};state.awards.push(r);}
+  if(r.policeMedal==null) r.policeMedal=0;
+  return r;
+}
+function syncCurrentYearQuickInputs(){
+  const r=currentYearAwardRow();
+  if($("cyQuickYear")) $("cyQuickYear").textContent=currentROC;
+  if($("cyRewardInput")) $("cyRewardInput").value=num(r.reward);
+  if($("cyMeritInput")) $("cyMeritInput").value=num(r.merit);
+  if($("cyBigMeritInput")) $("cyBigMeritInput").value=num(r.bigMerit);
+  if($("cyPoliceMedalInput")) $("cyPoliceMedalInput").value=num(r.policeMedal);
+  if($("cyAwardPoints")) $("cyAwardPoints").textContent=fmt(awardRaw(r));
+  if($("cyGoalMini")) $("cyGoalMini").textContent=`${num(r.reward)} / ${num(state.future.rewardGoal)}`;
+}
+function examScore(qual,written,year){
+  const h=history[year]; if(!h)return null;
+  return {total:(num(written)/h.maxWritten)*50+(num(qual)/h.maxQual)*50,wp:(num(written)/h.maxWritten)*50,qp:(num(qual)/h.maxQual)*50,h};
+}
+function effectiveTargetLine(year){
+  const h=history[num(year)]||history[115];
+  const pct=num(state.future.targetLinePercent);
+  return h.cutoff*(1+pct/100);
+}
+function requiredWrittenFor(qual,target,year){
+  const h=history[year]; if(!h)return 0;
+  const qp=(num(qual)/h.maxQual)*50;
+  return Math.max(0,(num(target)-qp)*h.maxWritten/50);
+}
+
+
+function renderCalibration(){
+  const c=currentCalc().total;
+  const official=state.base.officialScore===""?null:num(state.base.officialScore);
+  if($("calculatedScore")) $("calculatedScore").value=fmt(c);
+  if(official===null){
+    if($("calibrationDiff")) $("calibrationDiff").value="—";
+    if($("calibrationStatus")){
+      $("calibrationStatus").className="callout warn";
+      $("calibrationStatus").textContent="尚未輸入人事正式資績。";
+    }
+    return;
+  }
+  const diff=c-official;
+  if($("calibrationDiff")) $("calibrationDiff").value=`${diff>=0?"+":""}${fmt(diff)}`;
+  if($("calibrationStatus")){
+    const ok=Math.abs(diff)<0.005;
+    $("calibrationStatus").className=`callout ${ok?"good":"warn"}`;
+    $("calibrationStatus").textContent=ok?"系統計算與人事正式資績完全吻合。":`目前差異 ${diff>=0?"+":""}${fmt(diff)} 分，建議檢查歷年考績、獎懲、年資或補正欄位。`;
+  }
+}
+
+function renderData(){
+  const c=currentCalc(),p=promotionFrom(c.total);
+  $("currentMigration").textContent=fmt(c.total);
+  if(p){$("currentPromotion").textContent=fmt(p.total);$("currentPromotionNote").textContent=`共同選項 ${fmt(p.common)} ＋ 個別/綜合 ${fmt(state.base.subjectiveScore)}`}
+  else{$("currentPromotion").textContent="—";$("currentPromotionNote").textContent="請選擇第七至第十一序列。"}
+  renderPerf();renderAwards();
+}
+function renderFuture(){
+  const c=currentCalc(),f=futureCalc(),delta=f.total-c.total,p=promotionFrom(f.total);
+  $("futureYearLabel").textContent=state.future.targetYear;$("futureMigration").textContent=fmt(f.total);
+  $("futureDelta").textContent=`較目前 ${delta>=0?"+":""}${fmt(delta)}`;$("futureDelta").className=delta>=0?"positive":"negative";
+  $("futureCutoffPill").textContent=rocDate(state.future.cutoffDate);
+  if(p){$("futurePromotion").textContent=fmt(p.total);$("futurePromotionNote").textContent=`共同選項 ${fmt(p.common)} ＋ 個別/綜合 ${fmt(state.base.subjectiveScore)}`}
+  else{$("futurePromotion").textContent="—";$("futurePromotionNote").textContent="請先在積分資料選擇序列。"}
+  const baseAtFuture=calculateAt(cutoffYear(),false);
+  const rollover=baseAtFuture.total-c.total;
+  const bf=[
+    ["目前資績",c.total],["跨年度自動重算",rollover],["額外嘉獎/記功/大功",f.parts.futureAwards||0],
+    ["新增年資",f.parts.futureService||0],["新增考績",f.parts.futurePerf||0],["目標年度資績",f.total]
+  ];
+  $("futureBreakdown").innerHTML=bf.map(([k,v],i)=>`<div class="breakdown"><span>${i===bf.length-1?"<b>"+k+"</b>":k}</span><b class="${v<0?"negative":""}">${i>0&&i<bf.length-1?(v>=0?"+":""):""}${fmt(v)}</b></div>`).join("");
+  const gap=num(state.future.targetQual)-f.total;$("neededRewards").textContent=gap<=0?"已達標":`${Math.ceil(gap/.1)} 支`;
+}
+function renderExam(){
+  const f=futureCalc(),written=num(state.future.forecastWritten),yr=num(state.future.refYear),e=examScore(f.total,written,yr),safe=effectiveTargetLine(yr);
+  $("examQualView").textContent=fmt(f.total);$("examWrittenView").textContent=fmt(written);$("examRefView").textContent=`${yr}年`;
+  $("writtenPart").textContent=fmt(e.wp);$("qualPart").textContent=fmt(e.qp);$("cutoffView").textContent=fmt(e.h.cutoff);$("safeCutoffView").textContent=fmt(safe);
+  if($("targetPctView")) $("targetPctView").textContent=`+${fmt(state.future.targetLinePercent)}%`;
+  $("examTotal").textContent=fmt(e.total);
+  const sm=e.total-safe;$("safeMarginView").textContent=`${sm>=0?"+":""}${fmt(sm)}`;$("safeMarginView").className=sm>=0?"positive":"negative";
+  $("examStatus").className=`callout ${sm>=0?"good":"warn"}`;$("examStatus").textContent=sm>=0?`高於目標線 ${fmt(sm)} 分。`:`距目標線尚差 ${fmt(Math.abs(sm))} 分。`;
+  const req=requiredWrittenFor(f.total,safe,yr);$("requiredWritten").textContent=`${fmt(req)} 分`;
+  $("requiredWrittenNote").textContent=`以${yr}年最高分結構，要達目標線 ${fmt(safe)}，筆試約需 ${fmt(req)} 分。`;
+  $("requiredProgress").style.width=`${Math.min(100,req/history[yr].maxWritten*100)}%`;
+
+  let pass=0;
+  $("scenarioRows").innerHTML=Object.keys(history).sort((a,b)=>b-a).map(y=>{
+    const s=examScore(f.total,written,num(y)),margin=s.total-s.h.cutoff;if(margin>=0)pass++;
+    return `<tr><td><b>${y}年</b></td><td>${fmt(s.h.cutoff)}</td><td>${fmt(s.h.maxWritten)}</td><td>${fmt(s.h.maxQual)}</td><td><b>${fmt(s.total)}</b></td><td class="${margin>=0?"positive":"negative"}">${margin>=0?"+":""}${fmt(margin)}</td><td>${margin>=0?"通過":"未過"}</td></tr>`;
+  }).join("");
+
+  const g10r=50/history[yr].maxQual, g50r=5*50/history[yr].maxQual, g5w=5*50/history[yr].maxWritten, g10w=10*50/history[yr].maxWritten;
+  $("examGain10Rewards").textContent=`總成績 +${fmt(g10r)}`;$("examGain50Rewards").textContent=`總成績 +${fmt(g50r)}`;
+  $("examGain5Written").textContent=`總成績 +${fmt(g5w)}`;$("examGain10Written").textContent=`總成績 +${fmt(g10w)}`;
+  $("efficiencyNote").textContent=`${yr}年結構下，每增加1資績分約增加總成績 ${fmt(50/history[yr].maxQual)}；每增加1筆試原始分約增加 ${fmt(50/history[yr].maxWritten)}。`;
+
+  $("historyRows").innerHTML=Object.keys(history).sort((a,b)=>b-a).map(y=>{const h=history[y];return `<tr><td>${y}</td><td>${h.applicants}</td><td>${h.slots}</td><td>${h.rate.toFixed(2)}%</td><td>${fmt(h.cutoff)}</td><td>${fmt(h.maxWritten)}</td><td>${fmt(h.maxQual)}</td></tr>`}).join("");
+}
+function renderDashboard(){
+  const c=currentCalc(),f=futureCalc(),delta=f.total-c.total,yr=num(state.future.refYear),written=num(state.future.forecastWritten);
+  $("dashTargetYear").textContent=state.future.targetYear;
+  $("dashFutureQual").textContent=fmt(f.total);
+  $("dashCurrentQual").textContent=fmt(c.total);
+  const official=state.base.officialScore===""?null:num(state.base.officialScore);
+  $("dashOfficialScore").textContent=official===null?"—":fmt(official);
+  if(official===null){
+    $("dashCalibrationDiff").textContent="—";
+    $("dashOfficialStatus").className="callout warn";
+    $("dashOfficialStatus").textContent="尚未輸入人事正式資績。";
+  }else{
+    const d=c.total-official;
+    $("dashCalibrationDiff").textContent=`${d>=0?"+":""}${fmt(d)}`;
+    $("dashOfficialStatus").className=`callout ${Math.abs(d)<0.005?"good":"warn"}`;
+    $("dashOfficialStatus").textContent=Math.abs(d)<0.005?"人事正式資績與系統計算完全吻合。":`系統與人事差 ${d>=0?"+":""}${fmt(d)} 分。`;
+  }
+
+  const cutoff=new Date(state.future.cutoffDate+"T23:59:59"),days=Math.ceil((cutoff-today)/86400000);
+  $("daysLeft").textContent=days>=0?`${days} 天`:"已截止";$("daysLeftNote").textContent=days>=0?`以預估截止日 ${rocDate(state.future.cutoffDate)} 計算。`:"請更新截止日。";
+
+  const cy=state.awards.find(r=>num(r.year)===currentROC)||{reward:0,merit:0,bigMerit:0,admonition:0,demerit:0,bigDemerit:0};
+  $("dashCYReward").textContent=num(cy.reward);
+  $("dashCYMerit").textContent=num(cy.merit);
+  $("dashCYBigMerit").textContent=num(cy.bigMerit);
+  if($("dashCYPoliceMedal")) $("dashCYPoliceMedal").textContent=num(cy.policeMedal);
+  $("dashCYAwardScore").textContent=fmt(awardRaw(cy));
+
+  const got=currentYearRewards(),goal=Math.max(0,num(state.future.rewardGoal)),remain=Math.max(0,goal-got),pct=goal?Math.min(100,got/goal*100):0;
+  if($("dashboardRewardGoal") && document.activeElement!==$("dashboardRewardGoal")) $("dashboardRewardGoal").value=goal;
+  $("goalProgressText").textContent=`${got} / ${goal}`;$("goalPercent").textContent=`${fmt(pct)}%`;$("goalProgressBar").style.width=`${pct}%`;
+  if($("goalProgressTextMirror")) $("goalProgressTextMirror").textContent=`${got} / ${goal}`;
+  const months=Math.max(1,days/30.44);$("goalPaceText").textContent=remain<=0?"年度嘉獎目標已達成。":`尚差 ${remain} 支；若要在截止日前完成，平均每月約需 ${fmt(remain/months)} 支。`;
+
+  let pass=0;Object.keys(history).forEach(y=>{if(examScore(f.total,written,num(y)).total>=history[y].cutoff)pass++});
+  $("historyPassRate").textContent=`${pass}/5`;$("historyPassNote").textContent=`以資績 ${fmt(f.total)}、筆試 ${fmt(written)} 回測111～115年，有 ${pass} 個年度高於最低錄取線。`;
+
+  const safe=effectiveTargetLine(yr),req=requiredWrittenFor(f.total,safe,yr);
+  $("dashRequiredWritten").textContent=`${fmt(req)} 分`;$("dashRequiredNote").textContent=`以${yr}年結構、目標線 ${fmt(safe)} 反算。`;
+
+  $("gain10Rewards").textContent=`總成績 +${fmt(50/history[yr].maxQual)}`;
+  $("gain10Written").textContent=`總成績 +${fmt(10*50/history[yr].maxWritten)}`;
+  $("gain1Qual").textContent=`+${fmt(50/history[yr].maxQual)}`;
+  $("gain1Written").textContent=`+${fmt(50/history[yr].maxWritten)}`;
+
+  const e=examScore(f.total,written,yr),margin=e.total-safe;
+  if($("dashExamTotal")) $("dashExamTotal").textContent=fmt(e.total);
+  if($("dashExamStatus")){
+    $("dashExamStatus").textContent=margin>=0?`高於目標線 ${fmt(margin)} 分`:`距目標線 ${fmt(Math.abs(margin))} 分`;
+    $("dashExamStatus").className=`kpi-foot ${margin>=0?"positive":"warn"}`;
+  }
+  let txt="";
+  if(margin>=3)txt=`目前情境下，以${yr}年結構估算總成績 ${fmt(e.total)}，高於目標線 ${fmt(margin)} 分；可優先把重心放在維持筆試與確保預計嘉獎確實在截止日前核定。`;
+  else if(margin>=0)txt=`目前約在目標線附近，緩衝只有 ${fmt(margin)} 分。建議同時保留嘉獎與筆試兩條路，不要只壓單一變數。`;
+  else txt=`目前距目標線約 ${fmt(Math.abs(margin))} 分。若資績不變，筆試約需 ${fmt(req)}；若筆試維持 ${fmt(written)}，則可再透過嘉獎、記功、年資等提高資績。`;
+  $("quickConclusion").className=`callout ${margin>=0?"good":"warn"}`;$("quickConclusion").textContent=txt;
+}
+function render(){renderCalibration();renderData();renderFuture();renderExam();renderDashboard();syncCurrentYearQuickInputs()}
+
+Object.keys(state.base).filter(k=>!["officialScore","officialDate"].includes(k)).forEach(k=>{if($(k))$(k).addEventListener("change",()=>{state.base[k]=$(k).value;save();render()})});
+if($("dashboardRewardGoal")){
+  $("dashboardRewardGoal").addEventListener("change",()=>{
+    state.future.rewardGoal=Math.max(0,num($("dashboardRewardGoal").value));
+    $("rewardGoal").value=state.future.rewardGoal;
+    save();render();
+  });
+}
+
+[
+  ["targetYear","targetYear"],["cutoffDate","cutoffDate"],["rewardGoal","rewardGoal"],["forecastWritten","forecastWritten"],
+  ["futureReward","reward"],["futureMerit","merit"],["futureBigMerit","bigMerit"],["futureNonSupMonths","nonSupMonths"],
+  ["futureSupMonths","supMonths"],["futurePerformance","performance"],["targetLinePercent","targetLinePercent"],["refYear","refYear"],["targetQualScore","targetQual"]
+].forEach(([id,key])=>$(id).addEventListener("change",()=>{
+  state.future[key]=$(id).value;
+  if(key==="rewardGoal" && $("dashboardRewardGoal")) $("dashboardRewardGoal").value=state.future.rewardGoal;
+  save();render();
+}));
+
+$("fillToGoal").onclick=()=>{
+  const got=currentYearRewards(),remain=Math.max(0,num(state.future.rewardGoal)-got);
+  state.future.reward=remain;$("futureReward").value=remain;save();render();
+};
+$("setDefaultCutoff").onclick=()=>{state.future.cutoffDate=`${today.getFullYear()}-11-30`;$("cutoffDate").value=state.future.cutoffDate;save();render()};
+
+$("saveCurrentYearAwards").onclick=()=>{
+  const r=currentYearAwardRow();
+  r.reward=Math.max(0,num($("cyRewardInput").value));
+  r.merit=Math.max(0,num($("cyMeritInput").value));
+  r.bigMerit=Math.max(0,num($("cyBigMeritInput").value));
+  r.policeMedal=Math.max(0,num($("cyPoliceMedalInput").value));
+  save();render();
+};
+$("addOneReward").onclick=()=>{const r=currentYearAwardRow();r.reward=num(r.reward)+1;save();render();};
+$("addOneMerit").onclick=()=>{const r=currentYearAwardRow();r.merit=num(r.merit)+1;save();render();};
+
+$("saveOfficial").onclick=()=>{
+  state.base.officialScore=$("officialScore").value;
+  state.base.officialDate=$("officialDate").value;
+  save();render();
+};
+
+$("load8655Case").onclick=()=>{
+  state.base.edu=7;
+  state.base.examLevel=3;
+  state.base.nonSupMonths=84;
+  state.base.supMonths=0;
+  state.base.training=2;
+  state.base.language=1;
+  state.base.otherAdd=0;
+  state.base.legacyAdj=65.15;
+  state.base.officialScore=86.55;
+  state.base.officialDate="";
+  state.performance=defaultPerf().map(r=>({...r,grade:""}));
+  state.awards=defaultAwards().map(r=>({...r,reward:0,merit:0,bigMerit:0,policeMedal:0,admonition:0,demerit:0,bigDemerit:0}));
+  hydrate();save();render();
+};
+
+$("themeBtn").onclick=()=>{state.theme=state.theme==="dark"?"light":"dark";document.documentElement.dataset.theme=state.theme;save()};
+$("exportBtn").onclick=()=>{
+  const blob=new Blob([JSON.stringify(state,null,2)],{type:"application/json"}),a=document.createElement("a");
+  a.href=URL.createObjectURL(blob);a.download=`警察升遷戰情室_V0.11_${new Date().toISOString().slice(0,10)}.json`;a.click();URL.revokeObjectURL(a.href);
+};
+$("importBtn").onclick=()=>$("importFile").click();
+$("importFile").onchange=async e=>{const f=e.target.files[0];if(!f)return;try{state={...state,...JSON.parse(await f.text())};save();location.reload()}catch(err){alert("備份檔格式錯誤")}};
+$("clearBtn").onclick=()=>{if(confirm("確定清除全部資料？")){localStorage.removeItem(KEY);location.reload()}};
+
+load();
+</script>
+
+<script>
+(function(){
+  function summary(){
+    try{
+      const c=currentCalc(), f=futureCalc();
+      const yr=num(state.future.refYear), written=num(state.future.forecastWritten);
+      const e=examScore(f.total,written,yr);
+      const cy=(state.awards||[]).find(r=>num(r.year)===currentROC)||{};
+      const official=state.base.officialScore===""?null:num(state.base.officialScore);
+      const goal=Math.max(0,num(state.future.rewardGoal));
+      const reward=num(cy.reward);
+      const safe=effectiveTargetLine(yr);
+      return {
+        officialScore:official,
+        currentQual:c.total,
+        futureQual:f.total,
+        targetYear:num(state.future.targetYear),
+        reward,
+        rewardGoal:goal,
+        rewardPct:goal?Math.min(100,reward/goal*100):0,
+        forecastWritten:written,
+        examTotal:e?e.total:null,
+        targetLine:safe,
+        examMargin:e?e.total-safe:null,
+        refYear:yr,
+        requiredWritten:requiredWrittenFor(f.total,safe,yr),
+        updatedAt:new Date().toISOString()
+      };
+    }catch(err){
+      return {error:String(err)};
+    }
+  }
+  window.getLexCorePromotionSummary=summary;
+
+  function notify(){
+    try{
+      parent.postMessage({
+        type:"lexcore-promotion-update",
+        summary:summary(),
+        height:Math.max(document.body.scrollHeight,document.documentElement.scrollHeight)
+      },"*");
+    }catch(e){}
+  }
+
+  try{
+    const originalSave=save;
+    save=function(){
+      originalSave();
+      setTimeout(notify,0);
+    };
+  }catch(e){}
+
+  window.addEventListener("load",()=>setTimeout(notify,50));
+  window.addEventListener("resize",()=>setTimeout(notify,20));
+  try{
+    new ResizeObserver(()=>notify()).observe(document.body);
+  }catch(e){}
+  setTimeout(notify,120);
+})();
+</script>
+
+
+<script>
+(function(){
+  let promotionFontScale=1;
+  function eligible(el){
+    if(!el||el.nodeType!==1)return false;
+    if(["SCRIPT","STYLE","SVG","PATH","IMG","CANVAS","BR","HR"].includes(el.tagName))return false;
+    if(el.matches("input,select,textarea,button,option"))return true;
+    return [...el.childNodes].some(n=>n.nodeType===3&&String(n.textContent||"").trim());
+  }
+  function remember(el,scaled){
+    if(!eligible(el)||el.dataset.promoBaseFont)return;
+    const size=parseFloat(getComputedStyle(el).fontSize);if(!Number.isFinite(size)||size<=0)return;
+    let base=size;
+    if(scaled&&promotionFontScale!==1){
+      const p=el.parentElement,ps=p?parseFloat(getComputedStyle(p).fontSize):NaN;
+      if(Number.isFinite(ps)&&Math.abs(ps-size)<.15)base=size/promotionFontScale;
+    }
+    el.dataset.promoBaseFont=String(base);
+  }
+  function apply(el){
+    remember(el,true);
+    const b=Number(el?.dataset?.promoBaseFont);
+    if(Number.isFinite(b))el.style.fontSize=`${Math.round(b*promotionFontScale*100)/100}px`;
+  }
+  function scan(root=document,initial=false){
+    const a=[];if(root.nodeType===1)a.push(root);if(root.querySelectorAll)a.push(...root.querySelectorAll("*"));
+    if(initial)a.forEach(x=>remember(x,false));a.forEach(apply);
+  }
+  window.setPromotionFontScale=function(scale){
+    promotionFontScale=Math.min(1.5,Math.max(.8,Number(scale)||1));
+    document.querySelectorAll("[data-promo-base-font]").forEach(apply);
+  };
+  window.addEventListener("message",e=>{if(e.data?.type==="lexcore-font-scale")window.setPromotionFontScale(e.data.scale);});
+  window.addEventListener("load",()=>{
+    scan(document,true);
+    const mo=new MutationObserver(ms=>ms.forEach(m=>m.addedNodes.forEach(n=>{if(n.nodeType===1)scan(n,false)})));
+    mo.observe(document.body,{childList:true,subtree:true});
+  });
+})();
+</script>
+
+</body>
+</html>

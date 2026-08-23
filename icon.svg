@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">LexCore</title>
+  <desc id="desc">LexCore 警察考試智慧備考系統圖示</desc>
+  <rect width="512" height="512" rx="112" fill="#111827"/>
+  <path d="M256 64 410 124v112c0 104-64 170-154 212-90-42-154-108-154-212V124L256 64Z" fill="#225cf5"/>
+  <path d="M256 105 369 149v86c0 75-44 126-113 162-69-36-113-87-113-162v-86l113-44Z" fill="#edf3ff"/>
+  <path d="M195 178h122v34H195zm0 61h122v34H195zm0 61h82v34h-82z" fill="#111827"/>
+  <circle cx="346" cy="334" r="44" fill="#14794a"/>
+  <path d="m326 334 13 13 28-31" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
+</svg>

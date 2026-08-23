@@ -1,0 +1,20 @@
+{
+  "name": "LexCore｜警察考試智慧備考系統",
+  "short_name": "LexCore",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0e1420",
+  "theme_color": "#111827",
+  "lang": "zh-Hant",
+  "description": "警佐一類法規、修法、憲判、題庫與個人備考資料工具。",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "status": "unavailable",
+  "error": "立法院官方 Dataset 19 本次連線失敗；本檔不是成功同步快照。",
+  "fetchedAt": "2026-08-23T10:04:18.118Z",
+  "sourceDataset": 19,
+  "rows": []
+}

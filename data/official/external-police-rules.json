@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "id": "weapon_investigation",
+      "name": "警械使用調查小組組織及運作辦法",
+      "type": "direct_external",
+      "basis": "警械使用條例第10條之1第3項",
+      "officialUrl": "https://gazette.nat.gov.tw/egFront/eguploadpubWrapper?file=%2FEG_FileManager%2Feguploadpub%2Feg029070%2Fch02%2Ftype1%2Fgov10%2Fnum2%2FEg.htm",
+      "parent": "警械使用條例",
+      "sourceKind": "official_external",
+      "monitor": "manual-source-watch"
+    },
+    {
+      "id": "weapon_compensation",
+      "name": "警械使用事件補償辦法",
+      "type": "direct_external",
+      "basis": "警械使用條例第11條第4項",
+      "officialUrl": "https://gazette.nat.gov.tw/EG_FileManager/eguploadpub/eg029070/ch02/type1/gov10/num3/Eg.htm",
+      "parent": "警械使用條例",
+      "sourceKind": "official_external",
+      "monitor": "manual-source-watch"
+    },
+    {
+      "id": "weapon_types",
+      "name": "警察機關配備警械種類",
+      "type": "direct_external",
+      "basis": "警械使用條例第1條第2項",
+      "officialUrl": "https://gazette.nat.gov.tw/egFront/eguploadpubWrapper?file=%2FEG_FileManager%2Feguploadpub%2Feg030127%2Fch02%2Ftype1%2Fgov10%2Fnum4%2FEg.htm",
+      "parent": "警械使用條例",
+      "sourceKind": "official_external",
+      "monitor": "manual-source-watch"
+    }
+  ]
+}

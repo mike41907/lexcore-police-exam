@@ -1,0 +1,37 @@
+name: Weekly Legislative Yuan amendment sync
+on:
+  workflow_dispatch:
+  schedule:
+    # Wednesday 20:40 UTC = Thursday 04:40 Asia/Taipei
+    # LY dataset 19 states weekly Thursday 03:30 update.
+    - cron: "40 20 * * 3"
+permissions:
+  contents: write
+concurrency:
+  group: lexcore-data-sync
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm install --no-audit --no-fund
+      - name: Run parser and data tests
+        run: npm test
+      - name: Full sync including Legislative Yuan
+        run: npm run sync:legislative
+      - name: Commit only validated data
+        run: |
+          git config user.name "lexcore-sync-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "chore(data): weekly Legislative Yuan sync"
+            git push
+          fi

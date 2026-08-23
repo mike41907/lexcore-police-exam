@@ -1,0 +1,201 @@
+{
+  "title": "警佐一類警察法規體系",
+  "scopeNote": "核心母法依目前系統既定警佐一類範圍整理；行政執行法、集會遊行法依使用需求暫不納入主範圍。",
+  "groups": [
+    {
+      "parentId": "police_act",
+      "parent": "警察法",
+      "relation": "母法",
+      "children": [
+        {
+          "id": "police_act_rules",
+          "name": "警察法施行細則",
+          "type": "direct",
+          "basis": "警察法第19條",
+          "pcode": "D0080002"
+        }
+      ],
+      "related": [
+        {
+          "id": "police_duty",
+          "name": "警察勤務條例",
+          "type": "related_law",
+          "basis": "警察法制之勤務制度相關獨立法律",
+          "pcode": "D0080026"
+        },
+        {
+          "id": "police_duty_visit",
+          "name": "警察勤務區訪查辦法",
+          "type": "child_of_related",
+          "basis": "警察勤務條例第11條第1款",
+          "pcode": "D0080161"
+        },
+        {
+          "id": "police_personnel",
+          "name": "警察人員人事條例",
+          "type": "related_law",
+          "basis": "公務人員任用法第32條及警察法第3條",
+          "pcode": "S0020005"
+        },
+        {
+          "id": "police_personnel_rules",
+          "name": "警察人員人事條例施行細則",
+          "type": "child_of_related",
+          "basis": "警察人員人事條例第41條",
+          "pcode": "S0020006"
+        },
+        {
+          "id": "police_officer_check",
+          "name": "擬任警察官人員查核辦法",
+          "type": "child_of_related",
+          "basis": "警察人員人事條例第6條第2項",
+          "pcode": "D0080164"
+        },
+        {
+          "id": "police_promotion",
+          "name": "警察人員陞遷辦法",
+          "type": "child_of_related",
+          "basis": "警察人員人事條例第20條第4項",
+          "pcode": "D0080111"
+        },
+        {
+          "id": "guard_police_setup",
+          "name": "各機關學校團體駐衛警察設置管理辦法",
+          "type": "child_of_related",
+          "basis": "警察人員人事條例第40條",
+          "pcode": "D0080106"
+        },
+        {
+          "id": "police_education",
+          "name": "警察教育條例",
+          "type": "related_law",
+          "basis": "警察法第3條及第15條",
+          "pcode": "D0080007"
+        },
+        {
+          "id": "police_advanced_education",
+          "name": "警察人員進修及深造教育實施辦法",
+          "type": "child_of_related",
+          "basis": "警察教育條例第6條",
+          "pcode": "D0080050"
+        },
+        {
+          "id": "police_uniform",
+          "name": "警察服制條例",
+          "type": "related_law",
+          "basis": "警察服制專門法律",
+          "pcode": "D0080036"
+        }
+      ]
+    },
+    {
+      "parentId": "police_power",
+      "parent": "警察職權行使法",
+      "relation": "母法",
+      "children": [
+        {
+          "id": "third_party_data",
+          "name": "警察遴選第三人蒐集資料辦法",
+          "type": "direct",
+          "basis": "警察職權行使法第12條第4項",
+          "pcode": "D0080146"
+        },
+        {
+          "id": "security_concern_visit",
+          "name": "治安顧慮人口查訪辦法",
+          "type": "direct",
+          "basis": "警察職權行使法第15條第3項",
+          "pcode": "D0080147"
+        }
+      ],
+      "related": []
+    },
+    {
+      "parentId": "social",
+      "parent": "社會秩序維護法",
+      "relation": "母法",
+      "children": [
+        {
+          "id": "social_case_rules",
+          "name": "違反社會秩序維護法案件處理辦法",
+          "type": "direct",
+          "basis": "社會秩序維護法第93條第1項",
+          "pcode": "D0080070"
+        },
+        {
+          "id": "confiscated_items",
+          "name": "沒入物品處分規則",
+          "type": "direct",
+          "basis": "社會秩序維護法第93條第2項",
+          "pcode": "D0080071"
+        },
+        {
+          "id": "detention_center",
+          "name": "拘留所設置管理辦法",
+          "type": "direct",
+          "basis": "社會秩序維護法第93條第2項",
+          "pcode": "D0080086"
+        },
+        {
+          "id": "social_court_police_coord",
+          "name": "地方法院與警察機關處理違反社會秩序維護法案件聯繫辦法",
+          "type": "supporting",
+          "basis": "法院與警察機關處理社維案件之聯繫配套",
+          "pcode": "D0080076"
+        }
+      ],
+      "related": []
+    },
+    {
+      "parentId": "police_weapons",
+      "parent": "警械使用條例",
+      "relation": "母法",
+      "children": [
+        {
+          "id": "weapon_investigation",
+          "name": "警械使用調查小組組織及運作辦法",
+          "type": "direct_external",
+          "basis": "警械使用條例第10條之1第3項",
+          "officialUrl": "https://gazette.nat.gov.tw/egFront/eguploadpubWrapper?file=%2FEG_FileManager%2Feguploadpub%2Feg029070%2Fch02%2Ftype1%2Fgov10%2Fnum2%2FEg.htm"
+        },
+        {
+          "id": "weapon_compensation",
+          "name": "警械使用事件補償辦法",
+          "type": "direct_external",
+          "basis": "警械使用條例第11條第4項",
+          "officialUrl": "https://gazette.nat.gov.tw/EG_FileManager/eguploadpub/eg029070/ch02/type1/gov10/num3/Eg.htm"
+        },
+        {
+          "id": "guard_police_weapons",
+          "name": "駐衛警察使用警械管理辦法",
+          "type": "direct",
+          "basis": "警械使用條例第13條第2項",
+          "pcode": "D0080053"
+        },
+        {
+          "id": "weapon_permit",
+          "name": "警械許可定製售賣持有管理辦法",
+          "type": "direct",
+          "basis": "警械使用條例第14條第2項",
+          "pcode": "D0080046"
+        },
+        {
+          "id": "weapon_types",
+          "name": "警察機關配備警械種類",
+          "type": "direct_external",
+          "basis": "警械使用條例第1條第2項",
+          "officialUrl": "https://gazette.nat.gov.tw/egFront/eguploadpubWrapper?file=%2FEG_FileManager%2Feguploadpub%2Feg030127%2Fch02%2Ftype1%2Fgov10%2Fnum4%2FEg.htm"
+        }
+      ],
+      "related": [
+        {
+          "id": "police_service_conscript_weapons",
+          "name": "警察役役男使用警械管理辦法",
+          "type": "related_rule",
+          "basis": "替代役實施條例第58條；使用警械準用警械使用條例",
+          "pcode": "D0040030"
+        }
+      ]
+    }
+  ]
+}

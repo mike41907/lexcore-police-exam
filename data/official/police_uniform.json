@@ -1,0 +1,147 @@
+{
+  "id": "police_uniform",
+  "name": "警察服制條例",
+  "pcode": "D0080036",
+  "fetchedAt": "2026-08-23T10:11:38.478Z",
+  "latest": "2016-04-27",
+  "history": [
+    {
+      "sequence": 7,
+      "date": "2016-04-27",
+      "rocDate": "105/04/27",
+      "rocYear": 105,
+      "raw": "總統華總一義字第 10500035011 號\n令修正公布第 5 條條文",
+      "articles": [
+        "5"
+      ]
+    },
+    {
+      "sequence": 6,
+      "date": "2001-05-30",
+      "rocDate": "90/05/30",
+      "rocYear": 90,
+      "raw": "總統（90）華總一義字第 9000104020 號令\n修正公布第 5 條之附件",
+      "articles": [
+        "5"
+      ]
+    },
+    {
+      "sequence": 5,
+      "date": "1998-10-29",
+      "rocDate": "87/10/29",
+      "rocYear": 87,
+      "raw": "總統（87）華總（一）義字第 8700222\n230 號令修正公布第 6 條條文及第 5 條附件",
+      "articles": [
+        "6",
+        "5"
+      ]
+    },
+    {
+      "sequence": 4,
+      "date": "1987-12-04",
+      "rocDate": "76/12/04",
+      "rocYear": 76,
+      "raw": "總統（76）華總（一）義字第 4008 號令\n修正公布第 6 條條文及第 5 條附件警察制服制式說明書",
+      "articles": [
+        "6",
+        "5"
+      ]
+    },
+    {
+      "sequence": 3,
+      "date": "1977-11-24",
+      "rocDate": "66/11/24",
+      "rocYear": 66,
+      "raw": "總統（66）台統（一）義字第 3935\n號令修正公布全文 8 條",
+      "articles": []
+    },
+    {
+      "sequence": 2,
+      "date": "1947-11-13",
+      "rocDate": "36/11/13",
+      "rocYear": 36,
+      "raw": "國民政府修正公布全文 34 條",
+      "articles": []
+    },
+    {
+      "sequence": 1,
+      "date": "1937-07-02",
+      "rocDate": "26/07/02",
+      "rocYear": 26,
+      "raw": "國民政府第 543 號訓令制定公布全文 39\n條\n\n:::\n\n最新訊息\n\n中央法規\n\n司法解釋\n\n條約協定\n\n兩岸協議\n\n綜合查詢\n\n跨機關檢索\n\n法治宣導專區\n\n智慧查找\n\n法律扶助\n\n創意教案\n\n法律時事漫談\n\n網站使用說明\n\n網站使用手冊\n\n會員服務介紹\n\n網站單元簡介\n\n法規資料檢索範圍\n\n資料更新頻率說明\n\n資訊服務\n\n全國法規連結圖示\n\n全國法規作業要點\n\n法規名稱英譯標準表\n\n相關網站\n\n訂閱電子報\n\n瀏覽人次總計\n\n1,613,092,394人\n\n本月瀏覽人次\n\n11,050,218人\n\n目前使用人次\n\n1,894人\n\n電子報訂閱人數\n\n222,808人\n\n本網站係提供法規之最新動態資訊及資料檢索，並不提供法規及法律諮詢之服務。\n\n若有任何法律上的疑義，建議您可逕向發布法規之主管機關洽詢。\n\n本網站法規資料係由政府各機關提供之電子檔或書面文字登打製作，若與各法規主管機關之公布文字有所不同，仍以各法規主管機關之公布資料為準。\n\n部分資料內容，使用特殊文字或符號，如欲詳閱內容，請連結至司法院網站下載造字檔。\n\n全國法規資料庫之內容每週五定期更新，當週發布之法律、命令資料，將於完成法規整編作業後，於下週五更新上線。\n\n法規整編資料截止日：民國 115 年 08 月 14 日 \n\n瀏覽人次總計：1,613,092,394人\n\n本月瀏覽人次：11,050,218人\n\n目前使用人次：1,894人\n\n電子報訂閱：222,808人\n\n│ 政府網站資料開放宣告 │ 隱私權保護宣告 │ 資訊安全政策 │ Q & A │ 意見回饋 │ API文件 │ \n\n本網站由法務部全國法規資料庫工作小組維運管理...\n\n法務部地址：100204 台北市重慶南路一段130號　電話：(02)2191-0189\n\n第二辦公室地址：100006 台北市貴陽街1段235號　電話：(02)2191-0189\n\n回上方\n\n$(function () {\n\n// === 統一綁定 GA 追蹤事件 ===\n$('.ga-track-link').on('click keypress', function (e) {\n// 如果是鍵盤事件，確認是按下 Enter 鍵 (keyCode 13) 才觸發\nif (e.type === 'keypress' && e.which !== 13) {\nreturn;\n}\n\nvar category = $(this).data('ga-category');\nvar action = $(this).data('ga-action');\n\n// 呼叫原本的 GA 追蹤函數\nif (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice(category, action, '', '');\n}\n});\n\n// 綁定登出確認視窗\n$('.logout-link').on('click', function () {\nif (!confirm('確定登出？')) {\nreturn false; // 若使用者按取消，則不執行跳轉\n}\n});\n\nvar b = 'ONEBAR';\n$(\"#btnSubscribe,#btnUnsubscribe\").on(\"click\", function (event) {\n//var email = $.trim($(\"#txtEMail\").val());\n//if (email == \"\") {\n// event.preventDefault();\n// alert('請您輸入電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else if (false == IsEMail(email)) {\n// event.preventDefault();\n// alert('請您輸入正確電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else {\n// GoogleAnanlytice('中文', '訂閱電子報', '', '');\n//}\nvar email = $.trim($(\"#txtEMail\").val());\n//if (!validateEmail(email)) {\n// alert('請您輸入正確電子郵件地址。');\n// return false;\n//}\n\n});\n$('#btnQall').on(\"click\", function () {\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse if (keyword.indexOf($.trim($(\"#keyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsQall').on(\"click\", function () {\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else {\nGoogleAnanlytice(\"中文\", \"整合查詢-首",
+      "articles": []
+    }
+  ],
+  "windowEvents": [],
+  "articles": {
+    "1": {
+      "text": "警察服制依本條例之規定。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=1&pcode=D0080036",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080036",
+      "fetchedAt": "2026-08-23T10:11:38.478Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "2": {
+      "text": "警察制服分為禮服、常服及便服三種，現任警察人員依規定服用之。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=2&pcode=D0080036",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080036",
+      "fetchedAt": "2026-08-23T10:11:38.478Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "3": {
+      "text": "警察人員服用禮服時間如左：\n一、參加本國或友邦大典及宴會時。\n二、晉謁總統或友邦元首時。\n三、正式訪問或回訪友邦文武官員時。\n四、參加警察各種重要典禮或校閱部隊時。\n前項第四款禮服得以常服代之。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=3&pcode=D0080036",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080036",
+      "fetchedAt": "2026-08-23T10:11:38.478Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "4": {
+      "text": "警察人員平日執行職務及參加集會時，除以服用常服為適當者外，均得服用便服。但因任務需要，得不服用制服。\n依前項規定服用制服時，因氣候寒冷或下雨，得加服大衣或雨衣。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=4&pcode=D0080036",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080036",
+      "fetchedAt": "2026-08-23T10:11:38.478Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "5": {
+      "text": "警察制服式樣及應佩帶之標識，由內政部定之。\n前項警察制服及標識，由各級警察機關統籌製發。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=5&pcode=D0080036",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080036",
+      "fetchedAt": "2026-08-23T10:11:38.478Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "6": {
+      "text": "警察機關行政人員、中央警察大學、警察專科學校及警察學校學員、學生、警察儀隊、警察樂隊、特殊作業之工作人員、警察機關管理之駐衛警察或編訓之義勇警察等人員；其服式、標識與警察人員之雨衣、雨鞋及執行特種勤務之服式，由內政部定之。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=6&pcode=D0080036",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080036",
+      "fetchedAt": "2026-08-23T10:11:38.478Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "7": {
+      "text": "警察服裝換季時間，由內政部警政署依各地氣候季節情形規定之。",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=7&pcode=D0080036",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080036",
+      "fetchedAt": "2026-08-23T10:11:38.478Z",
+      "ok": true,
+      "source": "LawAll"
+    },
+    "8": {
+      "text": "本條例自公布日施行。\n\n:::\n\n最新訊息\n\n中央法規\n\n司法解釋\n\n條約協定\n\n兩岸協議\n\n綜合查詢\n\n跨機關檢索\n\n法治宣導專區\n\n智慧查找\n\n法律扶助\n\n創意教案\n\n法律時事漫談\n\n網站使用說明\n\n網站使用手冊\n\n會員服務介紹\n\n網站單元簡介\n\n法規資料檢索範圍\n\n資料更新頻率說明\n\n資訊服務\n\n全國法規連結圖示\n\n全國法規作業要點\n\n法規名稱英譯標準表\n\n相關網站\n\n訂閱電子報\n\n瀏覽人次總計\n\n1,613,092,397人\n\n本月瀏覽人次\n\n11,050,221人\n\n目前使用人次\n\n1,897人\n\n電子報訂閱人數\n\n222,808人\n\n本網站係提供法規之最新動態資訊及資料檢索，並不提供法規及法律諮詢之服務。\n\n若有任何法律上的疑義，建議您可逕向發布法規之主管機關洽詢。\n\n本網站法規資料係由政府各機關提供之電子檔或書面文字登打製作，若與各法規主管機關之公布文字有所不同，仍以各法規主管機關之公布資料為準。\n\n部分資料內容，使用特殊文字或符號，如欲詳閱內容，請連結至司法院網站下載造字檔。\n\n全國法規資料庫之內容每週五定期更新，當週發布之法律、命令資料，將於完成法規整編作業後，於下週五更新上線。\n\n法規整編資料截止日：民國 115 年 08 月 14 日\n\n瀏覽人次總計：1,613,092,397人\n\n本月瀏覽人次：11,050,221人\n\n目前使用人次：1,897人\n\n電子報訂閱：222,808人\n\n│ 政府網站資料開放宣告 │ 隱私權保護宣告 │ 資訊安全政策 │ Q & A │ 意見回饋 │ API文件 │\n\n本網站由法務部全國法規資料庫工作小組維運管理...\n\n法務部地址：100204 台北市重慶南路一段130號　電話：(02)2191-0189\n\n第二辦公室地址：100006 台北市貴陽街1段235號　電話：(02)2191-0189\n\n回上方\n\n$(function () {\n\n// === 統一綁定 GA 追蹤事件 ===\n$('.ga-track-link').on('click keypress', function (e) {\n// 如果是鍵盤事件，確認是按下 Enter 鍵 (keyCode 13) 才觸發\nif (e.type === 'keypress' && e.which !== 13) {\nreturn;\n}\n\nvar category = $(this).data('ga-category');\nvar action = $(this).data('ga-action');\n\n// 呼叫原本的 GA 追蹤函數\nif (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice(category, action, '', '');\n}\n});\n\n// 綁定登出確認視窗\n$('.logout-link').on('click', function () {\nif (!confirm('確定登出？')) {\nreturn false; // 若使用者按取消，則不執行跳轉\n}\n});\n\nvar b = 'ONEBAR';\n$(\"#btnSubscribe,#btnUnsubscribe\").on(\"click\", function (event) {\n//var email = $.trim($(\"#txtEMail\").val());\n//if (email == \"\") {\n// event.preventDefault();\n// alert('請您輸入電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else if (false == IsEMail(email)) {\n// event.preventDefault();\n// alert('請您輸入正確電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else {\n// GoogleAnanlytice('中文', '訂閱電子報', '', '');\n//}\nvar email = $.trim($(\"#txtEMail\").val());\n//if (!validateEmail(email)) {\n// alert('請您輸入正確電子郵件地址。');\n// return false;\n//}\n\n});\n$('#btnQall').on(\"click\", function () {\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse if (keyword.indexOf($.trim($(\"#keyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsQall').on(\"click\", function () {\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else if (keyword.indexOf($.trim($(\"#msKeyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n//20210217 再檢索收合、展開功能\n$(\"#btnOpen\").click(function () {\nif ($('#ulDeepSearch').hasClass('overflow-hidden')) {\n$(this).html(\"收合\");\n$(this).prop('title', '隱藏部分「再檢索」篩選條件，僅顯示一行');\n$(\"#ulDeepSearch\").removeClass(\"overflow-hidden\").addClass(\"overflow-inherit\");\n}\nelse {\n$(this).html(\"展開\");\n$(this).prop('title', '顯示所有目前「再檢索」篩選條件');\n$(\"#ulDeepSearch\").removeClass(\"overflow-inherit\").addClass(\"overflow-hidden\");\n}\n});\n$(\"#btnHelp\").click(function () {\nOpenKeyWordHelp();\nreturn false;\n});\n// 綁定整合查詢的 Enter 鍵事件\n$('#keyword').keypress(function (e) {\nif (e.which == 13) {\ne.preventDefault();\n$('#btnQall').click();\n}\n});\n// --- 新增：綁定整合查詢的 Enter 鍵事件 (行動版) ---\n$('#msKeyword').keypress(function (e) {\nif (e.which == 13) {\ne.preventDefault();\n$('#btnMsQall').click();\n}\n});\n\n$('#dropdownMenu').attr('data-bs-toggle', 'dropdown');\n$('#unitlist').on(\"click\", \"a\", function (e) {\ne.preventDefault();\nvar $this = $(this).parent();\nvar a = $(this).html();\nb = $this.data(\"value\");\n$this.addClass(\"select\").siblings().removeClass(\"select\");\n$(\"#dropdownMenu\").html(a);\n$('#hidVal').val(b);\n});\n//$('#keyword').on('input propertychange paste keypress', function () {\n// BindAutocomplete('#keyword', b);\n//});\nBindAutocompletes('#keyword', b);\nfunction BindAutocompletes(orl, stype) {\n\n$(orl).autocomplete({\nsource: function (request, response) {\n$.ajax({\nurl: \"../controls/GetTermList.ashx\",\ntype: 'post',\ndataType: \"json\",\ndata: {\nterm: request.term, type: stype\n},\nsuccess: function (data) {\nresponse(data);\n}\n});\n},\nminLength: 1, //至少輸入幾個字元才開始給提示\nfocus: function (event, ui) {\nreturn false;\n},\nselect: function (event, ui) {\nif ($.trim(ui.item.PCODE).length == 0)\n$(this).val(ui.item.TERM);\nelse\nlocation.href = \"../Hot/AddHotLaw.ashx?pcode=\" + encodeURIComponent(ui.item.PCODE);\n\nreturn false;\n},\nmessages: { noResults: '', results: function () { } }//不顯示結果文字\n}).data(\"ui-autocomplete\")._renderItem = function (ul, item) {\nif ($.trim(item.PCODE) != \"\")\nreturn $(\"<li class='line'>\")\n.append(\"<span class='label label-info'>直接連結</span><a>\" + item.TERM + \"</a>\")\n.appendTo(ul);\nelse {\nif (ul.find(\".label-usual\").length == 0)\nreturn $(\"<li>\")\n.append(\"<span class='label label-info label-usual'>常用詞彙</span><a>\" + item.TERM + \"</a>\")\n.appendTo(ul);\nelse\nreturn $(\"<li>\")\n.append(\"<a>\" + item.TERM + \"</a>\")\n.appendTo(ul);\n}\n};\n}\n});\nfunction validateEmail(email) {\nif (email.includes(\"%\")) {\nreturn false;\n}\nreturn true;\n}\nfunction OpenKeyWordHelp() {\nvar a = \"/Service/KeyWordHelp.aspx\";\nTINY.box.show({ iframe: a, width: 810, height: 680 });\n//return false;\n}\nfunction GetRequest() {\nvar url = location.search;\nvar theRequest = new Object();\nif (url.indexOf(\"?\") != -1) {\nvar str = url.substr(1);\nstrs = str.split(\"&\");\nfor (var i = 0; i < strs.length; i++) {\ntheRequest[strs[i].split(\"=\")[0]] = decodeURI(strs[i].split(\"=\")[1]);\n}\n}\nreturn theRequest;\n}\n\n//20210218 再檢索-收合/展開 按鈕判斷顯示時機(若檢索字詞有多行，才要顯示收合/展開，需依照版面尺寸更換條件)\nvar urlParams = GetRequest();\n//var keyword = '';\nvar keyword = urlParams[\"kw\"] ? urlParams[\"kw\"] : \"\";\n\nif (document.body.clientWidth + 17 > 1200) {\nif (keyword != null && keyword.length > 26) {\n$(\"#btnOpen\").removeClass(\"display-none\");\n}\n} else {\nif (keyword != null && keyword.length > 19) {\n$(\"#btnOpen\").removeClass(\"display-none\");\n}\n}\n\n$(function () {\n$('[data-fancybox]').fancybox({\ntoolbar: false,\nsmallBtn: true,\niframe: {\ncss: {\nwidth: '400px',\nheight: '170px'\n}\n}\n});\n});",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=8&pcode=D0080036",
+      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080036",
+      "fetchedAt": "2026-08-23T10:11:38.478Z",
+      "ok": true,
+      "source": "LawAll"
+    }
+  },
+  "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080036",
+  "fullTextOk": true,
+  "fullArticleCount": 8,
+  "fullTextError": null,
+  "source": "https://law.moj.gov.tw/LawClass/LawHistory.aspx?pcode=D0080036"
+}

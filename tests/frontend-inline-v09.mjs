@@ -1,0 +1,339 @@
+
+let DATA={"period": "民國111年至115年", "official_data_cutoff": "115/08/14", "generated": "115/08/23", "stats": {"amendment_dates": 25, "distinct_articles": 131, "constitutional_judgments": 58, "court_by_year": {"111": 20, "112": 20, "113": 11, "114": 1, "115": 6}, "tracked_laws": 8}, "laws": [{"id": "criminal", "name": "中華民國刑法", "pcode": "C0000001", "latest": "115/07/22", "source": "https://law.moj.gov.tw/LawClass/LawHistory.aspx?pcode=C0000001", "events": [{"date": "115/07/22", "articles": "第80條", "note": "修正公布第80條。", "article_ids": ["80"]}, {"date": "115/03/13", "articles": "第79-1條；增訂第78-1、78-2條", "note": "並自115/03/14施行。", "article_ids": ["78-1", "78-2", "79-1"]}, {"date": "114/08/01", "articles": "第286條；增訂第272-1條", "note": "修正及增訂。", "article_ids": ["286", "272-1"]}, {"date": "114/05/28", "articles": "第161條；增訂第161-1、172-1～172-3條及章名", "note": "修正、增訂及新增章名。", "article_ids": ["161", "161-1", "172-1", "172-2", "172-3"]}, {"date": "113/07/31", "articles": "第286條", "note": "修正公布。", "article_ids": ["286"]}, {"date": "113/06/24", "articles": "增訂第141-1條及章名", "note": "增訂。", "article_ids": ["141-1"]}, {"date": "112/12/27", "articles": "第185-3條", "note": "修正公布。", "article_ids": ["185-3"]}, {"date": "112/05/31", "articles": "第303、339-4條；增訂第302-1條", "note": "修正及增訂。", "article_ids": ["303", "339-4", "302-1"]}, {"date": "112/02/08", "articles": "第10、91-1條；增訂第319-1～319-6條及章名", "note": "第91-1條自112/07/01施行，其餘自公布日施行。", "article_ids": ["10", "91-1", "319-1", "319-2", "319-3", "319-4", "319-5", "319-6"]}, {"date": "111/02/18", "articles": "第87、98條", "note": "修正公布。", "article_ids": ["87", "98"]}, {"date": "111/01/28", "articles": "第185-3條", "note": "修正公布。", "article_ids": ["185-3"]}, {"date": "111/01/12", "articles": "第78、79、140、141、266條", "note": "修正公布。", "article_ids": ["78", "79", "140", "141", "266"]}], "distinct_articles": 31, "category": "刑法及刑事訴訟法", "key_articles": ["1", "2", "10", "12", "13", "14", "19", "23", "24", "25", "26", "27", "28", "47", "55", "57", "59", "62", "74", "75-1", "77", "78", "79", "79-1", "80", "185-3", "271", "277", "286", "302-1", "319-1", "320", "321", "339", "339-4"]}, {"id": "cpl", "name": "刑事訴訟法", "pcode": "C0010001", "latest": "115/05/13", "source": "https://law.moj.gov.tw/LawClass/LawHistory.aspx?pcode=C0010001", "events": [{"date": "115/05/13", "articles": "第101-1條", "note": "修正公布。", "article_ids": ["101-1"]}, {"date": "114/11/11", "articles": "第116-2、205-2條；增訂第205-3、205-4條", "note": "修正及增訂。", "article_ids": ["116-2", "205-2", "205-3", "205-4"]}, {"date": "113/07/31", "articles": "第245條；增訂第70-1、153-1～153-10、245-1條及章名", "note": "修正及增訂。", "article_ids": ["245", "70-1", "153-1", "153-2", "153-3", "153-4", "153-5", "153-6", "153-7", "153-8", "153-9", "153-10", "245-1"]}, {"date": "112/12/27", "articles": "第219-3、219-7、257、258、288、385、427、428、430、434、441、442、455-30、476、477條", "note": "修正公布。", "article_ids": ["219-3", "219-7", "257", "258", "288", "385", "427", "428", "430", "434", "441", "442", "455-30", "476", "477"]}, {"date": "112/12/15", "articles": "第27、31、35、93-1、182、186、253-2、294、298條；增訂第298-1條；另修第198、206、208條並增訂第198-1、198-2、211-1條", "note": "同日兩組總統令；部分條文公布後5個月施行。", "article_ids": ["27", "31", "35", "93-1", "182", "186", "253-2", "294", "298", "298-1", "198", "206", "208", "198-1", "198-2", "211-1"]}, {"date": "112/06/21", "articles": "第161、258-1～258-4、259、260、284-1、303、321、323、326、376、406條；增訂第227-1條", "note": "修正及增訂。", "article_ids": ["161", "258-1", "258-2", "258-3", "258-4", "259", "260", "284-1", "303", "321", "323", "326", "376", "406", "227-1"]}, {"date": "112/05/03", "articles": "第67、416條", "note": "修正公布。", "article_ids": ["67", "416"]}, {"date": "111/11/30", "articles": "第481條；增訂第481-1～481-7條", "note": "修正及增訂。", "article_ids": ["481", "481-1", "481-2", "481-3", "481-4", "481-5", "481-6", "481-7"]}, {"date": "111/02/18", "articles": "第316、481條；增訂第121-1～121-6條及章名", "note": "修正及增訂，並自公布日施行。", "article_ids": ["316", "481", "121-1", "121-2", "121-3", "121-4", "121-5", "121-6"]}], "distinct_articles": 81, "category": "刑法及刑事訴訟法", "key_articles": ["27", "31", "33", "35", "71", "88", "88-1", "92", "93", "95", "101", "101-1", "128", "130", "131", "133", "153", "156", "158-4", "205-2", "245", "257", "258-1", "273", "288", "300", "348", "416"]}, {"id": "constlit", "name": "憲法訴訟法", "pcode": "A0030159", "latest": "114/01/23", "source": "https://law.moj.gov.tw/LawClass/LawHistory.aspx?pcode=A0030159", "events": [{"date": "114/01/23", "articles": "第4、30、95條", "note": "修正公布並自公布日施行；後續受114年憲判字第1號判決影響。", "linked_case": "114年憲判字第1號", "article_ids": ["4", "30", "95"]}, {"date": "112/06/21", "articles": "第1、33、53、59、63、95條", "note": "修正公布；司法院命令自112/07/07施行。", "article_ids": ["1", "33", "53", "59", "63", "95"]}], "distinct_articles": 8, "category": "憲法延伸", "key_articles": ["4", "30", "43", "59", "61", "62", "63", "95"]}, {"id": "social", "name": "社會秩序維護法", "pcode": "D0080067", "latest": "114/06/11", "source": "https://law.moj.gov.tw/LawClass/LawHistory.aspx?pcode=D0080067", "events": [{"date": "114/06/11", "articles": "第9、64、72、89條", "note": "修正公布。", "article_ids": ["9", "64", "72", "89"]}], "distinct_articles": 4, "category": "警察法規", "key_articles": ["7", "9", "42", "43", "45", "64", "72", "87", "89"]}, {"id": "police_act", "name": "警察法", "short": "警察法", "pcode": "D0080001", "latest": "91/06/12", "source": "https://law.moj.gov.tw/LawClass/LawHistory.aspx?pcode=D0080001", "category": "警察法規", "events": [], "distinct_articles": 0, "no_recent": "民國111～115年無修法；目前最新修正為民國91年6月12日。", "key_articles": ["1", "2", "3", "4", "5", "9", "11", "15", "19"], "study_note": "近五年雖無修法，但第2條警察任務、第3條中央與地方立法權限、第9條警察職權，是警察法規基本骨架。"}, {"id": "police_power", "name": "警察職權行使法", "short": "警職法", "pcode": "D0080145", "latest": "100/04/27", "source": "https://law.moj.gov.tw/LawClass/LawHistory.aspx?pcode=D0080145", "category": "警察法規", "events": [], "distinct_articles": 0, "no_recent": "民國111～115年無修法；目前最新修正為民國100年4月27日。", "key_articles": ["2", "3", "4", "6", "7", "8", "9", "11", "12", "15", "19", "20", "21", "22", "23", "29", "30", "31"], "study_note": "近五年無修法，但屬警佐班高頻核心：比例原則、身分查證、攔停、資料蒐集、管束、異議、國賠及損失補償。"}, {"id": "police_weapons", "name": "警械使用條例", "short": "警械條例", "pcode": "D0080042", "latest": "111/10/19", "source": "https://law.moj.gov.tw/LawClass/LawHistory.aspx?pcode=D0080042", "category": "警察法規", "events": [{"date": "111/10/19", "articles": "第1、4、11條；增訂第10-1～10-3條；刪除第12條", "note": "近五年警察法規中最重要的修法之一：新增危急情形逕行射擊、非制式物品視為警械、調查小組及第三人補償等制度。", "article_ids": ["1", "4", "10-1", "10-2", "10-3", "11", "12"]}], "distinct_articles": 7, "key_articles": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "10-1", "10-2", "10-3", "11", "13", "14"], "study_note": "111年重大修法必讀，尤其第4條逕行射擊、第10-1～10-3條調查與補償制度、第11條國賠／補償分流。"}, {"id": "police_duty", "name": "警察勤務條例", "short": "警察勤務", "pcode": "D0080026", "latest": "97/07/02", "source": "https://law.moj.gov.tw/LawClass/LawHistory.aspx?pcode=D0080026", "category": "警察勤務", "events": [], "distinct_articles": 0, "no_recent": "民國111～115年無修法；目前最新修正為民國97年7月2日。", "key_articles": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29"], "study_note": "警佐班一類「警察勤務」獨立一科，含警察勤務條例。第11條六種勤務方式、第12條勤務執行方式、第15條勤務時間等應另外做重點整理。"}], "court": [{"no": "115年憲判字第6號", "date": "115/08/14", "title": "被害人為兒少之性犯罪追訴權時效案", "links": ["刑法第80條"], "summary": "涉及94年修正前刑法第80條追訴權時效規定；屬刑法追訴權時效的重要憲法判決。", "url": "https://cons.judicial.gov.tw/docdata.aspx?fid=77&id=360619", "importance": 5}, {"no": "115年憲判字第5號", "date": "115/06/05", "title": "犯最重本刑為死刑之罪的追訴權時效變更案", "links": ["刑法第80條", "刑法施行法第8條之2"], "summary": "刑法施行法第8條之2對追訴權時效已進行而未完成者之適用，憲法法庭認無涉真正溯及既往，亦未違反信賴保護原則。", "url": "https://cons.judicial.gov.tw/docdata.aspx?fid=77&id=360063", "importance": 5}, {"no": "115年憲判字第4號", "date": "115/05/08", "title": "刑事訴訟上訴不可分原則適用範圍案", "links": ["刑事訴訟法第348條", "刑事訴訟法第300條"], "summary": "聚焦110年修正前刑訴法第348條第2項之上訴不可分原則與被告訴訟權保障。", "url": "https://cons.judicial.gov.tw/docdata.aspx?fid=77&id=359760", "importance": 5}, {"no": "115年憲判字第3號", "date": "115/03/27", "title": "少年保護事件禁止再行移送案", "links": ["少年事件處理法第15條"], "summary": "判決認一概禁止受移送法院再行移送之規定，在特定範圍違憲，並要求2年內完成修法。", "url": "https://cons.judicial.gov.tw/docdata.aspx?fid=77&id=359360", "importance": 4}, {"no": "115年憲判字第2號", "date": "115/02/06", "title": "違反全民健康保險法扣費義務之裁罰案", "links": ["全民健康保險法"], "summary": "行政罰與健保扣費義務案件；非第一階段四部核心法律，但保留於憲法法庭總索引。", "url": "https://cons.judicial.gov.tw/judcurrentNew1.aspx?fid=38", "importance": 3}, {"no": "115年憲判字第1號", "date": "115/01/02", "title": "辯護人對羈押處分提起準抗告案", "links": ["刑事訴訟法第416條", "刑事訴訟法第419條", "刑事訴訟法第346條"], "summary": "辯護人除與被告明示意思相反外，得為被告利益對羈押處分聲請撤銷或變更；屬刑訴強制處分與救濟的重要考點。", "url": "https://cons.judicial.gov.tw/docdata.aspx?fid=77&id=358181", "importance": 5}, {"no": "114年憲判字第1號", "date": "114/12/19", "title": "憲法訴訟法修正案", "links": ["憲法訴訟法第4條", "憲法訴訟法第30條", "憲法訴訟法第95條"], "summary": "114年1月23日修正之部分憲法訴訟法規定遭判決認定違憲並失效；修正前第95條繼續適用。", "url": "https://cons.judicial.gov.tw/judcurrentNew1.aspx?fid=38", "importance": 5}], "scope_note": "依警佐班一類使用需求：警察法規只納入警察法、社會秩序維護法、警械使用條例、警察職權行使法；另納入警察勤務條例。行政執行法、集會遊行法、警察人員人事條例不列入目前主範圍。"}, DETAILS={"criminal:80": {"law_id": "criminal", "law_name": "中華民國刑法", "article": "80", "amend_date": "115/07/22", "status": "完整對照", "status_type": "good", "current": "追訴權，因下列期間內未起訴而消滅：\n一、犯最重本刑為死刑、無期徒刑或十年以上有期徒刑之罪者，三十年。但發生死亡結果者，不在此限。\n二、犯最重本刑為三年以上十年未滿有期徒刑之罪者，二十年。\n三、犯最重本刑為一年以上三年未滿有期徒刑之罪者，十年。\n四、犯最重本刑為一年未滿有期徒刑、拘役或罰金之罪者，五年。\n前項期間自犯罪成立之日起算。但犯罪行為有繼續之狀態者，自行為終了之日起算。\n犯第二百二十一條至第二百二十七條、第二百二十八條、第二百二十九條、第三百三十二條第二項第二款、第三百三十四條第二項第二款或第三百四十八條第二項第一款之罪者，於被害人滿二十歲前，不計入第一項期間。", "previous": "追訴權，因下列期間內未起訴而消滅：\n一、犯最重本刑為死刑、無期徒刑或十年以上有期徒刑之罪者，三十年。但發生死亡結果者，不在此限。\n二、犯最重本刑為三年以上十年未滿有期徒刑之罪者，二十年。\n三、犯最重本刑為一年以上三年未滿有期徒刑之罪者，十年。\n四、犯最重本刑為一年未滿有期徒刑、拘役或罰金之罪者，五年。\n前項期間自犯罪成立之日起算。但犯罪行為有繼續之狀態者，自行為終了之日起算。", "changes": ["新增第3項", "特定性犯罪：被害人滿20歲前不計入追訴權時效", "第1、2項未變動"], "memory": "兒少性犯罪追訴時效：先等被害人滿20歲，再把這段時間排除計算。", "reason": "本次修法著眼於兒少性犯罪的隱密性與創傷特性。年幼被害人可能因身心未成熟、權力不對等、對權利認識不足或創傷反應，而無法即時揭露或求助；若照一般規則計算，等被害人成年後準備追訴時，可能已接近或超過時效。因此針對條文列舉的性犯罪，將被害人滿20歲前的期間排除於追訴權時效計算之外，以增加日後尋求刑事救濟的實際可能性。", "reason_label": "官方修正理由摘要", "exam": ["注意是「滿20歲前不計入」而非把所有性犯罪追訴時效一律延長固定年數。", "只適用條文列舉的特定犯罪。", "容易和刑法第80條第1項各罪時效年限一起出題。"], "official": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=80&pcode=C0000001", "reason_url": "https://mojlaw.moj.gov.tw/LawContentReason.aspx?LSID=FL001424&LawNo=80"}, "cpl:101-1": {"law_id": "cpl", "law_name": "刑事訴訟法", "article": "101-1", "amend_date": "115/05/13", "status": "完整對照", "status_type": "good", "current": "被告經法官訊問後，認為犯下列各款之罪，其嫌疑重大，有事實足認為有反覆實行同一犯罪之虞，而有羈押之必要者，得羈押之：\n一、刑法第一百七十三條第一項、第三項、第一百七十四條第一項、第二項、第四項、第一百七十五條第一項、第二項之放火罪、第一百七十六條之準放火罪、第一百八十五條之一之劫持交通工具罪、第一百八十五條之三不能安全駕駛罪。\n二、刑法第二百二十一條之強制性交罪、第二百二十二條之加重強制性交罪、第二百二十四條之強制猥褻罪、第二百二十四條之一之加重強制猥褻罪、第二百二十五條之乘機性交猥褻罪、第二百二十六條之一之強制性交猥褻之結合罪、第二百二十七條之與幼年男女性交或猥褻罪、第二百七十一條第一項、第二項之殺人罪、第二百七十二條之殺直系血親尊親屬罪、第二百七十二條之一之殺幼童罪、第二百七十七條第一項之傷害罪、第二百七十八條第一項之重傷罪、第二百八十六條之凌虐或妨害未成年人健康發育罪、第三百十九條之一之妨害性影像罪、第三百十九條之二之加重妨害性影像罪、第三百十九條之三之供人觀覽性影像罪、第三百十九條之四之製作不實性影像罪、兒童及少年性剝削防制條例第三十六條第一項至第五項、第三十八條第一項、第三項、第四項之罪、性騷擾防治法第二十五條第一項之罪。但其須告訴乃論，而未經告訴或其告訴已經撤回或已逾告訴期間者，不在此限。\n三、刑法第二百九十六條之一之買賣人口罪、第二百九十九條之移送被略誘人出國罪、第三百零二條、第三百零二條之一之妨害自由罪。\n四、刑法第三百零四條之強制罪、第三百零五條之恐嚇危害安全罪。\n五、刑法第三百二十條、第三百二十一條之竊盜罪。\n六、刑法第三百二十五條、第三百二十六條之搶奪罪、第三百二十八條第一項、第二項、第四項之強盜罪、第三百三十條之加重強盜罪、第三百三十二條之強盜結合罪、第三百三十三條之海盜罪、第三百三十四條之海盜結合罪。\n七、刑法第三百三十九條、第三百三十九條之三之詐欺罪、第三百三十九條之四之加重詐欺罪、詐欺犯罪危害防制條例第四十三條、第四十四條之罪。\n八、刑法第三百四十六條之恐嚇取財罪、第三百四十七條第一項、第三項之擄人勒贖罪、第三百四十八條之擄人勒贖結合罪、第三百四十八條之一之準擄人勒贖罪。\n九、槍砲彈藥刀械管制條例第七條、第八條、第九條之一、第十二條、第十三條、第十三條之一之罪。\n十、毒品危害防制條例第四條第一項至第四項之罪。\n十一、人口販運防制法第三十二條之罪。\n十二、組織犯罪防制條例第三條第一項前段之罪。\n前條第二項至第四項之規定，於前項情形準用之。", "previous": "被告經法官訊問後，認為犯下列各款之罪，其嫌疑重大，有事實足認為有反覆實行同一犯罪之虞，而有羈押之必要者，得羈押之：\n一、刑法第一百七十三條第一項、第三項、第一百七十四條第一項、第二項、第四項、第一百七十五條第一項、第二項之放火罪、第一百七十六條之準放火罪、第一百八十五條之一之劫持交通工具罪。\n二、刑法第二百二十一條之強制性交罪、第二百二十二條之加重強制性交罪、第二百二十四條之強制猥褻罪、第二百二十四條之一之加重強制猥褻罪、第二百二十五條之乘機性交猥褻罪、第二百二十六條之一之強制性交猥褻之結合罪、第二百二十七條之與幼年男女性交或猥褻罪、第二百七十一條第一項、第二項之殺人罪、第二百七十二條之殺直系血親尊親屬罪、第二百七十七條第一項之傷害罪、第二百七十八條第一項之重傷罪、性騷擾防治法第二十五條第一項之罪。但其須告訴乃論，而未經告訴或其告訴已經撤回或已逾告訴期間者，不在此限。\n三、刑法第二百九十六條之一之買賣人口罪、第二百九十九條之移送被略誘人出國罪、第三百零二條之妨害自由罪。\n四、刑法第三百零四條之強制罪、第三百零五條之恐嚇危害安全罪。\n五、刑法第三百二十條、第三百二十一條之竊盜罪。\n六、刑法第三百二十五條、第三百二十六條之搶奪罪、第三百二十八條第一項、第二項、第四項之強盜罪、第三百三十條之加重強盜罪、第三百三十二條之強盜結合罪、第三百三十三條之海盜罪、第三百三十四條之海盜結合罪。\n七、刑法第三百三十九條、第三百三十九條之三之詐欺罪、第三百三十九條之四之加重詐欺罪。\n八、刑法第三百四十六條之恐嚇取財罪、第三百四十七條第一項、第三項之擄人勒贖罪、第三百四十八條之擄人勒贖結合罪、第三百四十八條之一之準擄人勒贖罪。\n九、槍砲彈藥刀械管制條例第七條、第八條之罪。\n十、毒品危害防制條例第四條第一項至第四項之罪。\n十一、人口販運防制法第三十四條之罪。\n前條第二項至第四項之規定，於前項情形準用之。", "changes": ["新增不能安全駕駛罪", "擴增殺幼童、兒虐、妨害性影像與兒少性剝削犯罪", "擴增詐欺犯罪危害防制條例、槍砲相關罪、組織犯罪", "人口販運防制法條號配合調整"], "memory": "101-1 = 預防性羈押；115年重點不是改羈押三要件，而是「擴大列舉罪名」。", "reason": "本次修法核心在擴充預防性羈押的適用罪名。立法院審議資料顯示，詐欺、妨害性隱私／性自主、兒少性剝削及組織犯罪等被認為具有較高再犯風險或重大社會安全影響，因此納入第101條之1列舉；並加入不能安全駕駛、殺幼童、兒虐及更多槍砲犯罪。原本的基本門檻仍是：嫌疑重大、有反覆實行同一犯罪之虞、且有羈押必要。", "reason_label": "三讀審查脈絡摘要", "exam": ["最容易考『哪一罪新增進預防性羈押』。", "不要把第101條一般羈押原因與101-1預防性羈押混在一起。", "115年修法後新增第12款組織犯罪防制條例第3條第1項前段。"], "official": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=101-1&pcode=C0010001", "reason_url": "https://ppg.ly.gov.tw/ppg/bills/latest-second-reading/203110192110000/details"}, "constlit:4": {"law_id": "constlit", "law_name": "憲法訴訟法", "article": "4", "amend_date": "114/01/23", "status": "憲判後部分失效", "status_type": "danger", "current": "憲法法庭審理規則，由司法院定之。\n前項規則，由全體大法官議決之。\n大法官因任期屆滿、辭職、免職或死亡，以致人數未達中華民國憲法增修條文第五條第一項所定人數時，總統應於二個月內補足提名。", "previous": "憲法法庭審理規則，由司法院定之。\n前項規則，由全體大法官議決之。", "changes": ["114/1/23新增第3項：大法官不足15人時，總統2個月內補足提名", "114/12/19經114年憲判字第1號宣告第3項失效"], "memory": "第4條第3項：『不足15人→2個月提名』曾修入，但114憲判1已判失效。", "reason": "114年修法新增總統補足大法官提名的期限規範；但憲法法庭於114年12月19日認該次修法相關規定的立法程序有明顯重大瑕疵，且違反權力分立原則，自判決公告日起失效。", "reason_label": "修法目的＋憲判效果", "exam": ["一定要同時記『修了什麼』與『後來失效』。", "單看全國法規資料庫公布文字，可能誤以為第3項仍有效；考題應以憲判後法律狀態判斷。"], "official": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=4&pcode=A0030159", "reason_url": "https://cons.judicial.gov.tw/docdata.aspx?fid=38&id=355485"}, "constlit:30": {"law_id": "constlit", "law_name": "憲法訴訟法", "article": "30", "amend_date": "114/01/23", "status": "第2～6項已失效", "status_type": "danger", "current": "判決，除本法別有規定外，應經大法官現有總額三分之二以上參與評議，大法官現有總額過半數同意。\n前項參與評議之大法官人數不得低於十人。作成違憲之宣告時，同意違憲宣告之大法官人數不得低於九人。\n參與人數未達前項規定，無法進行評議時，得經大法官現有總額過半數同意，為不受理之裁定。\n前二項參與人數與同意人數之規定，於憲法法庭依第四十三條為暫時處分之裁定、依第七十五條宣告彈劾成立、依第八十條宣告政黨解散時，適用之。\n依本法第十二條迴避之大法官人數超過七人以上時，未迴避之大法官應全體參與評議，經四分之三同意始得作成判決或裁定；第二項之規定不適用之。\n前項未迴避之大法官人數低於七人時，不得審理案件。", "previous": "判決，除本法別有規定外，應經大法官現有總額三分之二以上參與評議，大法官現有總額過半數同意。", "changes": ["114年新增最低10人參與、違憲宣告至少9人等門檻", "另規範人數不足、不受理、迴避及特定裁定之門檻", "114年憲判字第1號宣告第2項至第6項失效；第1項不受影響"], "memory": "第30條考試記法：原本第1項還在；114年新增的『10人／9人』等第2～6項，後來全失效。", "reason": "114年修法企圖增加憲法法庭判決與違憲宣告的最低參與、同意人數及特殊迴避規則；114年憲判字第1號認該次立法程序有明顯重大瑕疵，並涉及權力分立問題，宣告新增第2項至第6項自判決公告日起失效。", "reason_label": "修法目的＋憲判效果", "exam": ["『10人參與、9人違憲』現在不能當成有效門檻背。", "第30條第1項原本的2/3參與、現有總額過半同意並未被114憲判1宣告失效。"], "official": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=30&pcode=A0030159", "reason_url": "https://cons.judicial.gov.tw/docdata.aspx?fid=38&id=355485"}, "constlit:95": {"law_id": "constlit", "law_name": "憲法訴訟法", "article": "95", "amend_date": "114/01/23", "status": "114修文已失效", "status_type": "danger", "current": "一百十三年十二月二十日修正之條文，自公布日起施行。", "previous": "本法自公布後三年施行。\n本法修正條文施行日期，由司法院以命令定之。", "changes": ["114年改成此次修正條文自公布日施行", "114年憲判字第1號宣告此114年修文失效", "判決明示114年修正前第95條繼續適用"], "memory": "第95條最重要不是文字本身，而是：114修文失效 → 修正前第95條繼續適用。", "reason": "第95條原本由司法院另定修正條文施行日期；114年修法改成113年12月20日修正條文自公布日起施行。114年憲判字第1號後，這個114年版本失效，判決並明確指出修正前第95條繼續適用。", "reason_label": "修法＋憲判效果", "exam": ["這是一個典型『法規資料庫文字 ≠ 最終有效狀態必須再看憲判』的案例。"], "official": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=95&pcode=A0030159", "reason_url": "https://cons.judicial.gov.tw/docdata.aspx?fid=38&id=355485"}, "social:9": {"law_id": "social", "law_name": "社會秩序維護法", "article": "9", "amend_date": "114/06/11", "status": "完整對照", "status_type": "good", "current": "下列各款之人之行為，得減輕處罰：\n一、十四歲以上未滿十八歲人。\n二、滿七十歲人。\n三、精神耗弱或未滿七歲即有聽覺且語言障礙者。\n前項第一款之人，於處罰執行完畢後，得責由其法定代理人或其他相當之人加以管教。\n第一項第三款之人，於處罰執行完畢後，得責由其監護人加以監護；無人監護或不能監護時，得送交療養處所監護或治療。", "previous": "左列各款之人之行為，得減輕處罰：\n一、十四歲以上未滿十八歲人。\n二、滿七十歲人。\n三、精神耗弱或瘖啞人。\n前項第一款之人，於處罰執行完畢後，得責由其法定代理人或其他相當之人加以管教。\n第一項第三款之人，於處罰執行完畢後，得責由其監護人加以監護；無人監護或不能監護時，得送交療養處所監護或治療。", "changes": ["「左列」改「下列」", "「瘖啞人」改為「未滿七歲即有聽覺且語言障礙者」"], "memory": "社維9：減輕處罰第三類＝精神耗弱，或7歲前即有『聽覺＋語言』障礙。", "reason": "修法針對舊稱「瘖啞人」的文字現代化與明確化。委員會討論中特別聚焦於如何把原先概念改寫成較具體、較不具標籤性的條件，最後採「未滿七歲即有聽覺且語言障礙者」。", "reason_label": "立法審議理由摘要", "exam": ["不是所有聽覺障礙或語言障礙都當然符合；條文是『未滿七歲即有聽覺且語言障礙』。"], "official": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=9&pcode=D0080067", "reason_url": "https://ppg.ly.gov.tw/ppg/PublicationBulletinDetail/download/communique1/final/pdf/114/41/LCIDC01_1144101.pdf"}, "social:64": {"law_id": "social", "law_name": "社會秩序維護法", "article": "64", "amend_date": "114/06/11", "status": "完整對照", "status_type": "good", "current": "有下列各款行為之一者，處三日以下拘留或新臺幣三萬元以下罰鍰：\n一、意圖滋事，於公園、車站、輪埠、航空站或其他公共場所，任意聚眾，有妨害公共秩序之虞，已受該管公務員解散命令，而不解散者。\n二、非供自用，購買運輸、遊樂票券而轉售圖利者。\n三、車、船、旅店服務人員或搬運工人或其他接待人員，糾纏旅客或強行攬載者。\n四、交通運輸從業人員，於約定報酬後，強索增加，或中途刁難或雖未約定，事後故意訛索，超出慣例者。\n五、主持、操縱或參加不良組織有危害社會秩序者。", "previous": "有左列各款行為之一者，處三日以下拘留或新臺幣一萬八千元以下罰鍰：\n一、意圖滋事，於公園、車站、輪埠、航空站或其他公共場所，任意聚眾，有妨害公共秩序之虞，已受該管公務員解散命令，而不解散者。\n二、非供自用，購買運輸、遊樂票券而轉售圖利者。\n三、車、船、旅店服務人員或搬運工人或其他接待人員，糾纏旅客或強行攬載者。\n四、交通運輸從業人員，於約定報酬後，強索增加，或中途刁難或雖未約定，事後故意訛索，超出慣例者。\n五、主持、操縱或參加不良組織有危害社會秩序者。", "changes": ["罰鍰上限18,000元 → 30,000元", "「左列」改「下列」", "五款構成要件內容未改"], "memory": "社維64：內容大致不動，115考前記金額『1萬8 → 3萬』。", "reason": "本次三讀結果主要提高罰鍰上限，並作法制用語調整；各款行為類型本身沒有實質增刪。系統把『構成要件未改、法律效果變重』獨立標示，避免只背全文看不出修法重點。", "reason_label": "三讀變動理由整理", "exam": ["最容易用舊罰鍰1萬8千元設陷阱。"], "official": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=64&pcode=D0080067", "reason_url": "https://www.president.gov.tw/Page/294/49902"}, "social:72": {"law_id": "social", "law_name": "社會秩序維護法", "article": "72", "amend_date": "114/06/11", "status": "完整對照", "status_type": "good", "current": "有下列各款行為之一者，處新臺幣一萬元以下罰鍰：\n一、於公共場所或公眾得出入之場所，酗酒滋事、謾罵喧鬧，不聽禁止者。\n二、製造噪音或深夜喧嘩，妨害公眾安寧，不聽禁止者。\n三、無正當理由，擅吹警笛或擅發其他警號者。", "previous": "有左列各款行為之一者，處新臺幣六千元以下罰鍰：\n一、於公共場所或公眾得出入之場所，酗酒滋事、謾罵喧鬧，不聽禁止者。\n二、無正當理由，擅吹警笛或擅發其他警號者。\n三、製造噪音或深夜喧嘩，妨害公眾安寧者。", "changes": ["罰鍰上限6,000元 → 10,000元", "噪音／深夜喧嘩由第3款移至第2款", "噪音／深夜喧嘩新增『不聽禁止』要件", "警笛／警號移至第3款"], "memory": "社維72新制：噪音不是只要妨害安寧就罰，條文明列還要『不聽禁止』。", "reason": "修法除提高罰鍰上限外，也重新排列第2、3款，並在『製造噪音或深夜喧嘩、妨害公眾安寧』後加入『不聽禁止』，使構成要件更清楚。這個文字變化比單純金額更值得背。", "reason_label": "三讀變動理由整理", "exam": ["舊法噪音款沒有『不聽禁止』文字；新法有。", "金額由6千提高為1萬元。"], "official": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=72&pcode=D0080067", "reason_url": "https://www.president.gov.tw/Page/294/49902"}, "social:89": {"law_id": "social", "law_name": "社會秩序維護法", "article": "89", "amend_date": "114/06/11", "status": "完整對照", "status_type": "good", "current": "有下列各款行為之一者，處新臺幣三萬元以下罰鍰或申誡：\n一、無正當理由，為人施催眠術或施以藥物者。\n二、無正當理由，跟追他人，經勸阻不聽者。", "previous": "有左列各款行為之一者，處新臺幣三千元以下罰鍰或申誡：\n一、無正當理由，為人施催眠術或施以藥物者。\n二、無正當理由，跟追他人，經勸阻不聽者。", "changes": ["罰鍰上限3,000元 → 30,000元（10倍）", "「左列」改「下列」", "兩款構成要件未改"], "memory": "社維89最醒目：3千 → 3萬，直接10倍；跟追仍要『無正當理由＋勸阻不聽』。", "reason": "本次修法對第89條的最主要效果是大幅提高罰鍰上限，兩款違序行為的構成要件維持不變。記憶時應把『處罰效果加重』與『跟追要件未改』拆開。", "reason_label": "三讀變動理由整理", "exam": ["金額是最典型新舊法陷阱。", "第2款仍要求經勸阻不聽。"], "official": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=89&pcode=D0080067", "reason_url": "https://www.president.gov.tw/Page/294/49902"}, "police_weapons:1": {"law_id": "police_weapons", "law_name": "警械使用條例", "article": "1", "amend_date": "111/10/19", "status": "完整對照", "status_type": "good", "current": "警察人員執行職務時得依本條例使用警械；使用時應著制服或出示足資識別之警徽或執行職務之證明文件，但情況急迫時，不在此限。\n前項警械，包含警棍、警刀、槍械及其他器械；其種類，由內政部定之。", "previous": "警察人員執行職務時，所用警械為棍、刀、槍及其他經核定之器械。\n警察人員依本條例使用警械時，須依規定穿著制服，或出示足資識別之警徽或身分證件。但情況急迫時，不在此限。\n第一項警械之種類及規格，由行政院定之。", "changes": ["「身分證件」改為「執行職務之證明文件」", "警械種類改由內政部定之", "刪除「警械規格由行政院定之」之舊制文字"], "memory": "警械1：執勤身分識別＋警械種類；111年後警械種類由內政部定。", "reason": "修法調整員警執勤身分識別文字，並把警械種類的規範權責改由內政部處理，以利依警察勤務實際需求調整。", "reason_label": "立法理由摘要", "exam": ["情況急迫仍是制服或出示證明文件義務的例外。", "警械種類主管機關是內政部。"], "official": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=1&pcode=D0080042", "reason_url": "https://www.president.gov.tw/Page/294/48515"}, "police_weapons:4": {"law_id": "police_weapons", "law_name": "警械使用條例", "article": "4", "amend_date": "111/10/19", "status": "重大修法", "status_type": "good", "current": "警察人員執行職務時，遇有本條第一項各款情形之一者，得使用警刀或槍械。\n111年修法並新增：第一項第四款、第五款情形，無法有效使用警械時，得使用其他足以達成目的之物品，該物品於使用時視為警械。\n另明定犯罪嫌疑人或行為人以致命性武器、危險物品或交通工具攻擊、持有致命性武器意圖攻擊、意圖奪取員警配槍或其他危及生命身體且情況急迫等情形，得使用槍械逕行射擊。", "previous": "修法前第4條主要規定得使用警刀或槍械之七款情形，並僅規定必要時得併使用其他經核定之器械；尚無現行第3項「其他物品視為警械」及第4項「逕行射擊」的明文制度。", "changes": ["新增第3項：特定危急情形下，其他足以達成目的之物品於使用時視為警械", "新增第4項：明列4類危及警察或他人生命、身體時得逕行射擊情形", "原有可使用警刀／槍械的基本類型大致保留"], "memory": "警械4拆成兩層背：何時能用刀槍；什麼急迫情況可以直接射擊。", "reason": "修法回應第一線員警面對突發致命危險時，現有警械可能不足或無法立即有效使用的問題，因此將其他物品視為警械及逕行射擊情形明文化，讓現場判斷有更明確的法律依據。", "reason_label": "立法理由摘要", "exam": ["第3項是『於使用時視為警械』。", "第4項四種逕行射擊情形是高頻考點。", "仍要搭配第6條比例、必要性與避免傷及無辜的限制一起判斷。"], "official": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=4&pcode=D0080042", "reason_url": "https://www.president.gov.tw/Page/294/48515"}, "police_weapons:11": {"law_id": "police_weapons", "law_name": "警械使用條例", "article": "11", "amend_date": "111/10/19", "status": "完整對照", "status_type": "good", "current": "警察人員執行職務違反本條例規定使用警械，致侵害人民自由或權利時，依國家賠償法規定辦理。\n前項情形，為警察人員出於故意之行為所致者，賠償義務機關得向其求償。\n警察人員依本條例規定使用警械，致第三人生命、身體或財產遭受損失時，第三人得請求補償。但有可歸責該第三人之事由時，得減輕或免除其金額。\n前項補償項目、基準、程序及其他相關事項之辦法，由內政部定之。", "previous": "修法前將合法或違法使用警械造成第三人受傷、死亡或財產損失的醫療費、慰撫金、補償金或喪葬費集中於同一條處理；對違法使用警械與合法執勤造成第三人特別犧牲，尚未形成現行清楚的國賠／補償分流。", "changes": ["違法使用警械造成權利侵害：回歸國家賠償法", "故意違法：賠償義務機關得向員警求償", "合法使用警械造成第三人損失：建立第三人補償制度"], "memory": "警械11：違法使用＝國賠；合法使用但傷到無辜第三人＝補償。", "reason": "修法把違法執勤的國家賠償與合法執勤造成第三人特別犧牲的補償制度分開，使責任結構更清楚，同時兼顧依法執勤員警與無辜第三人的權利。", "reason_label": "立法理由摘要", "exam": ["先分清楚『賠償』與『補償』。", "第三人有可歸責事由時，補償得減輕或免除。"], "official": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=11&pcode=D0080042", "reason_url": "https://www.president.gov.tw/Page/294/48515"}}, COURT_STUDY={"115年憲判字第1號": {"verdict": "合憲性解釋＋原裁定廢棄", "verdict_type": "green", "exam": 5, "practice": 5, "category": "刑事訴訟", "memory": "辯護人原則上可以替被告對『羈押處分』提準抗告；只有被告明示反對時不行。", "issue": "刑事訴訟法第416條第1項第1款只寫「受處分人」得對羈押處分聲請撤銷或變更，辯護人是否也能為被告利益提起準抗告？", "holding": ["刑訴第416條第1項第1款仍應透過第419條準用第346條關於上訴權人的規定。", "因此，辯護人除與被告明示意思相反外，得為被告利益對羈押處分聲請撤銷或變更。", "原因案件否定辯護人此項權利的確定終局裁定違憲，予以廢棄並發回。"], "reasons": ["羈押是裁判確定前對人身自由干預最強的強制處分，救濟保障必須特別充分。", "受羈押被告與外界隔離，自行蒐集法律資訊、撰寫救濟書狀及行使防禦權均有重大困難。", "辯護人既可對法院作成的羈押裁定為被告利益抗告，就沒有理由對審判長、受命或受託法官作成的羈押處分完全排除辯護人準抗告。", "抗告與第416條準抗告的救濟功能並無本質差異。"], "impact": "實務上確認辯護人具有羈押準抗告權。讀刑訴時應把第416條、第419條、第346條串在一起。", "exam_tips": ["考點不是『辯護人永遠都可以』，而是「除與被告明示意思相反外」。", "注意區分法院羈押裁定的抗告與審判長、受命／受託法官羈押處分的準抗告。", "核心憲法權利：憲法第8條人身自由＋第16條訴訟權。"], "related": ["刑事訴訟法第416條", "刑事訴訟法第419條", "刑事訴訟法第346條", "憲法第8條", "憲法第16條"], "source": "https://cons.judicial.gov.tw/docdata.aspx?fid=5304&id=350743"}, "115年憲判字第2號": {"verdict": "部分違憲＋2年內修法", "verdict_type": "red", "exam": 2, "practice": 3, "category": "行政法／財產權", "memory": "行政罰不能只靠固定倍數一路罰到底，若個案可能明顯過苛，就必須留有調整空間。", "issue": "全民健康保險法第85條以應扣繳補充保險費金額為唯一基準，未補繳即固定處1倍或3倍罰鍰，是否可能造成責罰不相當？", "holding": ["以應扣繳金額為唯一標準並採固定倍數罰鍰，若造成個案顯然過苛、情輕法重，於此範圍違反憲法第23條比例原則與第15條財產權保障。", "相關機關應自判決公告日起2年內完成修法。", "修法前，如個案適用結果顯然過苛，行政機關及法院應依本判決意旨處理。"], "reasons": ["行政處罰仍須符合責罰相當原則。", "固定倍數若完全沒有依違法情節、可責性等因素調整的空間，可能產生明顯不合理結果。"], "impact": "對警佐一類刑事與警察法規優先度較低，但很適合用來理解比例原則、責罰相當與財產權審查。", "exam_tips": ["不是整條一律立即失效，而是『造成顯然過苛』的範圍違憲。", "有2年修法期限；修法前仍有個案過苛調整要求。"], "related": ["全民健康保險法第85條", "憲法第15條", "憲法第23條"], "source": "https://cons.judicial.gov.tw/download/download.aspx?id=502162"}, "115年憲判字第3號": {"verdict": "部分違憲＋立即失效＋2年修法", "verdict_type": "red", "exam": 3, "practice": 3, "category": "少年事件", "memory": "少年案件管轄不能只求程序省事；如果另一法院更能保護少年，就不能一律禁止再移送。", "issue": "少年事件處理法第15條後段規定「受移送之法院，不得再行移送」，是否因過度僵化而違反少年最佳利益？", "holding": ["若受移送法院並非能使少年受更適當保護的法院，仍一概禁止再移送，於此範圍違憲並自判決公告日起失效。", "相關機關應於2年內依判決意旨修法。", "修法前，受移送法院調查後如認其他有管轄權法院確實可使少年獲得更適當保護，得再行移送。", "少年、法定代理人、現在保護少年之人或輔佐人，對再移送裁定不服者得提起抗告。"], "reasons": ["少年事件處理制度的核心是少年最佳利益與人格健全成長，而非單純追求程序迅速。", "法院選擇應考量少年居住、就學、交通、陪同資源、非行情節與未來處遇執行等因素。", "禁止浮濫移送的目的正當，但不能因此犧牲真正更適合保護少年的管轄安排。"], "impact": "把「少年最佳利益」直接提升為判斷少年法院管轄與移送的重要憲法標準。", "exam_tips": ["不是第15條後段全部無條件失效；是『受移送法院並非較適當仍禁止再移送』的範圍違憲。", "核心依據：憲法第22條、第156條及國家對少年特別保護義務。"], "related": ["少年事件處理法第15條", "憲法第22條", "憲法第156條"], "source": "https://cons.judicial.gov.tw/docdata.aspx?fid=77&id=359360"}, "115年憲判字第4號": {"verdict": "舊判例部分違憲", "verdict_type": "red", "exam": 5, "practice": 5, "category": "刑事訴訟", "memory": "只上訴有罪部分，不會把原本『未上訴的無罪部分』一起拖進二審。", "issue": "110年修法前刑訴第348條第2項的上訴不可分原則，能不能把當事人未上訴的無罪部分也視為一併上訴？", "holding": ["舊刑訴第348條第2項於原審判決無罪的部分不適用；如此解釋始符合憲法第8條及第16條。", "最高法院29年上字第3382號等舊判例，將未上訴無罪部分也視為上訴效力所及的見解，牴觸憲法。"], "reasons": ["上訴範圍原則上應由當事人決定，法院只能在上訴範圍內審判。", "是否具有審判上不可分關係，應以原判決的判斷與當事人上訴範圍為基礎，不能等上訴審結果出來後再反推。", "把未上訴的無罪部分重新拉入上訴審，可能造成裁判突襲，讓原本應確定無罪的被告再度面臨有罪風險。"], "impact": "對刑訴上訴範圍非常重要。現行第348條已明文排除有關係部分為無罪、免訴或不受理的情形，但本判決可用來理解修法背後的憲法理由。", "exam_tips": ["關鍵不是『上訴不可分原則消失』，而是未上訴的無罪部分不能因此被擴張納入。", "可與現行刑訴第348條但書一起考新舊法。", "核心：不告不理、訴訟主體地位、人身自由、訴訟權。"], "related": ["刑事訴訟法第348條", "刑法第55條", "憲法第8條", "憲法第16條"], "source": "https://cons.judicial.gov.tw/docdata.aspx?fid=77&id=359760"}, "115年憲判字第5號": {"verdict": "合憲", "verdict_type": "green", "exam": 5, "practice": 4, "category": "刑法", "memory": "追訴時效還在跑、尚未完成時，後來法律改變它的計算方式，不等於把已完成的法律效果重新翻掉。", "issue": "刑法施行法第8條之2讓108年修正後刑法第80條第1項第1款但書，適用於修法前已開始但尚未完成的追訴權時效，是否違反不溯及既往與信賴保護？", "holding": ["刑法施行法第8條之2無涉法律不溯及既往原則。", "該規定與信賴保護原則尚無違背。", "聲請人的裁判憲法審查部分駁回。"], "reasons": ["追訴權時效制度關係到國家是否仍能啟動刑事追訴，並涉及人身自由與訴訟權。", "本案規範針對的是修法時『時效已開始但尚未完成』的法律狀態，而非把已經完成時效的案件重新恢復追訴。", "因此不是典型真正溯及既往，也沒有值得保護到足以排除新法適用的既得信賴。"], "impact": "對刑法時效、新舊法與刑法施行法的搭配非常重要，容易與刑法第2條及時效完成效果一起出題。", "exam_tips": ["最重要四字：『未完成者』。", "若追訴權時效早已完成，與本案情形不同。", "容易考不溯及既往、信賴保護與追訴時效法律性質。"], "related": ["刑法第80條", "刑法施行法第8條之2", "憲法第8條", "憲法第16條"], "source": "https://cons.judicial.gov.tw/docdata.aspx?fid=77&id=360063"}, "115年憲判字第6號": {"verdict": "部分違憲＋原裁定廢棄", "verdict_type": "red", "exam": 5, "practice": 5, "category": "刑法／兒少保障", "memory": "兒少性犯罪常『不是不想告，而是當時根本無法說』；舊時效從犯罪日起一路算到底，會過度限制救濟。", "issue": "94年修正前刑法第80條對兒少性犯罪一律自犯罪成立日起算追訴權時效，未考量兒少常有延遲揭露現象，是否違憲？", "holding": ["舊刑法第80條第1項第1、2款及第2項，對兒少被害人的特定性犯罪時效計算未考量通常無法即時揭露被害事實，於此範圍違憲並自判決公告日起失效。", "相關11件原因案件確定終局裁定均違憲，廢棄並發回各管轄法院。"], "reasons": ["兒少身體權、健康權、性自主、性隱私與人格發展受憲法第22條保障，國家負有積極保護義務。", "兒少性犯罪具有高度隱密性；被害人可能因身心未成熟、權威依附、資源不足或創傷反應而長期無法揭露。", "延遲揭露在此類案件不是少數例外，而具有結構性、常態性。", "如果時效完全不考量這種特性，可能在被害人具備求助能力前就讓國家追訴權消滅，過度限制訴訟權。"], "impact": "本案直接碰到刑法第80條追訴權時效。現行刑法已於115年7月22日增訂特定性犯罪被害人滿20歲前不計入時效期間，讀書時應把『修法』與『115憲判6』一起記。", "exam_tips": ["考點會把舊法違憲判決與115年刑法第80條新制放在一起。", "不是所有犯罪，也不是所有性犯罪都一律停止時效；應看判決及現行法列舉範圍。", "核心：訴訟權＋兒少人格與國家特別保護義務。"], "related": ["94年修正前刑法第80條", "現行刑法第80條", "憲法第16條", "憲法第22條"], "source": "https://cons.judicial.gov.tw/docdata.aspx?fid=77&id=360619"}, "114年憲判字第1號": {"verdict": "違憲失效", "verdict_type": "red", "exam": 5, "practice": 5, "category": "憲法訴訟", "memory": "114年新增的『10人參與、9人違憲』等門檻已被判失效；不能再把它當現行有效規則背。", "issue": "114年1月23日修正公布的憲訴法第4條第3項、第30條第2至6項及第95條，立法程序與內容是否違憲？", "holding": ["上開修正規定因立法程序有明顯重大瑕疵，違背憲法正當立法程序，並違反權力分立原則，均自判決公告日起失效。", "114年1月23日修正前的憲訴法第95條繼續適用。", "暫時處分聲請駁回。"], "reasons": ["立法院制定法律仍須遵守公開透明、實質討論及議決等正當立法程序。", "規範憲法法庭運作的法律不能反過來封鎖、阻礙大法官履行憲法直接賦予的審判職權。", "作為違憲審查標的的評議門檻規定，不能同時成為阻止法院審查它自身的程序障礙。", "判決認為本案應適用仍有效的憲訴法第30條第1項作為評議及評決門檻。"], "impact": "對憲訴法第4、30、95條的現行效力判斷極重要。系統中的法條頁也應顯示『公布文字』與『憲判後實際有效狀態』不同。", "exam_tips": ["最常見陷阱：把『至少10人參與、至少9人同意違憲』當成現行有效門檻。", "第30條第1項仍有效；失效的是114年新增的第2至6項。", "第95條要記：114修正版本失效，修正前版本繼續適用。", "核心原則：正當立法程序、權力分立、憲法最高性。"], "related": ["憲法訴訟法第4條", "憲法訴訟法第30條", "憲法訴訟法第95條", "憲法第78條", "憲法第171條"], "source": "https://cons.judicial.gov.tw/docdata.aspx?fid=77&id=358011"}}, ARTICLE_TEXTS={}, RUNTIME=null; const EXAM_META={"criminal:80": {"score": 5, "types": ["時效制度", "要件新增", "兒少保障"], "trap": "舊法思維：追訴權時效一律從犯罪成立日起一路計算。新法對列舉的性犯罪，明定被害人滿20歲前不計入時效期間。", "why": "115年最新刑法修法，且與115年憲判字第5、6號高度連動。"}, "cpl:101-1": {"score": 5, "types": ["羈押", "適用範圍擴大", "罪名新增"], "trap": "不是犯了列舉罪名就能羈押；仍須同時具備嫌疑重大、反覆實行同一犯罪之虞、羈押必要性。", "why": "115年最新刑訴重大修法，新增多類預防性羈押罪名。"}, "constlit:4": {"score": 4, "types": ["憲判失效", "權力分立"], "trap": "第4條第3項雖曾在114年修入，但已被114年憲判字第1號宣告失效，不能當成現行有效規定背。", "why": "典型『法規公布文字後又受憲判影響』案例。"}, "constlit:30": {"score": 5, "types": ["憲判失效", "評議門檻", "程序"], "trap": "「至少10人參與、至少9人同意違憲」已失效；考題若把它當現行門檻就是陷阱。", "why": "114年憲判字第1號核心考點。"}, "constlit:95": {"score": 4, "types": ["施行日期", "憲判失效"], "trap": "114年修正版本已失效，應回到修正前第95條繼續適用。", "why": "新舊法＋憲判效力非常容易混淆。"}, "social:9": {"score": 4, "types": ["文字修正", "減輕處罰"], "trap": "不能再只背舊稱『瘖啞人』；新法改成『未滿七歲即有聽覺且語言障礙者』。", "why": "114年社維法新修法，文字精確度很適合選擇題。"}, "social:64": {"score": 4, "types": ["罰鍰變更", "數字題"], "trap": "舊罰鍰上限1萬8千元已改成3萬元；五款構成要件本身大致未變。", "why": "典型新舊金額陷阱。"}, "social:72": {"score": 5, "types": ["構成要件新增", "罰鍰變更", "數字題"], "trap": "舊法噪音／深夜喧嘩沒有『不聽禁止』文字；新法已新增，而且罰鍰6千元提高到1萬元。", "why": "同時改『要件』與『金額』，非常適合命題。"}, "social:89": {"score": 4, "types": ["罰鍰變更", "數字題"], "trap": "罰鍰不是3千元，而是3萬元；跟追仍須『無正當理由＋經勸阻不聽』。", "why": "金額10倍變更，辨識度很高。"}, "police_weapons:1": {"score": 4, "types": ["警械種類", "主管機關", "身分識別"], "trap": "警械種類現由內政部定之；不要再背舊制『種類及規格由行政院定之』。", "why": "111年警械使用條例重大修法。"}, "police_weapons:4": {"score": 5, "types": ["武力使用", "逕行射擊", "比例原則"], "trap": "舊法沒有現行第3項『其他物品視為警械』及第4項逕行射擊明文；但新法也不是遇危險就能任意射擊，仍受必要性與比例限制。", "why": "警佐一類警察法規核心高頻條文。"}, "police_weapons:11": {"score": 5, "types": ["國家賠償", "損失補償", "責任分流"], "trap": "違法使用警械造成權利侵害是『國賠』；合法使用造成無辜第三人特別犧牲是『補償』，兩者不能混。", "why": "賠償／補償二分極容易出比較題。"}}; const $=id=>document.getElementById(id);
+const titles={home:["警佐班一類法規總覽","只保留考試需要的法規，不混入行政執行法、集會遊行法"],amendments:["全部修法","民國111～115年所有修法事件跨法規一次看"],study:["修法／法條","有修法看新舊差異，無修法直接進必讀條文"],reasons:["立法理由","先理解為什麼修，再記條文"],exam:["考前必讀修法","依重要度、陷阱與完成狀態集中複習"],court:["憲法法庭","重大憲判、爭點與刑法／刑訴／憲訴法關聯"],sync:["同步狀態","官方法規、立法院與憲法法庭資料同步"],scope:["考試範圍","依警佐班一類科目整理"]};
+let activeCat="警察法規";
+function showPage(p){document.querySelectorAll(".section").forEach(x=>x.classList.remove("active"));$(p).classList.add("active");document.querySelectorAll("[data-page]").forEach(x=>x.classList.toggle("active",x.dataset.page===p));$("title").textContent=titles[p][0];$("sub").textContent=titles[p][1]}
+document.querySelectorAll("[data-page]").forEach(b=>b.onclick=()=>showPage(b.dataset.page));
+function articleUrl(l,a){return `https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=${encodeURIComponent(a)}&pcode=${l.pcode}`}
+function categories(){return [...new Set(DATA.laws.map(l=>l.category))]}
+function renderTabs(){
+ $("catTabs").innerHTML=categories().map(c=>`<button class="tab ${c===activeCat?"active":""}" onclick="setCat('${c}')">${c}</button>`).join("");
+ renderHomeLaws();
+}
+function setCat(c){activeCat=c;renderTabs()}
+function renderHomeLaws(){
+ const ls=DATA.laws.filter(l=>l.category===activeCat);
+ $("catTitle").textContent=activeCat;
+ $("lawCards").innerHTML=ls.map(l=>`<div class="law" onclick="openLaw('${l.id}')"><div class="row"><h3>${l.name}</h3><span class="badge ${l.events.length?"red":"green"}">${l.events.length?l.events.length+"次修法":"近5年無修"}</span></div><div class="meta">${l.events.length?"最近修正："+l.latest:l.no_recent||""}<br>${l.study_note||""}</div></div>`).join("");
+}
+function fillFilter(){$("lawFilter").innerHTML=DATA.laws.map(l=>`<option value="${l.id}">[${l.category}] ${l.name}</option>`).join("")}
+function openLaw(id){showPage("study");$("lawFilter").value=id;renderStudy()}
+
+function rocSortValue(s=""){
+ const m=String(s).match(/(\d{2,3})\/(\d{2})\/(\d{2})/);
+ return m ? Number(m[1])*10000+Number(m[2])*100+Number(m[3]) : 0;
+}
+function allAmendmentRows(){
+ const rows=[];
+ for(const law of DATA.laws||[]){
+   for(const e of law.events||[]){
+     rows.push({law,e});
+   }
+ }
+ return rows.sort((a,b)=>rocSortValue(b.e.date)-rocSortValue(a.e.date));
+}
+function fillAmendLaw(){
+ if(!$("amendLaw"))return;
+ const old=$("amendLaw").value;
+ $("amendLaw").innerHTML=`<option value="">全部法規</option>`+(DATA.laws||[]).map(l=>`<option value="${l.id}">${l.name}</option>`).join("");
+ if([...$("amendLaw").options].some(o=>o.value===old))$("amendLaw").value=old;
+}
+function renderAllAmendments(){
+ if(!$("allAmendments"))return;
+ const q=($("amendSearch")?.value||"").trim(), y=$("amendYear")?.value||"", lid=$("amendLaw")?.value||"";
+ const all=allAmendmentRows();
+ const rows=all.filter(({law,e})=>{
+   const hay=`${law.name} ${law.short||""} ${e.date||""} ${e.articles||""} ${e.note||""} ${(e.article_ids||[]).join(" ")}`;
+   return (!q||hay.includes(q)) && (!y||String(e.date||"").startsWith(y+"/")) && (!lid||law.id===lid);
+ });
+ const articleSet=new Set(rows.flatMap(x=>(x.e.article_ids||[]).map(a=>`${x.law.id}:${a}`)));
+ $("amendEventCount").textContent=`${rows.length} 個修法事件`;
+ $("amendArticleCount").textContent=`${articleSet.size} 個異動條文`;
+ $("allAmendments").innerHTML=rows.map(({law,e})=>{
+   const ids=e.article_ids||[];
+   const chips=ids.length?ids.map(a=>{
+      const full=!!DETAILS[law.id+":"+a], current=!!ARTICLE_TEXTS[law.id+":"+a];
+      return `<button class="chip ${full||current?"ready":""}" onclick="openArticle('${law.id}','${a}')">第${a}條${full?" ✓完整":(current?" ✓條文":"")}</button>`;
+   }).join(""):`<span class="badge amber">條號未解析，但修法事件已保留</span>`;
+   return `<div class="amend-event">
+      <div class="row"><div><div class="amend-law">${law.name}</div><h3 style="margin:3px 0 0">${e.date||"日期待解析"}</h3></div><span class="badge red">修法</span></div>
+      <div class="fullnote">${e.articles||""}${e.articles&&e.note?"<br>":""}${e.note||""}</div>
+      <div class="chips">${chips}</div>
+      <div class="statusline">
+        <span class="badge ${ids.length?"green":"amber"}">${ids.length?`已解析 ${ids.length} 個條號`:"保留官方原始事件"}</span>
+        <a class="chip" href="${law.source}" target="_blank" style="text-decoration:none">官方沿革</a>
+      </div>
+   </div>`;
+ }).join("")||`<div class="empty"><b>查無符合條件的修法</b><p>請清除搜尋或年度篩選。</p></div>`;
+}
+
+function renderStudy(){
+ const l=DATA.laws.find(x=>x.id===$("lawFilter").value)||DATA.laws[0],q=$("search").value.trim();
+ $("studyTitle").textContent=l.name;
+ let html="";
+ if(l.events.length){
+   html+=`<div class="timeline">${l.events.filter(e=>!q||(e.date+e.articles+(e.article_ids||[]).join("")).includes(q)).map(e=>`<div class="event"><div class="row"><h3>${e.date}</h3><span class="badge red">修法</span></div><p>${e.articles}<br>${e.note}</p><div class="chips">${(e.article_ids||[]).map(a=>`<button class="chip ${DETAILS[l.id+":"+a]?"ready":""}" onclick="openArticle('${l.id}','${a}')">第${a}條${DETAILS[l.id+":"+a]?" ✓":""}</button>`).join("")}</div></div>`).join("")}</div>`;
+ } else {
+   html+=`<div class="empty"><b>近五年沒有修法</b><p>${l.no_recent||""}<br>${l.study_note||""}</p></div>`;
+ }
+ const keys=(l.key_articles||[]).filter(a=>!q||a.includes(q));
+ if(keys.length) html+=`<div class="block"><h3>📌 現行必讀條文</h3><div class="chips">${keys.map(a=>`<button class="chip ${DETAILS[l.id+":"+a]?"ready":""}" onclick="openArticle('${l.id}','${a}')">第${a}條${DETAILS[l.id+":"+a]?" ✓":""}</button>`).join("")}</div></div>`;
+ $("studyBody").innerHTML=html||"<p class='meta'>查無資料。</p>";
+}
+
+function diffTokens(text=""){
+  return String(text).match(/[\u3400-\u9FFF]|[A-Za-z0-9]+(?:[-.][A-Za-z0-9]+)*|\s+|./gu)||[];
+}
+function fallbackDiff(a,b){
+  let p=0; while(p<a.length&&p<b.length&&a[p]===b[p])p++;
+  let s=0; while(s<a.length-p&&s<b.length-p&&a[a.length-1-s]===b[b.length-1-s])s++;
+  const pre=a.slice(0,p), oldMid=a.slice(p,a.length-s), newMid=b.slice(p,b.length-s), suf=a.slice(a.length-s);
+  return [
+    ...(pre?[{type:"same",value:pre}]:[]),
+    ...(oldMid?[{type:"del",value:oldMid}]:[]),
+    ...(newMid?[{type:"add",value:newMid}]:[]),
+    ...(suf?[{type:"same",value:suf}]:[])
+  ];
+}
+function tokenDiff(aText,bText){
+  const a=diffTokens(aText), b=diffTokens(bText), n=a.length,m=b.length;
+  if(!n&&!m)return [];
+  if(n*m>4500000)return fallbackDiff(aText,bText);
+  const dp=Array.from({length:n+1},()=>new Uint16Array(m+1));
+  for(let i=n-1;i>=0;i--){
+    const row=dp[i], next=dp[i+1];
+    for(let j=m-1;j>=0;j--) row[j]=a[i]===b[j]?next[j+1]+1:Math.max(next[j],row[j+1]);
+  }
+  const ops=[]; let i=0,j=0;
+  const push=(type,value)=>{
+    if(!value)return;
+    const last=ops[ops.length-1];
+    if(last&&last.type===type)last.value+=value; else ops.push({type,value});
+  };
+  while(i<n&&j<m){
+    if(a[i]===b[j]){push("same",a[i]);i++;j++;}
+    else if(dp[i+1][j]>=dp[i][j+1]){push("del",a[i]);i++;}
+    else{push("add",b[j]);j++;}
+  }
+  while(i<n)push("del",a[i++]);
+  while(j<m)push("add",b[j++]);
+  return ops;
+}
+function diffMarkup(previous,current,side){
+  return tokenDiff(previous,current).filter(x=>side==="old"?x.type!=="add":x.type!=="del").map(x=>{
+    const cls=x.type==="same"?"diff-same":(x.type==="add"?"diff-add":"diff-del");
+    return `<span class="${cls}">${esc(x.value)}</span>`;
+  }).join("");
+}
+
+
+const LAW_RELATION_MAP=[
+ ["刑事訴訟法","cpl"],["憲法訴訟法","constlit"],["社會秩序維護法","social"],
+ ["警察職權行使法","police_power"],["警械使用條例","police_weapons"],
+ ["警察勤務條例","police_duty"],["警察法","police_act"],["中華民國刑法","criminal"],["刑法","criminal"]
+];
+function relationToArticle(label=""){
+  if(String(label).includes("刑法施行法"))return null;
+  let lid=null;
+  for(const [name,id] of LAW_RELATION_MAP){if(String(label).includes(name)){lid=id;break;}}
+  if(!lid)return null;
+  const m=String(label).match(/第\s*(\d+)\s*條(?:之\s*(\d+))?/);
+  if(!m)return null;
+  return {lid,article:m[2]?`${m[1]}-${m[2]}`:m[1]};
+}
+function openRelatedLabel(label){
+  const x=relationToArticle(label);
+  if(x)openArticle(x.lid,x.article);
+}
+function relatedCourtCases(lid,article){
+  const labels=[...(DATA.court||[])];
+  return labels.filter(c=>{
+    const d=COURT_STUDY[c.no]||{};
+    const rel=[...(c.links||[]),...(d.related||[])];
+    return rel.some(r=>{const x=relationToArticle(r);return x&&x.lid===lid&&x.article===String(article);});
+  });
+}
+function articleCrossLinks(lid,article){
+  const cases=relatedCourtCases(lid,article);
+  if(!cases.length)return "";
+  return `<div class="block"><h3>⚖ 相關憲法法庭判決</h3><div class="crosslinks">${cases.map(c=>`<button class="crossbtn" onclick="openCourtCase('${c.no}')">${c.no}｜${c.title}</button>`).join("")}</div></div>`;
+}
+function relationButtons(list=[]){
+  return list.map(t=>{
+    const x=relationToArticle(t);
+    return x?`<button class="crossbtn" onclick="openRelatedLabel('${String(t).replace(/'/g,"\\'")}')">${t}</button>`:`<span class="badge green">${t}</span>`;
+  }).join("");
+}
+function starsHtml(n){return `<span class="stars">${"★".repeat(n)}${"☆".repeat(Math.max(0,5-n))}</span>`}
+function examStorage(){try{return JSON.parse(localStorage.getItem("lexcore-exam-v09")||"{}")}catch{return {}}}
+function saveExamStatus(key,val){
+  const s=examStorage();s[key]=val;localStorage.setItem("lexcore-exam-v09",JSON.stringify(s));renderExam();
+}
+function detailExamMeta(key,d){
+  const m=EXAM_META[key]||{};
+  return {
+    score:m.score||3,
+    types:m.types||((d.changes||[]).some(x=>/罰鍰|元/.test(x))?["數字／法律效果"]:["修法"]),
+    trap:m.trap||((d.exam||[])[0]||"注意新舊法文字差異。"),
+    why:m.why||"近五年修法，建議至少完成一次新舊法比較。"
+  };
+}
+function renderExam(){
+  if(!$("examList"))return;
+  const q=($("examSearch")?.value||"").trim(), scoreFilter=Number($("examScore")?.value||0), statusFilter=$("examStatus")?.value||"";
+  const status=examStorage();
+  let items=Object.entries(DETAILS).map(([key,d])=>({key,d,m:detailExamMeta(key,d),status:status[key]||"unread"}));
+  items.sort((a,b)=>b.m.score-a.m.score||String(b.d.amend_date).localeCompare(String(a.d.amend_date)));
+  const all=items;
+  items=items.filter(x=>{
+    const hay=`${x.d.law_name} ${x.d.article} ${x.d.amend_date} ${x.d.memory||""} ${x.m.trap} ${x.m.types.join(" ")}`;
+    return (!q||hay.includes(q)) && (!scoreFilter||x.m.score>=scoreFilter) && (!statusFilter||x.status===statusFilter);
+  });
+  $("examTotal").textContent=all.length;
+  $("examHigh").textContent=all.filter(x=>x.m.score===5).length;
+  $("examNeed").textContent=all.filter(x=>["review","wrong"].includes(x.status)).length;
+  $("examDone").textContent=all.filter(x=>x.status==="mastered").length;
+  $("examList").innerHTML=items.map(x=>`
+    <div class="examitem">
+      <div class="row"><div><h3>${x.d.law_name} 第${x.d.article}條</h3><div class="meta">${x.d.amend_date}　${starsHtml(x.m.score)}</div></div><span class="badge ${x.m.score===5?"red":"blue"}">${x.m.score===5?"核心必讀":"重要"}</span></div>
+      <div class="radar">${x.m.types.map(t=>`<span class="badge amber">${t}</span>`).join("")}</div>
+      <p><b>一句話：</b>${x.d.memory||"—"}</p>
+      <div class="trap">⚠ 舊法／陷阱：${x.m.trap}</div>
+      <p><b>為什麼優先：</b>${x.m.why}</p>
+      <div class="exam-actions">
+        <button class="chip ready" onclick="openArticle('${x.d.law_id}','${x.d.article}')">開啟修法整理</button>
+        <select class="status-select" onchange="saveExamStatus('${x.key}',this.value)">
+          <option value="unread" ${x.status==="unread"?"selected":""}>未讀</option>
+          <option value="review" ${x.status==="review"?"selected":""}>需複習</option>
+          <option value="wrong" ${x.status==="wrong"?"selected":""}>常錯</option>
+          <option value="mastered" ${x.status==="mastered"?"selected":""}>已掌握</option>
+        </select>
+      </div>
+    </div>`).join("")||`<div class="empty"><b>沒有符合條件的必讀項目</b><p>請調整重要度或進度篩選。</p></div>`;
+}
+
+function openArticle(lid,a){
+ const l=DATA.laws.find(x=>x.id===lid),d=DETAILS[lid+":"+a];
+ $("modalTitle").textContent=`${l.name} 第${a}條`;
+ if(!d){
+   const live=ARTICLE_TEXTS[lid+":"+a];
+   if(live?.text){
+     $("modalMeta").innerHTML=`官方同步現行條文 <span class="badge green">已抓到全文</span> <span class="badge amber">歷史對照／立法理由待配對</span>`;
+     $("detail").innerHTML=`<div class="memory">這條已由同步模組抓到官方現行全文；即使立法院新舊條文／理由尚未完成高信心配對，也不會讓條文消失。</div><div class="panel"><h3>現行條文</h3><div class="text">${esc(live.text)}</div></div>${articleCrossLinks(lid,a)}<div class="links"><a href="${live.url||articleUrl(l,a)}" target="_blank">官方第${a}條</a><a href="${l.source}" target="_blank">查看修法沿革</a></div>`;
+   }else{
+     $("modalMeta").innerHTML=`修法條文 <span class="badge amber">尚待下一次同步全文</span>`;
+     $("detail").innerHTML=`<div class="memory">這個條號已被修法索引抓到，所以一定保留在畫面上；目前離線快照尚未有全文。</div>${articleCrossLinks(lid,a)}<div class="links"><a href="${articleUrl(l,a)}" target="_blank">立刻開啟官方第${a}條</a><a href="${l.source}" target="_blank">查看完整沿革</a></div>`;
+   }
+ } else {
+   const key=lid+":"+a, meta=detailExamMeta(key,d);
+   const oldMarkup=diffMarkup(d.previous||"",d.current||"","old");
+   const newMarkup=diffMarkup(d.previous||"",d.current||"","new");
+   $("modalMeta").innerHTML=`修正日期 ${d.amend_date}　<span class="badge ${d.status_type==="danger"?"red":"green"}">${d.status}</span>　${starsHtml(meta.score)}`;
+   $("detail").innerHTML=`
+     <div class="memory">🧠 ${d.memory}</div>
+     <div class="radar">${meta.types.map(t=>`<span class="badge amber">${t}</span>`).join("")}</div>
+     <div class="trap" style="margin-top:10px">⚠ 舊法／選擇題陷阱：${meta.trap}</div>
+     <div class="block">
+       <h3>🔬 字詞級新舊法 Diff</h3>
+       <div class="diff-legend"><span class="legend-del">刪除／舊文</span><span class="legend-add">新增／新文</span><span>未變文字淡化</span></div>
+       <div class="diff">
+        <div class="panel"><h3>修正前</h3><div class="text">${oldMarkup}</div></div>
+        <div class="panel"><h3>修正後／現行</h3><div class="text">${newMarkup}</div></div>
+       </div>
+     </div>
+     <div class="block"><h3>🔎 這次改什麼</h3><ul>${(d.changes||[]).map(x=>`<li>${x}</li>`).join("")}</ul></div>
+     <div class="block"><h3>📚 ${d.reason_label}</h3><p>${d.reason}</p></div>
+     <div class="block"><h3>🎯 考試提醒</h3><ul>${(d.exam||[]).map(x=>`<li>${x}</li>`).join("")}</ul></div>
+     ${articleCrossLinks(lid,a)}
+     <div class="links"><a href="${d.official}" target="_blank">官方條文</a><a href="${d.reason_url}" target="_blank">立法／公布來源</a></div>`;
+ }
+ $("modal").classList.add("show");
+}
+function esc(s){return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
+function renderReasons(){
+ $("reasonCards").innerHTML=Object.values(DETAILS).map(d=>`<div class="focus" style="cursor:pointer" onclick="openArticle('${d.law_id}','${d.article}')"><div class="row"><h3>${d.law_name} 第${d.article}條</h3><span class="badge green">${d.amend_date}</span></div><p><b>記憶：</b>${d.memory}</p><p><b>理由：</b>${d.reason.slice(0,110)}${d.reason.length>110?"…":""}</p></div>`).join("");
+}
+
+function stars(n){return "★".repeat(n)+"☆".repeat(Math.max(0,5-n))}
+function renderCourt(){
+ const q=($("courtSearch")?.value||"").trim(), y=$("courtYear")?.value||"";
+ const rows=(DATA.court||[]).filter(c=>{
+   const d=COURT_STUDY[c.no]||{};
+   const hay=(c.no+" "+c.title+" "+(c.links||[]).join(" ")+" "+c.summary+" "+(d.memory||"")+" "+(d.issue||"")+" "+(d.category||""));
+   return (!q||hay.includes(q)) && (!y||c.date.startsWith(y+"/"));
+ });
+ $("courtGrid").innerHTML=rows.map(c=>{
+   const d=COURT_STUDY[c.no]||{};
+   return `<div class="case">
+    <div class="row"><span class="badge blue">${c.no}</span><span style="font-size:12px">${stars(d.exam||c.importance||3)}</span></div>
+    <h3>${c.title}</h3>
+    <div class="court-verdict"><span class="badge ${d.verdict_type||"blue"}">${d.verdict||"判決整理"}</span><span class="badge amber">${d.category||"憲法"}</span></div>
+    <div class="court-memory">🧠 ${d.memory||c.summary}</div>
+    <div class="scoreline"><span class="score">考試重要度 ${d.exam||c.importance||3}/5</span><span class="score">實務影響 ${d.practice||3}/5</span></div>
+    <div class="tags">${(c.links||[]).map(t=>`<span class="badge green">${t}</span>`).join("")}</div>
+    <div class="links"><button class="chip ready" onclick="openCourtCase('${c.no}')">查看判決整理</button><a href="${d.source||c.url}" target="_blank">官方判決</a></div>
+   </div>`;
+ }).join("") || `<div class="empty"><b>目前快照沒有符合條件的詳細卡片</b><p>年度判決量仍保留；完整111～115年58件判決會由後續同步模組補齊。</p></div>`;
+}
+function openCourtCase(no){
+ const c=(DATA.court||[]).find(x=>x.no===no), d=COURT_STUDY[no];
+ if(!c||!d)return;
+ $("modalTitle").textContent=`${no}｜${c.title}`;
+ $("modalMeta").innerHTML=`${c.date}　<span class="badge ${d.verdict_type||"blue"}">${d.verdict}</span>　<span class="badge amber">${d.category}</span>`;
+ $("detail").innerHTML=`
+   <div class="memory">🧠 一句話記憶：${d.memory}</div>
+   <div class="verdictbig ${d.verdict_type==="red"?"red":""}">判決結論：${d.verdict}</div>
+   <div class="detailgrid">
+    <div class="detailbox"><h3>❓ 爭點</h3><p>${d.issue}</p></div>
+    <div class="detailbox"><h3>⚖ 主文／法律效果</h3><ul>${d.holding.map(x=>`<li>${x}</li>`).join("")}</ul></div>
+   </div>
+   <div class="detailbox" style="margin-top:12px"><h3>📚 判決理由重點</h3><ul>${d.reasons.map(x=>`<li>${x}</li>`).join("")}</ul></div>
+   <div class="detailgrid" style="margin-top:12px">
+    <div class="detailbox"><h3>🔗 實務／法規影響</h3><p>${d.impact}</p></div>
+    <div class="detailbox"><h3>🎯 考試提醒</h3><ul>${d.exam_tips.map(x=>`<li>${x}</li>`).join("")}</ul></div>
+   </div>
+   <div class="detailbox" style="margin-top:12px"><h3>📌 關聯法條（可直接跳轉）</h3><div class="crosslinks">${relationButtons(d.related)}</div></div>
+   <div class="links"><a href="${d.source}" target="_blank">開啟司法院官方判決／摘要</a></div>`;
+ $("modal").classList.add("show");
+}
+
+$("lawFilter").onchange=renderStudy;$("search").oninput=renderStudy;if($("amendSearch"))$("amendSearch").oninput=renderAllAmendments;if($("amendYear"))$("amendYear").onchange=renderAllAmendments;if($("amendLaw"))$("amendLaw").onchange=renderAllAmendments;if($("courtSearch"))$("courtSearch").oninput=renderCourt;if($("courtYear"))$("courtYear").onchange=renderCourt;if($("examSearch"))$("examSearch").oninput=renderExam;if($("examScore"))$("examScore").onchange=renderExam;if($("examStatus"))$("examStatus").onchange=renderExam;
+$("close").onclick=()=>$("modal").classList.remove("show");$("modal").onclick=e=>{if(e.target===$("modal"))$("modal").classList.remove("show")};
+$("theme").onclick=()=>{const d=document.documentElement.dataset.theme==="dark";document.documentElement.dataset.theme=d?"light":"dark";localStorage.setItem("lr4-theme",d?"light":"dark")};if(localStorage.getItem("lr4-theme")==="dark")document.documentElement.dataset.theme="dark";
+
+async function loadRuntime(){
+  try{
+    const r=await fetch(`data/runtime.json?ts=${Date.now()}`,{cache:"no-store"});
+    if(!r.ok) throw new Error(`HTTP ${r.status}`);
+    const rt=await r.json();
+    if(rt?.frontend?.data?.laws?.length){
+      RUNTIME=rt;
+      DATA=rt.frontend.data;
+      DETAILS=rt.frontend.details||DETAILS;
+      COURT_STUDY=rt.frontend.courtStudy||COURT_STUDY;
+      ARTICLE_TEXTS=rt.frontend.articleTexts||{};
+      fillFilter();fillAmendLaw();renderTabs();renderAllAmendments();renderStudy();renderReasons();renderExam();renderCourt();renderSync();
+    }
+  }catch(e){
+    console.info("Standalone/offline mode: using embedded snapshot.",e.message);
+    renderSync();
+  }
+}
+function renderSync(){
+  const s=RUNTIME?.sync;
+  $("syncBadge").textContent=s?.status==="ok"?"同步正常":"離線快照";
+  $("syncBadge").className=`badge ${s?.status==="ok"?"green":"amber"}`;
+  $("syncLawCount").textContent=s?.laws?.length??DATA.laws.length;
+  $("syncCourtCount").textContent=s?.court?.count??DATA.court?.length??0;
+  $("syncLyAuto").textContent=s?.legislative?.autoVerified??"—";
+  $("syncLyReview").textContent=s?.legislative?.needsReview??"—";
+  if(!s){
+    $("syncRows").innerHTML=`<div class="empty"><b>目前是單檔 HTML 離線快照</b><p>把 GitHub 專案部署到 GitHub Pages 後，前端會自動讀取 data/runtime.json；GitHub Actions 才會真正每日／每週同步官方資料。</p></div>`;
+    return;
+  }
+  $("syncRows").innerHTML=(s.laws||[]).map(x=>`<div class="syncrow"><strong>${x.name}</strong><span>最新：${x.latest||"—"}</span><span>條文：${x.articleCount}</span><span class="badge ${x.ok?"green":"red"}">${x.ok?"正常":"異常"}</span></div>`).join("")
+   + `<div class="syncrow"><strong>憲法法庭</strong><span>${s.court?.count||0} 件</span><span>${s.court?.fetchedAt?new Date(s.court.fetchedAt).toLocaleString():"—"}</span><span class="badge green">每日</span></div>`
+   + `<div class="syncrow"><strong>立法院條文對照</strong><span>自動 ${s.legislative?.autoVerified||0}</span><span>待審 ${s.legislative?.needsReview||0}</span><span class="badge blue">每週四</span></div>`;
+}
+
+fillFilter();fillAmendLaw();renderTabs();renderAllAmendments();renderStudy();renderReasons();renderExam();renderCourt();renderSync();loadRuntime();
