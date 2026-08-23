@@ -1,25 +1,28 @@
 {
-  "checkedAt": null,
+  "checkedAt": "2026-08-23T21:40:51.908634+00:00",
   "years": [
     {
       "year": 115,
       "ok": false,
+      "files": [],
       "warnings": [
-        "尚未於 GitHub Actions 執行"
+        "HTTPSConnectionPool(host='se.cpu.edu.tw', port=443): Max retries exceeded with url: /p/404-1006-45581-1.php (Caused by NewConnectionError(\"HTTPSConnection(host='se.cpu.edu.tw', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
       ]
     },
     {
       "year": 114,
       "ok": false,
+      "files": [],
       "warnings": [
-        "尚未於 GitHub Actions 執行"
+        "HTTPSConnectionPool(host='se.cpu.edu.tw', port=443): Max retries exceeded with url: /p/404-1006-44002.php (Caused by NewConnectionError(\"HTTPSConnection(host='se.cpu.edu.tw', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
       ]
     },
     {
       "year": 113,
       "ok": false,
+      "files": [],
       "warnings": [
-        "尚未於 GitHub Actions 執行"
+        "HTTPSConnectionPool(host='se.cpu.edu.tw', port=443): Max retries exceeded with url: /p/404-1006-42251.php (Caused by NewConnectionError(\"HTTPSConnection(host='se.cpu.edu.tw', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
       ]
     }
   ]
