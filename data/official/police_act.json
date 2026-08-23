@@ -2,7 +2,7 @@
   "id": "police_act",
   "name": "警察法",
   "pcode": "D0080001",
-  "fetchedAt": "2026-08-23T10:11:25.895Z",
+  "fetchedAt": "2026-08-23T23:37:02.083Z",
   "latest": "2002-06-12",
   "history": [
     {
@@ -54,7 +54,7 @@
       "date": "1953-06-15",
       "rocDate": "42/06/15",
       "rocYear": 42,
-      "raw": "總統令制定公布全文 20 條\n\n:::\n\n最新訊息\n\n中央法規\n\n司法解釋\n\n條約協定\n\n兩岸協議\n\n綜合查詢\n\n跨機關檢索\n\n法治宣導專區\n\n智慧查找\n\n法律扶助\n\n創意教案\n\n法律時事漫談\n\n網站使用說明\n\n網站使用手冊\n\n會員服務介紹\n\n網站單元簡介\n\n法規資料檢索範圍\n\n資料更新頻率說明\n\n資訊服務\n\n全國法規連結圖示\n\n全國法規作業要點\n\n法規名稱英譯標準表\n\n相關網站\n\n訂閱電子報\n\n瀏覽人次總計\n\n1,613,092,322人\n\n本月瀏覽人次\n\n11,050,146人\n\n目前使用人次\n\n1,822人\n\n電子報訂閱人數\n\n222,808人\n\n本網站係提供法規之最新動態資訊及資料檢索，並不提供法規及法律諮詢之服務。\n\n若有任何法律上的疑義，建議您可逕向發布法規之主管機關洽詢。\n\n本網站法規資料係由政府各機關提供之電子檔或書面文字登打製作，若與各法規主管機關之公布文字有所不同，仍以各法規主管機關之公布資料為準。\n\n部分資料內容，使用特殊文字或符號，如欲詳閱內容，請連結至司法院網站下載造字檔。\n\n全國法規資料庫之內容每週五定期更新，當週發布之法律、命令資料，將於完成法規整編作業後，於下週五更新上線。\n\n法規整編資料截止日：民國 115 年 08 月 14 日 \n\n瀏覽人次總計：1,613,092,322人\n\n本月瀏覽人次：11,050,146人\n\n目前使用人次：1,822人\n\n電子報訂閱：222,808人\n\n│ 政府網站資料開放宣告 │ 隱私權保護宣告 │ 資訊安全政策 │ Q & A │ 意見回饋 │ API文件 │ \n\n本網站由法務部全國法規資料庫工作小組維運管理...\n\n法務部地址：100204 台北市重慶南路一段130號　電話：(02)2191-0189\n\n第二辦公室地址：100006 台北市貴陽街1段235號　電話：(02)2191-0189\n\n回上方\n\n$(function () {\n\n// === 統一綁定 GA 追蹤事件 ===\n$('.ga-track-link').on('click keypress', function (e) {\n// 如果是鍵盤事件，確認是按下 Enter 鍵 (keyCode 13) 才觸發\nif (e.type === 'keypress' && e.which !== 13) {\nreturn;\n}\n\nvar category = $(this).data('ga-category');\nvar action = $(this).data('ga-action');\n\n// 呼叫原本的 GA 追蹤函數\nif (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice(category, action, '', '');\n}\n});\n\n// 綁定登出確認視窗\n$('.logout-link').on('click', function () {\nif (!confirm('確定登出？')) {\nreturn false; // 若使用者按取消，則不執行跳轉\n}\n});\n\nvar b = 'ONEBAR';\n$(\"#btnSubscribe,#btnUnsubscribe\").on(\"click\", function (event) {\n//var email = $.trim($(\"#txtEMail\").val());\n//if (email == \"\") {\n// event.preventDefault();\n// alert('請您輸入電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else if (false == IsEMail(email)) {\n// event.preventDefault();\n// alert('請您輸入正確電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else {\n// GoogleAnanlytice('中文', '訂閱電子報', '', '');\n//}\nvar email = $.trim($(\"#txtEMail\").val());\n//if (!validateEmail(email)) {\n// alert('請您輸入正確電子郵件地址。');\n// return false;\n//}\n\n});\n$('#btnQall').on(\"click\", function () {\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse if (keyword.indexOf($.trim($(\"#keyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsQall').on(\"click\", function () {\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\"",
+      "raw": "總統令制定公布全文 20 條\n\n:::\n\n最新訊息\n\n中央法規\n\n司法解釋\n\n條約協定\n\n兩岸協議\n\n綜合查詢\n\n跨機關檢索\n\n法治宣導專區\n\n智慧查找\n\n法律扶助\n\n創意教案\n\n法律時事漫談\n\n網站使用說明\n\n網站使用手冊\n\n會員服務介紹\n\n網站單元簡介\n\n法規資料檢索範圍\n\n資料更新頻率說明\n\n資訊服務\n\n全國法規連結圖示\n\n全國法規作業要點\n\n法規名稱英譯標準表\n\n相關網站\n\n訂閱電子報\n\n瀏覽人次總計\n\n1,613,265,787人\n\n本月瀏覽人次\n\n11,223,611人\n\n目前使用人次\n\n1,774人\n\n電子報訂閱人數\n\n222,808人\n\n本網站係提供法規之最新動態資訊及資料檢索，並不提供法規及法律諮詢之服務。\n\n若有任何法律上的疑義，建議您可逕向發布法規之主管機關洽詢。\n\n本網站法規資料係由政府各機關提供之電子檔或書面文字登打製作，若與各法規主管機關之公布文字有所不同，仍以各法規主管機關之公布資料為準。\n\n部分資料內容，使用特殊文字或符號，如欲詳閱內容，請連結至司法院網站下載造字檔。\n\n全國法規資料庫之內容每週五定期更新，當週發布之法律、命令資料，將於完成法規整編作業後，於下週五更新上線。\n\n法規整編資料截止日：民國 115 年 08 月 14 日 \n\n瀏覽人次總計：1,613,265,787人\n\n本月瀏覽人次：11,223,611人\n\n目前使用人次：1,774人\n\n電子報訂閱：222,808人\n\n│ 政府網站資料開放宣告 │ 隱私權保護宣告 │ 資訊安全政策 │ Q & A │ 意見回饋 │ API文件 │ \n\n本網站由法務部全國法規資料庫工作小組維運管理..\n\n法務部地址：100204 台北市重慶南路一段130號　電話：(02)2191-0189\n\n第二辦公室地址：100006 台北市貴陽街1段235號　電話：(02)2191-0189\n\n回上方\n\n$(function () {\n\n// === 統一綁定 GA 追蹤事件 ===\n$('.ga-track-link').on('click keypress', function (e) {\n// 如果是鍵盤事件，確認是按下 Enter 鍵 (keyCode 13) 才觸發\nif (e.type === 'keypress' && e.which !== 13) {\nreturn;\n}\n\nvar category = $(this).data('ga-category');\nvar action = $(this).data('ga-action');\n\n// 呼叫原本的 GA 追蹤函數\nif (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice(category, action, '', '');\n}\n});\n\n// 綁定登出確認視窗\n$('.logout-link').on('click', function () {\nif (!confirm('確定登出？')) {\nreturn false; // 若使用者按取消，則不執行跳轉\n}\n});\n\nvar b = 'ONEBAR';\n$(\"#btnSubscribe,#btnUnsubscribe\").on(\"click\", function (event) {\n//var email = $.trim($(\"#txtEMail\").val());\n//if (email == \"\") {\n// event.preventDefault();\n// alert('請您輸入電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else if (false == IsEMail(email)) {\n// event.preventDefault();\n// alert('請您輸入正確電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else {\n// GoogleAnanlytice('中文', '訂閱電子報', '', '');\n//}\nvar email = $.trim($(\"#txtEMail\").val());\n//if (!validateEmail(email)) {\n// alert('請您輸入正確電子郵件地址。');\n// return false;\n//}\n\n});\n$('#btnQall').on(\"click\", function () {\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse if (keyword.indexOf($.trim($(\"#keyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsQall').on(\"click\", function () {\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\")",
       "articles": []
     }
   ],
@@ -64,7 +64,7 @@
       "text": "本法依憲法第一百零八條第一項第十七款制定之。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=1&pcode=D0080001",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080001",
-      "fetchedAt": "2026-08-23T10:11:25.895Z",
+      "fetchedAt": "2026-08-23T23:37:02.083Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -72,7 +72,7 @@
       "text": "警察任務為依法維持公共秩序，保護社會安全，防止一切危害，促進人民福利。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=2&pcode=D0080001",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080001",
-      "fetchedAt": "2026-08-23T10:11:25.895Z",
+      "fetchedAt": "2026-08-23T23:37:02.083Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -80,7 +80,7 @@
       "text": "警察官制、官規、教育、服制、勤務制度及其他全國性警察法制，由中央立法並執行之，或交由直轄市、縣（市）執行之。\n有關直轄市警政、警衛及縣（市）警衛之實施事項，其立法及執行，應分屬於直轄市、縣（市）。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=3&pcode=D0080001",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080001",
-      "fetchedAt": "2026-08-23T10:11:25.895Z",
+      "fetchedAt": "2026-08-23T23:37:02.083Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -88,7 +88,7 @@
       "text": "內政部掌理全國警察行政，並指導監督各直轄市警政、警衛及縣（市）警衛之實施。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=4&pcode=D0080001",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080001",
-      "fetchedAt": "2026-08-23T10:11:25.895Z",
+      "fetchedAt": "2026-08-23T23:37:02.083Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -96,7 +96,7 @@
       "text": "內政部設警政署（司），執行全國警察行政事務並掌理左列全國性警察業務：\n一、關於拱衛中樞、準備應變及協助地方治安之保安警察業務。\n二、關於保護外僑及處理涉外案件之外事警察業務。\n三、關於管理出入國境及警備邊疆之國境警察業務。\n四、關於預防犯罪及協助偵查內亂外患重大犯罪之刑事警察業務。\n五、關於防護連跨數省河湖及警衛領海之水上警察業務。\n六、關於防護國營鐵路、航空、工礦、森林、漁鹽等事業設施之各種專業警察業務。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=5&pcode=D0080001",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080001",
-      "fetchedAt": "2026-08-23T10:11:25.895Z",
+      "fetchedAt": "2026-08-23T23:37:02.083Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -104,7 +104,7 @@
       "text": "前條第一款保安警察，遇有必要派往地方執行職務時，應受當地行政首長之指揮、監督；第四款刑事警察兼受當地法院檢察官之指揮、監督；第六款各種專業警察，得由各該事業主管機關視業務需要、商准內政部依法設置，並由各該事業主管機關就其主管業務指揮、監督之。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=6&pcode=D0080001",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080001",
-      "fetchedAt": "2026-08-23T10:11:25.895Z",
+      "fetchedAt": "2026-08-23T23:37:02.083Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -112,7 +112,7 @@
       "text": "（刪除）",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=7&pcode=D0080001",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080001",
-      "fetchedAt": "2026-08-23T10:11:25.895Z",
+      "fetchedAt": "2026-08-23T23:37:02.083Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -120,7 +120,7 @@
       "text": "直轄市政府設市警察局，縣（市）政府設縣（市）警察局（科），掌理各該管區之警察行政及業務。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=8&pcode=D0080001",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080001",
-      "fetchedAt": "2026-08-23T10:11:25.895Z",
+      "fetchedAt": "2026-08-23T23:37:02.083Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -128,7 +128,7 @@
       "text": "警察依法行使左列職權：\n一、發佈警察命令。\n二、違警處分。\n三、協助偵查犯罪。\n四、執行搜索、扣押、拘提及逮捕。\n五、行政執行。\n六、使用警械。\n七、有關警察業務之保安、正俗、交通、衛生、消防、救災、營業建築、市容整理、戶口查察、外事處理等事項。\n八、其他應執行法令事項。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=9&pcode=D0080001",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080001",
-      "fetchedAt": "2026-08-23T10:11:25.895Z",
+      "fetchedAt": "2026-08-23T23:37:02.083Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -136,7 +136,7 @@
       "text": "警察所為之命令或處分，如有違法或不當時，人民得依法訴請行政救濟。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=10&pcode=D0080001",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080001",
-      "fetchedAt": "2026-08-23T10:11:25.895Z",
+      "fetchedAt": "2026-08-23T23:37:02.083Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -144,7 +144,7 @@
       "text": "警察官職採分立制，其官等為警監、警正、警佐。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=11&pcode=D0080001",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080001",
-      "fetchedAt": "2026-08-23T10:11:25.895Z",
+      "fetchedAt": "2026-08-23T23:37:02.083Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -152,7 +152,7 @@
       "text": "警察基層人員得採警員制，其施行程序，由內政部定之。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=12&pcode=D0080001",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080001",
-      "fetchedAt": "2026-08-23T10:11:25.895Z",
+      "fetchedAt": "2026-08-23T23:37:02.083Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -160,7 +160,7 @@
       "text": "警察行政人員之任用，以曾受警察教育或經中央考銓合格者為限。其任用程序另定之。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=13&pcode=D0080001",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080001",
-      "fetchedAt": "2026-08-23T10:11:25.895Z",
+      "fetchedAt": "2026-08-23T23:37:02.083Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -168,7 +168,7 @@
       "text": "刑事警察受檢察官之命執行職務時，如有廢弛職務情事，其主管長官應接受檢察官之提請依法予以懲處。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=14&pcode=D0080001",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080001",
-      "fetchedAt": "2026-08-23T10:11:25.895Z",
+      "fetchedAt": "2026-08-23T23:37:02.083Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -176,7 +176,7 @@
       "text": "中央設警察大學、警察專科學校，辦理警察教育。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=15&pcode=D0080001",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080001",
-      "fetchedAt": "2026-08-23T10:11:25.895Z",
+      "fetchedAt": "2026-08-23T23:37:02.083Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -184,7 +184,7 @@
       "text": "地方警察機關預算標準，由中央按各該地區情形分別規劃之。\n前項警察機關經費，如確屬不足時，得陳請中央補助。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=16&pcode=D0080001",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080001",
-      "fetchedAt": "2026-08-23T10:11:25.895Z",
+      "fetchedAt": "2026-08-23T23:37:02.083Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -192,7 +192,7 @@
       "text": "各級警察機關之設備標準，由中央定之。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=17&pcode=D0080001",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080001",
-      "fetchedAt": "2026-08-23T10:11:25.895Z",
+      "fetchedAt": "2026-08-23T23:37:02.083Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -200,7 +200,7 @@
       "text": "各級警察機關、警察大學、警察專科學校之武器彈藥，其統籌調配辦法，由內政部定之。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=18&pcode=D0080001",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080001",
-      "fetchedAt": "2026-08-23T10:11:25.895Z",
+      "fetchedAt": "2026-08-23T23:37:02.083Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -208,15 +208,15 @@
       "text": "本法施行細則，由內政部定之。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=19&pcode=D0080001",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080001",
-      "fetchedAt": "2026-08-23T10:11:25.895Z",
+      "fetchedAt": "2026-08-23T23:37:02.083Z",
       "ok": true,
       "source": "LawAll"
     },
     "20": {
-      "text": "本法自公布日施行。\n\n:::\n\n最新訊息\n\n中央法規\n\n司法解釋\n\n條約協定\n\n兩岸協議\n\n綜合查詢\n\n跨機關檢索\n\n法治宣導專區\n\n智慧查找\n\n法律扶助\n\n創意教案\n\n法律時事漫談\n\n網站使用說明\n\n網站使用手冊\n\n會員服務介紹\n\n網站單元簡介\n\n法規資料檢索範圍\n\n資料更新頻率說明\n\n資訊服務\n\n全國法規連結圖示\n\n全國法規作業要點\n\n法規名稱英譯標準表\n\n相關網站\n\n訂閱電子報\n\n瀏覽人次總計\n\n1,613,092,323人\n\n本月瀏覽人次\n\n11,050,147人\n\n目前使用人次\n\n1,823人\n\n電子報訂閱人數\n\n222,808人\n\n本網站係提供法規之最新動態資訊及資料檢索，並不提供法規及法律諮詢之服務。\n\n若有任何法律上的疑義，建議您可逕向發布法規之主管機關洽詢。\n\n本網站法規資料係由政府各機關提供之電子檔或書面文字登打製作，若與各法規主管機關之公布文字有所不同，仍以各法規主管機關之公布資料為準。\n\n部分資料內容，使用特殊文字或符號，如欲詳閱內容，請連結至司法院網站下載造字檔。\n\n全國法規資料庫之內容每週五定期更新，當週發布之法律、命令資料，將於完成法規整編作業後，於下週五更新上線。\n\n法規整編資料截止日：民國 115 年 08 月 14 日\n\n瀏覽人次總計：1,613,092,323人\n\n本月瀏覽人次：11,050,147人\n\n目前使用人次：1,823人\n\n電子報訂閱：222,808人\n\n│ 政府網站資料開放宣告 │ 隱私權保護宣告 │ 資訊安全政策 │ Q & A │ 意見回饋 │ API文件 │\n\n本網站由法務部全國法規資料庫工作小組維運管理...\n\n法務部地址：100204 台北市重慶南路一段130號　電話：(02)2191-0189\n\n第二辦公室地址：100006 台北市貴陽街1段235號　電話：(02)2191-0189\n\n回上方\n\n$(function () {\n\n// === 統一綁定 GA 追蹤事件 ===\n$('.ga-track-link').on('click keypress', function (e) {\n// 如果是鍵盤事件，確認是按下 Enter 鍵 (keyCode 13) 才觸發\nif (e.type === 'keypress' && e.which !== 13) {\nreturn;\n}\n\nvar category = $(this).data('ga-category');\nvar action = $(this).data('ga-action');\n\n// 呼叫原本的 GA 追蹤函數\nif (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice(category, action, '', '');\n}\n});\n\n// 綁定登出確認視窗\n$('.logout-link').on('click', function () {\nif (!confirm('確定登出？')) {\nreturn false; // 若使用者按取消，則不執行跳轉\n}\n});\n\nvar b = 'ONEBAR';\n$(\"#btnSubscribe,#btnUnsubscribe\").on(\"click\", function (event) {\n//var email = $.trim($(\"#txtEMail\").val());\n//if (email == \"\") {\n// event.preventDefault();\n// alert('請您輸入電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else if (false == IsEMail(email)) {\n// event.preventDefault();\n// alert('請您輸入正確電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else {\n// GoogleAnanlytice('中文', '訂閱電子報', '', '');\n//}\nvar email = $.trim($(\"#txtEMail\").val());\n//if (!validateEmail(email)) {\n// alert('請您輸入正確電子郵件地址。');\n// return false;\n//}\n\n});\n$('#btnQall').on(\"click\", function () {\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse if (keyword.indexOf($.trim($(\"#keyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsQall').on(\"click\", function () {\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else if (keyword.indexOf($.trim($(\"#msKeyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n//20210217 再檢索收合、展開功能\n$(\"#btnOpen\").click(function () {\nif ($('#ulDeepSearch').hasClass('overflow-hidden')) {\n$(this).html(\"收合\");\n$(this).prop('title', '隱藏部分「再檢索」篩選條件，僅顯示一行');\n$(\"#ulDeepSearch\").removeClass(\"overflow-hidden\").addClass(\"overflow-inherit\");\n}\nelse {\n$(this).html(\"展開\");\n$(this).prop('title', '顯示所有目前「再檢索」篩選條件');\n$(\"#ulDeepSearch\").removeClass(\"overflow-inherit\").addClass(\"overflow-hidden\");\n}\n});\n$(\"#btnHelp\").click(function () {\nOpenKeyWordHelp();\nreturn false;\n});\n// 綁定整合查詢的 Enter 鍵事件\n$('#keyword').keypress(function (e) {\nif (e.which == 13) {\ne.preventDefault();\n$('#btnQall').click();\n}\n});\n// --- 新增：綁定整合查詢的 Enter 鍵事件 (行動版) ---\n$('#msKeyword').keypress(function (e) {\nif (e.which == 13) {\ne.preventDefault();\n$('#btnMsQall').click();\n}\n});\n\n$('#dropdownMenu').attr('data-bs-toggle', 'dropdown');\n$('#unitlist').on(\"click\", \"a\", function (e) {\ne.preventDefault();\nvar $this = $(this).parent();\nvar a = $(this).html();\nb = $this.data(\"value\");\n$this.addClass(\"select\").siblings().removeClass(\"select\");\n$(\"#dropdownMenu\").html(a);\n$('#hidVal').val(b);\n});\n//$('#keyword').on('input propertychange paste keypress', function () {\n// BindAutocomplete('#keyword', b);\n//});\nBindAutocompletes('#keyword', b);\nfunction BindAutocompletes(orl, stype) {\n\n$(orl).autocomplete({\nsource: function (request, response) {\n$.ajax({\nurl: \"../controls/GetTermList.ashx\",\ntype: 'post',\ndataType: \"json\",\ndata: {\nterm: request.term, type: stype\n},\nsuccess: function (data) {\nresponse(data);\n}\n});\n},\nminLength: 1, //至少輸入幾個字元才開始給提示\nfocus: function (event, ui) {\nreturn false;\n},\nselect: function (event, ui) {\nif ($.trim(ui.item.PCODE).length == 0)\n$(this).val(ui.item.TERM);\nelse\nlocation.href = \"../Hot/AddHotLaw.ashx?pcode=\" + encodeURIComponent(ui.item.PCODE);\n\nreturn false;\n},\nmessages: { noResults: '', results: function () { } }//不顯示結果文字\n}).data(\"ui-autocomplete\")._renderItem = function (ul, item) {\nif ($.trim(item.PCODE) != \"\")\nreturn $(\"<li class='line'>\")\n.append(\"<span class='label label-info'>直接連結</span><a>\" + item.TERM + \"</a>\")\n.appendTo(ul);\nelse {\nif (ul.find(\".label-usual\").length == 0)\nreturn $(\"<li>\")\n.append(\"<span class='label label-info label-usual'>常用詞彙</span><a>\" + item.TERM + \"</a>\")\n.appendTo(ul);\nelse\nreturn $(\"<li>\")\n.append(\"<a>\" + item.TERM + \"</a>\")\n.appendTo(ul);\n}\n};\n}\n});\nfunction validateEmail(email) {\nif (email.includes(\"%\")) {\nreturn false;\n}\nreturn true;\n}\nfunction OpenKeyWordHelp() {\nvar a = \"/Service/KeyWordHelp.aspx\";\nTINY.box.show({ iframe: a, width: 810, height: 680 });\n//return false;\n}\nfunction GetRequest() {\nvar url = location.search;\nvar theRequest = new Object();\nif (url.indexOf(\"?\") != -1) {\nvar str = url.substr(1);\nstrs = str.split(\"&\");\nfor (var i = 0; i < strs.length; i++) {\ntheRequest[strs[i].split(\"=\")[0]] = decodeURI(strs[i].split(\"=\")[1]);\n}\n}\nreturn theRequest;\n}\n\n//20210218 再檢索-收合/展開 按鈕判斷顯示時機(若檢索字詞有多行，才要顯示收合/展開，需依照版面尺寸更換條件)\nvar urlParams = GetRequest();\n//var keyword = '';\nvar keyword = urlParams[\"kw\"] ? urlParams[\"kw\"] : \"\";\n\nif (document.body.clientWidth + 17 > 1200) {\nif (keyword != null && keyword.length > 26) {\n$(\"#btnOpen\").removeClass(\"display-none\");\n}\n} else {\nif (keyword != null && keyword.length > 19) {\n$(\"#btnOpen\").removeClass(\"display-none\");\n}\n}\n\n$(function () {\n$('[data-fancybox]').fancybox({\ntoolbar: false,\nsmallBtn: true,\niframe: {\ncss: {\nwidth: '400px',\nheight: '170px'\n}\n}\n});\n});",
+      "text": "本法自公布日施行。\n\n:::\n\n最新訊息\n\n中央法規\n\n司法解釋\n\n條約協定\n\n兩岸協議\n\n綜合查詢\n\n跨機關檢索\n\n法治宣導專區\n\n智慧查找\n\n法律扶助\n\n創意教案\n\n法律時事漫談\n\n網站使用說明\n\n網站使用手冊\n\n會員服務介紹\n\n網站單元簡介\n\n法規資料檢索範圍\n\n資料更新頻率說明\n\n資訊服務\n\n全國法規連結圖示\n\n全國法規作業要點\n\n法規名稱英譯標準表\n\n相關網站\n\n訂閱電子報\n\n瀏覽人次總計\n\n1,613,265,790人\n\n本月瀏覽人次\n\n11,223,614人\n\n目前使用人次\n\n1,777人\n\n電子報訂閱人數\n\n222,808人\n\n本網站係提供法規之最新動態資訊及資料檢索，並不提供法規及法律諮詢之服務。\n\n若有任何法律上的疑義，建議您可逕向發布法規之主管機關洽詢。\n\n本網站法規資料係由政府各機關提供之電子檔或書面文字登打製作，若與各法規主管機關之公布文字有所不同，仍以各法規主管機關之公布資料為準。\n\n部分資料內容，使用特殊文字或符號，如欲詳閱內容，請連結至司法院網站下載造字檔。\n\n全國法規資料庫之內容每週五定期更新，當週發布之法律、命令資料，將於完成法規整編作業後，於下週五更新上線。\n\n法規整編資料截止日：民國 115 年 08 月 14 日\n\n瀏覽人次總計：1,613,265,790人\n\n本月瀏覽人次：11,223,614人\n\n目前使用人次：1,777人\n\n電子報訂閱：222,808人\n\n│ 政府網站資料開放宣告 │ 隱私權保護宣告 │ 資訊安全政策 │ Q & A │ 意見回饋 │ API文件 │\n\n本網站由法務部全國法規資料庫工作小組維運管理..\n\n法務部地址：100204 台北市重慶南路一段130號　電話：(02)2191-0189\n\n第二辦公室地址：100006 台北市貴陽街1段235號　電話：(02)2191-0189\n\n回上方\n\n$(function () {\n\n// === 統一綁定 GA 追蹤事件 ===\n$('.ga-track-link').on('click keypress', function (e) {\n// 如果是鍵盤事件，確認是按下 Enter 鍵 (keyCode 13) 才觸發\nif (e.type === 'keypress' && e.which !== 13) {\nreturn;\n}\n\nvar category = $(this).data('ga-category');\nvar action = $(this).data('ga-action');\n\n// 呼叫原本的 GA 追蹤函數\nif (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice(category, action, '', '');\n}\n});\n\n// 綁定登出確認視窗\n$('.logout-link').on('click', function () {\nif (!confirm('確定登出？')) {\nreturn false; // 若使用者按取消，則不執行跳轉\n}\n});\n\nvar b = 'ONEBAR';\n$(\"#btnSubscribe,#btnUnsubscribe\").on(\"click\", function (event) {\n//var email = $.trim($(\"#txtEMail\").val());\n//if (email == \"\") {\n// event.preventDefault();\n// alert('請您輸入電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else if (false == IsEMail(email)) {\n// event.preventDefault();\n// alert('請您輸入正確電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else {\n// GoogleAnanlytice('中文', '訂閱電子報', '', '');\n//}\nvar email = $.trim($(\"#txtEMail\").val());\n//if (!validateEmail(email)) {\n// alert('請您輸入正確電子郵件地址。');\n// return false;\n//}\n\n});\n$('#btnQall').on(\"click\", function () {\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse if (keyword.indexOf($.trim($(\"#keyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsQall').on(\"click\", function () {\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else if (keyword.indexOf($.trim($(\"#msKeyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n//20210217 再檢索收合、展開功能\n$(\"#btnOpen\").click(function () {\nif ($('#ulDeepSearch').hasClass('overflow-hidden')) {\n$(this).html(\"收合\");\n$(this).prop('title', '隱藏部分「再檢索」篩選條件，僅顯示一行');\n$(\"#ulDeepSearch\").removeClass(\"overflow-hidden\").addClass(\"overflow-inherit\");\n}\nelse {\n$(this).html(\"展開\");\n$(this).prop('title', '顯示所有目前「再檢索」篩選條件');\n$(\"#ulDeepSearch\").removeClass(\"overflow-inherit\").addClass(\"overflow-hidden\");\n}\n});\n$(\"#btnHelp\").click(function () {\nOpenKeyWordHelp();\nreturn false;\n});\n// 綁定整合查詢的 Enter 鍵事件\n$('#keyword').keypress(function (e) {\nif (e.which == 13) {\ne.preventDefault();\n$('#btnQall').click();\n}\n});\n// --- 新增：綁定整合查詢的 Enter 鍵事件 (行動版) ---\n$('#msKeyword').keypress(function (e) {\nif (e.which == 13) {\ne.preventDefault();\n$('#btnMsQall').click();\n}\n});\n\n$('#dropdownMenu').attr('data-bs-toggle', 'dropdown');\n$('#unitlist').on(\"click\", \"a\", function (e) {\ne.preventDefault();\nvar $this = $(this).parent();\nvar a = $(this).html();\nb = $this.data(\"value\");\n$this.addClass(\"select\").siblings().removeClass(\"select\");\n$(\"#dropdownMenu\").html(a);\n$('#hidVal').val(b);\n});\n//$('#keyword').on('input propertychange paste keypress', function () {\n// BindAutocomplete('#keyword', b);\n//});\nBindAutocompletes('#keyword', b);\nfunction BindAutocompletes(orl, stype) {\n\n$(orl).autocomplete({\nsource: function (request, response) {\n$.ajax({\nurl: \"../controls/GetTermList.ashx\",\ntype: 'post',\ndataType: \"json\",\ndata: {\nterm: request.term, type: stype\n},\nsuccess: function (data) {\nresponse(data);\n}\n});\n},\nminLength: 1, //至少輸入幾個字元才開始給提示\nfocus: function (event, ui) {\nreturn false;\n},\nselect: function (event, ui) {\nif ($.trim(ui.item.PCODE).length == 0)\n$(this).val(ui.item.TERM);\nelse\nlocation.href = \"../Hot/AddHotLaw.ashx?pcode=\" + encodeURIComponent(ui.item.PCODE);\n\nreturn false;\n},\nmessages: { noResults: '', results: function () { } }//不顯示結果文字\n}).data(\"ui-autocomplete\")._renderItem = function (ul, item) {\nif ($.trim(item.PCODE) != \"\")\nreturn $(\"<li class='line'>\")\n.append(\"<span class='label label-info'>直接連結</span><a>\" + item.TERM + \"</a>\")\n.appendTo(ul);\nelse {\nif (ul.find(\".label-usual\").length == 0)\nreturn $(\"<li>\")\n.append(\"<span class='label label-info label-usual'>常用詞彙</span><a>\" + item.TERM + \"</a>\")\n.appendTo(ul);\nelse\nreturn $(\"<li>\")\n.append(\"<a>\" + item.TERM + \"</a>\")\n.appendTo(ul);\n}\n};\n}\n});\nfunction validateEmail(email) {\nif (email.includes(\"%\")) {\nreturn false;\n}\nreturn true;\n}\nfunction OpenKeyWordHelp() {\nvar a = \"/Service/KeyWordHelp.aspx\";\nTINY.box.show({ iframe: a, width: 810, height: 680 });\n//return false;\n}\nfunction GetRequest() {\nvar url = location.search;\nvar theRequest = new Object();\nif (url.indexOf(\"?\") != -1) {\nvar str = url.substr(1);\nstrs = str.split(\"&\");\nfor (var i = 0; i < strs.length; i++) {\ntheRequest[strs[i].split(\"=\")[0]] = decodeURI(strs[i].split(\"=\")[1]);\n}\n}\nreturn theRequest;\n}\n\n//20210218 再檢索-收合/展開 按鈕判斷顯示時機(若檢索字詞有多行，才要顯示收合/展開，需依照版面尺寸更換條件)\nvar urlParams = GetRequest();\n//var keyword = '';\nvar keyword = urlParams[\"kw\"] ? urlParams[\"kw\"] : \"\";\n\nif (document.body.clientWidth + 17 > 1200) {\nif (keyword != null && keyword.length > 26) {\n$(\"#btnOpen\").removeClass(\"display-none\");\n}\n} else {\nif (keyword != null && keyword.length > 19) {\n$(\"#btnOpen\").removeClass(\"display-none\");\n}\n}\n\n$(function () {\n$('[data-fancybox]').fancybox({\ntoolbar: false,\nsmallBtn: true,\niframe: {\ncss: {\nwidth: '400px',\nheight: '170px'\n}\n}\n});\n});",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=20&pcode=D0080001",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080001",
-      "fetchedAt": "2026-08-23T10:11:25.895Z",
+      "fetchedAt": "2026-08-23T23:37:02.083Z",
       "ok": true,
       "source": "LawAll"
     }
