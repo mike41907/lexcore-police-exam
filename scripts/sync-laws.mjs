@@ -5,7 +5,7 @@ import {fetchText, politeDelay} from "./lib/http.mjs";
 import {readJson, writeJsonAtomic} from "./lib/fs.mjs";
 import {htmlToText} from "./lib/text.mjs";
 import {parseOfficialHistoryText} from "./lib/history.mjs";
-import {parseAllArticlesFromText} from "./lib/law-all.mjs";
+import {parseLawAllStructure} from "./lib/law-all.mjs";
 
 const HERE=path.dirname(fileURLToPath(import.meta.url)), ROOT=path.resolve(HERE,"..");
 const cfg=await readJson(path.join(ROOT,"config/laws.json"));
@@ -46,11 +46,11 @@ for(const law of cfg.laws){
   }
   const windowEvents=history.filter(e=>e.rocYear>=cfg.window.rocStart && e.rocYear<=cfg.window.rocEnd);
   const fullTextUrl=`https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=${law.pcode}`;
-  let articles={...(prev.articles||{})}, fullTextOk=false, fullArticleCount=0, fullTextError=null;
+  let articles={...(prev.articles||{})}, chapters=prev.chapters||[], fullTextOk=false, fullArticleCount=0, fullTextError=null;
   try{
     const raw=await fetchText(fullTextUrl,{timeoutMs:55000,retries:2});
-    const parsed=parseAllArticlesFromText(htmlToText(cheerio.load(raw)));
-    const entries=Object.entries(parsed);
+    const parsed=parseLawAllStructure(htmlToText(cheerio.load(raw)));
+    const entries=Object.entries(parsed.articles);
     if(!entries.length)throw new Error("full-text parser returned 0 articles");
     const fetchedAt=new Date().toISOString();
     const fresh={};
@@ -61,8 +61,8 @@ for(const law of cfg.laws){
         fullTextUrl,fetchedAt,ok:true,source:"LawAll"
       };
     }
-    articles=fresh;fullTextOk=true;fullArticleCount=entries.length;
-    console.log(`  full text: ${entries.length} articles`);
+    articles=fresh;chapters=parsed.chapters;fullTextOk=true;fullArticleCount=entries.length;
+    console.log(`  full text: ${entries.length} articles, ${chapters.length} outline entries`);
   }catch(e){
     fullTextError=e.message;
     console.warn(`  full-text fallback: ${e.message}`);
@@ -85,7 +85,7 @@ for(const law of cfg.laws){
     id:law.id,name:law.name,pcode:law.pcode,
     fetchedAt:new Date().toISOString(),
     latest:history[0]?.date||prev.latest||null,
-    history, windowEvents, articles,
+    history, windowEvents, articles, chapters,
     fullTextUrl,fullTextOk,fullArticleCount,fullTextError,
     source:law.historyUrl
   };

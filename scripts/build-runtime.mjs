@@ -95,6 +95,7 @@ const lawCatalog=cfg.laws.map(l=>({
   parentLaw:l.parentLaw||null,relationType:l.relationType||null,
   articleIds:Object.keys(lawRaw[l.id]?.articles||{}).filter(a=>lawRaw[l.id]?.articles?.[a]?.ok&&lawRaw[l.id]?.articles?.[a]?.text)
     .sort((a,b)=>{const ap=a.split("-").map(Number),bp=b.split("-").map(Number);return (ap[0]-bp[0])||((ap[1]||0)-(bp[1]||0));}),
+  chapters:(lawRaw[l.id]?.chapters||[]).filter(c=>c?.label&&c?.article&&lawRaw[l.id]?.articles?.[c.article]?.ok&&lawRaw[l.id]?.articles?.[c.article]?.text),
   fullTextOk:!!lawRaw[l.id]?.fullTextOk,
   fullTextUrl:lawRaw[l.id]?.fullTextUrl||`https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=${l.pcode}`
 }));

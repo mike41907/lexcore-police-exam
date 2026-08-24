@@ -427,7 +427,7 @@ main{max-width:1500px;width:100%;margin:auto;padding:24px}.top{display:flex;just
 
 /* ===== v3.0 Complete law library / quick lookup ===== */
 .full-law-meta{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px}
-.article-index{display:flex;gap:5px;flex-wrap:wrap;max-height:190px;overflow:auto;padding:9px;border:1px solid var(--line);border-radius:11px;background:var(--bg)}
+.law-reader{display:grid;gap:9px;margin-top:10px}.law-reader-section{display:flex;align-items:baseline;gap:8px;margin:8px 2px 0;padding:10px 12px;border-left:4px solid var(--p);border-radius:10px;background:var(--p2);color:var(--p)}.law-reader-section.book{border-left-color:var(--r);background:var(--r2);color:var(--r)}.law-reader-section.section{border-left-color:var(--g);background:var(--g2);color:var(--g)}.law-reader-section b{font-size:13px;line-height:1.45}.law-reader-section span{font-size:10px;font-weight:900;white-space:nowrap}.law-reader-article{content-visibility:auto;contain-intrinsic-size:auto 190px;scroll-margin-top:104px;border:1px solid var(--line);border-radius:14px;background:var(--card);overflow:hidden;box-shadow:var(--shadow-sm);transition:border-color .18s ease,box-shadow .18s ease}.law-reader-article.is-target{border-color:var(--p);box-shadow:0 0 0 3px color-mix(in srgb,var(--p) 16%,transparent),var(--shadow-sm)}.law-reader-article-head{display:flex;align-items:center;justify-content:space-between;gap:9px;padding:11px 13px;border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--bg) 50%,var(--card))}.law-reader-article-head h3{margin:0;font-size:14px}.law-reader-article-tags{display:flex;gap:5px;align-items:center;justify-content:flex-end;flex-wrap:wrap}.law-reader-article-tags .badge{font-size:9px}.law-reader-article-tags .chip{font-size:10px;padding:4px 7px;min-height:28px}.law-reader-text{padding:13px;font-size:14px;line-height:1.9;white-space:pre-wrap;overflow-wrap:anywhere;color:var(--text)}
 .article-search-results{display:grid;gap:8px;margin-top:10px}
 .article-result{border:1px solid var(--line);background:var(--card);border-radius:11px;padding:10px;cursor:pointer}
 .article-result:hover{border-color:var(--p)}
@@ -435,9 +435,9 @@ main{max-width:1500px;width:100%;margin:auto;padding:24px}.top{display:flex;just
 .law-navigator{margin-bottom:13px;padding:13px 14px;border:1px solid color-mix(in srgb,var(--p) 20%,var(--line));border-radius:16px;background:linear-gradient(135deg,color-mix(in srgb,var(--p2) 62%,var(--card)),var(--card));box-shadow:var(--shadow-sm)}
 .law-navigator-head{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:9px}.law-navigator-head b{font-size:14px}.law-jump-status{font-size:11px;color:var(--muted);white-space:nowrap}
 .law-jump-controls{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(98px,.62fr) auto;gap:8px;align-items:center}.law-jump-controls select,.law-jump-controls input{width:100%;min-width:0;min-height:42px;border:1px solid var(--line);border-radius:12px;padding:9px 10px;background:var(--card);color:var(--text);font:inherit}.law-jump-controls .btn{min-height:42px;padding:9px 13px;white-space:nowrap}
-.law-relation-card{margin-top:10px;padding:10px 11px;border:1px solid color-mix(in srgb,var(--p) 16%,var(--line));border-radius:13px;background:color-mix(in srgb,var(--card) 86%,var(--p2))}.law-relation-head{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:7px;font-size:12px}.law-relation-head b{font-size:12px}.law-chain-path{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.law-chain-node,.law-chain-current{display:inline-flex;align-items:center;min-height:30px;border:1px solid var(--line);border-radius:9px;padding:5px 8px;background:var(--card);color:var(--text);font-size:11px;font-weight:900;line-height:1.35;text-align:left}.law-chain-node{cursor:pointer}.law-chain-node:hover{border-color:var(--p);color:var(--p)}.law-chain-node.parent,.law-chain-current.parent{border-color:color-mix(in srgb,var(--r) 38%,var(--line));background:var(--r2);color:var(--r)}.law-chain-node.related,.law-chain-current.related{border-color:color-mix(in srgb,var(--p) 30%,var(--line));background:var(--p2);color:var(--p)}.law-chain-node.child,.law-chain-current.child{border-color:color-mix(in srgb,var(--g) 36%,var(--line));background:var(--g2);color:var(--g)}.law-chain-arrow{color:var(--muted);font-weight:950}.law-chain-note{margin-top:7px;font-size:11px;line-height:1.55;color:var(--muted)}.law-chain-branches{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:8px}.law-chain-branches>span{font-size:10px;font-weight:900;color:var(--muted)}.law-chain-branches .chip{font-size:10px;padding:5px 7px}.law-chain-empty{display:flex;justify-content:space-between;gap:8px;align-items:center;font-size:11px;color:var(--muted)}.law-chain-empty>div{min-width:0}.law-chain-empty .chip{flex:0 0 auto;white-space:nowrap}
-.law-article-rail-wrap{display:flex;gap:8px;align-items:center;margin-top:10px}.law-article-rail-wrap>span{flex:0 0 auto;font-size:11px;font-weight:900;color:var(--muted)}.law-article-rail{display:flex;gap:6px;min-width:0;overflow-x:auto;padding:1px 1px 3px;scrollbar-width:none}.law-article-rail::-webkit-scrollbar{display:none}.law-article-rail .chip{flex:0 0 auto;white-space:nowrap}.law-article-rail .hot{border-color:color-mix(in srgb,var(--r) 36%,var(--line));color:var(--r)}
-@media(max-width:650px){.law-navigator{padding:12px;border-radius:14px}.law-navigator-head{align-items:flex-start}.law-jump-status{white-space:normal;text-align:right;line-height:1.45}.law-jump-controls{grid-template-columns:minmax(0,1fr) 82px auto;gap:6px}.law-jump-controls select,.law-jump-controls input{min-height:40px;padding:8px}.law-jump-controls .btn{min-height:40px;padding:8px 10px}.law-chain-path{flex-wrap:nowrap;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}.law-chain-path::-webkit-scrollbar{display:none}.law-chain-node,.law-chain-current,.law-chain-arrow{flex:0 0 auto;white-space:nowrap}.law-chain-branches{align-items:flex-start}.law-chain-branches>span{padding-top:5px}.law-article-rail-wrap{align-items:flex-start;flex-direction:column;gap:5px}.law-article-rail{width:100%}}
+.law-relation-card{margin-top:10px;padding:10px 11px;border:1px solid color-mix(in srgb,var(--p) 16%,var(--line));border-radius:13px;background:color-mix(in srgb,var(--card) 86%,var(--p2))}.law-relation-card.compact{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 9px}.law-relation-card.compact .law-relation-head{margin:0}.law-relation-card.compact .chip{flex:0 0 auto;white-space:nowrap}.law-relation-head{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:7px;font-size:12px}.law-relation-head b{font-size:12px}.law-chain-path{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.law-chain-node,.law-chain-current{display:inline-flex;align-items:center;min-height:30px;border:1px solid var(--line);border-radius:9px;padding:5px 8px;background:var(--card);color:var(--text);font-size:11px;font-weight:900;line-height:1.35;text-align:left}.law-chain-node{cursor:pointer}.law-chain-node:hover{border-color:var(--p);color:var(--p)}.law-chain-node.parent,.law-chain-current.parent{border-color:color-mix(in srgb,var(--r) 38%,var(--line));background:var(--r2);color:var(--r)}.law-chain-node.related,.law-chain-current.related{border-color:color-mix(in srgb,var(--p) 30%,var(--line));background:var(--p2);color:var(--p)}.law-chain-node.child,.law-chain-current.child{border-color:color-mix(in srgb,var(--g) 36%,var(--line));background:var(--g2);color:var(--g)}.law-chain-arrow{color:var(--muted);font-weight:950}.law-chain-note{margin-top:7px;font-size:11px;line-height:1.55;color:var(--muted)}.law-chain-branches{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:8px}.law-chain-branches>span{font-size:10px;font-weight:900;color:var(--muted)}.law-chain-branches .chip{font-size:10px;padding:5px 7px}.law-chain-empty{display:flex;justify-content:space-between;gap:8px;align-items:center;font-size:11px;color:var(--muted)}.law-chain-empty>div{min-width:0}.law-chain-empty .chip{flex:0 0 auto;white-space:nowrap}
+.law-article-rail-wrap{display:flex;gap:8px;align-items:center;margin-top:10px}.law-article-rail-wrap>span{flex:0 0 auto;font-size:11px;font-weight:900;color:var(--muted)}.law-article-rail{display:flex;gap:6px;min-width:0;overflow-x:auto;padding:1px 1px 4px;scrollbar-width:none}.law-article-rail::-webkit-scrollbar{display:none}.law-chapter-chip{display:inline-flex;align-items:center;gap:6px;flex:0 0 auto;min-height:32px;border:1px solid var(--line);border-radius:10px;padding:5px 8px;background:var(--card);color:var(--text);font:inherit;font-size:11px;font-weight:900;line-height:1.35;white-space:nowrap;text-align:left}.law-chapter-chip:hover{border-color:var(--p);color:var(--p)}.law-chapter-chip.book{border-color:color-mix(in srgb,var(--r) 32%,var(--line));color:var(--r);background:var(--r2)}.law-chapter-chip.section{border-color:color-mix(in srgb,var(--g) 30%,var(--line));color:var(--g);background:var(--g2)}.law-chapter-chip small{font-size:9px;color:var(--muted);font-weight:800}
+@media(max-width:650px){.law-navigator{padding:12px;border-radius:14px}.law-navigator-head{align-items:flex-start}.law-jump-status{white-space:normal;text-align:right;line-height:1.45}.law-jump-controls{grid-template-columns:minmax(0,1fr) 82px auto;gap:6px}.law-jump-controls select,.law-jump-controls input{min-height:40px;padding:8px}.law-jump-controls .btn{min-height:40px;padding:8px 10px}.law-chain-path{flex-wrap:nowrap;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}.law-chain-path::-webkit-scrollbar{display:none}.law-chain-node,.law-chain-current,.law-chain-arrow{flex:0 0 auto;white-space:nowrap}.law-chain-branches{align-items:flex-start}.law-chain-branches>span{padding-top:5px}.law-article-rail-wrap{align-items:flex-start;flex-direction:column;gap:5px}.law-article-rail{width:100%}.law-reader{gap:8px}.law-reader-section{padding:9px 10px;margin-top:6px}.law-reader-article{border-radius:12px;scroll-margin-top:86px}.law-reader-article-head{padding:10px 11px}.law-reader-text{padding:11px;font-size:14px;line-height:1.85}}
 .lookup-hero{display:grid;grid-template-columns:1fr auto;gap:8px;margin-bottom:10px}
 .lookup-hero input{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:11px;padding:12px;font-size:14px}
 .lookup-tools{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px}
@@ -3047,7 +3047,7 @@ load();
    </div>
    <datalist id="lawArticleOptions"></datalist>
    <div id="lawRelationChain"></div>
-   <div class="law-article-rail-wrap"><span>一鍵法條</span><div class="law-article-rail" id="lawArticleRail"></div></div>
+   <div class="law-article-rail-wrap"><span>章節目錄</span><div class="law-article-rail" id="lawChapterRail"></div></div>
   </div>
   <div class="searchbar"><input id="search" placeholder="搜尋目前法規的條號或條文內容，例如：6、101-1、三小時、管束"></div>
   <div class="card"><div class="head"><div><h2 id="studyTitle">完整法規庫</h2><div class="meta" id="studySyncMeta">讀取現行全文中</div></div><span class="badge blue">完整現行法</span></div><div class="body" id="studyBody"></div></div>
@@ -5172,7 +5172,8 @@ function lawCatalog(){
  return (DATA.laws||[]).map(l=>({id:l.id,name:l.name,pcode:l.pcode,category:l.category,articleIds:Object.keys(ARTICLE_TEXTS).filter(k=>k.startsWith(l.id+":")).map(k=>k.split(":")[1])}));
 }
 function lawInfo(id){
- return (DATA.laws||[]).find(x=>x.id===id) || lawCatalog().find(x=>x.id===id) || {id,name:id,category:"相關法規",articleIds:[]};
+ const catalog=lawCatalog().find(x=>x.id===id), base=(DATA.laws||[]).find(x=>x.id===id);
+ return {...(catalog||{}),...(base||{}),id,name:base?.name||catalog?.name||id,category:base?.category||catalog?.category||"相關法規",articleIds:catalog?.articleIds||[]};
 }
 function articleSortValue(a=""){
  const p=String(a).split("-").map(Number);return (p[0]||0)*1000+(p[1]||0);
@@ -5188,6 +5189,28 @@ function articleIdsForLaw(id){
  const ids=allArticleRecords().filter(x=>x.lawId===id).map(x=>String(x.article));
  if(ids.length)return [...new Set(ids)].sort((a,b)=>articleSortValue(a)-articleSortValue(b));
  const l=(DATA.laws||[]).find(x=>x.id===id);return [...(l?.key_articles||[])];
+}
+function lawChaptersForLaw(id,ids=[]){
+ const available=new Set(ids.map(String)),seen=new Set();
+ const rows=(lawInfo(id).chapters||[]).filter(row=>{
+   const key=`${row.type}|${row.label}|${row.article}`;
+   if(!row?.label||!available.has(String(row.article))||seen.has(key))return false;
+   seen.add(key);return true;
+ });
+ return rows.length?rows:(ids[0]?[{id:"outline-all",type:"全文",label:"全部條文",article:String(ids[0])}]:[]);
+}
+function chapterTypeClass(type=""){return type==="編"?"book":type==="節"?"section":"chapter"}
+function studyArticleDomId(lid,article){return `law-reader-${encodeURIComponent(lid)}-${encodeURIComponent(String(article))}`}
+function scrollToStudyArticle(lid,article){
+ const target=document.getElementById(studyArticleDomId(lid,article));
+ if(!target){openArticle(lid,article);return;}
+ const reduced=window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
+ target.scrollIntoView({behavior:reduced?"auto":"smooth",block:"start"});
+ target.classList.remove("is-target");void target.offsetWidth;target.classList.add("is-target");
+ window.setTimeout(()=>target.classList.remove("is-target"),1800);
+ const input=$("lawArticleJump"),status=$("lawJumpStatus");
+ if(input)input.value=article;
+ if(status)status.textContent=`已定位第${article}條`;
 }
 function normalizeArticleJump(value=""){
  return String(value).trim().replace(/第|條|\s/g,"").replace(/之/g,"-").replace(/[－—–]/g,"-");
@@ -5226,7 +5249,7 @@ function lawChainNode(node,lid){
 }
 function lawRelationChainMarkup(lid){
  const ctx=lawChainContext(lid);
- if(!ctx)return `<div class="law-relation-card"><div class="law-chain-empty"><div><div class="law-relation-head"><b>🔗 法規關連鏈</b><span class="badge blue">獨立法律</span></div><div>本系統目前沒有列入本法的直接子法；可查看警察法規母子法體系。</div></div><button class="chip" type="button" onclick="showPage('tree')">母子法體系</button></div></div>`;
+ if(!ctx)return `<div class="law-relation-card compact"><div class="law-relation-head"><b>🔗 法規關連鏈</b><span class="badge blue">獨立法律</span></div><button class="chip" type="button" onclick="showPage('tree')">母子法</button></div>`;
  const tag=ctx.kind==="parent"?`<span class="badge red">母法</span>`:treeBadge(ctx.type);
  const path=ctx.nodes.map(n=>lawChainNode(n,lid)).join(`<span class="law-chain-arrow" aria-hidden="true">→</span>`);
  const branches=(ctx.branches||[]).slice(0,8).map(item=>{
@@ -5238,16 +5261,14 @@ function lawRelationChainMarkup(lid){
  return `<div class="law-relation-card"><div class="law-relation-head"><b>🔗 母法／子法關連鏈</b>${tag}</div><div class="law-chain-path">${path}</div>${ctx.basis?`<div class="law-chain-note">依據：${esc(ctx.basis)}</div>`:""}${branches?`<div class="law-chain-branches"><span>同體系可切換</span>${branches}</div>`:""}</div>`;
 }
 function renderLawNavigator(id,ids,l,base,recentSet){
- const input=$("lawArticleJump"), options=$("lawArticleOptions"), status=$("lawJumpStatus"), rail=$("lawArticleRail"), chain=$("lawRelationChain");
+ const input=$("lawArticleJump"), options=$("lawArticleOptions"), status=$("lawJumpStatus"), rail=$("lawChapterRail"), chain=$("lawRelationChain");
  if(!input||!options||!status||!rail||!chain)return;
  if(input.dataset.lawId!==id){input.value="";input.dataset.lawId=id;}
  options.innerHTML=ids.map(a=>`<option value="${esc(a)}" label="第${esc(a)}條"></option>`).join("");
- status.textContent=ids.length?`共 ${ids.length} 條；輸入條號即可直達`:`目前沒有可跳轉的條文`;
+ status.textContent=ids.length?`共 ${ids.length} 條；可輸入條號精準定位`:`目前沒有可跳轉的條文`;
  chain.innerHTML=lawRelationChainMarkup(id);
- const core=(base?.key_articles||[]).map(String).filter(a=>ids.includes(a));
- const recent=ids.filter(a=>recentSet.has(String(a)));
- const featured=[...new Set([...core,...recent,...ids.slice(0,6)])].slice(0,18);
- rail.innerHTML=featured.length?featured.map(a=>`<button class="chip ${recentSet.has(String(a))?"hot":""}" type="button" onclick="openArticle('${id}','${a}')">第${a}條${recentSet.has(String(a))?" 🔥":""}</button>`).join(""):`<span class="meta">等待法條索引</span>`;
+ const chapters=lawChaptersForLaw(id,ids);
+ rail.innerHTML=chapters.length?chapters.map(c=>`<button class="law-chapter-chip ${chapterTypeClass(c.type)}" type="button" onclick="scrollToStudyArticle('${id}','${c.article}')" title="跳到第${esc(c.article)}條"><span>${esc(c.label)}</span><small>§ ${esc(c.article)}</small></button>`).join(""):`<span class="meta">等待章節資料</span>`;
 }
 function jumpToStudyArticle(){
  const lid=$("lawFilter")?.value||"", input=$("lawArticleJump"), status=$("lawJumpStatus");
@@ -5255,18 +5276,9 @@ function jumpToStudyArticle(){
  if(!query){input?.focus();if(status)status.textContent="請輸入條號，例如 101-1";return;}
  const article=articleIdsForLaw(lid).find(a=>normalizeArticleJump(a)===query);
  if(!article){if(status)status.textContent=`找不到第${query}條，請確認目前選擇的法規`;input?.focus();return;}
- if(status)status.textContent=`已開啟第${article}條`;
+ if(status)status.textContent=`已定位第${article}條`;
  if(input)input.value=article;
- openArticle(lid,article);
-}
-const ARTICLE_INDEX_INITIAL_COUNT=72;
-function articleIndexButtonsMarkup(lid,ids,recentSet,limit=ids.length){
- return ids.slice(0,limit).map(a=>`<button class="chip ${recentSet.has(String(a))?"hot":""}" type="button" onclick="openArticle('${lid}','${a}')">第${a}條${recentSet.has(String(a))?" 🔥":""}</button>`).join("");
-}
-function expandArticleIndex(lid){
- const ids=articleIdsForLaw(lid), base=(DATA.laws||[]).find(x=>x.id===lid), recentSet=new Set((base?.events||[]).flatMap(e=>e.article_ids||[]).map(String));
- const box=$("articleIndex");if(box)box.innerHTML=articleIndexButtonsMarkup(lid,ids,recentSet);
- const more=$("articleIndexMore");if(more)more.remove();
+ scrollToStudyArticle(lid,article);
 }
 function articleSnippet(text,q){
  const clean=cleanText(text||"");if(!q)return clean.slice(0,180);
@@ -5289,6 +5301,19 @@ function fillFullLawFilter(){
    if(rows.some(x=>x.id===old2))$("lookupLaw").value=old2;
  }
 }
+function fullLawReaderMarkup(lid,records,ids,recentSet,coreSet){
+ const starts=new Map();
+ for(const chapter of lawChaptersForLaw(lid,ids)){
+   if(chapter.type==="全文")continue;
+   const rows=starts.get(String(chapter.article))||[];rows.push(chapter);starts.set(String(chapter.article),rows);
+ }
+ return `<div class="law-reader" aria-label="${esc(lawInfo(lid).name)}現行全文">${records.map(r=>{
+   const article=String(r.article), detail=DETAILS?.[`${lid}:${article}`];
+   const headings=(starts.get(article)||[]).map(c=>`<div class="law-reader-section ${chapterTypeClass(c.type)}"><b>${esc(c.label)}</b><span>自第 ${esc(article)} 條</span></div>`).join("");
+   const tags=[recentSet.has(article)?`<span class="badge red">近5年修法</span>`:"",coreSet.has(article)?`<span class="badge amber">核心必讀</span>`:"",detail?`<button class="chip" type="button" onclick="openArticle('${lid}','${article}')">修法重點</button>`:""].join("");
+   return `${headings}<article class="law-reader-article" id="${studyArticleDomId(lid,article)}" tabindex="-1"><div class="law-reader-article-head"><h3>第 ${esc(article)} 條</h3><div class="law-reader-article-tags">${tags}</div></div><div class="law-reader-text">${esc(r.text||"")}</div></article>`;
+ }).join("")}</div>`;
+}
 function renderFullStudy(){
  if(!$("lawFilter")||!$("studyBody"))return;
  const id=$("lawFilter").value||lawCatalog()[0]?.id, l=lawInfo(id), base=(DATA.laws||[]).find(x=>x.id===id),q=($("search")?.value||"").trim();
@@ -5298,20 +5323,19 @@ function renderFullStudy(){
  const recentSet=new Set((base?.events||[]).flatMap(e=>e.article_ids||[]).map(String));
  renderLawNavigator(id,ids,l,base,recentSet);
  let out=`<div class="full-law-meta"><span class="badge green">${records.length?`${records.length} 條現行全文`:"等待完整同步"}</span><span class="badge red">${recentSet.size} 條近5年異動</span><span class="badge blue">${base?.key_articles?.length||0} 條核心必讀</span>${l.pcode?`<a class="chip" target="_blank" style="text-decoration:none" href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=${l.pcode}">官方所有條文</a>`:""}</div>`;
+ const coreSet=new Set((base?.key_articles||[]).map(String));
  if(!q){
-   if(ids.length){
-    const initialCount=Math.min(ARTICLE_INDEX_INITIAL_COUNT,ids.length);
-    out+=`<div class="block"><div class="row"><h3>全部條文索引</h3><span class="badge blue">先顯示 ${initialCount}／${ids.length} 條</span></div><div class="article-index" id="articleIndex">${articleIndexButtonsMarkup(id,ids,recentSet,initialCount)}</div>${ids.length>initialCount?`<div class="links" id="articleIndexMore"><button class="chip" type="button" onclick="expandArticleIndex('${id}')">顯示其餘 ${ids.length-initialCount} 條</button></div>`:""}</div>`;
-   }
+   if(records.length)out+=`<div class="block"><div class="row"><h3>現行全文</h3><span class="badge green">連續閱讀</span></div>${fullLawReaderMarkup(id,records,ids,recentSet,coreSet)}</div>`;
+   else out+=`<div class="empty"><b>目前沒有可閱讀的完整條文</b><p>請在 GitHub Pages 連線後等待官方法規同步完成。</p></div>`;
    if(base?.events?.length)out+=`<details class="block"><summary><b>🔥 近5年修法時間軸（${base.events.length}次）</b></summary><div class="timeline" style="margin-top:9px">${base.events.map(e=>`<div class="event"><div class="row"><h3>${e.date}</h3><span class="badge red">修法</span></div><p>${e.articles}<br>${e.note}</p></div>`).join("")}</div></details>`;
    const core=(base?.key_articles||[]).filter(a=>ids.includes(String(a))||ARTICLE_TEXTS[id+":"+a]);
-   if(core.length)out+=`<div class="block"><h3>🎯 核心必讀條文</h3><div class="chips">${core.map(a=>`<button class="chip ready" onclick="openArticle('${id}','${a}')">第${a}條</button>`).join("")}</div></div>`;
+   if(core.length)out+=`<div class="block"><h3>🎯 核心必讀條文</h3><div class="chips">${core.map(a=>`<button class="chip ready" onclick="scrollToStudyArticle('${id}','${a}')">第${a}條</button>`).join("")}</div></div>`;
  }else{
    const matches=records.filter(r=>String(r.article).includes(q)||(r.text||"").includes(q)).slice(0,100);
    if(base?.events?.some(e=>`${e.date} ${e.articles} ${e.note}`.includes(q))){
      out+=`<div class="notice"><strong>修法資料也有符合：</strong>可到「修法」分頁看時間軸與新舊法對照。</div>`;
    }
-   out+=`<div class="article-search-results">${matches.map(r=>`<div class="article-result" onclick="openArticle('${id}','${r.article}')"><div class="row"><h3>第 ${r.article} 條</h3><span class="badge ${recentSet.has(String(r.article))?"red":"green"}">${recentSet.has(String(r.article))?"近5年修法":"現行條文"}</span></div><p>${esc(articleSnippet(r.text,q))}</p></div>`).join("")||`<div class="empty"><b>全文中沒有找到「${esc(q)}」</b><p>如果目前是單檔離線快照，完整全文要等 GitHub Actions 同步後才會出現。</p></div>`}</div>`;
+   out+=matches.length?`<div class="block"><div class="row"><h3>全文搜尋結果</h3><span class="badge blue">${matches.length} 條</span></div>${fullLawReaderMarkup(id,matches,ids,recentSet,coreSet)}</div>`:`<div class="empty"><b>全文中沒有找到「${esc(q)}」</b><p>如果目前是單檔離線快照，完整全文要等 GitHub Actions 同步後才會出現。</p></div>`;
  }
  $("studyBody").innerHTML=out;
 }
