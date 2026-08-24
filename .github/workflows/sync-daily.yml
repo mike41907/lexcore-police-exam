@@ -23,6 +23,10 @@ jobs:
         run: npm test
       - name: Sync official laws and Constitutional Court
         run: npm run sync:daily
+      - name: Sync 6laws article titles and judgment index
+        run: npm run sync:6laws
+      - name: Re-run tests after index refresh
+        run: npm test
       - name: Commit only validated data
         run: |
           git config user.name "lexcore-sync-bot"

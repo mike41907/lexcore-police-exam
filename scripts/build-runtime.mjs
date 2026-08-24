@@ -14,6 +14,7 @@ const manualCourt=await readJson(path.join(ROOT,"data/manual-court-study.json"),
 const ly=await readJson(path.join(ROOT,"data/legislative/matches.json"),{matches:{}});
 const courtRaw=await readJson(path.join(ROOT,"data/official/court.json"),{cases:[]});
 const issueFrequency=await readJson(path.join(ROOT,"data/cpl-issue-frequency.json"),null);
+const sixLaws=await readJson(path.join(ROOT,"data/sixlaws-article-index.json"),null);
 
 const lawRaw={};
 for(const l of cfg.laws) lawRaw[l.id]=await readJson(path.join(ROOT,`data/official/${l.id}.json`),null);
@@ -130,7 +131,7 @@ const runtime={
       fetchedAt:ly.fetchedAt||null
     }
   },
-  frontend:{data,details,courtStudy,articleTexts,lawCatalog,issueFrequency,mnemonics:buildMnemonicCatalog(articleTexts,details,manualMnemonics,issueFrequency)}
+  frontend:{data,details,courtStudy,articleTexts,lawCatalog,issueFrequency,mnemonics:buildMnemonicCatalog(articleTexts,details,manualMnemonics,issueFrequency),sixLaws}
 };
 await writeJsonAtomic(path.join(ROOT,"data/runtime.json"),runtime);
 console.log(`[runtime] laws=${lawStats.length}, court=${runtime.sync.court.count}, LY-auto=${runtime.sync.legislative.autoVerified}, review=${runtime.sync.legislative.needsReview}`);

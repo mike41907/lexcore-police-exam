@@ -1,0 +1,58 @@
+{
+  "provider": "S-link電子六法",
+  "baseUrl": "https://www.6laws.net",
+  "usage": "僅保存公開法條頁的條名、判解索引與來源連結；不複製第三方判解全文。現行法條正文仍以法務部全國法規資料庫為準。",
+  "laws": {
+    "criminal": {
+      "name": "中華民國刑法",
+      "sourceName": "刑法",
+      "url": "https://www.6laws.net/6law/law/刑法.htm",
+      "note": "6laws 公開頁使用「刑法」檔名；對應 LexCore 的《中華民國刑法》。"
+    },
+    "cpl": {
+      "name": "刑事訴訟法",
+      "sourceName": "刑事訴訟法",
+      "url": "https://www.6laws.net/6law/law/刑事訴訟法.htm"
+    },
+    "constlit": {
+      "name": "憲法訴訟法",
+      "sourceName": "憲法訴訟法",
+      "url": "https://www.6laws.net/6law/law/憲法訴訟法.htm"
+    },
+    "social": {
+      "name": "社會秩序維護法",
+      "sourceName": "社會秩序維護法",
+      "url": "https://www.6laws.net/6law/law/社會秩序維護法.htm"
+    },
+    "police_act": {
+      "name": "警察法",
+      "sourceName": "警察法",
+      "url": "https://www.6laws.net/6law/law/警察法.htm"
+    },
+    "police_power": {
+      "name": "警察職權行使法",
+      "sourceName": "警察職權行使法",
+      "url": "https://www.6laws.net/6law/law/警察職權行使法.htm"
+    },
+    "police_weapons": {
+      "name": "警械使用條例",
+      "sourceName": "警械使用條例",
+      "url": "https://www.6laws.net/6law/law/警械使用條例.htm"
+    },
+    "police_duty": {
+      "name": "警察勤務條例",
+      "sourceName": "警察勤務條例",
+      "url": "https://www.6laws.net/6law/law/警察勤務條例.htm"
+    },
+    "police_personnel": {
+      "name": "警察人員人事條例",
+      "sourceName": "警察人員人事條例",
+      "url": "https://www.6laws.net/6law/law/警察人員人事條例.htm"
+    },
+    "police_education": {
+      "name": "警察教育條例",
+      "sourceName": "警察教育條例",
+      "url": "https://www.6laws.net/6law/law/警察教育條例.htm"
+    }
+  }
+}

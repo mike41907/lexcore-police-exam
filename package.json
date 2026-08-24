@@ -1,12 +1,13 @@
 {
   "name": "lexcore-police-exam",
-  "version": "3.1.18",
+  "version": "3.1.19",
   "private": true,
   "type": "module",
   "scripts": {
     "sync": "node scripts/sync-all.mjs",
     "sync:daily": "node scripts/sync-all.mjs --daily",
     "sync:legislative": "node scripts/sync-all.mjs --legislative",
+    "sync:6laws": "node scripts/sync-sixlaws.mjs && npm run build && npm run validate",
     "build": "node scripts/build-runtime.mjs",
     "validate": "node scripts/validate.mjs",
     "test": "node --test tests/*.test.mjs"
