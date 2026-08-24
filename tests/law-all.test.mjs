@@ -1,6 +1,11 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import {parseAllArticlesFromText,parseLawAllStructure} from "../scripts/lib/law-all.mjs";
+import fs from "node:fs";
+import path from "node:path";
+import {fileURLToPath} from "node:url";
+import {cleanupArticleBody,parseAllArticlesFromText,parseLawAllStructure} from "../scripts/lib/law-all.mjs";
+
+const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),"..");
 
 test("parse all current articles from LawAll-like text",()=>{
  const text=`所有條文
@@ -45,4 +50,19 @@ test("keeps chapter headings out of article text and exposes chapter jump points
   ["章","第二章 刑事責任","3"],
   ["編","第二編 分則","4"]
  ]);
+});
+
+test("removes LawAll page footer accidentally appended to the final article",()=>{
+ const text="最後一條正文。\n:::\n最新訊息\n中央法規\n司法解釋\n條約協定\n綜合查詢";
+ assert.equal(cleanupArticleBody(text),"最後一條正文。");
+});
+
+test("official article snapshots do not contain LawAll footer markers",()=>{
+ const dir=path.join(ROOT,"data","official");
+ for(const file of fs.readdirSync(dir).filter(name=>name.endsWith(".json"))){
+  const payload=JSON.parse(fs.readFileSync(path.join(dir,file),"utf8"));
+  for(const [article,record] of Object.entries(payload.articles||{})){
+   assert.equal(String(record?.text||"").includes(":::"),false,file+":"+article);
+  }
+ }
 });

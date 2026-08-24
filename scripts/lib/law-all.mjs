@@ -20,8 +20,10 @@ function collectLawAllMarks(text=""){
   }
   return {src,marks,headings};
 }
-function cleanupArticleBody(body=""){
+export function cleanupArticleBody(body=""){
   return normalizeSpace(body)
+    .replace(/\n\s*:::[\s\S]*$/,"")
+    .replace(/\n\s*最新訊息\s*\n\s*中央法規\s*\n\s*司法解釋[\s\S]*$/,"")
     .replace(/\n(?:附件|所有條文|編章節|條號查詢|條文檢索|授權子法|沿革|立法歷程|網站導覽|回上一頁)[\s\S]*$/,"")
     .trim();
 }

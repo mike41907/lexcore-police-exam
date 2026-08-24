@@ -2,6 +2,7 @@ import path from "node:path";
 import {fileURLToPath} from "node:url";
 import {readJson, writeJsonAtomic} from "./lib/fs.mjs";
 import {diffWords} from "diff";
+import {cleanupArticleBody} from "./lib/law-all.mjs";
 
 const HERE=path.dirname(fileURLToPath(import.meta.url)), ROOT=path.resolve(HERE,"..");
 const cfg=await readJson(path.join(ROOT,"config/laws.json"));
@@ -108,7 +109,7 @@ for(const law of cfg.laws){
     if(rec?.ok && rec?.text){
       articleTexts[`${law.id}:${article}`]={
         lawId:law.id, lawName:law.name, article,
-        text:rec.text, url:rec.url, fetchedAt:rec.fetchedAt||raw.fetchedAt||null
+        text:cleanupArticleBody(rec.text), url:rec.url, fetchedAt:rec.fetchedAt||raw.fetchedAt||null
       };
     }
   }

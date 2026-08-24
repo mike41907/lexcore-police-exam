@@ -3,9 +3,9 @@ import path from "node:path";
 import {fileURLToPath} from "node:url";
 import {fetchText, politeDelay} from "./lib/http.mjs";
 import {readJson, writeJsonAtomic} from "./lib/fs.mjs";
-import {htmlToText} from "./lib/text.mjs";
+import {htmlToText, normalizeSpace} from "./lib/text.mjs";
 import {parseOfficialHistoryText} from "./lib/history.mjs";
-import {parseLawAllStructure} from "./lib/law-all.mjs";
+import {cleanupArticleBody, parseLawAllStructure} from "./lib/law-all.mjs";
 
 const HERE=path.dirname(fileURLToPath(import.meta.url)), ROOT=path.resolve(HERE,"..");
 const cfg=await readJson(path.join(ROOT,"config/laws.json"));
@@ -26,7 +26,7 @@ function parseArticle(html, article){
   for(const r of regs){
     const m=text.match(r);
     if(m){
-      const body=normalizeSpace(m[1]).replace(/\n(?:回上一頁|網站導覽)[\s\S]*$/,"").trim();
+      const body=cleanupArticleBody(normalizeSpace(m[1]));
       if(body.length>=8) return body;
     }
   }
