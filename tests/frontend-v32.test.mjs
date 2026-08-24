@@ -9,11 +9,11 @@ const html=fs.readFileSync(path.join(root,"index.html"),"utf8");
 const pkg=JSON.parse(fs.readFileSync(path.join(root,"package.json"),"utf8"));
 const sw=fs.readFileSync(path.join(root,"service-worker.js"),"utf8");
 
-test("v3.3 release markers and cache version stay synchronized",()=>{
-  assert.equal(pkg.version,"3.3.0");
-  assert.match(html,/目前 v3\.3\.0/);
-  assert.match(html,/release-version">v3\.3\.0/);
-  assert.match(sw,/lexcore-v3\.3\.0/);
+test("v3.3.1 release markers and cache version stay synchronized",()=>{
+  assert.equal(pkg.version,"3.3.1");
+  assert.match(html,/目前 v3\.3\.1/);
+  assert.match(html,/release-version">v3\.3\.1/);
+  assert.match(sw,/lexcore-v3\.3\.1/);
 });
 
 test("law reader keeps navigation state and defers heavy article extras",()=>{
@@ -24,6 +24,16 @@ test("law reader keeps navigation state and defers heavy article extras",()=>{
   assert.match(html,/function setupLawReadingPositionObserver\(\)/);
   assert.match(html,/data-lazy-text="1"/);
   assert.match(html,/lawReaderTextMarkup\(text\)/);
+});
+
+test("law reader exposes per-article legislative-reason controls",()=>{
+  assert.match(html,/function reasonPoints\(d=\{\}\)/);
+  assert.match(html,/function reasonListMarkup\(d=\{\},options=\{\}\)/);
+  assert.match(html,/function toggleArticleReason\(lid,article,button\)/);
+  assert.match(html,/law-reason-inline-btn/);
+  assert.match(html,/law-article-reason/);
+  assert.match(html,/reason_points/);
+  assert.match(html,/class="law-reason-list"/);
 });
 
 test("mnemonic editing and flashcards have separate local data channels",()=>{

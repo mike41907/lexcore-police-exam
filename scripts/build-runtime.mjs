@@ -4,6 +4,7 @@ import {readJson, writeJsonAtomic} from "./lib/fs.mjs";
 import {diffWords} from "diff";
 import {cleanupArticleBody} from "./lib/law-all.mjs";
 import {buildMnemonicCatalog} from "./lib/mnemonics.mjs";
+import {splitReasonPoints} from "./lib/reasons.mjs";
 
 const HERE=path.dirname(fileURLToPath(import.meta.url)), ROOT=path.resolve(HERE,"..");
 const cfg=await readJson(path.join(ROOT,"config/laws.json"));
@@ -94,6 +95,9 @@ for(const [key,item] of Object.entries(ly.matches||{})){
   };
 }
 Object.assign(details,manualDetails);
+for(const detail of Object.values(details)){
+  if(detail?.reason)detail.reason_points=splitReasonPoints(detail.reason);
+}
 
 // Merge deterministic court extraction with manual study cards.
 const courtStudy={};

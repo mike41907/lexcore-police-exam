@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T13:52:02.099Z",
+  "generatedAt": "2026-08-24T14:25:52.122Z",
   "sync": {
     "status": "ok",
     "laws": [
@@ -2882,7 +2882,13 @@
           "容易和刑法第80條第1項各罪時效年限一起出題。"
         ],
         "official": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=80&pcode=C0000001",
-        "reason_url": "https://mojlaw.moj.gov.tw/LawContentReason.aspx?LSID=FL001424&LawNo=80"
+        "reason_url": "https://mojlaw.moj.gov.tw/LawContentReason.aspx?LSID=FL001424&LawNo=80",
+        "reason_points": [
+          "本次修法著眼於兒少性犯罪的隱密性與創傷特性。",
+          "年幼被害人可能因身心未成熟、權力不對等、對權利認識不足或創傷反應，而無法即時揭露或求助；",
+          "若照一般規則計算，等被害人成年後準備追訴時，可能已接近或超過時效。",
+          "因此針對條文列舉的性犯罪，將被害人滿20歲前的期間排除於追訴權時效計算之外，以增加日後尋求刑事救濟的實際可能性。"
+        ]
       },
       "cpl:101-1": {
         "law_id": "cpl",
@@ -2908,7 +2914,13 @@
           "115年修法後新增第12款組織犯罪防制條例第3條第1項前段。"
         ],
         "official": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=101-1&pcode=C0010001",
-        "reason_url": "https://ppg.ly.gov.tw/ppg/bills/latest-second-reading/203110192110000/details"
+        "reason_url": "https://ppg.ly.gov.tw/ppg/bills/latest-second-reading/203110192110000/details",
+        "reason_points": [
+          "本次修法核心在擴充預防性羈押的適用罪名。",
+          "立法院審議資料顯示，詐欺、妨害性隱私／性自主、兒少性剝削及組織犯罪等被認為具有較高再犯風險或重大社會安全影響，因此納入第101條之1列舉；",
+          "並加入不能安全駕駛、殺幼童、兒虐及更多槍砲犯罪。",
+          "原本的基本門檻仍是：嫌疑重大、有反覆實行同一犯罪之虞、且有羈押必要。"
+        ]
       },
       "constlit:4": {
         "law_id": "constlit",
@@ -2931,7 +2943,11 @@
           "單看全國法規資料庫公布文字，可能誤以為第3項仍有效；考題應以憲判後法律狀態判斷。"
         ],
         "official": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=4&pcode=A0030159",
-        "reason_url": "https://cons.judicial.gov.tw/docdata.aspx?fid=38&id=355485"
+        "reason_url": "https://cons.judicial.gov.tw/docdata.aspx?fid=38&id=355485",
+        "reason_points": [
+          "114年修法新增總統補足大法官提名的期限規範；",
+          "但憲法法庭於114年12月19日認該次修法相關規定的立法程序有明顯重大瑕疵，且違反權力分立原則，自判決公告日起失效。"
+        ]
       },
       "constlit:30": {
         "law_id": "constlit",
@@ -2955,7 +2971,11 @@
           "第30條第1項原本的2/3參與、現有總額過半同意並未被114憲判1宣告失效。"
         ],
         "official": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=30&pcode=A0030159",
-        "reason_url": "https://cons.judicial.gov.tw/docdata.aspx?fid=38&id=355485"
+        "reason_url": "https://cons.judicial.gov.tw/docdata.aspx?fid=38&id=355485",
+        "reason_points": [
+          "114年修法企圖增加憲法法庭判決與違憲宣告的最低參與、同意人數及特殊迴避規則；",
+          "114年憲判字第1號認該次立法程序有明顯重大瑕疵，並涉及權力分立問題，宣告新增第2項至第6項自判決公告日起失效。"
+        ]
       },
       "constlit:95": {
         "law_id": "constlit",
@@ -2978,7 +2998,12 @@
           "這是一個典型『法規資料庫文字 ≠ 最終有效狀態必須再看憲判』的案例。"
         ],
         "official": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=95&pcode=A0030159",
-        "reason_url": "https://cons.judicial.gov.tw/docdata.aspx?fid=38&id=355485"
+        "reason_url": "https://cons.judicial.gov.tw/docdata.aspx?fid=38&id=355485",
+        "reason_points": [
+          "第95條原本由司法院另定修正條文施行日期；",
+          "114年修法改成113年12月20日修正條文自公布日起施行。",
+          "114年憲判字第1號後，這個114年版本失效，判決並明確指出修正前第95條繼續適用。"
+        ]
       },
       "social:9": {
         "law_id": "social",
@@ -3000,7 +3025,11 @@
           "不是所有聽覺障礙或語言障礙都當然符合；條文是『未滿七歲即有聽覺且語言障礙』。"
         ],
         "official": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=9&pcode=D0080067",
-        "reason_url": "https://ppg.ly.gov.tw/ppg/PublicationBulletinDetail/download/communique1/final/pdf/114/41/LCIDC01_1144101.pdf"
+        "reason_url": "https://ppg.ly.gov.tw/ppg/PublicationBulletinDetail/download/communique1/final/pdf/114/41/LCIDC01_1144101.pdf",
+        "reason_points": [
+          "修法針對舊稱「瘖啞人」的文字現代化與明確化。",
+          "委員會討論中特別聚焦於如何把原先概念改寫成較具體、較不具標籤性的條件，最後採「未滿七歲即有聽覺且語言障礙者」。"
+        ]
       },
       "social:64": {
         "law_id": "social",
@@ -3023,7 +3052,12 @@
           "最容易用舊罰鍰1萬8千元設陷阱。"
         ],
         "official": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=64&pcode=D0080067",
-        "reason_url": "https://www.president.gov.tw/Page/294/49902"
+        "reason_url": "https://www.president.gov.tw/Page/294/49902",
+        "reason_points": [
+          "本次三讀結果主要提高罰鍰上限，並作法制用語調整；",
+          "各款行為類型本身沒有實質增刪。",
+          "系統把『構成要件未改、法律效果變重』獨立標示，避免只背全文看不出修法重點。"
+        ]
       },
       "social:72": {
         "law_id": "social",
@@ -3048,7 +3082,11 @@
           "金額由6千提高為1萬元。"
         ],
         "official": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=72&pcode=D0080067",
-        "reason_url": "https://www.president.gov.tw/Page/294/49902"
+        "reason_url": "https://www.president.gov.tw/Page/294/49902",
+        "reason_points": [
+          "修法除提高罰鍰上限外，也重新排列第2、3款，並在『製造噪音或深夜喧嘩、妨害公眾安寧』後加入『不聽禁止』，使構成要件更清楚。",
+          "這個文字變化比單純金額更值得背。"
+        ]
       },
       "social:89": {
         "law_id": "social",
@@ -3072,7 +3110,11 @@
           "第2款仍要求經勸阻不聽。"
         ],
         "official": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=89&pcode=D0080067",
-        "reason_url": "https://www.president.gov.tw/Page/294/49902"
+        "reason_url": "https://www.president.gov.tw/Page/294/49902",
+        "reason_points": [
+          "本次修法對第89條的最主要效果是大幅提高罰鍰上限，兩款違序行為的構成要件維持不變。",
+          "記憶時應把『處罰效果加重』與『跟追要件未改』拆開。"
+        ]
       },
       "police_weapons:1": {
         "law_id": "police_weapons",
@@ -3096,7 +3138,10 @@
           "警械種類主管機關是內政部。"
         ],
         "official": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=1&pcode=D0080042",
-        "reason_url": "https://www.president.gov.tw/Page/294/48515"
+        "reason_url": "https://www.president.gov.tw/Page/294/48515",
+        "reason_points": [
+          "修法調整員警執勤身分識別文字，並把警械種類的規範權責改由內政部處理，以利依警察勤務實際需求調整。"
+        ]
       },
       "police_weapons:4": {
         "law_id": "police_weapons",
@@ -3121,7 +3166,10 @@
           "仍要搭配第6條比例、必要性與避免傷及無辜的限制一起判斷。"
         ],
         "official": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=4&pcode=D0080042",
-        "reason_url": "https://www.president.gov.tw/Page/294/48515"
+        "reason_url": "https://www.president.gov.tw/Page/294/48515",
+        "reason_points": [
+          "修法回應第一線員警面對突發致命危險時，現有警械可能不足或無法立即有效使用的問題，因此將其他物品視為警械及逕行射擊情形明文化，讓現場判斷有更明確的法律依據。"
+        ]
       },
       "police_weapons:11": {
         "law_id": "police_weapons",
@@ -3145,7 +3193,10 @@
           "第三人有可歸責事由時，補償得減輕或免除。"
         ],
         "official": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=11&pcode=D0080042",
-        "reason_url": "https://www.president.gov.tw/Page/294/48515"
+        "reason_url": "https://www.president.gov.tw/Page/294/48515",
+        "reason_points": [
+          "修法把違法執勤的國家賠償與合法執勤造成第三人特別犧牲的補償制度分開，使責任結構更清楚，同時兼顧依法執勤員警與無辜第三人的權利。"
+        ]
       }
     },
     "courtStudy": {
