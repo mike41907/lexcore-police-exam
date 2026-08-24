@@ -3,11 +3,13 @@ import {fileURLToPath} from "node:url";
 import {readJson, writeJsonAtomic} from "./lib/fs.mjs";
 import {diffWords} from "diff";
 import {cleanupArticleBody} from "./lib/law-all.mjs";
+import {buildMnemonicCatalog} from "./lib/mnemonics.mjs";
 
 const HERE=path.dirname(fileURLToPath(import.meta.url)), ROOT=path.resolve(HERE,"..");
 const cfg=await readJson(path.join(ROOT,"config/laws.json"));
 const base=await readJson(path.join(ROOT,"data/base.json"));
 const manualDetails=await readJson(path.join(ROOT,"data/manual-article-details.json"),{});
+const manualMnemonics=await readJson(path.join(ROOT,"data/manual-article-mnemonics.json"),{});
 const manualCourt=await readJson(path.join(ROOT,"data/manual-court-study.json"),{});
 const ly=await readJson(path.join(ROOT,"data/legislative/matches.json"),{matches:{}});
 const courtRaw=await readJson(path.join(ROOT,"data/official/court.json"),{cases:[]});
@@ -128,7 +130,7 @@ const runtime={
       fetchedAt:ly.fetchedAt||null
     }
   },
-  frontend:{data,details,courtStudy,articleTexts,lawCatalog,issueFrequency}
+  frontend:{data,details,courtStudy,articleTexts,lawCatalog,issueFrequency,mnemonics:buildMnemonicCatalog(articleTexts,details,manualMnemonics,issueFrequency)}
 };
 await writeJsonAtomic(path.join(ROOT,"data/runtime.json"),runtime);
 console.log(`[runtime] laws=${lawStats.length}, court=${runtime.sync.court.count}, LY-auto=${runtime.sync.legislative.autoVerified}, review=${runtime.sync.legislative.needsReview}`);

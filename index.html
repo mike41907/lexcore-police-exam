@@ -429,7 +429,9 @@ main{max-width:1500px;width:100%;margin:auto;padding:24px}.top{display:flex;just
 .full-law-meta{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px}
  .law-reader{display:grid;gap:9px;margin-top:10px}.law-reader-section{display:flex;align-items:baseline;gap:8px;margin:8px 2px 0;padding:10px 12px;border-left:4px solid var(--p);border-radius:10px;background:var(--p2);color:var(--p)}.law-reader-section.book{border-left-color:var(--r);background:var(--r2);color:var(--r)}.law-reader-section.section{border-left-color:var(--g);background:var(--g2);color:var(--g)}.law-reader-section b{font-size:13px;line-height:1.45}.law-reader-section span{font-size:10px;font-weight:900;white-space:nowrap}.law-reader-article{content-visibility:auto;contain-intrinsic-size:auto 250px;scroll-margin-top:104px;border:1px solid var(--line);border-radius:14px;background:var(--card);overflow:hidden;box-shadow:var(--shadow-sm);transition:border-color .18s ease,box-shadow .18s ease}.law-reader-article.is-target{border-color:var(--p);box-shadow:0 0 0 3px color-mix(in srgb,var(--p) 16%,transparent),var(--shadow-sm)}.law-reader-article-head{display:flex;align-items:center;justify-content:space-between;gap:9px;padding:11px 13px;border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--bg) 50%,var(--card))}.law-reader-article-head h3{margin:0;font-size:14px}.law-reader-article-tags{display:flex;gap:5px;align-items:center;justify-content:flex-end;flex-wrap:wrap}.law-reader-article-tags .badge{font-size:9px}.law-reader-article-tags .chip{font-size:10px;padding:4px 7px;min-height:28px}.law-reader-text{padding:13px;font-size:14px;line-height:1.9;white-space:pre-wrap;overflow-wrap:anywhere;color:var(--text)}
  .article-mnemonic{border-top:1px solid var(--line);padding:10px 13px;background:color-mix(in srgb,var(--p2) 42%,var(--card))}.article-mnemonic.auto{background:color-mix(in srgb,var(--amber,#f4b740) 6%,var(--card))}.article-mnemonic.pending{background:color-mix(in srgb,var(--bg) 70%,var(--card))}.article-mnemonic-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:5px}.article-mnemonic-label{font-size:11px;font-weight:950;color:var(--p)}.article-mnemonic-main{font-size:12px;line-height:1.7;font-weight:850;color:var(--text);overflow-wrap:anywhere}.article-mnemonic-note{margin-top:5px;font-size:9px;line-height:1.55;color:var(--muted)}.article-mnemonic .badge{font-size:9px;white-space:nowrap}.lookup-mnemonic{display:flex;align-items:flex-start;gap:4px;margin-top:5px;color:var(--muted);font-size:10px;line-height:1.55}.lookup-mnemonic b{color:var(--p);font-weight:900}.lookup-mnemonic .badge{font-size:8px;flex:0 0 auto}
-.article-search-results{display:grid;gap:8px;margin-top:10px}
+ .article-mnemonic-details{margin-top:8px;border-top:1px solid color-mix(in srgb,var(--p) 12%,var(--line));padding-top:7px}.article-mnemonic-details summary{cursor:pointer;color:var(--p);font-size:10px;font-weight:900}.article-mnemonic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin-top:7px}.article-mnemonic-row{display:grid;gap:3px;padding:7px 8px;border:1px solid var(--line);border-radius:9px;background:color-mix(in srgb,var(--card) 72%,var(--bg));min-width:0}.article-mnemonic-row b{font-size:9px;color:var(--p)}.article-mnemonic-row span{font-size:10px;line-height:1.55;color:var(--text);overflow-wrap:anywhere}.article-mnemonic-focus{margin-top:5px;font-size:10px;line-height:1.55;color:var(--muted)}
+ .mnemonic-structure{display:grid;gap:3px;margin-top:8px;padding:8px 9px;border-radius:9px;background:var(--bg);font-size:10px;line-height:1.55}.mnemonic-structure b{color:var(--p);font-size:9px}.mnemonic-structure span{overflow-wrap:anywhere}
+ .article-search-results{display:grid;gap:8px;margin-top:10px}
 .article-result{border:1px solid var(--line);background:var(--card);border-radius:11px;padding:10px;cursor:pointer}
 .article-result:hover{border-color:var(--p)}
 .article-result h3{margin:0;font-size:12px}.article-result p{font-size:11px;line-height:1.65;margin:5px 0 0;color:var(--text)}
@@ -439,7 +441,8 @@ main{max-width:1500px;width:100%;margin:auto;padding:24px}.top{display:flex;just
 .law-relation-card{margin-top:10px;padding:10px 11px;border:1px solid color-mix(in srgb,var(--p) 16%,var(--line));border-radius:13px;background:color-mix(in srgb,var(--card) 86%,var(--p2))}.law-relation-card.compact{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 9px}.law-relation-card.compact .law-relation-head{margin:0}.law-relation-card.compact .chip{flex:0 0 auto;white-space:nowrap}.law-relation-head{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:7px;font-size:12px}.law-relation-head b{font-size:12px}.law-chain-path{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.law-chain-node,.law-chain-current{display:inline-flex;align-items:center;min-height:30px;border:1px solid var(--line);border-radius:9px;padding:5px 8px;background:var(--card);color:var(--text);font-size:11px;font-weight:900;line-height:1.35;text-align:left}.law-chain-node{cursor:pointer}.law-chain-node:hover{border-color:var(--p);color:var(--p)}.law-chain-node.parent,.law-chain-current.parent{border-color:color-mix(in srgb,var(--r) 38%,var(--line));background:var(--r2);color:var(--r)}.law-chain-node.related,.law-chain-current.related{border-color:color-mix(in srgb,var(--p) 30%,var(--line));background:var(--p2);color:var(--p)}.law-chain-node.child,.law-chain-current.child{border-color:color-mix(in srgb,var(--g) 36%,var(--line));background:var(--g2);color:var(--g)}.law-chain-arrow{color:var(--muted);font-weight:950}.law-chain-note{margin-top:7px;font-size:11px;line-height:1.55;color:var(--muted)}.law-chain-branches{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:8px}.law-chain-branches>span{font-size:10px;font-weight:900;color:var(--muted)}.law-chain-branches .chip{font-size:10px;padding:5px 7px}.law-chain-empty{display:flex;justify-content:space-between;gap:8px;align-items:center;font-size:11px;color:var(--muted)}.law-chain-empty>div{min-width:0}.law-chain-empty .chip{flex:0 0 auto;white-space:nowrap}
 .law-article-rail-wrap{display:flex;gap:8px;align-items:center;margin-top:10px}.law-article-rail-wrap>span{flex:0 0 auto;font-size:11px;font-weight:900;color:var(--muted)}.law-article-rail{display:flex;gap:6px;min-width:0;overflow-x:auto;padding:1px 1px 4px;scrollbar-width:none}.law-article-rail::-webkit-scrollbar{display:none}.law-chapter-chip{display:inline-flex;align-items:center;gap:6px;flex:0 0 auto;min-height:32px;border:1px solid var(--line);border-radius:10px;padding:5px 8px;background:var(--card);color:var(--text);font:inherit;font-size:11px;font-weight:900;line-height:1.35;white-space:nowrap;text-align:left}.law-chapter-chip:hover{border-color:var(--p);color:var(--p)}.law-chapter-chip.book{border-color:color-mix(in srgb,var(--r) 32%,var(--line));color:var(--r);background:var(--r2)}.law-chapter-chip.section{border-color:color-mix(in srgb,var(--g) 30%,var(--line));color:var(--g);background:var(--g2)}.law-chapter-chip small{font-size:9px;color:var(--muted);font-weight:800}
  @media(max-width:650px){.law-navigator{padding:12px;border-radius:14px}.law-navigator-head{align-items:flex-start}.law-jump-status{white-space:normal;text-align:right;line-height:1.45}.law-jump-controls{grid-template-columns:minmax(0,1fr) 82px auto;gap:6px}.law-jump-controls select,.law-jump-controls input{min-height:40px;padding:8px}.law-jump-controls .btn{min-height:40px;padding:8px 10px}.law-chain-path{flex-wrap:nowrap;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}.law-chain-path::-webkit-scrollbar{display:none}.law-chain-node,.law-chain-current,.law-chain-arrow{flex:0 0 auto;white-space:nowrap}.law-chain-branches{align-items:flex-start}.law-chain-branches>span{padding-top:5px}.law-article-rail-wrap{align-items:flex-start;flex-direction:column;gap:5px}.law-article-rail{width:100%}.law-reader{gap:8px}.law-reader-section{padding:9px 10px;margin-top:6px}.law-reader-article{border-radius:12px;scroll-margin-top:86px}.law-reader-article-head{padding:10px 11px}.law-reader-text{padding:11px;font-size:14px;line-height:1.85}.article-mnemonic{padding:9px 11px}.article-mnemonic-main{font-size:12px;line-height:1.65}.lookup-mnemonic{font-size:10px}}
-/* ===== 刑訴爭點頻率標註 ===== */
+ @media(max-width:650px){.article-mnemonic-grid{grid-template-columns:1fr}}
+ /* ===== 刑訴爭點頻率標註 ===== */
 .cpl-frequency-panel{margin:10px 0;padding:12px 13px;border:1px solid color-mix(in srgb,var(--p) 22%,var(--line));border-radius:15px;background:linear-gradient(145deg,color-mix(in srgb,var(--p2) 62%,var(--card)),var(--card));box-shadow:var(--shadow-sm)}
 .cpl-frequency-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.cpl-frequency-head h3{margin:0;font-size:14px}.cpl-frequency-head p{margin:4px 0 0;color:var(--muted);font-size:10px;line-height:1.55}
 .cpl-frequency-toolbar{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-top:10px}.cpl-frequency-toolbar label{display:flex;align-items:center;gap:6px;color:var(--muted);font-size:10px;font-weight:850}.cpl-frequency-toolbar select{min-height:34px;border:1px solid var(--line);border-radius:9px;padding:6px 8px;background:var(--card);color:var(--text);font:inherit;font-weight:850}
@@ -1525,7 +1528,7 @@ body.law-quick-sheet-open{overflow:hidden}
 .top-quick-lookup .btn{min-height:38px;padding:7px 12px;white-space:nowrap}
 @media(max-width:650px){.top{min-height:46px}.top-actions{width:100%;margin-left:0}.top-quick-lookup{grid-template-columns:minmax(0,1fr) auto;padding:5px 6px 5px 10px;border-radius:15px}.top-quick-lookup input{min-height:38px;font-size:16px}.top-quick-lookup .btn{min-height:38px;padding:7px 10px;font-size:12px}}
 
-/* v3.1.17 mobile safe-area spacing: keep the utility header below the iPhone status area. */
+/* v3.1.18 mobile safe-area spacing: keep the utility header below the iPhone status area. */
 @media(max-width:650px){main{padding-top:max(18px,env(safe-area-inset-top))}}
 
 </style>
@@ -3228,7 +3231,7 @@ load();
     <h2>LexCore 更新紀錄</h2>
     <p>版本變更、重大修正與新功能統一收在這裡。其他頁面不再顯示版本更新說明，避免干擾讀書與作答。</p>
    </div>
-   <span class="badge blue">目前 v3.1.17</span>
+   <span class="badge blue">目前 v3.1.18</span>
   </div>
 
   <div class="changelog-filter">
@@ -3240,7 +3243,21 @@ load();
    <button data-release-filter="data">資料／同步</button>
   </div>
 
-  <div class="changelog-list" id="changelogList">
+   <div class="changelog-list" id="changelogList">
+
+   <details class="release-card" data-release-tags="study exam" open>
+    <summary>
+     <div class="release-version">v3.1.18</div>
+     <div><div class="release-title">條文結構化記憶卡</div><div class="release-meta">主軸・理解順序・數字・例外・自測提示</div></div>
+     <span class="release-tag">學習引擎</span>
+    </summary>
+    <div class="release-body"><ul>
+     <li>修正原本只擷取條文前段文字的無效口訣，改為拆出主軸、理解順序、必背數字、例外／限制與考試警鈴。</li>
+     <li>新增高頻核心條文人工整理卡，並提供遮住全文後的自測提示。</li>
+     <li>完整現行法條仍是主資料；自動產生內容改標示為「結構化草稿」，不再誤標成人工整理。</li>
+     <li>保留既有 localStorage／IndexedDB key，並更新 Service Worker 快取版本。</li>
+    </ul></div>
+   </details>
 
    <details class="release-card" data-release-tags="ui design" open>
     <summary>
@@ -3625,6 +3642,7 @@ let IMPORTED_QUESTIONS=[];
 let IMPORT_PREVIEW=[];
 let QUIZ=null;
 const $=id=>document.getElementById(id);
+let ARTICLE_MNEMONICS={};
 const titles={
  home:["警佐班一類戰情首頁","考試倒數、升遷資績與今日讀書入口集中在一頁"],
  promotion:["警察升遷戰情室","資績、獎懲、未來模擬與警佐班成績"],
@@ -3935,7 +3953,7 @@ function renderExam(){
 }
 
 function openArticle(lid,a){
- const key=lid+":"+a,l=lawInfo(lid),d=DETAILS[key],live=ARTICLE_TEXTS[key],relationChain=lawRelationChainMarkup(lid),mnemonicMarkup=articleMnemonicMarkup(lid,a,live?.text||d?.current||"");
+ const key=lid+":"+a,l=lawInfo(lid),d=DETAILS[key],live=ARTICLE_TEXTS[key],relationChain=lawRelationChainMarkup(lid),mnemonicMarkup=articleMnemonicMarkup(lid,a,live?.text||d?.current||"",{expanded:true});
  $("modalTitle").textContent=`${l.name} 第${a}條`;
  if(!d){
    if(live?.text){
@@ -5533,26 +5551,34 @@ function renderLawReaderParagraphs(){
 }
 const ARTICLE_MNEMONIC_KEYWORDS=["以…為限","不得","應","得","但","除…外","於","未滿","以上","以下","逾","期間","時效","告訴","羈押","搜索","扣押","證據","判決","裁定","管轄","罰鍰","有期徒刑","拘役","沒收","追訴權","警察","身分","查證","賠償","補償","程序","要件","例外"];
 function mnemonicNumberFragments(text=""){
- const rows=String(text).replace(/\s+/g," ").match(/(?:不得逾|至遲|每|於|新臺幣)?(?:\d+|[一二三四五六七八九十百千]+)(?:日|小時|年|月|萬元|元|人|款|項)/g)||[];
+ const rows=String(text).replace(/\s+/g," ").match(/(?:不得逾|至遲|每|於|滿|未滿|逾|新臺幣)?(?:\d+|[零〇一二三四五六七八九十百千萬]+)(?:日內|小時內|年內|日|小時|年|月|萬元|元|人|次|倍|歲)(?:以下|以上|前|後)?/g)||[];
  return [...new Set(rows.map(x=>cleanText(x)))].slice(0,3);
 }
 function articleMnemonicInfo(lid,article,text=""){
- const key=`${lid}:${article}`,detail=DETAILS?.[key],sourceText=cleanText(text||ARTICLE_TEXTS?.[key]?.text||detail?.current||"");
- if(detail?.memory){
-   return {text:cleanText(detail.memory).slice(0,300),source:"LexCore人工整理",status:"人工整理",kind:"curated",note:"已整理的考點記憶句；仍建議搭配下方現行全文核對。"};
+ const key=`${lid}:${article}`,detail=DETAILS?.[key],prebuilt=ARTICLE_MNEMONICS?.[key],sourceText=cleanText(text||ARTICLE_TEXTS?.[key]?.text||detail?.current||"");
+ if(prebuilt)return {...prebuilt,text:cleanText(prebuilt.chant||prebuilt.text||""),chant:cleanText(prebuilt.chant||prebuilt.text||"")};
+ const usefulMemory=detail?.memory&&!/(尚未人工編寫|自動同步資料|尚待人工整理)/.test(detail.memory);
+ if(usefulMemory){
+   const clauses=sourceText.split(/[。！？；]/).map(cleanText).filter(Boolean),lead=clauses[0]||sourceText;
+   return {text:cleanText(detail.memory).slice(0,300),chant:cleanText(detail.memory).slice(0,300),focus:lead.slice(0,100),order:clauses.slice(0,4).join(" → "),numbers:mnemonicNumberFragments(sourceText),exception:clauses.filter(x=>/(但|除|不在此限|不得)/.test(x)).slice(0,2).join("；"),examCue:detail.exam?.[0]||"先遮住條文，依理解順序回想後再核對原文。",recall:`遮住現行條文，先說出「${cleanText(detail.memory).slice(0,70)}」再核對原文。`,source:"LexCore人工整理",status:"人工整理",kind:"curated",note:"已整理成主軸與理解順序；仍建議搭配下方現行全文核對。"};
  }
  if(!sourceText){
-   return {text:"等待現行全文同步後產生口訣。",source:"尚無現行全文",status:"待同步",kind:"pending",note:"官方全文尚未進入目前離線快照，資料同步後會自動補上。"};
+   return {text:"等待現行全文同步後產生結構化記憶卡。",chant:"等待現行全文同步後產生結構化記憶卡。",source:"尚無現行全文",status:"待同步",kind:"pending",note:"官方全文尚未進入目前離線快照，資料同步後會自動補上。"};
  }
- const clauses=sourceText.split(/[。！？；]/).map(cleanText).filter(Boolean),lead=(clauses[0]||sourceText).slice(0,52),hits=ARTICLE_MNEMONIC_KEYWORDS.filter(x=>sourceText.includes(x)).slice(0,4),numbers=mnemonicNumberFragments(sourceText).slice(0,2);
- let mnemonic=`記「${lead}${(clauses[0]||sourceText).length>52?"…":""}」`;
- if(hits.length)mnemonic+=`｜抓：${hits.join("・")}`;
- if(numbers.length)mnemonic+=`｜數字：${numbers.join("／")}`;
- return {text:mnemonic,source:"現行全文自動整理",status:"自動草稿",kind:"auto",note:"依目前官方現行全文擷取主旨、關鍵字與數字；尚未逐條人工校對，正式作答以現行條文為準。"};
+ const clauses=sourceText.split(/[。！？；]/).map(cleanText).filter(Boolean),lead=clauses[0]||sourceText,hits=ARTICLE_MNEMONIC_KEYWORDS.filter(x=>sourceText.includes(x)).slice(0,4),numbers=mnemonicNumberFragments(sourceText).slice(0,3),order=clauses.slice(0,4).join(" → "),mnemonic=`主軸：${lead.slice(0,72)}${lead.length>72?"…":""}`;
+ return {text:mnemonic,chant:mnemonic,focus:lead.slice(0,100),order,numbers,exception:clauses.filter(x=>/(但|除|不在此限|不得)/.test(x)).slice(0,2).join("；"),examCue:hits.length?`條文訊號：${hits.join("・")}`:"先遮住條文，依理解順序回想後再核對原文。",recall:`遮住現行條文，先說出「${mnemonic.slice(0,70)}」再依序回想。`,source:"現行全文結構化擷取",status:"結構化草稿",kind:"auto",note:"已拆出主軸、理解順序、數字與例外；這是可修訂的結構化草稿，正式作答以現行條文為準。"};
 }
-function articleMnemonicMarkup(lid,article,text=""){
- const info=articleMnemonicInfo(lid,article,text),kind=info.kind||"auto",badgeClass=kind==="curated"?"green":kind==="pending"?"":"amber";
- return `<div class="article-mnemonic ${kind}" aria-label="第${esc(article)}條記憶口訣"><div class="article-mnemonic-head"><span class="article-mnemonic-label">🧠 記憶口訣</span><span class="badge ${badgeClass}">${info.status}</span></div><div class="article-mnemonic-main">${esc(info.text)}</div><div class="article-mnemonic-note">${esc(info.note)}｜來源：${esc(info.source)}</div></div>`;
+function articleMnemonicMarkup(lid,article,text="",options={}){
+ const info=articleMnemonicInfo(lid,article,text),kind=info.kind||"auto",badgeClass=kind==="curated"?"green":kind==="pending"?"":"amber",numbers=(info.numbers||[]).join("；");
+ const detailRows=[
+   ["先理解",info.focus],
+   ["理解順序",info.order],
+   ["必背數字",numbers||"本條未擷取到數字"],
+   ["例外／限制",info.exception||"本條未擷取到明確例外"],
+   ["自測提示",info.recall],
+   ["考試警鈴",info.examCue]
+ ].filter(([,value])=>value);
+ return `<div class="article-mnemonic ${kind}" aria-label="第${esc(article)}條結構化記憶卡"><div class="article-mnemonic-head"><span class="article-mnemonic-label">🧠 結構化記憶卡</span><span class="badge ${badgeClass}">${esc(info.status||"")}</span></div><div class="article-mnemonic-main">${esc(info.chant||info.text||"")}</div>${detailRows.length?`<details class="article-mnemonic-details" ${options.expanded?"open":""}><summary>展開理解順序、例外與考點</summary><div class="article-mnemonic-grid">${detailRows.map(([label,value])=>`<div class="article-mnemonic-row"><b>${esc(label)}</b><span>${esc(value)}</span></div>`).join("")}</div></details>`:""}<div class="article-mnemonic-note">${esc(info.note||"")}｜來源：${esc(info.source||"")}</div></div>`;
 }
 function cplFrequencyViewData(){
  const views=CPL_ISSUE_FREQUENCY?.views||{};
@@ -5850,7 +5876,7 @@ async function getMnemonicCards(){
      main=nums.length?nums.join("；"):cleanText(t).slice(0,120);
    }
    if(!main)continue;
-   cards.push({key:x.key,label:x.label,main:cleanText(main).slice(0,260),trap:cleanText(em.trap||"").slice(0,220),mastery:x.mastery,priority:x.priority,source:personal.length?"我的個人筆記":d.memory?"LexCore人工記憶句":em.why?"LexCore考點整理":auto.source});
+   cards.push({key:x.key,label:x.label,main:cleanText(main).slice(0,260),order:cleanText(auto.order||"").slice(0,260),numbers:(auto.numbers||[]).join("；"),exception:cleanText(auto.exception||"").slice(0,220),examCue:cleanText(em.trap||auto.examCue||"").slice(0,240),mastery:x.mastery,priority:x.priority,source:personal.length?"我的個人筆記":d.memory?"LexCore人工記憶句":em.why?"LexCore考點整理":auto.source});
  }
  MNEMONIC_CACHE=cards;return cards;
 }
@@ -5860,7 +5886,7 @@ async function renderMnemonics(){
  const all=allArticleRecords(),curated=all.filter(r=>DETAILS?.[`${r.lawId}:${r.article}`]?.memory).length;
  if($("mnemonicCoverage"))$("mnemonicCoverage").innerHTML=all.length?`目前 ${all.length} 條現行全文都有口訣入口：<b>${curated} 條人工整理</b>，其餘由現行全文產生自動草稿；點法條卡上的「🧠 記憶口訣」即可查看。`:`目前尚未同步完整現行全文；同步完成後會自動建立每條法規的口訣草稿。`;
  const cards=await getMnemonicCards();
- $("mnemonicGrid").innerHTML=cards.length?cards.slice(0,20).map(x=>`<div class="mnemonic-card"><div class="row"><h3>${x.label}</h3><span class="badge ${x.mastery<50?"red":x.mastery<70?"amber":"green"}">${x.mastery}</span></div><div class="mnemonic-main">${esc(x.main)}</div>${x.trap?`<div class="trap" style="margin-top:8px">⚠ ${esc(x.trap)}</div>`:""}<div class="mnemonic-source">${x.source}</div><div class="actions"><button class="chip" onclick="openConceptKey('${x.key}')">看法條</button></div></div>`).join(""):'<div class="empty"><b>目前還沒有足夠錯題／筆記可整理</b><p>累積作答與個人筆記後，這裡會自動變成你的考前速記包。</p></div>';
+ $("mnemonicGrid").innerHTML=cards.length?cards.slice(0,20).map(x=>`<div class="mnemonic-card"><div class="row"><h3>${x.label}</h3><span class="badge ${x.mastery<50?"red":x.mastery<70?"amber":"green"}">${x.mastery}</span></div><div class="mnemonic-main">${esc(x.main)}</div>${x.order?`<div class="mnemonic-structure"><b>理解順序</b><span>${esc(x.order)}</span></div>`:""}${x.numbers?`<div class="mnemonic-structure"><b>必背數字</b><span>${esc(x.numbers)}</span></div>`:""}${x.exception?`<div class="mnemonic-structure"><b>例外／限制</b><span>${esc(x.exception)}</span></div>`:""}${x.examCue?`<div class="trap" style="margin-top:8px">⚠ ${esc(x.examCue)}</div>`:""}<div class="mnemonic-source">${esc(x.source)}</div><div class="actions"><button class="chip" onclick="openConceptKey('${x.key}')">看法條</button></div></div>`).join(""):'<div class="empty"><b>目前還沒有足夠錯題／筆記可整理</b><p>累積作答與個人筆記後，這裡會自動變成你的考前速記包。</p></div>';
 }
 function openConceptKey(key){const [l,a]=key.split(":");openArticle(l,a)}
 async function speakMnemonicPack(){showPage("fieldtools");setFieldTool("voice");$("voiceMode").value="mnemonic";startVoiceMode()}
@@ -7467,6 +7493,7 @@ async function loadRuntime(){
       DETAILS=rt.frontend.details||DETAILS;
       COURT_STUDY=rt.frontend.courtStudy||COURT_STUDY;
       ARTICLE_TEXTS=rt.frontend.articleTexts||{};
+      ARTICLE_MNEMONICS=rt.frontend.mnemonics||ARTICLE_MNEMONICS;
       LAW_CATALOG=rt.frontend.lawCatalog||LAW_CATALOG;
       CPL_ISSUE_FREQUENCY=rt.frontend.issueFrequency||CPL_ISSUE_FREQUENCY;
       fillFilter();fillAmendLaw();fillTreeParent();renderTabs();renderAllAmendments();renderLawTree();renderStudy();renderReasons();renderExam();renderCourt();renderSync();renderQuickLookup();renderFragmentPlan();renderFinalReview();renderCalendarAll();renderV3Pages();
