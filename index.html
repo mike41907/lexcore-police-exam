@@ -438,6 +438,14 @@ main{max-width:1500px;width:100%;margin:auto;padding:24px}.top{display:flex;just
 .law-relation-card{margin-top:10px;padding:10px 11px;border:1px solid color-mix(in srgb,var(--p) 16%,var(--line));border-radius:13px;background:color-mix(in srgb,var(--card) 86%,var(--p2))}.law-relation-card.compact{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 9px}.law-relation-card.compact .law-relation-head{margin:0}.law-relation-card.compact .chip{flex:0 0 auto;white-space:nowrap}.law-relation-head{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:7px;font-size:12px}.law-relation-head b{font-size:12px}.law-chain-path{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.law-chain-node,.law-chain-current{display:inline-flex;align-items:center;min-height:30px;border:1px solid var(--line);border-radius:9px;padding:5px 8px;background:var(--card);color:var(--text);font-size:11px;font-weight:900;line-height:1.35;text-align:left}.law-chain-node{cursor:pointer}.law-chain-node:hover{border-color:var(--p);color:var(--p)}.law-chain-node.parent,.law-chain-current.parent{border-color:color-mix(in srgb,var(--r) 38%,var(--line));background:var(--r2);color:var(--r)}.law-chain-node.related,.law-chain-current.related{border-color:color-mix(in srgb,var(--p) 30%,var(--line));background:var(--p2);color:var(--p)}.law-chain-node.child,.law-chain-current.child{border-color:color-mix(in srgb,var(--g) 36%,var(--line));background:var(--g2);color:var(--g)}.law-chain-arrow{color:var(--muted);font-weight:950}.law-chain-note{margin-top:7px;font-size:11px;line-height:1.55;color:var(--muted)}.law-chain-branches{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:8px}.law-chain-branches>span{font-size:10px;font-weight:900;color:var(--muted)}.law-chain-branches .chip{font-size:10px;padding:5px 7px}.law-chain-empty{display:flex;justify-content:space-between;gap:8px;align-items:center;font-size:11px;color:var(--muted)}.law-chain-empty>div{min-width:0}.law-chain-empty .chip{flex:0 0 auto;white-space:nowrap}
 .law-article-rail-wrap{display:flex;gap:8px;align-items:center;margin-top:10px}.law-article-rail-wrap>span{flex:0 0 auto;font-size:11px;font-weight:900;color:var(--muted)}.law-article-rail{display:flex;gap:6px;min-width:0;overflow-x:auto;padding:1px 1px 4px;scrollbar-width:none}.law-article-rail::-webkit-scrollbar{display:none}.law-chapter-chip{display:inline-flex;align-items:center;gap:6px;flex:0 0 auto;min-height:32px;border:1px solid var(--line);border-radius:10px;padding:5px 8px;background:var(--card);color:var(--text);font:inherit;font-size:11px;font-weight:900;line-height:1.35;white-space:nowrap;text-align:left}.law-chapter-chip:hover{border-color:var(--p);color:var(--p)}.law-chapter-chip.book{border-color:color-mix(in srgb,var(--r) 32%,var(--line));color:var(--r);background:var(--r2)}.law-chapter-chip.section{border-color:color-mix(in srgb,var(--g) 30%,var(--line));color:var(--g);background:var(--g2)}.law-chapter-chip small{font-size:9px;color:var(--muted);font-weight:800}
 @media(max-width:650px){.law-navigator{padding:12px;border-radius:14px}.law-navigator-head{align-items:flex-start}.law-jump-status{white-space:normal;text-align:right;line-height:1.45}.law-jump-controls{grid-template-columns:minmax(0,1fr) 82px auto;gap:6px}.law-jump-controls select,.law-jump-controls input{min-height:40px;padding:8px}.law-jump-controls .btn{min-height:40px;padding:8px 10px}.law-chain-path{flex-wrap:nowrap;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}.law-chain-path::-webkit-scrollbar{display:none}.law-chain-node,.law-chain-current,.law-chain-arrow{flex:0 0 auto;white-space:nowrap}.law-chain-branches{align-items:flex-start}.law-chain-branches>span{padding-top:5px}.law-article-rail-wrap{align-items:flex-start;flex-direction:column;gap:5px}.law-article-rail{width:100%}.law-reader{gap:8px}.law-reader-section{padding:9px 10px;margin-top:6px}.law-reader-article{border-radius:12px;scroll-margin-top:86px}.law-reader-article-head{padding:10px 11px}.law-reader-text{padding:11px;font-size:14px;line-height:1.85}}
+/* ===== 刑訴爭點頻率標註 ===== */
+.cpl-frequency-panel{margin:10px 0;padding:12px 13px;border:1px solid color-mix(in srgb,var(--p) 22%,var(--line));border-radius:15px;background:linear-gradient(145deg,color-mix(in srgb,var(--p2) 62%,var(--card)),var(--card));box-shadow:var(--shadow-sm)}
+.cpl-frequency-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.cpl-frequency-head h3{margin:0;font-size:14px}.cpl-frequency-head p{margin:4px 0 0;color:var(--muted);font-size:10px;line-height:1.55}
+.cpl-frequency-toolbar{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-top:10px}.cpl-frequency-toolbar label{display:flex;align-items:center;gap:6px;color:var(--muted);font-size:10px;font-weight:850}.cpl-frequency-toolbar select{min-height:34px;border:1px solid var(--line);border-radius:9px;padding:6px 8px;background:var(--card);color:var(--text);font:inherit;font-weight:850}
+.cpl-frequency-summary{display:flex;gap:5px;flex-wrap:wrap;margin-top:9px}.cpl-frequency-source{margin-top:8px;font-size:10px;line-height:1.55;color:var(--muted)}.cpl-frequency-source a{color:var(--p);font-weight:850}
+.cpl-frequency-chapters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:10px}.cpl-frequency-chapter{min-width:0;padding:7px 8px;border:1px solid var(--line);border-radius:10px;background:color-mix(in srgb,var(--card) 82%,var(--bg))}.cpl-frequency-chapter .row{gap:5px}.cpl-frequency-chapter span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10px;color:var(--muted)}.cpl-frequency-chapter b{font-size:11px;color:var(--text)}.cpl-frequency-bar{height:4px;margin-top:6px;border-radius:99px;background:var(--bg);overflow:hidden}.cpl-frequency-bar i{display:block;height:100%;border-radius:inherit;background:var(--p)}
+.cpl-frequency-list{display:grid;gap:5px;max-height:410px;overflow:auto;margin-top:10px;padding-right:2px}.cpl-frequency-row{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:8px;align-items:start;padding:8px 9px;border:1px solid var(--line);border-radius:10px;background:var(--card)}.cpl-frequency-rank{display:grid;place-items:center;width:25px;height:25px;border-radius:8px;background:var(--p2);color:var(--p);font-size:10px;font-weight:950}.cpl-frequency-main{min-width:0}.cpl-frequency-issue{display:block;font-size:11px;line-height:1.45;font-weight:900;overflow-wrap:anywhere}.cpl-frequency-meta{display:flex;align-items:center;gap:4px;flex-wrap:wrap;margin-top:3px;color:var(--muted);font-size:9px;line-height:1.45}.cpl-frequency-count{text-align:right;color:var(--p);font-size:16px;font-weight:950;white-space:nowrap}.cpl-frequency-count small{display:block;color:var(--muted);font-size:9px;font-weight:800}.cpl-frequency-ref{border:1px solid color-mix(in srgb,var(--p) 30%,var(--line));border-radius:999px;padding:3px 6px;background:var(--p2);color:var(--p);font:inherit;font-size:9px;font-weight:900;cursor:pointer}.cpl-frequency-ref:hover{border-color:var(--p)}.cpl-frequency-article-badge{cursor:help}
+@media(max-width:650px){.cpl-frequency-panel{padding:11px;border-radius:13px}.cpl-frequency-head{display:block}.cpl-frequency-toolbar{align-items:stretch}.cpl-frequency-toolbar label{flex:1 1 100%;justify-content:space-between}.cpl-frequency-toolbar select{flex:1;min-width:0}.cpl-frequency-chapters{grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}.cpl-frequency-list{max-height:360px}.cpl-frequency-row{grid-template-columns:25px minmax(0,1fr) auto;gap:6px;padding:7px}.cpl-frequency-count{font-size:14px}}
 .lookup-hero{display:grid;grid-template-columns:1fr auto;gap:8px;margin-bottom:10px}
 .lookup-hero input{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:11px;padding:12px;font-size:14px}
 .lookup-tools{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px}
@@ -3559,6 +3567,9 @@ function allAmendmentRows(){
  }
  return rows.sort((a,b)=>rocSortValue(b.e.date)-rocSortValue(a.e.date));
 }
+let CPL_ISSUE_FREQUENCY={source:null,views:{}};
+let CPL_FREQUENCY_VIEW="police";
+
 function fillAmendLaw(){
  if(!$("amendLaw"))return;
  const old=$("amendLaw").value;
@@ -5301,6 +5312,50 @@ function fillFullLawFilter(){
    if(rows.some(x=>x.id===old2))$("lookupLaw").value=old2;
  }
 }
+function cplFrequencyViewData(){
+ const views=CPL_ISSUE_FREQUENCY?.views||{};
+ return views[CPL_FREQUENCY_VIEW]||views.police||null;
+}
+function cplFrequencyArticleIssues(article){
+ const view=cplFrequencyViewData(),a=String(article);
+ return (view?.issues||[]).filter(x=>(x.articleRefs||[]).includes(a));
+}
+function cplFrequencyArticleTags(article){
+ const rows=cplFrequencyArticleIssues(article);
+ if(!rows.length)return "";
+ const total=rows.reduce((sum,row)=>sum+(Number(row.count)||0),0);
+ const title=rows.slice(0,3).map(row=>row.issue+" "+row.count+"次").join("；");
+ return '<span class="badge blue cpl-frequency-article-badge" title="'+esc(title)+'">考點 '+total+'次</span>';
+}
+function cplFrequencyPanelMarkup(){
+ const view=cplFrequencyViewData(),source=CPL_ISSUE_FREQUENCY?.source;
+ if(!view)return "";
+ const options=Object.entries(CPL_ISSUE_FREQUENCY.views||{}).map(([key,row])=>'<option value="'+key+'" '+(key===CPL_FREQUENCY_VIEW?"selected":"")+'>'+esc(row.label||key)+'</option>').join("");
+ const chapters=[...(view.chapterCounts||[])].sort((a,b)=>b.count-a.count).slice(0,6);
+ const maxChapter=Math.max(1,...chapters.map(row=>Number(row.count)||0));
+ const chapterMarkup=chapters.map(row=>'<div class="cpl-frequency-chapter"><div class="row"><span title="'+esc(row.name)+'">'+esc(row.name)+'</span><b>'+row.count+'</b></div><div class="cpl-frequency-bar"><i style="width:'+Math.round((Number(row.count)||0)/maxChapter*100)+'%"></i></div></div>').join("");
+ const issueMarkup=(view.issues||[]).map(row=>{
+   const chapterNames=(row.chapters||[]).map(id=>(view.chapterCounts||[]).find(ch=>ch.id===id)?.name||id).join("、");
+   const refs=(row.articleRefs||[]).map(a=>'<button class="cpl-frequency-ref" type="button" onclick="scrollToStudyArticle(\'cpl\',\''+a+'\')">§ '+a+'</button>').join("");
+   return '<div class="cpl-frequency-row"><span class="cpl-frequency-rank">'+row.rank+'</span><div class="cpl-frequency-main"><b class="cpl-frequency-issue">'+esc(row.issue)+'</b><div class="cpl-frequency-meta"><span>'+esc(chapterNames||"章節未分類")+'</span>'+(row.latestYear?'<span>・最新 '+esc(row.latestYear)+' 年</span>':"")+(refs?'<span>・明確條號</span>'+refs:'<span>・來源未列單一條號</span>')+'</div></div><strong class="cpl-frequency-count">'+row.count+'<small>次</small></strong></div>';
+ }).join("");
+ const retrieved=source?.retrievedAt?new Date(source.retrievedAt).toLocaleDateString("zh-TW"):"";
+ const sourceUrl=esc(source?.url||"https://lucplaw.com/116-issue-analyzer-9c4e7a1f2d");
+ return '<section class="cpl-frequency-panel" id="cplFrequencyPanel"><div class="cpl-frequency-head"><div><h3>📊 刑訴爭點頻率標註</h3><p>把老師整理的近5年考點排行疊到現行全文；條文標籤只採來源明確寫出的條號。</p></div><span class="badge blue">'+(view.issues?.length||0)+' 個爭點</span></div><div class="cpl-frequency-toolbar"><label>統計視角<select onchange="setCplFrequencyView(this.value)">'+options+'</select></label><div class="cpl-frequency-summary"><span class="badge green">'+(view.questionCount||0)+' 題</span><span class="badge amber">'+(view.markerCount||0)+' 次爭點標記</span></div></div><div class="cpl-frequency-source">資料期間：'+esc(source?.period||"近5年")+'；'+esc(source?.method||"依來源頁面統計")+'。'+(retrieved?" 擷取："+retrieved+"。":"")+' <a href="'+sourceUrl+'" target="_blank" rel="noopener">查看原始排行</a><br>'+esc(source?.note||"爭點編碼為初判，供教學參考。")+'</div><div class="cpl-frequency-chapters">'+chapterMarkup+'</div><div class="cpl-frequency-list" aria-label="刑訴爭點次數排行">'+issueMarkup+'</div></section>';
+}
+function setCplFrequencyView(view){
+ if(!CPL_ISSUE_FREQUENCY?.views?.[view])return;
+ CPL_FREQUENCY_VIEW=view;
+ renderFullStudy();
+}
+function renderCplFrequencyArticleBadges(){
+ const ids=articleIdsForLaw("cpl");
+ for(const article of ids){
+   const tags=document.getElementById(studyArticleDomId("cpl",article))?.querySelector(".law-reader-article-tags");
+   const markup=cplFrequencyArticleTags(article);
+   if(tags&&markup&&!tags.querySelector(".cpl-frequency-article-badge"))tags.insertAdjacentHTML("afterbegin",markup);
+ }
+}
 function fullLawReaderMarkup(lid,records,ids,recentSet,coreSet){
  const starts=new Map();
  for(const chapter of lawChaptersForLaw(lid,ids)){
@@ -5324,6 +5379,7 @@ function renderFullStudy(){
  renderLawNavigator(id,ids,l,base,recentSet);
  let out=`<div class="full-law-meta"><span class="badge green">${records.length?`${records.length} 條現行全文`:"等待完整同步"}</span><span class="badge red">${recentSet.size} 條近5年異動</span><span class="badge blue">${base?.key_articles?.length||0} 條核心必讀</span>${l.pcode?`<a class="chip" target="_blank" style="text-decoration:none" href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=${l.pcode}">官方所有條文</a>`:""}</div>`;
  const coreSet=new Set((base?.key_articles||[]).map(String));
+ if(id==="cpl"&&!q)out+=cplFrequencyPanelMarkup();
  if(!q){
    if(records.length)out+=`<div class="block"><div class="row"><h3>現行全文</h3><span class="badge green">連續閱讀</span></div>${fullLawReaderMarkup(id,records,ids,recentSet,coreSet)}</div>`;
    else out+=`<div class="empty"><b>目前沒有可閱讀的完整條文</b><p>請在 GitHub Pages 連線後等待官方法規同步完成。</p></div>`;
@@ -5338,6 +5394,7 @@ function renderFullStudy(){
    out+=matches.length?`<div class="block"><div class="row"><h3>全文搜尋結果</h3><span class="badge blue">${matches.length} 條</span></div>${fullLawReaderMarkup(id,matches,ids,recentSet,coreSet)}</div>`:`<div class="empty"><b>全文中沒有找到「${esc(q)}」</b><p>如果目前是單檔離線快照，完整全文要等 GitHub Actions 同步後才會出現。</p></div>`;
  }
  $("studyBody").innerHTML=out;
+ if(id==="cpl"&&!q)renderCplFrequencyArticleBadges();
 }
 
 /* ---------- Quick law lookup ---------- */
@@ -7136,6 +7193,7 @@ async function loadRuntime(){
       COURT_STUDY=rt.frontend.courtStudy||COURT_STUDY;
       ARTICLE_TEXTS=rt.frontend.articleTexts||{};
       LAW_CATALOG=rt.frontend.lawCatalog||LAW_CATALOG;
+      CPL_ISSUE_FREQUENCY=rt.frontend.issueFrequency||CPL_ISSUE_FREQUENCY;
       fillFilter();fillAmendLaw();fillTreeParent();renderTabs();renderAllAmendments();renderLawTree();renderStudy();renderReasons();renderExam();renderCourt();renderSync();renderQuickLookup();renderFragmentPlan();renderFinalReview();renderCalendarAll();renderV3Pages();
     }
   }catch(e){

@@ -1,0 +1,3172 @@
+{
+  "source": {
+    "title": "刑事訴訟法爭點頻率分析",
+    "url": "https://lucplaw.com/116-issue-analyzer-9c4e7a1f2d",
+    "period": "民國110–115年",
+    "method": "依頁面爭點標記計數；一題涉及多爭點採全掛計數；合科卷僅計刑訴題",
+    "note": "爭點編碼為初判，供教學參考。",
+    "retrievedAt": "2026-08-24T02:39:49.694Z"
+  },
+  "views": {
+    "police": {
+      "label": "整體警察考試（含外軌）",
+      "questionCount": 315,
+      "markerCount": 527,
+      "chapterCounts": [
+        {
+          "id": "C01",
+          "name": "一、刑事訴訟法之基礎",
+          "count": 1
+        },
+        {
+          "id": "C02",
+          "name": "二、法院、檢察官與被告",
+          "count": 15
+        },
+        {
+          "id": "C03",
+          "name": "三、辯護人及其他訴訟關係人",
+          "count": 39
+        },
+        {
+          "id": "C04",
+          "name": "四、訴訟關係、訴訟條件與訴訟行為",
+          "count": 21
+        },
+        {
+          "id": "C05",
+          "name": "五、強制處分",
+          "count": 230
+        },
+        {
+          "id": "C06",
+          "name": "六、證據法",
+          "count": 123
+        },
+        {
+          "id": "C07",
+          "name": "七、偵查程序",
+          "count": 53
+        },
+        {
+          "id": "C08",
+          "name": "八、準備程序與審判期日",
+          "count": 18
+        },
+        {
+          "id": "C09",
+          "name": "九、自訴",
+          "count": 1
+        },
+        {
+          "id": "C10",
+          "name": "十、簡式審判、簡易與協商程序",
+          "count": 2
+        },
+        {
+          "id": "C11",
+          "name": "十一、判決確定前後之救濟途徑",
+          "count": 14
+        },
+        {
+          "id": "C99",
+          "name": "其他",
+          "count": 10
+        }
+      ],
+      "issues": [
+        {
+          "rank": 1,
+          "issue": "附帶搜索",
+          "count": 26,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 2,
+          "issue": "現行犯逮捕",
+          "count": 22,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 3,
+          "issue": "令狀搜索",
+          "count": 18,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 4,
+          "issue": "逕行搜索",
+          "count": 17,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 5,
+          "issue": "強制採樣與鑑定留置（§203-1、§205-2）",
+          "count": 15,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": [
+            "203-1",
+            "205-2"
+          ]
+        },
+        {
+          "rank": 6,
+          "issue": "科技偵查（GPS／M化車）",
+          "count": 14,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 7,
+          "issue": "同意搜索",
+          "count": 13,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 8,
+          "issue": "自白任意性",
+          "count": 13,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 9,
+          "issue": "訊問／詢問程序",
+          "count": 13,
+          "latestYear": "115",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 10,
+          "issue": "證人（具結／拒絕證言）",
+          "count": 13,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 11,
+          "issue": "偵查中辯護人在場與陳述意見權",
+          "count": 11,
+          "latestYear": "114",
+          "chapters": [
+            "C03"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 12,
+          "issue": "告訴（告訴乃論／告訴不可分／告訴期間）",
+          "count": 10,
+          "latestYear": "115",
+          "chapters": [
+            "C04"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 13,
+          "issue": "夜間詢問",
+          "count": 10,
+          "latestYear": "115",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 14,
+          "issue": "傳聞例外§159-3",
+          "count": 10,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": [
+            "159-3"
+          ]
+        },
+        {
+          "rank": 15,
+          "issue": "違法搜索扣押之證據能力",
+          "count": 10,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 16,
+          "issue": "延長／停止／撤銷羈押",
+          "count": 9,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 17,
+          "issue": "限制出境出海",
+          "count": 9,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 18,
+          "issue": "傳聞法則（原則與定義）",
+          "count": 9,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 19,
+          "issue": "選任辯護權",
+          "count": 9,
+          "latestYear": "115",
+          "chapters": [
+            "C03"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 20,
+          "issue": "偵查不公開",
+          "count": 8,
+          "latestYear": "114",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 21,
+          "issue": "另案扣押",
+          "count": 7,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 22,
+          "issue": "供述與非供述證據",
+          "count": 7,
+          "latestYear": "113",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 23,
+          "issue": "拘提（一般／逕行）",
+          "count": 7,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 24,
+          "issue": "強制（指定）辯護",
+          "count": 7,
+          "latestYear": "115",
+          "chapters": [
+            "C03"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 25,
+          "issue": "對質詰問權（釋582）",
+          "count": 7,
+          "latestYear": "115",
+          "chapters": [
+            "C08"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 26,
+          "issue": "緊急搜索",
+          "count": 7,
+          "latestYear": "114",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 27,
+          "issue": "羈押（原因與必要性）",
+          "count": 7,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 28,
+          "issue": "告知義務（§95）",
+          "count": 6,
+          "latestYear": "114",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": [
+            "95"
+          ]
+        },
+        {
+          "rank": 29,
+          "issue": "特殊扣押（電磁紀錄／秘匿特權）",
+          "count": 6,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 30,
+          "issue": "勘驗與相驗",
+          "count": 6,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 31,
+          "issue": "接見通信權及其限制",
+          "count": 6,
+          "latestYear": "115",
+          "chapters": [
+            "C03"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 32,
+          "issue": "通訊監察（核發要件／緊急監察／另案監察）",
+          "count": 6,
+          "latestYear": "114",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 33,
+          "issue": "通緝",
+          "count": 6,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 34,
+          "issue": "管轄（土地／事物／牽連／指定移轉）",
+          "count": 6,
+          "latestYear": "115",
+          "chapters": [
+            "C02"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 35,
+          "issue": "緊急拘捕（§88-1）",
+          "count": 6,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": [
+            "88-1"
+          ]
+        },
+        {
+          "rank": 36,
+          "issue": "誘捕偵查（陷害教唆vs釣魚）",
+          "count": 6,
+          "latestYear": "114",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 37,
+          "issue": "鑑定證據能力",
+          "count": 6,
+          "latestYear": "114",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 38,
+          "issue": "不自證己罪",
+          "count": 5,
+          "latestYear": "114",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 39,
+          "issue": "共同被告與共犯自白之調查與補強",
+          "count": 5,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 40,
+          "issue": "強制處分基本原則（法官保留、令狀原則）",
+          "count": 5,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 41,
+          "issue": "被害人陳述",
+          "count": 5,
+          "latestYear": "114",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 42,
+          "issue": "訴之單一同一與變更追加",
+          "count": 5,
+          "latestYear": "115",
+          "chapters": [
+            "C08"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 43,
+          "issue": "傳喚",
+          "count": 5,
+          "latestYear": "113",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 44,
+          "issue": "傳聞例外§159-2",
+          "count": 5,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": [
+            "159-2"
+          ]
+        },
+        {
+          "rank": 45,
+          "issue": "辯護人閱卷權",
+          "count": 5,
+          "latestYear": "113",
+          "chapters": [
+            "C03"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 46,
+          "issue": "一般扣押",
+          "count": 4,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 47,
+          "issue": "不正訊問",
+          "count": 4,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 48,
+          "issue": "再議",
+          "count": 4,
+          "latestYear": "115",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 49,
+          "issue": "抗告與準抗告",
+          "count": 4,
+          "latestYear": "113",
+          "chapters": [
+            "C11"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 50,
+          "issue": "法官迴避",
+          "count": 4,
+          "latestYear": "114",
+          "chapters": [
+            "C02"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 51,
+          "issue": "毒樹果實",
+          "count": 4,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 52,
+          "issue": "送達",
+          "count": 4,
+          "latestYear": "115",
+          "chapters": [
+            "C04"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 53,
+          "issue": "被告地位與緘默權",
+          "count": 4,
+          "latestYear": "114",
+          "chapters": [
+            "C02"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 54,
+          "issue": "逮捕後處置與時限",
+          "count": 4,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 55,
+          "issue": "撤回告訴",
+          "count": 4,
+          "latestYear": "115",
+          "chapters": [
+            "C04"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 56,
+          "issue": "上訴利益與上訴權",
+          "count": 3,
+          "latestYear": "115",
+          "chapters": [
+            "C11"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 57,
+          "issue": "全程連續錄音錄影",
+          "count": 3,
+          "latestYear": "113",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 58,
+          "issue": "再審（§420新事實新證據）",
+          "count": 3,
+          "latestYear": "115",
+          "chapters": [
+            "C11"
+          ],
+          "articleRefs": [
+            "420"
+          ]
+        },
+        {
+          "rank": 59,
+          "issue": "起訴（法定／便宜原則）",
+          "count": 3,
+          "latestYear": "114",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 60,
+          "issue": "第三審（法律審／上訴理由）",
+          "count": 3,
+          "latestYear": "113",
+          "chapters": [
+            "C11"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 61,
+          "issue": "無罪推定",
+          "count": 3,
+          "latestYear": "114",
+          "chapters": [
+            "C08"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 62,
+          "issue": "傳聞例外§159-1",
+          "count": 3,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": [
+            "159-1"
+          ]
+        },
+        {
+          "rank": 63,
+          "issue": "傳聞例外§159-4",
+          "count": 3,
+          "latestYear": "113",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": [
+            "159-4"
+          ]
+        },
+        {
+          "rank": 64,
+          "issue": "預防性羈押",
+          "count": 3,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 65,
+          "issue": "對第三人搜索",
+          "count": 3,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 66,
+          "issue": "緩起訴（要件／附條件／撤銷）",
+          "count": 3,
+          "latestYear": "115",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 67,
+          "issue": "舉證責任",
+          "count": 3,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 68,
+          "issue": "證據裁判主義與嚴格證明",
+          "count": 3,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 69,
+          "issue": "羈押審查與卷證獲知（釋737）",
+          "count": 3,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 70,
+          "issue": "不起訴處分",
+          "count": 2,
+          "latestYear": "115",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 71,
+          "issue": "正當法律程序",
+          "count": 2,
+          "latestYear": "114",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 72,
+          "issue": "私人不法取證",
+          "count": 2,
+          "latestYear": "114",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 73,
+          "issue": "其他─被害人訴訟參與",
+          "count": 2,
+          "latestYear": "114",
+          "chapters": [
+            "C99"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 74,
+          "issue": "其他─暫行安置",
+          "count": 2,
+          "latestYear": "114",
+          "chapters": [
+            "C99"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 75,
+          "issue": "既判力與一事不再理",
+          "count": 2,
+          "latestYear": "115",
+          "chapters": [
+            "C04"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 76,
+          "issue": "證據排除法則（§158-4權衡）",
+          "count": 2,
+          "latestYear": "114",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": [
+            "158-4"
+          ]
+        },
+        {
+          "rank": 77,
+          "issue": "不利益變更禁止",
+          "count": 1,
+          "latestYear": "111",
+          "chapters": [
+            "C11"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 78,
+          "issue": "比例原則",
+          "count": 1,
+          "latestYear": "114",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 79,
+          "issue": "自由心證",
+          "count": 1,
+          "latestYear": "111",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 80,
+          "issue": "自訴不可分",
+          "count": 1,
+          "latestYear": "115",
+          "chapters": [
+            "C09"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 81,
+          "issue": "沒收特別程序",
+          "count": 1,
+          "latestYear": "114",
+          "chapters": [
+            "C08"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 82,
+          "issue": "其他─保全證據",
+          "count": 1,
+          "latestYear": "113",
+          "chapters": [
+            "C99"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 83,
+          "issue": "其他─指認程序",
+          "count": 1,
+          "latestYear": "110",
+          "chapters": [
+            "C99"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 84,
+          "issue": "其他─偵查總論（司法警察調查）",
+          "count": 1,
+          "latestYear": "110",
+          "chapters": [
+            "C99"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 85,
+          "issue": "其他─國民法官法",
+          "count": 1,
+          "latestYear": "111",
+          "chapters": [
+            "C99"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 86,
+          "issue": "其他─控制下交付",
+          "count": 1,
+          "latestYear": "110",
+          "chapters": [
+            "C99"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 87,
+          "issue": "其他─通譯",
+          "count": 1,
+          "latestYear": "112",
+          "chapters": [
+            "C99"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 88,
+          "issue": "具保責付限制住居",
+          "count": 1,
+          "latestYear": "113",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 89,
+          "issue": "直接與言詞審理",
+          "count": 1,
+          "latestYear": "113",
+          "chapters": [
+            "C08"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 90,
+          "issue": "准許提起自訴（原交付審判）",
+          "count": 1,
+          "latestYear": "113",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 91,
+          "issue": "訴訟條件總論",
+          "count": 1,
+          "latestYear": "113",
+          "chapters": [
+            "C04"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 92,
+          "issue": "訴訟構造（彈劾／糾問、當事人進行vs職權進行）",
+          "count": 1,
+          "latestYear": "114",
+          "chapters": [
+            "C01"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 93,
+          "issue": "傳聞例外§159-5",
+          "count": 1,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": [
+            "159-5"
+          ]
+        },
+        {
+          "rank": 94,
+          "issue": "認罪協商程序",
+          "count": 1,
+          "latestYear": "110",
+          "chapters": [
+            "C10"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 95,
+          "issue": "輔佐人與代理人",
+          "count": 1,
+          "latestYear": "112",
+          "chapters": [
+            "C03"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 96,
+          "issue": "調取票與通聯",
+          "count": 1,
+          "latestYear": "110",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 97,
+          "issue": "檢察官客觀性義務與檢察一體",
+          "count": 1,
+          "latestYear": "114",
+          "chapters": [
+            "C02"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 98,
+          "issue": "簡易程序",
+          "count": 1,
+          "latestYear": "112",
+          "chapters": [
+            "C10"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 99,
+          "issue": "變更起訴法條（§300）",
+          "count": 1,
+          "latestYear": "112",
+          "chapters": [
+            "C08"
+          ],
+          "articleRefs": [
+            "300"
+          ]
+        }
+      ]
+    },
+    "guard": {
+      "label": "警佐班",
+      "questionCount": 129,
+      "markerCount": 186,
+      "chapterCounts": [
+        {
+          "id": "C02",
+          "name": "二、法院、檢察官與被告",
+          "count": 6
+        },
+        {
+          "id": "C03",
+          "name": "三、辯護人及其他訴訟關係人",
+          "count": 20
+        },
+        {
+          "id": "C04",
+          "name": "四、訴訟關係、訴訟條件與訴訟行為",
+          "count": 12
+        },
+        {
+          "id": "C05",
+          "name": "五、強制處分",
+          "count": 73
+        },
+        {
+          "id": "C06",
+          "name": "六、證據法",
+          "count": 37
+        },
+        {
+          "id": "C07",
+          "name": "七、偵查程序",
+          "count": 26
+        },
+        {
+          "id": "C08",
+          "name": "八、準備程序與審判期日",
+          "count": 5
+        },
+        {
+          "id": "C09",
+          "name": "九、自訴",
+          "count": 1
+        },
+        {
+          "id": "C11",
+          "name": "十一、判決確定前後之救濟途徑",
+          "count": 5
+        },
+        {
+          "id": "C99",
+          "name": "其他",
+          "count": 1
+        }
+      ],
+      "issues": [
+        {
+          "rank": 1,
+          "issue": "訊問／詢問程序",
+          "count": 8,
+          "latestYear": "115",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 2,
+          "issue": "告訴（告訴乃論／告訴不可分／告訴期間）",
+          "count": 7,
+          "latestYear": "115",
+          "chapters": [
+            "C04"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 3,
+          "issue": "附帶搜索",
+          "count": 7,
+          "latestYear": "113",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 4,
+          "issue": "科技偵查（GPS／M化車）",
+          "count": 6,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 5,
+          "issue": "現行犯逮捕",
+          "count": 6,
+          "latestYear": "114",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 6,
+          "issue": "同意搜索",
+          "count": 5,
+          "latestYear": "111",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 7,
+          "issue": "自白任意性",
+          "count": 5,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 8,
+          "issue": "供述與非供述證據",
+          "count": 5,
+          "latestYear": "113",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 9,
+          "issue": "偵查中辯護人在場與陳述意見權",
+          "count": 5,
+          "latestYear": "114",
+          "chapters": [
+            "C03"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 10,
+          "issue": "強制（指定）辯護",
+          "count": 5,
+          "latestYear": "115",
+          "chapters": [
+            "C03"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 11,
+          "issue": "逕行搜索",
+          "count": 5,
+          "latestYear": "114",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 12,
+          "issue": "證人（具結／拒絕證言）",
+          "count": 5,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 13,
+          "issue": "接見通信權及其限制",
+          "count": 4,
+          "latestYear": "115",
+          "chapters": [
+            "C03"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 14,
+          "issue": "緊急拘捕（§88-1）",
+          "count": 4,
+          "latestYear": "114",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": [
+            "88-1"
+          ]
+        },
+        {
+          "rank": 15,
+          "issue": "緊急搜索",
+          "count": 4,
+          "latestYear": "112",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 16,
+          "issue": "選任辯護權",
+          "count": 4,
+          "latestYear": "115",
+          "chapters": [
+            "C03"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 17,
+          "issue": "令狀搜索",
+          "count": 3,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 18,
+          "issue": "夜間詢問",
+          "count": 3,
+          "latestYear": "113",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 19,
+          "issue": "延長／停止／撤銷羈押",
+          "count": 3,
+          "latestYear": "112",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 20,
+          "issue": "偵查不公開",
+          "count": 3,
+          "latestYear": "114",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 21,
+          "issue": "強制採樣與鑑定留置（§203-1、§205-2）",
+          "count": 3,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": [
+            "203-1",
+            "205-2"
+          ]
+        },
+        {
+          "rank": 22,
+          "issue": "傳喚",
+          "count": 3,
+          "latestYear": "113",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 23,
+          "issue": "管轄（土地／事物／牽連／指定移轉）",
+          "count": 3,
+          "latestYear": "115",
+          "chapters": [
+            "C02"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 24,
+          "issue": "撤回告訴",
+          "count": 3,
+          "latestYear": "115",
+          "chapters": [
+            "C04"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 25,
+          "issue": "緩起訴（要件／附條件／撤銷）",
+          "count": 3,
+          "latestYear": "115",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 26,
+          "issue": "證據裁判主義與嚴格證明",
+          "count": 3,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 27,
+          "issue": "鑑定證據能力",
+          "count": 3,
+          "latestYear": "113",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 28,
+          "issue": "羈押（原因與必要性）",
+          "count": 3,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 29,
+          "issue": "羈押審查與卷證獲知（釋737）",
+          "count": 3,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 30,
+          "issue": "不起訴處分",
+          "count": 2,
+          "latestYear": "115",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 31,
+          "issue": "另案扣押",
+          "count": 2,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 32,
+          "issue": "正當法律程序",
+          "count": 2,
+          "latestYear": "114",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 33,
+          "issue": "再議",
+          "count": 2,
+          "latestYear": "115",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 34,
+          "issue": "私人不法取證",
+          "count": 2,
+          "latestYear": "114",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 35,
+          "issue": "拘提（一般／逕行）",
+          "count": 2,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 36,
+          "issue": "限制出境出海",
+          "count": 2,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 37,
+          "issue": "特殊扣押（電磁紀錄／秘匿特權）",
+          "count": 2,
+          "latestYear": "114",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 38,
+          "issue": "起訴（法定／便宜原則）",
+          "count": 2,
+          "latestYear": "114",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 39,
+          "issue": "勘驗與相驗",
+          "count": 2,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 40,
+          "issue": "強制處分基本原則（法官保留、令狀原則）",
+          "count": 2,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 41,
+          "issue": "第三審（法律審／上訴理由）",
+          "count": 2,
+          "latestYear": "110",
+          "chapters": [
+            "C11"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 42,
+          "issue": "通緝",
+          "count": 2,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 43,
+          "issue": "訴之單一同一與變更追加",
+          "count": 2,
+          "latestYear": "113",
+          "chapters": [
+            "C08"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 44,
+          "issue": "傳聞例外§159-3",
+          "count": 2,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": [
+            "159-3"
+          ]
+        },
+        {
+          "rank": 45,
+          "issue": "預防性羈押",
+          "count": 2,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 46,
+          "issue": "對質詰問權（釋582）",
+          "count": 2,
+          "latestYear": "115",
+          "chapters": [
+            "C08"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 47,
+          "issue": "誘捕偵查（陷害教唆vs釣魚）",
+          "count": 2,
+          "latestYear": "111",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 48,
+          "issue": "舉證責任",
+          "count": 2,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 49,
+          "issue": "辯護人閱卷權",
+          "count": 2,
+          "latestYear": "111",
+          "chapters": [
+            "C03"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 50,
+          "issue": "一般扣押",
+          "count": 1,
+          "latestYear": "112",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 51,
+          "issue": "上訴利益與上訴權",
+          "count": 1,
+          "latestYear": "114",
+          "chapters": [
+            "C11"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 52,
+          "issue": "全程連續錄音錄影",
+          "count": 1,
+          "latestYear": "112",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 53,
+          "issue": "共同被告與共犯自白之調查與補強",
+          "count": 1,
+          "latestYear": "112",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 54,
+          "issue": "再審（§420新事實新證據）",
+          "count": 1,
+          "latestYear": "113",
+          "chapters": [
+            "C11"
+          ],
+          "articleRefs": [
+            "420"
+          ]
+        },
+        {
+          "rank": 55,
+          "issue": "自由心證",
+          "count": 1,
+          "latestYear": "111",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 56,
+          "issue": "自訴不可分",
+          "count": 1,
+          "latestYear": "115",
+          "chapters": [
+            "C09"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 57,
+          "issue": "告知義務（§95）",
+          "count": 1,
+          "latestYear": "110",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": [
+            "95"
+          ]
+        },
+        {
+          "rank": 58,
+          "issue": "抗告與準抗告",
+          "count": 1,
+          "latestYear": "112",
+          "chapters": [
+            "C11"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 59,
+          "issue": "其他─暫行安置",
+          "count": 1,
+          "latestYear": "112",
+          "chapters": [
+            "C99"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 60,
+          "issue": "法官迴避",
+          "count": 1,
+          "latestYear": "110",
+          "chapters": [
+            "C02"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 61,
+          "issue": "直接與言詞審理",
+          "count": 1,
+          "latestYear": "113",
+          "chapters": [
+            "C08"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 62,
+          "issue": "既判力與一事不再理",
+          "count": 1,
+          "latestYear": "113",
+          "chapters": [
+            "C04"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 63,
+          "issue": "准許提起自訴（原交付審判）",
+          "count": 1,
+          "latestYear": "113",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 64,
+          "issue": "被告地位與緘默權",
+          "count": 1,
+          "latestYear": "112",
+          "chapters": [
+            "C02"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 65,
+          "issue": "被害人陳述",
+          "count": 1,
+          "latestYear": "113",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 66,
+          "issue": "通訊監察（核發要件／緊急監察／另案監察）",
+          "count": 1,
+          "latestYear": "110",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 67,
+          "issue": "訴訟條件總論",
+          "count": 1,
+          "latestYear": "113",
+          "chapters": [
+            "C04"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 68,
+          "issue": "傳聞例外§159-4",
+          "count": 1,
+          "latestYear": "111",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": [
+            "159-4"
+          ]
+        },
+        {
+          "rank": 69,
+          "issue": "傳聞法則（原則與定義）",
+          "count": 1,
+          "latestYear": "114",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 70,
+          "issue": "檢察官客觀性義務與檢察一體",
+          "count": 1,
+          "latestYear": "114",
+          "chapters": [
+            "C02"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 71,
+          "issue": "證據排除法則（§158-4權衡）",
+          "count": 1,
+          "latestYear": "111",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": [
+            "158-4"
+          ]
+        }
+      ]
+    },
+    "all": {
+      "label": "所有國考",
+      "questionCount": 1136,
+      "markerCount": 1646,
+      "chapterCounts": [
+        {
+          "id": "C01",
+          "name": "一、刑事訴訟法之基礎",
+          "count": 15
+        },
+        {
+          "id": "C02",
+          "name": "二、法院、檢察官與被告",
+          "count": 91
+        },
+        {
+          "id": "C03",
+          "name": "三、辯護人及其他訴訟關係人",
+          "count": 114
+        },
+        {
+          "id": "C04",
+          "name": "四、訴訟關係、訴訟條件與訴訟行為",
+          "count": 123
+        },
+        {
+          "id": "C05",
+          "name": "五、強制處分",
+          "count": 490
+        },
+        {
+          "id": "C06",
+          "name": "六、證據法",
+          "count": 318
+        },
+        {
+          "id": "C07",
+          "name": "七、偵查程序",
+          "count": 160
+        },
+        {
+          "id": "C08",
+          "name": "八、準備程序與審判期日",
+          "count": 128
+        },
+        {
+          "id": "C09",
+          "name": "九、自訴",
+          "count": 26
+        },
+        {
+          "id": "C10",
+          "name": "十、簡式審判、簡易與協商程序",
+          "count": 33
+        },
+        {
+          "id": "C11",
+          "name": "十一、判決確定前後之救濟途徑",
+          "count": 117
+        },
+        {
+          "id": "C99",
+          "name": "其他",
+          "count": 31
+        }
+      ],
+      "issues": [
+        {
+          "rank": 1,
+          "issue": "附帶搜索",
+          "count": 49,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 2,
+          "issue": "法官迴避",
+          "count": 43,
+          "latestYear": "115",
+          "chapters": [
+            "C02"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 3,
+          "issue": "告訴（告訴乃論／告訴不可分／告訴期間）",
+          "count": 41,
+          "latestYear": "115",
+          "chapters": [
+            "C04"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 4,
+          "issue": "現行犯逮捕",
+          "count": 38,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 5,
+          "issue": "管轄（土地／事物／牽連／指定移轉）",
+          "count": 38,
+          "latestYear": "115",
+          "chapters": [
+            "C02"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 6,
+          "issue": "令狀搜索",
+          "count": 37,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 7,
+          "issue": "自白任意性",
+          "count": 36,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 8,
+          "issue": "證人（具結／拒絕證言）",
+          "count": 33,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 9,
+          "issue": "強制（指定）辯護",
+          "count": 31,
+          "latestYear": "115",
+          "chapters": [
+            "C03"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 10,
+          "issue": "強制採樣與鑑定留置（§203-1、§205-2）",
+          "count": 29,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": [
+            "203-1",
+            "205-2"
+          ]
+        },
+        {
+          "rank": 11,
+          "issue": "逕行搜索",
+          "count": 29,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 12,
+          "issue": "同意搜索",
+          "count": 26,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 13,
+          "issue": "告知義務（§95）",
+          "count": 26,
+          "latestYear": "115",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": [
+            "95"
+          ]
+        },
+        {
+          "rank": 14,
+          "issue": "偵查中辯護人在場與陳述意見權",
+          "count": 26,
+          "latestYear": "115",
+          "chapters": [
+            "C03"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 15,
+          "issue": "訴之單一同一與變更追加",
+          "count": 26,
+          "latestYear": "115",
+          "chapters": [
+            "C08"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 16,
+          "issue": "再審（§420新事實新證據）",
+          "count": 25,
+          "latestYear": "115",
+          "chapters": [
+            "C11"
+          ],
+          "articleRefs": [
+            "420"
+          ]
+        },
+        {
+          "rank": 17,
+          "issue": "羈押（原因與必要性）",
+          "count": 25,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 18,
+          "issue": "上訴利益與上訴權",
+          "count": 24,
+          "latestYear": "115",
+          "chapters": [
+            "C11"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 19,
+          "issue": "拘提（一般／逕行）",
+          "count": 24,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 20,
+          "issue": "科技偵查（GPS／M化車）",
+          "count": 23,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 21,
+          "issue": "違法搜索扣押之證據能力",
+          "count": 23,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 22,
+          "issue": "抗告與準抗告",
+          "count": 22,
+          "latestYear": "115",
+          "chapters": [
+            "C11"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 23,
+          "issue": "傳聞法則（原則與定義）",
+          "count": 22,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 24,
+          "issue": "偵查不公開",
+          "count": 21,
+          "latestYear": "115",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 25,
+          "issue": "第三審（法律審／上訴理由）",
+          "count": 21,
+          "latestYear": "115",
+          "chapters": [
+            "C11"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 26,
+          "issue": "對質詰問權（釋582）",
+          "count": 21,
+          "latestYear": "115",
+          "chapters": [
+            "C08"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 27,
+          "issue": "延長／停止／撤銷羈押",
+          "count": 20,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 28,
+          "issue": "直接與言詞審理",
+          "count": 20,
+          "latestYear": "114",
+          "chapters": [
+            "C08"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 29,
+          "issue": "限制出境出海",
+          "count": 20,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 30,
+          "issue": "夜間詢問",
+          "count": 19,
+          "latestYear": "115",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 31,
+          "issue": "訊問／詢問程序",
+          "count": 19,
+          "latestYear": "115",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 32,
+          "issue": "傳聞例外§159-3",
+          "count": 19,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": [
+            "159-3"
+          ]
+        },
+        {
+          "rank": 33,
+          "issue": "鑑定證據能力",
+          "count": 19,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 34,
+          "issue": "送達",
+          "count": 18,
+          "latestYear": "115",
+          "chapters": [
+            "C04"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 35,
+          "issue": "接見通信權及其限制",
+          "count": 18,
+          "latestYear": "115",
+          "chapters": [
+            "C03"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 36,
+          "issue": "通訊監察（核發要件／緊急監察／另案監察）",
+          "count": 17,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 37,
+          "issue": "傳喚",
+          "count": 17,
+          "latestYear": "114",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 38,
+          "issue": "撤回告訴",
+          "count": 17,
+          "latestYear": "115",
+          "chapters": [
+            "C04"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 39,
+          "issue": "緩起訴（要件／附條件／撤銷）",
+          "count": 17,
+          "latestYear": "115",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 40,
+          "issue": "不正訊問",
+          "count": 15,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 41,
+          "issue": "特殊扣押（電磁紀錄／秘匿特權）",
+          "count": 15,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 42,
+          "issue": "勘驗與相驗",
+          "count": 15,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 43,
+          "issue": "訴訟構造（彈劾／糾問、當事人進行vs職權進行）",
+          "count": 15,
+          "latestYear": "115",
+          "chapters": [
+            "C01"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 44,
+          "issue": "簡易程序",
+          "count": 15,
+          "latestYear": "115",
+          "chapters": [
+            "C10"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 45,
+          "issue": "證據裁判主義與嚴格證明",
+          "count": 15,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 46,
+          "issue": "不起訴處分",
+          "count": 14,
+          "latestYear": "115",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 47,
+          "issue": "另案扣押",
+          "count": 14,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 48,
+          "issue": "自訴要件與程序",
+          "count": 14,
+          "latestYear": "115",
+          "chapters": [
+            "C09"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 49,
+          "issue": "既判力與一事不再理",
+          "count": 14,
+          "latestYear": "115",
+          "chapters": [
+            "C04"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 50,
+          "issue": "強制處分基本原則（法官保留、令狀原則）",
+          "count": 14,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 51,
+          "issue": "選任辯護權",
+          "count": 14,
+          "latestYear": "115",
+          "chapters": [
+            "C03"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 52,
+          "issue": "變更起訴法條（§300）",
+          "count": 14,
+          "latestYear": "114",
+          "chapters": [
+            "C08"
+          ],
+          "articleRefs": [
+            "300"
+          ]
+        },
+        {
+          "rank": 53,
+          "issue": "一般扣押",
+          "count": 13,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 54,
+          "issue": "共同被告與共犯自白之調查與補強",
+          "count": 13,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 55,
+          "issue": "供述與非供述證據",
+          "count": 13,
+          "latestYear": "113",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 56,
+          "issue": "准許提起自訴（原交付審判）",
+          "count": 13,
+          "latestYear": "115",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 57,
+          "issue": "被害人陳述",
+          "count": 13,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 58,
+          "issue": "證據排除法則（§158-4權衡）",
+          "count": 13,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": [
+            "158-4"
+          ]
+        },
+        {
+          "rank": 59,
+          "issue": "辯護人閱卷權",
+          "count": 13,
+          "latestYear": "115",
+          "chapters": [
+            "C03"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 60,
+          "issue": "羈押審查與卷證獲知（釋737）",
+          "count": 13,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 61,
+          "issue": "交互詰問（主詰問／反詰問／覆主詰問、誘導界限）",
+          "count": 12,
+          "latestYear": "115",
+          "chapters": [
+            "C08"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 62,
+          "issue": "訴訟行為與要式性",
+          "count": 12,
+          "latestYear": "115",
+          "chapters": [
+            "C04"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 63,
+          "issue": "準備程序與爭點整理",
+          "count": 12,
+          "latestYear": "113",
+          "chapters": [
+            "C08"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 64,
+          "issue": "再議",
+          "count": 11,
+          "latestYear": "115",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 65,
+          "issue": "沒收特別程序",
+          "count": 11,
+          "latestYear": "115",
+          "chapters": [
+            "C08"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 66,
+          "issue": "非常上訴（統一法令／判決違背法令）",
+          "count": 11,
+          "latestYear": "115",
+          "chapters": [
+            "C11"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 67,
+          "issue": "起訴（法定／便宜原則）",
+          "count": 11,
+          "latestYear": "114",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 68,
+          "issue": "誘捕偵查（陷害教唆vs釣魚）",
+          "count": 11,
+          "latestYear": "114",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 69,
+          "issue": "輔佐人與代理人",
+          "count": 11,
+          "latestYear": "115",
+          "chapters": [
+            "C03"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 70,
+          "issue": "舉證責任",
+          "count": 11,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 71,
+          "issue": "逮捕後處置與時限",
+          "count": 10,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 72,
+          "issue": "緊急拘捕（§88-1）",
+          "count": 10,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": [
+            "88-1"
+          ]
+        },
+        {
+          "rank": 73,
+          "issue": "緊急搜索",
+          "count": 10,
+          "latestYear": "114",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 74,
+          "issue": "認罪協商程序",
+          "count": 10,
+          "latestYear": "115",
+          "chapters": [
+            "C10"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 75,
+          "issue": "全程連續錄音錄影",
+          "count": 9,
+          "latestYear": "114",
+          "chapters": [
+            "C07"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 76,
+          "issue": "期間與回復原狀",
+          "count": 9,
+          "latestYear": "114",
+          "chapters": [
+            "C04"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 77,
+          "issue": "傳聞例外§159-2",
+          "count": 9,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": [
+            "159-2"
+          ]
+        },
+        {
+          "rank": 78,
+          "issue": "第二審構造",
+          "count": 8,
+          "latestYear": "113",
+          "chapters": [
+            "C11"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 79,
+          "issue": "通緝",
+          "count": 8,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 80,
+          "issue": "無罪推定",
+          "count": 8,
+          "latestYear": "114",
+          "chapters": [
+            "C08"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 81,
+          "issue": "訴訟條件總論",
+          "count": 8,
+          "latestYear": "113",
+          "chapters": [
+            "C04"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 82,
+          "issue": "對第三人搜索",
+          "count": 8,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 83,
+          "issue": "簡式審判程序",
+          "count": 8,
+          "latestYear": "115",
+          "chapters": [
+            "C10"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 84,
+          "issue": "公訴與自訴之關係",
+          "count": 7,
+          "latestYear": "115",
+          "chapters": [
+            "C09"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 85,
+          "issue": "自白補強法則",
+          "count": 7,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 86,
+          "issue": "其他─被害人訴訟參與",
+          "count": 7,
+          "latestYear": "114",
+          "chapters": [
+            "C99"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 87,
+          "issue": "毒樹果實",
+          "count": 7,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 88,
+          "issue": "被告地位與緘默權",
+          "count": 7,
+          "latestYear": "114",
+          "chapters": [
+            "C02"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 89,
+          "issue": "傳聞例外§159-1",
+          "count": 7,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": [
+            "159-1"
+          ]
+        },
+        {
+          "rank": 90,
+          "issue": "不利益變更禁止",
+          "count": 6,
+          "latestYear": "114",
+          "chapters": [
+            "C11"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 91,
+          "issue": "其他─暫行安置",
+          "count": 6,
+          "latestYear": "114",
+          "chapters": [
+            "C99"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 92,
+          "issue": "不自證己罪",
+          "count": 5,
+          "latestYear": "114",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 93,
+          "issue": "私人不法取證",
+          "count": 5,
+          "latestYear": "114",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 94,
+          "issue": "傳聞例外§159-4",
+          "count": 5,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": [
+            "159-4"
+          ]
+        },
+        {
+          "rank": 95,
+          "issue": "預防性羈押",
+          "count": 5,
+          "latestYear": "115",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 96,
+          "issue": "正當法律程序",
+          "count": 4,
+          "latestYear": "114",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 97,
+          "issue": "自由心證",
+          "count": 4,
+          "latestYear": "114",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 98,
+          "issue": "告發與請求",
+          "count": 4,
+          "latestYear": "114",
+          "chapters": [
+            "C04"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 99,
+          "issue": "其他─國民法官法",
+          "count": 4,
+          "latestYear": "114",
+          "chapters": [
+            "C99"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 100,
+          "issue": "起訴審查（§161）",
+          "count": 4,
+          "latestYear": "115",
+          "chapters": [
+            "C08"
+          ],
+          "articleRefs": [
+            "161"
+          ]
+        },
+        {
+          "rank": 101,
+          "issue": "傳聞例外§159-5",
+          "count": 4,
+          "latestYear": "115",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": [
+            "159-5"
+          ]
+        },
+        {
+          "rank": 102,
+          "issue": "自訴強制律師代理",
+          "count": 3,
+          "latestYear": "115",
+          "chapters": [
+            "C09"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 103,
+          "issue": "具保責付限制住居",
+          "count": 3,
+          "latestYear": "113",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 104,
+          "issue": "檢察官客觀性義務與檢察一體",
+          "count": 3,
+          "latestYear": "114",
+          "chapters": [
+            "C02"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 105,
+          "issue": "自訴不可分",
+          "count": 2,
+          "latestYear": "115",
+          "chapters": [
+            "C09"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 106,
+          "issue": "其他─檢警關係",
+          "count": 2,
+          "latestYear": "113",
+          "chapters": [
+            "C99"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 107,
+          "issue": "其他─證據保全",
+          "count": 2,
+          "latestYear": "112",
+          "chapters": [
+            "C99"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 108,
+          "issue": "調取票與通聯",
+          "count": 2,
+          "latestYear": "113",
+          "chapters": [
+            "C05"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 109,
+          "issue": "比例原則",
+          "count": 1,
+          "latestYear": "114",
+          "chapters": [
+            "C06"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 110,
+          "issue": "有效辯護與辯護權侵害之效果",
+          "count": 1,
+          "latestYear": "113",
+          "chapters": [
+            "C03"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 111,
+          "issue": "其他─卷證資訊獲知權",
+          "count": 1,
+          "latestYear": "110",
+          "chapters": [
+            "C99"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 112,
+          "issue": "其他─法定法官原則",
+          "count": 1,
+          "latestYear": "111",
+          "chapters": [
+            "C99"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 113,
+          "issue": "其他─保全證據",
+          "count": 1,
+          "latestYear": "113",
+          "chapters": [
+            "C99"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 114,
+          "issue": "其他─指認程序",
+          "count": 1,
+          "latestYear": "110",
+          "chapters": [
+            "C99"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 115,
+          "issue": "其他─偵查總論（司法警察調查）",
+          "count": 1,
+          "latestYear": "110",
+          "chapters": [
+            "C99"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 116,
+          "issue": "其他─控制下交付",
+          "count": 1,
+          "latestYear": "110",
+          "chapters": [
+            "C99"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 117,
+          "issue": "其他─被告之確定（冒名頂替）",
+          "count": 1,
+          "latestYear": "113",
+          "chapters": [
+            "C99"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 118,
+          "issue": "其他─通譯",
+          "count": 1,
+          "latestYear": "112",
+          "chapters": [
+            "C99"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 119,
+          "issue": "其他─審判組織（獨任與合議）",
+          "count": 1,
+          "latestYear": "114",
+          "chapters": [
+            "C99"
+          ],
+          "articleRefs": []
+        },
+        {
+          "rank": 120,
+          "issue": "其他─審判筆錄",
+          "count": 1,
+          "latestYear": "111",
+          "chapters": [
+            "C99"
+          ],
+          "articleRefs": []
+        }
+      ]
+    }
+  }
+}
