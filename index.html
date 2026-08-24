@@ -3228,7 +3228,7 @@ load();
     <h2>LexCore 更新紀錄</h2>
     <p>版本變更、重大修正與新功能統一收在這裡。其他頁面不再顯示版本更新說明，避免干擾讀書與作答。</p>
    </div>
-   <span class="badge blue">目前 v3.0</span>
+   <span class="badge blue">目前 v3.1.17</span>
   </div>
 
   <div class="changelog-filter">
@@ -3241,6 +3241,20 @@ load();
   </div>
 
   <div class="changelog-list" id="changelogList">
+
+   <details class="release-card" data-release-tags="ui design" open>
+    <summary>
+     <div class="release-version">v3.1.17</div>
+     <div><div class="release-title">手機首頁安全區與資訊精簡</div><div class="release-meta">頂端留白・首頁資績卡片・手機版閱讀舒適度</div></div>
+     <span class="release-tag">UI / UX</span>
+    </summary>
+    <div class="release-body"><ul>
+     <li>手機首頁加入安全區間距，讓快速查法頂欄避開 iPhone 狀態列。</li>
+     <li>首頁移除「人事正式資績」卡片，避免首頁資訊過度擁擠。</li>
+     <li>正式資績仍保留於升遷戰情室與資績校正功能；既有 localStorage／IndexedDB key 不變。</li>
+     <li>同步更新 Service Worker 快取版本，避免手機持續讀到舊版首頁。</li>
+    </ul></div>
+   </details>
 
    <details class="release-card" data-release-tags="ui design" open>
     <summary>
