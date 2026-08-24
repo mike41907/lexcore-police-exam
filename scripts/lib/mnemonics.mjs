@@ -129,26 +129,33 @@ export function buildArticleMnemonic({key,record={},detail={},manual=null,freque
   const signals=modalSignals(text);
   const hasDetailMemory=isUsefulMemory(detail.memory);
   const hasManual=manual&&typeof manual==="object";
+  const isDeleted=manual?.status==="deleted"||manual?.status==="刪除";
+  const keyword=manual?.keyword||"";
   const order=manual?.order||buildOrder(text,items);
-  const focus=manual?.focus||shorten(firstLine(text),100);
+  const focus=manual?.focus||keyword||shorten(firstLine(text),100);
   const defaultChant=items.length>=2
     ?`${items.length}款順序：${items.slice(0,8).map(item=>`${item.number}${itemLabel(item.text)}`).join("→")}${items.length>8?"→其餘各款":""}`
     :`先抓主軸：${shorten(firstLine(text),72)}`;
-  const chant=manual?.chant||((hasDetailMemory?oneLine(detail.memory):defaultChant));
+  const chant=manual?.chant||manual?.memory10s||((hasDetailMemory?oneLine(detail.memory):defaultChant));
+  const explain30s=manual?.explain30s||"";
+  const trap=manual?.trap||"";
   const frequencyCueText=frequencyCue(lawId,article,frequency);
-  const examCue=manual?.examCue||detail?.exam?.[0]||frequencyCueText||(signals.length?`字眼辨識：${signals.join("；")}`:"先遮住條文，依理解順序回想後再核對原文。");
-  const recall=manual?.recall||`遮住現行條文，先說出「${shorten(chant,62)}」；再依序回想：${shorten(order,110)}。`;
+  const examCue=manual?.examCue||trap||detail?.exam?.[0]||frequencyCueText||(signals.length?`字眼辨識：${signals.join("；")}`:"先遮住條文，依理解順序回想後再核對原文。");
+  const recall=manual?.recall||manual?.recallQuestion||`遮住現行條文，先說出「${shorten(chant,62)}」；再依序回想：${shorten(order,110)}。`;
   const exception=manual?.exception||exceptions.join("；");
   const manualKind=Boolean(hasManual||hasDetailMemory);
+  const kind=isDeleted?"deleted":manualKind?"curated":text?"auto":"pending";
+  const status=isDeleted?"現行已刪除／舊題版本風險":manualKind?"人工整理":text?"結構化草稿":"待同步";
   return {
     key:String(key||`${lawId}:${article}`),lawId,article,
     title:manual?.title||`${record.lawName||detail.law_name||"法規"} 第${article}條`,
-    text:chant,chant,focus,order,numbers:manual?.numbers||numbers,
-    exception,examCue,recall,
-    kind:manualKind?"curated":text?"auto":"pending",
-    status:manualKind?"人工整理":text?"結構化草稿":"待同步",
-    source:manualKind?(hasManual?"LexCore條文記憶卡":"LexCore人工整理"):(text?"官方現行全文結構化擷取":"尚無現行全文"),
-    note:manualKind?"記憶卡只做理解與背誦提示；作答前仍以現行條文逐字核對。":text?"由現行全文拆出主軸、順序、數字與例外；這是可修訂的結構化草稿，不把摘要當成法條。":"官方全文尚未進入目前離線快照。"
+    text:chant,chant,keyword,chapter:manual?.chapter||"",memory10s:manual?.memory10s||chant,
+    explain30s,trap,recallQuestion:manual?.recallQuestion||recall,
+    focus,order,numbers:manual?.numbers||numbers,exception,examCue,recall,
+    priority:manual?.priority||"",needs_review:Boolean(manual?.needs_review),
+    kind,status,
+    source:manualKind?(manual?.source||(hasManual?"LexCore條文記憶卡":"LexCore人工整理")):(text?"官方現行全文結構化擷取":"尚無現行全文"),
+    note:isDeleted?"本卡保留供舊題與版本風險辨識；不生成現行法構成要件，作答仍以官方現行全文為準。":manualKind?"記憶卡只做理解與背誦提示；作答前仍以現行條文逐字核對。":text?"由現行全文拆出主軸、順序、數字與例外；這是可修訂的結構化草稿，不把摘要當成法條。":"官方全文尚未進入目前離線快照。"
   };
 }
 

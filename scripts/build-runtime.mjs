@@ -9,7 +9,32 @@ const HERE=path.dirname(fileURLToPath(import.meta.url)), ROOT=path.resolve(HERE,
 const cfg=await readJson(path.join(ROOT,"config/laws.json"));
 const base=await readJson(path.join(ROOT,"data/base.json"));
 const manualDetails=await readJson(path.join(ROOT,"data/manual-article-details.json"),{});
-const manualMnemonics=await readJson(path.join(ROOT,"data/manual-article-mnemonics.json"),{});
+const manualMnemonicBase=await readJson(path.join(ROOT,"data/manual-article-mnemonics.json"),{});
+const criminalMemory=await readJson(path.join(ROOT,"data/memory/criminal-memory.json"),{articles:{}});
+const retainedManualMnemonics=Object.fromEntries(
+  Object.entries(manualMnemonicBase).filter(([key])=>!key.startsWith("criminal:"))
+);
+const importedCriminalMnemonics=Object.fromEntries(
+  Object.entries(criminalMemory.articles||{}).map(([article,item])=>[
+    `criminal:${article}`,
+    {
+      title:item.keyword,
+      keyword:item.keyword,
+      chapter:item.chapter,
+      chant:item.memory10s,
+      memory10s:item.memory10s,
+      explain30s:item.explain30s,
+      trap:item.trap,
+      recall:item.recallQuestion,
+      recallQuestion:item.recallQuestion,
+      priority:item.priority,
+      status:item.status,
+      source:item.source||criminalMemory.source||"LexCore-memory-pack",
+      needs_review:item.needs_review
+    }
+  ])
+);
+const manualMnemonics={...retainedManualMnemonics,...importedCriminalMnemonics};
 const manualCourt=await readJson(path.join(ROOT,"data/manual-court-study.json"),{});
 const ly=await readJson(path.join(ROOT,"data/legislative/matches.json"),{matches:{}});
 const courtRaw=await readJson(path.join(ROOT,"data/official/court.json"),{cases:[]});
