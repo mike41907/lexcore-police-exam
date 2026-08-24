@@ -446,6 +446,8 @@ main{max-width:1500px;width:100%;margin:auto;padding:24px}.top{display:flex;just
 .cpl-frequency-chapters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:10px}.cpl-frequency-chapter{min-width:0;padding:7px 8px;border:1px solid var(--line);border-radius:10px;background:color-mix(in srgb,var(--card) 82%,var(--bg))}.cpl-frequency-chapter .row{gap:5px}.cpl-frequency-chapter span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10px;color:var(--muted)}.cpl-frequency-chapter b{font-size:11px;color:var(--text)}.cpl-frequency-bar{height:4px;margin-top:6px;border-radius:99px;background:var(--bg);overflow:hidden}.cpl-frequency-bar i{display:block;height:100%;border-radius:inherit;background:var(--p)}
 .cpl-frequency-list{display:grid;gap:5px;max-height:410px;overflow:auto;margin-top:10px;padding-right:2px}.cpl-frequency-row{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:8px;align-items:start;padding:8px 9px;border:1px solid var(--line);border-radius:10px;background:var(--card)}.cpl-frequency-rank{display:grid;place-items:center;width:25px;height:25px;border-radius:8px;background:var(--p2);color:var(--p);font-size:10px;font-weight:950}.cpl-frequency-main{min-width:0}.cpl-frequency-issue{display:block;font-size:11px;line-height:1.45;font-weight:900;overflow-wrap:anywhere}.cpl-frequency-meta{display:flex;align-items:center;gap:4px;flex-wrap:wrap;margin-top:3px;color:var(--muted);font-size:9px;line-height:1.45}.cpl-frequency-count{text-align:right;color:var(--p);font-size:16px;font-weight:950;white-space:nowrap}.cpl-frequency-count small{display:block;color:var(--muted);font-size:9px;font-weight:800}.cpl-frequency-ref{border:1px solid color-mix(in srgb,var(--p) 30%,var(--line));border-radius:999px;padding:3px 6px;background:var(--p2);color:var(--p);font:inherit;font-size:9px;font-weight:900;cursor:pointer}.cpl-frequency-ref:hover{border-color:var(--p)}.cpl-frequency-article-badge{cursor:help}
 @media(max-width:650px){.cpl-frequency-panel{padding:11px;border-radius:13px}.cpl-frequency-head{display:block}.cpl-frequency-toolbar{align-items:stretch}.cpl-frequency-toolbar label{flex:1 1 100%;justify-content:space-between}.cpl-frequency-toolbar select{flex:1;min-width:0}.cpl-frequency-chapters{grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}.cpl-frequency-list{max-height:360px}.cpl-frequency-row{grid-template-columns:25px minmax(0,1fr) auto;gap:6px;padding:7px}.cpl-frequency-count{font-size:14px}}
+.law-reader-paragraphs{display:grid;gap:8px}.law-reader-paragraph{display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;align-items:start}.law-reader-paragraph-label{padding-top:1px;color:var(--muted);font-size:13px;font-weight:850;line-height:1.9;text-align:right;font-variant-numeric:tabular-nums}.law-reader-paragraph-content{min-width:0;line-height:1.9}.law-reader-paragraph-line,.law-reader-subline{overflow-wrap:anywhere}.law-reader-subline{margin-top:5px}
+@media(max-width:650px){.law-reader-paragraph{grid-template-columns:25px minmax(0,1fr);gap:8px}.law-reader-paragraph-label{font-size:12px}.law-reader-paragraph-content{line-height:1.85}}
 .lookup-hero{display:grid;grid-template-columns:1fr auto;gap:8px;margin-bottom:10px}
 .lookup-hero input{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:11px;padding:12px;font-size:14px}
 .lookup-tools{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px}
@@ -5312,6 +5314,28 @@ function fillFullLawFilter(){
    if(rows.some(x=>x.id===old2))$("lookupLaw").value=old2;
  }
 }
+function splitLawReaderParagraphs(text=""){
+ const lines=String(text).replace(/\r/g,"").split(/\n+/).map(line=>line.trim()).filter(Boolean);
+ const blocks=[];
+ for(const line of lines){
+   const isSubitem=/^(?:[一二三四五六七八九十百千]+|[0-9]+)、/.test(line)||/^（(?:[一二三四五六七八九十百千]+|[0-9]+)）/.test(line)||/^\((?:[一二三四五六七八九十百千]+|[0-9]+)\)/.test(line);
+   if(isSubitem&&blocks.length)blocks[blocks.length-1].push(line);
+   else blocks.push([line]);
+ }
+ return blocks;
+}
+function lawReaderTextMarkup(text=""){
+ const blocks=splitLawReaderParagraphs(text);
+ return '<div class="law-reader-paragraphs">'+blocks.map((lines,index)=>{
+   const content=lines.map((line,lineIndex)=>'<div class="'+(lineIndex?"law-reader-subline":"law-reader-paragraph-line")+'">'+esc(line)+'</div>').join("");
+   return '<div class="law-reader-paragraph"><span class="law-reader-paragraph-label" aria-label="第'+(index+1)+'項">'+(index+1)+'</span><div class="law-reader-paragraph-content">'+content+'</div></div>';
+ }).join("")+'</div>';
+}
+function renderLawReaderParagraphs(){
+ document.querySelectorAll("#studyBody .law-reader-text").forEach(node=>{
+   node.innerHTML=lawReaderTextMarkup(node.textContent||"");
+ });
+}
 function cplFrequencyViewData(){
  const views=CPL_ISSUE_FREQUENCY?.views||{};
  return views[CPL_FREQUENCY_VIEW]||views.police||null;
@@ -5394,6 +5418,7 @@ function renderFullStudy(){
    out+=matches.length?`<div class="block"><div class="row"><h3>全文搜尋結果</h3><span class="badge blue">${matches.length} 條</span></div>${fullLawReaderMarkup(id,matches,ids,recentSet,coreSet)}</div>`:`<div class="empty"><b>全文中沒有找到「${esc(q)}」</b><p>如果目前是單檔離線快照，完整全文要等 GitHub Actions 同步後才會出現。</p></div>`;
  }
  $("studyBody").innerHTML=out;
+ renderLawReaderParagraphs();
  if(id==="cpl"&&!q)renderCplFrequencyArticleBadges();
 }
 
