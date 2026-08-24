@@ -158,7 +158,7 @@ main{max-width:1500px;width:100%;margin:auto;padding:24px}.top{display:flex;just
 @media(max-width:650px){.import-settings,.import-filter{grid-template-columns:1fr}.importstats{grid-template-columns:1fr 1fr}}
 
 
-.home-command{display:grid;grid-template-columns:1.18fr repeat(5,1fr);gap:10px;margin-bottom:13px}
+.home-command{display:grid;grid-template-columns:1.18fr repeat(4,1fr);gap:10px;margin-bottom:13px}
 .command-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px;min-height:114px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 6px 20px rgba(15,23,42,.04)}
 .command-card.primary{background:linear-gradient(135deg,var(--p2),var(--card));border-color:color-mix(in srgb,var(--p) 28%,var(--line))}
 .command-label{font-size:11px;color:var(--muted);font-weight:850}
@@ -1525,6 +1525,9 @@ body.law-quick-sheet-open{overflow:hidden}
 .top-quick-lookup .btn{min-height:38px;padding:7px 12px;white-space:nowrap}
 @media(max-width:650px){.top{min-height:46px}.top-actions{width:100%;margin-left:0}.top-quick-lookup{grid-template-columns:minmax(0,1fr) auto;padding:5px 6px 5px 10px;border-radius:15px}.top-quick-lookup input{min-height:38px;font-size:16px}.top-quick-lookup .btn{min-height:38px;padding:7px 10px;font-size:12px}}
 
+/* v3.1.17 mobile safe-area spacing: keep the utility header below the iPhone status area. */
+@media(max-width:650px){main{padding-top:max(18px,env(safe-area-inset-top))}}
+
 </style>
 </head><body>
 <div class="shell">
@@ -1571,10 +1574,6 @@ body.law-quick-sheet-open{overflow:hidden}
    <div class="command-card primary">
     <div><div class="command-label">116年警佐班考試倒數</div><div class="command-value countdown" id="homeCountdown">—</div></div>
     <div class="command-foot"><span id="homeExamDate">—</span>　<span class="badge amber" id="homeExamDateStatus">暫估</span></div>
-   </div>
-   <div class="command-card">
-    <div><div class="command-label">人事正式資績</div><div class="command-value" id="homeOfficialQual">—</div></div>
-    <div class="command-foot">來自升遷戰情室 V0.11</div>
    </div>
    <div class="command-card">
     <div><div class="command-label">目前推估資績</div><div class="command-value" id="homeCurrentQual">—</div></div>
