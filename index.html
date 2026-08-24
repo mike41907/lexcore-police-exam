@@ -446,6 +446,7 @@ main{max-width:1500px;width:100%;margin:auto;padding:24px}.top{display:flex;just
 .cpl-frequency-chapters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:10px}.cpl-frequency-chapter{min-width:0;padding:7px 8px;border:1px solid var(--line);border-radius:10px;background:color-mix(in srgb,var(--card) 82%,var(--bg))}.cpl-frequency-chapter .row{gap:5px}.cpl-frequency-chapter span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10px;color:var(--muted)}.cpl-frequency-chapter b{font-size:11px;color:var(--text)}.cpl-frequency-bar{height:4px;margin-top:6px;border-radius:99px;background:var(--bg);overflow:hidden}.cpl-frequency-bar i{display:block;height:100%;border-radius:inherit;background:var(--p)}
 .cpl-frequency-list{display:grid;gap:5px;max-height:410px;overflow:auto;margin-top:10px;padding-right:2px}.cpl-frequency-row{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:8px;align-items:start;padding:8px 9px;border:1px solid var(--line);border-radius:10px;background:var(--card)}.cpl-frequency-rank{display:grid;place-items:center;width:25px;height:25px;border-radius:8px;background:var(--p2);color:var(--p);font-size:10px;font-weight:950}.cpl-frequency-main{min-width:0}.cpl-frequency-issue{display:block;font-size:11px;line-height:1.45;font-weight:900;overflow-wrap:anywhere}.cpl-frequency-meta{display:flex;align-items:center;gap:4px;flex-wrap:wrap;margin-top:3px;color:var(--muted);font-size:9px;line-height:1.45}.cpl-frequency-count{text-align:right;color:var(--p);font-size:16px;font-weight:950;white-space:nowrap}.cpl-frequency-count small{display:block;color:var(--muted);font-size:9px;font-weight:800}.cpl-frequency-ref{border:1px solid color-mix(in srgb,var(--p) 30%,var(--line));border-radius:999px;padding:3px 6px;background:var(--p2);color:var(--p);font:inherit;font-size:9px;font-weight:900;cursor:pointer}.cpl-frequency-ref:hover{border-color:var(--p)}.cpl-frequency-article-badge{cursor:help}
 @media(max-width:650px){.cpl-frequency-panel{padding:11px;border-radius:13px}.cpl-frequency-head{display:block}.cpl-frequency-toolbar{align-items:stretch}.cpl-frequency-toolbar label{flex:1 1 100%;justify-content:space-between}.cpl-frequency-toolbar select{flex:1;min-width:0}.cpl-frequency-chapters{grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}.cpl-frequency-list{max-height:360px}.cpl-frequency-row{grid-template-columns:25px minmax(0,1fr) auto;gap:6px;padding:7px}.cpl-frequency-count{font-size:14px}}
+.cpl-frequency-chapter{width:100%;color:var(--text);font:inherit;text-align:left;cursor:pointer;transition:border-color .18s ease,background .18s ease,transform .18s ease}.cpl-frequency-chapter:hover,.cpl-frequency-chapter:focus-visible{border-color:var(--p);background:var(--p2);transform:translateY(-1px);outline:none}
 .law-reader-paragraphs{display:grid;gap:8px}.law-reader-paragraph{display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;align-items:start}.law-reader-paragraph-label{padding-top:1px;color:var(--muted);font-size:13px;font-weight:850;line-height:1.9;text-align:right;font-variant-numeric:tabular-nums}.law-reader-paragraph-content{min-width:0;line-height:1.9}.law-reader-paragraph-line,.law-reader-subline{overflow-wrap:anywhere}.law-reader-subline{margin-top:5px}
 @media(max-width:650px){.law-reader-paragraph{grid-template-columns:25px minmax(0,1fr);gap:8px}.law-reader-paragraph-label{font-size:12px}.law-reader-paragraph-content{line-height:1.85}}
 .lookup-hero{display:grid;grid-template-columns:1fr auto;gap:8px;margin-bottom:10px}
@@ -5287,6 +5288,7 @@ function scrollToStudyArticle(lid,article){
  if(!target){openArticle(lid,article);return;}
  const reduced=window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
  target.scrollIntoView({behavior:reduced?"auto":"smooth",block:"start"});
+ document.querySelectorAll(".law-reader-article.is-target").forEach(el=>el.classList.remove("is-target"));
  target.classList.remove("is-target");void target.offsetWidth;target.classList.add("is-target");
  window.setTimeout(()=>target.classList.remove("is-target"),1800);
  const input=$("lawArticleJump"),status=$("lawJumpStatus");
@@ -5419,13 +5421,29 @@ function cplFrequencyArticleTags(article){
  const title=rows.slice(0,3).map(row=>row.issue+" "+row.count+"次").join("；");
  return '<span class="badge blue cpl-frequency-article-badge" title="'+esc(title)+'">考點 '+total+'次</span>';
 }
+const CPL_FREQUENCY_CHAPTER_ANCHORS={C01:"1",C02:"4",C03:"27",C04:"39",C05:"71",C06:"154",C07:"228",C08:"271",C09:"319",C10:"449",C11:"344",C99:"1"};
+function scrollToCplFrequencyChapter(chapterId){
+ const view=cplFrequencyViewData(),chapter=(view?.chapterCounts||[]).find(row=>row.id===chapterId);
+ const ids=articleIdsForLaw("cpl");
+ const preferred=CPL_FREQUENCY_CHAPTER_ANCHORS[chapterId];
+ const article=preferred&&ids.includes(String(preferred))?String(preferred):ids[0]||"";
+ if(!article){
+   const status=$("lawJumpStatus");if(status)status.textContent="目前沒有可定位的刑訴全文";
+   return;
+ }
+ const filter=$("lawFilter");
+ if(filter&&filter.value!=="cpl"){filter.value="cpl";renderFullStudy();}
+ scrollToStudyArticle("cpl",article);
+ const status=$("lawJumpStatus");
+ if(status)status.textContent="已定位「"+(chapter?.name||"刑訴章節")+"」｜第"+article+"條";
+}
 function cplFrequencyPanelMarkup(){
  const view=cplFrequencyViewData(),source=CPL_ISSUE_FREQUENCY?.source;
  if(!view)return "";
  const options=Object.entries(CPL_ISSUE_FREQUENCY.views||{}).map(([key,row])=>'<option value="'+key+'" '+(key===CPL_FREQUENCY_VIEW?"selected":"")+'>'+esc(row.label||key)+'</option>').join("");
  const chapters=[...(view.chapterCounts||[])].sort((a,b)=>b.count-a.count).slice(0,6);
  const maxChapter=Math.max(1,...chapters.map(row=>Number(row.count)||0));
- const chapterMarkup=chapters.map(row=>'<div class="cpl-frequency-chapter"><div class="row"><span title="'+esc(row.name)+'">'+esc(row.name)+'</span><b>'+row.count+'</b></div><div class="cpl-frequency-bar"><i style="width:'+Math.round((Number(row.count)||0)/maxChapter*100)+'%"></i></div></div>').join("");
+ const chapterMarkup=chapters.map(row=>'<button class="cpl-frequency-chapter" type="button" onclick="scrollToCplFrequencyChapter(\''+esc(row.id)+'\')" title="點擊跳到'+esc(row.name)+'"><div class="row"><span>'+esc(row.name)+'</span><b>'+row.count+'</b></div><div class="cpl-frequency-bar"><i style="width:'+Math.round((Number(row.count)||0)/maxChapter*100)+'%"></i></div></button>').join("");
  const issueMarkup=(view.issues||[]).map(row=>{
    const chapterNames=(row.chapters||[]).map(id=>(view.chapterCounts||[]).find(ch=>ch.id===id)?.name||id).join("、");
    const refs=(row.articleRefs||[]).map(a=>'<button class="cpl-frequency-ref" type="button" onclick="scrollToStudyArticle(\'cpl\',\''+a+'\')">§ '+a+'</button>').join("");
