@@ -647,6 +647,9 @@ body.focus-running .focus-running-pill{display:flex}
 .command-search-row{display:grid;grid-template-columns:auto 1fr auto;gap:9px;align-items:center;padding:13px;border-bottom:1px solid var(--line)}
 .command-search-row input{border:0;outline:0;background:transparent;color:var(--text);font-size:16px;width:100%}
 .command-search-row kbd{font-size:9px;border:1px solid var(--line);border-radius:6px;padding:4px 6px;color:var(--muted)}
+.command-search-row .command-close{min-width:36px;min-height:32px;padding:4px 6px;border:1px solid var(--line);border-radius:6px;background:transparent;color:var(--muted);font:inherit;font-size:9px;cursor:pointer}
+.command-search-row .command-close:hover{background:var(--bg);color:var(--text)}
+.command-search-row .command-close:focus-visible{outline:3px solid color-mix(in srgb,var(--p) 38%,transparent);outline-offset:2px}
 .command-hints{display:flex;gap:5px;flex-wrap:wrap;padding:8px 12px;border-bottom:1px solid var(--line)}
 .command-hints button{border:1px solid var(--line);background:var(--bg);color:var(--muted);border-radius:999px;padding:5px 8px;font-size:9px;cursor:pointer}
 .command-results{max-height:64vh;overflow:auto;padding:8px}
@@ -6928,8 +6931,11 @@ function openAmendmentSearch(q){showPage("amendments");if($("amendSearch"))$("am
 function openCourtSearch(q){showPage("court");if($("courtSearch"))$("courtSearch").value=q;renderCourt()}
 function setupGlobalCommand(){
  if($("globalCommandBtn"))$("globalCommandBtn").onclick=openGlobalCommand;
- if($("globalCommandInput"))$("globalCommandInput").oninput=renderGlobalCommand;
- if($("commandModal"))$("commandModal").addEventListener("click",e=>{if(e.target.id==="commandModal")closeGlobalCommand()});
+ document.addEventListener("input",e=>{if(e.target?.id==="globalCommandInput")renderGlobalCommand()});
+ document.addEventListener("click",e=>{
+  if(e.target?.closest?.("#commandClose")){e.preventDefault();closeGlobalCommand();return}
+  if(e.target?.id==="commandModal")closeGlobalCommand();
+ });
  document.addEventListener("keydown",e=>{
   if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==="k"){e.preventDefault();openGlobalCommand()}
   if(e.key==="Escape"&&$("commandModal")?.classList.contains("active"))closeGlobalCommand();
@@ -7515,7 +7521,7 @@ function renderSync(){
   <div class="command-search-row">
    <span>⌘</span>
    <input id="globalCommandInput" placeholder="搜尋法條、題目、修法、憲判、我的筆記…">
-   <kbd>ESC</kbd>
+   <button class="command-close" id="commandClose" type="button" aria-label="關閉搜尋">ESC</button>
   </div>
   <div class="command-hints">
    <button onclick="setGlobalCommandQuery('101-1')">101-1</button>
