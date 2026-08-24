@@ -432,6 +432,12 @@ main{max-width:1500px;width:100%;margin:auto;padding:24px}.top{display:flex;just
 .article-result{border:1px solid var(--line);background:var(--card);border-radius:11px;padding:10px;cursor:pointer}
 .article-result:hover{border-color:var(--p)}
 .article-result h3{margin:0;font-size:12px}.article-result p{font-size:11px;line-height:1.65;margin:5px 0 0;color:var(--text)}
+.law-navigator{margin-bottom:13px;padding:13px 14px;border:1px solid color-mix(in srgb,var(--p) 20%,var(--line));border-radius:16px;background:linear-gradient(135deg,color-mix(in srgb,var(--p2) 62%,var(--card)),var(--card));box-shadow:var(--shadow-sm)}
+.law-navigator-head{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:9px}.law-navigator-head b{font-size:14px}.law-jump-status{font-size:11px;color:var(--muted);white-space:nowrap}
+.law-jump-controls{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(98px,.62fr) auto;gap:8px;align-items:center}.law-jump-controls select,.law-jump-controls input{width:100%;min-width:0;min-height:42px;border:1px solid var(--line);border-radius:12px;padding:9px 10px;background:var(--card);color:var(--text);font:inherit}.law-jump-controls .btn{min-height:42px;padding:9px 13px;white-space:nowrap}
+.law-relation-card{margin-top:10px;padding:10px 11px;border:1px solid color-mix(in srgb,var(--p) 16%,var(--line));border-radius:13px;background:color-mix(in srgb,var(--card) 86%,var(--p2))}.law-relation-head{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:7px;font-size:12px}.law-relation-head b{font-size:12px}.law-chain-path{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.law-chain-node,.law-chain-current{display:inline-flex;align-items:center;min-height:30px;border:1px solid var(--line);border-radius:9px;padding:5px 8px;background:var(--card);color:var(--text);font-size:11px;font-weight:900;line-height:1.35;text-align:left}.law-chain-node{cursor:pointer}.law-chain-node:hover{border-color:var(--p);color:var(--p)}.law-chain-node.parent,.law-chain-current.parent{border-color:color-mix(in srgb,var(--r) 38%,var(--line));background:var(--r2);color:var(--r)}.law-chain-node.related,.law-chain-current.related{border-color:color-mix(in srgb,var(--p) 30%,var(--line));background:var(--p2);color:var(--p)}.law-chain-node.child,.law-chain-current.child{border-color:color-mix(in srgb,var(--g) 36%,var(--line));background:var(--g2);color:var(--g)}.law-chain-arrow{color:var(--muted);font-weight:950}.law-chain-note{margin-top:7px;font-size:11px;line-height:1.55;color:var(--muted)}.law-chain-branches{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:8px}.law-chain-branches>span{font-size:10px;font-weight:900;color:var(--muted)}.law-chain-branches .chip{font-size:10px;padding:5px 7px}.law-chain-empty{display:flex;justify-content:space-between;gap:8px;align-items:center;font-size:11px;color:var(--muted)}
+.law-article-rail-wrap{display:flex;gap:8px;align-items:center;margin-top:10px}.law-article-rail-wrap>span{flex:0 0 auto;font-size:11px;font-weight:900;color:var(--muted)}.law-article-rail{display:flex;gap:6px;min-width:0;overflow-x:auto;padding:1px 1px 3px;scrollbar-width:none}.law-article-rail::-webkit-scrollbar{display:none}.law-article-rail .chip{flex:0 0 auto;white-space:nowrap}.law-article-rail .hot{border-color:color-mix(in srgb,var(--r) 36%,var(--line));color:var(--r)}
+@media(max-width:650px){.law-navigator{padding:12px;border-radius:14px}.law-navigator-head{align-items:flex-start}.law-jump-status{white-space:normal;text-align:right;line-height:1.45}.law-jump-controls{grid-template-columns:minmax(0,1fr) 82px auto;gap:6px}.law-jump-controls select,.law-jump-controls input{min-height:40px;padding:8px}.law-jump-controls .btn{min-height:40px;padding:8px 10px}.law-chain-path{flex-wrap:nowrap;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}.law-chain-path::-webkit-scrollbar{display:none}.law-chain-node,.law-chain-current,.law-chain-arrow{flex:0 0 auto;white-space:nowrap}.law-chain-branches{align-items:flex-start}.law-chain-branches>span{padding-top:5px}.law-article-rail-wrap{align-items:flex-start;flex-direction:column;gap:5px}.law-article-rail{width:100%}}
 .lookup-hero{display:grid;grid-template-columns:1fr auto;gap:8px;margin-bottom:10px}
 .lookup-hero input{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:11px;padding:12px;font-size:14px}
 .lookup-tools{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px}
@@ -3004,11 +3010,22 @@ load();
    <span class="badge red">母法</span><span class="badge green">直接授權子法</span><span class="badge blue">相關獨立法律</span><span class="badge amber">配套／準用法規</span>
   </div>
   <div class="notice"><strong>法位階分開：</strong>「子法」只標直接授權的法規命令／細則；像警察勤務條例、警察人員人事條例、警察教育條例本身是獨立法律，會放在相關法規，不會誤標成子法。</div>
-  <div id="lawTree"></div>
+ <div id="lawTree"></div>
  </section>
 
  <section id="study" class="section">
-  <div class="searchbar"><input id="search" placeholder="搜尋條號或條文內容，例如：6、101-1、三小時、管束"><select id="lawFilter"></select></div>
+  <div class="law-navigator" aria-label="法規快速切換">
+   <div class="law-navigator-head"><b>⚡ 法規快速切換</b><span class="law-jump-status" id="lawJumpStatus" aria-live="polite">讀取法條索引中</span></div>
+   <div class="law-jump-controls">
+    <select id="lawFilter" aria-label="選擇法規"></select>
+    <input id="lawArticleJump" list="lawArticleOptions" inputmode="text" autocomplete="off" aria-label="輸入條號" placeholder="條號，如 101-1">
+    <button class="btn primary" type="button" id="lawArticleJumpBtn">跳轉</button>
+   </div>
+   <datalist id="lawArticleOptions"></datalist>
+   <div id="lawRelationChain"></div>
+   <div class="law-article-rail-wrap"><span>一鍵法條</span><div class="law-article-rail" id="lawArticleRail"></div></div>
+  </div>
+  <div class="searchbar"><input id="search" placeholder="搜尋目前法規的條號或條文內容，例如：6、101-1、三小時、管束"></div>
   <div class="card"><div class="head"><div><h2 id="studyTitle">完整法規庫</h2><div class="meta" id="studySyncMeta">讀取現行全文中</div></div><span class="badge blue">完整現行法</span></div><div class="body" id="studyBody"></div></div>
  </section>
 
@@ -3723,16 +3740,16 @@ function renderExam(){
 }
 
 function openArticle(lid,a){
- const l=DATA.laws.find(x=>x.id===lid),d=DETAILS[lid+":"+a];
+ const l=lawInfo(lid),d=DETAILS[lid+":"+a],relationChain=lawRelationChainMarkup(lid);
  $("modalTitle").textContent=`${l.name} 第${a}條`;
  if(!d){
    const live=ARTICLE_TEXTS[lid+":"+a];
    if(live?.text){
      $("modalMeta").innerHTML=`官方同步現行條文 <span class="badge green">已抓到全文</span> <span class="badge amber">歷史對照／立法理由待配對</span>`;
-     $("detail").innerHTML=`<div class="panel"><h3>現行條文</h3><div class="text">${esc(live.text)}</div></div>${articleCrossLinks(lid,a)}<div class="links"><a href="${live.url||articleUrl(l,a)}" target="_blank">官方第${a}條</a><a href="${l.source}" target="_blank">查看修法沿革</a></div>`;
+     $("detail").innerHTML=`${relationChain}<div class="panel"><h3>現行條文</h3><div class="text">${esc(live.text)}</div></div>${articleCrossLinks(lid,a)}<div class="links"><a href="${live.url||articleUrl(l,a)}" target="_blank">官方第${a}條</a><a href="${l.source}" target="_blank">查看修法沿革</a></div>`;
    }else{
      $("modalMeta").innerHTML=`修法條文 <span class="badge amber">尚待下一次同步全文</span>`;
-     $("detail").innerHTML=`<div class="memory">這個條號已被修法索引抓到，所以一定保留在畫面上；目前離線快照尚未有全文。</div>${articleCrossLinks(lid,a)}<div class="links"><a href="${articleUrl(l,a)}" target="_blank">立刻開啟官方第${a}條</a><a href="${l.source}" target="_blank">查看完整沿革</a></div>`;
+     $("detail").innerHTML=`${relationChain}<div class="memory">這個條號已被修法索引抓到，所以一定保留在畫面上；目前離線快照尚未有全文。</div>${articleCrossLinks(lid,a)}<div class="links"><a href="${articleUrl(l,a)}" target="_blank">立刻開啟官方第${a}條</a><a href="${l.source}" target="_blank">查看完整沿革</a></div>`;
    }
  } else {
    const key=lid+":"+a, meta=detailExamMeta(key,d);
@@ -3740,6 +3757,7 @@ function openArticle(lid,a){
    const newMarkup=diffMarkup(d.previous||"",d.current||"","new");
    $("modalMeta").innerHTML=`修正日期 ${d.amend_date}　<span class="badge ${d.status_type==="danger"?"red":"green"}">${d.status}</span>　${starsHtml(meta.score)}`;
    $("detail").innerHTML=`
+     ${relationChain}
      <div class="memory">🧠 ${d.memory}</div>
      <div class="radar">${meta.types.map(t=>`<span class="badge amber">${t}</span>`).join("")}</div>
      <div class="trap" style="margin-top:10px">⚠ 舊法／選擇題陷阱：${meta.trap}</div>
@@ -5147,6 +5165,76 @@ function articleIdsForLaw(id){
  if(ids.length)return [...new Set(ids)].sort((a,b)=>articleSortValue(a)-articleSortValue(b));
  const l=(DATA.laws||[]).find(x=>x.id===id);return [...(l?.key_articles||[])];
 }
+function normalizeArticleJump(value=""){
+ return String(value).trim().replace(/第|條|\s/g,"").replace(/之/g,"-").replace(/[－—–]/g,"-");
+}
+function lawChainContext(lid){
+ for(const group of LAW_TREE.groups||[]){
+  const parent={id:group.parentId,name:group.parent,kind:"parent"};
+  if(group.parentId===lid)return {group,nodes:[parent],kind:"parent",basis:"本法是此體系的母法。",branches:[...(group.children||[]),...(group.related||[])]};
+  const item=[...(group.children||[]),...(group.related||[])].find(x=>x.id===lid);
+  if(!item)continue;
+  const kind=(item.type==="direct"||item.type==="direct_external")?"child":"related";
+  const nodes=[parent];
+  if(item.type==="child_of_related"){
+   const upper=(group.related||[]).find(x=>x.type==="related_law"&&String(item.basis||"").includes(x.name));
+   if(upper)nodes.push({id:upper.id,name:upper.name,kind:"related",officialUrl:upper.officialUrl||""});
+  }
+  nodes.push({id:item.id,name:item.name,kind,officialUrl:item.officialUrl||""});
+  return {group,nodes,kind,basis:item.basis||"",type:item.type,branches:[...(group.children||[]),...(group.related||[])].filter(x=>x.id!==lid)};
+ }
+ return null;
+}
+function canOpenLawFromChain(id){
+ const law=lawInfo(id);
+ return !!law?.pcode&&articleIdsForLaw(id).length>0;
+}
+function openLawFromChain(id){
+ if($("modal"))$("modal").classList.remove("show");
+ openLaw(id);
+}
+function lawChainNode(node,lid){
+ const current=node.id===lid, cls=node.kind||"related", label=esc(node.name);
+ if(current)return `<span class="law-chain-current ${cls}" aria-current="page">${label}</span>`;
+ if(canOpenLawFromChain(node.id))return `<button type="button" class="law-chain-node ${cls}" onclick="openLawFromChain('${node.id}')">${label}</button>`;
+ if(node.officialUrl)return `<a class="law-chain-node ${cls}" href="${node.officialUrl}" target="_blank" rel="noopener">${label}</a>`;
+ return `<span class="law-chain-current ${cls}">${label}</span>`;
+}
+function lawRelationChainMarkup(lid){
+ const ctx=lawChainContext(lid);
+ if(!ctx)return `<div class="law-relation-card"><div class="law-chain-empty"><span>此法目前未設定母子法鏈；可至「母子法」查看警察法規體系。</span><button class="chip" type="button" onclick="showPage('tree')">查看體系</button></div></div>`;
+ const tag=ctx.kind==="parent"?`<span class="badge red">母法</span>`:treeBadge(ctx.type);
+ const path=ctx.nodes.map(n=>lawChainNode(n,lid)).join(`<span class="law-chain-arrow" aria-hidden="true">→</span>`);
+ const branches=(ctx.branches||[]).slice(0,8).map(item=>{
+   const label=esc(item.name);
+   if(canOpenLawFromChain(item.id))return `<button class="chip" type="button" onclick="openLawFromChain('${item.id}')">${label}</button>`;
+   if(item.officialUrl)return `<a class="chip" style="text-decoration:none" href="${item.officialUrl}" target="_blank" rel="noopener">${label}</a>`;
+   return `<span class="chip" style="cursor:default">${label}</span>`;
+ }).join("");
+ return `<div class="law-relation-card"><div class="law-relation-head"><b>🔗 母法／子法關連鏈</b>${tag}</div><div class="law-chain-path">${path}</div>${ctx.basis?`<div class="law-chain-note">依據：${esc(ctx.basis)}</div>`:""}${branches?`<div class="law-chain-branches"><span>同體系可切換</span>${branches}</div>`:""}</div>`;
+}
+function renderLawNavigator(id,ids,l,base,recentSet){
+ const input=$("lawArticleJump"), options=$("lawArticleOptions"), status=$("lawJumpStatus"), rail=$("lawArticleRail"), chain=$("lawRelationChain");
+ if(!input||!options||!status||!rail||!chain)return;
+ if(input.dataset.lawId!==id){input.value="";input.dataset.lawId=id;}
+ options.innerHTML=ids.map(a=>`<option value="${esc(a)}" label="第${esc(a)}條"></option>`).join("");
+ status.textContent=ids.length?`共 ${ids.length} 條；輸入條號即可直達`:`目前沒有可跳轉的條文`;
+ chain.innerHTML=lawRelationChainMarkup(id);
+ const core=(base?.key_articles||[]).map(String).filter(a=>ids.includes(a));
+ const recent=ids.filter(a=>recentSet.has(String(a)));
+ const featured=[...new Set([...core,...recent,...ids.slice(0,6)])].slice(0,18);
+ rail.innerHTML=featured.length?featured.map(a=>`<button class="chip ${recentSet.has(String(a))?"hot":""}" type="button" onclick="openArticle('${id}','${a}')">第${a}條${recentSet.has(String(a))?" 🔥":""}</button>`).join(""):`<span class="meta">等待法條索引</span>`;
+}
+function jumpToStudyArticle(){
+ const lid=$("lawFilter")?.value||"", input=$("lawArticleJump"), status=$("lawJumpStatus");
+ const query=normalizeArticleJump(input?.value||"");
+ if(!query){input?.focus();if(status)status.textContent="請輸入條號，例如 101-1";return;}
+ const article=articleIdsForLaw(lid).find(a=>normalizeArticleJump(a)===query);
+ if(!article){if(status)status.textContent=`找不到第${query}條，請確認目前選擇的法規`;input?.focus();return;}
+ if(status)status.textContent=`已開啟第${article}條`;
+ if(input)input.value=article;
+ openArticle(lid,article);
+}
 function articleSnippet(text,q){
  const clean=cleanText(text||"");if(!q)return clean.slice(0,180);
  const i=clean.indexOf(q);if(i<0)return clean.slice(0,180);
@@ -5175,6 +5263,7 @@ function renderFullStudy(){
  $("studyTitle").textContent=l.name||"完整法規庫";
  if($("studySyncMeta"))$("studySyncMeta").textContent=records.length?`目前已同步 ${records.length} 條現行條文；修法資料獨立疊加，不影響全文可見性。`:`目前離線快照只有重點條文；部署後每日同步會抓完整「所有條文」。`;
  const recentSet=new Set((base?.events||[]).flatMap(e=>e.article_ids||[]).map(String));
+ renderLawNavigator(id,ids,l,base,recentSet);
  let out=`<div class="full-law-meta"><span class="badge green">${records.length?`${records.length} 條現行全文`:"等待完整同步"}</span><span class="badge red">${recentSet.size} 條近5年異動</span><span class="badge blue">${base?.key_articles?.length||0} 條核心必讀</span>${l.pcode?`<a class="chip" target="_blank" style="text-decoration:none" href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=${l.pcode}">官方所有條文</a>`:""}</div>`;
  if(!q){
    if(ids.length)out+=`<div class="block"><h3>全部條文索引</h3><div class="article-index">${ids.map(a=>`<button class="chip ${recentSet.has(String(a))?"hot":""}" onclick="openArticle('${id}','${a}')">第${a}條${recentSet.has(String(a))?" 🔥":""}</button>`).join("")}</div></div>`;
@@ -6891,6 +6980,8 @@ async function loadQuestionBank(){
 
 if($("startRecallBtn"))$("startRecallBtn").onclick=startRecall;
 $("lawFilter").onchange=renderStudy;$("search").oninput=renderStudy;if($("amendSearch"))$("amendSearch").oninput=renderAllAmendments;if($("amendYear"))$("amendYear").onchange=renderAllAmendments;if($("amendLaw"))$("amendLaw").onchange=renderAllAmendments;if($("courtSearch"))$("courtSearch").oninput=renderCourt;if($("courtYear"))$("courtYear").onchange=renderCourt;if($("startQuiz"))$("startQuiz").onclick=startQuiz;if($("treeSearch"))$("treeSearch").oninput=renderLawTree;if($("treeParent"))$("treeParent").onchange=renderLawTree;if($("examSearch"))$("examSearch").oninput=renderExam;if($("examScore"))$("examScore").onchange=renderExam;if($("examStatus"))$("examStatus").onchange=renderExam;if($("knowledgeSearch"))$("knowledgeSearch").oninput=renderKnowledgeGraph;if($("knowledgeSubject"))$("knowledgeSubject").onchange=renderKnowledgeGraph;if($("knowledgeSort"))$("knowledgeSort").onchange=renderKnowledgeGraph;if($("startMock"))$("startMock").onclick=startMock;
+if($("lawArticleJumpBtn"))$("lawArticleJumpBtn").onclick=jumpToStudyArticle;
+if($("lawArticleJump"))$("lawArticleJump").onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();jumpToStudyArticle();}};
 $("close").onclick=()=>$("modal").classList.remove("show");$("modal").onclick=e=>{if(e.target===$("modal"))$("modal").classList.remove("show")};
 
 const FONT_SCALE_KEY="lexcore-font-scale-v16";
