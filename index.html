@@ -1421,6 +1421,74 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 @media(hover:none){button:active,.chip:active,.crossbtn:active,.links a:active{transform:scale(.98)} }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.section.active{animation:none}.btn:hover,.chip:hover{transform:none}}
 
+/* v3.1.10 mobile home density: keep the overview useful without stacking every metric full-width. */
+@media(max-width:650px){
+ main{padding-top:10px}
+ .top{padding:12px 14px 10px;border-radius:18px}
+ .ui-badge{padding:5px 9px;margin-bottom:6px}
+ .top h1{font-size:clamp(19px,5.4vw,22px);line-height:1.22}
+ .top p{font-size:11px;line-height:1.35;margin-top:4px}
+ .top-actions{margin-top:7px;gap:5px}
+ .top-actions .btn{min-height:36px;padding:6px 8px;font-size:11px}
+ .top-actions .font-control .btn{min-height:36px;padding:6px;font-size:11px}
+ .top-actions .font-control .font-percent{min-width:44px!important}
+ .top-actions #theme{padding-left:8px;padding-right:8px}
+ .home-command{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:8px;
+  margin-bottom:10px;
+ }
+ .home-command .command-card{
+  min-height:88px;
+  padding:10px 11px;
+  border-radius:16px;
+ }
+ .home-command .command-card.primary{
+  grid-column:1/-1;
+  min-height:112px;
+  padding:12px 13px;
+ }
+ .command-label{font-size:9px;line-height:1.35;letter-spacing:.03em}
+ .command-value{font-size:20px;line-height:1.15;margin:5px 0}
+ .command-value.countdown{font-size:27px;letter-spacing:-.06em;white-space:nowrap}
+ .command-foot{font-size:9px;line-height:1.45}
+ .command-actions{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:7px;
+  margin-bottom:10px!important;
+ }
+ .command-actions .btn{
+  min-width:0;
+  min-height:40px;
+  padding:7px 8px;
+  font-size:10px;
+  line-height:1.35;
+ }
+ .home-learning-strip{gap:8px;margin-bottom:10px}
+ .home-learn-card{min-height:54px;padding:7px 9px;border-radius:15px}
+ .home-learn-card span{font-size:9px;line-height:1.25}
+ .home-learn-card b{font-size:18px;margin-top:3px}
+ .home-focus-strip,.home-calendar-strip,.home-coach-card{
+  border-radius:16px;
+  padding:10px 11px;
+  margin-bottom:10px;
+ }
+ .home-focus-strip{grid-template-columns:minmax(0,1fr) auto;gap:8px}
+ .home-focus-strip .home-focus-bar{grid-column:1/-1;order:3;height:7px}
+ .home-calendar-strip{grid-template-columns:minmax(0,1fr) auto;gap:8px}
+ .home-calendar-strip>.home-focus-cta{display:none}
+ .home-calendar-cap b{font-size:16px}
+ .home-coach-card{gap:8px}
+ .home-coach-card b{font-size:11px;line-height:1.35}
+ .home-coach-card span,.home-coach-card small{font-size:8px}
+ #home>.stats{grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
+ #home>.stats .stat{min-height:78px;padding:10px;border-radius:15px}
+ #home>.stats .stat label{font-size:9px;line-height:1.3}
+ #home>.stats .stat b{font-size:20px;margin:4px 0}
+ #home>.stats .stat small{font-size:9px;line-height:1.3}
+}
+
 </style>
 </head><body>
 <div class="shell">
