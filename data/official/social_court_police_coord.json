@@ -2,7 +2,7 @@
   "id": "social_court_police_coord",
   "name": "地方法院與警察機關處理違反社會秩序維護法案件聯繫辦法",
   "pcode": "D0080076",
-  "fetchedAt": "2026-08-24T02:18:50.827Z",
+  "fetchedAt": "2026-08-24T23:38:51.777Z",
   "latest": "2020-11-16",
   "history": [
     {
@@ -30,7 +30,7 @@
       "date": "1994-01-24",
       "rocDate": "83/01/24",
       "rocYear": 83,
-      "raw": "行政院（83）台內字第 02502 號、司\n法院（83）院台廳刑二字第 00470 號令訂定發布全文 17 條\n\n:::\n\n最新訊息\n\n中央法規\n\n司法解釋\n\n條約協定\n\n兩岸協議\n\n綜合查詢\n\n跨機關檢索\n\n法治宣導專區\n\n智慧查找\n\n法律扶助\n\n創意教案\n\n法律時事漫談\n\n網站使用說明\n\n網站使用手冊\n\n會員服務介紹\n\n網站單元簡介\n\n法規資料檢索範圍\n\n資料更新頻率說明\n\n資訊服務\n\n全國法規連結圖示\n\n全國法規作業要點\n\n法規名稱英譯標準表\n\n相關網站\n\n訂閱電子報\n\n瀏覽人次總計\n\n1,613,320,513人\n\n本月瀏覽人次\n\n11,278,337人\n\n目前使用人次\n\n171人\n\n電子報訂閱人數\n\n222,808人\n\n本網站係提供法規之最新動態資訊及資料檢索，並不提供法規及法律諮詢之服務。\n\n若有任何法律上的疑義，建議您可逕向發布法規之主管機關洽詢。\n\n本網站法規資料係由政府各機關提供之電子檔或書面文字登打製作，若與各法規主管機關之公布文字有所不同，仍以各法規主管機關之公布資料為準。\n\n部分資料內容，使用特殊文字或符號，如欲詳閱內容，請連結至司法院網站下載造字檔。\n\n全國法規資料庫之內容每週五定期更新，當週發布之法律、命令資料，將於完成法規整編作業後，於下週五更新上線。\n\n法規整編資料截止日：民國 115 年 08 月 14 日 \n\n瀏覽人次總計：1,613,320,513人\n\n本月瀏覽人次：11,278,337人\n\n目前使用人次：171人\n\n電子報訂閱：222,808人\n\n│ 政府網站資料開放宣告 │ 隱私權保護宣告 │ 資訊安全政策 │ Q & A │ 意見回饋 │ API文件 │ \n\n本網站由法務部全國法規資料庫工作小組維運管理..\n\n法務部地址：100204 台北市重慶南路一段130號　電話：(02)2191-0189\n\n第二辦公室地址：100006 台北市貴陽街1段235號　電話：(02)2191-0189\n\n回上方\n\n$(function () {\n\n// === 統一綁定 GA 追蹤事件 ===\n$('.ga-track-link').on('click keypress', function (e) {\n// 如果是鍵盤事件，確認是按下 Enter 鍵 (keyCode 13) 才觸發\nif (e.type === 'keypress' && e.which !== 13) {\nreturn;\n}\n\nvar category = $(this).data('ga-category');\nvar action = $(this).data('ga-action');\n\n// 呼叫原本的 GA 追蹤函數\nif (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice(category, action, '', '');\n}\n});\n\n// 綁定登出確認視窗\n$('.logout-link').on('click', function () {\nif (!confirm('確定登出？')) {\nreturn false; // 若使用者按取消，則不執行跳轉\n}\n});\n\nvar b = 'ONEBAR';\n$(\"#btnSubscribe,#btnUnsubscribe\").on(\"click\", function (event) {\n//var email = $.trim($(\"#txtEMail\").val());\n//if (email == \"\") {\n// event.preventDefault();\n// alert('請您輸入電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else if (false == IsEMail(email)) {\n// event.preventDefault();\n// alert('請您輸入正確電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else {\n// GoogleAnanlytice('中文', '訂閱電子報', '', '');\n//}\nvar email = $.trim($(\"#txtEMail\").val());\n//if (!validateEmail(email)) {\n// alert('請您輸入正確電子郵件地址。');\n// return false;\n//}\n\n});\n$('#btnQall').on(\"click\", function () {\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse if (keyword.indexOf($.trim($(\"#keyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsQall').on(\"click\", function () {\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else {\nGoog",
+      "raw": "行政院（83）台內字第 02502 號、司\n法院（83）院台廳刑二字第 00470 號令訂定發布全文 17 條\n\n:::\n\n最新訊息\n\n中央法規\n\n司法解釋\n\n條約協定\n\n兩岸協議\n\n綜合查詢\n\n跨機關檢索\n\n法治宣導專區\n\n智慧查找\n\n法律扶助\n\n創意教案\n\n法律時事漫談\n\n網站使用說明\n\n網站使用手冊\n\n會員服務介紹\n\n網站單元簡介\n\n法規資料檢索範圍\n\n資料更新頻率說明\n\n資訊服務\n\n全國法規連結圖示\n\n全國法規作業要點\n\n法規名稱英譯標準表\n\n相關網站\n\n訂閱電子報\n\n瀏覽人次總計\n\n1,613,696,505人\n\n本月瀏覽人次\n\n11,654,329人\n\n目前使用人次\n\n575人\n\n電子報訂閱人數\n\n222,811人\n\n本網站係提供法規之最新動態資訊及資料檢索，並不提供法規及法律諮詢之服務。\n\n若有任何法律上的疑義，建議您可逕向發布法規之主管機關洽詢。\n\n本網站法規資料係由政府各機關提供之電子檔或書面文字登打製作，若與各法規主管機關之公布文字有所不同，仍以各法規主管機關之公布資料為準。\n\n部分資料內容，使用特殊文字或符號，如欲詳閱內容，請連結至司法院網站下載造字檔。\n\n全國法規資料庫之內容每週五定期更新，當週發布之法律、命令資料，將於完成法規整編作業後，於下週五更新上線。\n\n法規整編資料截止日：民國 115 年 08 月 14 日 \n\n瀏覽人次總計：1,613,696,505人\n\n本月瀏覽人次：11,654,329人\n\n目前使用人次：575人\n\n電子報訂閱：222,811人\n\n│ 政府網站資料開放宣告 │ 隱私權保護宣告 │ 資訊安全政策 │ Q & A │ 意見回饋 │ API文件 │ \n\n本網站由法務部全國法規資料庫工作小組維運管理..\n\n法務部地址：100204 台北市重慶南路一段130號　電話：(02)2191-0189\n\n第二辦公室地址：100006 台北市貴陽街1段235號　電話：(02)2191-0189\n\n回上方\n\n$(function () {\n\n// === 統一綁定 GA 追蹤事件 ===\n$('.ga-track-link').on('click keypress', function (e) {\n// 如果是鍵盤事件，確認是按下 Enter 鍵 (keyCode 13) 才觸發\nif (e.type === 'keypress' && e.which !== 13) {\nreturn;\n}\n\nvar category = $(this).data('ga-category');\nvar action = $(this).data('ga-action');\n\n// 呼叫原本的 GA 追蹤函數\nif (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice(category, action, '', '');\n}\n});\n\n// 綁定登出確認視窗\n$('.logout-link').on('click', function () {\nif (!confirm('確定登出？')) {\nreturn false; // 若使用者按取消，則不執行跳轉\n}\n});\n\nvar b = 'ONEBAR';\n$(\"#btnSubscribe,#btnUnsubscribe\").on(\"click\", function (event) {\n//var email = $.trim($(\"#txtEMail\").val());\n//if (email == \"\") {\n// event.preventDefault();\n// alert('請您輸入電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else if (false == IsEMail(email)) {\n// event.preventDefault();\n// alert('請您輸入正確電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else {\n// GoogleAnanlytice('中文', '訂閱電子報', '', '');\n//}\nvar email = $.trim($(\"#txtEMail\").val());\n//if (!validateEmail(email)) {\n// alert('請您輸入正確電子郵件地址。');\n// return false;\n//}\n\n});\n$('#btnQall').on(\"click\", function () {\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse if (keyword.indexOf($.trim($(\"#keyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsQall').on(\"click\", function () {\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else {\nGoog",
       "articles": []
     }
   ],
@@ -40,7 +40,7 @@
       "text": "為地方法院（以下簡稱法院）與警察機關加強聯繫，妥速處理違反社會秩序維護法（以下簡稱本法）案件，特訂定本辦法。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=1&pcode=D0080076",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080076",
-      "fetchedAt": "2026-08-24T02:18:50.827Z",
+      "fetchedAt": "2026-08-24T23:38:51.777Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -48,7 +48,7 @@
       "text": "警察機關依本法第四十五條第一項移送案件，應確實依違反社會秩序維護法案件處理辦法第三十三條第一項、第二項之規定辦理，並應記載被移送人有無違反本法前案資料。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=2&pcode=D0080076",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080076",
-      "fetchedAt": "2026-08-24T02:18:50.827Z",
+      "fetchedAt": "2026-08-24T23:38:51.777Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -56,7 +56,7 @@
       "text": "警察機關隨案移送被移送人時，應確實依違反社會秩序維護法案件處理辦法第三十三條第三項之規定辦理；其被移送人人數眾多時，應於移送前先與該管法院聯繫；移送後，仍應與該管法院密切聯繫。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=3&pcode=D0080076",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080076",
-      "fetchedAt": "2026-08-24T02:18:50.827Z",
+      "fetchedAt": "2026-08-24T23:38:51.777Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -64,7 +64,7 @@
       "text": "法院受理違反本法案件，實施勘驗、搜索、扣押、鑑定或其他處分時，得依本法第九十二條準用刑事訴訟法之規定，以言詞、書面或其他適當方式，請求警察機關為必要之協助。\n前項情形，警察機關應依刑事訴訟法之規定配合辦理。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=4&pcode=D0080076",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080076",
-      "fetchedAt": "2026-08-24T02:18:50.827Z",
+      "fetchedAt": "2026-08-24T23:38:51.777Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -72,7 +72,7 @@
       "text": "為期發現真實，法院得通知查獲員警提出書面報告；移送之警察機關於必要時，亦得聲請派員到庭陳述意見。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=5&pcode=D0080076",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080076",
-      "fetchedAt": "2026-08-24T02:18:50.827Z",
+      "fetchedAt": "2026-08-24T23:38:51.777Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -80,7 +80,7 @@
       "text": "法院對違反本法之案件，如認有繼續查證或追查其他共同行為人之必要，得通知移送之警察機關繼續追查；警察機關應迅速處理並以書面回報結果。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=6&pcode=D0080076",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080076",
-      "fetchedAt": "2026-08-24T02:18:50.827Z",
+      "fetchedAt": "2026-08-24T23:38:51.777Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -88,7 +88,7 @@
       "text": "警察機關移送案件後，發現有其他事證可供法院參考或有本法第二十四條第一項但書規定之情形須併案裁處時，應儘速補送，必要時並應先行通知法院。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=7&pcode=D0080076",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080076",
-      "fetchedAt": "2026-08-24T02:18:50.827Z",
+      "fetchedAt": "2026-08-24T23:38:51.777Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -96,7 +96,7 @@
       "text": "法院受理警察機關移送案件，其裁定書除當場交付者外，應迅速囑託原移送機關送達受裁定人；受裁定人之住所、居所地非在原移送警察機關之轄區內者，得逕行囑託其住所、居所地之警察機關送達之。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=8&pcode=D0080076",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080076",
-      "fetchedAt": "2026-08-24T02:18:50.827Z",
+      "fetchedAt": "2026-08-24T23:38:51.777Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -104,7 +104,7 @@
       "text": "法院囑託送達之裁定書，警察機關應於五日內送達，並於送達後三日內將送達證書繳還該管法院。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=9&pcode=D0080076",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080076",
-      "fetchedAt": "2026-08-24T02:18:50.827Z",
+      "fetchedAt": "2026-08-24T23:38:51.777Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -112,7 +112,7 @@
       "text": "警察機關隨案移送人者，該管法院於宣示拘留裁定後，如經受裁定人與警察機關捨棄抗告權而確定者，法院應即製作移送執行通知書，交付原移送機關執行。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=10&pcode=D0080076",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080076",
-      "fetchedAt": "2026-08-24T02:18:50.827Z",
+      "fetchedAt": "2026-08-24T23:38:51.777Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -120,7 +120,7 @@
       "text": "法院受理違反本法案件，經裁定確定或終結後，應即通知原處分或原移送之警察機關依法處理。\n前項案件如有隨案移送之物品者，法院應同時發還警察機關處理。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=11&pcode=D0080076",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080076",
-      "fetchedAt": "2026-08-24T02:18:50.827Z",
+      "fetchedAt": "2026-08-24T23:38:51.777Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -128,7 +128,7 @@
       "text": "違反本法之行為，如同時涉嫌違反刑事法律或少年事件處理法，移送檢察官偵查或少年法庭審理時，警察機關應於移送書上，以明顯戳記註明被移送人行為同時違反本法，如經處分不起訴或判決無罪、不受理、免訴或裁定不付審理、不付管訓處分確定時，檢察署或法院應速通知警察機關。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=12&pcode=D0080076",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080076",
-      "fetchedAt": "2026-08-24T02:18:50.827Z",
+      "fetchedAt": "2026-08-24T23:38:51.777Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -136,7 +136,7 @@
       "text": "（刪除）",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=13&pcode=D0080076",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080076",
-      "fetchedAt": "2026-08-24T02:18:50.827Z",
+      "fetchedAt": "2026-08-24T23:38:51.777Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -144,7 +144,7 @@
       "text": "警察機關廢棄或銷燬沒入物品，應通知該管法院派員到場監視。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=14&pcode=D0080076",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080076",
-      "fetchedAt": "2026-08-24T02:18:50.827Z",
+      "fetchedAt": "2026-08-24T23:38:51.777Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -152,7 +152,7 @@
       "text": "警察機關處理違反本法案件發生法律上之疑義時，得隨時以書面、言詞或電話請求法官解答或指示。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=15&pcode=D0080076",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080076",
-      "fetchedAt": "2026-08-24T02:18:50.827Z",
+      "fetchedAt": "2026-08-24T23:38:51.777Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -160,7 +160,7 @@
       "text": "各法院及警察機關辦理違反本法案件，均應指定專職聯絡人與專線電話，隨時保持聯繫及交換意見，並於每年七月至九月間召開聯繫會議一次。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=16&pcode=D0080076",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080076",
-      "fetchedAt": "2026-08-24T02:18:50.827Z",
+      "fetchedAt": "2026-08-24T23:38:51.777Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -168,7 +168,7 @@
       "text": "本辦法自發布日施行。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=17&pcode=D0080076",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080076",
-      "fetchedAt": "2026-08-24T02:18:50.827Z",
+      "fetchedAt": "2026-08-24T23:38:51.777Z",
       "ok": true,
       "source": "LawAll"
     }
