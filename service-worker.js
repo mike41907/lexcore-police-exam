@@ -1,4 +1,4 @@
-const CACHE_NAME = "lexcore-v3.1.10";
+const CACHE_NAME = "lexcore-v3.1.11";
 const SCOPE_URL = self.registration.scope;
 const INDEX_URL = new URL("index.html", SCOPE_URL).href;
 const MANIFEST_URL = new URL("manifest.webmanifest", SCOPE_URL).href;
