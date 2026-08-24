@@ -3239,7 +3239,7 @@ load();
    <input id="courtSearch" placeholder="搜尋憲判字號、案名、刑法第80條、羈押…">
    <select id="courtYear"><option value="">111～115全部</option><option value="115">115年</option><option value="114">114年</option><option value="113">113年</option><option value="112">112年</option><option value="111">111年</option></select>
   </div>
-  <div class="notice"><strong>憲法考科延伸：</strong>民國111～115年目前統計58件憲法法庭判決。每一案已改成「一句話記憶＋判決結論＋爭點＋理由＋法條影響＋考試提醒」。目前先完整整理114年憲判字第1號及115年憲判字第1至6號；完整58件索引再逐步補齊。</div>
+  <div class="notice"><strong>憲法考科延伸：</strong>民國111～115年共同步58件憲法法庭判決；每一案都有官方索引與自動判決卡，114年憲判字第1號及115年憲判字第1至6號另有人工考點整理。可直接用年度或關鍵字篩選。</div>
   <div class="cases" id="courtGrid"></div>
  </section>
 
@@ -3250,7 +3250,7 @@ load();
     <h2>LexCore 更新紀錄</h2>
     <p>版本變更、重大修正與新功能統一收在這裡。其他頁面不再顯示版本更新說明，避免干擾讀書與作答。</p>
    </div>
-   <span class="badge blue">目前 v3.2.0</span>
+   <span class="badge blue">目前 v3.2.1</span>
   </div>
 
   <div class="changelog-filter">
@@ -3263,6 +3263,19 @@ load();
   </div>
 
    <div class="changelog-list" id="changelogList">
+
+   <details class="release-card" data-release-tags="data study" open>
+    <summary>
+     <div class="release-version">v3.2.1</div>
+     <div><div class="release-title">憲法法庭年度篩選與111年資料修正</div><div class="release-meta">111年20件・58件索引・日期解析</div></div>
+     <span class="release-tag">資料修正</span>
+    </summary>
+    <div class="release-body"><ul>
+     <li>修正年度篩選誤依賴空白日期欄位，111年20件判決現在可正常顯示。</li>
+     <li>重新同步111～115年共58件官方索引並補上判決日期。</li>
+     <li>同步腳本新增民國／西元判決日期解析與快照回填，避免後續年度再次消失。</li>
+    </ul></div>
+   </details>
 
    <details class="release-card" data-release-tags="major study ui data" open>
     <summary>
@@ -4085,12 +4098,19 @@ function renderReasons(){
 }
 
 function stars(n){return "★".repeat(n)+"☆".repeat(Math.max(0,5-n))}
+function courtRocYear(c={}){
+ const date=String(c.date||"").match(/^(\d{2,3})(?:\/|-)/),no=String(c.no||"").match(/^(\d{2,3})年/);
+ return date?.[1]||no?.[1]||"";
+}
+function courtDateLabel(c={}){
+ return c.date||((courtRocYear(c)||"—")+"年");
+}
 function renderCourt(){
  const q=($("courtSearch")?.value||"").trim(), y=$("courtYear")?.value||"";
  const rows=(DATA.court||[]).filter(c=>{
    const d=COURT_STUDY[c.no]||{};
    const hay=(c.no+" "+c.title+" "+(c.links||[]).join(" ")+" "+c.summary+" "+(d.memory||"")+" "+(d.issue||"")+" "+(d.category||""));
-   return (!q||hay.includes(q)) && (!y||c.date.startsWith(y+"/"));
+   return (!q||hay.includes(q)) && (!y||courtRocYear(c)===String(y));
  });
  $("courtGrid").innerHTML=rows.map(c=>{
    const d=COURT_STUDY[c.no]||{};
@@ -4103,10 +4123,10 @@ function renderCourt(){
     <div class="tags">${(c.links||[]).map(t=>`<span class="badge green">${t}</span>`).join("")}</div>
     <div class="links"><button class="chip ready" onclick="openCourtCase('${c.no}')">查看判決整理</button><a href="${d.source||c.url}" target="_blank">官方判決</a></div>
    </div>`;
- }).join("") || `<div class="empty"><b>目前快照沒有符合條件的詳細卡片</b><p>年度判決量仍保留；完整111～115年58件判決會由後續同步模組補齊。</p></div>`;
+ }).join("") || `<div class="empty"><b>目前沒有符合搜尋／年度的判決</b><p>目前同步索引共58件；請清除關鍵字或切換年度。</p></div>`;
 }
 function openCourtCase(no){
- const c=(DATA.court||[]).find(x=>x.no===no), d=COURT_STUDY[no];
+ const raw=(DATA.court||[]).find(x=>x.no===no), d=COURT_STUDY[no], c=raw?{...raw,date:courtDateLabel(raw)}:null;
  if(!c||!d)return;
  $("modalTitle").textContent=`${no}｜${c.title}`;
  $("modalMeta").innerHTML=`${c.date}　<span class="badge ${d.verdict_type||"blue"}">${d.verdict}</span>　<span class="badge amber">${d.category}</span>`;

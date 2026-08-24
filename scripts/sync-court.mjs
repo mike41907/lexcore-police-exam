@@ -11,6 +11,14 @@ const old=await readJson(OUT,{cases:[]});
 const oldMap=new Map((old.cases||[]).map(x=>[x.no,x]));
 
 function abs(href){try{return new URL(href,"https://cons.judicial.gov.tw/").toString()}catch{return href}}
+function parseCourtDate(text=""){
+  const value=normalizeSpace(text);
+  const iso=value.match(/(?:判決日期|裁判日期)\s*(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})/);
+  if(iso)return iso[1]+"-"+iso[2].padStart(2,"0")+"-"+iso[3].padStart(2,"0");
+  const roc=value.match(/(?:判決日期|裁判日期)\s*(?:民國\s*)?(\d{2,3})年(\d{1,2})月(\d{1,2})日/);
+  if(roc)return String(Number(roc[1])+1911)+"-"+roc[2].padStart(2,"0")+"-"+roc[3].padStart(2,"0");
+  return null;
+}
 async function listCases(){
   const map=new Map();
   for(let page=1;page<=10;page++){
@@ -25,9 +33,10 @@ async function listCases(){
       const no=m[1], year=Number(m[2]), title=m[4];
       const href=abs($(a).attr("href")||"");
       const context=normalizeSpace($(a).closest("tr,li,div").text());
+      const parsedDate=parseCourtDate(context);
       const dm=context.match(/(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})/);
       const date=dm?`${dm[1]}-${dm[2].padStart(2,"0")}-${dm[3].padStart(2,"0")}`:null;
-      if(!map.has(no)){map.set(no,{no,year,title,url:href,date});added++;}
+      if(!map.has(no)){map.set(no,{no,year,title,url:href,date:parsedDate||date});added++;}
     });
     if(page>1 && added===0) break;
     await politeDelay(120);
@@ -67,6 +76,7 @@ for(const c of cases){
   const cached=oldMap.get(c.no);
   if(cached?.detailFetched && cached?.url===c.url){
     Object.assign(c,cached);
+    if(!c.date)c.date=parseCourtDate([c.officialSummary,c.reasonExcerpt,c.main].filter(Boolean).join(" "));
     continue;
   }
   try{
@@ -78,6 +88,7 @@ for(const c of cases){
     c.main=main;
     c.officialSummary=summary;
     c.reasonExcerpt=reason.slice(0,12000);
+    c.date=parseCourtDate(text)||c.date;
     c.related=relatedLaws(`${main}\n${summary}\n${reason}`);
     c.auto={
       verdict:autoVerdict(main,`${summary}\n${reason}`),
