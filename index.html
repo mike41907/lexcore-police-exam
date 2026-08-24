@@ -424,6 +424,14 @@ main{max-width:1500px;width:100%;margin:auto;padding:24px}.top{display:flex;just
 .release-tag{font-size:9px;padding:4px 7px;border-radius:999px;background:var(--bg);border:1px solid var(--line);color:var(--muted);white-space:nowrap}
 .update-link{display:inline-flex;align-items:center;gap:5px;font-size:10px;color:var(--p);font-weight:850;cursor:pointer}
 
+/* ===== v3.2 reading memory and mobile rendering ===== */
+.law-reading-shortcuts{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:9px;padding-top:8px;border-top:1px solid color-mix(in srgb,var(--p) 12%,var(--line));min-height:28px}.law-reading-shortcuts:empty{display:none}.law-reading-shortcuts-label{font-size:10px;font-weight:900;color:var(--muted)}.law-reading-shortcuts .chip{font-size:10px;padding:5px 8px;min-height:29px}.law-reading-shortcuts .chip.active{border-color:var(--p);background:var(--p2);color:var(--p)}
+.law-favorite-btn{color:var(--muted)}.law-favorite-btn.active{border-color:color-mix(in srgb,var(--amber,#d99b20) 48%,var(--line));background:color-mix(in srgb,var(--amber,#d99b20) 12%,var(--card));color:var(--amber,#a66d00)}
+.law-reader-extras{min-height:18px}.law-reader-extras-placeholder{padding:7px 13px;border-top:1px solid var(--line);color:var(--muted);font-size:9px;line-height:1.5}.law-reader-extras.is-loaded{min-height:0}.law-relation-basis{display:inline-flex;align-items:center;gap:4px;margin-top:7px;padding:5px 7px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--muted);font:inherit;font-size:10px;line-height:1.45;text-align:left}.law-relation-basis:hover{border-color:var(--p);color:var(--p)}
+.mnemonic-tools{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:10px 0;padding:10px 12px;border:1px solid color-mix(in srgb,var(--p) 18%,var(--line));border-radius:13px;background:color-mix(in srgb,var(--p2) 34%,var(--card))}.mnemonic-tools b{display:block;font-size:12px}.mnemonic-tools span{display:block;margin-top:3px;color:var(--muted);font-size:10px;line-height:1.5}.mnemonic-tool-actions{display:flex;align-items:center;gap:7px;flex:0 0 auto}.mnemonic-tool-actions select{min-height:36px;max-width:150px;border:1px solid var(--line);border-radius:9px;padding:6px 8px;background:var(--card);color:var(--text);font:inherit;font-size:10px}.flashcard-shell{margin:10px 0}.flashcard-shell[hidden]{display:none}.flashcard-card{padding:15px;border:1px solid color-mix(in srgb,var(--p) 24%,var(--line));border-radius:16px;background:linear-gradient(145deg,color-mix(in srgb,var(--p2) 72%,var(--card)),var(--card));box-shadow:var(--shadow-sm)}.flashcard-card.back{background:linear-gradient(145deg,color-mix(in srgb,var(--g2) 48%,var(--card)),var(--card))}.flashcard-head{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}.flashcard-kicker{font-size:10px;color:var(--p);font-weight:950}.flashcard-progress{font-size:10px;color:var(--muted);white-space:nowrap}.flashcard-prompt{min-height:74px;display:grid;place-items:center;margin:13px 0;padding:12px;border:1px dashed color-mix(in srgb,var(--p) 32%,var(--line));border-radius:12px;text-align:center;font-size:15px;line-height:1.65;font-weight:900}.flashcard-answer{display:grid;gap:7px;margin:12px 0}.flashcard-answer .mnemonic-structure{margin-top:0}.flashcard-actions{display:flex;gap:7px;flex-wrap:wrap}.flashcard-actions .btn{flex:1 1 130px}.mnemonic-card .mnemonic-status{font-size:9px;color:var(--muted)}
+.mnemonic-editor{display:grid;gap:10px}.mnemonic-editor label{display:grid;gap:5px;color:var(--muted);font-size:11px;font-weight:850}.mnemonic-editor textarea{width:100%;min-height:52px;resize:vertical;border:1px solid var(--line);border-radius:10px;padding:9px;background:var(--card);color:var(--text);font:inherit;font-size:12px;line-height:1.6}.mnemonic-editor-check{display:flex!important;align-items:center;grid-template-columns:auto 1fr;gap:7px}.mnemonic-editor-check input{width:18px;height:18px;accent-color:var(--p)}
+@media(max-width:650px){.law-reading-shortcuts{align-items:flex-start;gap:5px}.law-reading-shortcuts-label{width:100%}.law-reading-shortcuts .chip{min-height:32px}.mnemonic-tools{align-items:flex-start;flex-direction:column}.mnemonic-tool-actions{width:100%}.mnemonic-tool-actions select{flex:1;max-width:none}.flashcard-card{padding:13px}.flashcard-prompt{min-height:86px;font-size:14px}.law-reader-extras-placeholder{padding:6px 11px}}
+
 
 /* ===== v3.0 Complete law library / quick lookup ===== */
 .full-law-meta{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px}
@@ -2914,8 +2922,10 @@ load();
   </div>
 
   <div class="field-panel" data-field-panel="mnemonic">
-   <div class="row" style="margin-bottom:10px"><div><h2 style="margin:0;font-size:16px">我的考前口訣／速記卡</h2><div class="meta">優先採你的「口訣／一句話」筆記，再結合你真正錯過的考點、LexCore已人工整理的記憶句與陷阱。</div></div><div class="actions"><button class="btn" onclick="renderMnemonics()">重新整理</button><button class="btn primary" onclick="speakMnemonicPack()">🎧 朗讀全部</button></div></div>
-   <div class="notice" id="mnemonicCoverage">每條現行法規都會在法條卡片下方提供一則口訣；人工整理與自動草稿會分開標示。</div>
+   <div class="row" style="margin-bottom:10px"><div><h2 style="margin:0;font-size:16px">我的考前口訣／字卡</h2><div class="meta">自動口訣先當結構化草稿；你可以編輯、核准，再用同一份條文資料進行字卡複習。</div></div><div class="actions"><button class="btn" onclick="renderMnemonics()">重新整理</button><button class="btn primary" onclick="speakMnemonicPack()">🎧 朗讀全部</button></div></div>
+   <div class="notice" id="mnemonicCoverage">每條現行法規都會在法條卡片下方提供一則口訣；人工整理、自動草稿與本機個人整理會分開標示。</div>
+   <div class="mnemonic-tools" aria-label="字卡工具"><div><b>字卡複習</b><span>先回想主軸、順序與例外，再翻面核對。</span></div><div class="mnemonic-tool-actions"><select id="flashcardMode" aria-label="字卡範圍"><option value="due">到期／高風險</option><option value="all">目前口訣卡</option></select><button class="btn primary" type="button" id="startFlashcards">開始字卡</button></div></div>
+   <div class="flashcard-shell" id="flashcardArea" hidden></div>
    <div class="mnemonic-grid" id="mnemonicGrid"></div>
   </div>
 
@@ -3165,7 +3175,8 @@ load();
    </div>
    <datalist id="lawArticleOptions"></datalist>
    <div id="lawRelationChain"></div>
-   <div class="law-article-rail-wrap"><span>章節目錄</span><div class="law-article-rail" id="lawChapterRail"></div></div>
+  <div class="law-article-rail-wrap"><span>章節目錄</span><div class="law-article-rail" id="lawChapterRail"></div></div>
+  <div class="law-reading-shortcuts" id="lawReadingShortcuts" aria-live="polite"></div>
   </div>
   <div class="searchbar"><input id="search" placeholder="搜尋目前法規的條號或條文內容，例如：6、101-1、三小時、管束"></div>
   <div class="card"><div class="head"><div><h2 id="studyTitle">完整法規庫</h2><div class="meta" id="studySyncMeta">讀取現行全文中</div></div><span class="badge blue">完整現行法</span></div><div class="body" id="studyBody"></div></div>
@@ -3239,7 +3250,7 @@ load();
     <h2>LexCore 更新紀錄</h2>
     <p>版本變更、重大修正與新功能統一收在這裡。其他頁面不再顯示版本更新說明，避免干擾讀書與作答。</p>
    </div>
-   <span class="badge blue">目前 v3.1.20</span>
+   <span class="badge blue">目前 v3.2.0</span>
   </div>
 
   <div class="changelog-filter">
@@ -3252,6 +3263,21 @@ load();
   </div>
 
    <div class="changelog-list" id="changelogList">
+
+   <details class="release-card" data-release-tags="major study ui data" open>
+    <summary>
+     <div class="release-version">v3.2.0</div>
+     <div><div class="release-title">法規閱讀、口訣字卡與手機效能版</div><div class="release-meta">章節導航・個人整理卡・字卡複習・延遲渲染</div></div>
+     <span class="release-tag">核心學習</span>
+    </summary>
+    <div class="release-body"><ul>
+     <li>法規頁新增繼續閱讀、收藏條文、章節快速切換、條號定位與母法／子法依據跳轉。</li>
+     <li>口訣可在本機編輯、核准與清除；個人整理不會覆蓋官方現行全文。</li>
+     <li>新增由口訣資料產生的字卡複習，支援不熟／記住與下一次複習時間。</li>
+     <li>判解索引與記憶卡改為接近畫面時才建立，並快取條文索引，降低手機初次渲染負擔。</li>
+     <li>新增專用 localStorage key，但不變更既有錯題、筆記、班表、掌握度與間隔複習 key。</li>
+    </ul></div>
+   </details>
 
    <details class="release-card" data-release-tags="study ui" open>
     <summary>
@@ -4015,6 +4041,7 @@ function renderExam(){
 }
 
 function openArticle(lid,a){
+ saveLawReadingPosition(lid,a);
  const key=lid+":"+a,l=lawInfo(lid),d=DETAILS[key],live=ARTICLE_TEXTS[key],sixInfo=sixLawsArticleInfo(lid,a),sixMarkup=sixLawsReferenceMarkup(lid,a),relationChain=lawRelationChainMarkup(lid),mnemonicMarkup=articleMnemonicMarkup(lid,a,live?.text||d?.current||"",{expanded:true});
  $("modalTitle").textContent=`${l.name} 第${a}條${sixInfo?.title?`（${sixInfo.title}）`:""}`;
  if(!d){
@@ -5417,6 +5444,49 @@ function renderMockHistory(){
 let FIELD_TOOL_ACTIVE="focus", FRAGMENT_MINUTES=5;
 let VOICE_QUEUE=[],VOICE_INDEX=0,VOICE_RATE=1,VOICE_PAUSED=false;
 let MNEMONIC_CACHE=[];
+let ARTICLE_RECORD_CACHE=null;
+let LAW_EXTRAS_OBSERVER=null;
+let LAW_READING_POSITION_OBSERVER=null;
+let FLASHCARD_SESSION=null;
+let MNEMONIC_EDITOR_KEY="";
+const LAW_READING_STATE_KEY="lexcore-law-reading-v1";
+const MNEMONIC_EDIT_KEY="lexcore-mnemonic-edits-v1";
+const FLASHCARD_STATE_KEY="lexcore-flashcard-state-v1";
+
+function readLocalObject(key,fallback={}){
+ try{const value=JSON.parse(localStorage.getItem(key)||"null");return value&&typeof value==="object"?value:fallback}catch{return fallback}
+}
+function writeLocalObject(key,value){try{localStorage.setItem(key,JSON.stringify(value))}catch(e){console.info("LexCore local data unavailable",e.message)}}
+function getLawReadingState(){
+ const value=readLocalObject(LAW_READING_STATE_KEY,{last:{},favorites:[]});
+ return {last:value.last&&typeof value.last==="object"?value.last:{},favorites:Array.isArray(value.favorites)?value.favorites:[]};
+}
+function putLawReadingState(value){writeLocalObject(LAW_READING_STATE_KEY,{last:value.last||{},favorites:[...new Set(value.favorites||[])]})}
+function lawArticleStateKey(lid,article){return `${lid}:${article}`}
+function isLawArticleFavorite(lid,article){return getLawReadingState().favorites.includes(lawArticleStateKey(lid,article))}
+function saveLawReadingPosition(lid,article){
+ const state=getLawReadingState();state.last[lid]=String(article);putLawReadingState(state);
+ const input=$("lawArticleJump"),status=$("lawJumpStatus");
+ if(input&&input.dataset.lawId===lid)input.value=String(article);
+ if(status)status.textContent=`目前第${article}條`;
+}
+function toggleLawArticleFavorite(lid,article){
+ const state=getLawReadingState(),key=lawArticleStateKey(lid,article),index=state.favorites.indexOf(key),on=index<0;
+ if(on)state.favorites.unshift(key);else state.favorites.splice(index,1);
+ putLawReadingState(state);
+ const button=$(studyArticleDomId(lid,article)+"-favorite");
+ if(button){button.classList.toggle("active",on);button.setAttribute("aria-pressed",String(on));button.textContent=on?"★ 已收藏":"☆ 收藏";}
+ renderLawReadingShortcuts(lid,articleIdsForLaw(lid));
+}
+function renderLawReadingShortcuts(lid,ids=[]){
+ const box=$("lawReadingShortcuts");if(!box)return;
+ const state=getLawReadingState(),last=state.last[lid],available=new Set(ids.map(String));
+ const favorites=state.favorites.filter(key=>key.startsWith(`${lid}:`)).map(key=>key.slice(lid.length+1)).filter(a=>available.has(a)).slice(0,5);
+ const parts=[];
+ if(last&&available.has(String(last)))parts.push(`<span class="law-reading-shortcuts-label">繼續閱讀</span><button class="chip active" type="button" onclick="scrollToStudyArticle('${lid}','${esc(last)}')">第${esc(last)}條</button>`);
+ if(favorites.length){parts.push(`<span class="law-reading-shortcuts-label">收藏</span>`);favorites.forEach(a=>parts.push(`<button class="chip" type="button" onclick="scrollToStudyArticle('${lid}','${esc(a)}')">★ 第${esc(a)}條</button>`));}
+ box.innerHTML=parts.join("");
+}
 
 function lawCatalog(){
  if(LAW_CATALOG?.length)return LAW_CATALOG;
@@ -5430,11 +5500,13 @@ function articleSortValue(a=""){
  const p=String(a).split("-").map(Number);return (p[0]||0)*1000+(p[1]||0);
 }
 function allArticleRecords(){
+ if(ARTICLE_RECORD_CACHE)return ARTICLE_RECORD_CACHE;
  const cat=new Map(lawCatalog().map(l=>[l.id,l]));
- return Object.values(ARTICLE_TEXTS||{}).map(rec=>{
+ ARTICLE_RECORD_CACHE=Object.values(ARTICLE_TEXTS||{}).map(rec=>{
    const l=cat.get(rec.lawId)||lawInfo(rec.lawId);
    return {...rec,law:l,category:l.category||"",main:!!(DATA.laws||[]).find(x=>x.id===rec.lawId)};
  }).sort((a,b)=>(a.lawName||"").localeCompare(b.lawName||"zh-Hant")||articleSortValue(a.article)-articleSortValue(b.article));
+ return ARTICLE_RECORD_CACHE;
 }
 function articleIdsForLaw(id){
  const ids=allArticleRecords().filter(x=>x.lawId===id).map(x=>String(x.article));
@@ -5455,6 +5527,8 @@ function studyArticleDomId(lid,article){return `law-reader-${encodeURIComponent(
 function scrollToStudyArticle(lid,article){
  const target=document.getElementById(studyArticleDomId(lid,article));
  if(!target){openArticle(lid,article);return;}
+ hydrateLawArticleExtras(target);
+ saveLawReadingPosition(lid,article);
  const reduced=window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
  target.scrollIntoView({behavior:reduced?"auto":"smooth",block:"start"});
  document.querySelectorAll(".law-reader-article.is-target").forEach(el=>el.classList.remove("is-target"));
@@ -5544,7 +5618,9 @@ function lawRelationChainMarkup(lid){
    if(item.officialUrl)return `<a class="chip" style="text-decoration:none" href="${item.officialUrl}" target="_blank" rel="noopener">${label}</a>`;
    return `<span class="chip" style="cursor:default">${label}</span>`;
  }).join("");
- return `<div class="law-relation-card"><div class="law-relation-head"><b>🔗 母法／子法關連鏈</b>${tag}</div><div class="law-chain-path">${path}</div>${ctx.basis?`<div class="law-chain-note">依據：${esc(ctx.basis)}</div>`:""}${branches?`<div class="law-chain-branches"><span>同體系可切換</span>${branches}</div>`:""}</div>`;
+ const basisMatch=String(ctx.basis||"").match(/第\s*([0-9]+(?:[-之][0-9]+)?)\s*條/),basisArticle=basisMatch?.[1]?.replace("之","-");
+ const basisMarkup=ctx.basis?basisMatch&&ctx.nodes?.[0]?.id&&canOpenLawFromChain(ctx.nodes[0].id)?`<button class="law-relation-basis" type="button" onclick="openArticle('${ctx.nodes[0].id}','${basisArticle}')">依據：${esc(ctx.basis)}　↗</button>`:`<div class="law-chain-note">依據：${esc(ctx.basis)}</div>`:"";
+ return `<div class="law-relation-card"><div class="law-relation-head"><b>🔗 母法／子法關連鏈</b>${tag}</div><div class="law-chain-path">${path}</div>${basisMarkup}${branches?`<div class="law-chain-branches"><span>同體系可切換</span>${branches}</div>`:""}</div>`;
 }
 function renderLawNavigator(id,ids,l,base,recentSet){
  const input=$("lawArticleJump"), options=$("lawArticleOptions"), status=$("lawJumpStatus"), rail=$("lawChapterRail"), chain=$("lawRelationChain"), quickList=$("lawQuickChapterList"), quickMeta=$("lawQuickSheetMeta");
@@ -5558,6 +5634,7 @@ function renderLawNavigator(id,ids,l,base,recentSet){
  rail.innerHTML=chapterMarkup;
  if(quickMeta)quickMeta.textContent=l?.name||"目前法規";
  if(quickList)quickList.innerHTML=chapters.length?chapters.map(c=>`<button class="law-chapter-chip ${chapterTypeClass(c.type)}" type="button" onclick="scrollToLawChapter('${id}','${c.article}')" title="跳到第${esc(c.article)}條"><span>${esc(c.label)}</span><small>§ ${esc(c.article)}</small></button>`).join(""):`<span class="meta">等待章節資料</span>`;
+ renderLawReadingShortcuts(id,ids);
 }
 function jumpToStudyArticle(){
  const lid=$("lawFilter")?.value||"", input=$("lawArticleJump"), status=$("lawJumpStatus");
@@ -5617,22 +5694,35 @@ function mnemonicNumberFragments(text=""){
  const rows=String(text).replace(/\s+/g," ").match(/(?:不得逾|至遲|每|於|滿|未滿|逾|新臺幣)?(?:\d+|[零〇一二三四五六七八九十百千萬]+)(?:日內|小時內|年內|日|小時|年|月|萬元|元|人|次|倍|歲)(?:以下|以上|前|後)?/g)||[];
  return [...new Set(rows.map(x=>cleanText(x)))].slice(0,3);
 }
+function mnemonicNumberList(value){
+ if(Array.isArray(value))return value.map(cleanText).filter(Boolean);
+ return String(value||"").split(/[；;、,\n]+/).map(cleanText).filter(Boolean);
+}
+function getMnemonicEdits(){return readLocalObject(MNEMONIC_EDIT_KEY,{});}
+function getMnemonicEdit(key){const edit=getMnemonicEdits()[key];return edit&&typeof edit==="object"?edit:null;}
+function putMnemonicEdit(key,value){const edits=getMnemonicEdits();if(value)edits[key]=value;else delete edits[key];writeLocalObject(MNEMONIC_EDIT_KEY,edits);}
+function applyMnemonicEdit(key,base){
+ const edit=getMnemonicEdit(key);if(!edit)return base;
+ const merged={...base,...edit,kind:"personal",status:edit.approved?"人工核准":"我的整理",source:"本機個人整理",note:edit.approved?"這是你核准的個人口訣；正式作答仍以現行法全文為準。":"這是你編輯中的個人口訣；可繼續修改或核准。"};
+ merged.text=cleanText(merged.chant||merged.text||"");merged.chant=merged.text;
+ return merged;
+}
 function articleMnemonicInfo(lid,article,text=""){
  const key=`${lid}:${article}`,detail=DETAILS?.[key],prebuilt=ARTICLE_MNEMONICS?.[key],sourceText=cleanText(text||ARTICLE_TEXTS?.[key]?.text||detail?.current||"");
- if(prebuilt)return {...prebuilt,text:cleanText(prebuilt.chant||prebuilt.text||""),chant:cleanText(prebuilt.chant||prebuilt.text||"")};
+ if(prebuilt)return applyMnemonicEdit(key,{...prebuilt,text:cleanText(prebuilt.chant||prebuilt.text||""),chant:cleanText(prebuilt.chant||prebuilt.text||"")});
  const usefulMemory=detail?.memory&&!/(尚未人工編寫|自動同步資料|尚待人工整理)/.test(detail.memory);
  if(usefulMemory){
    const clauses=sourceText.split(/[。！？；]/).map(cleanText).filter(Boolean),lead=clauses[0]||sourceText;
-   return {text:cleanText(detail.memory).slice(0,300),chant:cleanText(detail.memory).slice(0,300),focus:lead.slice(0,100),order:clauses.slice(0,4).join(" → "),numbers:mnemonicNumberFragments(sourceText),exception:clauses.filter(x=>/(但|除|不在此限|不得)/.test(x)).slice(0,2).join("；"),examCue:detail.exam?.[0]||"先遮住條文，依理解順序回想後再核對原文。",recall:`遮住現行條文，先說出「${cleanText(detail.memory).slice(0,70)}」再核對原文。`,source:"LexCore人工整理",status:"人工整理",kind:"curated",note:"已整理成主軸與理解順序；仍建議搭配下方現行全文核對。"};
+   return applyMnemonicEdit(key,{text:cleanText(detail.memory).slice(0,300),chant:cleanText(detail.memory).slice(0,300),focus:lead.slice(0,100),order:clauses.slice(0,4).join(" → "),numbers:mnemonicNumberFragments(sourceText),exception:clauses.filter(x=>/(但|除|不在此限|不得)/.test(x)).slice(0,2).join("；"),examCue:detail.exam?.[0]||"先遮住條文，依理解順序回想後再核對原文。",recall:`遮住現行條文，先說出「${cleanText(detail.memory).slice(0,70)}」再核對原文。`,source:"LexCore人工整理",status:"人工整理",kind:"curated",note:"已整理成主軸與理解順序；仍建議搭配下方現行全文核對。"});
  }
  if(!sourceText){
-   return {text:"等待現行全文同步後產生結構化記憶卡。",chant:"等待現行全文同步後產生結構化記憶卡。",source:"尚無現行全文",status:"待同步",kind:"pending",note:"官方全文尚未進入目前離線快照，資料同步後會自動補上。"};
+   return applyMnemonicEdit(key,{text:"等待現行全文同步後產生結構化記憶卡。",chant:"等待現行全文同步後產生結構化記憶卡。",source:"尚無現行全文",status:"待同步",kind:"pending",note:"官方全文尚未進入目前離線快照，資料同步後會自動補上。"});
  }
  const clauses=sourceText.split(/[。！？；]/).map(cleanText).filter(Boolean),lead=clauses[0]||sourceText,hits=ARTICLE_MNEMONIC_KEYWORDS.filter(x=>sourceText.includes(x)).slice(0,4),numbers=mnemonicNumberFragments(sourceText).slice(0,3),order=clauses.slice(0,4).join(" → "),mnemonic=`主軸：${lead.slice(0,72)}${lead.length>72?"…":""}`;
- return {text:mnemonic,chant:mnemonic,focus:lead.slice(0,100),order,numbers,exception:clauses.filter(x=>/(但|除|不在此限|不得)/.test(x)).slice(0,2).join("；"),examCue:hits.length?`條文訊號：${hits.join("・")}`:"先遮住條文，依理解順序回想後再核對原文。",recall:`遮住現行條文，先說出「${mnemonic.slice(0,70)}」再依序回想。`,source:"現行全文結構化擷取",status:"結構化草稿",kind:"auto",note:"已拆出主軸、理解順序、數字與例外；這是可修訂的結構化草稿，正式作答以現行條文為準。"};
+ return applyMnemonicEdit(key,{text:mnemonic,chant:mnemonic,focus:lead.slice(0,100),order,numbers,exception:clauses.filter(x=>/(但|除|不在此限|不得)/.test(x)).slice(0,2).join("；"),examCue:hits.length?`條文訊號：${hits.join("・")}`:"先遮住條文，依理解順序回想後再核對原文。",recall:`遮住現行條文，先說出「${mnemonic.slice(0,70)}」再依序回想。`,source:"現行全文結構化擷取",status:"結構化草稿",kind:"auto",note:"已拆出主軸、理解順序、數字與例外；這是可修訂的結構化草稿，正式作答以現行條文為準。"});
 }
 function articleMnemonicMarkup(lid,article,text="",options={}){
- const info=articleMnemonicInfo(lid,article,text),kind=info.kind||"auto",badgeClass=kind==="curated"?"green":kind==="pending"?"":"amber",numbers=(info.numbers||[]).join("；");
+ const info=articleMnemonicInfo(lid,article,text),kind=info.kind||"auto",badgeClass=kind==="curated"||kind==="personal"?"green":kind==="pending"?"":"amber",numbers=mnemonicNumberList(info.numbers).join("；"),label=kind==="personal"?"🧠 我的整理卡":"🧠 結構化記憶卡";
  const detailRows=[
    ["先理解",info.focus],
    ["理解順序",info.order],
@@ -5641,7 +5731,7 @@ function articleMnemonicMarkup(lid,article,text="",options={}){
    ["自測提示",info.recall],
    ["考試警鈴",info.examCue]
  ].filter(([,value])=>value);
- return `<div class="article-mnemonic ${kind}" aria-label="第${esc(article)}條結構化記憶卡"><div class="article-mnemonic-head"><span class="article-mnemonic-label">🧠 結構化記憶卡</span><span class="badge ${badgeClass}">${esc(info.status||"")}</span></div><div class="article-mnemonic-main">${esc(info.chant||info.text||"")}</div>${detailRows.length?`<details class="article-mnemonic-details" ${options.expanded?"open":""}><summary>展開理解順序、例外與考點</summary><div class="article-mnemonic-grid">${detailRows.map(([label,value])=>`<div class="article-mnemonic-row"><b>${esc(label)}</b><span>${esc(value)}</span></div>`).join("")}</div></details>`:""}<div class="article-mnemonic-note">${esc(info.note||"")}｜來源：${esc(info.source||"")}</div></div>`;
+ return `<div class="article-mnemonic ${kind}" aria-label="第${esc(article)}條結構化記憶卡"><div class="article-mnemonic-head"><span class="article-mnemonic-label">${label}</span><span class="badge ${badgeClass}">${esc(info.status||"")}</span></div><div class="article-mnemonic-main">${esc(info.chant||info.text||"")}</div>${detailRows.length?`<details class="article-mnemonic-details" ${options.expanded?"open":""}><summary>展開理解順序、例外與考點</summary><div class="article-mnemonic-grid">${detailRows.map(([label,value])=>`<div class="article-mnemonic-row"><b>${esc(label)}</b><span>${esc(value)}</span></div>`).join("")}</div></details>`:""}<div class="article-mnemonic-note">${esc(info.note||"")}｜來源：${esc(info.source||"")} <button class="chip" type="button" onclick="openMnemonicEditor('${lid}','${article}')">編輯</button></div></div>`;
 }
 function cplFrequencyViewData(){
  const views=CPL_ISSUE_FREQUENCY?.views||{};
@@ -5703,6 +5793,38 @@ function renderCplFrequencyArticleBadges(){
    if(tags&&markup&&!tags.querySelector(".cpl-frequency-article-badge"))tags.insertAdjacentHTML("afterbegin",markup);
  }
 }
+function hydrateLawArticleExtras(article){
+ if(!article||article.dataset.extrasReady==="1")return;
+ const extras=article.querySelector(".law-reader-extras");
+ if(!extras)return;
+ const lid=article.dataset.lawId||"",a=article.dataset.article||"",key=`${lid}:${a}`;
+ const textNode=article.querySelector(".law-reader-text[data-lazy-text]");
+ const text=ARTICLE_TEXTS?.[key]?.text||textNode?.textContent||article.querySelector(".law-reader-text")?.textContent||"";
+ if(textNode){textNode.innerHTML=lawReaderTextMarkup(text);textNode.removeAttribute("data-lazy-text");}
+ extras.innerHTML=sixLawsReferenceMarkup(lid,a)+articleMnemonicMarkup(lid,a,text);
+ extras.classList.add("is-loaded");article.dataset.extrasReady="1";
+}
+function setupLawArticleExtras(){
+ const nodes=[...document.querySelectorAll("#studyBody .law-reader-article[data-lazy-extras]")];
+ if(LAW_EXTRAS_OBSERVER)LAW_EXTRAS_OBSERVER.disconnect();
+ if(!nodes.length)return;
+ if(!("IntersectionObserver" in window)){nodes.forEach(hydrateLawArticleExtras);return;}
+ LAW_EXTRAS_OBSERVER=new IntersectionObserver(entries=>{
+   for(const entry of entries)if(entry.isIntersecting){hydrateLawArticleExtras(entry.target);LAW_EXTRAS_OBSERVER?.unobserve(entry.target);}
+ },{rootMargin:"700px 0px"});
+ nodes.forEach(node=>LAW_EXTRAS_OBSERVER.observe(node));
+}
+function setupLawReadingPositionObserver(){
+ const nodes=[...document.querySelectorAll("#studyBody .law-reader-article[data-law-id]")],lid=$("lawFilter")?.value||"";
+ if(LAW_READING_POSITION_OBSERVER)LAW_READING_POSITION_OBSERVER.disconnect();
+ if(!nodes.length||!("IntersectionObserver" in window))return;
+ LAW_READING_POSITION_OBSERVER=new IntersectionObserver(entries=>{
+   const visible=entries.filter(entry=>entry.isIntersecting).sort((a,b)=>a.boundingClientRect.top-b.boundingClientRect.top);
+   const node=visible[0]?.target;
+   if(node?.dataset.article)saveLawReadingPosition(lid,node.dataset.article);
+ },{rootMargin:"-18% 0px -68% 0px",threshold:0});
+ nodes.forEach(node=>LAW_READING_POSITION_OBSERVER.observe(node));
+}
 function fullLawReaderMarkup(lid,records,ids,recentSet,coreSet){
  const starts=new Map();
  for(const chapter of lawChaptersForLaw(lid,ids)){
@@ -5712,9 +5834,10 @@ function fullLawReaderMarkup(lid,records,ids,recentSet,coreSet){
  return `<div class="law-reader" aria-label="${esc(lawInfo(lid).name)}現行全文">${records.map(r=>{
    const article=String(r.article), detail=DETAILS?.[`${lid}:${article}`],sixInfo=sixLawsArticleInfo(lid,article);
    const headings=(starts.get(article)||[]).map(c=>`<div class="law-reader-section ${chapterTypeClass(c.type)}"><b>${esc(c.label)}</b><span>自第 ${esc(article)} 條</span></div>`).join("");
-   const tags=[recentSet.has(article)?`<span class="badge red">近5年修法</span>`:"",coreSet.has(article)?`<span class="badge amber">核心必讀</span>`:"",sixInfo?.judgmentCount?`<span class="badge blue">判解 ${sixInfo.judgmentCount}</span>`:"",detail?`<button class="chip" type="button" onclick="openArticle('${lid}','${article}')">修法重點</button>`:""].join("");
+   const favorite=isLawArticleFavorite(lid,article),favoriteId=`${studyArticleDomId(lid,article)}-favorite`;
+   const tags=[recentSet.has(article)?`<span class="badge red">近5年修法</span>`:"",coreSet.has(article)?`<span class="badge amber">核心必讀</span>`:"",sixInfo?.judgmentCount?`<span class="badge blue">判解 ${sixInfo.judgmentCount}</span>`:"",detail?`<button class="chip" type="button" onclick="openArticle('${lid}','${article}')">修法重點</button>`:"",`<button class="chip law-favorite-btn ${favorite?"active":""}" id="${favoriteId}" type="button" aria-pressed="${favorite}" onclick="toggleLawArticleFavorite('${lid}','${article}')">${favorite?"★ 已收藏":"☆ 收藏"}</button>`].join("");
    const titleMarkup=sixInfo?.title?`<span class="law-article-title">（${esc(sixInfo.title)}）</span>`:"";
-   return `${headings}<article class="law-reader-article" id="${studyArticleDomId(lid,article)}" tabindex="-1"><div class="law-reader-article-head"><h3>第 ${esc(article)} 條 ${titleMarkup}</h3><div class="law-reader-article-tags">${tags}</div></div><div class="law-reader-text">${esc(r.text||"")}</div>${sixLawsReferenceMarkup(lid,article)}${articleMnemonicMarkup(lid,article,r.text||"")}</article>`;
+   return `${headings}<article class="law-reader-article" id="${studyArticleDomId(lid,article)}" data-law-id="${esc(lid)}" data-article="${esc(article)}" data-lazy-extras="1" tabindex="-1"><div class="law-reader-article-head"><h3>第 ${esc(article)} 條 ${titleMarkup}</h3><div class="law-reader-article-tags">${tags}</div></div><div class="law-reader-text" data-lazy-text="1">${esc(r.text||"")}</div><div class="law-reader-extras"><div class="law-reader-extras-placeholder">滑到這裡載入判解索引與記憶卡</div></div></article>`;
  }).join("")}</div>`;
 }
 function renderFullStudy(){
@@ -5744,7 +5867,8 @@ function renderFullStudy(){
    out+=matches.length?`<div class="block"><div class="row"><h3>全文搜尋結果</h3><span class="badge blue">${matches.length} 條</span></div>${fullLawReaderMarkup(id,matches,ids,recentSet,coreSet)}</div>`:`<div class="empty"><b>全文中沒有找到「${esc(q)}」</b><p>如果目前是單檔離線快照，完整全文要等 GitHub Actions 同步後才會出現。</p></div>`;
  }
  $("studyBody").innerHTML=out;
- renderLawReaderParagraphs();
+ setupLawArticleExtras();
+ setupLawReadingPositionObserver();
  if(id==="cpl"&&!q)renderCplFrequencyArticleBadges();
  syncLawFloatingTools();
 }
@@ -5936,13 +6060,14 @@ async function getMnemonicCards(){
    const noteRec=await idbGetNote(q?.id||`concept:${x.key}`);
    const personal=(noteRec.entries||[]).filter(n=>["口訣／一句話","易錯提醒","補充觀念"].includes(n.type)).slice(-2);
    const auto=articleMnemonicInfo(x.lawId,x.article,ARTICLE_TEXTS[x.key]?.text||"");
-   let main=personal.at(-1)?.text||d.memory||em.why||q?.explanation||auto.text||"";
+   const edit=getMnemonicEdit(x.key);
+   let main=edit?.chant||personal.at(-1)?.text||d.memory||em.why||q?.explanation||auto.text||"";
    if(!main){
      const t=ARTICLE_TEXTS[x.key]?.text||"",nums=numberHighlights(t);
      main=nums.length?nums.join("；"):cleanText(t).slice(0,120);
    }
    if(!main)continue;
-   cards.push({key:x.key,label:x.label,main:cleanText(main).slice(0,260),order:cleanText(auto.order||"").slice(0,260),numbers:(auto.numbers||[]).join("；"),exception:cleanText(auto.exception||"").slice(0,220),examCue:cleanText(em.trap||auto.examCue||"").slice(0,240),mastery:x.mastery,priority:x.priority,source:personal.length?"我的個人筆記":d.memory?"LexCore人工記憶句":em.why?"LexCore考點整理":auto.source});
+   cards.push({key:x.key,lawId:x.lawId,article:x.article,label:x.label,main:cleanText(main).slice(0,260),order:cleanText(edit?.order||auto.order||"").slice(0,260),numbers:cleanText(edit?.numbers||(auto.numbers||[]).join("；")).slice(0,160),exception:cleanText(edit?.exception||auto.exception||"").slice(0,220),examCue:cleanText(edit?.examCue||em.trap||auto.examCue||"").slice(0,240),mastery:x.mastery,priority:x.priority,status:edit?(edit.approved?"人工核准":"我的整理"):auto.status,kind:edit?"personal":auto.kind,source:edit?"本機個人整理":personal.length?"我的個人筆記":d.memory?"LexCore人工記憶句":em.why?"LexCore考點整理":auto.source});
  }
  MNEMONIC_CACHE=cards;return cards;
 }
@@ -5950,10 +6075,64 @@ async function renderMnemonics(){
  if(!$("mnemonicGrid"))return;
  $("mnemonicGrid").innerHTML='<div class="meta">整理你的錯題與筆記中…</div>';
  const all=allArticleRecords(),curated=all.filter(r=>DETAILS?.[`${r.lawId}:${r.article}`]?.memory).length;
- if($("mnemonicCoverage"))$("mnemonicCoverage").innerHTML=all.length?`目前 ${all.length} 條現行全文都有口訣入口：<b>${curated} 條人工整理</b>，其餘由現行全文產生自動草稿；點法條卡上的「🧠 記憶口訣」即可查看。`:`目前尚未同步完整現行全文；同步完成後會自動建立每條法規的口訣草稿。`;
+ const edits=Object.values(getMnemonicEdits()),approved=edits.filter(x=>x?.approved).length;
+ if($("mnemonicCoverage"))$("mnemonicCoverage").innerHTML=all.length?`目前 ${all.length} 條現行全文都有口訣入口：<b>${curated} 條人工整理</b>，本機已編輯 ${edits.length} 條、已核准 ${approved} 條；其餘由現行全文產生結構化草稿。`:`目前尚未同步完整現行全文；同步完成後會自動建立每條法規的口訣草稿。`;
  const cards=await getMnemonicCards();
- $("mnemonicGrid").innerHTML=cards.length?cards.slice(0,20).map(x=>`<div class="mnemonic-card"><div class="row"><h3>${x.label}</h3><span class="badge ${x.mastery<50?"red":x.mastery<70?"amber":"green"}">${x.mastery}</span></div><div class="mnemonic-main">${esc(x.main)}</div>${x.order?`<div class="mnemonic-structure"><b>理解順序</b><span>${esc(x.order)}</span></div>`:""}${x.numbers?`<div class="mnemonic-structure"><b>必背數字</b><span>${esc(x.numbers)}</span></div>`:""}${x.exception?`<div class="mnemonic-structure"><b>例外／限制</b><span>${esc(x.exception)}</span></div>`:""}${x.examCue?`<div class="trap" style="margin-top:8px">⚠ ${esc(x.examCue)}</div>`:""}<div class="mnemonic-source">${esc(x.source)}</div><div class="actions"><button class="chip" onclick="openConceptKey('${x.key}')">看法條</button></div></div>`).join(""):'<div class="empty"><b>目前還沒有足夠錯題／筆記可整理</b><p>累積作答與個人筆記後，這裡會自動變成你的考前速記包。</p></div>';
+ $("mnemonicGrid").innerHTML=cards.length?cards.slice(0,20).map(x=>`<div class="mnemonic-card"><div class="row"><div><h3>${x.label}</h3><span class="mnemonic-status">${esc(x.status||"")}</span></div><span class="badge ${x.mastery<50?"red":x.mastery<70?"amber":"green"}">${x.mastery}</span></div><div class="mnemonic-main">${esc(x.main)}</div>${x.order?`<div class="mnemonic-structure"><b>理解順序</b><span>${esc(x.order)}</span></div>`:""}${x.numbers?`<div class="mnemonic-structure"><b>必背數字</b><span>${esc(x.numbers)}</span></div>`:""}${x.exception?`<div class="mnemonic-structure"><b>例外／限制</b><span>${esc(x.exception)}</span></div>`:""}${x.examCue?`<div class="trap" style="margin-top:8px">⚠ ${esc(x.examCue)}</div>`:""}<div class="mnemonic-source">${esc(x.source)}</div><div class="actions"><button class="chip" onclick="openConceptKey('${x.key}')">看法條</button><button class="chip" onclick="openMnemonicEditor('${x.lawId}','${x.article}')">編輯</button><button class="chip ready" onclick="startFlashcards('all','${x.key}')">字卡</button></div></div>`).join(""):'<div class="empty"><b>目前還沒有足夠錯題／筆記可整理</b><p>累積作答與個人筆記後，這裡會自動變成你的考前速記包。</p></div>';
 }
+function openMnemonicEditor(lid,article){
+ const key=`${lid}:${article}`,info=articleMnemonicInfo(lid,article,ARTICLE_TEXTS?.[key]?.text||""),edit=getMnemonicEdit(key)||{};
+ MNEMONIC_EDITOR_KEY=key;
+ $("modalTitle").textContent=`整理${lawName(lid)} 第${article}條口訣`;
+ $("modalMeta").textContent="只儲存在這個瀏覽器；不會覆蓋官方現行全文。";
+ $("detail").innerHTML=`<div class="notice"><strong>整理原則：</strong>口訣要能讓你回想「主軸、要件順序、數字或例外」。如果只是把整段條文縮短，建議重新拆成順序或對比。</div><div class="mnemonic-editor"><label>記憶主句／口訣<textarea id="mnemonicEditChant" rows="3">${esc(edit.chant||info.chant||info.text||"")}</textarea></label><label>先理解<textarea id="mnemonicEditFocus" rows="2">${esc(edit.focus||info.focus||"")}</textarea></label><label>理解順序<textarea id="mnemonicEditOrder" rows="2" placeholder="例：一身分資料 → 二案由 → 三到場時間地點 → 四不到場→拘提">${esc(edit.order||info.order||"")}</textarea></label><label>必背數字<textarea id="mnemonicEditNumbers" rows="2">${esc(edit.numbers||(info.numbers||[]).join("；"))}</textarea></label><label>例外／限制<textarea id="mnemonicEditException" rows="2">${esc(edit.exception||info.exception||"")}</textarea></label><label>考試提醒<textarea id="mnemonicEditExamCue" rows="2">${esc(edit.examCue||info.examCue||"")}</textarea></label><label class="mnemonic-editor-check"><input id="mnemonicEditApproved" type="checkbox" ${edit.approved?"checked":""}> 我已核對現行條文，將這張卡標記為「人工核准」</label><div class="actions"><button class="btn" type="button" onclick="resetMnemonicEditor()">清除本機整理</button><button class="btn primary" type="button" onclick="saveMnemonicEditor()">儲存口訣</button></div></div>`;
+ $("modal").classList.add("show");
+}
+function saveMnemonicEditor(){
+ const key=MNEMONIC_EDITOR_KEY;if(!key)return;
+ const previous=getMnemonicEdit(key)||{},value={...previous,chant:$("mnemonicEditChant")?.value.trim()||"",focus:$("mnemonicEditFocus")?.value.trim()||"",order:$("mnemonicEditOrder")?.value.trim()||"",numbers:$("mnemonicEditNumbers")?.value.trim()||"",exception:$("mnemonicEditException")?.value.trim()||"",examCue:$("mnemonicEditExamCue")?.value.trim()||"",approved:!!$("mnemonicEditApproved")?.checked,updatedAt:new Date().toISOString()};
+ if(!value.chant){alert("請至少輸入一則可回想的記憶主句。留白不會儲存。");return;}
+ putMnemonicEdit(key,value);MNEMONIC_EDITOR_KEY="";$("modal").classList.remove("show");refreshMnemonicArticle(key);renderMnemonics();
+}
+function resetMnemonicEditor(){
+ const key=MNEMONIC_EDITOR_KEY;if(!key)return;
+ if(!confirm("清除這條法條的本機口訣整理，恢復系統草稿／人工卡？"))return;
+ putMnemonicEdit(key,null);MNEMONIC_EDITOR_KEY="";$("modal").classList.remove("show");refreshMnemonicArticle(key);renderMnemonics();
+}
+function refreshMnemonicArticle(key){
+ const [lid,article]=String(key).split(":");
+ const node=document.getElementById(studyArticleDomId(lid,article));
+ if(node){node.dataset.extrasReady="";const extras=node.querySelector(".law-reader-extras");if(extras){extras.classList.remove("is-loaded");extras.innerHTML='<div class="law-reader-extras-placeholder">更新記憶卡中…</div>';hydrateLawArticleExtras(node);}}
+}
+function getFlashcardState(){return readLocalObject(FLASHCARD_STATE_KEY,{});}
+function putFlashcardState(value){writeLocalObject(FLASHCARD_STATE_KEY,value);}
+async function startFlashcards(mode="due",preferredKey=""){
+ const cards=await getMnemonicCards(),state=getFlashcardState(),now=Date.now();
+ if(!cards.length){alert("目前沒有可用的口訣卡；請先同步法條或累積考點資料。");return;}
+ let deck=mode==="all"?cards:cards.filter(card=>!state[card.key]?.dueAt||Number(state[card.key].dueAt)<=now);
+ if(!deck.length)deck=cards.slice(0,10);
+ if(preferredKey){const preferred=deck.find(card=>card.key===preferredKey)||cards.find(card=>card.key===preferredKey);if(preferred)deck=[preferred,...deck.filter(card=>card.key!==preferred.key)];}
+ FLASHCARD_SESSION={deck:deck.slice(0,20),index:0,flipped:false,mode};
+ showPage("fieldtools");setFieldTool("mnemonic");renderFlashcard();
+ window.setTimeout(()=>$('flashcardArea')?.scrollIntoView({behavior:"smooth",block:"start"}),80);
+}
+function renderFlashcard(){
+ const area=$("flashcardArea"),session=FLASHCARD_SESSION;if(!area)return;
+ if(!session){area.hidden=true;area.innerHTML="";return;}
+ area.hidden=false;
+ const card=session.deck[session.index];
+ if(!card){area.innerHTML='<div class="flashcard-card"><b>本組字卡完成</b><div class="actions"><button class="btn primary" type="button" onclick="closeFlashcards()">結束字卡</button></div></div>';return;}
+ const info=articleMnemonicInfo(card.lawId,card.article,ARTICLE_TEXTS?.[card.key]?.text||""),state=getFlashcardState()[card.key]||{},progress=`${session.index+1}／${session.deck.length}`;
+ const body=session.flipped?`<div class="flashcard-answer"><div class="mnemonic-structure"><b>記憶主句</b><span>${esc(info.chant||card.main)}</span></div>${(info.order||card.order)?`<div class="mnemonic-structure"><b>理解順序</b><span>${esc(info.order||card.order)}</span></div>`:""}${(info.numbers||card.numbers)?.length?`<div class="mnemonic-structure"><b>必背數字</b><span>${esc((info.numbers||[]).join?info.numbers.join("；"):info.numbers||card.numbers)}</span></div>`:""}${(info.exception||card.exception)?`<div class="mnemonic-structure"><b>例外／限制</b><span>${esc(info.exception||card.exception)}</span></div>`:""}</div><div class="flashcard-actions"><button class="btn" type="button" onclick="rateFlashcard('again')">不熟，稍後再來</button><button class="btn primary" type="button" onclick="rateFlashcard('known')">記住了</button><button class="chip" type="button" onclick="openConceptKey('${card.key}')">看法條</button><button class="chip" type="button" onclick="openMnemonicEditor('${card.lawId}','${card.article}')">編輯</button></div>`:`<div class="flashcard-prompt">請先說出<br>「${esc(lawName(card.lawId))}第${esc(card.article)}條的主軸、順序與例外」</div><div class="flashcard-actions"><button class="btn primary" type="button" onclick="flipFlashcard()">翻面核對</button><button class="chip" type="button" onclick="closeFlashcards()">暫停</button></div>`;
+ area.innerHTML=`<div class="flashcard-card ${session.flipped?"back":""}"><div class="flashcard-head"><div><div class="flashcard-kicker">🧠 ${esc(card.label)}</div><div class="meta">${esc(card.status||"結構化草稿")}｜上次 ${state.lastAt?new Date(state.lastAt).toLocaleDateString("zh-TW"):"尚未複習"}</div></div><span class="flashcard-progress">${progress}</span></div>${body}</div>`;
+}
+function flipFlashcard(){if(!FLASHCARD_SESSION)return;FLASHCARD_SESSION.flipped=true;renderFlashcard();}
+function rateFlashcard(rating){
+ const session=FLASHCARD_SESSION;if(!session)return;const card=session.deck[session.index],state=getFlashcardState(),previous=state[card.key]||{},known=rating==="known",box=known?Math.min(5,Number(previous.box||0)+1):0,delays=known?[1,3,7,14,30]:[10/1440,1],delay=delays[Math.min(box,delays.length-1)];
+ state[card.key]={box,dueAt:Date.now()+delay*86400000,seen:Number(previous.seen||0)+1,lastAt:new Date().toISOString(),lastRating:rating};putFlashcardState(state);
+ session.index+=1;session.flipped=false;renderFlashcard();
+}
+function closeFlashcards(){FLASHCARD_SESSION=null;renderFlashcard();}
 function openConceptKey(key){const [l,a]=key.split(":");openArticle(l,a)}
 async function speakMnemonicPack(){showPage("fieldtools");setFieldTool("voice");$("voiceMode").value="mnemonic";startVoiceMode()}
 
@@ -6015,6 +6194,7 @@ function setupV26Tools(){
  if($("homeLookupInput"))$("homeLookupInput").addEventListener("keydown",e=>{if(e.key==="Enter")homeQuickLookup()});
  if($("fragmentStart"))$("fragmentStart").onclick=startFragmentTraining;
  if($("finalStart"))$("finalStart").onclick=startFinalReview;
+ if($("startFlashcards"))$("startFlashcards").onclick=()=>startFlashcards($("flashcardMode")?.value||"due");
  renderFragmentPlan();renderScenarios();renderFinalReview();renderMnemonics();
 }
 
@@ -7563,6 +7743,7 @@ async function loadRuntime(){
       SIXLAWS_INDEX=rt.frontend.sixLaws||SIXLAWS_INDEX;
       LAW_CATALOG=rt.frontend.lawCatalog||LAW_CATALOG;
       CPL_ISSUE_FREQUENCY=rt.frontend.issueFrequency||CPL_ISSUE_FREQUENCY;
+      ARTICLE_RECORD_CACHE=null;
       fillFilter();fillAmendLaw();fillTreeParent();renderTabs();renderAllAmendments();renderLawTree();renderStudy();renderReasons();renderExam();renderCourt();renderSync();renderQuickLookup();renderFragmentPlan();renderFinalReview();renderCalendarAll();renderV3Pages();
     }
   }catch(e){
