@@ -3239,7 +3239,7 @@ load();
     <h2>LexCore 更新紀錄</h2>
     <p>版本變更、重大修正與新功能統一收在這裡。其他頁面不再顯示版本更新說明，避免干擾讀書與作答。</p>
    </div>
-   <span class="badge blue">目前 v3.1.19</span>
+   <span class="badge blue">目前 v3.1.20</span>
   </div>
 
   <div class="changelog-filter">
@@ -3252,6 +3252,19 @@ load();
   </div>
 
    <div class="changelog-list" id="changelogList">
+
+   <details class="release-card" data-release-tags="study ui" open>
+    <summary>
+     <div class="release-version">v3.1.20</div>
+     <div><div class="release-title">口訣可背性修正</div><div class="release-meta">語意標籤・順序回想・編號條文解析</div></div>
+     <span class="release-tag">學習引擎</span>
+    </summary>
+    <div class="release-body"><ul>
+     <li>修正口訣顯示 <code>[object Object]</code> 的資料格式錯誤。</li>
+     <li>編號款次改成可回想的語意順序，例如「身分資料→案由→到場時間地點→不到場→拘提」。</li>
+     <li>修正最後一款誤吃後續段落的解析問題，並加入防回歸測試。</li>
+    </ul></div>
+   </details>
 
    <details class="release-card" data-release-tags="study data" open>
     <summary>

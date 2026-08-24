@@ -44,7 +44,7 @@ function extractNumberFragments(text=""){
 
 function extractNumberedItems(text=""){
   const rows=[];
-  const re=/(?:^|[。；\n])\s*([一二三四五六七八九十百千]+)、\s*(.*?)(?=(?:[。；\n]\s*[一二三四五六七八九十百千]+、)|$)/gs;
+  const re=/(?:^|[。；\n])\s*([一二三四五六七八九十百千]+)、\s*(.*?)(?=(?:[。；\n]\s*[一二三四五六七八九十百千]+、)|(?:[。；]\s*\n\s*(?=[^一二三四五六七八九十百千\s、]))|$)/gs;
   for(const match of compact(text).matchAll(re)){
     rows.push({number:match[1],text:oneLine(match[2]).replace(/[。；]+$/g,"")});
   }
@@ -52,7 +52,23 @@ function extractNumberedItems(text=""){
 }
 
 function itemLabel(value=""){
-  const text=oneLine(value);
+  const text=oneLine(value).replace(/^[一二三四五六七八九十百千]+、/g,"");
+  const labelRules=[
+    [/(無正當理由)?不到場.*拘提/,"不到場→拘提"],
+    [/(姓名|性別|出生年月日|身分證明|住、居所)/,"身分資料"],
+    [/案由/,"案由"],
+    [/(應到|到場).*(日|時|處所)/,"到場時間地點"],
+    [/(不到場|拘提)/,"不到場→拘提"],
+    [/(通知書|通知).*詢問/,"通知到場詢問"],
+    [/(檢察官|法官).*簽名|簽名/,"權責簽名"],
+    [/(期間|期限|日內|月內|年內)/,"期間"],
+    [/(不得|禁止)/,"禁止"],
+    [/(得|可以)/,"授權"],
+  ];
+  const direct=labelRules.slice(0,6).find(([pattern])=>pattern.test(text));
+  if(direct)return direct[1];
+  const ruleHits=labelRules.filter(([pattern])=>pattern.test(text)).map(([,label])=>label);
+  if(ruleHits.length)return unique(ruleHits).slice(0,2).join("／");
   const colon=text.search(/[：:]/);
   if(colon>0&&colon<=34)return shorten(text.slice(0,colon),24);
   const lead=text.split(/[，,；。]/)[0];
@@ -116,7 +132,7 @@ export function buildArticleMnemonic({key,record={},detail={},manual=null,freque
   const order=manual?.order||buildOrder(text,items);
   const focus=manual?.focus||shorten(firstLine(text),100);
   const defaultChant=items.length>=2
-    ?`${items.length}款順序：${items.slice(0,8).map(itemLabel).join("→")}${items.length>8?"→其餘各款":""}`
+    ?`${items.length}款順序：${items.slice(0,8).map(item=>`${item.number}${itemLabel(item.text)}`).join("→")}${items.length>8?"→其餘各款":""}`
     :`先抓主軸：${shorten(firstLine(text),72)}`;
   const chant=manual?.chant||((hasDetailMemory?oneLine(detail.memory):defaultChant));
   const frequencyCueText=frequencyCue(lawId,article,frequency);

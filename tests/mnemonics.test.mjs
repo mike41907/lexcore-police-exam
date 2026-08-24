@@ -29,6 +29,17 @@ test("automatic mnemonic generation exposes structure, numbers, exceptions and s
   assert.match(card.note,/結構化草稿/);
 });
 
+test("numbered legal items become readable mnemonic labels instead of object strings",()=>{
+  const card=buildArticleMnemonic({
+    key:"cpl:71",
+    record:{lawId:"cpl",lawName:"刑事訴訟法",article:"71",text:"傳喚被告，應用傳票：\n一、被告之姓名、性別、出生年月日、身分證明文件編號及住、居所。\n二、案由。\n三、應到之日、時、處所。\n四、無正當理由不到場者，得命拘提。\n被告之姓名不明時，得記載辨別特徵。"}
+  });
+  assert.doesNotMatch(card.chant,/\[object Object\]/);
+  assert.match(card.chant,/4款順序：一身分資料→二案由→三到場時間地點→四不到場→拘提/);
+  assert.match(card.order,/一、.*身分資料/);
+  assert.match(card.order,/四、不到場→拘提/);
+});
+
 test("catalog covers official records and does not label generated placeholder memory as curated",()=>{
   const catalog=buildMnemonicCatalog({
     "demo:1":{lawId:"demo",lawName:"測試法",article:"1",text:"本法為規範警察勤務。"},

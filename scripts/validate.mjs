@@ -15,5 +15,9 @@ for(const law of Object.values(rt.frontend.sixLaws?.laws||{})){
   if(law.matched&&!law.sourceUrl) errors.push(`6laws matched law missing source URL: ${law.lawId}`);
   if(law.matched&&Number(law.articleCount||0)<1) errors.push(`6laws matched law has no articles: ${law.lawId}`);
 }
+for(const [key,card] of Object.entries(rt.frontend.mnemonics||{})){
+  const serialized=JSON.stringify(card);
+  if(serialized.includes("[object Object]")) errors.push(`mnemonic contains object string: ${key}`);
+}
 if(errors.length){console.error(errors.join("\n"));process.exit(1);}
 console.log("validation ok");
