@@ -3727,7 +3727,7 @@ function openArticle(lid,a){
    const live=ARTICLE_TEXTS[lid+":"+a];
    if(live?.text){
      $("modalMeta").innerHTML=`官方同步現行條文 <span class="badge green">已抓到全文</span> <span class="badge amber">歷史對照／立法理由待配對</span>`;
-     $("detail").innerHTML=`<div class="memory">這條已由同步模組抓到官方現行全文；即使立法院新舊條文／理由尚未完成高信心配對，也不會讓條文消失。</div><div class="panel"><h3>現行條文</h3><div class="text">${esc(live.text)}</div></div>${articleCrossLinks(lid,a)}<div class="links"><a href="${live.url||articleUrl(l,a)}" target="_blank">官方第${a}條</a><a href="${l.source}" target="_blank">查看修法沿革</a></div>`;
+     $("detail").innerHTML=`<div class="panel"><h3>現行條文</h3><div class="text">${esc(live.text)}</div></div>${articleCrossLinks(lid,a)}<div class="links"><a href="${live.url||articleUrl(l,a)}" target="_blank">官方第${a}條</a><a href="${l.source}" target="_blank">查看修法沿革</a></div>`;
    }else{
      $("modalMeta").innerHTML=`修法條文 <span class="badge amber">尚待下一次同步全文</span>`;
      $("detail").innerHTML=`<div class="memory">這個條號已被修法索引抓到，所以一定保留在畫面上；目前離線快照尚未有全文。</div>${articleCrossLinks(lid,a)}<div class="links"><a href="${articleUrl(l,a)}" target="_blank">立刻開啟官方第${a}條</a><a href="${l.source}" target="_blank">查看完整沿革</a></div>`;
