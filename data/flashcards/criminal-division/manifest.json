@@ -1,0 +1,645 @@
+{
+  "formatVersion": "1.0",
+  "sourceFile": "criminal-division-memory-cards.pdf",
+  "sourceOriginalName": "刑法分則記憶字卡.pdf",
+  "sourceLabel": "使用者提供的刑法分則記憶字卡原版",
+  "importedAt": "2026-08-25",
+  "sourcePageCount": 112,
+  "cardCount": 104,
+  "skippedBlankPages": [
+    30,
+    45,
+    50,
+    55,
+    60,
+    79,
+    90,
+    94
+  ],
+  "cards": [
+    {
+      "id": "criminal-division-pdf-page-001",
+      "sourcePage": 1,
+      "image": "pages/all-001.png",
+      "label": "刑法分則原版字卡｜PDF第1頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-002",
+      "sourcePage": 2,
+      "image": "pages/all-002.png",
+      "label": "刑法分則原版字卡｜PDF第2頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-003",
+      "sourcePage": 3,
+      "image": "pages/all-003.png",
+      "label": "刑法分則原版字卡｜PDF第3頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-004",
+      "sourcePage": 4,
+      "image": "pages/all-004.png",
+      "label": "刑法分則原版字卡｜PDF第4頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-005",
+      "sourcePage": 5,
+      "image": "pages/all-005.png",
+      "label": "刑法分則原版字卡｜PDF第5頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-006",
+      "sourcePage": 6,
+      "image": "pages/all-006.png",
+      "label": "刑法分則原版字卡｜PDF第6頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-007",
+      "sourcePage": 7,
+      "image": "pages/all-007.png",
+      "label": "刑法分則原版字卡｜PDF第7頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-008",
+      "sourcePage": 8,
+      "image": "pages/all-008.png",
+      "label": "刑法分則原版字卡｜PDF第8頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-009",
+      "sourcePage": 9,
+      "image": "pages/all-009.png",
+      "label": "刑法分則原版字卡｜PDF第9頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-010",
+      "sourcePage": 10,
+      "image": "pages/all-010.png",
+      "label": "刑法分則原版字卡｜PDF第10頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-011",
+      "sourcePage": 11,
+      "image": "pages/all-011.png",
+      "label": "刑法分則原版字卡｜PDF第11頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-012",
+      "sourcePage": 12,
+      "image": "pages/all-012.png",
+      "label": "刑法分則原版字卡｜PDF第12頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-013",
+      "sourcePage": 13,
+      "image": "pages/all-013.png",
+      "label": "刑法分則原版字卡｜PDF第13頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-014",
+      "sourcePage": 14,
+      "image": "pages/all-014.png",
+      "label": "刑法分則原版字卡｜PDF第14頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-015",
+      "sourcePage": 15,
+      "image": "pages/all-015.png",
+      "label": "刑法分則原版字卡｜PDF第15頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-016",
+      "sourcePage": 16,
+      "image": "pages/all-016.png",
+      "label": "刑法分則原版字卡｜PDF第16頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-017",
+      "sourcePage": 17,
+      "image": "pages/all-017.png",
+      "label": "刑法分則原版字卡｜PDF第17頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-018",
+      "sourcePage": 18,
+      "image": "pages/all-018.png",
+      "label": "刑法分則原版字卡｜PDF第18頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-019",
+      "sourcePage": 19,
+      "image": "pages/all-019.png",
+      "label": "刑法分則原版字卡｜PDF第19頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-020",
+      "sourcePage": 20,
+      "image": "pages/all-020.png",
+      "label": "刑法分則原版字卡｜PDF第20頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-021",
+      "sourcePage": 21,
+      "image": "pages/all-021.png",
+      "label": "刑法分則原版字卡｜PDF第21頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-022",
+      "sourcePage": 22,
+      "image": "pages/all-022.png",
+      "label": "刑法分則原版字卡｜PDF第22頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-023",
+      "sourcePage": 23,
+      "image": "pages/all-023.png",
+      "label": "刑法分則原版字卡｜PDF第23頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-024",
+      "sourcePage": 24,
+      "image": "pages/all-024.png",
+      "label": "刑法分則原版字卡｜PDF第24頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-025",
+      "sourcePage": 25,
+      "image": "pages/all-025.png",
+      "label": "刑法分則原版字卡｜PDF第25頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-026",
+      "sourcePage": 26,
+      "image": "pages/all-026.png",
+      "label": "刑法分則原版字卡｜PDF第26頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-027",
+      "sourcePage": 27,
+      "image": "pages/all-027.png",
+      "label": "刑法分則原版字卡｜PDF第27頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-028",
+      "sourcePage": 28,
+      "image": "pages/all-028.png",
+      "label": "刑法分則原版字卡｜PDF第28頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-029",
+      "sourcePage": 29,
+      "image": "pages/all-029.png",
+      "label": "刑法分則原版字卡｜PDF第29頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-031",
+      "sourcePage": 31,
+      "image": "pages/all-031.png",
+      "label": "刑法分則原版字卡｜PDF第31頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-032",
+      "sourcePage": 32,
+      "image": "pages/all-032.png",
+      "label": "刑法分則原版字卡｜PDF第32頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-033",
+      "sourcePage": 33,
+      "image": "pages/all-033.png",
+      "label": "刑法分則原版字卡｜PDF第33頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-034",
+      "sourcePage": 34,
+      "image": "pages/all-034.png",
+      "label": "刑法分則原版字卡｜PDF第34頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-035",
+      "sourcePage": 35,
+      "image": "pages/all-035.png",
+      "label": "刑法分則原版字卡｜PDF第35頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-036",
+      "sourcePage": 36,
+      "image": "pages/all-036.png",
+      "label": "刑法分則原版字卡｜PDF第36頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-037",
+      "sourcePage": 37,
+      "image": "pages/all-037.png",
+      "label": "刑法分則原版字卡｜PDF第37頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-038",
+      "sourcePage": 38,
+      "image": "pages/all-038.png",
+      "label": "刑法分則原版字卡｜PDF第38頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-039",
+      "sourcePage": 39,
+      "image": "pages/all-039.png",
+      "label": "刑法分則原版字卡｜PDF第39頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-040",
+      "sourcePage": 40,
+      "image": "pages/all-040.png",
+      "label": "刑法分則原版字卡｜PDF第40頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-041",
+      "sourcePage": 41,
+      "image": "pages/all-041.png",
+      "label": "刑法分則原版字卡｜PDF第41頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-042",
+      "sourcePage": 42,
+      "image": "pages/all-042.png",
+      "label": "刑法分則原版字卡｜PDF第42頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-043",
+      "sourcePage": 43,
+      "image": "pages/all-043.png",
+      "label": "刑法分則原版字卡｜PDF第43頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-044",
+      "sourcePage": 44,
+      "image": "pages/all-044.png",
+      "label": "刑法分則原版字卡｜PDF第44頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-046",
+      "sourcePage": 46,
+      "image": "pages/all-046.png",
+      "label": "刑法分則原版字卡｜PDF第46頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-047",
+      "sourcePage": 47,
+      "image": "pages/all-047.png",
+      "label": "刑法分則原版字卡｜PDF第47頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-048",
+      "sourcePage": 48,
+      "image": "pages/all-048.png",
+      "label": "刑法分則原版字卡｜PDF第48頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-049",
+      "sourcePage": 49,
+      "image": "pages/all-049.png",
+      "label": "刑法分則原版字卡｜PDF第49頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-051",
+      "sourcePage": 51,
+      "image": "pages/all-051.png",
+      "label": "刑法分則原版字卡｜PDF第51頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-052",
+      "sourcePage": 52,
+      "image": "pages/all-052.png",
+      "label": "刑法分則原版字卡｜PDF第52頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-053",
+      "sourcePage": 53,
+      "image": "pages/all-053.png",
+      "label": "刑法分則原版字卡｜PDF第53頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-054",
+      "sourcePage": 54,
+      "image": "pages/all-054.png",
+      "label": "刑法分則原版字卡｜PDF第54頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-056",
+      "sourcePage": 56,
+      "image": "pages/all-056.png",
+      "label": "刑法分則原版字卡｜PDF第56頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-057",
+      "sourcePage": 57,
+      "image": "pages/all-057.png",
+      "label": "刑法分則原版字卡｜PDF第57頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-058",
+      "sourcePage": 58,
+      "image": "pages/all-058.png",
+      "label": "刑法分則原版字卡｜PDF第58頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-059",
+      "sourcePage": 59,
+      "image": "pages/all-059.png",
+      "label": "刑法分則原版字卡｜PDF第59頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-061",
+      "sourcePage": 61,
+      "image": "pages/all-061.png",
+      "label": "刑法分則原版字卡｜PDF第61頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-062",
+      "sourcePage": 62,
+      "image": "pages/all-062.png",
+      "label": "刑法分則原版字卡｜PDF第62頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-063",
+      "sourcePage": 63,
+      "image": "pages/all-063.png",
+      "label": "刑法分則原版字卡｜PDF第63頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-064",
+      "sourcePage": 64,
+      "image": "pages/all-064.png",
+      "label": "刑法分則原版字卡｜PDF第64頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-065",
+      "sourcePage": 65,
+      "image": "pages/all-065.png",
+      "label": "刑法分則原版字卡｜PDF第65頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-066",
+      "sourcePage": 66,
+      "image": "pages/all-066.png",
+      "label": "刑法分則原版字卡｜PDF第66頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-067",
+      "sourcePage": 67,
+      "image": "pages/all-067.png",
+      "label": "刑法分則原版字卡｜PDF第67頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-068",
+      "sourcePage": 68,
+      "image": "pages/all-068.png",
+      "label": "刑法分則原版字卡｜PDF第68頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-069",
+      "sourcePage": 69,
+      "image": "pages/all-069.png",
+      "label": "刑法分則原版字卡｜PDF第69頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-070",
+      "sourcePage": 70,
+      "image": "pages/all-070.png",
+      "label": "刑法分則原版字卡｜PDF第70頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-071",
+      "sourcePage": 71,
+      "image": "pages/all-071.png",
+      "label": "刑法分則原版字卡｜PDF第71頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-072",
+      "sourcePage": 72,
+      "image": "pages/all-072.png",
+      "label": "刑法分則原版字卡｜PDF第72頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-073",
+      "sourcePage": 73,
+      "image": "pages/all-073.png",
+      "label": "刑法分則原版字卡｜PDF第73頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-074",
+      "sourcePage": 74,
+      "image": "pages/all-074.png",
+      "label": "刑法分則原版字卡｜PDF第74頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-075",
+      "sourcePage": 75,
+      "image": "pages/all-075.png",
+      "label": "刑法分則原版字卡｜PDF第75頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-076",
+      "sourcePage": 76,
+      "image": "pages/all-076.png",
+      "label": "刑法分則原版字卡｜PDF第76頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-077",
+      "sourcePage": 77,
+      "image": "pages/all-077.png",
+      "label": "刑法分則原版字卡｜PDF第77頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-078",
+      "sourcePage": 78,
+      "image": "pages/all-078.png",
+      "label": "刑法分則原版字卡｜PDF第78頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-080",
+      "sourcePage": 80,
+      "image": "pages/all-080.png",
+      "label": "刑法分則原版字卡｜PDF第80頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-081",
+      "sourcePage": 81,
+      "image": "pages/all-081.png",
+      "label": "刑法分則原版字卡｜PDF第81頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-082",
+      "sourcePage": 82,
+      "image": "pages/all-082.png",
+      "label": "刑法分則原版字卡｜PDF第82頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-083",
+      "sourcePage": 83,
+      "image": "pages/all-083.png",
+      "label": "刑法分則原版字卡｜PDF第83頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-084",
+      "sourcePage": 84,
+      "image": "pages/all-084.png",
+      "label": "刑法分則原版字卡｜PDF第84頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-085",
+      "sourcePage": 85,
+      "image": "pages/all-085.png",
+      "label": "刑法分則原版字卡｜PDF第85頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-086",
+      "sourcePage": 86,
+      "image": "pages/all-086.png",
+      "label": "刑法分則原版字卡｜PDF第86頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-087",
+      "sourcePage": 87,
+      "image": "pages/all-087.png",
+      "label": "刑法分則原版字卡｜PDF第87頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-088",
+      "sourcePage": 88,
+      "image": "pages/all-088.png",
+      "label": "刑法分則原版字卡｜PDF第88頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-089",
+      "sourcePage": 89,
+      "image": "pages/all-089.png",
+      "label": "刑法分則原版字卡｜PDF第89頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-091",
+      "sourcePage": 91,
+      "image": "pages/all-091.png",
+      "label": "刑法分則原版字卡｜PDF第91頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-092",
+      "sourcePage": 92,
+      "image": "pages/all-092.png",
+      "label": "刑法分則原版字卡｜PDF第92頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-093",
+      "sourcePage": 93,
+      "image": "pages/all-093.png",
+      "label": "刑法分則原版字卡｜PDF第93頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-095",
+      "sourcePage": 95,
+      "image": "pages/all-095.png",
+      "label": "刑法分則原版字卡｜PDF第95頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-096",
+      "sourcePage": 96,
+      "image": "pages/all-096.png",
+      "label": "刑法分則原版字卡｜PDF第96頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-097",
+      "sourcePage": 97,
+      "image": "pages/all-097.png",
+      "label": "刑法分則原版字卡｜PDF第97頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-098",
+      "sourcePage": 98,
+      "image": "pages/all-098.png",
+      "label": "刑法分則原版字卡｜PDF第98頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-099",
+      "sourcePage": 99,
+      "image": "pages/all-099.png",
+      "label": "刑法分則原版字卡｜PDF第99頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-100",
+      "sourcePage": 100,
+      "image": "pages/all-100.png",
+      "label": "刑法分則原版字卡｜PDF第100頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-101",
+      "sourcePage": 101,
+      "image": "pages/all-101.png",
+      "label": "刑法分則原版字卡｜PDF第101頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-102",
+      "sourcePage": 102,
+      "image": "pages/all-102.png",
+      "label": "刑法分則原版字卡｜PDF第102頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-103",
+      "sourcePage": 103,
+      "image": "pages/all-103.png",
+      "label": "刑法分則原版字卡｜PDF第103頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-104",
+      "sourcePage": 104,
+      "image": "pages/all-104.png",
+      "label": "刑法分則原版字卡｜PDF第104頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-105",
+      "sourcePage": 105,
+      "image": "pages/all-105.png",
+      "label": "刑法分則原版字卡｜PDF第105頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-106",
+      "sourcePage": 106,
+      "image": "pages/all-106.png",
+      "label": "刑法分則原版字卡｜PDF第106頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-107",
+      "sourcePage": 107,
+      "image": "pages/all-107.png",
+      "label": "刑法分則原版字卡｜PDF第107頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-108",
+      "sourcePage": 108,
+      "image": "pages/all-108.png",
+      "label": "刑法分則原版字卡｜PDF第108頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-109",
+      "sourcePage": 109,
+      "image": "pages/all-109.png",
+      "label": "刑法分則原版字卡｜PDF第109頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-110",
+      "sourcePage": 110,
+      "image": "pages/all-110.png",
+      "label": "刑法分則原版字卡｜PDF第110頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-111",
+      "sourcePage": 111,
+      "image": "pages/all-111.png",
+      "label": "刑法分則原版字卡｜PDF第111頁"
+    },
+    {
+      "id": "criminal-division-pdf-page-112",
+      "sourcePage": 112,
+      "image": "pages/all-112.png",
+      "label": "刑法分則原版字卡｜PDF第112頁"
+    }
+  ]
+}

@@ -432,6 +432,12 @@ main{max-width:1500px;width:100%;margin:auto;padding:24px}.top{display:flex;just
 .mnemonic-editor{display:grid;gap:10px}.mnemonic-editor label{display:grid;gap:5px;color:var(--muted);font-size:11px;font-weight:850}.mnemonic-editor textarea{width:100%;min-height:52px;resize:vertical;border:1px solid var(--line);border-radius:10px;padding:9px;background:var(--card);color:var(--text);font:inherit;font-size:12px;line-height:1.6}.mnemonic-editor-check{display:flex!important;align-items:center;grid-template-columns:auto 1fr;gap:7px}.mnemonic-editor-check input{width:18px;height:18px;accent-color:var(--p)}
 @media(max-width:650px){.law-reading-shortcuts{align-items:flex-start;gap:5px}.law-reading-shortcuts-label{width:100%}.law-reading-shortcuts .chip{min-height:32px}.mnemonic-tools{align-items:flex-start;flex-direction:column}.mnemonic-tool-actions{width:100%}.mnemonic-tool-actions select{flex:1;max-width:none}.flashcard-card{padding:13px}.flashcard-prompt{min-height:86px;font-size:14px}.law-reader-extras-placeholder{padding:6px 11px}}
 
+/* ===== v3.5.0 immersive flashcard mode ===== */
+body.flashcard-fullscreen-open{overflow:hidden}
+.flashcard-fullscreen{position:fixed;inset:0;z-index:15000;display:flex;align-items:stretch;justify-content:center;padding:calc(12px + env(safe-area-inset-top)) calc(12px + env(safe-area-inset-right)) calc(12px + env(safe-area-inset-bottom)) calc(12px + env(safe-area-inset-left));background:radial-gradient(circle at 50% -15%,color-mix(in srgb,var(--p) 22%,transparent),transparent 46%),linear-gradient(145deg,#0b1222,#111c32 58%,#0b1426);color:#f8fafc;overscroll-behavior:contain}
+.flashcard-fullscreen[hidden]{display:none!important}.flashcard-fullscreen-shell{width:min(900px,100%);min-height:0;display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:10px}.flashcard-fullscreen-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:4px 2px}.flashcard-fullscreen-kicker{display:block;color:#93c5fd;font-size:10px;font-weight:950;letter-spacing:.12em;text-transform:uppercase}.flashcard-fullscreen-title{display:block;margin-top:3px;font-size:15px;font-weight:950;line-height:1.35}.flashcard-fullscreen-meta{display:block;margin-top:3px;color:#b7c4d8;font-size:10px;line-height:1.45}.flashcard-fullscreen-close{width:38px;height:38px;border:1px solid rgba(255,255,255,.2);border-radius:50%;background:rgba(255,255,255,.09);color:#fff;font-size:25px;line-height:1;cursor:pointer}.flashcard-fullscreen-body{min-height:0;overflow:auto;display:flex;align-items:center;justify-content:center;padding:2px 0}.flashcard-fullscreen-body .flashcard-card{width:min(720px,100%);max-height:100%;overflow:auto;padding:clamp(18px,4vw,34px);border-color:rgba(147,197,253,.34);background:linear-gradient(145deg,rgba(30,58,138,.82),rgba(15,23,42,.95));box-shadow:0 24px 70px rgba(0,0,0,.28);color:#f8fafc}.flashcard-fullscreen-body .flashcard-card.back{background:linear-gradient(145deg,rgba(6,78,59,.82),rgba(15,23,42,.95))}.flashcard-fullscreen-body .flashcard-kicker{font-size:12px;color:#bfdbfe}.flashcard-fullscreen-body .flashcard-progress{color:#cbd5e1;font-size:11px}.flashcard-fullscreen-body .meta{color:#cbd5e1}.flashcard-fullscreen-body .flashcard-prompt{min-height:clamp(180px,34dvh,330px);font-size:clamp(18px,3vw,28px);border-color:rgba(191,219,254,.36);background:rgba(255,255,255,.06)}.flashcard-fullscreen-body .mnemonic-structure{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.08);padding:11px 12px}.flashcard-fullscreen-body .mnemonic-structure b{color:#bfdbfe}.flashcard-fullscreen-body .mnemonic-structure span{color:#f8fafc;font-size:clamp(13px,2vw,16px);line-height:1.7}.flashcard-fullscreen-body .btn,.flashcard-fullscreen-body .chip{border-color:rgba(255,255,255,.24);background:rgba(255,255,255,.1);color:#fff}.flashcard-fullscreen-body .btn.primary{background:#2563eb;border-color:#60a5fa}.flashcard-fullscreen-footer{display:flex;align-items:center;justify-content:space-between;gap:9px;color:#b7c4d8;font-size:10px}.flashcard-fullscreen-footer button{border:1px solid rgba(255,255,255,.2);border-radius:10px;background:rgba(255,255,255,.08);color:#fff;padding:8px 10px;font:inherit;cursor:pointer}.flashcard-image-card{width:min(720px,100%);display:grid;gap:10px;align-content:start;padding:12px;border:1px solid rgba(147,197,253,.34);border-radius:19px;background:rgba(15,23,42,.9);box-shadow:0 24px 70px rgba(0,0,0,.28)}.flashcard-image-wrap{min-height:0;display:grid;place-items:center;border-radius:13px;background:#fff;overflow:auto}.flashcard-image-wrap img{display:block;width:auto;max-width:100%;height:auto;max-height:calc(100dvh - 190px);object-fit:contain}.flashcard-image-meta{display:flex;align-items:center;justify-content:space-between;gap:8px;color:#cbd5e1;font-size:10px}.flashcard-image-meta b{color:#f8fafc;font-size:12px}.flashcard-image-card .flashcard-actions{margin-top:0}.flashcard-fullscreen-body .empty{width:min(720px,100%);color:#fff;border-color:rgba(255,255,255,.2);background:rgba(255,255,255,.08)}
+@media(max-width:650px){.flashcard-fullscreen{padding-top:calc(10px + env(safe-area-inset-top))}.flashcard-fullscreen-body{align-items:flex-start;padding-top:6px}.flashcard-fullscreen-body .flashcard-card{padding:16px;border-radius:16px}.flashcard-image-card{padding:8px;border-radius:15px}.flashcard-image-wrap img{max-height:calc(100dvh - 205px)}.flashcard-fullscreen-footer{align-items:flex-end}.flashcard-fullscreen-footer>span{max-width:55%}}
+
 
 /* ===== v3.0 Complete law library / quick lookup ===== */
 .full-law-meta{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px}
@@ -2952,7 +2958,7 @@ load();
   <div class="field-panel" data-field-panel="mnemonic">
    <div class="row" style="margin-bottom:10px"><div><h2 style="margin:0;font-size:16px">我的考前口訣／字卡</h2><div class="meta">自動口訣先當結構化草稿；你可以編輯、核准，再用同一份條文資料進行字卡複習。</div></div><div class="actions"><button class="btn" onclick="renderMnemonics()">重新整理</button><button class="btn primary" onclick="speakMnemonicPack()">🎧 朗讀全部</button></div></div>
    <div class="notice" id="mnemonicCoverage">每條現行法規都會在法條卡片下方提供一則口訣；人工整理、自動草稿與本機個人整理會分開標示。</div>
-   <div class="mnemonic-tools" aria-label="字卡工具"><div><b>字卡複習</b><span>先回想主軸、順序與例外，再翻面核對。</span></div><div class="mnemonic-tool-actions"><select id="flashcardMode" aria-label="字卡範圍"><option value="due">到期／高風險</option><option value="all">目前口訣卡</option></select><button class="btn primary" type="button" id="startFlashcards">開始字卡</button></div></div>
+   <div class="mnemonic-tools" aria-label="字卡工具"><div><b>字卡複習</b><span>按下後進入沉浸式全螢幕；iPhone 不支援原生全螢幕時，仍會使用 App 內全版模式。</span></div><div class="mnemonic-tool-actions"><select id="flashcardMode" aria-label="字卡範圍"><option value="due">到期／高風險</option><option value="all">目前口訣卡</option><option value="criminal-pdf">刑法分則原版字卡（104張）</option></select><button class="btn primary" type="button" id="startFlashcards">開始字卡</button></div></div>
    <div class="flashcard-shell" id="flashcardArea" hidden></div>
    <div class="mnemonic-grid" id="mnemonicGrid"></div>
   </div>
@@ -3281,7 +3287,7 @@ load();
     <h2>LexCore 更新紀錄</h2>
     <p>版本變更、重大修正與新功能統一收在這裡。其他頁面不再顯示版本更新說明，避免干擾讀書與作答。</p>
    </div>
-   <span class="badge blue">目前 v3.4.0</span>
+   <span class="badge blue">目前 v3.5.0</span>
   </div>
 
   <div class="changelog-filter">
@@ -3294,6 +3300,19 @@ load();
   </div>
 
    <div class="changelog-list" id="changelogList">
+
+   <details class="release-card" data-release-tags="major study ui" open>
+    <summary><div class="release-version">v3.5.0</div>
+     <div><div class="release-title">刑法分則原版字卡與沉浸式全螢幕</div><div class="release-meta">PDF 原版・104 張非空白卡・原生／App 內全螢幕・獨立複習進度</div></div>
+     <span class="release-tag">學習體驗</span>
+    </summary>
+    <div class="release-body"><ul>
+     <li>加入使用者提供的刑法分則記憶字卡原版，保留 PDF 與原版版面圖片，不用 OCR 轉寫取代來源內容。</li>
+     <li>字卡入口可選「刑法分則原版字卡（104張）」，逐張閱讀、記住／再看一次並保存下次複習時間。</li>
+     <li>開始字卡後進入沉浸式全螢幕；原生 Fullscreen 不可用時，會使用手機友善的 App 內全版模式。</li>
+     <li>不更換既有 `lexcore-flashcard-state-v1`，新增 PDF 牌組專用 key，避免既有學習紀錄消失。</li>
+    </ul></div>
+   </details>
 
    <details class="release-card" data-release-tags="study ui data" open>
     <summary>
@@ -5602,10 +5621,15 @@ let ARTICLE_RECORD_CACHE=null;
 let LAW_EXTRAS_OBSERVER=null;
 let LAW_READING_POSITION_OBSERVER=null;
 let FLASHCARD_SESSION=null;
+let FLASHCARD_PDF_DECK=null;
+let FLASHCARD_FULLSCREEN_OPEN=false;
+let FLASHCARD_NATIVE_FULLSCREEN=false;
 let MNEMONIC_EDITOR_KEY="";
 const LAW_READING_STATE_KEY="lexcore-law-reading-v1";
 const MNEMONIC_EDIT_KEY="lexcore-mnemonic-edits-v1";
 const FLASHCARD_STATE_KEY="lexcore-flashcard-state-v1";
+const FLASHCARD_PDF_STATE_KEY="lexcore-pdf-flashcard-state-v1";
+const FLASHCARD_PDF_MANIFEST_URL="data/flashcards/criminal-division/manifest.json";
 
 function readLocalObject(key,fallback={}){
  try{const value=JSON.parse(localStorage.getItem(key)||"null");return value&&typeof value==="object"?value:fallback}catch{return fallback}
@@ -6331,33 +6355,98 @@ function refreshMnemonicArticle(key){
 }
 function getFlashcardState(){return readLocalObject(FLASHCARD_STATE_KEY,{});}
 function putFlashcardState(value){writeLocalObject(FLASHCARD_STATE_KEY,value);}
+function getPdfFlashcardState(){return readLocalObject(FLASHCARD_PDF_STATE_KEY,{});}
+function putPdfFlashcardState(value){writeLocalObject(FLASHCARD_PDF_STATE_KEY,value);}
+function requestFlashcardNativeFullscreen(){
+ const root=document.documentElement;if(!root?.requestFullscreen||document.fullscreenElement)return;
+ FLASHCARD_NATIVE_FULLSCREEN=true;
+ try{const result=root.requestFullscreen();if(result?.catch)result.catch(()=>{FLASHCARD_NATIVE_FULLSCREEN=false;});}
+ catch(e){FLASHCARD_NATIVE_FULLSCREEN=false;}
+}
+function syncFlashcardFullscreen(){
+ const body=$("flashcardFullscreenBody"),session=FLASHCARD_SESSION,card=session?.deck?.[session.index];
+ if(body)body.innerHTML=$("flashcardArea")?.innerHTML||'<div class="empty"><b>準備字卡中…</b></div>';
+ if($("flashcardFullscreenTitle"))$("flashcardFullscreenTitle").textContent=session?.kind==="pdf"?"刑法分則原版字卡":session?"口訣字卡模式":"字卡模式";
+ if($("flashcardFullscreenMeta"))$("flashcardFullscreenMeta").textContent=card?`${card.label||"目前字卡"}｜第${session.index+1}/${session.deck.length}張`:session?"本組字卡已完成":"先回想，再翻面核對";
+ if($("flashcardFullscreenHint"))$("flashcardFullscreenHint").textContent=session?.kind==="pdf"?"原版 PDF 字卡 · 進度會保存在本機":"全螢幕學習模式 · 進度會保存在本機";
+}
+function openFlashcardFullscreen(){
+ const node=$("flashcardFullscreen");if(!node)return;
+ FLASHCARD_FULLSCREEN_OPEN=true;node.hidden=false;node.setAttribute("aria-hidden","false");document.body.classList.add("flashcard-fullscreen-open");
+ syncFlashcardFullscreen();requestFlashcardNativeFullscreen();
+}
+function closeFlashcardFullscreen(exitNative=true){
+ const node=$("flashcardFullscreen");FLASHCARD_FULLSCREEN_OPEN=false;
+ if(node){node.hidden=true;node.setAttribute("aria-hidden","true");}
+ document.body.classList.remove("flashcard-fullscreen-open");
+ if(exitNative&&FLASHCARD_NATIVE_FULLSCREEN&&document.fullscreenElement&&document.exitFullscreen){document.exitFullscreen().catch(()=>{});}
+ FLASHCARD_NATIVE_FULLSCREEN=false;renderFlashcard();
+}
+function handleFlashcardFullscreenChange(){
+ if(FLASHCARD_FULLSCREEN_OPEN&&FLASHCARD_NATIVE_FULLSCREEN&&!document.fullscreenElement)closeFlashcardFullscreen(false);
+}
+async function loadCriminalPdfFlashcardDeck(){
+ if(FLASHCARD_PDF_DECK)return FLASHCARD_PDF_DECK;
+ const response=await fetch(`${FLASHCARD_PDF_MANIFEST_URL}?v=3.5.0`,{cache:"no-store"});
+ if(!response.ok)throw new Error(`PDF 字卡索引載入失敗：HTTP ${response.status}`);
+ const manifest=await response.json(),base=new URL(FLASHCARD_PDF_MANIFEST_URL,document.baseURI);
+ if(!Array.isArray(manifest.cards)||!manifest.cards.length)throw new Error("PDF 字卡索引沒有可用卡片");
+ FLASHCARD_PDF_DECK={...manifest,cards:manifest.cards.map(card=>({...card,imageUrl:new URL(card.image,base).href}))};return FLASHCARD_PDF_DECK;
+}
+async function startCriminalPdfFlashcards(){
+ openFlashcardFullscreen();
+ try{
+  const manifest=await loadCriminalPdfFlashcardDeck(),state=getPdfFlashcardState(),now=Date.now();
+  let deck=manifest.cards.filter(card=>!state[card.id]?.dueAt||Number(state[card.id].dueAt)<=now);
+  if(!deck.length)deck=manifest.cards.slice();
+  FLASHCARD_SESSION={kind:"pdf",deck,index:0,flipped:false,mode:"criminal-pdf",source:manifest.sourceFile};
+  showPage("fieldtools");setFieldTool("mnemonic");renderFlashcard();
+ }catch(error){closeFlashcardFullscreen();alert(`刑法分則原版字卡目前無法載入。\\n${error.message}`);}
+}
 async function startFlashcards(mode="due",preferredKey=""){
+ if(mode==="criminal-pdf"){await startCriminalPdfFlashcards();return;}
+ openFlashcardFullscreen();
  const cards=await getMnemonicCards(),state=getFlashcardState(),now=Date.now();
- if(!cards.length){alert("目前沒有可用的口訣卡；請先同步法條或累積考點資料。");return;}
+ if(!cards.length){closeFlashcardFullscreen();alert("目前沒有可用的口訣卡；請先同步法條或累積考點資料。");return;}
  let deck=mode==="all"?cards:cards.filter(card=>!state[card.key]?.dueAt||Number(state[card.key].dueAt)<=now);
  if(!deck.length)deck=cards.slice(0,10);
  if(preferredKey){const preferred=deck.find(card=>card.key===preferredKey)||cards.find(card=>card.key===preferredKey);if(preferred)deck=[preferred,...deck.filter(card=>card.key!==preferred.key)];}
- FLASHCARD_SESSION={deck:deck.slice(0,20),index:0,flipped:false,mode};
+ FLASHCARD_SESSION={kind:"mnemonic",deck:deck.slice(0,20),index:0,flipped:false,mode};
  showPage("fieldtools");setFieldTool("mnemonic");renderFlashcard();
  window.setTimeout(()=>$('flashcardArea')?.scrollIntoView({behavior:"smooth",block:"start"}),80);
 }
 function renderFlashcard(){
  const area=$("flashcardArea"),session=FLASHCARD_SESSION;if(!area)return;
- if(!session){area.hidden=true;area.innerHTML="";return;}
+ if(!session){area.hidden=true;area.innerHTML="";syncFlashcardFullscreen();return;}
+ if(session.kind==="pdf"){renderPdfFlashcard();return;}
  area.hidden=false;
  const card=session.deck[session.index];
- if(!card){area.innerHTML='<div class="flashcard-card"><b>本組字卡完成</b><div class="actions"><button class="btn primary" type="button" onclick="closeFlashcards()">結束字卡</button></div></div>';return;}
+ if(!card){area.innerHTML='<div class="flashcard-card"><b>本組字卡完成</b><div class="actions"><button class="btn primary" type="button" onclick="closeFlashcards()">結束字卡</button></div></div>';syncFlashcardFullscreen();return;}
  const info=articleMnemonicInfo(card.lawId,card.article,ARTICLE_TEXTS?.[card.key]?.text||""),state=getFlashcardState()[card.key]||{},progress=`${session.index+1}／${session.deck.length}`;
- const body=session.flipped?`<div class="flashcard-answer"><div class="mnemonic-structure"><b>記憶主句</b><span>${esc(info.chant||card.main)}</span></div>${(info.keyword||card.keyword)?`<div class="mnemonic-structure"><b>核心主題</b><span>${esc(info.keyword||card.keyword)}</span></div>`:""}${(info.explain30s||card.explain30s||info.order||card.order)?`<div class="mnemonic-structure"><b>30秒理解</b><span>${esc(info.explain30s||card.explain30s||info.order||card.order)}</span></div>`:""}${(info.numbers||card.numbers)?.length?`<div class="mnemonic-structure"><b>必背數字</b><span>${esc((info.numbers||[]).join?info.numbers.join("；"):info.numbers||card.numbers)}</span></div>`:""}${(info.trap||card.trap||info.exception||card.exception)?`<div class="mnemonic-structure"><b>易錯提醒</b><span>${esc(info.trap||card.trap||info.exception||card.exception)}</span></div>`:""}${(info.recallQuestion||info.recall)?`<div class="mnemonic-structure"><b>主動回憶</b><span>${esc(info.recallQuestion||info.recall)}</span></div>`:""}</div><div class="flashcard-actions"><button class="btn" type="button" onclick="rateFlashcard('again')">不熟，稍後再來</button><button class="btn primary" type="button" onclick="rateFlashcard('known')">記住了</button><button class="chip" type="button" onclick="openConceptKey('${card.key}')">看法條</button><button class="chip" type="button" onclick="openMnemonicEditor('${card.lawId}','${card.article}')">編輯</button></div>`:`<div class="flashcard-prompt">請先說出<br>「${esc(lawName(card.lawId))}第${esc(card.article)}條的主題、口訣、易錯與主動回憶」</div><div class="flashcard-actions"><button class="btn primary" type="button" onclick="flipFlashcard()">翻面核對</button><button class="chip" type="button" onclick="closeFlashcards()">暫停</button></div>`;
+ const body=session.flipped?`<div class="flashcard-answer"><div class="mnemonic-structure"><b>記憶主句</b><span>${esc(info.chant||card.main)}</span></div>${(info.keyword||card.keyword)?`<div class="mnemonic-structure"><b>核心主題</b><span>${esc(info.keyword||card.keyword)}</span></div>`:""}${(info.explain30s||card.explain30s||info.order||card.order)?`<div class="mnemonic-structure"><b>30秒理解</b><span>${esc(info.explain30s||card.explain30s||info.order||card.order)}</span></div>`:""}${(info.numbers||card.numbers)?.length?`<div class="mnemonic-structure"><b>必背數字</b><span>${esc((info.numbers||[]).join?info.numbers.join("；"):info.numbers||card.numbers)}</span></div>`:""}${(info.trap||card.trap||info.exception||card.exception)?`<div class="mnemonic-structure"><b>易錯提醒</b><span>${esc(info.trap||card.trap||info.exception||card.exception)}</span></div>`:""}${(info.recallQuestion||info.recall)?`<div class="mnemonic-structure"><b>主動回憶</b><span>${esc(info.recallQuestion||info.recall)}</span></div>`:""}</div><div class="flashcard-actions"><button class="btn" type="button" onclick="rateFlashcard('again')">不熟，稍後再來</button><button class="btn primary" type="button" onclick="rateFlashcard('known')">記住了</button><button class="chip" type="button" onclick="openConceptKey('${card.key}')">看法條</button><button class="chip" type="button" onclick="openMnemonicEditor('${card.lawId}','${card.article}')">編輯</button></div>`:`<div class="flashcard-prompt">請先說出<br>「${esc(lawName(card.lawId))}第${esc(card.article)}條的主題、口訣、易錯與主動回憶」</div><div class="flashcard-actions"><button class="btn primary" type="button" onclick="flipFlashcard()">翻面核對</button><button class="chip" type="button" onclick="closeFlashcardFullscreen()">暫停</button></div>`;
  area.innerHTML=`<div class="flashcard-card ${session.flipped?"back":""}"><div class="flashcard-head"><div><div class="flashcard-kicker">🧠 ${esc(card.label)}</div><div class="meta">${esc(card.status||"結構化草稿")}｜上次 ${state.lastAt?new Date(state.lastAt).toLocaleDateString("zh-TW"):"尚未複習"}</div></div><span class="flashcard-progress">${progress}</span></div>${body}</div>`;
+ syncFlashcardFullscreen();
+}
+function renderPdfFlashcard(){
+ const area=$("flashcardArea"),session=FLASHCARD_SESSION;if(!area||!session)return;
+ area.hidden=false;const card=session.deck[session.index];
+ if(!card){area.innerHTML='<div class="flashcard-card"><b>本組刑法分則原版字卡完成</b><div class="meta" style="margin-top:6px">你可以退出並保留本次複習進度。</div><div class="actions"><button class="btn primary" type="button" onclick="closeFlashcards()">結束字卡</button></div></div>';syncFlashcardFullscreen();return;}
+ const state=getPdfFlashcardState()[card.id]||{},progress=`${session.index+1}／${session.deck.length}`,sourceHref="data/flashcards/criminal-division/criminal-division-memory-cards.pdf";
+ area.innerHTML=`<div class="flashcard-image-card"><div class="flashcard-image-meta"><span><b>${esc(card.label)}</b><br>原始 PDF 第${esc(card.sourcePage)}頁</span><span>${progress}</span></div><div class="flashcard-image-wrap"><img src="${esc(card.imageUrl)}" alt="${esc(card.label)}" loading="eager"></div><div class="flashcard-actions"><button class="btn" type="button" onclick="ratePdfFlashcard('again')">再看一次</button><button class="btn primary" type="button" onclick="ratePdfFlashcard('known')">記住了，下一張</button><a class="chip" href="${sourceHref}" target="_blank" rel="noopener">原始 PDF</a><button class="chip" type="button" onclick="closeFlashcardFullscreen()">暫停</button></div><div class="meta">${state.lastAt?`上次複習：${new Date(state.lastAt).toLocaleDateString("zh-TW")}`:"這張尚未複習"} · 原版版面不轉寫，避免 OCR 誤植</div></div>`;
+ syncFlashcardFullscreen();
 }
 function flipFlashcard(){if(!FLASHCARD_SESSION)return;FLASHCARD_SESSION.flipped=true;renderFlashcard();}
 function rateFlashcard(rating){
- const session=FLASHCARD_SESSION;if(!session)return;const card=session.deck[session.index],state=getFlashcardState(),previous=state[card.key]||{},known=rating==="known",box=known?Math.min(5,Number(previous.box||0)+1):0,delays=known?[1,3,7,14,30]:[10/1440,1],delay=delays[Math.min(box,delays.length-1)];
+ const session=FLASHCARD_SESSION;if(!session||session.kind==="pdf")return;const card=session.deck[session.index],state=getFlashcardState(),previous=state[card.key]||{},known=rating==="known",box=known?Math.min(5,Number(previous.box||0)+1):0,delays=known?[1,3,7,14,30]:[10/1440,1],delay=delays[Math.min(box,delays.length-1)];
  state[card.key]={box,dueAt:Date.now()+delay*86400000,seen:Number(previous.seen||0)+1,lastAt:new Date().toISOString(),lastRating:rating};putFlashcardState(state);
  session.index+=1;session.flipped=false;renderFlashcard();
 }
-function closeFlashcards(){FLASHCARD_SESSION=null;renderFlashcard();}
+function ratePdfFlashcard(rating){
+ const session=FLASHCARD_SESSION;if(!session||session.kind!=="pdf")return;const card=session.deck[session.index],state=getPdfFlashcardState(),previous=state[card.id]||{},known=rating==="known",box=known?Math.min(5,Number(previous.box||0)+1):0,delays=known?[1,3,7,14,30]:[10/1440,1],delay=delays[Math.min(box,delays.length-1)];
+ state[card.id]={box,dueAt:Date.now()+delay*86400000,seen:Number(previous.seen||0)+1,lastAt:new Date().toISOString(),lastRating:rating};putPdfFlashcardState(state);
+ session.index+=1;renderFlashcard();
+}
+function closeFlashcards(){FLASHCARD_SESSION=null;closeFlashcardFullscreen();renderFlashcard();}
 function openConceptKey(key){const [l,a]=key.split(":");openArticle(l,a)}
 async function speakMnemonicPack(){showPage("fieldtools");setFieldTool("voice");$("voiceMode").value="mnemonic";startVoiceMode()}
 
@@ -6425,6 +6514,10 @@ function setupV26Tools(){
  if($("fragmentStart"))$("fragmentStart").onclick=startFragmentTraining;
  if($("finalStart"))$("finalStart").onclick=startFinalReview;
  if($("startFlashcards"))$("startFlashcards").onclick=()=>startFlashcards($("flashcardMode")?.value||"due");
+ if($("flashcardFullscreenClose"))$("flashcardFullscreenClose").onclick=()=>closeFlashcardFullscreen();
+ if($("flashcardFullscreenExit"))$("flashcardFullscreenExit").onclick=()=>closeFlashcardFullscreen();
+ document.addEventListener("fullscreenchange",handleFlashcardFullscreenChange);
+ document.addEventListener("keydown",e=>{if(e.key==="Escape"&&FLASHCARD_FULLSCREEN_OPEN)closeFlashcardFullscreen();});
  if($("syncHealthCheck"))$("syncHealthCheck").onclick=renderSyncHealth;
  if($("syncHealthReload"))$("syncHealthReload").onclick=()=>loadRuntime(true);
  renderFragmentPlan();renderScenarios();renderFinalReview();renderMnemonics();
@@ -8062,6 +8155,17 @@ function renderSync(){
    <button id="focusOverlayExit">離開全螢幕</button>
   </div>
   <div class="focus-overlay-note">專注期間可以切回法條或題庫；計時會依實際時間持續。</div>
+ </div>
+</div>
+
+<div class="flashcard-fullscreen" id="flashcardFullscreen" hidden aria-hidden="true">
+ <div class="flashcard-fullscreen-shell">
+  <div class="flashcard-fullscreen-top">
+   <div><span class="flashcard-fullscreen-kicker">LexCore · IMMERSIVE CARDS</span><b class="flashcard-fullscreen-title" id="flashcardFullscreenTitle">字卡模式</b><span class="flashcard-fullscreen-meta" id="flashcardFullscreenMeta">先回想，再翻面核對</span></div>
+   <button class="flashcard-fullscreen-close" id="flashcardFullscreenClose" type="button" aria-label="暫停字卡模式">×</button>
+  </div>
+  <div class="flashcard-fullscreen-body" id="flashcardFullscreenBody" role="region" aria-live="polite"></div>
+  <div class="flashcard-fullscreen-footer"><span id="flashcardFullscreenHint">全螢幕學習模式 · 進度會保存在本機</span><button id="flashcardFullscreenExit" type="button">退出並保留進度</button></div>
  </div>
 </div>
 
