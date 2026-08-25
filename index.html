@@ -1547,6 +1547,34 @@ body.law-quick-sheet-open{overflow:hidden}
 /* v3.1.18 mobile safe-area spacing: keep the utility header below the iPhone status area. */
 @media(max-width:650px){main{padding-top:max(18px,env(safe-area-inset-top))}}
 
+/* v3.4.0 search clarity and runtime data health. */
+.lookup-hero{grid-template-columns:minmax(0,1fr) auto auto}
+.lookup-hero .lookup-clear{color:var(--muted);white-space:nowrap}
+.lookup-tools{align-items:center}
+.lookup-tools select{min-height:38px}
+.lookup-help{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin:0 0 9px;padding:9px 11px;border-left:3px solid var(--p);border-radius:0 11px 11px 0;background:var(--p2);color:var(--muted);font-size:11px;line-height:1.6}
+.lookup-help b{color:var(--p)}
+.lookup-history{display:flex;align-items:center;gap:6px;flex-wrap:wrap;min-height:0;margin:0 0 10px}
+.lookup-history:empty{display:none}
+.lookup-history-label{font-size:10px;color:var(--muted);font-weight:850}
+.lookup-history .chip{font-size:10px;padding:5px 8px}
+.lookup-hit{background:var(--a2);color:var(--a);border-radius:4px;padding:0 2px;font-weight:900}
+.lookup-result{align-items:start}
+.lookup-result h3{overflow-wrap:anywhere}
+.lookup-result .meta{margin-top:4px}
+.lookup-result .lookup-mnemonic{flex-wrap:wrap}
+.sync-health-card{margin-top:13px}
+.sync-health-head-actions{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.sync-health-summary{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:11px;color:var(--muted);font-size:11px;line-height:1.6}
+.sync-health-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.sync-health-kpi{min-width:0;padding:11px 12px;border:1px solid var(--line);border-radius:13px;background:color-mix(in srgb,var(--card) 82%,var(--bg))}
+.sync-health-kpi b{display:block;font-size:18px;overflow-wrap:anywhere}.sync-health-kpi span{display:block;margin-top:3px;color:var(--muted);font-size:10px;line-height:1.5}
+.sync-health-issues{margin-top:11px;padding:10px 11px;border:1px solid color-mix(in srgb,var(--a) 24%,var(--line));border-radius:12px;background:var(--a2);color:var(--a);font-size:11px;line-height:1.65}
+.sync-health-issues strong{display:block;margin-bottom:3px}
+.sync-health-ok{margin-top:11px;padding:10px 11px;border-left:3px solid var(--g);border-radius:0 10px 10px 0;background:var(--g2);color:var(--g);font-size:11px;line-height:1.6}
+@media(max-width:900px){.sync-health-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:650px){.lookup-hero{grid-template-columns:minmax(0,1fr) auto}.lookup-hero .lookup-clear{grid-column:2;grid-row:1;padding:8px 9px}.lookup-hero .primary{grid-column:1/-1}.lookup-help{display:block}.lookup-help span{display:block}.sync-health-grid{grid-template-columns:1fr 1fr}.sync-health-head-actions{justify-content:flex-start}.sync-health-head-actions .btn{min-height:38px;padding:7px 9px;font-size:11px}}
+
 </style>
 </head><body>
 <div class="shell">
@@ -3182,15 +3210,18 @@ load();
   <div class="card"><div class="head"><div><h2 id="studyTitle">完整法規庫</h2><div class="meta" id="studySyncMeta">讀取現行全文中</div></div><span class="badge blue">完整現行法</span></div><div class="body" id="studyBody"></div></div>
  </section>
 
- <section id="lookup" class="section">
-  <div class="lookup-hero"><input id="lookupInput" placeholder="搜尋所有已同步法條：條號、文字、法規名稱、實務用語"><button class="btn primary" id="lookupBtn">搜尋</button></div>
+<section id="lookup" class="section">
+  <div class="lookup-hero"><input id="lookupInput" placeholder="搜尋條號、條文、法規名稱或實務用語" autocomplete="off"><button class="btn lookup-clear" id="lookupClear" type="button">清除</button><button class="btn primary" id="lookupBtn" type="button">搜尋</button></div>
   <div class="lookup-tools">
    <select id="lookupScope"><option value="main">主考範圍優先</option><option value="all">全部已同步法規</option></select>
    <select id="lookupLaw"><option value="">全部法規</option></select>
+   <select id="lookupMatchMode" aria-label="搜尋命中模式"><option value="all">所有詞：同一條文</option><option value="phrase">完整詞組</option></select>
    <span class="meta" id="lookupCount">輸入關鍵字開始搜尋</span>
   </div>
+  <div class="lookup-help"><span><b>搜尋原則：</b>預設每個詞都必須命中同一條文，避免把不相干條文混在一起。</span><span>可用空格或頓號分開多個詞，例如「鑑定 通譯」。</span></div>
+  <div class="lookup-history" id="lookupHistory" aria-label="最近搜尋"></div>
   <div class="card"><div class="head"><h2>快速查法結果</h2><span class="badge green">現行全文</span></div><div class="body" id="lookupResults"><div class="empty"><b>可以直接用工作語言搜尋</b><p>例如「帶回派出所多久」、「國賠求償」、「噪音不聽禁止」。同步完成後會跨完整法規全文搜尋。</p></div></div></div>
- </section>
+</section>
 
 
  <section id="knowledge" class="section">
@@ -3250,7 +3281,7 @@ load();
     <h2>LexCore 更新紀錄</h2>
     <p>版本變更、重大修正與新功能統一收在這裡。其他頁面不再顯示版本更新說明，避免干擾讀書與作答。</p>
    </div>
-   <span class="badge blue">目前 v3.3.2</span>
+   <span class="badge blue">目前 v3.4.0</span>
   </div>
 
   <div class="changelog-filter">
@@ -3263,6 +3294,20 @@ load();
   </div>
 
    <div class="changelog-list" id="changelogList">
+
+   <details class="release-card" data-release-tags="study ui data" open>
+    <summary>
+     <div class="release-version">v3.4.0</div>
+     <div><div class="release-title">搜尋體驗與資料健康檢查</div><div class="release-meta">同條文命中・命中詞高亮・最近搜尋・runtime 完整性檢查</div></div>
+     <span class="release-tag">品質更新</span>
+    </summary>
+    <div class="release-body"><ul>
+     <li>快速查法預設採「所有詞必須命中同一條文」，新增完整詞組模式，並在結果中高亮實際命中詞。</li>
+     <li>新增清除查詢、最近搜尋紀錄與一鍵回到最近查詢；新增的搜尋紀錄不會碰觸既有錯題、筆記、班表、掌握度或間隔複習資料。</li>
+     <li>同步與資料狀態新增資料健康檢查，交叉比對官方全文來源、前端條文索引、法規目錄、憲判件數與 6laws 配對狀態。</li>
+     <li>可在 GitHub Pages 直接重新載入最新 runtime；檢查只讀取資料，不會清除 localStorage／IndexedDB。</li>
+    </ul></div>
+   </details>
 
    <details class="release-card" data-release-tags="study ui" open>
     <summary>
@@ -3700,7 +3745,7 @@ load();
    <div class="syncbox"><b id="syncLyAuto">—</b><span>立法理由自動驗證</span></div>
    <div class="syncbox"><b id="syncLyReview">—</b><span>待人工確認</span></div>
   </div>
-  <div class="card">
+ <div class="card">
    <div class="head"><h2>官方同步狀態</h2><span class="badge green" id="syncBadge">讀取中</span></div>
    <div class="body">
     <div id="syncRows"></div>
@@ -3714,6 +3759,10 @@ load();
      </p>
     </div>
    </div>
+  </div>
+  <div class="card sync-health-card">
+   <div class="head"><div><h2>資料健康檢查</h2><div class="meta">確認全文、索引與同步結果是否完整；不會修改你的私人學習資料。</div></div><div class="sync-health-head-actions"><button class="btn" id="syncHealthReload" type="button">重新載入資料</button><button class="btn" id="syncHealthCheck" type="button">重新檢查</button></div></div>
+   <div class="body"><div id="syncHealthSummary"></div><div class="sync-health-grid" id="syncHealthGrid"></div><div id="syncHealthDetails"></div></div>
   </div>
  </section>
 
@@ -3828,6 +3877,7 @@ function showPage(p){
  if(p==="weekly")renderWeekly();
  if(p==="versionguard")renderVersionGuard();
  if(p==="lookup")renderQuickLookup();
+ if(p==="sync")renderSyncHealth();
  window.scrollTo({top:0,behavior:"auto"});
  syncLawFloatingTools();
 }
@@ -5979,6 +6029,7 @@ function renderFullStudy(){
 }
 
 /* ---------- Quick law lookup ---------- */
+const LOOKUP_HISTORY_KEY="lexcore-lookup-history-v1";
 function normalizeLookupText(value=""){
  let text=String(value??"");
  if(typeof text.normalize==="function")text=text.normalize("NFKC");
@@ -5987,17 +6038,68 @@ function normalizeLookupText(value=""){
 function lookupQueryTerms(query=""){
  return [...new Set(normalizeLookupText(query).split(/\s+/).filter(Boolean))];
 }
-function lookupRecordMatch(record,query,terms){
+function lookupHistory(){
+ try{
+  const rows=JSON.parse(localStorage.getItem(LOOKUP_HISTORY_KEY)||"[]");
+  return Array.isArray(rows)?rows.filter(x=>typeof x==="string"&&x.trim()).slice(0,8):[];
+ }catch{return []}
+}
+function rememberLookupQuery(query=""){
+ const q=String(query||"").trim();if(!q)return;
+ const rows=[q,...lookupHistory().filter(x=>x!==q)].slice(0,8);
+ try{localStorage.setItem(LOOKUP_HISTORY_KEY,JSON.stringify(rows))}catch{}
+}
+function renderLookupHistory(){
+ const box=$("lookupHistory");if(!box)return;
+ const rows=lookupHistory();
+ box.innerHTML=rows.length?`<span class="lookup-history-label">最近搜尋</span>${rows.map(q=>`<button class="chip" type="button" onclick="useLookupHistory('${escAttr(encodeURIComponent(q).replace(/'/g,"%27"))}')">${esc(q)}</button>`).join("")}<button class="chip" type="button" onclick="clearLookupHistory()">清除紀錄</button>`:"";
+}
+function useLookupHistory(encoded=""){
+ let q="";try{q=decodeURIComponent(encoded)}catch{}
+ if(!q)return;
+ if($("lookupInput"))$("lookupInput").value=q;
+ renderQuickLookup();
+ $("lookupInput")?.focus({preventScroll:true});
+}
+function clearLookupHistory(){
+ try{localStorage.removeItem(LOOKUP_HISTORY_KEY)}catch{}
+ renderLookupHistory();
+}
+function clearLookupQuery(){
+ if($("lookupInput"))$("lookupInput").value="";
+ renderQuickLookup();
+ $("lookupInput")?.focus({preventScroll:true});
+}
+function escapeLookupRegExp(value=""){
+ return String(value).replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+}
+function highlightLookupText(value="",terms=[]){
+ const raw=String(value||""),tokens=[...new Set((terms||[]).filter(Boolean))].sort((a,b)=>b.length-a.length);
+ if(!raw||!tokens.length)return esc(raw);
+ const re=new RegExp(`(${tokens.map(escapeLookupRegExp).join("|")})`,"giu");
+ let out="",last=0;
+ raw.replace(re,(match,_group,offset)=>{
+  out+=esc(raw.slice(last,offset))+`<mark class="lookup-hit">${esc(match)}</mark>`;
+  last=offset+match.length;
+  return match;
+ });
+ return out+esc(raw.slice(last));
+}
+function lookupRecordMatch(record,query,terms,mode="all"){
  const hay=normalizeLookupText(`${record.lawName||""} 第${record.article||""}條 ${record.text||""}`),matchedTerms=terms.filter(term=>hay.includes(term));
- if(!terms.length||matchedTerms.length!==terms.length)return null;
+ const phrase=normalizeLookupText(query),phraseHit=!!phrase&&hay.includes(phrase);
+ if(!terms.length)return null;
+ if(mode==="phrase"&&!phraseHit)return null;
+ if(mode!=="phrase"&&matchedTerms.length!==terms.length)return null;
  const text=normalizeLookupText(record.text||""),lawName=normalizeLookupText(record.lawName||""),articleQuery=normalizeArticleJump(query),exactArticle=/^\d+(?:-\d+)?$/.test(articleQuery)&&articleQuery===String(record.article)?8:0;
  const textHits=matchedTerms.filter(term=>text.includes(term)).length,lawHits=matchedTerms.filter(term=>lawName.includes(term)).length;
- return {...record,score:matchedTerms.length*4+textHits*3+lawHits*8+exactArticle+(record.main?1:0),matchTerms:matchedTerms};
+ return {...record,score:matchedTerms.length*4+textHits*3+lawHits*8+(phraseHit?5:0)+exactArticle+(record.main?1:0),matchTerms:matchedTerms,phraseHit};
 }
 function renderQuickLookup(){
  if(!$("lookupResults"))return;
- const q=($("lookupInput")?.value||"").trim(),scope=$("lookupScope")?.value||"main",lid=$("lookupLaw")?.value||"";
+ const q=($("lookupInput")?.value||"").trim(),scope=$("lookupScope")?.value||"main",lid=$("lookupLaw")?.value||"",mode=$("lookupMatchMode")?.value||"all";
  const terms=lookupQueryTerms(q);
+ renderLookupHistory();
  if(!q||!terms.length){
   $("lookupCount").textContent="輸入關鍵字開始搜尋";
   $("lookupResults").innerHTML=`<div class="empty"><b>可以直接用工作語言搜尋</b><p>例如「鑑定」、「鑑定、通譯」或「第101-1條」。</p></div>`;
@@ -6006,12 +6108,13 @@ function renderQuickLookup(){
  let rows=[...allArticleRecords()];
  if(scope==="main")rows=rows.sort((a,b)=>(b.main?1:0)-(a.main?1:0));
  if(lid)rows=rows.filter(x=>x.lawId===lid);
- rows=rows.map(r=>lookupRecordMatch(r,q,terms)).filter(Boolean).sort((a,b)=>b.score-a.score).slice(0,80);
+ rows=rows.map(r=>lookupRecordMatch(r,q,terms,mode)).filter(Boolean).sort((a,b)=>b.score-a.score).slice(0,80);
+ rememberLookupQuery(q);renderLookupHistory();
  $("lookupCount").textContent=`找到 ${rows.length} 個符合條文`;
  $("lookupResults").innerHTML=rows.length?rows.map(r=>{
   const mnemonic=articleMnemonicInfo(r.lawId,r.article,r.text),sixInfo=sixLawsArticleInfo(r.lawId,r.article);
   return `<div class="lookup-result">
-   <div><h3>${r.lawName} 第 ${r.article} 條${sixInfo?.title?`（${esc(sixInfo.title)}）`:""}</h3><div class="meta">${r.category||""}${r.main?"｜主考範圍":"｜相關法規"}${sixInfo?.judgmentCount?`｜判解 ${sixInfo.judgmentCount}`:""}${sixInfo?.lawCount?`｜相關法規 ${sixInfo.lawCount}`:""}｜命中「${esc(r.matchTerms.join("、"))}」</div><div class="lookup-snippet">${esc(articleSnippet(r.text,terms[0]||q))}</div><div class="lookup-mnemonic"><b>🧠 口訣</b><span>${esc(mnemonic.text)}</span><span class="badge ${mnemonic.kind==="curated"?"green":mnemonic.kind==="pending"?"":"amber"}">${mnemonic.status}</span></div></div>
+   <div><h3>${highlightLookupText(`${r.lawName} 第 ${r.article} 條${sixInfo?.title?`（${sixInfo.title}）`:""}`,terms)}</h3><div class="meta">${r.category||""}${r.main?"｜主考範圍":"｜相關法規"}${sixInfo?.judgmentCount?`｜判解 ${sixInfo.judgmentCount}`:""}${sixInfo?.lawCount?`｜相關法規 ${sixInfo.lawCount}`:""}｜命中「${esc(r.matchTerms.join("、"))}」${r.phraseHit?"｜完整詞組":""}</div><div class="lookup-snippet">${highlightLookupText(articleSnippet(r.text,terms[0]||q),terms)}</div><div class="lookup-mnemonic"><b>🧠 口訣</b><span>${esc(mnemonic.text)}</span><span class="badge ${mnemonic.kind==="curated"?"green":mnemonic.kind==="pending"?"":"amber"}">${mnemonic.status}</span></div></div>
    <div class="lookup-actions"><button class="chip ready" onclick="openArticle('${r.lawId}','${r.article}')">開啟</button><button class="chip" onclick="speakSingleArticle('${r.lawId}','${r.article}')">🎧 朗讀</button></div>
   </div>`;
  }).join(""):`<div class="empty"><b>找不到符合的現行條文</b><p>如果是剛部署新版，請先讓每日法規同步完成一次；完整全文才會進入快速查法索引。</p></div>`;
@@ -6309,14 +6412,21 @@ function setupV26Tools(){
  fillFullLawFilter();
  setupFocusTools();
  if($("lookupBtn"))$("lookupBtn").onclick=renderQuickLookup;
- if($("lookupInput"))$("lookupInput").addEventListener("keydown",e=>{if(e.key==="Enter")renderQuickLookup()});
+ if($("lookupInput")){
+  $("lookupInput").addEventListener("keydown",e=>{if(e.key==="Enter")renderQuickLookup()});
+  $("lookupInput").addEventListener("input",e=>{if(!e.target.value.trim())renderQuickLookup()});
+ }
  if($("lookupScope"))$("lookupScope").onchange=renderQuickLookup;
  if($("lookupLaw"))$("lookupLaw").onchange=renderQuickLookup;
+ if($("lookupMatchMode"))$("lookupMatchMode").onchange=renderQuickLookup;
+ if($("lookupClear"))$("lookupClear").onclick=clearLookupQuery;
  if($("homeLookupBtn"))$("homeLookupBtn").onclick=homeQuickLookup;
  if($("homeLookupInput"))$("homeLookupInput").addEventListener("keydown",e=>{if(e.key==="Enter")homeQuickLookup()});
  if($("fragmentStart"))$("fragmentStart").onclick=startFragmentTraining;
  if($("finalStart"))$("finalStart").onclick=startFinalReview;
  if($("startFlashcards"))$("startFlashcards").onclick=()=>startFlashcards($("flashcardMode")?.value||"due");
+ if($("syncHealthCheck"))$("syncHealthCheck").onclick=renderSyncHealth;
+ if($("syncHealthReload"))$("syncHealthReload").onclick=()=>loadRuntime(true);
  renderFragmentPlan();renderScenarios();renderFinalReview();renderMnemonics();
 }
 
@@ -7850,11 +7960,46 @@ function setupFontScale(){
 
 $("theme").onclick=()=>{const d=document.documentElement.dataset.theme==="dark";document.documentElement.dataset.theme=d?"light":"dark";localStorage.setItem("lr4-theme",d?"light":"dark")};if(localStorage.getItem("lr4-theme")==="dark")document.documentElement.dataset.theme="dark";
 
-async function loadRuntime(){
+function syncHealthDate(value=""){
+ if(!value)return "—";
+ const d=new Date(value);if(Number.isNaN(d.getTime()))return String(value);
+ try{return new Intl.DateTimeFormat("zh-TW",{dateStyle:"short",timeStyle:"short"}).format(d)}catch{return d.toLocaleString()}
+}
+function syncHealthSnapshot(){
+ const s=RUNTIME?.sync,sourceLaws=s?.laws||[],records=Object.values(ARTICLE_TEXTS||{}),catalog=Array.isArray(LAW_CATALOG)?LAW_CATALOG:[],catalogIds=new Set(catalog.map(x=>x.id));
+ const fullTextLaws=sourceLaws.filter(x=>x.fullTextOk&&Number(x.articleCount)>0),sourceArticleCount=sourceLaws.reduce((n,x)=>n+Number(x.articleCount||0),0);
+ const invalidRecords=records.filter(x=>!x?.lawId||!x?.article||!String(x.text||"").trim()).length;
+ const missingCatalog=records.filter(x=>!catalogIds.has(x.lawId)).length;
+ const sixValues=Object.values(SIXLAWS_INDEX?.laws||{}),sixMatched=sixValues.filter(x=>x?.matched).length,sixConfigured=Number(SIXLAWS_INDEX?.coverage?.configured||sixValues.length||0);
+ const issues=[];
+ if(!RUNTIME)issues.push("尚未載入 data/runtime.json，現在使用單檔內嵌快照。");
+ if(RUNTIME&&sourceLaws.length===0)issues.push("runtime 沒有法規來源清單。");
+ if(sourceLaws.some(x=>!x.fullTextOk))issues.push(`有 ${sourceLaws.filter(x=>!x.fullTextOk).length} 個法規來源未通過完整全文檢查。`);
+ if(invalidRecords)issues.push(`有 ${invalidRecords} 筆全文索引缺少法規、條號或正文。`);
+ if(missingCatalog)issues.push(`有 ${missingCatalog} 筆全文未能對應法規目錄。`);
+ if(sourceArticleCount&&records.length&&sourceArticleCount!==records.length)issues.push(`官方來源宣告 ${sourceArticleCount} 條，但前端索引有 ${records.length} 條，請檢查 runtime 建置。`);
+ if(s?.status&&s.status!=="ok")issues.push(`同步工作回報狀態為 ${s.status}。`);
+ return {s,sourceLaws,records,fullTextLaws,sourceArticleCount,invalidRecords,missingCatalog,sixMatched,sixConfigured,issues,status:!RUNTIME?"offline":issues.length?"warn":"ok"};
+}
+function renderSyncHealth(){
+ const grid=$("syncHealthGrid"),summary=$("syncHealthSummary"),details=$("syncHealthDetails");if(!grid||!summary||!details)return;
+ const h=syncHealthSnapshot(),label=h.status==="ok"?"資料完整":h.status==="warn"?"需要留意":"尚未載入",klass=h.status==="ok"?"green":h.status==="warn"?"amber":"blue";
+ summary.innerHTML=`<span class="badge ${klass}">${label}</span><span>runtime 生成：${esc(syncHealthDate(RUNTIME?.generatedAt))}</span><span>官方資料截止：${esc(DATA?.official_data_cutoff||"—")}</span><span>法規同步：${esc(syncHealthDate(h.s?.laws?.[0]?.fetchedAt||RUNTIME?.generatedAt))}</span>`;
+ grid.innerHTML=[
+  [`${h.fullTextLaws.length}/${h.sourceLaws.length||0}`,"完整法規來源",h.sourceLaws.length?"每個來源均有全文檢查":"等待 runtime"],
+  [h.records.length.toLocaleString("zh-TW"),"現行條文索引",h.invalidRecords?`${h.invalidRecords} 筆需檢查`:"正文欄位完整"],
+  [`${h.s?.court?.count??DATA?.court?.length??0}`,"憲法法庭判決",`最近抓取 ${syncHealthDate(h.s?.court?.fetchedAt)}`],
+  [`${h.sixMatched}/${h.sixConfigured||0}`,"6laws 逐條配對",SIXLAWS_INDEX?.provider||"第三方索引"]
+ ].map(([value,title,note])=>`<div class="sync-health-kpi"><b>${esc(String(value))}</b><span>${esc(title)}<br>${esc(note)}</span></div>`).join("");
+ details.innerHTML=h.issues.length?`<div class="sync-health-issues"><strong>發現 ${h.issues.length} 項需留意</strong>${h.issues.map(x=>`<div>・${esc(x)}</div>`).join("")}</div>`:`<div class="sync-health-ok"><b>檢查通過：</b>官方法規全文、前端條文索引與法規目錄可互相對應。立法院待人工確認 ${Number(h.s?.legislative?.needsReview||0)} 筆屬同步流程狀態，不會清除或覆蓋既有學習資料。</div>`;
+}
+async function loadRuntime(force=false){
+  const reloadButton=$("syncHealthReload");if(force&&reloadButton){reloadButton.disabled=true;reloadButton.textContent="載入中…";}
   try{
     const r=await fetch(`data/runtime.json?ts=${Date.now()}`,{cache:"no-store"});
     if(!r.ok) throw new Error(`HTTP ${r.status}`);
     const rt=await r.json();
+    if(!rt?.frontend?.data?.laws?.length)throw new Error("runtime 格式不完整");
     if(rt?.frontend?.data?.laws?.length){
       RUNTIME=rt;
       DATA=rt.frontend.data;
@@ -7871,6 +8016,9 @@ async function loadRuntime(){
   }catch(e){
     console.info("Standalone/offline mode: using embedded snapshot.",e.message);
     renderSync();
+  }finally{
+    if(reloadButton){reloadButton.disabled=false;reloadButton.textContent="重新載入資料";}
+    renderSyncHealth();
   }
 }
 function renderSync(){
@@ -7883,11 +8031,13 @@ function renderSync(){
   $("syncLyReview").textContent=s?.legislative?.needsReview??"—";
   if(!s){
     $("syncRows").innerHTML=`<div class="empty"><b>目前是單檔 HTML 離線快照</b><p>把 GitHub 專案部署到 GitHub Pages 後，前端會自動讀取 data/runtime.json；GitHub Actions 才會真正每日／每週同步官方資料。</p></div>`;
+    renderSyncHealth();
     return;
   }
   $("syncRows").innerHTML=(s.laws||[]).map(x=>`<div class="syncrow"><strong>${x.name}</strong><span>最新：${x.latest||"—"}</span><span>全文：${x.articleCount}條</span><span class="badge ${x.fullTextOk?"green":x.ok?"amber":"red"}">${x.fullTextOk?"完整全文":x.ok?"部分條文":"異常"}</span></div>`).join("")
    + `<div class="syncrow"><strong>憲法法庭</strong><span>${s.court?.count||0} 件</span><span>${s.court?.fetchedAt?new Date(s.court.fetchedAt).toLocaleString():"—"}</span><span class="badge green">每日</span></div>`
    + `<div class="syncrow"><strong>立法院條文對照</strong><span>自動 ${s.legislative?.autoVerified||0}</span><span>待審 ${s.legislative?.needsReview||0}</span><span class="badge blue">每週四</span></div>`;
+  renderSyncHealth();
 }
 
  fillFilter();fillAmendLaw();fillTreeParent();renderTabs();renderAllAmendments();renderLawTree();renderStudy();renderReasons();renderExam();renderCourt();renderSync();renderExamSources();renderWarRoom();setupYamolImporter();setupPromotionIntegration();setupLearningEngine();setupChangelog();setupV26Tools();setupCalendar();setupGlobalCommand();loadImportedQuestions();loadRuntime();loadQuestionBank();setupFontScale();syncPrimaryNav("home");renderContextNav("home");

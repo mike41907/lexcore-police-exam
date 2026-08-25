@@ -9,11 +9,11 @@ const html=fs.readFileSync(path.join(root,"index.html"),"utf8");
 const pkg=JSON.parse(fs.readFileSync(path.join(root,"package.json"),"utf8"));
 const sw=fs.readFileSync(path.join(root,"service-worker.js"),"utf8");
 
-test("v3.3.2 release markers and cache version stay synchronized",()=>{
-  assert.equal(pkg.version,"3.3.2");
-  assert.match(html,/目前 v3\.3\.2/);
-  assert.match(html,/release-version">v3\.3\.2/);
-  assert.match(sw,/lexcore-v3\.3\.2/);
+test("v3.4.0 release markers and cache version stay synchronized",()=>{
+  assert.equal(pkg.version,"3.4.0");
+  assert.match(html,/目前 v3\.4\.0/);
+  assert.match(html,/release-version">v3\.4\.0/);
+  assert.match(sw,/lexcore-v3\.4\.0/);
 });
 
 test("law reader keeps navigation state and defers heavy article extras",()=>{
@@ -39,7 +39,7 @@ test("law reader exposes per-article legislative-reason controls",()=>{
 test("quick lookup requires every query term and clears stale results",()=>{
   assert.match(html,/function normalizeLookupText\(value=""\)/);
   assert.match(html,/function lookupQueryTerms\(query=""\)/);
-  assert.match(html,/function lookupRecordMatch\(record,query,terms\)/);
+  assert.match(html,/function lookupRecordMatch\(record,query,terms(?:,mode="all")?\)/);
   assert.match(html,/matchedTerms\.length!==terms\.length/);
   assert.match(html,/let rows=\[\.\.\.allArticleRecords\(\)\]/);
   assert.match(html,/lookupResults"\)\.innerHTML=.*可以直接用工作語言搜尋/);
