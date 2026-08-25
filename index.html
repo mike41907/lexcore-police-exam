@@ -3250,7 +3250,7 @@ load();
     <h2>LexCore 更新紀錄</h2>
     <p>版本變更、重大修正與新功能統一收在這裡。其他頁面不再顯示版本更新說明，避免干擾讀書與作答。</p>
    </div>
-   <span class="badge blue">目前 v3.3.1</span>
+   <span class="badge blue">目前 v3.3.2</span>
   </div>
 
   <div class="changelog-filter">
@@ -3263,6 +3263,20 @@ load();
   </div>
 
    <div class="changelog-list" id="changelogList">
+
+   <details class="release-card" data-release-tags="study ui" open>
+    <summary>
+     <div class="release-version">v3.3.2</div>
+     <div><div class="release-title">快速查法命中邏輯修正</div><div class="release-meta">全詞命中・清除舊結果・命中詞提示</div></div>
+     <span class="release-tag">搜尋修正</span>
+    </summary>
+    <div class="release-body"><ul>
+     <li>複合關鍵字改為所有詞都必須出現在同一條文，不再因只命中其中一個詞而混入結果。</li>
+     <li>重新搜尋、清空搜尋或切換條件時會清除舊結果，避免前一次搜尋的條文殘留。</li>
+     <li>每筆結果顯示實際命中的查詢詞；「鑑定」不會再顯示條文全文沒有該詞的刑法第1、2條。</li>
+     <li>保留既有 localStorage／IndexedDB 與個人學習資料，不更換既有 storage key。</li>
+    </ul></div>
+   </details>
 
    <details class="release-card" data-release-tags="study ui data" open>
     <summary>
@@ -5965,26 +5979,39 @@ function renderFullStudy(){
 }
 
 /* ---------- Quick law lookup ---------- */
+function normalizeLookupText(value=""){
+ let text=String(value??"");
+ if(typeof text.normalize==="function")text=text.normalize("NFKC");
+ return text.toLowerCase().replace(/[，。；：、,.!?！？「」『』（）()【】《》〈〉]/g," ").replace(/\s+/g," ").trim();
+}
+function lookupQueryTerms(query=""){
+ return [...new Set(normalizeLookupText(query).split(/\s+/).filter(Boolean))];
+}
+function lookupRecordMatch(record,query,terms){
+ const hay=normalizeLookupText(`${record.lawName||""} 第${record.article||""}條 ${record.text||""}`),matchedTerms=terms.filter(term=>hay.includes(term));
+ if(!terms.length||matchedTerms.length!==terms.length)return null;
+ const text=normalizeLookupText(record.text||""),lawName=normalizeLookupText(record.lawName||""),articleQuery=normalizeArticleJump(query),exactArticle=/^\d+(?:-\d+)?$/.test(articleQuery)&&articleQuery===String(record.article)?8:0;
+ const textHits=matchedTerms.filter(term=>text.includes(term)).length,lawHits=matchedTerms.filter(term=>lawName.includes(term)).length;
+ return {...record,score:matchedTerms.length*4+textHits*3+lawHits*8+exactArticle+(record.main?1:0),matchTerms:matchedTerms};
+}
 function renderQuickLookup(){
  if(!$("lookupResults"))return;
  const q=($("lookupInput")?.value||"").trim(),scope=$("lookupScope")?.value||"main",lid=$("lookupLaw")?.value||"";
- if(!q){$("lookupCount").textContent="輸入關鍵字開始搜尋";return;}
- let rows=allArticleRecords();
+ const terms=lookupQueryTerms(q);
+ if(!q||!terms.length){
+  $("lookupCount").textContent="輸入關鍵字開始搜尋";
+  $("lookupResults").innerHTML=`<div class="empty"><b>可以直接用工作語言搜尋</b><p>例如「鑑定」、「鑑定、通譯」或「第101-1條」。</p></div>`;
+  return;
+ }
+ let rows=[...allArticleRecords()];
  if(scope==="main")rows=rows.sort((a,b)=>(b.main?1:0)-(a.main?1:0));
  if(lid)rows=rows.filter(x=>x.lawId===lid);
- const terms=q.split(/\s+/).filter(Boolean);
- rows=rows.map(r=>{
-   const hay=`${r.lawName} 第${r.article}條 ${r.text}`;
-   const hit=terms.reduce((n,t)=>n+(hay.includes(t)?1:0),0);
-   const exactArticle=new RegExp(`(?:第\\s*)?${String(r.article).replace("-","[-之]")}\\s*(?:條)?`).test(q)?2:0;
-   const lawHit=(r.lawName||"").includes(q)?2:0;
-   return {...r,score:hit*4+exactArticle+lawHit+(r.main?1:0)};
- }).filter(x=>x.score>0).sort((a,b)=>b.score-a.score).slice(0,80);
+ rows=rows.map(r=>lookupRecordMatch(r,q,terms)).filter(Boolean).sort((a,b)=>b.score-a.score).slice(0,80);
  $("lookupCount").textContent=`找到 ${rows.length} 個符合條文`;
  $("lookupResults").innerHTML=rows.length?rows.map(r=>{
   const mnemonic=articleMnemonicInfo(r.lawId,r.article,r.text),sixInfo=sixLawsArticleInfo(r.lawId,r.article);
   return `<div class="lookup-result">
-   <div><h3>${r.lawName} 第 ${r.article} 條${sixInfo?.title?`（${esc(sixInfo.title)}）`:""}</h3><div class="meta">${r.category||""}${r.main?"｜主考範圍":"｜相關法規"}${sixInfo?.judgmentCount?`｜判解 ${sixInfo.judgmentCount}`:""}${sixInfo?.lawCount?`｜相關法規 ${sixInfo.lawCount}`:""}</div><div class="lookup-snippet">${esc(articleSnippet(r.text,terms[0]||q))}</div><div class="lookup-mnemonic"><b>🧠 口訣</b><span>${esc(mnemonic.text)}</span><span class="badge ${mnemonic.kind==="curated"?"green":mnemonic.kind==="pending"?"":"amber"}">${mnemonic.status}</span></div></div>
+   <div><h3>${r.lawName} 第 ${r.article} 條${sixInfo?.title?`（${esc(sixInfo.title)}）`:""}</h3><div class="meta">${r.category||""}${r.main?"｜主考範圍":"｜相關法規"}${sixInfo?.judgmentCount?`｜判解 ${sixInfo.judgmentCount}`:""}${sixInfo?.lawCount?`｜相關法規 ${sixInfo.lawCount}`:""}｜命中「${esc(r.matchTerms.join("、"))}」</div><div class="lookup-snippet">${esc(articleSnippet(r.text,terms[0]||q))}</div><div class="lookup-mnemonic"><b>🧠 口訣</b><span>${esc(mnemonic.text)}</span><span class="badge ${mnemonic.kind==="curated"?"green":mnemonic.kind==="pending"?"":"amber"}">${mnemonic.status}</span></div></div>
    <div class="lookup-actions"><button class="chip ready" onclick="openArticle('${r.lawId}','${r.article}')">開啟</button><button class="chip" onclick="speakSingleArticle('${r.lawId}','${r.article}')">🎧 朗讀</button></div>
   </div>`;
  }).join(""):`<div class="empty"><b>找不到符合的現行條文</b><p>如果是剛部署新版，請先讓每日法規同步完成一次；完整全文才會進入快速查法索引。</p></div>`;
