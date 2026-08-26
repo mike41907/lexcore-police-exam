@@ -9,11 +9,11 @@ const html=fs.readFileSync(path.join(root,"index.html"),"utf8");
 const pkg=JSON.parse(fs.readFileSync(path.join(root,"package.json"),"utf8"));
 const sw=fs.readFileSync(path.join(root,"service-worker.js"),"utf8");
 
-test("v3.5.5 release markers and cache version stay synchronized",()=>{
-  assert.equal(pkg.version,"3.5.5");
-  assert.match(html,/目前 v3\.5\.5/);
-  assert.match(html,/release-version">v3\.5\.5/);
-  assert.match(sw,/lexcore-v3\.5\.5/);
+test("v3.5.6 release markers and cache version stay synchronized",()=>{
+  assert.equal(pkg.version,"3.5.6");
+  assert.match(html,/目前 v3\.5\.6/);
+  assert.match(html,/release-version">v3\.5\.6/);
+  assert.match(sw,/lexcore-v3\.5\.6/);
 });
 
 test("law reader keeps navigation state and defers heavy article extras",()=>{
@@ -66,6 +66,14 @@ test("mnemonic editing and flashcards have separate local data channels",()=>{
   assert.match(html,/id="startFlashcards"/);
   const flashcard=html.slice(html.indexOf("function renderFlashcard()"));
   assert.ok(flashcard.indexOf("if(!card)")<flashcard.indexOf("articleMnemonicInfo(card.lawId"),"字卡完成後應先處理空牌組再讀取條文資料");
+});
+
+test("article mnemonic cards hide the long provenance disclaimer",()=>{
+  const mnemonic=html.slice(html.indexOf("function articleMnemonicMarkup"),html.indexOf("function cplFrequencyViewData"));
+  assert.match(mnemonic,/article-mnemonic-head-actions/);
+  assert.match(mnemonic,/openMnemonicEditor\('\$\{lid\}','\$\{article\}'\)/);
+  assert.doesNotMatch(mnemonic,/\$\{esc\(info\.note\|\|""\)\}/);
+  assert.doesNotMatch(mnemonic,/｜來源：\$\{esc\(info\.source\|\|""\)\}/);
 });
 
 test("existing private study keys remain present",()=>{
