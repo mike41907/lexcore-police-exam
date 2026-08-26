@@ -22,6 +22,6 @@ test("sync page exposes read-only runtime health checks",()=>{
   assert.match(html,/id="syncHealthReload"/);
   assert.match(html,/function syncHealthSnapshot\(\)/);
   assert.match(html,/function renderSyncHealth\(\)/);
-  assert.match(html,/sourceArticleCount!==records\.length/);
+  assert.match(html,/sourceArticleCount!==allRecords\.length/);
   assert.match(html,/不會清除或覆蓋既有學習資料/);
 });

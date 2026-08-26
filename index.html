@@ -3287,7 +3287,7 @@ load();
     <h2>LexCore 更新紀錄</h2>
     <p>版本變更、重大修正與新功能統一收在這裡。其他頁面不再顯示版本更新說明，避免干擾讀書與作答。</p>
    </div>
-   <span class="badge blue">目前 v3.5.0</span>
+   <span class="badge blue">目前 v3.5.1</span>
   </div>
 
   <div class="changelog-filter">
@@ -3300,6 +3300,19 @@ load();
   </div>
 
    <div class="changelog-list" id="changelogList">
+
+   <details class="release-card" data-release-tags="study ui data" open>
+    <summary><div class="release-version">v3.5.1</div>
+     <div><div class="release-title">隱藏已刪除條文</div><div class="release-meta">現行全文・快速查法・章節跳轉・口訣字卡索引一致排除</div></div>
+     <span class="release-tag">資料顯示修正</span>
+    </summary>
+    <div class="release-body"><ul>
+     <li>法規閱讀器、快速查法、條號跳轉、章節目錄與核心必讀不再顯示官方快照中的「（刪除）」條文。</li>
+     <li>主動回憶、口訣／字卡、頑固弱點、戰情室與私人錯題統計不再把已刪除條文列為現行讀書目標。</li>
+     <li>修法沿革與版本防呆仍保留歷史來源；遇到已刪除條文只顯示版本狀態，不提供誤導性的「看現行法」入口。</li>
+     <li>不更換既有 localStorage／IndexedDB key，不清除錯題、筆記、班表、掌握度、間隔複習或字卡進度。</li>
+    </ul></div>
+   </details>
 
    <details class="release-card" data-release-tags="major study ui" open>
     <summary><div class="release-version">v3.5.0</div>
@@ -3940,6 +3953,19 @@ function fillAmendLaw(){
  $("amendLaw").innerHTML=`<option value="">全部法規</option>`+(DATA.laws||[]).map(l=>`<option value="${l.id}">${l.name}</option>`).join("");
  if([...$("amendLaw").options].some(o=>o.value===old))$("amendLaw").value=old;
 }
+
+function isDeletedArticleMarker(value=""){
+ const text=String(value??"").replace(/\s+/g,"").trim();
+ return /^(?:[（(]?刪除[）)]?|已刪除)$/u.test(text);
+}
+function isDeletedArticleKey(key,record=null){
+ const id=String(key||""),rec=record||ARTICLE_TEXTS?.[id]||{},mnemonic=ARTICLE_MNEMONICS?.[id]||{},detail=DETAILS?.[id]||{};
+ if(rec?.deleted===true||mnemonic?.deleted===true||detail?.deleted===true)return true;
+ if([rec.text,mnemonic.title,mnemonic.keyword,detail.current].some(isDeletedArticleMarker))return true;
+ return [rec.status,rec.status_type,rec.state,rec.articleStatus,mnemonic.status,mnemonic.kind,detail.status,detail.status_type]
+   .some(value=>/^(?:deleted|刪除|已刪除|現行已刪除)/iu.test(String(value??"").trim()));
+}
+
 function renderAllAmendments(){
  if(!$("allAmendments"))return;
  const q=($("amendSearch")?.value||"").trim(), y=$("amendYear")?.value||"", lid=$("amendLaw")?.value||"";
@@ -3953,10 +3979,11 @@ function renderAllAmendments(){
  $("amendArticleCount").textContent=`${articleSet.size} 個異動條文`;
  $("allAmendments").innerHTML=rows.map(({law,e})=>{
    const ids=e.article_ids||[];
-   const chips=ids.length?ids.map(a=>{
+   const visibleIds=ids.filter(a=>!isDeletedArticleKey(`${law.id}:${a}`));
+   const chips=visibleIds.length?visibleIds.map(a=>{
       const full=!!DETAILS[law.id+":"+a], current=!!ARTICLE_TEXTS[law.id+":"+a];
       return `<button class="chip ${full||current?"ready":""}" onclick="openArticle('${law.id}','${a}')">第${a}條${full?" ✓完整":(current?" ✓條文":"")}</button>`;
-   }).join(""):`<span class="badge amber">條號未解析，但修法事件已保留</span>`;
+   }).join(""):ids.length?`<span class="badge amber">本次涉及條文均已刪除，僅保留修法沿革</span>`:`<span class="badge amber">條號未解析，但修法事件已保留</span>`;
    return `<div class="amend-event">
       <div class="row"><div><div class="amend-law">${law.name}</div><h3 style="margin:3px 0 0">${e.date||"日期待解析"}</h3></div><span class="badge red">修法</span></div>
       <div class="fullnote">${e.articles||""}${e.articles&&e.note?"<br>":""}${e.note||""}</div>
@@ -4165,8 +4192,14 @@ function renderExam(){
 }
 
 function openArticle(lid,a){
+ const key=lid+":"+a;
+ if(isDeletedArticleKey(key)){
+   const status=$("lawJumpStatus");
+   if(status)status.textContent=`第${a}條已刪除，現行閱讀已隱藏`;
+   return;
+ }
  saveLawReadingPosition(lid,a);
- const key=lid+":"+a,l=lawInfo(lid),d=DETAILS[key],live=ARTICLE_TEXTS[key],sixInfo=sixLawsArticleInfo(lid,a),sixMarkup=sixLawsReferenceMarkup(lid,a),relationChain=lawRelationChainMarkup(lid),mnemonicMarkup=articleMnemonicMarkup(lid,a,live?.text||d?.current||"",{expanded:true});
+ const l=lawInfo(lid),d=DETAILS[key],live=ARTICLE_TEXTS[key],sixInfo=sixLawsArticleInfo(lid,a),sixMarkup=sixLawsReferenceMarkup(lid,a),relationChain=lawRelationChainMarkup(lid),mnemonicMarkup=articleMnemonicMarkup(lid,a,live?.text||d?.current||"",{expanded:true});
  $("modalTitle").textContent=`${l.name} 第${a}條${sixInfo?.title?`（${sixInfo.title}）`:""}`;
  if(!d){
    if(live?.text){
@@ -4874,7 +4907,8 @@ async function loadImportedQuestions(){try{IMPORTED_QUESTIONS=await idbAll()}cat
 function renderYamolLibrary(){
  if(!$("yamolLibrary"))return;
  $("yamolCount").textContent=`${IMPORTED_QUESTIONS.length}題`;
- const byLaw={};for(const q of IMPORTED_QUESTIONS){const k=q.lawId&&q.article?`${lawName(q.lawId)} 第${q.article}條`:(q.subject||"未分類");byLaw[k]=(byLaw[k]||0)+1;}
+ const visibleQuestions=IMPORTED_QUESTIONS.filter(q=>!(q.lawId&&q.article&&isDeletedArticleKey(`${q.lawId}:${q.article}`)));
+ const byLaw={};for(const q of visibleQuestions){const k=q.lawId&&q.article?`${lawName(q.lawId)} 第${q.article}條`:(q.subject||"未分類");byLaw[k]=(byLaw[k]||0)+1;}
  const rows=Object.entries(byLaw).sort((a,b)=>b[1]-a[1]);
  $("yamolLibrary").innerHTML=rows.length?rows.slice(0,30).map(([k,n])=>`<div class="library-row"><span>${k}</span><b>${n}題</b></div>`).join(""):'<div class="empty"><b>尚未匯入</b><p>匯入後會依法條／科目統計。</p></div>';
 }
@@ -4956,11 +4990,11 @@ function masteryRows(){
  };
  for(const a of attempts){
    if(a.excludeFromMastery)continue;
-   const key=conceptKeyFrom(a);if(!key)continue;
+   const key=conceptKeyFrom(a);if(!key||isDeletedArticleKey(key))continue;
    ensure(key,a.lawId,a.article,`${lawName(a.lawId)} 第${a.article}條`).attempts.push(a);
  }
  for(const q of IMPORTED_QUESTIONS){
-   const key=conceptKeyFrom(q);if(!key)continue;
+   const key=conceptKeyFrom(q);if(!key||isDeletedArticleKey(key))continue;
    const x=ensure(key,q.lawId,q.article,`${lawName(q.lawId)} 第${q.article}條`);
    x.yamolWrong+=(q.wrongHistoryCount||1);
    if(q.yamolCorrectRate!=null){x.yamolRateRisk+=(1-clamp(Number(q.yamolCorrectRate),0,100)/100);x.yamolRateN++;}
@@ -5027,7 +5061,7 @@ function masteryRows(){
    );
    Object.assign(x,{mastery,evidence,importance,isDue,daysUntil,sr:s||null,priority});
  }
- return Object.values(by).sort((a,b)=>b.priority-a.priority);
+ return Object.values(by).filter(x=>!isDeletedArticleKey(x.key)).sort((a,b)=>b.priority-a.priority);
 }
 function overallMasteryValue(rows=masteryRows()){
  const assessed=rows.filter(x=>x.evidence>0||x.yamolWrong||x.manualReview);
@@ -5118,7 +5152,7 @@ function renderLearningEngine(){
 
  // Existing option-trap analysis
  if($("trapLoss")){
-   const traps={};for(const a of getAttempts()){for(const t of a.trapTags||[])traps[t]=(traps[t]||0)+(a.loss||1)}
+   const traps={};for(const a of getAttempts()){const key=conceptKeyFrom(a);if(key&&isDeletedArticleKey(key))continue;for(const t of a.trapTags||[])traps[t]=(traps[t]||0)+(a.loss||1)}
    const trapRows=Object.entries(traps).sort((a,b)=>b[1]-a[1]).slice(0,10);
    $("trapLoss").innerHTML=trapRows.length?`<table class="loss-table"><tr><th>陷阱</th><th>損失指標</th></tr>${trapRows.map(([t,v])=>`<tr><td>${t}</td><td>${Math.round(v*10)/10}</td></tr>`).join("")}</table>`:'<div class="empty"><b>尚未累積錯題陷阱</b><p>開始作答後會追蹤舊法、數字、主體偷換、例外條款等錯誤型態。</p></div>';
  }
@@ -5191,7 +5225,8 @@ function conceptUniverse(){
  const map=new Map();
  const add=(lawId,article,extra={})=>{
    if(!lawId||!article)return;
-   const key=`${lawId}:${article}`,law=DATA.laws.find(x=>x.id===lawId);
+   const key=`${lawId}:${article}`;if(isDeletedArticleKey(key))return;
+   const law=DATA.laws.find(x=>x.id===lawId);
    if(!law)return;
    const old=map.get(key)||{key,lawId,article:String(article),label:`${lawName(lawId)} 第${article}條`,subject:inferSubject(lawId,law.category||""),tags:new Set(),questionIds:new Set()};
    for(const t of extra.tags||[])old.tags.add(t);
@@ -5348,13 +5383,13 @@ function renderKnowledgeGraph(){
 function leechRows(){
  const attempts=getAttempts(),groups={};
  for(const a of attempts){
-   const key=conceptKeyFrom(a);if(!key)continue;
+   const key=conceptKeyFrom(a);if(!key||isDeletedArticleKey(key))continue;
    if(!groups[key])groups[key]={key,lawId:a.lawId,article:a.article,attempts:[],traps:{}};
    const g=groups[key];g.attempts.push(a);
    for(const t of a.trapTags||[])g.traps[t]=(g.traps[t]||0)+1;
  }
  for(const q of IMPORTED_QUESTIONS){
-   const key=conceptKeyFrom(q);if(!key)continue;
+   const key=conceptKeyFrom(q);if(!key||isDeletedArticleKey(key))continue;
    if(!groups[key])groups[key]={key,lawId:q.lawId,article:q.article,attempts:[],traps:{},yamolWrong:0};
    groups[key].yamolWrong=(groups[key].yamolWrong||0)+(q.wrongHistoryCount||1);
  }
@@ -5667,8 +5702,8 @@ function renderLawReadingShortcuts(lid,ids=[]){
 }
 
 function lawCatalog(){
- if(LAW_CATALOG?.length)return LAW_CATALOG;
- return (DATA.laws||[]).map(l=>({id:l.id,name:l.name,pcode:l.pcode,category:l.category,articleIds:Object.keys(ARTICLE_TEXTS).filter(k=>k.startsWith(l.id+":")).map(k=>k.split(":")[1])}));
+ if(LAW_CATALOG?.length)return LAW_CATALOG.map(l=>({...l,articleIds:Array.isArray(l.articleIds)?l.articleIds.filter(a=>!isDeletedArticleKey(`${l.id}:${a}`)):l.articleIds}));
+ return (DATA.laws||[]).map(l=>({id:l.id,name:l.name,pcode:l.pcode,category:l.category,articleIds:Object.keys(ARTICLE_TEXTS).filter(k=>k.startsWith(l.id+":")&&!isDeletedArticleKey(k)).map(k=>k.split(":")[1])}));
 }
 function lawInfo(id){
  const catalog=lawCatalog().find(x=>x.id===id), base=(DATA.laws||[]).find(x=>x.id===id);
@@ -5680,7 +5715,7 @@ function articleSortValue(a=""){
 function allArticleRecords(){
  if(ARTICLE_RECORD_CACHE)return ARTICLE_RECORD_CACHE;
  const cat=new Map(lawCatalog().map(l=>[l.id,l]));
- ARTICLE_RECORD_CACHE=Object.values(ARTICLE_TEXTS||{}).map(rec=>{
+ ARTICLE_RECORD_CACHE=Object.values(ARTICLE_TEXTS||{}).filter(rec=>!isDeletedArticleKey(`${rec.lawId}:${rec.article}`,rec)).map(rec=>{
    const l=cat.get(rec.lawId)||lawInfo(rec.lawId);
    return {...rec,law:l,category:l.category||"",main:!!(DATA.laws||[]).find(x=>x.id===rec.lawId)};
  }).sort((a,b)=>(a.lawName||"").localeCompare(b.lawName||"zh-Hant")||articleSortValue(a.article)-articleSortValue(b.article));
@@ -5689,7 +5724,7 @@ function allArticleRecords(){
 function articleIdsForLaw(id){
  const ids=allArticleRecords().filter(x=>x.lawId===id).map(x=>String(x.article));
  if(ids.length)return [...new Set(ids)].sort((a,b)=>articleSortValue(a)-articleSortValue(b));
- const l=(DATA.laws||[]).find(x=>x.id===id);return [...(l?.key_articles||[])];
+ const l=(DATA.laws||[]).find(x=>x.id===id);return [...(l?.key_articles||[])].filter(a=>!isDeletedArticleKey(`${id}:${a}`));
 }
 function lawChaptersForLaw(id,ids=[]){
  const available=new Set(ids.map(String)),seen=new Set();
@@ -5952,7 +5987,7 @@ function cplFrequencyPanelMarkup(){
  const chapterMarkup=chapters.map(row=>'<button class="cpl-frequency-chapter" type="button" onclick="scrollToCplFrequencyChapter(\''+esc(row.id)+'\')" title="點擊跳到'+esc(row.name)+'"><div class="row"><span>'+esc(row.name)+'</span><b>'+row.count+'</b></div><div class="cpl-frequency-bar"><i style="width:'+Math.round((Number(row.count)||0)/maxChapter*100)+'%"></i></div></button>').join("");
  const issueMarkup=(view.issues||[]).map(row=>{
    const chapterNames=(row.chapters||[]).map(id=>(view.chapterCounts||[]).find(ch=>ch.id===id)?.name||id).join("、");
-   const refs=(row.articleRefs||[]).map(a=>'<button class="cpl-frequency-ref" type="button" onclick="scrollToStudyArticle(\'cpl\',\''+a+'\')">§ '+a+'</button>').join("");
+   const refs=(row.articleRefs||[]).filter(a=>!isDeletedArticleKey(`cpl:${a}`)).map(a=>'<button class="cpl-frequency-ref" type="button" onclick="scrollToStudyArticle(\'cpl\',\''+a+'\')">§ '+a+'</button>').join("");
    return '<div class="cpl-frequency-row"><span class="cpl-frequency-rank">'+row.rank+'</span><div class="cpl-frequency-main"><b class="cpl-frequency-issue">'+esc(row.issue)+'</b><div class="cpl-frequency-meta"><span>'+esc(chapterNames||"章節未分類")+'</span>'+(row.latestYear?'<span>・最新 '+esc(row.latestYear)+' 年</span>':"")+(refs?'<span>・明確條號</span>'+refs:'<span>・來源未列單一條號</span>')+'</div></div><strong class="cpl-frequency-count">'+row.count+'<small>次</small></strong></div>';
  }).join("");
  const retrieved=source?.retrievedAt?new Date(source.retrievedAt).toLocaleDateString("zh-TW"):"";
@@ -6010,7 +6045,8 @@ function fullLawReaderMarkup(lid,records,ids,recentSet,coreSet){
    if(chapter.type==="全文")continue;
    const rows=starts.get(String(chapter.article))||[];rows.push(chapter);starts.set(String(chapter.article),rows);
  }
- return `<div class="law-reader" aria-label="${esc(lawInfo(lid).name)}現行全文">${records.map(r=>{
+ const visibleRecords=records.filter(r=>!isDeletedArticleKey(`${r.lawId||lid}:${r.article}`,r));
+ return `<div class="law-reader" aria-label="${esc(lawInfo(lid).name)}現行全文">${visibleRecords.map(r=>{
    const article=String(r.article), detail=DETAILS?.[`${lid}:${article}`],sixInfo=sixLawsArticleInfo(lid,article);
    const headings=(starts.get(article)||[]).map(c=>`<div class="law-reader-section ${chapterTypeClass(c.type)}"><b>${esc(c.label)}</b><span>自第 ${esc(article)} 條</span></div>`).join("");
    const favorite=isLawArticleFavorite(lid,article),favoriteId=`${studyArticleDomId(lid,article)}-favorite`;
@@ -6036,7 +6072,7 @@ function renderFullStudy(){
    if(records.length)out+=`<div class="block"><div class="row"><h3>現行全文</h3><span class="badge green">連續閱讀</span></div>${fullLawReaderMarkup(id,records,ids,recentSet,coreSet)}</div>`;
    else out+=`<div class="empty"><b>目前沒有可閱讀的完整條文</b><p>請在 GitHub Pages 連線後等待官方法規同步完成。</p></div>`;
    if(base?.events?.length)out+=`<details class="block"><summary><b>🔥 近5年修法時間軸（${base.events.length}次）</b></summary><div class="timeline" style="margin-top:9px">${base.events.map(e=>`<div class="event"><div class="row"><h3>${e.date}</h3><span class="badge red">修法</span></div><p>${e.articles}<br>${e.note}</p></div>`).join("")}</div></details>`;
-   const core=(base?.key_articles||[]).filter(a=>ids.includes(String(a))||ARTICLE_TEXTS[id+":"+a]);
+   const core=(base?.key_articles||[]).filter(a=>!isDeletedArticleKey(`${id}:${a}`)&&(ids.includes(String(a))||ARTICLE_TEXTS[id+":"+a]));
    if(core.length)out+=`<div class="block"><h3>🎯 核心必讀條文</h3><div class="chips">${core.map(a=>`<button class="chip ready" onclick="scrollToStudyArticle('${id}','${a}')">第${a}條</button>`).join("")}</div></div>`;
  }else{
    const matches=records.filter(r=>String(r.article).includes(q)||(r.text||"").includes(q)).slice(0,100);
@@ -6208,7 +6244,7 @@ function stopVoiceMode(){
 function setVoiceRate(r){VOICE_RATE=Number(r)||1}
 function voiceArticleItem(key){
  const rec=ARTICLE_TEXTS[key], [lawId,article]=key.split(":");
- if(!rec)return null;
+ if(!rec||isDeletedArticleKey(key,rec))return null;
  return {title:`${rec.lawName} 第${article}條`,text:rec.text,lawId,article};
 }
 async function buildVoiceQueue(mode){
@@ -6298,7 +6334,7 @@ function numberHighlights(text=""){
  return [...new Set(nums.map(cleanText))].slice(0,3);
 }
 async function getMnemonicCards(){
- const rows=masteryRows().sort((a,b)=>b.priority-a.priority).slice(0,24),cards=[];
+ const rows=masteryRows().filter(x=>!isDeletedArticleKey(x.key)).sort((a,b)=>b.priority-a.priority).slice(0,24),cards=[];
  for(const x of rows){
    const q=allQuestions().find(z=>conceptKeyFrom(z)===x.key);
    const d=DETAILS[x.key]||{},em=EXAM_META[x.key]||{};
@@ -6387,7 +6423,7 @@ function handleFlashcardFullscreenChange(){
 }
 async function loadCriminalPdfFlashcardDeck(){
  if(FLASHCARD_PDF_DECK)return FLASHCARD_PDF_DECK;
- const response=await fetch(`${FLASHCARD_PDF_MANIFEST_URL}?v=3.5.0`,{cache:"no-store"});
+ const response=await fetch(`${FLASHCARD_PDF_MANIFEST_URL}?v=3.5.1`,{cache:"no-store"});
  if(!response.ok)throw new Error(`PDF 字卡索引載入失敗：HTTP ${response.status}`);
  const manifest=await response.json(),base=new URL(FLASHCARD_PDF_MANIFEST_URL,document.baseURI);
  if(!Array.isArray(manifest.cards)||!manifest.cards.length)throw new Error("PDF 字卡索引沒有可用卡片");
@@ -6455,7 +6491,7 @@ function highConfidenceWrongConcepts(daysBack=45){
  const since=Date.now()-daysBack*86400000, map={};
  for(const a of getAttempts()){
    if(new Date(a.at).getTime()<since||a.correct||a.confidence!==3)continue;
-   const key=conceptKeyFrom(a);if(!key)continue;
+   const key=conceptKeyFrom(a);if(!key||isDeletedArticleKey(key))continue;
    map[key]=(map[key]||0)+1;
  }
  return Object.entries(map).sort((a,b)=>b[1]-a[1]).map(([key,n])=>({key,n}));
@@ -7305,14 +7341,14 @@ function versionWarningHtml(q){
 }
 function renderVersionGuard(){
  if(!$("versionRiskList"))return;
- const qs=allQuestions(),rows=qs.map(q=>({q,v:questionVersionStatus(q)}));
+ const qs=allQuestions({includeDeleted:true}),rows=qs.map(q=>({q,v:questionVersionStatus(q)}));
  const risk=rows.filter(x=>x.v.status==="risk"),unknown=rows.filter(x=>x.v.status==="unknown"),safe=rows.filter(x=>x.v.status==="safe");
  const corrYears=(EXAM_SOURCES?.sources||[]).filter(s=>(s.corrections||[]).length);
  $("versionRiskCount").textContent=risk.length;$("versionUnknownCount").textContent=unknown.length;$("versionCorrectionYears").textContent=corrYears.length;$("versionSafeCount").textContent=safe.length;
  $("versionRiskList").innerHTML=(risk.length?risk.slice(0,100).map(({q,v})=>`<div class="version-row">
   <div><b>${q.year||"年代不明"}｜${q.sourceType==="yamol"?"私人題庫":q.sourceType==="official"?"官方題":"其他題"}</b></div>
   <div>${esc(q.stem.slice(0,130))}<div class="meta">${lawName(q.lawId)} 第${q.article}條｜後續修法 ${v.latest?.date||"—"}｜原題答案 ${(q.answer||[]).join("")||"—"}</div></div>
-  <button class="chip" onclick="openArticle('${q.lawId}','${q.article}')">看現行法</button>
+  ${isDeletedArticleKey(`${q.lawId}:${q.article}`)?'<span class="badge red">現行條文已刪除</span>':`<button class="chip" onclick="openArticle('${q.lawId}','${q.article}')">看現行法</button>`}
  </div>`).join(""):'<div class="empty"><b>目前未偵測到「題目年度早於同條後續修法」的題目</b></div>')+
  (unknown.length?`<details style="margin-top:12px"><summary><b>年代不足待確認 ${unknown.length} 題</b></summary><div style="margin-top:8px">${unknown.slice(0,40).map(({q})=>`<div class="version-row"><b>${lawName(q.lawId)} 第${q.article}條</b><div>${esc(q.stem.slice(0,120))}</div><span class="version-badge unknown">待確認</span></div>`).join("")}</div></details>`:"");
 }
@@ -7335,7 +7371,7 @@ function errorCauseButtonsHtml(x){
  return `<div class="error-causes" data-cause-box="${id}"><span>我為什麼會錯／猜對？點一下真正原因：</span>${ERROR_CAUSES.map(c=>`<button class="cause-btn ${selected===c?"selected":""}" data-cause="${c}" onclick="setErrorCause('${id}','${x.q.id}','${c}')">${c}</button>`).join("")}</div>`;
 }
 function lossLedger(days=30){
- const since=Date.now()-days*86400000,attempts=getAttempts().filter(a=>new Date(a.at).getTime()>=since&&Number(a.loss||0)>0);
+ const since=Date.now()-days*86400000,attempts=getAttempts().filter(a=>new Date(a.at).getTime()>=since&&Number(a.loss||0)>0&&!(a.lawId&&a.article&&isDeletedArticleKey(`${a.lawId}:${a.article}`)));
  const causes=getErrorCauses(),by={},unclassified=[];
  for(const a of attempts){
    const c=causes.filter(x=>x.attemptId===a.id).sort((x,y)=>String(y.at).localeCompare(String(x.at)))[0]?.cause||"未分類";
@@ -7594,10 +7630,11 @@ function saveAttempt(a){
  renderLearningEngine();
  renderV3Pages();
 }
-function allQuestions(){
+function allQuestions({includeDeleted=false}={}){
  const official=QUESTION_BANK.officialQuestions||[];
  const diag=QUESTION_BANK.diagnosticQuestions||DIAGNOSTIC_QUESTIONS;
- return [...official,...IMPORTED_QUESTIONS,...diag];
+ const rows=[...official,...IMPORTED_QUESTIONS,...diag];
+ return includeDeleted?rows:rows.filter(q=>!(q.lawId&&q.article&&isDeletedArticleKey(`${q.lawId}:${q.article}`)));
 }
 function normalizedAccepted(q){
  const raw=q.answerAccepted||[Array.isArray(q.answer)?q.answer.join(""):String(q.answer||"")];
@@ -7889,6 +7926,7 @@ function warRows(){
  const attempts=getAttempts(), map={};
  for(const a of attempts){
    const key=a.lawId&&a.article?`${a.lawId}:${a.article}`:(a.tags?.[0]||a.subject||"其他");
+   if(a.lawId&&a.article&&isDeletedArticleKey(key))continue;
    if(!map[key])map[key]={key,lawId:a.lawId,article:a.article,label:a.lawId?`${lawName(a.lawId)} 第${a.article}條`:key,n:0,wrong:0,loss:0,seconds:0,highConfWrong:0,last:null,traps:{},manualReview:0};
    const x=map[key];x.n++;if(!a.correct)x.wrong++;x.loss+=a.loss||0;x.seconds+=a.seconds||0;if(!a.correct&&a.confidence===3)x.highConfWrong++;
    x.last=a.at;
@@ -7897,6 +7935,7 @@ function warRows(){
  // Imported Yamol wrong questions are a weakness signal even before re-answering in LexCore.
  for(const q of IMPORTED_QUESTIONS){
    const key=q.lawId&&q.article?`${q.lawId}:${q.article}`:(q.subject||"阿摩未分類");
+   if(q.lawId&&q.article&&isDeletedArticleKey(key))continue;
    if(!map[key])map[key]={key,lawId:q.lawId,article:q.article,label:q.lawId?`${lawName(q.lawId)} 第${q.article}條`:key,n:0,wrong:0,loss:0,seconds:0,highConfWrong:0,last:q.importedAt||null,traps:{},yamolWrong:0,yamolRateRisk:0,yamolRateN:0};
    map[key].yamolWrong=(map[key].yamolWrong||0)+(q.wrongHistoryCount||1);
    if(q.yamolCorrectRate!=null){
@@ -7910,11 +7949,13 @@ function warRows(){
    if(!on)continue;
    const q=allQuestions().find(x=>x.id===qid);if(!q)continue;
    const key=q.lawId&&q.article?`${q.lawId}:${q.article}`:(q.subject||"手動再複習");
+   if(q.lawId&&q.article&&isDeletedArticleKey(key))continue;
    if(!map[key])map[key]={key,lawId:q.lawId,article:q.article,label:q.lawId?`${lawName(q.lawId)} 第${q.article}條`:key,n:0,wrong:0,loss:0,seconds:0,highConfWrong:0,last:null,traps:{},manualReview:0};
    map[key].manualReview=(map[key].manualReview||0)+1;
  }
  // Add high-value amendments even if user has never answered them.
  for(const [key,m] of Object.entries(EXAM_META)){
+   if(isDeletedArticleKey(key))continue;
    if(!map[key]){
      const [lawId,article]=key.split(":");
      map[key]={key,lawId,article,label:`${lawName(lawId)} 第${article}條`,n:0,wrong:0,loss:0,seconds:0,highConfWrong:0,last:null,traps:{}};
@@ -8059,10 +8100,10 @@ function syncHealthDate(value=""){
  try{return new Intl.DateTimeFormat("zh-TW",{dateStyle:"short",timeStyle:"short"}).format(d)}catch{return d.toLocaleString()}
 }
 function syncHealthSnapshot(){
- const s=RUNTIME?.sync,sourceLaws=s?.laws||[],records=Object.values(ARTICLE_TEXTS||{}),catalog=Array.isArray(LAW_CATALOG)?LAW_CATALOG:[],catalogIds=new Set(catalog.map(x=>x.id));
+ const s=RUNTIME?.sync,sourceLaws=s?.laws||[],allRecords=Object.values(ARTICLE_TEXTS||{}),records=allRecords.filter(x=>!isDeletedArticleKey(`${x.lawId}:${x.article}`,x)),deletedCount=allRecords.length-records.length,catalog=Array.isArray(LAW_CATALOG)?LAW_CATALOG:[],catalogIds=new Set(catalog.map(x=>x.id));
  const fullTextLaws=sourceLaws.filter(x=>x.fullTextOk&&Number(x.articleCount)>0),sourceArticleCount=sourceLaws.reduce((n,x)=>n+Number(x.articleCount||0),0);
- const invalidRecords=records.filter(x=>!x?.lawId||!x?.article||!String(x.text||"").trim()).length;
- const missingCatalog=records.filter(x=>!catalogIds.has(x.lawId)).length;
+ const invalidRecords=allRecords.filter(x=>!x?.lawId||!x?.article||!String(x.text||"").trim()).length;
+ const missingCatalog=allRecords.filter(x=>!catalogIds.has(x.lawId)).length;
  const sixValues=Object.values(SIXLAWS_INDEX?.laws||{}),sixMatched=sixValues.filter(x=>x?.matched).length,sixConfigured=Number(SIXLAWS_INDEX?.coverage?.configured||sixValues.length||0);
  const issues=[];
  if(!RUNTIME)issues.push("尚未載入 data/runtime.json，現在使用單檔內嵌快照。");
@@ -8070,9 +8111,9 @@ function syncHealthSnapshot(){
  if(sourceLaws.some(x=>!x.fullTextOk))issues.push(`有 ${sourceLaws.filter(x=>!x.fullTextOk).length} 個法規來源未通過完整全文檢查。`);
  if(invalidRecords)issues.push(`有 ${invalidRecords} 筆全文索引缺少法規、條號或正文。`);
  if(missingCatalog)issues.push(`有 ${missingCatalog} 筆全文未能對應法規目錄。`);
- if(sourceArticleCount&&records.length&&sourceArticleCount!==records.length)issues.push(`官方來源宣告 ${sourceArticleCount} 條，但前端索引有 ${records.length} 條，請檢查 runtime 建置。`);
+ if(sourceArticleCount&&allRecords.length&&sourceArticleCount!==allRecords.length)issues.push(`官方來源宣告 ${sourceArticleCount} 條，但前端索引有 ${allRecords.length} 條，請檢查 runtime 建置。`);
  if(s?.status&&s.status!=="ok")issues.push(`同步工作回報狀態為 ${s.status}。`);
- return {s,sourceLaws,records,fullTextLaws,sourceArticleCount,invalidRecords,missingCatalog,sixMatched,sixConfigured,issues,status:!RUNTIME?"offline":issues.length?"warn":"ok"};
+ return {s,sourceLaws,allRecords,records,deletedCount,fullTextLaws,sourceArticleCount,invalidRecords,missingCatalog,sixMatched,sixConfigured,issues,status:!RUNTIME?"offline":issues.length?"warn":"ok"};
 }
 function renderSyncHealth(){
  const grid=$("syncHealthGrid"),summary=$("syncHealthSummary"),details=$("syncHealthDetails");if(!grid||!summary||!details)return;
@@ -8080,7 +8121,7 @@ function renderSyncHealth(){
  summary.innerHTML=`<span class="badge ${klass}">${label}</span><span>runtime 生成：${esc(syncHealthDate(RUNTIME?.generatedAt))}</span><span>官方資料截止：${esc(DATA?.official_data_cutoff||"—")}</span><span>法規同步：${esc(syncHealthDate(h.s?.laws?.[0]?.fetchedAt||RUNTIME?.generatedAt))}</span>`;
  grid.innerHTML=[
   [`${h.fullTextLaws.length}/${h.sourceLaws.length||0}`,"完整法規來源",h.sourceLaws.length?"每個來源均有全文檢查":"等待 runtime"],
-  [h.records.length.toLocaleString("zh-TW"),"現行條文索引",h.invalidRecords?`${h.invalidRecords} 筆需檢查`:"正文欄位完整"],
+  [h.records.length.toLocaleString("zh-TW"),"可閱讀現行條文",h.deletedCount?`已隱藏 ${h.deletedCount} 筆刪除標記`:h.invalidRecords?`${h.invalidRecords} 筆需檢查`:"正文欄位完整"],
   [`${h.s?.court?.count??DATA?.court?.length??0}`,"憲法法庭判決",`最近抓取 ${syncHealthDate(h.s?.court?.fetchedAt)}`],
   [`${h.sixMatched}/${h.sixConfigured||0}`,"6laws 逐條配對",SIXLAWS_INDEX?.provider||"第三方索引"]
  ].map(([value,title,note])=>`<div class="sync-health-kpi"><b>${esc(String(value))}</b><span>${esc(title)}<br>${esc(note)}</span></div>`).join("");
