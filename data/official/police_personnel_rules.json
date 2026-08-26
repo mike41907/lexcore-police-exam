@@ -2,7 +2,7 @@
   "id": "police_personnel_rules",
   "name": "警察人員人事條例施行細則",
   "pcode": "S0020006",
-  "fetchedAt": "2026-08-24T23:38:58.211Z",
+  "fetchedAt": "2026-08-25T23:40:41.846Z",
   "latest": "2024-09-12",
   "history": [
     {
@@ -100,7 +100,7 @@
       "date": "1976-07-15",
       "rocDate": "65/07/15",
       "rocYear": 65,
-      "raw": "內政部（65）台內警字第 691915 號令、\n銓敘部（65）台謨甄四字第 17461 號令會銜訂定發布全文 26 條\n\n:::\n\n最新訊息\n\n中央法規\n\n司法解釋\n\n條約協定\n\n兩岸協議\n\n綜合查詢\n\n跨機關檢索\n\n法治宣導專區\n\n智慧查找\n\n法律扶助\n\n創意教案\n\n法律時事漫談\n\n網站使用說明\n\n網站使用手冊\n\n會員服務介紹\n\n網站單元簡介\n\n法規資料檢索範圍\n\n資料更新頻率說明\n\n資訊服務\n\n全國法規連結圖示\n\n全國法規作業要點\n\n法規名稱英譯標準表\n\n相關網站\n\n訂閱電子報\n\n瀏覽人次總計\n\n1,613,696,535人\n\n本月瀏覽人次\n\n11,654,359人\n\n目前使用人次\n\n605人\n\n電子報訂閱人數\n\n222,811人\n\n本網站係提供法規之最新動態資訊及資料檢索，並不提供法規及法律諮詢之服務。\n\n若有任何法律上的疑義，建議您可逕向發布法規之主管機關洽詢。\n\n本網站法規資料係由政府各機關提供之電子檔或書面文字登打製作，若與各法規主管機關之公布文字有所不同，仍以各法規主管機關之公布資料為準。\n\n部分資料內容，使用特殊文字或符號，如欲詳閱內容，請連結至司法院網站下載造字檔。\n\n全國法規資料庫之內容每週五定期更新，當週發布之法律、命令資料，將於完成法規整編作業後，於下週五更新上線。\n\n法規整編資料截止日：民國 115 年 08 月 14 日 \n\n瀏覽人次總計：1,613,696,535人\n\n本月瀏覽人次：11,654,359人\n\n目前使用人次：605人\n\n電子報訂閱：222,811人\n\n│ 政府網站資料開放宣告 │ 隱私權保護宣告 │ 資訊安全政策 │ Q & A │ 意見回饋 │ API文件 │ \n\n本網站由法務部全國法規資料庫工作小組維運管理..\n\n法務部地址：100204 台北市重慶南路一段130號　電話：(02)2191-0189\n\n第二辦公室地址：100006 台北市貴陽街1段235號　電話：(02)2191-0189\n\n回上方\n\n$(function () {\n\n// === 統一綁定 GA 追蹤事件 ===\n$('.ga-track-link').on('click keypress', function (e) {\n// 如果是鍵盤事件，確認是按下 Enter 鍵 (keyCode 13) 才觸發\nif (e.type === 'keypress' && e.which !== 13) {\nreturn;\n}\n\nvar category = $(this).data('ga-category');\nvar action = $(this).data('ga-action');\n\n// 呼叫原本的 GA 追蹤函數\nif (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice(category, action, '', '');\n}\n});\n\n// 綁定登出確認視窗\n$('.logout-link').on('click', function () {\nif (!confirm('確定登出？')) {\nreturn false; // 若使用者按取消，則不執行跳轉\n}\n});\n\nvar b = 'ONEBAR';\n$(\"#btnSubscribe,#btnUnsubscribe\").on(\"click\", function (event) {\n//var email = $.trim($(\"#txtEMail\").val());\n//if (email == \"\") {\n// event.preventDefault();\n// alert('請您輸入電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else if (false == IsEMail(email)) {\n// event.preventDefault();\n// alert('請您輸入正確電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else {\n// GoogleAnanlytice('中文', '訂閱電子報', '', '');\n//}\nvar email = $.trim($(\"#txtEMail\").val());\n//if (!validateEmail(email)) {\n// alert('請您輸入正確電子郵件地址。');\n// return false;\n//}\n\n});\n$('#btnQall').on(\"click\", function () {\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse if (keyword.indexOf($.trim($(\"#keyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsQall').on(\"click\", function () {\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else {\n",
+      "raw": "內政部（65）台內警字第 691915 號令、\n銓敘部（65）台謨甄四字第 17461 號令會銜訂定發布全文 26 條\n\n:::\n\n最新訊息\n\n中央法規\n\n司法解釋\n\n條約協定\n\n兩岸協議\n\n綜合查詢\n\n跨機關檢索\n\n法治宣導專區\n\n智慧查找\n\n法律扶助\n\n創意教案\n\n法律時事漫談\n\n網站使用說明\n\n網站使用手冊\n\n會員服務介紹\n\n網站單元簡介\n\n法規資料檢索範圍\n\n資料更新頻率說明\n\n資訊服務\n\n全國法規連結圖示\n\n全國法規作業要點\n\n法規名稱英譯標準表\n\n相關網站\n\n訂閱電子報\n\n瀏覽人次總計\n\n1,614,295,223人\n\n本月瀏覽人次\n\n12,253,047人\n\n目前使用人次\n\n6,943人\n\n電子報訂閱人數\n\n222,817人\n\n本網站係提供法規之最新動態資訊及資料檢索，並不提供法規及法律諮詢之服務。\n\n若有任何法律上的疑義，建議您可逕向發布法規之主管機關洽詢。\n\n本網站法規資料係由政府各機關提供之電子檔或書面文字登打製作，若與各法規主管機關之公布文字有所不同，仍以各法規主管機關之公布資料為準。\n\n部分資料內容，使用特殊文字或符號，如欲詳閱內容，請連結至司法院網站下載造字檔。\n\n全國法規資料庫之內容每週五定期更新，當週發布之法律、命令資料，將於完成法規整編作業後，於下週五更新上線。\n\n法規整編資料截止日：民國 115 年 08 月 14 日 \n\n瀏覽人次總計：1,614,295,223人\n\n本月瀏覽人次：12,253,047人\n\n目前使用人次：6,943人\n\n電子報訂閱：222,817人\n\n│ 政府網站資料開放宣告 │ 隱私權保護宣告 │ 資訊安全政策 │ Q & A │ 意見回饋 │ API文件 │ \n\n本網站由法務部全國法規資料庫工作小組維運管理.\n\n法務部地址：100204 台北市重慶南路一段130號　電話：(02)2191-0189\n\n第二辦公室地址：100006 台北市貴陽街1段235號　電話：(02)2191-0189\n\n回上方\n\n$(function () {\n\n// === 統一綁定 GA 追蹤事件 ===\n$('.ga-track-link').on('click keypress', function (e) {\n// 如果是鍵盤事件，確認是按下 Enter 鍵 (keyCode 13) 才觸發\nif (e.type === 'keypress' && e.which !== 13) {\nreturn;\n}\n\nvar category = $(this).data('ga-category');\nvar action = $(this).data('ga-action');\n\n// 呼叫原本的 GA 追蹤函數\nif (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice(category, action, '', '');\n}\n});\n\n// 綁定登出確認視窗\n$('.logout-link').on('click', function () {\nif (!confirm('確定登出？')) {\nreturn false; // 若使用者按取消，則不執行跳轉\n}\n});\n\nvar b = 'ONEBAR';\n$(\"#btnSubscribe,#btnUnsubscribe\").on(\"click\", function (event) {\n//var email = $.trim($(\"#txtEMail\").val());\n//if (email == \"\") {\n// event.preventDefault();\n// alert('請您輸入電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else if (false == IsEMail(email)) {\n// event.preventDefault();\n// alert('請您輸入正確電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else {\n// GoogleAnanlytice('中文', '訂閱電子報', '', '');\n//}\nvar email = $.trim($(\"#txtEMail\").val());\n//if (!validateEmail(email)) {\n// alert('請您輸入正確電子郵件地址。');\n// return false;\n//}\n\n});\n$('#btnQall').on(\"click\", function () {\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse if (keyword.indexOf($.trim($(\"#keyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsQall').on(\"click\", function () {\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else",
       "articles": []
     }
   ],
@@ -121,7 +121,7 @@
       "text": "本細則依警察人員人事條例（以下簡稱本條例）第四十一條規定訂定之。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=1&pcode=S0020006",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=S0020006",
-      "fetchedAt": "2026-08-24T23:38:58.211Z",
+      "fetchedAt": "2026-08-25T23:40:41.846Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -129,7 +129,7 @@
       "text": "本條例第四條所定警察官職分立，凡現任警察人員經離職而未免官者，應不支俸給。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=2&pcode=S0020006",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=S0020006",
-      "fetchedAt": "2026-08-24T23:38:58.211Z",
+      "fetchedAt": "2026-08-25T23:40:41.846Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -137,7 +137,7 @@
       "text": "（刪除）",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=3&pcode=S0020006",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=S0020006",
-      "fetchedAt": "2026-08-24T23:38:58.211Z",
+      "fetchedAt": "2026-08-25T23:40:41.846Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -145,7 +145,7 @@
       "text": "本條例第十一條第一項第一款所稱警察人員考試及格，指依公務人員考試法所舉行之高等考試、普通考試、初等考試或特種考試之警察人員考試及格。同項第二款所稱依法升官等任用，指在本條例施行前後，依法取得升官等任用資格者而言。\n本條例第十一條第二項所稱訓練合格，指接受下列期間不少於四個月之教育或訓練，且成績及格者：\n一、警察教育條例所定之進修教育及深造教育。\n二、前項警察人員考試錄取人員之訓練。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=4&pcode=S0020006",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=S0020006",
-      "fetchedAt": "2026-08-24T23:38:58.211Z",
+      "fetchedAt": "2026-08-25T23:40:41.846Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -153,7 +153,7 @@
       "text": "本條例施行前，依法取得升官等任用資格之警察官，於升官等任用時，其俸級比照本條例第二十六條規定辦理。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=5&pcode=S0020006",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=S0020006",
-      "fetchedAt": "2026-08-24T23:38:58.211Z",
+      "fetchedAt": "2026-08-25T23:40:41.846Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -161,7 +161,7 @@
       "text": "本條例施行前，依法銓敘合格警察官，於復任時，其俸級比照本條例第二十四條規定辦理。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=6&pcode=S0020006",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=S0020006",
-      "fetchedAt": "2026-08-24T23:38:58.211Z",
+      "fetchedAt": "2026-08-25T23:40:41.846Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -169,7 +169,7 @@
       "text": "（刪除）",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=7&pcode=S0020006",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=S0020006",
-      "fetchedAt": "2026-08-24T23:38:58.211Z",
+      "fetchedAt": "2026-08-25T23:40:41.846Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -177,7 +177,7 @@
       "text": "（刪除）",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=8&pcode=S0020006",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=S0020006",
-      "fetchedAt": "2026-08-24T23:38:58.211Z",
+      "fetchedAt": "2026-08-25T23:40:41.846Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -185,7 +185,7 @@
       "text": "本條例第十五條所定現任警察官改任之官等，在本條例施行前依法取得升官等任用資格者，於升任時適用之。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=9&pcode=S0020006",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=S0020006",
-      "fetchedAt": "2026-08-24T23:38:58.211Z",
+      "fetchedAt": "2026-08-25T23:40:41.846Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -193,7 +193,7 @@
       "text": "現任警察官之改任，其作業要點，由銓敘部定之。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=10&pcode=S0020006",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=S0020006",
-      "fetchedAt": "2026-08-24T23:38:58.211Z",
+      "fetchedAt": "2026-08-25T23:40:41.846Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -201,7 +201,7 @@
       "text": "本條例第十九條所稱主管職務，指警察機關組織法規中正副首長及各級單位正副主管。所稱專門性職務，指刑事、外事及其他需具專門學能之職務。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=11&pcode=S0020006",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=S0020006",
-      "fetchedAt": "2026-08-24T23:38:58.211Z",
+      "fetchedAt": "2026-08-25T23:40:41.846Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -209,7 +209,7 @@
       "text": "本條例第二十四條所稱改任之等階，其官階由銓敘部按改任人員原經依法敘定之本俸俸級，就警察人員俸表所列認定之。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=12&pcode=S0020006",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=S0020006",
-      "fetchedAt": "2026-08-24T23:38:58.211Z",
+      "fetchedAt": "2026-08-25T23:40:41.846Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -217,7 +217,7 @@
       "text": "依前條規定改任之警察官，按其原經依法敘定之本俸俸級，就警察人員俸表所列同等階任官。\n前項改任後之官階，高於所在機關組織法規所定二階以上者，不得申請調任同官階之職務。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=13&pcode=S0020006",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=S0020006",
-      "fetchedAt": "2026-08-24T23:38:58.211Z",
+      "fetchedAt": "2026-08-25T23:40:41.846Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -225,7 +225,7 @@
       "text": "本條例第二十九條第三項、第三十五條第四項、第三十五條之一第一項及第三十六條第四項所稱主管機關，為內政部警政署。\n海岸巡防機關、消防機關列警察官人員及中央警察大學之警察人員有本條例第二十九條情形者，其主管機關分別為行政院海岸巡防署、內政部消防署、直轄市政府、縣（市）政府及中央警察大學；有本條例第三十五條、第三十五條之一及第三十六條情形者，其主管機關分別為行政院海岸巡防署、內政部消防署及中央警察大學。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=14&pcode=S0020006",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=S0020006",
-      "fetchedAt": "2026-08-24T23:38:58.211Z",
+      "fetchedAt": "2026-08-25T23:40:41.846Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -233,7 +233,7 @@
       "text": "本條例第三十三條所稱警察人員任本官階職務滿十年，以參加年終考績者為準。\n警察人員因公傷病請公假、因病或安胎請延長病假、因案受免職、停職處分經依法提起救濟而撤銷原處分並復職或因其他事由致考核期間全無工作事實而不辦理年終考績者，其年資仍予併計前項計算。\n依本條例第十五條改任之現職人員，原連續任該項職務之年資及警察官曾任警察機關組織法規所定之一般行政及技術職務，其相當官等、職等之年資，得併計第一項年資；其有前項情形者，亦得併計第一項年資。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=15&pcode=S0020006",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=S0020006",
-      "fetchedAt": "2026-08-24T23:38:58.211Z",
+      "fetchedAt": "2026-08-25T23:40:41.846Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -241,7 +241,7 @@
       "text": "本條例第三十五條第一項第二款、第三十五條之一第一項、第三十六條第一項第一款、第三十六條之一第一項及第三項所稱執行勤務中，指開始執行下列勤務至勤務終了時之狀態：\n一、交通指揮或稽查。\n二、處理爆炸物品。\n三、搶救災害或參與演習。\n四、擔任特定警衛任務。\n五、巡邏或埋伏。\n六、拘提或逮捕案犯。\n七、其他依有關法令規定之勤務。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=16&pcode=S0020006",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=S0020006",
-      "fetchedAt": "2026-08-24T23:38:58.211Z",
+      "fetchedAt": "2026-08-25T23:40:41.846Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -249,7 +249,7 @@
       "text": "本條例第三十六條第一項第一款、第三十六條之一第一項及第三項所稱殉職者，指有下列情事之一者：\n一、執行搶救災害、拘提或逮捕案犯勤務，遭受暴力或意外危害，以致死亡。\n二、執行前條各款所定勤務，除前款情形外，因遭受暴力，或處理對其生命有高度危險事故遭受意外危害，以致死亡。\n本細則中華民國一百十三年九月十二日修正施行前，警察人員有前項各款情事之一，其撫卹尚未經審定者，適用修正後之規定。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=17&pcode=S0020006",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=S0020006",
-      "fetchedAt": "2026-08-24T23:38:58.211Z",
+      "fetchedAt": "2026-08-25T23:40:41.846Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -257,7 +257,7 @@
       "text": "本條例第三十九條所稱一般行政人員，指主計、人事、文書、庶務及其他非執行警察勤務而依各警察機關組織法規所定簡、薦、委任人員及適用現職雇員管理要點之人員。所稱技術人員，指各警察機關組織法規定有官等、職等，歸列技術職系職務之人員。所稱準用本條例之規定，指除其俸給、考績應與任用資格配合，適用各相關法規外，得依本條例有關事項辦理。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=18&pcode=S0020006",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=S0020006",
-      "fetchedAt": "2026-08-24T23:38:58.211Z",
+      "fetchedAt": "2026-08-25T23:40:41.846Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -265,7 +265,7 @@
       "text": "本細則自發布日施行。但中華民國九十一年一月二十四日修正發布之第四條及第十五條，自中華民國八十六年五月二十三日施行；中華民國九十四年十二月二十六日修正發布之條文，自中華民國九十三年九月三日施行。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=19&pcode=S0020006",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=S0020006",
-      "fetchedAt": "2026-08-24T23:38:58.211Z",
+      "fetchedAt": "2026-08-25T23:40:41.846Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -273,7 +273,7 @@
       "text": "本條例第三十五條第一項第二款、第四項、第三十六條第一項第一款及第四項所定所任職務最高等階年功俸最高俸級，係依退休人員最後在職或撫卹人員死亡時，所適用之警察官職務等階表及警察人員俸表規定之等級為準。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=17-1&pcode=S0020006",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=S0020006",
-      "fetchedAt": "2026-08-24T23:38:58.211Z",
+      "fetchedAt": "2026-08-25T23:40:41.846Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -281,7 +281,7 @@
       "text": "依本條例第三十五條第一項第二款及第三十六條第一項第一款辦理退休、撫卹案件，應由服務機關檢具相關文件及內政部警政署、消防署、中央警察大學或行政院海岸巡防署出具之事實審核證明，循行政程序彙轉銓敘部審定。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=17-2&pcode=S0020006",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=S0020006",
-      "fetchedAt": "2026-08-24T23:38:58.211Z",
+      "fetchedAt": "2026-08-25T23:40:41.846Z",
       "ok": true,
       "source": "LawAll"
     }
