@@ -3287,7 +3287,7 @@ load();
     <h2>LexCore 更新紀錄</h2>
     <p>版本變更、重大修正與新功能統一收在這裡。其他頁面不再顯示版本更新說明，避免干擾讀書與作答。</p>
    </div>
-   <span class="badge blue">目前 v3.5.1</span>
+   <span class="badge blue">目前 v3.5.2</span>
   </div>
 
   <div class="changelog-filter">
@@ -3300,6 +3300,18 @@ load();
   </div>
 
    <div class="changelog-list" id="changelogList">
+
+   <details class="release-card" data-release-tags="ui study" open>
+    <summary><div class="release-version">v3.5.2</div>
+     <div><div class="release-title">收斂 6laws 顯示介面</div><div class="release-meta">移除來源面板與總數徽章・保留內部索引資料</div></div>
+     <span class="release-tag">介面整理</span>
+    </summary>
+    <div class="release-body"><ul>
+     <li>法規全文不再顯示「6laws 條文名稱／判解索引」來源面板。</li>
+     <li>法規頁頂端不再顯示「6laws 名稱／判解索引 X 條」總數徽章，減少閱讀干擾。</li>
+     <li>6laws 的條文名稱、判解與來源資料仍保留在 runtime，供內部索引、後續功能與資料查核使用。</li>
+    </ul></div>
+   </details>
 
    <details class="release-card" data-release-tags="study ui data" open>
     <summary><div class="release-version">v3.5.1</div>
@@ -4114,6 +4126,7 @@ function articleCrossLinks(lid,article){
 function sixLawsArticleInfo(lid,article){
   return SIXLAWS_INDEX?.laws?.[lid]?.articles?.[String(article)]||null;
 }
+const SHOW_SIXLAWS_UI=false;
 function sixLawsExternalUrl(url,fallback=""){
   const target=String(url||fallback||"");
   return /^https?:\/\//i.test(target)?target:String(fallback||"");
@@ -4122,6 +4135,7 @@ function escAttr(s=""){
   return esc(s).replace(/"/g,"&quot;").replace(/'/g,"&#39;");
 }
 function sixLawsReferenceMarkup(lid,article){
+  if(!SHOW_SIXLAWS_UI)return "";
   const law=SIXLAWS_INDEX?.laws?.[lid],info=sixLawsArticleInfo(lid,article);
   if(!law?.matched)return "";
   const refs=Array.isArray(info?.references)?info.references:[],sourceUrl=sixLawsExternalUrl(law.sourceUrl);
@@ -4199,8 +4213,8 @@ function openArticle(lid,a){
    return;
  }
  saveLawReadingPosition(lid,a);
- const l=lawInfo(lid),d=DETAILS[key],live=ARTICLE_TEXTS[key],sixInfo=sixLawsArticleInfo(lid,a),sixMarkup=sixLawsReferenceMarkup(lid,a),relationChain=lawRelationChainMarkup(lid),mnemonicMarkup=articleMnemonicMarkup(lid,a,live?.text||d?.current||"",{expanded:true});
- $("modalTitle").textContent=`${l.name} 第${a}條${sixInfo?.title?`（${sixInfo.title}）`:""}`;
+ const l=lawInfo(lid),d=DETAILS[key],live=ARTICLE_TEXTS[key],sixMarkup=sixLawsReferenceMarkup(lid,a),relationChain=lawRelationChainMarkup(lid),mnemonicMarkup=articleMnemonicMarkup(lid,a,live?.text||d?.current||"",{expanded:true});
+ $("modalTitle").textContent=`${l.name} 第${a}條`;
  if(!d){
    if(live?.text){
      $("modalMeta").innerHTML=`官方同步現行條文 <span class="badge green">已抓到全文</span> <span class="badge amber">歷史對照／立法理由待配對</span>`;
@@ -6047,12 +6061,11 @@ function fullLawReaderMarkup(lid,records,ids,recentSet,coreSet){
  }
  const visibleRecords=records.filter(r=>!isDeletedArticleKey(`${r.lawId||lid}:${r.article}`,r));
  return `<div class="law-reader" aria-label="${esc(lawInfo(lid).name)}現行全文">${visibleRecords.map(r=>{
-   const article=String(r.article), detail=DETAILS?.[`${lid}:${article}`],sixInfo=sixLawsArticleInfo(lid,article);
+   const article=String(r.article), detail=DETAILS?.[`${lid}:${article}`];
    const headings=(starts.get(article)||[]).map(c=>`<div class="law-reader-section ${chapterTypeClass(c.type)}"><b>${esc(c.label)}</b><span>自第 ${esc(article)} 條</span></div>`).join("");
    const favorite=isLawArticleFavorite(lid,article),favoriteId=`${studyArticleDomId(lid,article)}-favorite`;
-   const tags=[recentSet.has(article)?`<span class="badge red">近5年修法</span>`:"",coreSet.has(article)?`<span class="badge amber">核心必讀</span>`:"",sixInfo?.judgmentCount?`<span class="badge blue">判解 ${sixInfo.judgmentCount}</span>`:"",detail?`<button class="chip" type="button" onclick="openArticle('${lid}','${article}')">修法重點</button>`:"",articleReasonButtonMarkup(lid,article,detail),`<button class="chip law-favorite-btn ${favorite?"active":""}" id="${favoriteId}" type="button" aria-pressed="${favorite}" onclick="toggleLawArticleFavorite('${lid}','${article}')">${favorite?"★ 已收藏":"☆ 收藏"}</button>`].join("");
-   const titleMarkup=sixInfo?.title?`<span class="law-article-title">（${esc(sixInfo.title)}）</span>`:"";
-   return `${headings}<article class="law-reader-article" id="${studyArticleDomId(lid,article)}" data-law-id="${esc(lid)}" data-article="${esc(article)}" data-lazy-extras="1" tabindex="-1"><div class="law-reader-article-head"><h3>第 ${esc(article)} 條 ${titleMarkup}</h3><div class="law-reader-article-tags">${tags}</div></div><div class="law-reader-text" data-lazy-text="1">${esc(r.text||"")}</div>${articleReasonPanelMarkup(lid,article,detail,law)}<div class="law-reader-extras"><div class="law-reader-extras-placeholder">滑到這裡載入判解索引與記憶卡</div></div></article>`;
+   const tags=[recentSet.has(article)?`<span class="badge red">近5年修法</span>`:"",coreSet.has(article)?`<span class="badge amber">核心必讀</span>`:"",detail?`<button class="chip" type="button" onclick="openArticle('${lid}','${article}')">修法重點</button>`:"",articleReasonButtonMarkup(lid,article,detail),`<button class="chip law-favorite-btn ${favorite?"active":""}" id="${favoriteId}" type="button" aria-pressed="${favorite}" onclick="toggleLawArticleFavorite('${lid}','${article}')">${favorite?"★ 已收藏":"☆ 收藏"}</button>`].join("");
+   return `${headings}<article class="law-reader-article" id="${studyArticleDomId(lid,article)}" data-law-id="${esc(lid)}" data-article="${esc(article)}" data-lazy-extras="1" tabindex="-1"><div class="law-reader-article-head"><h3>第 ${esc(article)} 條</h3><div class="law-reader-article-tags">${tags}</div></div><div class="law-reader-text" data-lazy-text="1">${esc(r.text||"")}</div>${articleReasonPanelMarkup(lid,article,detail,law)}<div class="law-reader-extras"><div class="law-reader-extras-placeholder">滑到這裡載入記憶卡</div></div></article>`;
  }).join("")}</div>`;
 }
 function renderFullStudy(){
@@ -6063,9 +6076,7 @@ function renderFullStudy(){
  if($("studySyncMeta"))$("studySyncMeta").textContent=records.length?`目前已同步 ${records.length} 條現行條文；修法資料獨立疊加，不影響全文可見性。`:`目前離線快照只有重點條文；部署後每日同步會抓完整「所有條文」。`;
  const recentSet=new Set((base?.events||[]).flatMap(e=>e.article_ids||[]).map(String));
  renderLawNavigator(id,ids,l,base,recentSet);
- const sixLaw=SIXLAWS_INDEX?.laws?.[id];
- const sixStatus=sixLaw?.matched?`6laws 名稱／判解索引 ${sixLaw.articleCount||0} 條`:"6laws 尚未配對本法公開逐條頁";
- let out=`<div class="full-law-meta"><span class="badge green">${records.length?`${records.length} 條現行全文`:"等待完整同步"}</span><span class="badge red">${recentSet.size} 條近5年異動</span><span class="badge blue">${base?.key_articles?.length||0} 條核心必讀</span><span class="badge ${sixLaw?.matched?"green":"amber"}">${sixStatus}</span>${l.pcode?`<a class="chip" target="_blank" style="text-decoration:none" href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=${l.pcode}">官方所有條文</a>`:""}</div>`;
+ let out=`<div class="full-law-meta"><span class="badge green">${records.length?`${records.length} 條現行全文`:"等待完整同步"}</span><span class="badge red">${recentSet.size} 條近5年異動</span><span class="badge blue">${base?.key_articles?.length||0} 條核心必讀</span>${l.pcode?`<a class="chip" target="_blank" style="text-decoration:none" href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=${l.pcode}">官方所有條文</a>`:""}</div>`;
  const coreSet=new Set((base?.key_articles||[]).map(String));
  if(id==="cpl"&&!q)out+=cplFrequencyPanelMarkup();
  if(!q){
@@ -6172,9 +6183,9 @@ function renderQuickLookup(){
  rememberLookupQuery(q);renderLookupHistory();
  $("lookupCount").textContent=`找到 ${rows.length} 個符合條文`;
  $("lookupResults").innerHTML=rows.length?rows.map(r=>{
-  const mnemonic=articleMnemonicInfo(r.lawId,r.article,r.text),sixInfo=sixLawsArticleInfo(r.lawId,r.article);
+  const mnemonic=articleMnemonicInfo(r.lawId,r.article,r.text);
   return `<div class="lookup-result">
-   <div><h3>${highlightLookupText(`${r.lawName} 第 ${r.article} 條${sixInfo?.title?`（${sixInfo.title}）`:""}`,terms)}</h3><div class="meta">${r.category||""}${r.main?"｜主考範圍":"｜相關法規"}${sixInfo?.judgmentCount?`｜判解 ${sixInfo.judgmentCount}`:""}${sixInfo?.lawCount?`｜相關法規 ${sixInfo.lawCount}`:""}｜命中「${esc(r.matchTerms.join("、"))}」${r.phraseHit?"｜完整詞組":""}</div><div class="lookup-snippet">${highlightLookupText(articleSnippet(r.text,terms[0]||q),terms)}</div><div class="lookup-mnemonic"><b>🧠 口訣</b><span>${esc(mnemonic.text)}</span><span class="badge ${mnemonic.kind==="curated"?"green":mnemonic.kind==="pending"?"":"amber"}">${mnemonic.status}</span></div></div>
+   <div><h3>${highlightLookupText(`${r.lawName} 第 ${r.article} 條`,terms)}</h3><div class="meta">${r.category||""}${r.main?"｜主考範圍":"｜相關法規"}｜命中「${esc(r.matchTerms.join("、"))}」${r.phraseHit?"｜完整詞組":""}</div><div class="lookup-snippet">${highlightLookupText(articleSnippet(r.text,terms[0]||q),terms)}</div><div class="lookup-mnemonic"><b>🧠 口訣</b><span>${esc(mnemonic.text)}</span><span class="badge ${mnemonic.kind==="curated"?"green":mnemonic.kind==="pending"?"":"amber"}">${mnemonic.status}</span></div></div>
    <div class="lookup-actions"><button class="chip ready" onclick="openArticle('${r.lawId}','${r.article}')">開啟</button><button class="chip" onclick="speakSingleArticle('${r.lawId}','${r.article}')">🎧 朗讀</button></div>
   </div>`;
  }).join(""):`<div class="empty"><b>找不到符合的現行條文</b><p>如果是剛部署新版，請先讓每日法規同步完成一次；完整全文才會進入快速查法索引。</p></div>`;
