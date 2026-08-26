@@ -464,6 +464,9 @@ body.flashcard-fullscreen-open{overflow:hidden}
 .sixlaws-title-row{display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin-top:7px}.sixlaws-title{font-size:11px;line-height:1.5;font-weight:900;color:var(--text)}.sixlaws-title.muted{color:var(--muted)}
 .sixlaws-details{margin-top:8px;border-top:1px solid color-mix(in srgb,var(--p) 14%,var(--line));padding-top:7px}.sixlaws-details summary{cursor:pointer;color:var(--p);font-size:10px;font-weight:900}.sixlaws-ref-group{margin-top:8px}.sixlaws-ref-group>b{display:block;margin-bottom:4px;font-size:10px;color:var(--muted)}.sixlaws-ref-list{display:flex;gap:5px;flex-wrap:wrap}.sixlaws-ref{display:inline-flex;align-items:center;min-height:25px;padding:4px 7px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--text);font-size:10px;line-height:1.35;text-decoration:none}.sixlaws-ref:hover{border-color:var(--p);color:var(--p)}.sixlaws-empty{margin:8px 0 0;font-size:10px;line-height:1.55;color:var(--muted)}
 @media(max-width:650px){.law-article-title{display:inline;font-size:10px}.sixlaws-index{padding:9px 11px}.sixlaws-index-head{font-size:9px}.sixlaws-index-head b{font-size:10px}.sixlaws-title{font-size:10px}.sixlaws-ref{font-size:9px;min-height:24px;padding:4px 6px}}
+/* v3.5.4 restore article titles without restoring the 6laws source row. */
+.law-reader-article-heading{display:grid;min-width:0;gap:3px}.law-reader-article-heading .law-article-title{display:block;font-size:11px;line-height:1.45}
+@media(max-width:650px){.law-reader-article-heading .law-article-title{font-size:10px}}
 /* ===== 刑訴爭點頻率標註 ===== */
 .cpl-frequency-panel{margin:10px 0;padding:12px 13px;border:1px solid color-mix(in srgb,var(--p) 22%,var(--line));border-radius:15px;background:linear-gradient(145deg,color-mix(in srgb,var(--p2) 62%,var(--card)),var(--card));box-shadow:var(--shadow-sm)}
 .cpl-frequency-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.cpl-frequency-head h3{margin:0;font-size:14px}.cpl-frequency-head p{margin:4px 0 0;color:var(--muted);font-size:10px;line-height:1.55}
@@ -3320,7 +3323,7 @@ load();
     <h2>LexCore 更新紀錄</h2>
     <p>版本變更、重大修正與新功能統一收在這裡。其他頁面不再顯示版本更新說明，避免干擾讀書與作答。</p>
    </div>
-   <span class="badge blue">目前 v3.5.3</span>
+   <span class="badge blue">目前 v3.5.4</span>
   </div>
 
   <div class="changelog-filter">
@@ -3333,6 +3336,18 @@ load();
   </div>
 
    <div class="changelog-list" id="changelogList">
+
+   <details class="release-card" data-release-tags="ui data" open>
+    <summary><div class="release-version">v3.5.4</div>
+     <div><div class="release-title">條文名稱顯示修正</div><div class="release-meta">恢復正式條文名稱・維持隱藏 6laws 來源列</div></div>
+     <span class="release-tag">顯示修正</span>
+    </summary>
+    <div class="release-body"><ul>
+     <li>恢復已配對法規的正式條文名稱，顯示在每一條現行條文標題下方。</li>
+     <li>條文視窗標題也會顯示正式條文名稱，方便確認目前閱讀的法條主題。</li>
+     <li>維持隱藏「6laws 條文名稱／判解索引」來源列、第三方來源提示與判解數量徽章；原始名稱資料仍保留在 runtime。</li>
+    </ul></div>
+   </details>
 
    <details class="release-card" data-release-tags="ui study" open>
     <summary><div class="release-version">v3.5.3</div>
@@ -4189,6 +4204,10 @@ function sixLawsArticleInfo(lid,article){
   return SIXLAWS_INDEX?.laws?.[lid]?.articles?.[String(article)]||null;
 }
 const SHOW_SIXLAWS_UI=false;
+function lawArticleTitleMarkup(lid,article){
+  const title=cleanText(sixLawsArticleInfo(lid,article)?.title||"");
+  return title?`<div class="law-article-title" aria-label="條文名稱">${esc(title)}</div>`:"";
+}
 function sixLawsExternalUrl(url,fallback=""){
   const target=String(url||fallback||"");
   return /^https?:\/\//i.test(target)?target:String(fallback||"");
@@ -4276,7 +4295,8 @@ function openArticle(lid,a){
  }
  saveLawReadingPosition(lid,a);
  const l=lawInfo(lid),d=DETAILS[key],live=ARTICLE_TEXTS[key],sixMarkup=sixLawsReferenceMarkup(lid,a),relationChain=lawRelationChainMarkup(lid),mnemonicMarkup=articleMnemonicMarkup(lid,a,live?.text||d?.current||"",{expanded:true});
- $("modalTitle").textContent=`${l.name} 第${a}條`;
+ const articleTitle=cleanText(sixLawsArticleInfo(lid,a)?.title||"");
+ $("modalTitle").textContent=`${l.name} 第${a}條`+(articleTitle?`（${articleTitle}）`:"");
  if(!d){
    if(live?.text){
      $("modalMeta").innerHTML=`官方同步現行條文 <span class="badge green">已抓到全文</span> <span class="badge amber">歷史對照／立法理由待配對</span>`;
@@ -6367,6 +6387,11 @@ function renderFullStudy(){
    out+=matches.length?`<div class="block"><div class="row"><h3>全文搜尋結果</h3><span class="badge blue">${matches.length} 條</span></div>${fullLawReaderMarkup(id,matches,ids,recentSet,coreSet)}</div>`:`<div class="empty"><b>全文中沒有找到「${esc(q)}」</b><p>如果目前是單檔離線快照，完整全文要等 GitHub Actions 同步後才會出現。</p></div>`;
  }
  $("studyBody").innerHTML=out;
+ document.querySelectorAll("#studyBody .law-reader-article").forEach(article=>{
+   const title=lawArticleTitleMarkup(article.dataset.lawId||"",article.dataset.article||""),head=article.querySelector(".law-reader-article-head"),h3=head?.querySelector("h3");
+   if(!title||!head||!h3||head.querySelector(".law-reader-article-heading"))return;
+   const wrapper=document.createElement("div");wrapper.className="law-reader-article-heading";h3.parentNode.insertBefore(wrapper,h3);wrapper.appendChild(h3);wrapper.insertAdjacentHTML("beforeend",title);
+ });
  setupLawArticleExtras();
  setupLawReadingPositionObserver();
  if(id==="cpl"&&!q)renderCplFrequencyArticleBadges();

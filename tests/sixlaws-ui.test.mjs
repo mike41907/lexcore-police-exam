@@ -7,7 +7,7 @@ import {fileURLToPath} from "node:url";
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),"..");
 const html=fs.readFileSync(path.join(root,"index.html"),"utf8");
 
-test("6laws source panel and aggregate badge stay hidden while data remains available",()=>{
+test("6laws source panel stays hidden while article titles remain visible",()=>{
   assert.match(html,/const SHOW_SIXLAWS_UI=false/);
   assert.match(html,/if\(!SHOW_SIXLAWS_UI\)return ""/);
   const start=html.indexOf("function renderFullStudy()");
@@ -24,4 +24,7 @@ test("6laws source panel and aggregate badge stay hidden while data remains avai
   assert.doesNotMatch(html.slice(lookupStart,end),/sixInfo\?\.title|sixInfo\?\.judgmentCount|sixInfo\?\.lawCount/);
   assert.match(html,/滑到這裡載入記憶卡/);
   assert.match(html,/function sixLawsArticleInfo\(lid,article\)/);
+  assert.match(html,/function lawArticleTitleMarkup\(lid,article\)/);
+  assert.match(render,/lawArticleTitleMarkup\(/);
+  assert.match(html.slice(modalStart,lookupStart),/articleTitle=cleanText\(sixLawsArticleInfo\(lid,a\)/);
 });
