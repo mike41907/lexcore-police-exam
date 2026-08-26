@@ -9,11 +9,11 @@ const html=fs.readFileSync(path.join(root,"index.html"),"utf8");
 const pkg=JSON.parse(fs.readFileSync(path.join(root,"package.json"),"utf8"));
 const sw=fs.readFileSync(path.join(root,"service-worker.js"),"utf8");
 
-test("v3.5.4 release markers and cache version stay synchronized",()=>{
-  assert.equal(pkg.version,"3.5.4");
-  assert.match(html,/目前 v3\.5\.4/);
-  assert.match(html,/release-version">v3\.5\.4/);
-  assert.match(sw,/lexcore-v3\.5\.4/);
+test("v3.5.5 release markers and cache version stay synchronized",()=>{
+  assert.equal(pkg.version,"3.5.5");
+  assert.match(html,/目前 v3\.5\.5/);
+  assert.match(html,/release-version">v3\.5\.5/);
+  assert.match(sw,/lexcore-v3\.5\.5/);
 });
 
 test("law reader keeps navigation state and defers heavy article extras",()=>{
@@ -34,6 +34,17 @@ test("law reader exposes per-article legislative-reason controls",()=>{
   assert.match(html,/law-article-reason/);
   assert.match(html,/reason_points/);
   assert.match(html,/class="law-reason-list"/);
+});
+
+test("law reader hides unavailable legislative-reason controls",()=>{
+  const button=html.slice(html.indexOf("function articleReasonButtonMarkup"),html.indexOf("function articleReasonPanelMarkup"));
+  const panel=html.slice(html.indexOf("function articleReasonPanelMarkup"),html.indexOf("function toggleArticleReason"));
+  assert.match(button,/if\(!hasArticleReason\(d\)\)return ""/);
+  assert.doesNotMatch(button,/立法理由（待配對）/);
+  assert.match(panel,/if\(!hasArticleReason\(d\)\)return ""/);
+  assert.doesNotMatch(panel,/尚未配對/);
+  assert.match(html,/const reasonMarkup=reasonListMarkup\(d\)/);
+  assert.match(html,/\$\{reasonMarkup\?`<div class="block">\$\{reasonMarkup\}<\/div>`:""\}/);
 });
 
 test("quick lookup requires every query term and clears stale results",()=>{

@@ -3323,7 +3323,7 @@ load();
     <h2>LexCore 更新紀錄</h2>
     <p>版本變更、重大修正與新功能統一收在這裡。其他頁面不再顯示版本更新說明，避免干擾讀書與作答。</p>
    </div>
-   <span class="badge blue">目前 v3.5.4</span>
+   <span class="badge blue">目前 v3.5.5</span>
   </div>
 
   <div class="changelog-filter">
@@ -3336,6 +3336,18 @@ load();
   </div>
 
    <div class="changelog-list" id="changelogList">
+
+   <details class="release-card" data-release-tags="ui study" open>
+    <summary><div class="release-version">v3.5.5</div>
+     <div><div class="release-title">隱藏無內容的立法理由入口</div><div class="release-meta">只保留有實際內容的立法理由・移除待配對干擾</div></div>
+     <span class="release-tag">閱讀整理</span>
+    </summary>
+    <div class="release-body"><ul>
+     <li>沒有實際立法理由的條文不再顯示「立法理由（待配對）」按鈕。</li>
+     <li>無理由內容的隱藏面板與條文視窗待配對提示同步移除；已有理由的條文仍維持條列式顯示。</li>
+     <li>保留原始立法理由資料與未來同步配對能力，不更換既有 localStorage／IndexedDB key。</li>
+    </ul></div>
+   </details>
 
    <details class="release-card" data-release-tags="ui data" open>
     <summary><div class="release-version">v3.5.4</div>
@@ -4299,7 +4311,7 @@ function openArticle(lid,a){
  $("modalTitle").textContent=`${l.name} 第${a}條`+(articleTitle?`（${articleTitle}）`:"");
  if(!d){
    if(live?.text){
-     $("modalMeta").innerHTML=`官方同步現行條文 <span class="badge green">已抓到全文</span> <span class="badge amber">歷史對照／立法理由待配對</span>`;
+     $("modalMeta").innerHTML=`官方同步現行條文 <span class="badge green">已抓到全文</span> <span class="badge amber">歷史對照待配對</span>`;
      $("detail").innerHTML=`${relationChain}${sixMarkup}<div class="panel"><h3>現行條文</h3><div class="text">${esc(live.text)}</div></div>${mnemonicMarkup}${articleCrossLinks(lid,a)}<div class="links"><a href="${live.url||articleUrl(l,a)}" target="_blank">官方第${a}條</a><a href="${l.source}" target="_blank">查看修法沿革</a></div>`;
    }else{
      $("modalMeta").innerHTML=`修法條文 <span class="badge amber">尚待下一次同步全文</span>`;
@@ -4309,6 +4321,7 @@ function openArticle(lid,a){
    const meta=detailExamMeta(key,d);
    const oldMarkup=diffMarkup(d.previous||"",d.current||"","old");
    const newMarkup=diffMarkup(d.previous||"",d.current||"","new");
+   const reasonMarkup=reasonListMarkup(d);
    $("modalMeta").innerHTML=`修正日期 ${d.amend_date}　<span class="badge ${d.status_type==="danger"?"red":"green"}">${d.status}</span>　${starsHtml(meta.score)}`;
    $("detail").innerHTML=`
      ${relationChain}
@@ -4325,7 +4338,7 @@ function openArticle(lid,a){
        </div>
      </div>
      <div class="block"><h3>🔎 這次改什麼</h3><ul>${(d.changes||[]).map(x=>`<li>${x}</li>`).join("")}</ul></div>
-     <div class="block">${reasonListMarkup(d)||`<div class="law-reason-head"><strong>📚 立法理由</strong><span class="badge amber">尚未配對</span></div><div class="law-reason-note">目前沒有可直接顯示的官方立法理由，請先查看下方來源與修法沿革。</div>`}</div>
+     ${reasonMarkup?`<div class="block">${reasonMarkup}</div>`:""}
      <div class="block"><h3>🎯 考試提醒</h3><ul>${(d.exam||[]).map(x=>`<li>${x}</li>`).join("")}</ul></div>
      ${articleCrossLinks(lid,a)}
      <div class="links"><a href="${d.official}" target="_blank">官方條文</a><a href="${d.reason_url}" target="_blank">立法／公布來源</a></div>`;
@@ -4579,12 +4592,12 @@ function reasonListMarkup(d={},options={}){
 }
 function reasonPanelId(lid,article){return `${studyArticleDomId(lid,article)}-reason`}
 function articleReasonButtonMarkup(lid,article,d){
- const available=hasArticleReason(d),label=available?"📚 立法理由":"📚 立法理由（待配對）";
- return `<button class="chip law-reason-inline-btn ${available?"":"unavailable"}" type="button" aria-expanded="false" title="${available?"展開本條文立法理由":"目前尚未配對到本條文的立法理由"}" onclick="toggleArticleReason('${lid}','${article}',this)">${label}</button>`;
+ if(!hasArticleReason(d))return "";
+ return `<button class="chip law-reason-inline-btn" type="button" aria-expanded="false" title="展開本條文立法理由" onclick="toggleArticleReason('${lid}','${article}',this)">📚 立法理由</button>`;
 }
 function articleReasonPanelMarkup(lid,article,d,l){
- const body=hasArticleReason(d)?reasonListMarkup(d):`<div class="law-reason-head"><strong>📚 立法理由</strong><span class="badge amber">尚未配對</span></div><div class="law-reason-note">目前尚未在修法資料中配對到本條文的官方立法理由；可先查看法規沿革，後續同步或人工配對後會在此顯示條列內容。${l?.source?` <a href="${esc(l.source)}" target="_blank" rel="noopener">查看官方修法沿革</a>`:""}</div>`;
- return `<section class="law-article-reason" id="${reasonPanelId(lid,article)}" hidden aria-live="polite">${body}</section>`;
+ if(!hasArticleReason(d))return "";
+ return `<section class="law-article-reason" id="${reasonPanelId(lid,article)}" hidden aria-live="polite">${reasonListMarkup(d)}</section>`;
 }
 function toggleArticleReason(lid,article,button){
  const panel=document.getElementById(reasonPanelId(lid,article));
