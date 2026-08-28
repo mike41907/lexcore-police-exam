@@ -2,7 +2,7 @@
   "id": "guard_police_setup",
   "name": "各機關學校團體駐衛警察設置管理辦法",
   "pcode": "D0080106",
-  "fetchedAt": "2026-08-27T04:32:37.364Z",
+  "fetchedAt": "2026-08-28T06:57:22.182Z",
   "latest": "2016-05-10",
   "history": [
     {
@@ -163,7 +163,7 @@
       "date": "1979-01-25",
       "rocDate": "68/01/25",
       "rocYear": 68,
-      "raw": "內政部（68）台內警字第 828188 號令\n訂定發布\n\n:::\n\n最新訊息\n\n中央法規\n\n司法解釋\n\n條約協定\n\n兩岸協議\n\n綜合查詢\n\n跨機關檢索\n\n法治宣導專區\n\n智慧查找\n\n法律扶助\n\n創意教案\n\n法律時事漫談\n\n網站使用說明\n\n網站使用手冊\n\n會員服務介紹\n\n網站單元簡介\n\n法規資料檢索範圍\n\n資料更新頻率說明\n\n資訊服務\n\n全國法規連結圖示\n\n全國法規作業要點\n\n法規名稱英譯標準表\n\n相關網站\n\n訂閱電子報\n\n瀏覽人次總計\n\n1,614,955,262人\n\n本月瀏覽人次\n\n12,913,086人\n\n目前使用人次\n\n2,502人\n\n電子報訂閱人數\n\n222,827人\n\n本網站係提供法規之最新動態資訊及資料檢索，並不提供法規及法律諮詢之服務。\n\n若有任何法律上的疑義，建議您可逕向發布法規之主管機關洽詢。\n\n本網站法規資料係由政府各機關提供之電子檔或書面文字登打製作，若與各法規主管機關之公布文字有所不同，仍以各法規主管機關之公布資料為準。\n\n部分資料內容，使用特殊文字或符號，如欲詳閱內容，請連結至司法院網站下載造字檔。\n\n全國法規資料庫之內容每週五定期更新，當週發布之法律、命令資料，將於完成法規整編作業後，於下週五更新上線。\n\n法規整編資料截止日：民國 115 年 08 月 21 日 \n\n瀏覽人次總計：1,614,955,262人\n\n本月瀏覽人次：12,913,086人\n\n目前使用人次：2,502人\n\n電子報訂閱：222,827人\n\n│ 政府網站資料開放宣告 │ 隱私權保護宣告 │ 資訊安全政策 │ Q & A │ 意見回饋 │ API文件 │ \n\n本網站由法務部全國法規資料庫工作小組維運管理.\n\n法務部地址：100204 台北市重慶南路一段130號　電話：(02)2191-0189\n\n第二辦公室地址：100006 台北市貴陽街1段235號　電話：(02)2191-0189\n\n回上方\n\n$(function () {\n\n// === 統一綁定 GA 追蹤事件 ===\n$('.ga-track-link').on('click keypress', function (e) {\n// 如果是鍵盤事件，確認是按下 Enter 鍵 (keyCode 13) 才觸發\nif (e.type === 'keypress' && e.which !== 13) {\nreturn;\n}\n\nvar category = $(this).data('ga-category');\nvar action = $(this).data('ga-action');\n\n// 呼叫原本的 GA 追蹤函數\nif (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice(category, action, '', '');\n}\n});\n\n// 綁定登出確認視窗\n$('.logout-link').on('click', function () {\nif (!confirm('確定登出？')) {\nreturn false; // 若使用者按取消，則不執行跳轉\n}\n});\n\nvar b = 'ONEBAR';\n$(\"#btnSubscribe,#btnUnsubscribe\").on(\"click\", function (event) {\n//var email = $.trim($(\"#txtEMail\").val());\n//if (email == \"\") {\n// event.preventDefault();\n// alert('請您輸入電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else if (false == IsEMail(email)) {\n// event.preventDefault();\n// alert('請您輸入正確電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else {\n// GoogleAnanlytice('中文', '訂閱電子報', '', '');\n//}\nvar email = $.trim($(\"#txtEMail\").val());\n//if (!validateEmail(email)) {\n// alert('請您輸入正確電子郵件地址。');\n// return false;\n//}\n\n});\n$('#btnQall').on(\"click\", function () {\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse if (keyword.indexOf($.trim($(\"#keyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsQall').on(\"click\", function () {\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else {\nGoogleAnanlytice(\"中文\", \"整合查詢-",
+      "raw": "內政部（68）台內警字第 828188 號令\n訂定發布\n\n:::\n\n最新訊息\n\n中央法規\n\n司法解釋\n\n條約協定\n\n兩岸協議\n\n綜合查詢\n\n跨機關檢索\n\n法治宣導專區\n\n智慧查找\n\n法律扶助\n\n創意教案\n\n法律時事漫談\n\n網站使用說明\n\n網站使用手冊\n\n會員服務介紹\n\n網站單元簡介\n\n法規資料檢索範圍\n\n資料更新頻率說明\n\n資訊服務\n\n全國法規連結圖示\n\n全國法規作業要點\n\n法規名稱英譯標準表\n\n相關網站\n\n訂閱電子報\n\n瀏覽人次總計\n\n1,615,519,976人\n\n本月瀏覽人次\n\n13,477,800人\n\n目前使用人次\n\n853人\n\n電子報訂閱人數\n\n222,832人\n\n本網站係提供法規之最新動態資訊及資料檢索，並不提供法規及法律諮詢之服務。\n\n若有任何法律上的疑義，建議您可逕向發布法規之主管機關洽詢。\n\n本網站法規資料係由政府各機關提供之電子檔或書面文字登打製作，若與各法規主管機關之公布文字有所不同，仍以各法規主管機關之公布資料為準。\n\n部分資料內容，使用特殊文字或符號，如欲詳閱內容，請連結至司法院網站下載造字檔。\n\n全國法規資料庫之內容每週五定期更新，當週發布之法律、命令資料，將於完成法規整編作業後，於下週五更新上線。\n\n法規整編資料截止日：民國 115 年 08 月 21 日 \n\n瀏覽人次總計：1,615,519,976人\n\n本月瀏覽人次：13,477,800人\n\n目前使用人次：853人\n\n電子報訂閱：222,832人\n\n│ 政府網站資料開放宣告 │ 隱私權保護宣告 │ 資訊安全政策 │ Q & A │ 意見回饋 │ API文件 │ \n\n本網站由法務部全國法規資料庫工作小組維運管理...\n\n法務部地址：100204 台北市重慶南路一段130號　電話：(02)2191-0189\n\n第二辦公室地址：100006 台北市貴陽街1段235號　電話：(02)2191-0189\n\n回上方\n\n$(function () {\n\n// === 統一綁定 GA 追蹤事件 ===\n$('.ga-track-link').on('click keypress', function (e) {\n// 如果是鍵盤事件，確認是按下 Enter 鍵 (keyCode 13) 才觸發\nif (e.type === 'keypress' && e.which !== 13) {\nreturn;\n}\n\nvar category = $(this).data('ga-category');\nvar action = $(this).data('ga-action');\n\n// 呼叫原本的 GA 追蹤函數\nif (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice(category, action, '', '');\n}\n});\n\n// 綁定登出確認視窗\n$('.logout-link').on('click', function () {\nif (!confirm('確定登出？')) {\nreturn false; // 若使用者按取消，則不執行跳轉\n}\n});\n\nvar b = 'ONEBAR';\n$(\"#btnSubscribe,#btnUnsubscribe\").on(\"click\", function (event) {\n//var email = $.trim($(\"#txtEMail\").val());\n//if (email == \"\") {\n// event.preventDefault();\n// alert('請您輸入電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else if (false == IsEMail(email)) {\n// event.preventDefault();\n// alert('請您輸入正確電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else {\n// GoogleAnanlytice('中文', '訂閱電子報', '', '');\n//}\nvar email = $.trim($(\"#txtEMail\").val());\n//if (!validateEmail(email)) {\n// alert('請您輸入正確電子郵件地址。');\n// return false;\n//}\n\n});\n$('#btnQall').on(\"click\", function () {\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse if (keyword.indexOf($.trim($(\"#keyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsQall').on(\"click\", function () {\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁",
       "articles": []
     }
   ],
@@ -173,7 +173,7 @@
       "text": "本辦法依警察人員人事條例第四十條之規定訂定之。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=1&pcode=D0080106",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080106",
-      "fetchedAt": "2026-08-27T04:32:37.364Z",
+      "fetchedAt": "2026-08-28T06:57:22.182Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -181,7 +181,7 @@
       "text": "左列機關、學校、團體為維護安全及秩序，得申請設置駐衛警察。\n一、政府機關。\n二、公民營事業機構。\n三、公私立醫療機構。\n四、公民營金融機構。\n五、公私立專科以上學校。\n六、其他機構、團體。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=2&pcode=D0080106",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080106",
-      "fetchedAt": "2026-08-27T04:32:37.364Z",
+      "fetchedAt": "2026-08-28T06:57:22.182Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -189,7 +189,7 @@
       "text": "機關、學校、團體申請設置駐衛警察應填具申請書，送請直轄市、縣（市）警察局核定；其分支機構跨越直轄市、縣（市）者，轉報內政部警政署核定。\n政府機關、公營事業機關、團體、公立醫療機構、公營金融機構及公立學校設置駐衛警察，應循行政程序報准後編列預算辦理。但公立大專校院以非編列預算員額設置駐衛警察者，得逕依前項規定辦理。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=3&pcode=D0080106",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080106",
-      "fetchedAt": "2026-08-27T04:32:37.364Z",
+      "fetchedAt": "2026-08-28T06:57:22.182Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -197,7 +197,7 @@
       "text": "駐衛警察於其駐在單位區域內執行職務。\n當地警察局必要時得協調駐在單位，指定駐衛警察在其鄰近地區，協助維護治安、整理交通。其執行勤務守則，由當地警察局定之。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=4&pcode=D0080106",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080106",
-      "fetchedAt": "2026-08-27T04:32:37.364Z",
+      "fetchedAt": "2026-08-28T06:57:22.182Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -205,7 +205,7 @@
       "text": "駐衛警察執行勤務時，須服裝整齊，配備齊全。\n前項服式、配備，由內政部定之。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=5&pcode=D0080106",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080106",
-      "fetchedAt": "2026-08-27T04:32:37.364Z",
+      "fetchedAt": "2026-08-28T06:57:22.182Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -213,7 +213,7 @@
       "text": "駐衛警察隊員在五人以上未滿二十人者設小隊，置小隊長一人；二十人以上者設隊，置隊長一人；三十人以上並得置副隊長一人。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=6&pcode=D0080106",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080106",
-      "fetchedAt": "2026-08-27T04:32:37.364Z",
+      "fetchedAt": "2026-08-28T06:57:22.182Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -221,7 +221,7 @@
       "text": "駐衛警察由各駐在單位依第八條規定遴選適當人員，送請直轄市警察局或縣（市）警察局審查合格後自費僱用之。必要時得委請警察教育機關統一招考。\n駐衛警察應實施職前及在職訓練，並得委請當地警察機關辦理；其要點由內政部警政署定之。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=7&pcode=D0080106",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080106",
-      "fetchedAt": "2026-08-27T04:32:37.364Z",
+      "fetchedAt": "2026-08-28T06:57:22.182Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -229,7 +229,7 @@
       "text": "駐衛警察之遴選條件如下：\n一、高中（職）以上畢業。但曾受警察養成教育、專業訓練，或曾受軍事訓練並擔任士官以上職務者，不在此限。\n二、身體健康，經公立醫院檢查合格。\n三、素行良好，儀表端莊，言語清晰。\n四、無公務人員任用法第二十八條規定之情事。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=8&pcode=D0080106",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080106",
-      "fetchedAt": "2026-08-27T04:32:37.364Z",
+      "fetchedAt": "2026-08-28T06:57:22.182Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -237,7 +237,7 @@
       "text": "駐衛警察隸屬於駐在單位；執行勤務兼受當地警察局之指揮監督。\n駐衛警察之升職、獎懲、考核、考成、解僱，由駐在單位自行核定辦理後，函請直轄市、縣（市）警察局備查。\n\n本條文有附件",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=9&pcode=D0080106",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080106",
-      "fetchedAt": "2026-08-27T04:32:37.364Z",
+      "fetchedAt": "2026-08-28T06:57:22.182Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -245,7 +245,7 @@
       "text": "政府機關、公營事業機構、團體、公立醫療機構、公營金融機構及公立學校駐衛警察之薪級，依附表之規定，其薪津、實物代金、主管職務加給，得比照駐在單位職員之待遇支給。但不得支領警勤加給。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=10&pcode=D0080106",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080106",
-      "fetchedAt": "2026-08-27T04:32:37.364Z",
+      "fetchedAt": "2026-08-28T06:57:22.182Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -253,7 +253,7 @@
       "text": "駐衛警察之薪津、訓練、保險、退職、資遣、撫慰、服裝等各項費用，均由駐在單位負擔。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=11&pcode=D0080106",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080106",
-      "fetchedAt": "2026-08-27T04:32:37.364Z",
+      "fetchedAt": "2026-08-28T06:57:22.182Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -261,7 +261,7 @@
       "text": "駐衛警察之退職依本辦法規定辦理，其種類及條件如下：\n一、有下列情形之一者，得自願退職：\n（一）在駐在單位連續服務十五年以上，年滿五十五歲以上。\n（二）在駐在單位連續服務滿二十五年以上。\n二、有下列情形之一者，應命令退職：\n（一）年滿六十五歲。\n（二）心神喪失或失能不堪勝任職務。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=12&pcode=D0080106",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080106",
-      "fetchedAt": "2026-08-27T04:32:37.364Z",
+      "fetchedAt": "2026-08-28T06:57:22.182Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -269,7 +269,7 @@
       "text": "政府機關、公營事業機構、團體、公立醫療機構、公營金融機構及公立學校駐衛警察退職金之給與，按退職人員在駐在單位服務年資，每半年給與一個基數之一次退職金，最高以六十一個基數為限。其基數標準，比照駐在單位職員之規定。\n前項所定年資之計算，未滿半年者，以半年計算。\n前條第二款第二目退職人員，其心神喪失或失能，係因公所致者，按其一次退職金總額另加百分之二十。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=13&pcode=D0080106",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080106",
-      "fetchedAt": "2026-08-27T04:32:37.364Z",
+      "fetchedAt": "2026-08-28T06:57:22.182Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -277,7 +277,7 @@
       "text": "政府機關、公營事業機構、團體、公立醫療機構、公營金融機構及公立學校駐衛警察有下列情形之一者，給與遺族一次撫慰金：\n一、病故或意外死亡者。\n二、因公死亡者。\n前項第二款因公死亡者，指下列情事之一：\n一、因冒險犯難或戰地殉職。\n二、因執行職務發生危險以致死亡。\n三、因公差遇險或罹病以致死亡。\n四、在辦公場所發生意外以致死亡。\n五、因戰爭波及以致死亡。\n第一項遺族領受撫慰金，應由未再婚配偶領受二分之一；其餘由下列順序之遺族平均領受之：\n一、子女。\n二、父母。\n三、祖父母。\n四、兄弟姊妹。\n前項遺族中，除未再婚配偶外，無第一款至第三款遺族時，其撫慰金由未再婚配偶單獨領受；如無配偶或配偶再婚，其應領之撫慰金，依序由前項各款遺族領受。同一順序有數人時，如有死亡、拋棄、因法定事由喪失或停止領受權者，其撫慰金應平均分給同一順序其他有領受權之人。但前項第一款所定第一順序之領受人死亡、拋棄或因法定事由喪失領受權者，由其子女代位領受之。\n駐衛警察生前預立遺囑，於第三項遺族中指定撫慰金領受人者，從其遺囑。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=14&pcode=D0080106",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080106",
-      "fetchedAt": "2026-08-27T04:32:37.364Z",
+      "fetchedAt": "2026-08-28T06:57:22.182Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -285,7 +285,7 @@
       "text": "前條駐衛警察之撫慰金給與規定如左：\n一、病故或意外死亡者、按其於駐在單位服務年資，每半年給與一個基數之一次撫慰金，最高以六十一個基數為限。\n二、因公死亡者，除依前款規定辦理外，另加發十五個基數之一次撫慰金。\n前項撫慰金基數及給與標準，比照第十三條之規定，未滿十五年資未滿半年者以半年計。\n第一項第二款人員在駐在單位服務年資，未滿十五年者以十五年計。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=15&pcode=D0080106",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080106",
-      "fetchedAt": "2026-08-27T04:32:37.364Z",
+      "fetchedAt": "2026-08-28T06:57:22.182Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -293,7 +293,7 @@
       "text": "駐衛警察退職、撫慰金之給與，各駐在單位係政府機關、公營事業機構、團體、公立醫療機構、公營金融機構及公立學校者，其年資之計算，累計其曾任公務人員及軍職之年資。但已領受退休金或資遣費者，不予累計。\n前項退職、撫慰案件，由駐在單位自行核定辦理，並函請直轄市、縣（市）警察局備查。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=16&pcode=D0080106",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080106",
-      "fetchedAt": "2026-08-27T04:32:37.364Z",
+      "fetchedAt": "2026-08-28T06:57:22.182Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -301,7 +301,7 @@
       "text": "駐衛警察保險及各項福利規定如左：\n一、駐在單位依公務人員保險法為公務人員要保機關者，經編列預算設置之駐衛警察人員，比照公務人員保險規定辦理；駐在單位依勞工保險條例為勞工保險投保單位，其設置之駐衛警察人員，比照駐在單位勞工保險之規定辦理。\n二、婚喪、生育、子女教育補助及其他各項福利比照駐在單位職員辦理。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=17&pcode=D0080106",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080106",
-      "fetchedAt": "2026-08-27T04:32:37.364Z",
+      "fetchedAt": "2026-08-28T06:57:22.182Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -309,7 +309,7 @@
       "text": "政府機關、公營事業機構、團體、公立醫療機構、公營金融機構及公立學校駐衛警察有左列情形之一者，得由駐在單位自行核定資遣後，函請直轄市、縣（市）警察局備查：\n一、駐在單位因故或業務緊縮而須裁減人員者。\n二、經公立醫院證明身體衰弱，不能勝任者。\n三、不適任現職者。\n資遣人員之給與，準用第十三條規定。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=18&pcode=D0080106",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080106",
-      "fetchedAt": "2026-08-27T04:32:37.364Z",
+      "fetchedAt": "2026-08-28T06:57:22.182Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -317,7 +317,7 @@
       "text": "民營事業機構、團體、私立醫療機構、民營金融機構及私立學校之駐衛警察，其待遇、退職、撫慰及資遣比照駐在單位人員規定辦理。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=19&pcode=D0080106",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080106",
-      "fetchedAt": "2026-08-27T04:32:37.364Z",
+      "fetchedAt": "2026-08-28T06:57:22.182Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -325,7 +325,7 @@
       "text": "本辦法修正施行前，關於駐衛警察薪津、實物代金、退職、撫慰及資遣之規定，有利於在職駐衛警察者，依其規定。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=20&pcode=D0080106",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080106",
-      "fetchedAt": "2026-08-27T04:32:37.364Z",
+      "fetchedAt": "2026-08-28T06:57:22.182Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -333,7 +333,7 @@
       "text": "駐衛警察之設置申請書，由內政部定之。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=21&pcode=D0080106",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080106",
-      "fetchedAt": "2026-08-27T04:32:37.364Z",
+      "fetchedAt": "2026-08-28T06:57:22.182Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -341,7 +341,7 @@
       "text": "本辦法自發布日施行。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=22&pcode=D0080106",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080106",
-      "fetchedAt": "2026-08-27T04:32:37.364Z",
+      "fetchedAt": "2026-08-28T06:57:22.182Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -349,7 +349,7 @@
       "text": "依第三條第二項但書設置之駐衛警察，其待遇、退職、撫慰、資遣及保險準用駐在單位適用勞工保險條例之人員辦理，不適用第十條、第十三條至第十八條之規定。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=18-1&pcode=D0080106",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080106",
-      "fetchedAt": "2026-08-27T04:32:37.364Z",
+      "fetchedAt": "2026-08-28T06:57:22.182Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -357,7 +357,7 @@
       "text": "各機關及公立學校駐衛警察行政中立事項，準用公務人員行政中立法規定。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=19-1&pcode=D0080106",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080106",
-      "fetchedAt": "2026-08-27T04:32:37.364Z",
+      "fetchedAt": "2026-08-28T06:57:22.182Z",
       "ok": true,
       "source": "LawAll"
     }

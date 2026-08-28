@@ -2,7 +2,7 @@
   "id": "police_officer_check",
   "name": "擬任警察官人員查核辦法",
   "pcode": "D0080164",
-  "fetchedAt": "2026-08-27T04:32:35.004Z",
+  "fetchedAt": "2026-08-28T06:57:18.788Z",
   "latest": "2009-11-10",
   "history": [
     {
@@ -22,7 +22,7 @@
       "date": "2008-03-27",
       "rocDate": "97/03/27",
       "rocYear": 97,
-      "raw": "內政部台內警字第 0970870388 號令訂\n定發布全文 9 條；並自發布日施行\n\n:::\n\n最新訊息\n\n中央法規\n\n司法解釋\n\n條約協定\n\n兩岸協議\n\n綜合查詢\n\n跨機關檢索\n\n法治宣導專區\n\n智慧查找\n\n法律扶助\n\n創意教案\n\n法律時事漫談\n\n網站使用說明\n\n網站使用手冊\n\n會員服務介紹\n\n網站單元簡介\n\n法規資料檢索範圍\n\n資料更新頻率說明\n\n資訊服務\n\n全國法規連結圖示\n\n全國法規作業要點\n\n法規名稱英譯標準表\n\n相關網站\n\n訂閱電子報\n\n瀏覽人次總計\n\n1,614,955,220人\n\n本月瀏覽人次\n\n12,913,044人\n\n目前使用人次\n\n2,460人\n\n電子報訂閱人數\n\n222,827人\n\n本網站係提供法規之最新動態資訊及資料檢索，並不提供法規及法律諮詢之服務。\n\n若有任何法律上的疑義，建議您可逕向發布法規之主管機關洽詢。\n\n本網站法規資料係由政府各機關提供之電子檔或書面文字登打製作，若與各法規主管機關之公布文字有所不同，仍以各法規主管機關之公布資料為準。\n\n部分資料內容，使用特殊文字或符號，如欲詳閱內容，請連結至司法院網站下載造字檔。\n\n全國法規資料庫之內容每週五定期更新，當週發布之法律、命令資料，將於完成法規整編作業後，於下週五更新上線。\n\n法規整編資料截止日：民國 115 年 08 月 21 日 \n\n瀏覽人次總計：1,614,955,220人\n\n本月瀏覽人次：12,913,044人\n\n目前使用人次：2,460人\n\n電子報訂閱：222,827人\n\n│ 政府網站資料開放宣告 │ 隱私權保護宣告 │ 資訊安全政策 │ Q & A │ 意見回饋 │ API文件 │ \n\n本網站由法務部全國法規資料庫工作小組維運管理.\n\n法務部地址：100204 台北市重慶南路一段130號　電話：(02)2191-0189\n\n第二辦公室地址：100006 台北市貴陽街1段235號　電話：(02)2191-0189\n\n回上方\n\n$(function () {\n\n// === 統一綁定 GA 追蹤事件 ===\n$('.ga-track-link').on('click keypress', function (e) {\n// 如果是鍵盤事件，確認是按下 Enter 鍵 (keyCode 13) 才觸發\nif (e.type === 'keypress' && e.which !== 13) {\nreturn;\n}\n\nvar category = $(this).data('ga-category');\nvar action = $(this).data('ga-action');\n\n// 呼叫原本的 GA 追蹤函數\nif (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice(category, action, '', '');\n}\n});\n\n// 綁定登出確認視窗\n$('.logout-link').on('click', function () {\nif (!confirm('確定登出？')) {\nreturn false; // 若使用者按取消，則不執行跳轉\n}\n});\n\nvar b = 'ONEBAR';\n$(\"#btnSubscribe,#btnUnsubscribe\").on(\"click\", function (event) {\n//var email = $.trim($(\"#txtEMail\").val());\n//if (email == \"\") {\n// event.preventDefault();\n// alert('請您輸入電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else if (false == IsEMail(email)) {\n// event.preventDefault();\n// alert('請您輸入正確電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else {\n// GoogleAnanlytice('中文', '訂閱電子報', '', '');\n//}\nvar email = $.trim($(\"#txtEMail\").val());\n//if (!validateEmail(email)) {\n// alert('請您輸入正確電子郵件地址。');\n// return false;\n//}\n\n});\n$('#btnQall').on(\"click\", function () {\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse if (keyword.indexOf($.trim($(\"#keyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsQall').on(\"click\", function () {\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else {\nGoogleAnanlytic",
+      "raw": "內政部台內警字第 0970870388 號令訂\n定發布全文 9 條；並自發布日施行\n\n:::\n\n最新訊息\n\n中央法規\n\n司法解釋\n\n條約協定\n\n兩岸協議\n\n綜合查詢\n\n跨機關檢索\n\n法治宣導專區\n\n智慧查找\n\n法律扶助\n\n創意教案\n\n法律時事漫談\n\n網站使用說明\n\n網站使用手冊\n\n會員服務介紹\n\n網站單元簡介\n\n法規資料檢索範圍\n\n資料更新頻率說明\n\n資訊服務\n\n全國法規連結圖示\n\n全國法規作業要點\n\n法規名稱英譯標準表\n\n相關網站\n\n訂閱電子報\n\n瀏覽人次總計\n\n1,615,519,942人\n\n本月瀏覽人次\n\n13,477,766人\n\n目前使用人次\n\n819人\n\n電子報訂閱人數\n\n222,832人\n\n本網站係提供法規之最新動態資訊及資料檢索，並不提供法規及法律諮詢之服務。\n\n若有任何法律上的疑義，建議您可逕向發布法規之主管機關洽詢。\n\n本網站法規資料係由政府各機關提供之電子檔或書面文字登打製作，若與各法規主管機關之公布文字有所不同，仍以各法規主管機關之公布資料為準。\n\n部分資料內容，使用特殊文字或符號，如欲詳閱內容，請連結至司法院網站下載造字檔。\n\n全國法規資料庫之內容每週五定期更新，當週發布之法律、命令資料，將於完成法規整編作業後，於下週五更新上線。\n\n法規整編資料截止日：民國 115 年 08 月 21 日 \n\n瀏覽人次總計：1,615,519,942人\n\n本月瀏覽人次：13,477,766人\n\n目前使用人次：819人\n\n電子報訂閱：222,832人\n\n│ 政府網站資料開放宣告 │ 隱私權保護宣告 │ 資訊安全政策 │ Q & A │ 意見回饋 │ API文件 │ \n\n本網站由法務部全國法規資料庫工作小組維運管理...\n\n法務部地址：100204 台北市重慶南路一段130號　電話：(02)2191-0189\n\n第二辦公室地址：100006 台北市貴陽街1段235號　電話：(02)2191-0189\n\n回上方\n\n$(function () {\n\n// === 統一綁定 GA 追蹤事件 ===\n$('.ga-track-link').on('click keypress', function (e) {\n// 如果是鍵盤事件，確認是按下 Enter 鍵 (keyCode 13) 才觸發\nif (e.type === 'keypress' && e.which !== 13) {\nreturn;\n}\n\nvar category = $(this).data('ga-category');\nvar action = $(this).data('ga-action');\n\n// 呼叫原本的 GA 追蹤函數\nif (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice(category, action, '', '');\n}\n});\n\n// 綁定登出確認視窗\n$('.logout-link').on('click', function () {\nif (!confirm('確定登出？')) {\nreturn false; // 若使用者按取消，則不執行跳轉\n}\n});\n\nvar b = 'ONEBAR';\n$(\"#btnSubscribe,#btnUnsubscribe\").on(\"click\", function (event) {\n//var email = $.trim($(\"#txtEMail\").val());\n//if (email == \"\") {\n// event.preventDefault();\n// alert('請您輸入電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else if (false == IsEMail(email)) {\n// event.preventDefault();\n// alert('請您輸入正確電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else {\n// GoogleAnanlytice('中文', '訂閱電子報', '', '');\n//}\nvar email = $.trim($(\"#txtEMail\").val());\n//if (!validateEmail(email)) {\n// alert('請您輸入正確電子郵件地址。');\n// return false;\n//}\n\n});\n$('#btnQall').on(\"click\", function () {\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse if (keyword.indexOf($.trim($(\"#keyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsQall').on(\"click\", function () {\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else {\nGoogleAnanlytice(",
       "articles": []
     }
   ],
@@ -32,7 +32,7 @@
       "text": "本辦法依警察人員人事條例（以下簡稱本條例）第六條第二項規定訂定之。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=1&pcode=D0080164",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080164",
-      "fetchedAt": "2026-08-27T04:32:35.004Z",
+      "fetchedAt": "2026-08-28T06:57:18.788Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -40,7 +40,7 @@
       "text": "本辦法所稱擬任警察官人員，指應公務人員考試法所舉行之高等考試、普通考試、初等考試或特種考試之警察人員考試及格，並具中央警察大學、中央警官學校、臺灣警察專科學校或臺灣警察學校畢業或訓練合格，擬予任用之人員。\n中央警察大學、臺灣警察專科學校應屆畢業生應同年公務人員特種考試警察人員考試榜示錄取者，免予查核。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=2&pcode=D0080164",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080164",
-      "fetchedAt": "2026-08-27T04:32:35.004Z",
+      "fetchedAt": "2026-08-28T06:57:18.788Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -48,7 +48,7 @@
       "text": "擬任警察機關、學校警察官人員之查核事項，由內政部警政署（以下簡稱警政署）統一規劃，各警察機關、學校執行查核作業。\n擬任海岸巡防機關或消防機關列警察官人員之查核事項，由擬任機關辦理。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=3&pcode=D0080164",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080164",
-      "fetchedAt": "2026-08-27T04:32:35.004Z",
+      "fetchedAt": "2026-08-28T06:57:18.788Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -56,7 +56,7 @@
       "text": "擬任警察官人員之查核項目如下：\n一、刑案紀錄資料。\n二、治安顧慮人口資料。\n三、曾服公職受懲戒或行政懲處紀錄。\n四、國籍、戶籍資料。\n五、學歷、經歷資料。\n六、受監護宣告資料。\n七、身心健康狀況。\n八、其他品德及忠誠資料。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=4&pcode=D0080164",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080164",
-      "fetchedAt": "2026-08-27T04:32:35.004Z",
+      "fetchedAt": "2026-08-28T06:57:18.788Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -64,7 +64,7 @@
       "text": "擬任機關、學校辦理查核工作，應於公務人員特種考試警察人員考試榜示錄取後三個月內辦理完竣，必要時得延長一個月；曾任限期服務警（隊）員申請補受公務人員特種考試警察人員考試之教育訓練者，於核准後三個月內辦理完竣。\n擬任機關、學校於前項查核工作辦理完竣後，必要時，得於任用警察官前，再辦理查核工作。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=5&pcode=D0080164",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080164",
-      "fetchedAt": "2026-08-27T04:32:35.004Z",
+      "fetchedAt": "2026-08-28T06:57:18.788Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -72,7 +72,7 @@
       "text": "查核結果有本條例第十條之一第一項各款不得任用為警察官情形者，擬任機關、學校應以書面通知當事人；當事人不服通知時，得依法提起訴願。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=6&pcode=D0080164",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080164",
-      "fetchedAt": "2026-08-27T04:32:35.004Z",
+      "fetchedAt": "2026-08-28T06:57:18.788Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -80,7 +80,7 @@
       "text": "擬任機關、學校辦理查核時，得向無隸屬之其他機關請求協助。\n前項請求，除緊急情形外，應以書面為之。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=7&pcode=D0080164",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080164",
-      "fetchedAt": "2026-08-27T04:32:35.004Z",
+      "fetchedAt": "2026-08-28T06:57:18.788Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -88,7 +88,7 @@
       "text": "擬任機關、學校辦理查核應注意作業保密；查核資料依機密文書處理並保管。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=8&pcode=D0080164",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080164",
-      "fetchedAt": "2026-08-27T04:32:35.004Z",
+      "fetchedAt": "2026-08-28T06:57:18.788Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -96,7 +96,7 @@
       "text": "本辦法自發布日施行。\n本辦法中華民國九十八年十一月十日修正條文，自九十八年十一月二十三日施行。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=9&pcode=D0080164",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080164",
-      "fetchedAt": "2026-08-27T04:32:35.004Z",
+      "fetchedAt": "2026-08-28T06:57:18.788Z",
       "ok": true,
       "source": "LawAll"
     }
