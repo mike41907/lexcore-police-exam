@@ -2,7 +2,7 @@
   "id": "guard_police_weapons",
   "name": "駐衛警察使用警械管理辦法",
   "pcode": "D0080053",
-  "fetchedAt": "2026-08-28T06:57:10.356Z",
+  "fetchedAt": "2026-08-29T04:11:29.238Z",
   "latest": "2002-11-13",
   "history": [
     {
@@ -31,7 +31,7 @@
       "date": "1986-07-14",
       "rocDate": "75/07/14",
       "rocYear": 75,
-      "raw": "內政部（75）台內警字第 404682 號令訂\n定發布全文 11 條\n\n:::\n\n最新訊息\n\n中央法規\n\n司法解釋\n\n條約協定\n\n兩岸協議\n\n綜合查詢\n\n跨機關檢索\n\n法治宣導專區\n\n智慧查找\n\n法律扶助\n\n創意教案\n\n法律時事漫談\n\n網站使用說明\n\n網站使用手冊\n\n會員服務介紹\n\n網站單元簡介\n\n法規資料檢索範圍\n\n資料更新頻率說明\n\n資訊服務\n\n全國法規連結圖示\n\n全國法規作業要點\n\n法規名稱英譯標準表\n\n相關網站\n\n訂閱電子報\n\n瀏覽人次總計\n\n1,615,519,878人\n\n本月瀏覽人次\n\n13,477,702人\n\n目前使用人次\n\n755人\n\n電子報訂閱人數\n\n222,832人\n\n本網站係提供法規之最新動態資訊及資料檢索，並不提供法規及法律諮詢之服務。\n\n若有任何法律上的疑義，建議您可逕向發布法規之主管機關洽詢。\n\n本網站法規資料係由政府各機關提供之電子檔或書面文字登打製作，若與各法規主管機關之公布文字有所不同，仍以各法規主管機關之公布資料為準。\n\n部分資料內容，使用特殊文字或符號，如欲詳閱內容，請連結至司法院網站下載造字檔。\n\n全國法規資料庫之內容每週五定期更新，當週發布之法律、命令資料，將於完成法規整編作業後，於下週五更新上線。\n\n法規整編資料截止日：民國 115 年 08 月 21 日 \n\n瀏覽人次總計：1,615,519,878人\n\n本月瀏覽人次：13,477,702人\n\n目前使用人次：755人\n\n電子報訂閱：222,832人\n\n│ 政府網站資料開放宣告 │ 隱私權保護宣告 │ 資訊安全政策 │ Q & A │ 意見回饋 │ API文件 │ \n\n本網站由法務部全國法規資料庫工作小組維運管理...\n\n法務部地址：100204 台北市重慶南路一段130號　電話：(02)2191-0189\n\n第二辦公室地址：100006 台北市貴陽街1段235號　電話：(02)2191-0189\n\n回上方\n\n$(function () {\n\n// === 統一綁定 GA 追蹤事件 ===\n$('.ga-track-link').on('click keypress', function (e) {\n// 如果是鍵盤事件，確認是按下 Enter 鍵 (keyCode 13) 才觸發\nif (e.type === 'keypress' && e.which !== 13) {\nreturn;\n}\n\nvar category = $(this).data('ga-category');\nvar action = $(this).data('ga-action');\n\n// 呼叫原本的 GA 追蹤函數\nif (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice(category, action, '', '');\n}\n});\n\n// 綁定登出確認視窗\n$('.logout-link').on('click', function () {\nif (!confirm('確定登出？')) {\nreturn false; // 若使用者按取消，則不執行跳轉\n}\n});\n\nvar b = 'ONEBAR';\n$(\"#btnSubscribe,#btnUnsubscribe\").on(\"click\", function (event) {\n//var email = $.trim($(\"#txtEMail\").val());\n//if (email == \"\") {\n// event.preventDefault();\n// alert('請您輸入電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else if (false == IsEMail(email)) {\n// event.preventDefault();\n// alert('請您輸入正確電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else {\n// GoogleAnanlytice('中文', '訂閱電子報', '', '');\n//}\nvar email = $.trim($(\"#txtEMail\").val());\n//if (!validateEmail(email)) {\n// alert('請您輸入正確電子郵件地址。');\n// return false;\n//}\n\n});\n$('#btnQall').on(\"click\", function () {\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse if (keyword.indexOf($.trim($(\"#keyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsQall').on(\"click\", function () {\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else {\nGoogleAnanlytice(\"中文\", \"",
+      "raw": "內政部（75）台內警字第 404682 號令訂\n定發布全文 11 條\n\n:::\n\n最新訊息\n\n中央法規\n\n司法解釋\n\n條約協定\n\n兩岸協議\n\n綜合查詢\n\n跨機關檢索\n\n法治宣導專區\n\n智慧查找\n\n法律扶助\n\n創意教案\n\n法律時事漫談\n\n網站使用說明\n\n網站使用手冊\n\n會員服務介紹\n\n網站單元簡介\n\n法規資料檢索範圍\n\n資料更新頻率說明\n\n資訊服務\n\n全國法規連結圖示\n\n全國法規作業要點\n\n法規名稱英譯標準表\n\n相關網站\n\n訂閱電子報\n\n瀏覽人次總計\n\n1,615,947,084人\n\n本月瀏覽人次\n\n13,904,908人\n\n目前使用人次\n\n2,642人\n\n電子報訂閱人數\n\n222,833人\n\n本網站係提供法規之最新動態資訊及資料檢索，並不提供法規及法律諮詢之服務。\n\n若有任何法律上的疑義，建議您可逕向發布法規之主管機關洽詢。\n\n本網站法規資料係由政府各機關提供之電子檔或書面文字登打製作，若與各法規主管機關之公布文字有所不同，仍以各法規主管機關之公布資料為準。\n\n部分資料內容，使用特殊文字或符號，如欲詳閱內容，請連結至司法院網站下載造字檔。\n\n全國法規資料庫之內容每週五定期更新，當週發布之法律、命令資料，將於完成法規整編作業後，於下週五更新上線。\n\n法規整編資料截止日：民國 115 年 08 月 21 日 \n\n瀏覽人次總計：1,615,947,084人\n\n本月瀏覽人次：13,904,908人\n\n目前使用人次：2,642人\n\n電子報訂閱：222,833人\n\n│ 政府網站資料開放宣告 │ 隱私權保護宣告 │ 資訊安全政策 │ Q & A │ 意見回饋 │ API文件 │ \n\n本網站由法務部全國法規資料庫工作小組維運管理...\n\n法務部地址：100204 台北市重慶南路一段130號　電話：(02)2191-0189\n\n第二辦公室地址：100006 台北市貴陽街1段235號　電話：(02)2191-0189\n\n回上方\n\n$(function () {\n\n// === 統一綁定 GA 追蹤事件 ===\n$('.ga-track-link').on('click keypress', function (e) {\n// 如果是鍵盤事件，確認是按下 Enter 鍵 (keyCode 13) 才觸發\nif (e.type === 'keypress' && e.which !== 13) {\nreturn;\n}\n\nvar category = $(this).data('ga-category');\nvar action = $(this).data('ga-action');\n\n// 呼叫原本的 GA 追蹤函數\nif (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice(category, action, '', '');\n}\n});\n\n// 綁定登出確認視窗\n$('.logout-link').on('click', function () {\nif (!confirm('確定登出？')) {\nreturn false; // 若使用者按取消，則不執行跳轉\n}\n});\n\nvar b = 'ONEBAR';\n$(\"#btnSubscribe,#btnUnsubscribe\").on(\"click\", function (event) {\n//var email = $.trim($(\"#txtEMail\").val());\n//if (email == \"\") {\n// event.preventDefault();\n// alert('請您輸入電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else if (false == IsEMail(email)) {\n// event.preventDefault();\n// alert('請您輸入正確電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else {\n// GoogleAnanlytice('中文', '訂閱電子報', '', '');\n//}\nvar email = $.trim($(\"#txtEMail\").val());\n//if (!validateEmail(email)) {\n// alert('請您輸入正確電子郵件地址。');\n// return false;\n//}\n\n});\n$('#btnQall').on(\"click\", function () {\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse if (keyword.indexOf($.trim($(\"#keyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsQall').on(\"click\", function () {\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else {\nGoogleAnanlytice(\"中文",
       "articles": []
     }
   ],
@@ -41,7 +41,7 @@
       "text": "本辦法依警械使用條例（以下簡稱本條例）第十三條第二項規定訂定之。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=1&pcode=D0080053",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080053",
-      "fetchedAt": "2026-08-28T06:57:10.356Z",
+      "fetchedAt": "2026-08-29T04:11:29.238Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -49,7 +49,7 @@
       "text": "本辦法所稱駐衛警察，係指各機關學校團體駐衛警察設置管理辦法核准設置者為限。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=2&pcode=D0080053",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080053",
-      "fetchedAt": "2026-08-28T06:57:10.356Z",
+      "fetchedAt": "2026-08-29T04:11:29.238Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -57,7 +57,7 @@
       "text": "駐衛警察執行職務，遇有本條例第二條至第四條所列情形時，得使用警械。其使用警械之種類、時機與程序及應注意事項等，悉依本條例之規定。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=3&pcode=D0080053",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080053",
-      "fetchedAt": "2026-08-28T06:57:10.356Z",
+      "fetchedAt": "2026-08-29T04:11:29.238Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -65,7 +65,7 @@
       "text": "駐衛警察執行職務時，以使用警棍為原則；其需用其他警械者，應由設置單位向直轄市、縣（市）警政機關申請配發。\n當地警察局（分局）於治安狀況特殊或情況急迫時，得對駐衛警察逕行配發警械。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=4&pcode=D0080053",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080053",
-      "fetchedAt": "2026-08-28T06:57:10.356Z",
+      "fetchedAt": "2026-08-29T04:11:29.238Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -73,7 +73,7 @@
       "text": "駐衛警察配用警棍，得自行購置，並列冊報當地警察局（分局）備查。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=5&pcode=D0080053",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080053",
-      "fetchedAt": "2026-08-28T06:57:10.356Z",
+      "fetchedAt": "2026-08-29T04:11:29.238Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -81,7 +81,7 @@
       "text": "駐衛警察對配發之警械，應分類造冊登記，按季報當地警察局（分局）備查。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=6&pcode=D0080053",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080053",
-      "fetchedAt": "2026-08-28T06:57:10.356Z",
+      "fetchedAt": "2026-08-29T04:11:29.238Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -89,7 +89,7 @@
       "text": "駐衛警察保管警械，應遵守警政機關之規定。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=7&pcode=D0080053",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080053",
-      "fetchedAt": "2026-08-28T06:57:10.356Z",
+      "fetchedAt": "2026-08-29T04:11:29.238Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -97,7 +97,7 @@
       "text": "駐衛警察使用警槍，應隨帶駐衛警警槍執照。\n前項執照，由設置單位向當地警察局（分局）申請核發之。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=8&pcode=D0080053",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080053",
-      "fetchedAt": "2026-08-28T06:57:10.356Z",
+      "fetchedAt": "2026-08-29T04:11:29.238Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -105,7 +105,7 @@
       "text": "駐衛警察使用警械之訓練、監督、考核，由當地警察局（分局）辦理。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=9&pcode=D0080053",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080053",
-      "fetchedAt": "2026-08-28T06:57:10.356Z",
+      "fetchedAt": "2026-08-29T04:11:29.238Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -113,7 +113,7 @@
       "text": "駐衛警察使用警械，因而致人受傷、死亡或財產損失者，由設置單位依本條例第十一條規定辦理。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=10&pcode=D0080053",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080053",
-      "fetchedAt": "2026-08-28T06:57:10.356Z",
+      "fetchedAt": "2026-08-29T04:11:29.238Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -121,7 +121,7 @@
       "text": "本辦法自發布日施行。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=11&pcode=D0080053",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080053",
-      "fetchedAt": "2026-08-28T06:57:10.356Z",
+      "fetchedAt": "2026-08-29T04:11:29.238Z",
       "ok": true,
       "source": "LawAll"
     }

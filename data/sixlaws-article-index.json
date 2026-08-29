@@ -2,7 +2,7 @@
   "schema": "lexcore.sixlaws.article-index.v1",
   "provider": "S-link電子六法",
   "sourceBaseUrl": "https://www.6laws.net",
-  "retrievedAt": "2026-08-28T06:57:35.220Z",
+  "retrievedAt": "2026-08-29T04:11:58.375Z",
   "usage": "僅保存公開法條頁的條名、判解索引與來源連結；不複製第三方判解全文。現行法條正文仍以法務部全國法規資料庫為準。",
   "coverage": {
     "configured": 10,
@@ -16,7 +16,7 @@
       "sourceName": "刑法",
       "sourceUrl": "https://www.6laws.net/6law/law/刑法.htm",
       "matched": true,
-      "retrievedAt": "2026-08-28T06:57:35.220Z",
+      "retrievedAt": "2026-08-29T04:11:58.375Z",
       "articleCount": 421,
       "articles": {
         "1": {
@@ -14970,7 +14970,7 @@
       "sourceName": "刑事訴訟法",
       "sourceUrl": "https://www.6laws.net/6law/law/刑事訴訟法.htm",
       "matched": true,
-      "retrievedAt": "2026-08-28T06:57:35.220Z",
+      "retrievedAt": "2026-08-29T04:11:58.375Z",
       "articleCount": 712,
       "articles": {
         "1": {
@@ -31082,7 +31082,7 @@
       "sourceName": "憲法訴訟法",
       "sourceUrl": "https://www.6laws.net/6law/law/憲法訴訟法.htm",
       "matched": true,
-      "retrievedAt": "2026-08-28T06:57:35.220Z",
+      "retrievedAt": "2026-08-29T04:11:58.375Z",
       "articleCount": 95,
       "articles": {
         "1": {
@@ -31835,7 +31835,7 @@
       "sourceName": "社會秩序維護法",
       "sourceUrl": "https://www.6laws.net/6law/law/社會秩序維護法.htm",
       "matched": true,
-      "retrievedAt": "2026-08-28T06:57:35.220Z",
+      "retrievedAt": "2026-08-29T04:11:58.375Z",
       "articleCount": 96,
       "articles": {
         "1": {
@@ -32560,7 +32560,7 @@
       "sourceName": "警察法",
       "sourceUrl": "https://www.6laws.net/6law/law/警察法.htm",
       "matched": true,
-      "retrievedAt": "2026-08-28T06:57:35.220Z",
+      "retrievedAt": "2026-08-29T04:11:58.375Z",
       "articleCount": 20,
       "articles": {
         "1": {
@@ -32770,7 +32770,7 @@
       "sourceName": "警察職權行使法",
       "sourceUrl": "https://www.6laws.net/6law/law/警察職權行使法.htm",
       "matched": true,
-      "retrievedAt": "2026-08-28T06:57:35.220Z",
+      "retrievedAt": "2026-08-29T04:11:58.375Z",
       "articleCount": 32,
       "articles": {
         "1": {
@@ -33080,7 +33080,7 @@
       "sourceName": "警械使用條例",
       "sourceUrl": "https://www.6laws.net/6law/law/警械使用條例.htm",
       "matched": true,
-      "retrievedAt": "2026-08-28T06:57:35.220Z",
+      "retrievedAt": "2026-08-29T04:11:58.375Z",
       "articleCount": 15,
       "articles": {
         "1": {
@@ -33198,7 +33198,7 @@
       "sourceName": "警察勤務條例",
       "sourceUrl": "https://www.6laws.net/6law/law/警察勤務條例.htm",
       "matched": true,
-      "retrievedAt": "2026-08-28T06:57:35.220Z",
+      "retrievedAt": "2026-08-29T04:11:58.375Z",
       "articleCount": 29,
       "articles": {
         "1": {
@@ -33623,7 +33623,7 @@
       "sourceName": "警察人員人事條例",
       "sourceUrl": "https://www.6laws.net/6law/law/警察人員人事條例.htm",
       "matched": true,
-      "retrievedAt": "2026-08-28T06:57:35.220Z",
+      "retrievedAt": "2026-08-29T04:11:58.375Z",
       "articleCount": 52,
       "articles": {
         "1": {
@@ -34088,7 +34088,7 @@
       "sourceName": "警察教育條例",
       "sourceUrl": "https://www.6laws.net/6law/law/警察教育條例.htm",
       "matched": true,
-      "retrievedAt": "2026-08-28T06:57:35.220Z",
+      "retrievedAt": "2026-08-29T04:11:58.375Z",
       "articleCount": 16,
       "articles": {
         "1": {
