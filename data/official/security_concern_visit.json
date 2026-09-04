@@ -2,7 +2,7 @@
   "id": "security_concern_visit",
   "name": "治安顧慮人口查訪辦法",
   "pcode": "D0080147",
-  "fetchedAt": "2026-09-03T01:08:40.421Z",
+  "fetchedAt": "2026-09-04T01:00:38.713Z",
   "latest": "2023-03-30",
   "history": [
     {
@@ -32,7 +32,7 @@
       "date": "2003-11-27",
       "rocDate": "92/11/27",
       "rocYear": 92,
-      "raw": "內政部台內警字第 0920078300 號令\n訂定發布全文 10 條；並自九十二年十二月一日施行\n\n:::\n\n最新訊息\n\n中央法規\n\n司法解釋\n\n條約協定\n\n兩岸協議\n\n綜合查詢\n\n跨機關檢索\n\n法治宣導專區\n\n智慧查找\n\n法律扶助\n\n創意教案\n\n法律時事漫談\n\n網站使用說明\n\n網站使用手冊\n\n會員服務介紹\n\n網站單元簡介\n\n法規資料檢索範圍\n\n資料更新頻率說明\n\n資訊服務\n\n全國法規連結圖示\n\n全國法規作業要點\n\n法規名稱英譯標準表\n\n相關網站\n\n訂閱電子報\n\n瀏覽人次總計\n\n1,618,307,447人\n\n本月瀏覽人次\n\n1,248,836人\n\n目前使用人次\n\n363人\n\n電子報訂閱人數\n\n222,863人\n\n本網站係提供法規之最新動態資訊及資料檢索，並不提供法規及法律諮詢之服務。\n\n若有任何法律上的疑義，建議您可逕向發布法規之主管機關洽詢。\n\n本網站法規資料係由政府各機關提供之電子檔或書面文字登打製作，若與各法規主管機關之公布文字有所不同，仍以各法規主管機關之公布資料為準。\n\n部分資料內容，使用特殊文字或符號，如欲詳閱內容，請連結至司法院網站下載造字檔。\n\n全國法規資料庫之內容每週五定期更新，當週發布之法律、命令資料，將於完成法規整編作業後，於下週五更新上線。\n\n法規整編資料截止日：民國 115 年 08 月 28 日 \n\n瀏覽人次總計：1,618,307,447人\n\n本月瀏覽人次：1,248,836人\n\n目前使用人次：363人\n\n電子報訂閱：222,863人\n\n│ 政府網站資料開放宣告 │ 隱私權保護宣告 │ 資訊安全政策 │ Q & A │ 意見回饋 │ API文件 │ \n\n本網站由法務部全國法規資料庫工作小組維運管理...\n\n法務部地址：100204 台北市重慶南路一段130號　電話：(02)2191-0189\n\n第二辦公室地址：100006 台北市貴陽街1段235號　電話：(02)2191-0189\n\n回上方\n\n$(function () {\n\n// === 統一綁定 GA 追蹤事件 ===\n$('.ga-track-link').on('click keypress', function (e) {\n// 如果是鍵盤事件，確認是按下 Enter 鍵 (keyCode 13) 才觸發\nif (e.type === 'keypress' && e.which !== 13) {\nreturn;\n}\n\nvar category = $(this).data('ga-category');\nvar action = $(this).data('ga-action');\n\n// 呼叫原本的 GA 追蹤函數\nif (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice(category, action, '', '');\n}\n});\n\n// 綁定登出確認視窗\n$('.logout-link').on('click', function () {\nif (!confirm('確定登出？')) {\nreturn false; // 若使用者按取消，則不執行跳轉\n}\n});\n\nvar b = 'ONEBAR';\n$(\"#btnSubscribe,#btnUnsubscribe\").on(\"click\", function (event) {\n//var email = $.trim($(\"#txtEMail\").val());\n//if (email == \"\") {\n// event.preventDefault();\n// alert('請您輸入電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else if (false == IsEMail(email)) {\n// event.preventDefault();\n// alert('請您輸入正確電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else {\n// GoogleAnanlytice('中文', '訂閱電子報', '', '');\n//}\nvar email = $.trim($(\"#txtEMail\").val());\n//if (!validateEmail(email)) {\n// alert('請您輸入正確電子郵件地址。');\n// return false;\n//}\n\n});\n$('#btnQall').on(\"click\", function () {\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse if (keyword.indexOf($.trim($(\"#keyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsQall').on(\"click\", function () {\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else {\nGoogleAnanly",
+      "raw": "內政部台內警字第 0920078300 號令\n訂定發布全文 10 條；並自九十二年十二月一日施行\n\n:::\n\n最新訊息\n\n中央法規\n\n司法解釋\n\n條約協定\n\n兩岸協議\n\n綜合查詢\n\n跨機關檢索\n\n法治宣導專區\n\n智慧查找\n\n法律扶助\n\n創意教案\n\n法律時事漫談\n\n網站使用說明\n\n網站使用手冊\n\n會員服務介紹\n\n網站單元簡介\n\n法規資料檢索範圍\n\n資料更新頻率說明\n\n資訊服務\n\n全國法規連結圖示\n\n全國法規作業要點\n\n法規名稱英譯標準表\n\n相關網站\n\n訂閱電子報\n\n瀏覽人次總計\n\n1,618,890,498人\n\n本月瀏覽人次\n\n1,831,887人\n\n目前使用人次\n\n4,217人\n\n電子報訂閱人數\n\n222,880人\n\n本網站係提供法規之最新動態資訊及資料檢索，並不提供法規及法律諮詢之服務。\n\n若有任何法律上的疑義，建議您可逕向發布法規之主管機關洽詢。\n\n本網站法規資料係由政府各機關提供之電子檔或書面文字登打製作，若與各法規主管機關之公布文字有所不同，仍以各法規主管機關之公布資料為準。\n\n部分資料內容，使用特殊文字或符號，如欲詳閱內容，請連結至司法院網站下載造字檔。\n\n全國法規資料庫之內容每週五定期更新，當週發布之法律、命令資料，將於完成法規整編作業後，於下週五更新上線。\n\n法規整編資料截止日：民國 115 年 08 月 28 日 \n\n瀏覽人次總計：1,618,890,498人\n\n本月瀏覽人次：1,831,887人\n\n目前使用人次：4,217人\n\n電子報訂閱：222,880人\n\n│ 政府網站資料開放宣告 │ 隱私權保護宣告 │ 資訊安全政策 │ Q & A │ 意見回饋 │ API文件 │ \n\n本網站由法務部全國法規資料庫工作小組維運管理.\n\n法務部地址：100204 台北市重慶南路一段130號　電話：(02)2191-0189\n\n第二辦公室地址：100006 台北市貴陽街1段235號　電話：(02)2191-0189\n\n回上方\n\n$(function () {\n\n// === 統一綁定 GA 追蹤事件 ===\n$('.ga-track-link').on('click keypress', function (e) {\n// 如果是鍵盤事件，確認是按下 Enter 鍵 (keyCode 13) 才觸發\nif (e.type === 'keypress' && e.which !== 13) {\nreturn;\n}\n\nvar category = $(this).data('ga-category');\nvar action = $(this).data('ga-action');\n\n// 呼叫原本的 GA 追蹤函數\nif (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice(category, action, '', '');\n}\n});\n\n// 綁定登出確認視窗\n$('.logout-link').on('click', function () {\nif (!confirm('確定登出？')) {\nreturn false; // 若使用者按取消，則不執行跳轉\n}\n});\n\nvar b = 'ONEBAR';\n$(\"#btnSubscribe,#btnUnsubscribe\").on(\"click\", function (event) {\n//var email = $.trim($(\"#txtEMail\").val());\n//if (email == \"\") {\n// event.preventDefault();\n// alert('請您輸入電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else if (false == IsEMail(email)) {\n// event.preventDefault();\n// alert('請您輸入正確電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else {\n// GoogleAnanlytice('中文', '訂閱電子報', '', '');\n//}\nvar email = $.trim($(\"#txtEMail\").val());\n//if (!validateEmail(email)) {\n// alert('請您輸入正確電子郵件地址。');\n// return false;\n//}\n\n});\n$('#btnQall').on(\"click\", function () {\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse if (keyword.indexOf($.trim($(\"#keyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsQall').on(\"click\", function () {\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else {\nGoogleAnan",
       "articles": []
     }
   ],
@@ -53,7 +53,7 @@
       "text": "本辦法依警察職權行使法（以下簡稱本法）第十五條第三項規定訂定之。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=1&pcode=D0080147",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080147",
-      "fetchedAt": "2026-09-03T01:08:40.421Z",
+      "fetchedAt": "2026-09-04T01:00:38.713Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -61,7 +61,7 @@
       "text": "依本法第十五條第一項規定得定期實施查訪對象如下：\n一、曾犯刑法第二百七十一條或第二百七十二條之殺人罪者。\n二、曾犯刑法第三百二十八條至第三百三十二條之強盜罪者。\n三、曾犯刑法第三百二十五條至第三百二十七條之搶奪罪者。\n四、曾犯刑法第一百七十三條第一項、第一百七十四條第一項、第一百七十五條第一項或第二項之放火罪者。\n五、曾犯刑法第二百二十一條、第二百二十二條、第二百二十四條至第二百二十七條、第二百二十八條或第二百二十九條之妨害性自主罪者。\n六、曾犯刑法第三百四十六條之恐嚇取財罪者。\n七、曾犯刑法第三百四十七條或第三百四十八條之擄人勒贖罪者。\n八、曾犯刑法第三百二十條或第三百二十一條之竊盜罪，或森林法第五十條或第五十二條第一項至第三項之森林主副產物竊盜罪者。但森林法第五十條第二項，不在此限。\n九、曾犯刑法第三百三十九條至第三百三十九條之三或第三百四十一條之詐欺罪者。\n十、曾犯刑法第二百九十六條、第二百九十六條之一、第三百零二條、第三百零四條或第三百零五條之妨害自由罪者。\n十一、曾犯組織犯罪防制條例之罪者。\n十二、毒品危害防制條例第二十五條第二項所定之受毒品戒治人。\n十三、曾犯毒品危害防制條例所定製造、運輸、販賣、持有毒品之罪者。\n十四、曾犯槍砲彈藥刀械管制條例所定製造、運輸、販賣、持有槍砲彈藥之罪者。\n前項查訪期間，以刑執行完畢或假釋出獄後三年內為限。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=2&pcode=D0080147",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080147",
-      "fetchedAt": "2026-09-03T01:08:40.421Z",
+      "fetchedAt": "2026-09-04T01:00:38.713Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -69,7 +69,7 @@
       "text": "警察實施查訪項目如下：\n一、查訪對象之工作、交往及生活情形。\n二、其他有助於維護社會治安及防制查訪對象再犯之必要資料。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=3&pcode=D0080147",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080147",
-      "fetchedAt": "2026-09-03T01:08:40.421Z",
+      "fetchedAt": "2026-09-04T01:00:38.713Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -77,7 +77,7 @@
       "text": "治安顧慮人口由戶籍地警察機關每個月實施查訪一次。必要時，得增加查訪次數。\n戶籍地警察機關發現查訪對象不在戶籍地時，應查明及通知所在處所之警察機關協助查訪；其為行方不明者，應通報直轄市、縣（市）政府警察局協尋。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=4&pcode=D0080147",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080147",
-      "fetchedAt": "2026-09-03T01:08:40.421Z",
+      "fetchedAt": "2026-09-04T01:00:38.713Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -85,7 +85,7 @@
       "text": "警察實施查訪，應選擇適當之時間、地點，以家戶訪問或其他適當方式為之，並應注意避免影響查訪對象之工作及名譽。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=5&pcode=D0080147",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080147",
-      "fetchedAt": "2026-09-03T01:08:40.421Z",
+      "fetchedAt": "2026-09-04T01:00:38.713Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -93,7 +93,7 @@
       "text": "警察實施查訪，應於日間為之。但與查訪對象約定者，不在此限。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=6&pcode=D0080147",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080147",
-      "fetchedAt": "2026-09-03T01:08:40.421Z",
+      "fetchedAt": "2026-09-04T01:00:38.713Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -101,7 +101,7 @@
       "text": "警察實施查訪時，應著制服或出示證件表明身分，並應告知事由。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=7&pcode=D0080147",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080147",
-      "fetchedAt": "2026-09-03T01:08:40.421Z",
+      "fetchedAt": "2026-09-04T01:00:38.713Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -109,7 +109,7 @@
       "text": "警察發現查訪對象有違法之虞時，應以勸告或其他適當方法，促其不再犯。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=8&pcode=D0080147",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080147",
-      "fetchedAt": "2026-09-03T01:08:40.421Z",
+      "fetchedAt": "2026-09-04T01:00:38.713Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -117,7 +117,7 @@
       "text": "警察依本法第六條至第十條規定實施身分查證及資料蒐集，發現行方不明治安顧慮人口之第三條所定資料時，應通報其戶籍地警察機關。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=9&pcode=D0080147",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080147",
-      "fetchedAt": "2026-09-03T01:08:40.421Z",
+      "fetchedAt": "2026-09-04T01:00:38.713Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -125,7 +125,7 @@
       "text": "本辦法自中華民國九十二年十二月一日施行。\n本辦法修正條文自發布日施行。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=10&pcode=D0080147",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080147",
-      "fetchedAt": "2026-09-03T01:08:40.421Z",
+      "fetchedAt": "2026-09-04T01:00:38.713Z",
       "ok": true,
       "source": "LawAll"
     }
