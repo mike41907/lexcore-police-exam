@@ -2,7 +2,7 @@
   "id": "third_party_data",
   "name": "警察遴選第三人蒐集資料辦法",
   "pcode": "D0080146",
-  "fetchedAt": "2026-08-25T23:40:31.347Z",
+  "fetchedAt": "2026-09-04T01:00:37.988Z",
   "latest": "2019-09-17",
   "history": [
     {
@@ -21,7 +21,7 @@
       "date": "2003-11-17",
       "rocDate": "92/11/17",
       "rocYear": 92,
-      "raw": "內政部台內警字第 0920079549 號令訂\n定發布全文 13 條；並自九十二年十二月一日施行\n\n:::\n\n最新訊息\n\n中央法規\n\n司法解釋\n\n條約協定\n\n兩岸協議\n\n綜合查詢\n\n跨機關檢索\n\n法治宣導專區\n\n智慧查找\n\n法律扶助\n\n創意教案\n\n法律時事漫談\n\n網站使用說明\n\n網站使用手冊\n\n會員服務介紹\n\n網站單元簡介\n\n法規資料檢索範圍\n\n資料更新頻率說明\n\n資訊服務\n\n全國法規連結圖示\n\n全國法規作業要點\n\n法規名稱英譯標準表\n\n相關網站\n\n訂閱電子報\n\n瀏覽人次總計\n\n1,614,295,124人\n\n本月瀏覽人次\n\n12,252,948人\n\n目前使用人次\n\n6,844人\n\n電子報訂閱人數\n\n222,817人\n\n本網站係提供法規之最新動態資訊及資料檢索，並不提供法規及法律諮詢之服務。\n\n若有任何法律上的疑義，建議您可逕向發布法規之主管機關洽詢。\n\n本網站法規資料係由政府各機關提供之電子檔或書面文字登打製作，若與各法規主管機關之公布文字有所不同，仍以各法規主管機關之公布資料為準。\n\n部分資料內容，使用特殊文字或符號，如欲詳閱內容，請連結至司法院網站下載造字檔。\n\n全國法規資料庫之內容每週五定期更新，當週發布之法律、命令資料，將於完成法規整編作業後，於下週五更新上線。\n\n法規整編資料截止日：民國 115 年 08 月 14 日 \n\n瀏覽人次總計：1,614,295,124人\n\n本月瀏覽人次：12,252,948人\n\n目前使用人次：6,844人\n\n電子報訂閱：222,817人\n\n│ 政府網站資料開放宣告 │ 隱私權保護宣告 │ 資訊安全政策 │ Q & A │ 意見回饋 │ API文件 │ \n\n本網站由法務部全國法規資料庫工作小組維運管理.\n\n法務部地址：100204 台北市重慶南路一段130號　電話：(02)2191-0189\n\n第二辦公室地址：100006 台北市貴陽街1段235號　電話：(02)2191-0189\n\n回上方\n\n$(function () {\n\n// === 統一綁定 GA 追蹤事件 ===\n$('.ga-track-link').on('click keypress', function (e) {\n// 如果是鍵盤事件，確認是按下 Enter 鍵 (keyCode 13) 才觸發\nif (e.type === 'keypress' && e.which !== 13) {\nreturn;\n}\n\nvar category = $(this).data('ga-category');\nvar action = $(this).data('ga-action');\n\n// 呼叫原本的 GA 追蹤函數\nif (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice(category, action, '', '');\n}\n});\n\n// 綁定登出確認視窗\n$('.logout-link').on('click', function () {\nif (!confirm('確定登出？')) {\nreturn false; // 若使用者按取消，則不執行跳轉\n}\n});\n\nvar b = 'ONEBAR';\n$(\"#btnSubscribe,#btnUnsubscribe\").on(\"click\", function (event) {\n//var email = $.trim($(\"#txtEMail\").val());\n//if (email == \"\") {\n// event.preventDefault();\n// alert('請您輸入電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else if (false == IsEMail(email)) {\n// event.preventDefault();\n// alert('請您輸入正確電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else {\n// GoogleAnanlytice('中文', '訂閱電子報', '', '');\n//}\nvar email = $.trim($(\"#txtEMail\").val());\n//if (!validateEmail(email)) {\n// alert('請您輸入正確電子郵件地址。');\n// return false;\n//}\n\n});\n$('#btnQall').on(\"click\", function () {\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse if (keyword.indexOf($.trim($(\"#keyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsQall').on(\"click\", function () {\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else {\nGoogleAn",
+      "raw": "內政部台內警字第 0920079549 號令訂\n定發布全文 13 條；並自九十二年十二月一日施行\n\n:::\n\n最新訊息\n\n中央法規\n\n司法解釋\n\n條約協定\n\n兩岸協議\n\n綜合查詢\n\n跨機關檢索\n\n法治宣導專區\n\n智慧查找\n\n法律扶助\n\n創意教案\n\n法律時事漫談\n\n網站使用說明\n\n網站使用手冊\n\n會員服務介紹\n\n網站單元簡介\n\n法規資料檢索範圍\n\n資料更新頻率說明\n\n資訊服務\n\n全國法規連結圖示\n\n全國法規作業要點\n\n法規名稱英譯標準表\n\n相關網站\n\n訂閱電子報\n\n瀏覽人次總計\n\n1,618,890,484人\n\n本月瀏覽人次\n\n1,831,873人\n\n目前使用人次\n\n4,203人\n\n電子報訂閱人數\n\n222,880人\n\n本網站係提供法規之最新動態資訊及資料檢索，並不提供法規及法律諮詢之服務。\n\n若有任何法律上的疑義，建議您可逕向發布法規之主管機關洽詢。\n\n本網站法規資料係由政府各機關提供之電子檔或書面文字登打製作，若與各法規主管機關之公布文字有所不同，仍以各法規主管機關之公布資料為準。\n\n部分資料內容，使用特殊文字或符號，如欲詳閱內容，請連結至司法院網站下載造字檔。\n\n全國法規資料庫之內容每週五定期更新，當週發布之法律、命令資料，將於完成法規整編作業後，於下週五更新上線。\n\n法規整編資料截止日：民國 115 年 08 月 28 日 \n\n瀏覽人次總計：1,618,890,484人\n\n本月瀏覽人次：1,831,873人\n\n目前使用人次：4,203人\n\n電子報訂閱：222,880人\n\n│ 政府網站資料開放宣告 │ 隱私權保護宣告 │ 資訊安全政策 │ Q & A │ 意見回饋 │ API文件 │ \n\n本網站由法務部全國法規資料庫工作小組維運管理.\n\n法務部地址：100204 台北市重慶南路一段130號　電話：(02)2191-0189\n\n第二辦公室地址：100006 台北市貴陽街1段235號　電話：(02)2191-0189\n\n回上方\n\n$(function () {\n\n// === 統一綁定 GA 追蹤事件 ===\n$('.ga-track-link').on('click keypress', function (e) {\n// 如果是鍵盤事件，確認是按下 Enter 鍵 (keyCode 13) 才觸發\nif (e.type === 'keypress' && e.which !== 13) {\nreturn;\n}\n\nvar category = $(this).data('ga-category');\nvar action = $(this).data('ga-action');\n\n// 呼叫原本的 GA 追蹤函數\nif (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice(category, action, '', '');\n}\n});\n\n// 綁定登出確認視窗\n$('.logout-link').on('click', function () {\nif (!confirm('確定登出？')) {\nreturn false; // 若使用者按取消，則不執行跳轉\n}\n});\n\nvar b = 'ONEBAR';\n$(\"#btnSubscribe,#btnUnsubscribe\").on(\"click\", function (event) {\n//var email = $.trim($(\"#txtEMail\").val());\n//if (email == \"\") {\n// event.preventDefault();\n// alert('請您輸入電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else if (false == IsEMail(email)) {\n// event.preventDefault();\n// alert('請您輸入正確電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else {\n// GoogleAnanlytice('中文', '訂閱電子報', '', '');\n//}\nvar email = $.trim($(\"#txtEMail\").val());\n//if (!validateEmail(email)) {\n// alert('請您輸入正確電子郵件地址。');\n// return false;\n//}\n\n});\n$('#btnQall').on(\"click\", function () {\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse if (keyword.indexOf($.trim($(\"#keyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsQall').on(\"click\", function () {\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else {\nGoogleAnan",
       "articles": []
     }
   ],
@@ -31,7 +31,7 @@
       "text": "本辦法依警察職權行使法（以下簡稱本法）第十二條第四項規定訂定之。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=1&pcode=D0080146",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080146",
-      "fetchedAt": "2026-08-25T23:40:31.347Z",
+      "fetchedAt": "2026-09-04T01:00:37.987Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -39,7 +39,7 @@
       "text": "警察遴選第三人時，應以書面敘明下列事項，陳報該管警察局長或警察分局長核准後實施：\n一、遴選第三人蒐集資料之原因事實。\n二、蒐集對象之基本資料。\n三、蒐集資料之項目。\n四、第三人個人資料及適任理由。\n五、指定專責聯繫運用之人員（以下簡稱專責人員）及其理由。\n第三人之真實姓名及身分應予保密，並以代號或化名為之，警察製作文書時不得記載第三人之年齡、住居所、國民身分證統一編號或護照號碼及其他足資識別其身分之資料。第三人之簽名以捺指印代之。\n專業警察遴選第三人及核准程序，準用前二項規定。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=2&pcode=D0080146",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080146",
-      "fetchedAt": "2026-08-25T23:40:31.347Z",
+      "fetchedAt": "2026-09-04T01:00:37.987Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -47,7 +47,7 @@
       "text": "警察遴選第三人，應查核下列事項：\n一、忠誠度及信賴度。\n二、工作及生活背景。\n三、合作意願及動機。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=3&pcode=D0080146",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080146",
-      "fetchedAt": "2026-08-25T23:40:31.347Z",
+      "fetchedAt": "2026-09-04T01:00:37.987Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -55,7 +55,7 @@
       "text": "遴選第三人經核准後，除最近二年內曾任第三人者外，應實施下列訓練：\n一、蒐集資料之方法及技巧。\n二、保密作為。\n三、狀況之處置。\n四、相關法律程序及法律責任。\n五、本法規定及其他注意事項。\n前項訓練由專責人個別指導。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=4&pcode=D0080146",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080146",
-      "fetchedAt": "2026-08-25T23:40:31.347Z",
+      "fetchedAt": "2026-09-04T01:00:37.987Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -63,7 +63,7 @@
       "text": "第三人完成訓練後，應以口頭或其他適當方式交付任務，並告知下列事項：\n一、簡要案情狀況。\n二、蒐集對象資料及其可能從事之危害或犯罪行為。\n三、蒐集資料項目。\n四、任務起迄時間。\n五、聯繫方法。\n六、其他應行注意之事項。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=5&pcode=D0080146",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080146",
-      "fetchedAt": "2026-08-25T23:40:31.347Z",
+      "fetchedAt": "2026-09-04T01:00:37.987Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -71,7 +71,7 @@
       "text": "警察遴選第三人蒐集資料之期間不得逾一年。認有繼續蒐集必要時，得於期間屆滿前依第二條第一項程序報准延長之。但延長期間不得逾一年，以一次為限。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=6&pcode=D0080146",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080146",
-      "fetchedAt": "2026-08-25T23:40:31.347Z",
+      "fetchedAt": "2026-09-04T01:00:37.987Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -79,7 +79,7 @@
       "text": "警察遴選第三人蒐集資料，有下列情形之一者，應依第二條第一項程序，報請終止合作關係，並即告知第三人：\n一、原因事實消失者。\n二、蒐集目的達成者。\n三、有事實足認不適任者。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=7&pcode=D0080146",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080146",
-      "fetchedAt": "2026-08-25T23:40:31.347Z",
+      "fetchedAt": "2026-09-04T01:00:37.987Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -87,7 +87,7 @@
       "text": "警察與第三人聯繫，應注意保密，並主動探詢其蒐集資料情形。\n第三人之陳述有保全之必要，得經其同意後，予以錄音留存；其交付之證據資料，應載明取得之過程與方法。\n第二項之錄音紀錄或證據資料，應依第十一條規定管理。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=8&pcode=D0080146",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080146",
-      "fetchedAt": "2026-08-25T23:40:31.347Z",
+      "fetchedAt": "2026-09-04T01:00:37.987Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -95,7 +95,7 @@
       "text": "警察應隨時考核第三人之忠誠度及信賴度，並適時檢討其工作成效。\n前項工作成效未達預期者，得視案情狀況，加強其蒐集資料技巧及方法之訓練。\n第三人之忠誠度、信賴度或工作成效經評估認為已不適任者，應停止執行，並依第七條報請終止合作關係。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=9&pcode=D0080146",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080146",
-      "fetchedAt": "2026-08-25T23:40:31.347Z",
+      "fetchedAt": "2026-09-04T01:00:37.987Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -103,7 +103,7 @@
       "text": "警察對第三人所蒐集之資料，應客觀判斷其取得過程及方法，參酌經驗及結果事實情況，評鑑其可信性。\n前項資料經研判認為可信，且具證據價值者，應依下列方式處理：\n一、資料欠詳盡者，應告知繼續蒐集；必要時，應予適當之指導。\n二、資料足資證明特定人有危害或犯罪行為者，應依法處理。\n第一項資料經研判認為不可信者，依前條規定處理。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=10&pcode=D0080146",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080146",
-      "fetchedAt": "2026-08-25T23:40:31.347Z",
+      "fetchedAt": "2026-09-04T01:00:37.987Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -111,7 +111,7 @@
       "text": "警察遴選第三人及第三人蒐集之資料，應注意保密，專案建檔，並指定專人依機密檔案管理辦法管理之。\n前項檔案文件，除法律另有規定者外，不得供閱覽或提供偵查、審判機關以外之其他機關、團體或個人。\n第一項文件供閱覽時，應由啟封者及傳閱者在卷面騎縫處簽章，載明啟封及傳閱日期，並由啟封者併前手封存卷面，重新製作卷面封存之。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=11&pcode=D0080146",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080146",
-      "fetchedAt": "2026-08-25T23:40:31.347Z",
+      "fetchedAt": "2026-09-04T01:00:37.987Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -119,7 +119,7 @@
       "text": "依本法第十二條第三項規定支給第三人實際工作需要費用時，應以專責人員名義具領後，親自交付第三人。\n前項經費由各警察機關自行編列預算支應。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=12&pcode=D0080146",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080146",
-      "fetchedAt": "2026-08-25T23:40:31.347Z",
+      "fetchedAt": "2026-09-04T01:00:37.987Z",
       "ok": true,
       "source": "LawAll"
     },
@@ -127,7 +127,7 @@
       "text": "本辦法自中華民國九十二年十二月一日施行。\n本辦法修正條文自發布日施行。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=13&pcode=D0080146",
       "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080146",
-      "fetchedAt": "2026-08-25T23:40:31.347Z",
+      "fetchedAt": "2026-09-04T01:00:37.987Z",
       "ok": true,
       "source": "LawAll"
     }

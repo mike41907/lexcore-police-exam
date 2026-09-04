@@ -1,29 +1,136 @@
 {
-  "checkedAt": "2026-08-23T21:40:51.908634+00:00",
+  "checkedAt": "2026-08-30T23:35:46.587337+00:00",
   "years": [
     {
       "year": 115,
-      "ok": false,
-      "files": [],
-      "warnings": [
-        "HTTPSConnectionPool(host='se.cpu.edu.tw', port=443): Max retries exceeded with url: /p/404-1006-45581-1.php (Caused by NewConnectionError(\"HTTPSConnection(host='se.cpu.edu.tw', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-      ]
+      "ok": true,
+      "files": [
+        {
+          "file": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+          "subject": "刑法及刑事訴訟法",
+          "parsed": 39
+        },
+        {
+          "file": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+          "subject": "國文與憲法",
+          "parsed": 40
+        },
+        {
+          "file": "115年警佐班試題--警察法規.pdf",
+          "subject": "警察法規",
+          "parsed": 40
+        },
+        {
+          "file": "115年警佐班試題--警察勤務.pdf",
+          "subject": "警察勤務",
+          "parsed": 40
+        },
+        {
+          "file": "115年警正班試題--刑法及刑事訴訟法.pdf",
+          "subject": "刑法及刑事訴訟法",
+          "parsed": 0
+        },
+        {
+          "file": "115年警正班試題--警察勤務.pdf",
+          "subject": "警察勤務",
+          "parsed": 0
+        },
+        {
+          "file": "115年警正班試題--警察法規及行政程序法.pdf",
+          "subject": "警察法規",
+          "parsed": 0
+        },
+        {
+          "file": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+          "subject": "國文與憲法",
+          "parsed": 40
+        },
+        {
+          "file": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+          "subject": "國文與憲法",
+          "parsed": 40
+        }
+      ],
+      "warnings": [],
+      "questionAttachment": {
+        "text": "115年警正警佐消佐海佐班試題公告-PDF.zip",
+        "url": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34"
+      },
+      "answerAttachment": {
+        "text": "115年警佐消佐及海佐班試題解答更正版(115.3.16釋疑會議決議).pdf",
+        "url": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelU1TDNCMFlWOHlPVE13TWw4MU5ERTVOalZmTURRNU9UQXVjR1Jt&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25DC40DCA4CDPOWW5450OKWW00YXHHA404PO14QOSWTSMODGB0FH20XTJDXWA0WS2050DGUSGGCDFCMK44HD15DGA0US14MKKODC351434QKLKHD35UTA4WS30YSSW14GGYSUSUSQOA525DGFGMOSXXSOKCGMKQOROLKRL443504FC3430KOSWQODCGHSSUS40TXXXTSB0JGXWTWNKVXA1STB0GGLKIHGD00CCQK20PPUWGG54JGTTLOPOXTIHVSA0ROWWMK30CGKKWSMOGDGCGGMPA0CCNKB050VWPK00YW50MK00QL15HCA0IGYWRKOKWS20KLQK04LKA1QLYXB4POB4YSQOWSKKXXOKPO04POMP"
+      }
     },
     {
       "year": 114,
-      "ok": false,
-      "files": [],
-      "warnings": [
-        "HTTPSConnectionPool(host='se.cpu.edu.tw', port=443): Max retries exceeded with url: /p/404-1006-44002.php (Caused by NewConnectionError(\"HTTPSConnection(host='se.cpu.edu.tw', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-      ]
+      "ok": true,
+      "files": [
+        {
+          "file": "114年警佐班試題--國文與憲法.pdf",
+          "subject": "國文與憲法",
+          "parsed": 40
+        },
+        {
+          "file": "114年警佐班試題--警察勤務.pdf",
+          "subject": "警察勤務",
+          "parsed": 40
+        },
+        {
+          "file": "114年警佐班試題--刑法及刑事訴訟法.pdf",
+          "subject": "刑法及刑事訴訟法",
+          "parsed": 40
+        },
+        {
+          "file": "114年警佐班試題--國文與憲法.pdf",
+          "subject": "國文與憲法",
+          "parsed": 40
+        },
+        {
+          "file": "114年警佐班試題--警察法規.pdf",
+          "subject": "警察法規",
+          "parsed": 40
+        },
+        {
+          "file": "114年警正班試題--警察勤務.pdf",
+          "subject": "警察勤務",
+          "parsed": 0
+        },
+        {
+          "file": "114年警正班試題--刑法及刑事訴訟法.pdf",
+          "subject": "刑法及刑事訴訟法",
+          "parsed": 0
+        },
+        {
+          "file": "114年警正班試題--警察法規及行政程序法.pdf",
+          "subject": "警察法規",
+          "parsed": 0
+        }
+      ],
+      "warnings": [],
+      "questionAttachment": {
+        "text": "114年警正警佐消佐班試題公告--PDF.zip",
+        "url": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Mell4TDNCMFlWOHlOelEzTVY4eE5qYzVNekUyWHpJeE9UTTRMbnBwY0E9PQ==&fname=WW54RPOKIC44A1MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOYWFCTWSSCD11HCA0UWIGZSHC40ICDG34OKNK21GDQPA4LKB4YSDG14LK01USMKDC1505GG04ROZWTWOK1025YSFG40IC21UXNOA5SSB4B4UWCCPOPKFGKK04POPO"
+      },
+      "answerAttachment": {
+        "text": "114年警佐及消佐班試題解答-修正版(公告版).pdf",
+        "url": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MekUzTDNCMFlWOHlOelV6TVY4NE5qVXdORGt3WHpBME5qWTVMbkJrWmc9PQ==&fname=WW54RPOKIC44A1MPHCLKWTJGRK302514B0FGSSMKQP25DC40DCA4CDPOWW54KLOKDGKKXXKK200405LOFCNKTSXWECB0NOXSGG35DCTS34B0B4FCUSSSB5PKZT40GG10HCA0XWHGVWSW40351434USLKLP35QPSWUWDCUSA4WS54LKQKNOPO51YXB004A0MKTWB4GCKK14A0FHIGQPXTSSDC14B4JGKL14DCFGB0USLKPPHHGGVWNK24RKB4ZTLK20UWXSGCNPUXOKB5QK20FDSWECHGA0QKVW00CDHDVSTWDHDH"
+      }
     },
     {
       "year": 113,
       "ok": false,
       "files": [],
       "warnings": [
-        "HTTPSConnectionPool(host='se.cpu.edu.tw', port=443): Max retries exceeded with url: /p/404-1006-42251.php (Caused by NewConnectionError(\"HTTPSConnection(host='se.cpu.edu.tw', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-      ]
+        "\n7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n 64-bit locale=C.UTF-8 Threads:4 OPEN_MAX:65536\n\nScanning the drive for archives:\n1 file, 3280137 bytes (3204 KiB)\n\nExtracting archive: /tmp/tmpdayq1sqy/113-questions.rar\n"
+      ],
+      "questionAttachment": {
+        "text": "113年警正警佐消佐班試題公告-PDF.rar",
+        "url": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelUyTDNCMFlWOHlOVFl3TVY4MU5qUTFPVEEyWHpjek16UXpMbkpoY2c9PQ==&fname=WW54RPOKRK4411HHHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOYWFCTWSSCD11HCA0UWIGZSHC40ICDG34OKNK21GDQPA4LKB4YSDG14LK01USMKDC1505GG04NKZWXSJG3010FGFGWSMP21XTLKCCROB4US5400SSPKROKK04POPO"
+      },
+      "answerAttachment": {
+        "text": "113年警佐消佐及海佐班試題解答更正版（1130318釋疑會議決議）.pdf",
+        "url": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Mekk1TDNCMFlWOHlOVFkwTlY4ME1ESTNOak00WHpNek5EUTBMbkJrWmc9PQ==&fname=WW54RPOKRK4411HHHCLKWTJGRK302514B0FGSSMKQP25DC40DCA4CDPOWW5450OKWW00YXHHA404PO14QOSWTSMODGB0FH20XTJDXWA0WS2050DGUSGGCDFCMK44HD15DGA0US14MKKODC351434QKLKHD35UTA4WS30YSSW14GGYSUSUSQOA525DGFGMOSXXSOKCGMKQOROLKRL443504FC3430KOSWQODCGHSSUS40TXXX24FGWWLOKKMOKKMKOPB0OKGCNPNP00CC14B0GHSWOOKKTTGHROPO450120EG30MOZSHC30MK50ROXSHCGGRL04FCZWYWVSFCSSHGXSOKRO40DDJHA5JC54YSXSMOUSWS50FGWSMK44QL3131WSECYWDGQOOKFCUWMKDCLP05WWLKPKYS"
+      }
     }
   ]
 }
