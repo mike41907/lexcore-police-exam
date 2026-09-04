@@ -1,6 +1,6 @@
 {
   "name": "lexcore-police-exam",
-  "version": "3.5.6",
+  "version": "3.6.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,6 +8,7 @@
     "sync:daily": "node scripts/sync-all.mjs --daily",
     "sync:legislative": "node scripts/sync-all.mjs --legislative",
     "sync:6laws": "node scripts/sync-sixlaws.mjs && npm run build && npm run validate",
+    "import:lawmap": "node scripts/import-lu-lawmap.mjs",
     "build": "node scripts/build-runtime.mjs",
     "validate": "node scripts/validate.mjs",
     "test": "node --test tests/*.test.mjs"
