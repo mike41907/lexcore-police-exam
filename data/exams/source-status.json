@@ -1,10 +1,15 @@
 {
-  "checkedAt": "2026-08-30T23:35:46.587337+00:00",
+  "checkedAt": "2026-09-06T22:55:29.878664+00:00",
   "years": [
     {
       "year": 115,
       "ok": true,
       "files": [
+        {
+          "file": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+          "subject": "國文與憲法",
+          "parsed": 40
+        },
         {
           "file": "115年警佐班試題--刑法及刑事訴訟法.pdf",
           "subject": "刑法及刑事訴訟法",
@@ -16,13 +21,18 @@
           "parsed": 40
         },
         {
+          "file": "115年警佐班試題--警察勤務.pdf",
+          "subject": "警察勤務",
+          "parsed": 40
+        },
+        {
           "file": "115年警佐班試題--警察法規.pdf",
           "subject": "警察法規",
           "parsed": 40
         },
         {
-          "file": "115年警佐班試題--警察勤務.pdf",
-          "subject": "警察勤務",
+          "file": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+          "subject": "國文與憲法",
           "parsed": 40
         },
         {
@@ -39,16 +49,6 @@
           "file": "115年警正班試題--警察法規及行政程序法.pdf",
           "subject": "警察法規",
           "parsed": 0
-        },
-        {
-          "file": "115年警佐消佐海佐班試題--國文與憲法.pdf",
-          "subject": "國文與憲法",
-          "parsed": 40
-        },
-        {
-          "file": "115年警佐消佐海佐班試題--國文與憲法.pdf",
-          "subject": "國文與憲法",
-          "parsed": 40
         }
       ],
       "warnings": [],
@@ -71,28 +71,13 @@
           "parsed": 40
         },
         {
-          "file": "114年警佐班試題--警察勤務.pdf",
-          "subject": "警察勤務",
-          "parsed": 40
-        },
-        {
-          "file": "114年警佐班試題--刑法及刑事訴訟法.pdf",
-          "subject": "刑法及刑事訴訟法",
-          "parsed": 40
-        },
-        {
-          "file": "114年警佐班試題--國文與憲法.pdf",
-          "subject": "國文與憲法",
-          "parsed": 40
-        },
-        {
-          "file": "114年警佐班試題--警察法規.pdf",
-          "subject": "警察法規",
-          "parsed": 40
-        },
-        {
           "file": "114年警正班試題--警察勤務.pdf",
           "subject": "警察勤務",
+          "parsed": 0
+        },
+        {
+          "file": "114年警正班試題--警察法規及行政程序法.pdf",
+          "subject": "警察法規",
           "parsed": 0
         },
         {
@@ -101,9 +86,24 @@
           "parsed": 0
         },
         {
-          "file": "114年警正班試題--警察法規及行政程序法.pdf",
+          "file": "114年警佐班試題--警察法規.pdf",
           "subject": "警察法規",
-          "parsed": 0
+          "parsed": 40
+        },
+        {
+          "file": "114年警佐班試題--刑法及刑事訴訟法.pdf",
+          "subject": "刑法及刑事訴訟法",
+          "parsed": 40
+        },
+        {
+          "file": "114年警佐班試題--警察勤務.pdf",
+          "subject": "警察勤務",
+          "parsed": 40
+        },
+        {
+          "file": "114年警佐班試題--國文與憲法.pdf",
+          "subject": "國文與憲法",
+          "parsed": 40
         }
       ],
       "warnings": [],
@@ -121,7 +121,7 @@
       "ok": false,
       "files": [],
       "warnings": [
-        "\n7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n 64-bit locale=C.UTF-8 Threads:4 OPEN_MAX:65536\n\nScanning the drive for archives:\n1 file, 3280137 bytes (3204 KiB)\n\nExtracting archive: /tmp/tmpdayq1sqy/113-questions.rar\n"
+        "\n7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20\n 64-bit locale=C.UTF-8 Threads:4 OPEN_MAX:65536\n\nScanning the drive for archives:\n1 file, 3280137 bytes (3204 KiB)\n\nExtracting archive: /tmp/tmpexdvttd7/113-questions.rar\n"
       ],
       "questionAttachment": {
         "text": "113年警正警佐消佐班試題公告-PDF.rar",
