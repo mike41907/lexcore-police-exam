@@ -2,7 +2,7 @@
   "schema": "lexcore.sixlaws.article-index.v1",
   "provider": "S-link電子六法",
   "sourceBaseUrl": "https://www.6laws.net",
-  "retrievedAt": "2026-09-05T00:59:41.090Z",
+  "retrievedAt": "2026-09-06T01:01:04.276Z",
   "usage": "僅保存公開法條頁的條名、判解索引與來源連結；不複製第三方判解全文。現行法條正文仍以法務部全國法規資料庫為準。",
   "coverage": {
     "configured": 10,
@@ -16,7 +16,7 @@
       "sourceName": "刑法",
       "sourceUrl": "https://www.6laws.net/6law/law/刑法.htm",
       "matched": true,
-      "retrievedAt": "2026-09-05T00:59:41.090Z",
+      "retrievedAt": "2026-09-06T01:01:04.276Z",
       "articleCount": 421,
       "articles": {
         "1": {
@@ -4749,6 +4749,18 @@
           "title": "追訴權之時效期間",
           "references": [
             {
+              "kind": "憲法判決",
+              "type": "judgment",
+              "label": "115年憲判字第5號",
+              "url": "https://www.6laws.net/6law/law1/%E6%86%B2%E6%B3%95%E6%B3%95%E5%BA%AD%E5%88%A4%E6%B1%BA%E5%BD%99%E7%B7%A802.htm#w115c05"
+            },
+            {
+              "kind": "憲法判決",
+              "type": "judgment",
+              "label": "115年憲判字第6號",
+              "url": "https://www.6laws.net/6law/law1/%E6%86%B2%E6%B3%95%E6%B3%95%E5%BA%AD%E5%88%A4%E6%B1%BA%E5%BD%99%E7%B7%A802.htm#w115c06"
+            },
+            {
               "kind": "大法庭見解",
               "type": "judgment",
               "label": "最高法院110年度台上大字第5954號",
@@ -4803,7 +4815,7 @@
               "url": "https://www.6laws.net/6law/law1/%E6%9C%80%E9%AB%98%E6%B3%95%E9%99%A2%E5%88%91%E4%BA%8B%E5%BA%AD%E5%85%B7%E5%8F%83%E8%80%83%E5%83%B9%E5%80%BC%E8%A3%81%E5%88%A403.htm#w108c80"
             }
           ],
-          "judgmentCount": 8,
+          "judgmentCount": 10,
           "lawCount": 1
         },
         "81": {
@@ -14970,7 +14982,7 @@
       "sourceName": "刑事訴訟法",
       "sourceUrl": "https://www.6laws.net/6law/law/刑事訴訟法.htm",
       "matched": true,
-      "retrievedAt": "2026-09-05T00:59:41.090Z",
+      "retrievedAt": "2026-09-06T01:01:04.276Z",
       "articleCount": 712,
       "articles": {
         "1": {
@@ -31082,7 +31094,7 @@
       "sourceName": "憲法訴訟法",
       "sourceUrl": "https://www.6laws.net/6law/law/憲法訴訟法.htm",
       "matched": true,
-      "retrievedAt": "2026-09-05T00:59:41.090Z",
+      "retrievedAt": "2026-09-06T01:01:04.276Z",
       "articleCount": 95,
       "articles": {
         "1": {
@@ -31835,7 +31847,7 @@
       "sourceName": "社會秩序維護法",
       "sourceUrl": "https://www.6laws.net/6law/law/社會秩序維護法.htm",
       "matched": true,
-      "retrievedAt": "2026-09-05T00:59:41.090Z",
+      "retrievedAt": "2026-09-06T01:01:04.276Z",
       "articleCount": 96,
       "articles": {
         "1": {
@@ -32560,7 +32572,7 @@
       "sourceName": "警察法",
       "sourceUrl": "https://www.6laws.net/6law/law/警察法.htm",
       "matched": true,
-      "retrievedAt": "2026-09-05T00:59:41.090Z",
+      "retrievedAt": "2026-09-06T01:01:04.276Z",
       "articleCount": 20,
       "articles": {
         "1": {
@@ -32770,7 +32782,7 @@
       "sourceName": "警察職權行使法",
       "sourceUrl": "https://www.6laws.net/6law/law/警察職權行使法.htm",
       "matched": true,
-      "retrievedAt": "2026-09-05T00:59:41.090Z",
+      "retrievedAt": "2026-09-06T01:01:04.276Z",
       "articleCount": 32,
       "articles": {
         "1": {
@@ -33080,7 +33092,7 @@
       "sourceName": "警械使用條例",
       "sourceUrl": "https://www.6laws.net/6law/law/警械使用條例.htm",
       "matched": true,
-      "retrievedAt": "2026-09-05T00:59:41.090Z",
+      "retrievedAt": "2026-09-06T01:01:04.276Z",
       "articleCount": 15,
       "articles": {
         "1": {
@@ -33198,7 +33210,7 @@
       "sourceName": "警察勤務條例",
       "sourceUrl": "https://www.6laws.net/6law/law/警察勤務條例.htm",
       "matched": true,
-      "retrievedAt": "2026-09-05T00:59:41.090Z",
+      "retrievedAt": "2026-09-06T01:01:04.276Z",
       "articleCount": 29,
       "articles": {
         "1": {
@@ -33623,7 +33635,7 @@
       "sourceName": "警察人員人事條例",
       "sourceUrl": "https://www.6laws.net/6law/law/警察人員人事條例.htm",
       "matched": true,
-      "retrievedAt": "2026-09-05T00:59:41.090Z",
+      "retrievedAt": "2026-09-06T01:01:04.276Z",
       "articleCount": 52,
       "articles": {
         "1": {
@@ -34088,7 +34100,7 @@
       "sourceName": "警察教育條例",
       "sourceUrl": "https://www.6laws.net/6law/law/警察教育條例.htm",
       "matched": true,
-      "retrievedAt": "2026-09-05T00:59:41.090Z",
+      "retrievedAt": "2026-09-06T01:01:04.276Z",
       "articleCount": 16,
       "articles": {
         "1": {
