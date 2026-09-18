@@ -2,7 +2,7 @@
   "id": "social",
   "name": "社會秩序維護法",
   "pcode": "D0080067",
-  "fetchedAt": "2026-09-17T01:27:31.064Z",
+  "fetchedAt": "2026-09-18T01:18:18.134Z",
   "latest": "2025-06-11",
   "history": [
     {
@@ -102,7 +102,7 @@
       "date": "1991-06-29",
       "rocDate": "80/06/29",
       "rocYear": 80,
-      "raw": "總統（80）華總（一）義字第 3314 號令\n制定公布全文 94 條；並自公布日施行\n\n:::\n\n最新訊息\n\n中央法規\n\n司法解釋\n\n條約協定\n\n兩岸協議\n\n綜合查詢\n\n跨機關檢索\n\n法治宣導專區\n\n智慧查找\n\n法律扶助\n\n創意教案\n\n法律時事漫談\n\n網站使用說明\n\n網站使用手冊\n\n會員服務介紹\n\n網站單元簡介\n\n法規資料檢索範圍\n\n資料更新頻率說明\n\n資訊服務\n\n全國法規連結圖示\n\n全國法規作業要點\n\n法規名稱英譯標準表\n\n相關網站\n\n訂閱電子報\n\n瀏覽人次總計\n\n1,626,589,830人\n\n本月瀏覽人次\n\n9,531,219人\n\n目前使用人次\n\n109人\n\n電子報訂閱人數\n\n222,908人\n\n本網站係提供法規之最新動態資訊及資料檢索，並不提供法規及法律諮詢之服務。\n\n若有任何法律上的疑義，建議您可逕向發布法規之主管機關洽詢。\n\n本網站法規資料係由政府各機關提供之電子檔或書面文字登打製作，若與各法規主管機關之公布文字有所不同，仍以各法規主管機關之公布資料為準。\n\n部分資料內容，使用特殊文字或符號，如欲詳閱內容，請連結至司法院網站下載造字檔。\n\n全國法規資料庫之內容每週五定期更新，當週發布之法律、命令資料，將於完成法規整編作業後，於下週五更新上線。\n\n法規整編資料截止日：民國 115 年 09 月 04 日 \n\n瀏覽人次總計：1,626,589,830人\n\n本月瀏覽人次：9,531,219人\n\n目前使用人次：109人\n\n電子報訂閱：222,908人\n\n│ 政府網站資料開放宣告 │ 隱私權保護宣告 │ 資訊安全政策 │ Q & A │ 意見回饋 │ API文件 │ \n\n本網站由法務部全國法規資料庫工作小組維運管理.\n\n法務部地址：100204 台北市重慶南路一段130號　電話：(02)2191-0189\n\n第二辦公室地址：100006 台北市貴陽街1段235號　電話：(02)2191-0189\n\n回上方\n\n$(function () {\n\n// === 統一綁定 GA 追蹤事件 ===\n$('.ga-track-link').on('click keypress', function (e) {\n// 如果是鍵盤事件，確認是按下 Enter 鍵 (keyCode 13) 才觸發\nif (e.type === 'keypress' && e.which !== 13) {\nreturn;\n}\n\nvar category = $(this).data('ga-category');\nvar action = $(this).data('ga-action');\n\n// 呼叫原本的 GA 追蹤函數\nif (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice(category, action, '', '');\n}\n});\n\n// 綁定登出確認視窗\n$('.logout-link').on('click', function () {\nif (!confirm('確定登出？')) {\nreturn false; // 若使用者按取消，則不執行跳轉\n}\n});\n\nvar b = 'ONEBAR';\n$(\"#btnSubscribe,#btnUnsubscribe\").on(\"click\", function (event) {\n//var email = $.trim($(\"#txtEMail\").val());\n//if (email == \"\") {\n// event.preventDefault();\n// alert('請您輸入電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else if (false == IsEMail(email)) {\n// event.preventDefault();\n// alert('請您輸入正確電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else {\n// GoogleAnanlytice('中文', '訂閱電子報', '', '');\n//}\nvar email = $.trim($(\"#txtEMail\").val());\n//if (!validateEmail(email)) {\n// alert('請您輸入正確電子郵件地址。');\n// return false;\n//}\n\n});\n$('#btnQall').on(\"click\", function () {\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse if (keyword.indexOf($.trim($(\"#keyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsQall').on(\"click\", function () {\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else {\nGoogleAnanlytice(\"中文",
+      "raw": "總統（80）華總（一）義字第 3314 號令\n制定公布全文 94 條；並自公布日施行\n\n:::\n\n最新訊息\n\n中央法規\n\n司法解釋\n\n條約協定\n\n兩岸協議\n\n綜合查詢\n\n跨機關檢索\n\n法治宣導專區\n\n智慧查找\n\n法律扶助\n\n創意教案\n\n法律時事漫談\n\n網站使用說明\n\n網站使用手冊\n\n會員服務介紹\n\n網站單元簡介\n\n法規資料檢索範圍\n\n資料更新頻率說明\n\n資訊服務\n\n全國法規連結圖示\n\n全國法規作業要點\n\n法規名稱英譯標準表\n\n相關網站\n\n訂閱電子報\n\n瀏覽人次總計\n\n1,627,742,510人\n\n本月瀏覽人次\n\n10,683,899人\n\n目前使用人次\n\n319人\n\n電子報訂閱人數\n\n222,936人\n\n本網站係提供法規之最新動態資訊及資料檢索，並不提供法規及法律諮詢之服務。\n\n若有任何法律上的疑義，建議您可逕向發布法規之主管機關洽詢。\n\n本網站法規資料係由政府各機關提供之電子檔或書面文字登打製作，若與各法規主管機關之公布文字有所不同，仍以各法規主管機關之公布資料為準。\n\n部分資料內容，使用特殊文字或符號，如欲詳閱內容，請連結至司法院網站下載造字檔。\n\n全國法規資料庫之內容每週五定期更新，當週發布之法律、命令資料，將於完成法規整編作業後，於下週五更新上線。\n\n法規整編資料截止日：民國 115 年 09 月 11 日 \n\n瀏覽人次總計：1,627,742,510人\n\n本月瀏覽人次：10,683,899人\n\n目前使用人次：319人\n\n電子報訂閱：222,936人\n\n│ 政府網站資料開放宣告 │ 隱私權保護宣告 │ 資訊安全政策 │ Q & A │ 意見回饋 │ API文件 │ \n\n本網站由法務部全國法規資料庫工作小組維運管理...\n\n法務部地址：100204 台北市重慶南路一段130號　電話：(02)2191-0189\n\n第二辦公室地址：100006 台北市貴陽街1段235號　電話：(02)2191-0189\n\n回上方\n\n$(function () {\n\n// === 統一綁定 GA 追蹤事件 ===\n$('.ga-track-link').on('click keypress', function (e) {\n// 如果是鍵盤事件，確認是按下 Enter 鍵 (keyCode 13) 才觸發\nif (e.type === 'keypress' && e.which !== 13) {\nreturn;\n}\n\nvar category = $(this).data('ga-category');\nvar action = $(this).data('ga-action');\n\n// 呼叫原本的 GA 追蹤函數\nif (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice(category, action, '', '');\n}\n});\n\n// 綁定登出確認視窗\n$('.logout-link').on('click', function () {\nif (!confirm('確定登出？')) {\nreturn false; // 若使用者按取消，則不執行跳轉\n}\n});\n\nvar b = 'ONEBAR';\n$(\"#btnSubscribe,#btnUnsubscribe\").on(\"click\", function (event) {\n//var email = $.trim($(\"#txtEMail\").val());\n//if (email == \"\") {\n// event.preventDefault();\n// alert('請您輸入電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else if (false == IsEMail(email)) {\n// event.preventDefault();\n// alert('請您輸入正確電子郵件地址。');\n// $(\"#txtEMail\").focus();\n//}\n//else {\n// GoogleAnanlytice('中文', '訂閱電子報', '', '');\n//}\nvar email = $.trim($(\"#txtEMail\").val());\n//if (!validateEmail(email)) {\n// alert('請您輸入正確電子郵件地址。');\n// return false;\n//}\n\n});\n$('#btnQall').on(\"click\", function () {\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnDeepSearch').on(\"click\", function () {\nvar keyword = '';\n\n//20210315 加上判斷，取QueryString(KW)，若輸入關鍵字已搜尋過，則跳出提示訊息，避免重複搜尋\nRequest = GetRequest();\nif ($.trim($(\"#keyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n}\nelse if (keyword.indexOf($.trim($(\"#keyword\").val())) >= 0) {\nalert(\"此關鍵字已包含至檢索字詞中，請重新輸入\");\nreturn false;\n}\nelse {\nGoogleAnanlytice(\"中文\", \"整合查詢-首頁\", \"\", \"\");\nreturn true;\n}\n});\n$('#btnMsQall').on(\"click\", function () {\nif ($.trim($(\"#msKeyword\").val()) == \"\") {\nalert(\"請輸入關鍵字\"); return false;\n} else {\nGoogleAnanlytice",
       "articles": []
     }
   ],
@@ -173,10 +173,9 @@
     "7": {
       "text": "違反本法行為，不問出於故意或過失，均應處罰。但出於過失者，不得罰以拘留，並得減輕之。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=7&pcode=D0080067",
-      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080067",
-      "fetchedAt": "2026-09-17T01:27:31.064Z",
+      "fetchedAt": "2026-09-18T01:18:13.421Z",
       "ok": true,
-      "source": "LawAll"
+      "source": "LawSingle"
     },
     "8": {
       "text": "左列各款之人之行為，不罰：\n一、未滿十四歲人。\n二、心神喪失人。\n未滿十四歲人有違反本法之行為者，得責由其法定代理人或其他相當之人加以管教；無人管教時，得送交少年或兒童福利機構收容。\n心神喪失人有違反本法之行為者，得責由其監護人加以監護；無人監護或不能監護時，得送交療養處所監護或治療。",
@@ -189,10 +188,9 @@
     "9": {
       "text": "下列各款之人之行為，得減輕處罰：\n一、十四歲以上未滿十八歲人。\n二、滿七十歲人。\n三、精神耗弱或未滿七歲即有聽覺且語言障礙者。\n前項第一款之人，於處罰執行完畢後，得責由其法定代理人或其他相當之人加以管教。\n第一項第三款之人，於處罰執行完畢後，得責由其監護人加以監護；無人監護或不能監護時，得送交療養處所監護或治療。",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=9&pcode=D0080067",
-      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080067",
-      "fetchedAt": "2026-09-17T01:27:31.064Z",
+      "fetchedAt": "2026-09-18T01:18:14.057Z",
       "ok": true,
-      "source": "LawAll"
+      "source": "LawSingle"
     },
     "10": {
       "text": "未滿十八歲人，心神喪失人或精神耗弱人，因其法定代理人或監護人疏於管教或監護，致有違反本法之行為者，除依前兩條規定處理外，按其違反本法之行為處罰其法定代理人或監護人。但其處罰以罰鍰或申誡為限。",
@@ -451,20 +449,18 @@
       "source": "LawAll"
     },
     "42": {
-      "text": "對於現行違反本法之行為人，警察人員得即時制止其行為，並得逕行通知到場；其不服通知者，得強制其到場。但確悉其姓名、住所或居所而無逃亡之虞者，得依前條規定辦理。",
+      "text": "對於現行違反本法之行為人，警察人員得即時制止其行為，並得逕行通知到場；其不服通知者，得強制其到場。但確悉其姓名、住所或居所而無逃亡之虞者，得依前條規定辦理。\n\n大法官解釋（舊制）",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=42&pcode=D0080067",
-      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080067",
-      "fetchedAt": "2026-09-17T01:27:31.064Z",
+      "fetchedAt": "2026-09-18T01:18:14.440Z",
       "ok": true,
-      "source": "LawAll"
+      "source": "LawSingle"
     },
     "43": {
-      "text": "左列各款案件，警察機關於訊問後，除有繼續調查必要者外，應即作成處分書：\n一、違反本法行為專處罰鍰或申誡之案件。\n二、違反本法行為選擇處罰鍰或申誡之案件。\n三、依第一款、第二款之處分，併宣告沒入者。\n四、單獨宣告沒入者。\n五、認為對第一款、第二款之案件應免除處罰者。\n前項處分書應載明左列事項：\n一、行為人之姓名、性別、出生年月日、國民身分證統一號碼、職業、住所或居所。\n二、主文。\n三、事實及理由，得僅記載其要領。\n四、適用之法條。\n五、處分機關及年、月、日。\n六、不服處分者，得於處分書送達之翌日起五日內，以書狀敘述理由，經原處分之警察機關，向該管簡易庭聲明異議。",
+      "text": "左列各款案件，警察機關於訊問後，除有繼續調查必要者外，應即作成處分書：\n一、違反本法行為專處罰鍰或申誡之案件。\n二、違反本法行為選擇處罰鍰或申誡之案件。\n三、依第一款、第二款之處分，併宣告沒入者。\n四、單獨宣告沒入者。\n五、認為對第一款、第二款之案件應免除處罰者。\n前項處分書應載明左列事項：\n一、行為人之姓名、性別、出生年月日、國民身分證統一號碼、職業、住所或居所。\n二、主文。\n三、事實及理由，得僅記載其要領。\n四、適用之法條。\n五、處分機關及年、月、日。\n六、不服處分者，得於處分書送達之翌日起五日內，以書狀敘述理由，經原處分之警察機關，向該管簡易庭聲明異議。\n\n大法官解釋（舊制）\n\n$(function () {\n$('.ga-track-re').on('click keypress', function (e) {\n// 若為鍵盤事件且不是按 Enter，則不處理\nif (e.type === 'keypress' && e.which !== 13) return;\n\n// 1. 阻止瀏覽器預設的跳轉，並加上「停止冒泡」，避免被系統其他 JS 搶先觸發跳轉\ne.preventDefault();\ne.stopImmediatePropagation();\n\nvar label = $(this).data('ga-label');\nvar targetHref = $(this).attr('href');\nvar targetWindow = $(this).attr('target');\n\n// --- 偵錯起點 ---\n//console.log('🚀 [GA測試] 成功攔截點擊，準備送出標籤:', label);\n\n// 2. 送出 GA 數據 (優先使用 GA4 的 gtag 原生語法)\nif (typeof gtag === \"function\") {\ngtag('event', '相關實務見解', {\n'event_category': '中文',\n'event_label': label\n});\n//console.log('✅ [GA測試] 已透過 gtag 送出');\n}\n// 備援：原本的自訂函式\nelse if (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice('中文', '相關實務見解', label, '');\n//console.log('✅ [GA測試] 已透過 GoogleAnanlytice 送出');\n}\nelse {\n//console.warn('⚠️ [GA測試] 找不到任何可用的 GA 追蹤函式！');\n}\n\n// 3. 設定 200 毫秒延遲後跳轉\nsetTimeout(function () {\n//console.log('↪️ [GA測試] 延遲結束，執行跳轉至:', targetHref);\nif (targetWindow === '_blank') {\nwindow.open(targetHref, '_blank');\n} else if (targetHref && targetHref !== '#') {\nwindow.location.href = targetHref;\n}\n}, 200);\n});\n});",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=43&pcode=D0080067",
-      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080067",
-      "fetchedAt": "2026-09-17T01:27:31.064Z",
+      "fetchedAt": "2026-09-18T01:18:15.024Z",
       "ok": true,
-      "source": "LawAll"
+      "source": "LawSingle"
     },
     "44": {
       "text": "警察機關對於情節輕微而事實明確之違反本法案件，得不經通知、訊問逕行處分。但其處罰以新臺幣一千五百元以下罰鍰或申誡為限。",
@@ -475,12 +471,11 @@
       "source": "LawAll"
     },
     "45": {
-      "text": "第四十三條第一項所列各款以外之案件，警察機關於訊問後，應即移送該管簡易庭裁定。\n前項警察機關移請裁定之案件，該管簡易庭認為不應處罰或以不處拘留、勒令歇業、停止營業為適當者，得逕為不罰或其他處罰之裁定。",
+      "text": "第四十三條第一項所列各款以外之案件，警察機關於訊問後，應即移送該管簡易庭裁定。\n前項警察機關移請裁定之案件，該管簡易庭認為不應處罰或以不處拘留、勒令歇業、停止營業為適當者，得逕為不罰或其他處罰之裁定。\n\n大法官解釋（舊制）",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=45&pcode=D0080067",
-      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080067",
-      "fetchedAt": "2026-09-17T01:27:31.064Z",
+      "fetchedAt": "2026-09-18T01:18:15.652Z",
       "ok": true,
-      "source": "LawAll"
+      "source": "LawSingle"
     },
     "46": {
       "text": "法院受理警察機關移送之違反本法案件後，除須審問或調查者外，應迅速制作裁定書。\n前項裁定書應載明左列事項：\n一、行為人之姓名、性別、出生年月日、國民身分證統一號碼、職業、住所或居所。\n二、主文。\n三、事實及理由，得僅記載其要領。\n四、適用之法條。\n五、裁定機關及年、月、日。\n六、不服裁定者，得於裁定書送達之翌日起五日內，以書狀敘述理由，經原裁定之簡易庭，向同法院普通庭提起抗告。",
@@ -627,12 +622,11 @@
       "source": "LawAll"
     },
     "64": {
-      "text": "有下列各款行為之一者，處三日以下拘留或新臺幣三萬元以下罰鍰：\n一、意圖滋事，於公園、車站、輪埠、航空站或其他公共場所，任意聚眾，有妨害公共秩序之虞，已受該管公務員解散命令，而不解散者。\n二、非供自用，購買運輸、遊樂票券而轉售圖利者。\n三、車、船、旅店服務人員或搬運工人或其他接待人員，糾纏旅客或強行攬載者。\n四、交通運輸從業人員，於約定報酬後，強索增加，或中途刁難或雖未約定，事後故意訛索，超出慣例者。\n五、主持、操縱或參加不良組織有危害社會秩序者。",
+      "text": "有下列各款行為之一者，處三日以下拘留或新臺幣三萬元以下罰鍰：\n一、意圖滋事，於公園、車站、輪埠、航空站或其他公共場所，任意聚眾，有妨害公共秩序之虞，已受該管公務員解散命令，而不解散者。\n二、非供自用，購買運輸、遊樂票券而轉售圖利者。\n三、車、船、旅店服務人員或搬運工人或其他接待人員，糾纏旅客或強行攬載者。\n四、交通運輸從業人員，於約定報酬後，強索增加，或中途刁難或雖未約定，事後故意訛索，超出慣例者。\n五、主持、操縱或參加不良組織有危害社會秩序者。\n\n大法官解釋（舊制）\n\n$(function () {\n$('.ga-track-re').on('click keypress', function (e) {\n// 若為鍵盤事件且不是按 Enter，則不處理\nif (e.type === 'keypress' && e.which !== 13) return;\n\n// 1. 阻止瀏覽器預設的跳轉，並加上「停止冒泡」，避免被系統其他 JS 搶先觸發跳轉\ne.preventDefault();\ne.stopImmediatePropagation();\n\nvar label = $(this).data('ga-label');\nvar targetHref = $(this).attr('href');\nvar targetWindow = $(this).attr('target');\n\n// --- 偵錯起點 ---\n//console.log('🚀 [GA測試] 成功攔截點擊，準備送出標籤:', label);\n\n// 2. 送出 GA 數據 (優先使用 GA4 的 gtag 原生語法)\nif (typeof gtag === \"function\") {\ngtag('event', '相關實務見解', {\n'event_category': '中文',\n'event_label': label\n});\n//console.log('✅ [GA測試] 已透過 gtag 送出');\n}\n// 備援：原本的自訂函式\nelse if (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice('中文', '相關實務見解', label, '');\n//console.log('✅ [GA測試] 已透過 GoogleAnanlytice 送出');\n}\nelse {\n//console.warn('⚠️ [GA測試] 找不到任何可用的 GA 追蹤函式！');\n}\n\n// 3. 設定 200 毫秒延遲後跳轉\nsetTimeout(function () {\n//console.log('↪️ [GA測試] 延遲結束，執行跳轉至:', targetHref);\nif (targetWindow === '_blank') {\nwindow.open(targetHref, '_blank');\n} else if (targetHref && targetHref !== '#') {\nwindow.location.href = targetHref;\n}\n}, 200);\n});\n});",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=64&pcode=D0080067",
-      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080067",
-      "fetchedAt": "2026-09-17T01:27:31.064Z",
+      "fetchedAt": "2026-09-18T01:18:16.236Z",
       "ok": true,
-      "source": "LawAll"
+      "source": "LawSingle"
     },
     "65": {
       "text": "有左列各款行為之一者，處三日以下拘留或新臺幣一萬八千元以下罰鍰：\n一、船隻當狂風之際或黑夜航行有危險之虞，而不聽禁止者。\n二、對於非病死或可疑為非病死或來歷不明之屍體，未經報請相驗，私行殮葬或移置者。\n三、無正當理由，攜帶類似真槍之玩具槍，而有危害安全之虞者。\n四、不注意燃料物品之堆置使用，或在燃料物品之附近攜用或放置易起火警之物，不聽禁止者。",
@@ -691,12 +685,11 @@
       "source": "LawAll"
     },
     "72": {
-      "text": "有下列各款行為之一者，處新臺幣一萬元以下罰鍰：\n一、於公共場所或公眾得出入之場所，酗酒滋事、謾罵喧鬧，不聽禁止者。\n二、製造噪音或深夜喧嘩，妨害公眾安寧，不聽禁止者。\n三、無正當理由，擅吹警笛或擅發其他警號者。",
+      "text": "有下列各款行為之一者，處新臺幣一萬元以下罰鍰：\n一、於公共場所或公眾得出入之場所，酗酒滋事、謾罵喧鬧，不聽禁止者。\n二、製造噪音或深夜喧嘩，妨害公眾安寧，不聽禁止者。\n三、無正當理由，擅吹警笛或擅發其他警號者。\n\n大法官解釋（舊制）\n\n$(function () {\n$('.ga-track-re').on('click keypress', function (e) {\n// 若為鍵盤事件且不是按 Enter，則不處理\nif (e.type === 'keypress' && e.which !== 13) return;\n\n// 1. 阻止瀏覽器預設的跳轉，並加上「停止冒泡」，避免被系統其他 JS 搶先觸發跳轉\ne.preventDefault();\ne.stopImmediatePropagation();\n\nvar label = $(this).data('ga-label');\nvar targetHref = $(this).attr('href');\nvar targetWindow = $(this).attr('target');\n\n// --- 偵錯起點 ---\n//console.log('🚀 [GA測試] 成功攔截點擊，準備送出標籤:', label);\n\n// 2. 送出 GA 數據 (優先使用 GA4 的 gtag 原生語法)\nif (typeof gtag === \"function\") {\ngtag('event', '相關實務見解', {\n'event_category': '中文',\n'event_label': label\n});\n//console.log('✅ [GA測試] 已透過 gtag 送出');\n}\n// 備援：原本的自訂函式\nelse if (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice('中文', '相關實務見解', label, '');\n//console.log('✅ [GA測試] 已透過 GoogleAnanlytice 送出');\n}\nelse {\n//console.warn('⚠️ [GA測試] 找不到任何可用的 GA 追蹤函式！');\n}\n\n// 3. 設定 200 毫秒延遲後跳轉\nsetTimeout(function () {\n//console.log('↪️ [GA測試] 延遲結束，執行跳轉至:', targetHref);\nif (targetWindow === '_blank') {\nwindow.open(targetHref, '_blank');\n} else if (targetHref && targetHref !== '#') {\nwindow.location.href = targetHref;\n}\n}, 200);\n});\n});",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=72&pcode=D0080067",
-      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080067",
-      "fetchedAt": "2026-09-17T01:27:31.064Z",
+      "fetchedAt": "2026-09-18T01:18:16.872Z",
       "ok": true,
-      "source": "LawAll"
+      "source": "LawSingle"
     },
     "73": {
       "text": "有左列各款行為之一者，處新臺幣六千元以下罰鍰：\n一、於學校、博物館、圖書館、展覽會、運動會或其他公共場所，口角紛爭或喧嘩滋事，不聽禁止者。\n二、於自己經營地界內，當通行之處，有溝、井、坎、穴等，不設覆蓋或防圍者。\n三、於發生災變之際，停聚圍觀，妨礙救助或處理，不聽禁止者。\n四、污損祠宇、教堂、墓碑或公眾紀念之處所或設施者。",
@@ -811,12 +804,11 @@
       "source": "LawAll"
     },
     "87": {
-      "text": "有下列各款行為之一者，處新臺幣一萬八千元以下罰鍰：\n一、加暴行於人者。\n二、互相鬥毆者。\n三、意圖鬥毆而聚眾者。",
+      "text": "有下列各款行為之一者，處新臺幣一萬八千元以下罰鍰：\n一、加暴行於人者。\n二、互相鬥毆者。\n三、意圖鬥毆而聚眾者。\n\n大法官解釋（舊制）\n\n$(function () {\n$('.ga-track-re').on('click keypress', function (e) {\n// 若為鍵盤事件且不是按 Enter，則不處理\nif (e.type === 'keypress' && e.which !== 13) return;\n\n// 1. 阻止瀏覽器預設的跳轉，並加上「停止冒泡」，避免被系統其他 JS 搶先觸發跳轉\ne.preventDefault();\ne.stopImmediatePropagation();\n\nvar label = $(this).data('ga-label');\nvar targetHref = $(this).attr('href');\nvar targetWindow = $(this).attr('target');\n\n// --- 偵錯起點 ---\n//console.log('🚀 [GA測試] 成功攔截點擊，準備送出標籤:', label);\n\n// 2. 送出 GA 數據 (優先使用 GA4 的 gtag 原生語法)\nif (typeof gtag === \"function\") {\ngtag('event', '相關實務見解', {\n'event_category': '中文',\n'event_label': label\n});\n//console.log('✅ [GA測試] 已透過 gtag 送出');\n}\n// 備援：原本的自訂函式\nelse if (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice('中文', '相關實務見解', label, '');\n//console.log('✅ [GA測試] 已透過 GoogleAnanlytice 送出');\n}\nelse {\n//console.warn('⚠️ [GA測試] 找不到任何可用的 GA 追蹤函式！');\n}\n\n// 3. 設定 200 毫秒延遲後跳轉\nsetTimeout(function () {\n//console.log('↪️ [GA測試] 延遲結束，執行跳轉至:', targetHref);\nif (targetWindow === '_blank') {\nwindow.open(targetHref, '_blank');\n} else if (targetHref && targetHref !== '#') {\nwindow.location.href = targetHref;\n}\n}, 200);\n});\n});",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=87&pcode=D0080067",
-      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080067",
-      "fetchedAt": "2026-09-17T01:27:31.064Z",
+      "fetchedAt": "2026-09-18T01:18:17.479Z",
       "ok": true,
-      "source": "LawAll"
+      "source": "LawSingle"
     },
     "88": {
       "text": "有左列各款行為之一者，處新臺幣三千元以下罰鍰：\n一、未經他人許可，釋放他人之動物、船筏或其他物品，或擅駛他人之車、船者。\n二、任意採折他人竹木、菜果、花卉或其他植物者。",
@@ -827,12 +819,11 @@
       "source": "LawAll"
     },
     "89": {
-      "text": "有下列各款行為之一者，處新臺幣三萬元以下罰鍰或申誡：\n一、無正當理由，為人施催眠術或施以藥物者。\n二、無正當理由，跟追他人，經勸阻不聽者。",
+      "text": "有下列各款行為之一者，處新臺幣三萬元以下罰鍰或申誡：\n一、無正當理由，為人施催眠術或施以藥物者。\n二、無正當理由，跟追他人，經勸阻不聽者。\n\n大法官解釋（舊制）\n\n$(function () {\n$('.ga-track-re').on('click keypress', function (e) {\n// 若為鍵盤事件且不是按 Enter，則不處理\nif (e.type === 'keypress' && e.which !== 13) return;\n\n// 1. 阻止瀏覽器預設的跳轉，並加上「停止冒泡」，避免被系統其他 JS 搶先觸發跳轉\ne.preventDefault();\ne.stopImmediatePropagation();\n\nvar label = $(this).data('ga-label');\nvar targetHref = $(this).attr('href');\nvar targetWindow = $(this).attr('target');\n\n// --- 偵錯起點 ---\n//console.log('🚀 [GA測試] 成功攔截點擊，準備送出標籤:', label);\n\n// 2. 送出 GA 數據 (優先使用 GA4 的 gtag 原生語法)\nif (typeof gtag === \"function\") {\ngtag('event', '相關實務見解', {\n'event_category': '中文',\n'event_label': label\n});\n//console.log('✅ [GA測試] 已透過 gtag 送出');\n}\n// 備援：原本的自訂函式\nelse if (typeof GoogleAnanlytice === \"function\") {\nGoogleAnanlytice('中文', '相關實務見解', label, '');\n//console.log('✅ [GA測試] 已透過 GoogleAnanlytice 送出');\n}\nelse {\n//console.warn('⚠️ [GA測試] 找不到任何可用的 GA 追蹤函式！');\n}\n\n// 3. 設定 200 毫秒延遲後跳轉\nsetTimeout(function () {\n//console.log('↪️ [GA測試] 延遲結束，執行跳轉至:', targetHref);\nif (targetWindow === '_blank') {\nwindow.open(targetHref, '_blank');\n} else if (targetHref && targetHref !== '#') {\nwindow.location.href = targetHref;\n}\n}, 200);\n});\n});",
       "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?flno=89&pcode=D0080067",
-      "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080067",
-      "fetchedAt": "2026-09-17T01:27:31.064Z",
+      "fetchedAt": "2026-09-18T01:18:18.064Z",
       "ok": true,
-      "source": "LawAll"
+      "source": "LawSingle"
     },
     "90": {
       "text": "有左列各款行為之一者，處新臺幣三千元以下罰鍰或申誡：\n一、污損他人之住宅題誌、店舖招牌或其他正當之告白或標誌者。\n二、未經他人許可，張貼、塗抹或畫刻於他人之交通工具、圍牆、房屋或其他建築物者。",
@@ -996,8 +987,8 @@
     }
   ],
   "fullTextUrl": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080067",
-  "fullTextOk": true,
+  "fullTextOk": false,
   "fullArticleCount": 96,
-  "fullTextError": null,
+  "fullTextError": "full-text parser returned 0 articles",
   "source": "https://law.moj.gov.tw/LawClass/LawHistory.aspx?pcode=D0080067"
 }
