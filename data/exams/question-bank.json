@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T23:50:40.137964+00:00",
+  "generatedAt": "2026-10-04T23:59:28.998964+00:00",
   "officialImportStatus": "ok",
   "officialQuestions": [
     {
@@ -4165,6 +4165,4144 @@
       "importConfidence": 0.85,
       "answerVersion": "114.03.18更正版（警察法規/刑法部分）",
       "answerSource": "https://se.cpu.edu.tw/p/406-1006-44127%2Cr257.php?Lang=zh-tw"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-1",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 1,
+      "type": "single",
+      "stem": "警員甲於 8 時許執行巡邏勤務，行經某治安要點前見乙女獨自行走在公共道路的路邊，見其行\n跡可疑便發動身分查證，要求乙告知姓名等資料，並佯稱： 「怕妳有沒有被報失蹤」云云，經\n乙以甲依法無據拒絕提供個資並要求離去 ， 甲即以身體阻擋乙離去並令乙需配合返回派出所查\n驗身分。嗣乙多次詢問其遭盤查原因及依據，但甲均未明確告知，乙遂對甲濫行執法過程心有\n不滿並評論道： 「真的很蠢」等語，甲便認乙於其依法執行職務時當場侮辱，而以犯妨害公務\n罪嫌現行犯逮捕，乙女當下拒絕並加以抵抗，造成乙女多處擦傷，乙女被逮捕上銬後，帶回派\n出所接受調查。甲之行為應如何論罪？",
+      "options": {
+        "A": "其行為不罰",
+        "B": "犯公務員假借職務上之機會強制罪，以及犯公務員假借職務上之機會剝奪他人行動自由 罪，犯意各別，行為互殊，應予分論併罰",
+        "C": "犯公務員假借職務上之機會強制罪，以及犯公務員假借職務上之機會剝奪他人行動自由 罪，從一重以犯公務員假借職務上之機會剝奪他人行動自由罪處罰",
+        "D": "犯公務員假借職務上之機會剝奪他人行動自由罪"
+      },
+      "answer": [
+        "B"
+      ],
+      "answerAccepted": [
+        "B"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-10",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 10,
+      "type": "single",
+      "stem": "關於《刑法》第 151 條恐嚇公眾罪，下列敘述何者錯誤？",
+      "options": {
+        "A": "恐嚇的事項內容以加害生命、身體、自由為限",
+        "B": "恐嚇的客體為不特定人或多數人",
+        "C": "本罪之成立，不以實際發生實害為必要",
+        "D": "行為人對於恐嚇的內容，是否有意實現，在所不問"
+      },
+      "answer": [
+        "A"
+      ],
+      "answerAccepted": [
+        "A"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-11",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 11,
+      "type": "single",
+      "stem": "關於《刑事訴訟法》筆錄的製作，下列敘述何者錯誤？",
+      "options": {
+        "A": "司法警察詢問證人，應當場製作筆錄",
+        "B": "司法警察詢問犯罪嫌疑人筆錄之製作，原則上應由行詢問之人為之",
+        "C": "司法警察詢問犯罪嫌疑人筆錄應命受詢問人緊接其記載之末行簽名、蓋章或按指印",
+        "D": "筆錄應令依本法命其在場之人簽名、蓋章或按指印"
+      },
+      "answer": [
+        "B"
+      ],
+      "answerAccepted": [
+        "B"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-12",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 12,
+      "type": "single",
+      "stem": "關於通緝之論述，下列敘述何者錯誤？",
+      "options": {
+        "A": "被告藏匿者，得通緝之",
+        "B": "通緝被告，應用通緝書，並應記載應解送之處所",
+        "C": "通緝書，於偵查中由檢察官簽名",
+        "D": "利害關係人，得逕行逮捕通緝之被告"
+      },
+      "answer": [
+        "C"
+      ],
+      "answerAccepted": [
+        "C"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-13",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 13,
+      "type": "single",
+      "stem": "關於司法警察調查犯罪之論述，下列敘述何者錯誤？",
+      "options": {
+        "A": "於其管轄區域內，應協助司法警察官或檢察官偵查犯罪",
+        "B": "司法警察知有犯罪嫌疑者，應即開始調查",
+        "C": "調查犯罪而有必要時，得封鎖犯罪現場，並為即時之勘察",
+        "D": "檢察官對其所移送之案件，認為調查未完備者，得發交其他司法警察調查 刑法及刑事訴訟法3"
+      },
+      "answer": [
+        "A"
+      ],
+      "answerAccepted": [
+        "A"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-14",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 14,
+      "type": "single",
+      "stem": "員警甲懷疑乙經常利用其住所販賣安非他命，遂依法向法院聲請搜索票， 並於該搜索票上將安\n非他命記載為應扣押之物，員警甲後持該搜索票搜索乙之住宅，果真於乙客廳中的一個櫥櫃中\n發現多包安非他命 ，又另於書房書桌之抽屜內發現1 把手槍。員警甲於是將安非他命及手槍一\n併扣押。試問下列敘述何者正確？",
+      "options": {
+        "A": "安非他命及手槍之扣押皆屬有令狀扣押",
+        "B": "安非他命之扣押係屬附帶扣押，手槍之扣押係屬另案扣押",
+        "C": "安非他命之扣押係屬有令狀之扣押，手槍之扣押係屬另案扣押",
+        "D": "安非他命之扣押係屬有令狀之扣押，手槍之扣押係屬附帶扣押"
+      },
+      "answer": [
+        "C"
+      ],
+      "answerAccepted": [
+        "C"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-15",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 15,
+      "type": "single",
+      "stem": "依據憲法法庭112 年憲判字第12 號判決（未到庭證人警詢陳述之證據能力案） ，關於《刑事訴\n訟法》第 159 條之 3 第 1 款及第 3 款規定： 「被告以外之人於審判中有下列情形之一，其於檢\n察事務官、司法警察官或司法警察調查中所為之陳述，經證明具有可信之特別情況，且為證明\n犯罪事實之存否所必要者，得為證據：一、死亡者。……三、……所在不明而無法傳喚或傳喚\n不到者。」之合憲性問題，下列敘述何者錯誤？",
+      "options": {
+        "A": "該規定係刑事訴訟上為追求發現真實而將未到庭證人之法庭外陳述採為證據，致減損被告 防禦權之例外規定",
+        "B": "法院於適用上開規定時，應從嚴審認法定要件",
+        "C": "應確保被告於訴訟程序上獲得相當之防禦權補償，使被告於訴訟程序整體而言，仍享有充 分防禦權之保障",
+        "D": "於此範圍內，雖未經被告當庭對質、詰問之未到庭證人於檢察事務官、司法警察官或司法 警察調查中所為之陳述，仍得為法院論斷被告有罪之唯一或主要證據"
+      },
+      "answer": [
+        "D"
+      ],
+      "answerAccepted": [
+        "D"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-16",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 16,
+      "type": "single",
+      "stem": "關於偵查中羈押審查程序，下列敘述何者錯誤？",
+      "options": {
+        "A": "偵查中之羈押審查程序未經選任辯護人者，審判長應指定公設辯護人或律師為被告辯護。 但等候指定辯護人逾 4 小時未到場，經被告主動請求訊問者，不在此限",
+        "B": "前項選任辯護人無正當理由而不到庭者，審判長得指定公設辯護人或律師",
+        "C": "辯護人於偵查中之羈押審查程序，除法律另有規定外，得檢閱卷宗及證物並得抄錄或攝影",
+        "D": "無辯護人之被告於偵查中之羈押審查程序，除法律另有規定外，得檢閱卷宗及證物並得抄 錄或攝影"
+      },
+      "answer": [
+        "D"
+      ],
+      "answerAccepted": [
+        "D"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-17",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 17,
+      "type": "single",
+      "stem": "關於限制出境、出海之要件與期間，下列敘述何者錯誤？",
+      "options": {
+        "A": "被告須犯罪嫌疑重大",
+        "B": "被告須無一定住居所",
+        "C": "偵查中限制出境出海期間，累計不得逾 8 月",
+        "D": "審判中限制出境出海期間，犯最重本刑為 10 年以下有期徒刑者，累計不得逾 5 年"
+      },
+      "answer": [
+        "B"
+      ],
+      "answerAccepted": [
+        "B",
+        "C"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-18",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 18,
+      "type": "single",
+      "stem": "關於證人，下列敘述何者錯誤？",
+      "options": {
+        "A": "證人係以其「證言」作為證據，性質上屬於供述證據",
+        "B": "證人經合法傳喚後，有到場之義務，但精神或心智障礙者，不在此限",
+        "C": "證人應命具結，但未滿 16 歲者，不得命其具結",
+        "D": "證人與被告訂有婚約者，得拒絕作證"
+      },
+      "answer": [
+        "B"
+      ],
+      "answerAccepted": [
+        "B"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-19",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 19,
+      "type": "single",
+      "stem": "關於《刑事訴訟法》上之尿液採取，下列敘述何者正確？",
+      "options": {
+        "A": "司法警察認為有必要採取尿液得作為犯罪之證據，對於經拘提或逮捕到案之犯罪嫌疑人或 被告，得違反其意思，報請檢察官許可，以非侵入方式採取",
+        "B": "司法警察有相當理由認為採取尿液得作為犯罪之證據，對於經拘提或逮捕到案之犯罪嫌疑 人或被告，得違反其意思，報請法官許可，以非侵入方式採取之",
+        "C": "司法警察有相當理由認為採取尿液得作為犯罪之證據，並有鑑定之必要，對於經拘提或逮 捕到案之犯罪嫌疑人或被告，得違反其意思，報請檢察官許可，以非侵入方式採取之",
+        "D": "司法警察有相當理由認為採取尿液得作為犯罪之證據，並有鑑定之必要，對於經拘提或逮 捕到案之犯罪嫌疑人或被告，得違反其意思，報請檢察官許可，以侵入方式採取之 刑法及刑事訴訟法4"
+      },
+      "answer": [
+        "C"
+      ],
+      "answerAccepted": [
+        "C"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-2",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 2,
+      "type": "single",
+      "stem": "甲欲射殺乙，因槍法不準，致將坐在乙身旁的丙擊斃。依實務見解，甲之行為應如何論罪？",
+      "options": {
+        "A": "殺人既遂罪",
+        "B": "過失致人於死罪",
+        "C": "殺人未遂罪與過失致人於死罪，二罪併合處罰",
+        "D": "殺人未遂罪與過失致人於死罪，從一重之殺人未遂罪處斷"
+      },
+      "answer": [
+        "D"
+      ],
+      "answerAccepted": [
+        "D"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-20",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 20,
+      "type": "single",
+      "stem": "依據《刑事訴訟法》之規定，下列何人於偵查中無權聲請檢察官為搜索、扣押、鑑定、勘驗、\n訊問證人或其他必要之保全處分？",
+      "options": {
+        "A": "告訴人",
+        "B": "犯罪嫌疑人",
+        "C": "被告之辯護人",
+        "D": "證人 二、多重選擇題：(每題 3 分，共 60 分)"
+      },
+      "answer": [
+        "D"
+      ],
+      "answerAccepted": [
+        "D"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-22",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 22,
+      "type": "multiple",
+      "stem": "關於《刑法》第 150 條聚集施強暴脅迫罪，下列敘述何者正確？",
+      "options": {
+        "A": "《刑法》第 150 條性質屬聚眾犯，目前將其納入妨害秩序罪章內",
+        "B": "聚集實施強暴脅迫之人，主觀上自須具有妨害秩序之故意，亦即應具有實施強暴脅迫而為 騷亂之共同意思，始與本條罪質相符",
+        "C": "本罪主觀上自須有妨害秩序故意，但不以起於聚集行為之初為必要",
+        "D": "本罪實務見解認客觀上此暴力威脅外溢作用使公眾或不特定他人產生危害、恐懼不安感受 方可",
+        "E": "甲、乙於凌晨在「A 夜店」內消費，適丙、丁亦於該處飲酒，因甲、乙認為丙、丁對其潑 灑香檳，發生口角後，呈現 2 對 2 相互鬥毆，甲、乙、丙、丁 4 人均構成本罪"
+      },
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerAccepted": [
+        "ABCD"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-23",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 23,
+      "type": "multiple",
+      "stem": "關於《刑法》第 266 條賭博罪，下列敘述何者正確？",
+      "options": {
+        "A": "賭博是「對向犯」",
+        "B": "以供人暫時娛樂之物為賭者，不構成本罪",
+        "C": "當場賭博之器具不問屬於犯人與否，沒入之",
+        "D": "在私人住宅內賭博者，構成本罪",
+        "E": "以電子通訊賭博財物者，構成本罪"
+      },
+      "answer": [
+        "A",
+        "B",
+        "E"
+      ],
+      "answerAccepted": [
+        "ABE"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-24",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 24,
+      "type": "multiple",
+      "stem": "下列何者之論述，符合我國現行《刑法》之規定？",
+      "options": {
+        "A": "以按摩棒進入婦女口腔，符合《刑法》所稱性交之性侵入行為",
+        "B": "拍攝少女胸部之影像，符合《刑法》所稱之性影像",
+        "C": "犯強制猥褻罪者，於裁判前應經鑑定有無施以治療之必要",
+        "D": "15 歲少女甲與其同年齡之少男乙兩情相願發生性交行為，甲可構成性交幼年罪",
+        "E": "公然猥褻罪係採意圖犯之立法例"
+      },
+      "answer": [
+        "B",
+        "D",
+        "E"
+      ],
+      "answerAccepted": [
+        "BDE"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-25",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 25,
+      "type": "multiple",
+      "stem": "下列何者之論述，符合我國《刑法》釋憲實務之見解？",
+      "options": {
+        "A": "有關累犯加重本刑部分，違反《憲法》一行為不二罰原則",
+        "B": "《刑法》第 146 條第 1 項規定： 「以詐術或其他非法之方法，使投票發生不正確之結果…… 者，處 5 年以下有期徒刑」 ，尚未違反刑罰明確性原則",
+        "C": "故意殺人罪係侵害生命權之最嚴重犯罪類型，其中以死刑為最重本刑部分，僅得適用於個 案犯罪情節屬最嚴重，且其刑事程序符合《憲法》最嚴密之正當法律程序要求之情形",
+        "D": "關於侮辱公務員罪部分，應限於行為人對公務員之當場侮辱行為，係基於妨害公務之主觀 目的，且足以影響公務員執行公務之情形，於此範圍內，始與《憲法》第 11 條保障言論自 由之意旨無違",
+        "E": "《刑法》第 122 條第 3 項之行賄行為，性質上乃屬於瀆職罪，其幫助教唆者亦同 刑法及刑事訴訟法5"
+      },
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "answerAccepted": [
+        "BCD"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-26",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 26,
+      "type": "multiple",
+      "stem": "關於偽造文書罪，下列敘述何者正確？",
+      "options": {
+        "A": "偽造私文書罪之偽造，係指有形偽造",
+        "B": "業務登載不實罪係指無形偽造",
+        "C": "偽造統一發票成立偽造特種文書罪",
+        "D": "偽造駕照之法定刑較偽造私文書罪之法定刑為重",
+        "E": "偽造文書後進而持之行使，依實務見解，行使吸收偽造"
+      },
+      "answer": [
+        "A",
+        "B",
+        "E"
+      ],
+      "answerAccepted": [
+        "ABE"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-27",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 27,
+      "type": "multiple",
+      "stem": "下列何者屬於脫逃罪所稱「依法逮捕拘禁之人」？",
+      "options": {
+        "A": "通緝犯",
+        "B": "受刑人",
+        "C": "現行犯",
+        "D": "羈押中之被告",
+        "E": "被管收的民事債務人"
+      },
+      "answer": [
+        "B",
+        "D",
+        "E"
+      ],
+      "answerAccepted": [
+        "BDE"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-28",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 28,
+      "type": "multiple",
+      "stem": "關於刑事責任，下列敘述何者正確？",
+      "options": {
+        "A": "不得因不知法律而免除刑事責任。但按其情節，得減輕其刑",
+        "B": "滿 80 歲人之行為，得減輕其刑",
+        "C": "瘖啞人之行為，得減輕其刑",
+        "D": "行為時因精神障礙或其他心智缺陷，致其辨識行為違法或依其辨識而行為之能力，顯著減 低者，得減輕其刑",
+        "E": "《刑法》第 19 條第 2 項規定，於因故意或過失自行招致者，不適用之"
+      },
+      "answer": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answerAccepted": [
+        "BCDE"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-29",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 29,
+      "type": "multiple",
+      "stem": "甲乘 A 不在家時，敲毀 A 家的窗戶玻璃，對內潑灑汽油並點火燃燒，雖然造成 A 家窗簾燒燬\n及地上局部漆黑，但隨即被及時趕回家的 A 撲滅而未延燒。下列敘述何者正確？",
+      "options": {
+        "A": "甲成立放火燒燬現供人使用住宅建築物未遂罪",
+        "B": "甲成立毀損建築物既遂罪",
+        "C": "甲成立普通毀損罪",
+        "D": "甲成立放火燒燬現供人使用住宅建築物既遂罪",
+        "E": "甲成立放火燒燬現非供人使用住宅建築物未遂罪"
+      },
+      "answer": [
+        "A",
+        "C"
+      ],
+      "answerAccepted": [
+        "AC"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-3",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 3,
+      "type": "single",
+      "stem": "老闆甲為趕時間 ， 催促司機乙開快一點 ， 導致乙車速太快而撞死行人丙 ， 甲之行為應如何論罪？",
+      "options": {
+        "A": "過失致人於死之教唆犯",
+        "B": "過失致人於死之正犯",
+        "C": "過失致人於死之幫助犯",
+        "D": "無罪"
+      },
+      "answer": [
+        "D"
+      ],
+      "answerAccepted": [
+        "D"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-30",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 30,
+      "type": "multiple",
+      "stem": "《刑事訴訟法》關於辯護人之規定，下列敘述何者正確？",
+      "options": {
+        "A": "犯罪嫌疑人受司法警察調查者，得隨時選任辯護人",
+        "B": "最輕本刑為 5 年以上有期徒刑之案件，於審判中未經選任辯護人者，審判長應指定公設辯 護人或律師為其辯護",
+        "C": "中低收入戶被告得向法院聲請指定公設辯護人或律師為其辯護",
+        "D": "偵查中之羈押審查程序未經選任辯護人者，審判長應指定公設辯護人或律師為被告辯護",
+        "E": "限制辯護人與羈押之被告接見或互通書信，應用限制書"
+      },
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answerAccepted": [
+        "ABCDE"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-31",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 31,
+      "type": "multiple",
+      "stem": "有關《刑事訴訟法》相關證據法則之論述，下列敘述何者正確？",
+      "options": {
+        "A": "犯罪事實應依證據認定之，無證據不得認定犯罪事實，此稱為法定證據原則，而此原則在 實定法上之意義，即導出證據能力的概念",
+        "B": "司法警察以利誘之詢問技巧所取得之犯罪嫌疑人自白，且與事實相符者，具證據能力而得 為證據",
+        "C": "司法警察違背《刑事訴訟法》第 100 條之 3 第 1 項有關不得於夜間詢問之規定，所取得犯 罪嫌疑人不利於己之陳述，經證明其違背非出於惡意，且該陳述係出於自由意志者，得為 證據",
+        "D": "「釣魚偵查」是「提供機會型」的釣魚偵查方式，其取得的證據具有證據能力",
+        "E": "檢察官之舉證責任，應使法官「確信」被告犯罪構成事實之存在，否則若待證事實最後仍 未明時，此敗訴結果責任應由檢察官負擔 刑法及刑事訴訟法6"
+      },
+      "answer": [
+        "C",
+        "D",
+        "E"
+      ],
+      "answerAccepted": [
+        "CDE"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-32",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 32,
+      "type": "multiple",
+      "stem": "依據《刑事訴訟法》第 153 條之1 運用定位追蹤之科技手段規定，下列敘述何者正確？",
+      "options": {
+        "A": "在發動對象與門檻方面，針對犯罪嫌疑人的位置追蹤，則要求需具備相當理由可信與犯罪 嫌疑人、證人或應扣押之物或電磁紀錄有所關連時始得發動",
+        "B": "在發動主體與程序方面，一般情形下，未逾連續24 小時或未累積逾 2 日的短期跟監，得由 司法警察（官）在具備實體事由時逕行發動",
+        "C": "在發動主體與程序方面，在跟監期間逾連續24 小時或累計逾 2 日的長期跟監，則應由檢察 官依職權或由司法警察官報請檢察官許可後，向法院依書面聲請核發許可書",
+        "D": "在具備相當理由認為情況急迫而有立即實施位置追蹤之必要的情形，司法警察（官）得在 未經法院事前核發許可書，即逕行實施跟監期間逾連續 24 小時或累計逾 2 日的長期跟監， 但必須在實施調查後 3 日內向法院聲請補發許可書",
+        "E": "以大規模蒐集不特定人之生物特徵，如人臉資訊，即時辨識比對，以追蹤調查對象之位置， 得依本條授權為之"
+      },
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "answerAccepted": [
+        "BCD"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-33",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 33,
+      "type": "multiple",
+      "stem": "有關拘提之論述，下列敘述何者正確？",
+      "options": {
+        "A": "拘票，偵查中由檢察官簽名，審判中由審判長或受命法官簽名",
+        "B": "拘提，由司法警察、司法警察官或檢察官執行",
+        "C": "執行拘提，應當場告知犯罪嫌疑人拘提之原因",
+        "D": "執行拘提得使用戒具，但不得逾必要之程度。並應注意犯罪嫌疑人之身體及名譽，避免公 然暴露其戒具",
+        "E": "被告或犯罪嫌疑人因拘提到場者，應即時訊問"
+      },
+      "answer": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "answerAccepted": [
+        "ACDE"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-34",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 34,
+      "type": "multiple",
+      "stem": "有關羈押之論述，下列敘述何者正確？",
+      "options": {
+        "A": "被告經法官訊問後，認為犯強制罪， 其嫌疑重大，有事實足認為有反覆實施同一犯罪之虞， 而有羈押之必要者，得羈押之",
+        "B": "被告經法官訊問後，認為犯罪嫌疑重大，有事實足認為有逃亡之虞者，非予羈押，顯難進 行追訴、審判或執行者，得羈押之",
+        "C": "法官訊問羈押被告時，原則上毋庸辯護人在場",
+        "D": "依據司法院大法官釋字第 654 號解釋，為維持押所秩序之必要，於受羈押被告與其辯護人 接見時，如僅予以監聞，則與《憲法》保障訴訟權之意旨尚無不符",
+        "E": "依據司法院大法官釋字第 665 號解釋，單以犯重罪作為羈押之要件，可能背離羈押作為保 全程序的性質，其對刑事被告武器平等與充分防禦權行使上之限制，即可能違背比例原則"
+      },
+      "answer": [
+        "A",
+        "B",
+        "E"
+      ],
+      "answerAccepted": [
+        "ABE"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-35",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 35,
+      "type": "multiple",
+      "stem": "關於特殊強制處分，下列敘述何者正確？",
+      "options": {
+        "A": "為調查犯罪情形或蒐集證據認有必要時，得使用全球衛星定位系統 或其他非以辨識個人生 物特徵之科技方法，對被告或犯罪嫌疑人追蹤位置",
+        "B": "對第三人實施前項調查，以有相當理由可信與被告、犯罪嫌疑人、證人或應扣押之物或電 磁紀錄有所關連時為限",
+        "C": "為調查犯罪情形或蒐集證據認有必要時，得使用科技方法 ，調查被告或犯罪嫌疑人管領或 使用之行動通訊設備之位置、設備號碼或使用之卡片號碼",
+        "D": "為調查最重本刑 5 年以上有期徒刑之罪，合理懷疑被告或犯罪嫌疑人管領或使用具隱私或 秘密合理期待之空間內之人或物與本案有關，得從該空間外，使用非實體侵入性之科技方 法，對該空間內之人或物監看及攝錄影像",
+        "E": "對於第三人管領或使用具隱私或秘密合理期待之空間內之人或物，實施前項調查，以有相 當理由可信與被告、犯罪嫌疑人、證人或應扣押之物或電磁紀錄有所關連時為限"
+      },
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answerAccepted": [
+        "ABC"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-36",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 36,
+      "type": "multiple",
+      "stem": "案件有下列何種情形，應為不起訴處分？",
+      "options": {
+        "A": "告訴乃論之罪，其告訴已逾告訴期間者",
+        "B": "行為不罰者",
+        "C": "法院對於被告無審判權者",
+        "D": "法律應減輕或免除其刑者",
+        "E": "犯罪嫌疑不足者 刑法及刑事訴訟法7"
+      },
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "answerAccepted": [
+        "ABCE"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-37",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 37,
+      "type": "multiple",
+      "stem": "關於緩起訴處分，下列敘述何者正確？",
+      "options": {
+        "A": "被告所犯為死刑、無期徒刑或最輕本刑 3 年以上有期徒刑以外之罪，檢察官參酌《刑法》 第 57 條所列事項及公共利益之維護，認以緩起訴為適當者，得定1 年以上 3 年以下之緩起 訴期間為緩起訴處分，其期間自緩起訴處分確定之日起算",
+        "B": "被告於緩起訴前，因犯他罪而在緩起訴期間內受有期徒刑以上刑之宣告者，檢察官得依職 權撤銷原處分",
+        "C": "告訴人接受緩起訴處分書後，得於10 日內以書狀敘述不服之理由，經原檢察官向直接上級 檢察署檢察長或檢察總長聲請再議。但曾經告訴人同意者，不得聲請再議",
+        "D": "被告接受撤銷緩起訴處分書後，得於10 日內以書狀敘述不服之理由，經原檢察官向直接上 級檢察署檢察長或檢察總長聲請再議",
+        "E": "羈押之被告受緩起訴之處分者，視為撤銷羈押，檢察官應將被告釋放，並應即時通知法院"
+      },
+      "answer": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "answerAccepted": [
+        "ACDE"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-38",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 38,
+      "type": "multiple",
+      "stem": "下列何者為相牽連案件？",
+      "options": {
+        "A": "甲犯下重傷罪，羈押期間，乙為使其逃跑而觸犯便利脫逃罪",
+        "B": "丙在台北車站觸犯放火罪，隔天在某銀樓觸犯強盜罪",
+        "C": "丁、戊共犯加重詐欺罪",
+        "D": "己、庚同時在同一大賣場各自犯竊盜罪",
+        "E": "壬觸犯殺人罪，癸為掩飾其犯行而觸犯湮滅證據罪"
+      },
+      "answer": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "answerAccepted": [
+        "BCDE"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-39",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 39,
+      "type": "multiple",
+      "stem": "關於告訴乃論之罪，下列敘述何者正確？",
+      "options": {
+        "A": "告訴乃論之罪，對於共犯一人告訴，效力及於其他共犯",
+        "B": "告訴乃論之罪，對於共犯一人撤回告訴，效力及於其他共犯",
+        "C": "告訴乃論之罪，對於共犯一人提起自訴，效力及於其他共犯",
+        "D": "告訴乃論之罪，對於共犯一人撤回自訴，效力及於其他共犯",
+        "E": "告訴乃論之罪，對於共犯一人緩起訴，效力及於其他共犯"
+      },
+      "answer": [
+        "A",
+        "B"
+      ],
+      "answerAccepted": [
+        "AB"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-4",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 4,
+      "type": "single",
+      "stem": "縱放依法逮捕拘禁之人或便利其脫逃者，一般人違犯處3 年以下有期徒刑， 但公務員縱放職務\n上依法逮捕、拘禁之人或便利其脫逃者，處1 年以上 7 年以下有期徒刑，此處公務員身分，刑\n法學說上稱此為何？",
+      "options": {
+        "A": "純正身分犯",
+        "B": "不純正身分犯",
+        "C": "純正不作為犯",
+        "D": "不純正不作為犯"
+      },
+      "answer": [
+        "B"
+      ],
+      "answerAccepted": [
+        "B"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-40",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 40,
+      "type": "multiple",
+      "stem": "關於加重結果犯，下列敘述何者正確？",
+      "options": {
+        "A": "加重結果犯之處罰，以法律有特別規定者為限",
+        "B": "加重結果犯係由基礎行為與加重結果組合成，且二者間需具有因果關係與客觀歸責（特殊 關連性）",
+        "C": "依實務見解，基礎行為未遂不可成立加重結果犯",
+        "D": "依實務見解，行為人對於加重結果之發生具有客觀預見可能性",
+        "E": "《刑法》第 185 條之 4 後段發生交通事故致死逃逸罪係屬加重結果犯"
+      },
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "answerAccepted": [
+        "ABD"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-5",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 5,
+      "type": "single",
+      "stem": "下列何者不屬於告訴乃論之罪？",
+      "options": {
+        "A": "利用權勢猥褻罪",
+        "B": "未經他人同意無故攝錄其性影像罪",
+        "C": "與直系或三親等內旁系血親為性交罪",
+        "D": "無故利用工具窺視他人非公開活動罪 刑法及刑事訴訟法2"
+      },
+      "answer": [
+        "A"
+      ],
+      "answerAccepted": [
+        "A"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-6",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 6,
+      "type": "single",
+      "stem": "下列何者屬《刑法》加重詐欺罪的範疇？",
+      "options": {
+        "A": "冒用反詐騙 165 聯盟協會名義進行勸募詐騙",
+        "B": "使用 AI 合成聲音要求被害人匯款",
+        "C": "利用龐式騙局給予高額利息誘惑被害人",
+        "D": "以高科技手法在網路搶購演唱會門票販賣"
+      },
+      "answer": [
+        "B"
+      ],
+      "answerAccepted": [
+        "B"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-7",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 7,
+      "type": "single",
+      "stem": "關於罪責原則，下列敘述何者錯誤？",
+      "options": {
+        "A": "無罪責，則無刑罰",
+        "B": "沒收應受罪責原則之拘束",
+        "C": "責任能力與行為同時存在原則",
+        "D": "罪刑相當原則"
+      },
+      "answer": [
+        "B"
+      ],
+      "answerAccepted": [
+        "B"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-8",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 8,
+      "type": "single",
+      "stem": "下列何者屬於刑法學理所稱之反面的容許構成要件錯誤？",
+      "options": {
+        "A": "甲想要殺乙，誤丙為乙而殺之",
+        "B": "甲想要開槍射殺乙，因槍法失準，誤擊乙旁的丙",
+        "C": "甲誤以為乙正要攻擊自己，迅速將乙擊倒在地",
+        "D": "甲想要教訓乙，自乙背後揮刀砍過去，孰料乙正要毒殺丙，因而意外地救了丙"
+      },
+      "answer": [
+        "D"
+      ],
+      "answerAccepted": [
+        "D"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-刑法及刑事訴訟法-9",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "刑法及刑事訴訟法",
+      "number": 9,
+      "type": "single",
+      "stem": "依據憲法法庭 112 年憲判字第 8 號判決（誹謗罪案） ，關於《刑法》第 310 條，下列敘述何者\n錯誤？",
+      "options": {
+        "A": "《刑法》第 310 條第 3 項規定： 「對於所誹謗之事，能證明其為真實者，不罰。但涉於私德 而與公共利益無關者，不在此限。」所誹謗之事涉及公共利益，亦即非屬上開但書所定之 情形，表意人雖無法證明其言論為真實，惟如其於言論發表前確經合理查證程序，依所取 得之證據資料，客觀上可合理相信其言論內容為真實者，即屬合於上開規定所定不罰之要 件",
+        "B": "但如表意人於合理查證程序所取得之證據資料實非真正，則屬可罰之情形",
+        "C": "至表意人是否符合合理查證之要求，應充分考量 《憲法》保障名譽權與言論自由之意旨， 並依個案情節為適當之利益衡量",
+        "D": "《刑法》第 310 條及第 311 條所構成之誹謗罪處罰規定，整體而言，未違反《憲法》比例 原則之要求，與《憲法》第 11 條保障言論自由之意旨尚屬無違"
+      },
+      "answer": [
+        "B"
+      ],
+      "answerAccepted": [
+        "B"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--刑法及刑事訴訟法.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-國文與憲法-1",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 1,
+      "type": "single",
+      "stem": "下列各組「 」內的注音寫成國字後，字形前後相同的是：",
+      "options": {
+        "A": "疾言「ㄌㄧˋ」色 ／ 「ㄌㄧˋ」兵秣馬",
+        "B": "興利除「ㄅㄧˋ」 ／ 坐以待「ㄅㄧˋ」",
+        "C": "瑕不掩「ㄩˊ」 ／ 「ㄩˊ」時不候",
+        "D": "冤「ㄨㄤˇ」而死 ／ 藥石「ㄨㄤˇ」效"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-國文與憲法-10",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 10,
+      "type": "single",
+      "stem": "關於下列詞語解釋何者正確？",
+      "options": {
+        "A": "《孟子．告子上》 ： 「舍」其路而弗由，放其心而不知求，哀哉──房舍",
+        "B": "《孟子．告子上》 ：一簞食，一「豆」羹，得之則生，弗得則死──食器",
+        "C": "《孟子．告子上》 ：今有無名之指，屈而不「信」──信任",
+        "D": "《孟子．告子上》 ：萬「鍾」則不辨禮義而受之──樂器"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-國文與憲法-11",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 11,
+      "type": "single",
+      "stem": "下列何者非為司法院大法官釋字第 499 號解釋所述之自由民主憲政秩序之內涵？",
+      "options": {
+        "A": "基本權利保障",
+        "B": "國民主權原則",
+        "C": "權力分立原則",
+        "D": "國會優位原則"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-國文與憲法-12",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 12,
+      "type": "single",
+      "stem": "有關《憲法》居住及遷徙自由之保障範圍，下列何者非屬之？",
+      "options": {
+        "A": "人民有設定住、居所之自由",
+        "B": "國民有旅行各地與回國之自由",
+        "C": "人民有於居住處所不受干預之自由",
+        "D": "外國人請求進入國境之自由"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-國文與憲法-13",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 13,
+      "type": "single",
+      "stem": "依據我國《憲法》及司法院大法官解釋之意旨 ， 下列關於言論自由之敘述 ， 何者最為正確？",
+      "options": {
+        "A": "言論自由屬於絕對權利，除緊急狀態外，法律不得加以限制",
+        "B": "僅有政治性言論受《憲法》第 11 條保障，商業言論原則上不在保障範圍內",
+        "C": "對於涉及公共監督之政治性言論，國家如欲加以限制，應採取較為嚴格之違憲審查標 準",
+        "D": "凡涉及不實內容之言論，均不受《憲法》言論自由之保障，立法者得全面禁止"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-國文與憲法-14",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 14,
+      "type": "single",
+      "stem": "中央流行疫情指揮中心公布入境人員防疫旅館隔離之相關規定 ， 主要涉及下列何種基本權\n利之限制？",
+      "options": {
+        "A": "人格自由",
+        "B": "居住自由",
+        "C": "職業自由",
+        "D": "人身自由"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-國文與憲法-15",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 15,
+      "type": "single",
+      "stem": "有關《憲法》人身自由之保障，下列何者符合法官保留之要求？",
+      "options": {
+        "A": "行政機關為保護人民，得對其強制收容，事後再補以司法程序",
+        "B": "對人民人身自由之長時間限制，應先經法官審查",
+        "C": "若法律授權明確，主管機關於必要時可將人民施以管收，期間數日",
+        "D": "緊急情形下，行政機關對人民之收容措施一律不受司法審查"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-國文與憲法-16",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 16,
+      "type": "single",
+      "stem": "依據司法院解釋意旨及憲法法庭裁判，立法院若長期、消極不行使監察委員人事同意權，\n下列敘述何者正確？",
+      "options": {
+        "A": "基於政治問題不審查，此非屬司法違憲審查之範圍",
+        "B": "立法院於何時行使人事同意權，屬國會自治事項，司法院不應干涉",
+        "C": "總統得以緊急命令，先行任命臨時監察委員，以免影響監察院正常運行",
+        "D": "如致監察院無從行使職權、發揮功能，憲政制度之完整遭受破壞，即為憲法所不許 國文與憲法 3"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-國文與憲法-17",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 17,
+      "type": "single",
+      "stem": "關於《憲法增修條文》總統發布緊急命令之敘述，下列何者正確？",
+      "options": {
+        "A": "緊急命令一經發布，即具有與法律同等效力，無須再送立法院追認",
+        "B": "緊急命令僅得於立法院休會期間發布，於立法院開會期間不得發布",
+        "C": "緊急命令之內容，仍應遵守基本權利之保障與比例原則",
+        "D": "緊急命令屬高度政治行為，原則上不受司法審查"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-國文與憲法-18",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 18,
+      "type": "single",
+      "stem": "下列何者非為考試院之職權？",
+      "options": {
+        "A": "部會首長之任命",
+        "B": "公務人員之考試業務",
+        "C": "公務人員之銓敘、保障",
+        "D": "公務人員之撫卹、退休"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-國文與憲法-19",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 19,
+      "type": "single",
+      "stem": "依據《憲法訴訟法》規定，有關立法委員聲請憲法法庭為法規範憲法審查之敘述，下列何\n者正確？",
+      "options": {
+        "A": "係針對法律位階規範牴觸憲法者，有違憲之疑慮者",
+        "B": "須由現有總額至少三分之一以上之立法委員提出聲請",
+        "C": "立法委員認為有違憲疑慮者，得提出聲請，是否為其行使職權之範圍，在所不論",
+        "D": "須於違憲爭議事件發生後 6 個月內提出聲請"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-國文與憲法-2",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 2,
+      "type": "single",
+      "stem": "下列各組「 」內的字，讀音前後相同的是：",
+      "options": {
+        "A": "目「眥」盡裂 ／ 無可「訾」議",
+        "B": "不分「畛」域 ／ 細心「診」治",
+        "C": "越「俎」代庖 ／ 含英「咀」華",
+        "D": "乘「輿」馬驚 ／ 「與」人為善"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-國文與憲法-20",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 20,
+      "type": "single",
+      "stem": "依據我國《憲法》第 13 條宗教自由之保障，下列敘述何者正確？",
+      "options": {
+        "A": "宗教自由屬於絕對權利，國家不得以任何理由加以限制",
+        "B": "宗教自由僅保障內心信仰之自由，不包括宗教行為與宗教活動之自由",
+        "C": "為遵守政教分離原則，法律得全面禁止宗教團體從事公共事務活動",
+        "D": "人民以宗教信仰為理由拒絕服兵役，在比例原則之考量下，得服以相對應之義務替代 之 二、多重選擇題：(每題 3 分，共 60 分)"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-國文與憲法-21",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 21,
+      "type": "multiple",
+      "stem": "請問下列選項中， 「 」之字音完全相同者為何？",
+      "options": {
+        "A": "妄自「菲」薄／「斐」然成章／「誹」謗別人",
+        "B": "惻「怛」之心／妖妃「妲」己／「坦」然無事",
+        "C": "「裨」補闕漏／縱橫「捭」闔／「睥」睨群雄",
+        "D": "真「贋」莫辨／拳拳服「膺」／沉魚落「雁」",
+        "E": "羝羊觸「藩」／璵「璠」之玼／「蕃」衍不絕"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-國文與憲法-22",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 22,
+      "type": "multiple",
+      "stem": "下列各組「 」內的注音寫成國字後，字形前後相同的是：",
+      "options": {
+        "A": "「ㄇㄧㄣˇ」嘴兒笑 ／ 「ㄇㄧㄣˇ」滅人性",
+        "B": "不省人「ㄕˋ」 ／ 不「ㄕˋ」好歹",
+        "C": "趨「ㄧㄢˊ」附勢 ／ 世態「ㄧㄢˊ」涼",
+        "D": "山「ㄏㄜˊ」破碎風拋絮 ／ 「ㄏㄜˊ」不秉燭遊",
+        "E": "難以「ㄨㄢˇ」回 ／ 力「ㄨㄢˇ」狂瀾"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-國文與憲法-23",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 23,
+      "type": "multiple",
+      "stem": "請問下列讀音何者正確？",
+      "options": {
+        "A": "暴「殄」天物：ㄓㄣˇ",
+        "B": "人為刀「俎」 ：ㄘㄨˊ",
+        "C": "枕「骸」遍野：ㄏㄞˋ",
+        "D": "諮「諏」善道：ㄗㄡ",
+        "E": "「煢」煢獨立：ㄑㄩㄥˊ"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-國文與憲法-24",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 24,
+      "type": "multiple",
+      "stem": "下列文句中的成語，何者運用適當？",
+      "options": {
+        "A": "修史之前必須蒐羅史料，諮詢老成，切不可「閉門造車」",
+        "B": "讀書做事若能「守株待兔」 、持之以恆，成就必然可觀",
+        "C": "父母年老後「色衰愛弛」 ，需要子女多加關懷協助",
+        "D": "知名交響樂團演奏「靡靡之音」 ，氣勢磅礡、振奮人心",
+        "E": "智慧圓通之人，能夠「見微知著」 ，以小見大 國文與憲法 4"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-國文與憲法-25",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 25,
+      "type": "multiple",
+      "stem": "下列各組「 」內字義，兩兩相同的是：",
+      "options": {
+        "A": "二千石益輕賤，吏民慢「易」之 ／ 移風「易」俗",
+        "B": "若使燭之武見秦君， 「師」必退／人之患在好為人「師」",
+        "C": "「以」其無禮於晉／先帝不「以」臣卑鄙",
+        "D": "「微」夫人之力不及此／「微」斯人，吾誰與歸",
+        "E": "獨韓愈奮不顧流俗， 「犯」笑侮／他愛說謊的老毛病又「犯」了"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-國文與憲法-26",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 26,
+      "type": "multiple",
+      "stem": "春秋戰國時代諸子百家爭鳴，下列諸子及其學說思想的配對何者正確？",
+      "options": {
+        "A": "己欲立而立人，己欲達而達人。能近取譬，可謂仁之方也已──儒家",
+        "B": "致虛極，守靜篤。萬物並作，吾以觀其復──道家",
+        "C": "為人臣者畏誅罰而利慶賞，故人主自用其刑德，則群臣畏其威而歸其利矣──法家",
+        "D": "若使天下兼相愛，愛人若愛其身，猶有不孝者乎──名家",
+        "E": "昔之善戰者，先為不可勝，以待敵之可勝，不可勝在己，可勝在敵──兵家"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-國文與憲法-27",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 27,
+      "type": "multiple",
+      "stem": "關於古典小說及其章節故事的配對，下列何者正確？",
+      "options": {
+        "A": "劉姥姥進大觀園──《紅樓夢》",
+        "B": "草船借箭──《三國演義》",
+        "C": "孫悟空三打白骨精──《西遊記》",
+        "D": "范進中舉──《聊齋誌異》",
+        "E": "魯智深大鬧桃花村──《金瓶梅》"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-國文與憲法-28",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 28,
+      "type": "multiple",
+      "stem": "請問下列哪些小說的內容為描寫日據時代台灣人民的故事？",
+      "options": {
+        "A": "廖輝英《油麻菜籽》",
+        "B": "賴和《一桿秤仔》",
+        "C": "黃春明《兒子的大玩偶》",
+        "D": "呂赫若《牛車》",
+        "E": "鄭清文《三腳馬》"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-國文與憲法-29",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 29,
+      "type": "multiple",
+      "stem": "古代漢語中常見「謙稱代詞」 ，用於稱呼自己以示謙虛或身分差異。請問下列何者為「謙\n稱代詞」？",
+      "options": {
+        "A": "〈答韋中立論師道書〉 ： 「僕」自謫過以來，益少志慮",
+        "B": "《呂氏春秋．貴公》 ： 「仲父」之病矣，漬甚，國人弗諱，寡人將誰屬國",
+        "C": "《史記．呂不韋列傳》 ： 「妾」幸得充后宮，不幸無子",
+        "D": "〈與友人論學書〉 ： 「愚」所謂聖人之道為何？曰：博學於文",
+        "E": "《晉書．干寶傳》 ： 「卿」可謂鬼之董狐"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-國文與憲法-3",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 3,
+      "type": "single",
+      "stem": "下列哪一組的成語完全沒有錯別字？",
+      "options": {
+        "A": "折衝樽俎／駢肩雜遝",
+        "B": "牛驥同皁／固步自封",
+        "C": "莫明奇妙／楚囚對泣",
+        "D": "成仁取義／默守成規"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-國文與憲法-30",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 30,
+      "type": "multiple",
+      "stem": "「借代法」是借用其他名稱來代替一般經常使用的名稱之修辭技巧。請問下列「 」中的\n詞語，何者為借代法？",
+      "options": {
+        "A": "臣本「布衣」 ，躬耕於南陽",
+        "B": "「鼎鑊」甘如飴，求之不可得",
+        "C": "「蛾眉」不肯讓人，狐媚偏能惑主",
+        "D": "青將死，車載十丈竹竿，以懸「五旛」",
+        "E": "桓魋專宋，葬以「石槨」"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-國文與憲法-31",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 31,
+      "type": "multiple",
+      "stem": "依據司法院解釋意旨及憲法法庭裁判，關於總統之權力，下列敘述何者錯誤？",
+      "options": {
+        "A": "總統於《憲法》及《憲法增修條文》所賦予之行政權範圍內，為最高行政首長",
+        "B": "總統得經由其任命之行政院院長，執行競選政見，此為民主國家之常態",
+        "C": "總統之刑事豁免權包含不得傳喚總統為證人",
+        "D": "總統就有關國家安全、國防及外交資訊之公開與否，享有國家機密特權",
+        "E": "總統對於行政院院長之任命，亦須行政院院長之副署"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-國文與憲法-32",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 32,
+      "type": "multiple",
+      "stem": "依照我國憲政制度，下列何者具有法律提案權？",
+      "options": {
+        "A": "總統",
+        "B": "司法院",
+        "C": "監察院",
+        "D": "考試院",
+        "E": "行政院 國文與憲法 5"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-國文與憲法-33",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 33,
+      "type": "multiple",
+      "stem": "下列何者之任命無須經立法院同意？",
+      "options": {
+        "A": "行政院政務委員",
+        "B": "司法院大法官",
+        "C": "考試委員",
+        "D": "監察委員",
+        "E": "總統府國安會諮詢委員"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-國文與憲法-34",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 34,
+      "type": "multiple",
+      "stem": "依據司法院大法官解釋意旨，關於秘密通訊自由之限制，下列敘述何者正確？",
+      "options": {
+        "A": "秘密通訊自由，係憲法所保障資訊隱私權態樣之一",
+        "B": "對秘密通訊自由之法律限制，其要件應具體、明確，且不得逾越必要之範圍",
+        "C": "警察機關為偵查犯罪而有監察人民秘密通訊之必要時，原則上應向法院聲請核發通訊 監察書",
+        "D": "通訊監察既未直接限制人民之人身自由，故不屬於刑事訴訟上之強制處分",
+        "E": "秘密通訊自由屬重要基本權，對其限制除須有法律依據外，並應受比例原則及司法審 查之拘束"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-國文與憲法-35",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 35,
+      "type": "multiple",
+      "stem": "《憲法》第 73 條規定： 「立法委員在院內所為之言論及表決，對院外不負責任。」此指\n立法委員言論免責權之內涵，包括下列何者？",
+      "options": {
+        "A": "不受刑事訴追",
+        "B": "不負民事賠償責任",
+        "C": "不受行政裁罰",
+        "D": "立法院紀律與懲戒責任",
+        "E": "選區選民之政治責任"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-國文與憲法-36",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 36,
+      "type": "multiple",
+      "stem": "下列何者非屬於立法院行使彈劾權之對象？",
+      "options": {
+        "A": "內政部部長",
+        "B": "大法官",
+        "C": "總統",
+        "D": "副總統",
+        "E": "監察委員"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-國文與憲法-37",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 37,
+      "type": "multiple",
+      "stem": "甲縣所制定之自治條例，不得規定下列何者事項？",
+      "options": {
+        "A": "於甲縣境內簽訂民事買賣契約之生效要件",
+        "B": "甲縣政府所設之親水公園與利用規則",
+        "C": "甲縣境內之義務教育制度",
+        "D": "甲縣境內公有市場管理規範",
+        "E": "甲縣境內刑事案件之處罰"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-國文與憲法-38",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 38,
+      "type": "multiple",
+      "stem": "有關《憲法》基本國策，下列敘述何者正確？",
+      "options": {
+        "A": "基本國策之規定，係構成憲法修憲之界線，不得修改之",
+        "B": "基本國策一概僅屬政治宣言，對國家機關不生任何實質拘束力",
+        "C": "基本國策中之國家目標條款，具有引導國家政策形成之功能",
+        "D": "基本國策屬於憲法體系中不可或缺之內容，具有憲法規範之地位",
+        "E": "基本國策原則上不直接賦予人民可據以請求之主觀公權利"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-國文與憲法-39",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 39,
+      "type": "multiple",
+      "stem": "各級法院法官於審理案件時，對於應適用之法律，認為有牴觸《憲法》之疑義者，應如何\n處理？",
+      "options": {
+        "A": "法官得自行審查，於認定法律違憲後，於個案中拒絕適用該法律",
+        "B": "法官得自行裁定停止訴訟程序，並聲請法規範憲法審查",
+        "C": "法官得自行審查，於認定法律違憲後，宣告該法律違憲並失其效力",
+        "D": "法官須呈請所屬法院院長核可，始得裁定停止訴訟程序並聲請司法院解釋",
+        "E": "法官於聲請法規範憲法審查時，應明確闡述應受審查法律位階法規範在裁判上適用之 必要性及客觀上形成確信其違憲之法律見解"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-國文與憲法-4",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 4,
+      "type": "single",
+      "stem": "下列文句何者完全沒有錯別字？",
+      "options": {
+        "A": "眼見孩童身陷危境，他益無反顧地伸出援手",
+        "B": "你整日耽膩在虛擬的網路世界而荒廢功課，真是虛擲光陰",
+        "C": "世界棒球經典大賽，中華健兒鎩羽而歸，令人愕腕",
+        "D": "回溯過往，種種不堪令她不寒而慄、毛骨悚然"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-國文與憲法-40",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 40,
+      "type": "multiple",
+      "stem": "依據司法院大法官有關言論自由之解釋意旨，下列敘述何者正確？",
+      "options": {
+        "A": "商業性言論，對其之事前審查，當然違憲",
+        "B": "猥褻性言論屬於低價值言論，對於其限制得採寬鬆之審查",
+        "C": "法律規定，具醫療性之藥物於刊播廣告前，應先申請主管機關核准，尚屬合憲",
+        "D": "言論自由保障之審查密度，不因言論之性質不同而有所差異",
+        "E": "政治性言論屬於高價值言論，對於其限制應採嚴格審查"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-國文與憲法-5",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 5,
+      "type": "single",
+      "stem": "下列成語運用何者正確？",
+      "options": {
+        "A": "這盞華麗的水晶燈一定可以讓你家的客廳「蓬蓽生輝」",
+        "B": "他光明磊落、 「不欺暗室」的性格，贏得了許多人的敬重",
+        "C": "酒駕的醉漢非但不願意接受酒測，甚至對警方揮拳，趕來關心的家屬還怒斥警察「勿 枉勿縱」",
+        "D": "她致力於慈善工作，捐款「汗牛充棟」卻不求回報，真是令人敬佩"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-國文與憲法-6",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 6,
+      "type": "single",
+      "stem": "下列詩文與所屬小說的配對，何者正確？",
+      "options": {
+        "A": "姑妄言之姑聽之，豆棚瓜架雨如絲。料應厭作人間語，愛聽秋墳鬼唱詩──《聊齋誌異》",
+        "B": "功名富貴無憑據，費盡心情，總把流光誤，濁酒三杯沉醉去，水流花謝知何處── 《水滸傳》",
+        "C": "滿紙荒唐言，一把辛酸淚，都云作者痴，誰解其中味──《儒林外史》",
+        "D": "滾滾長江東逝水，浪花淘盡英雄，是非成敗轉頭空，青山依舊在，幾度夕陽紅── 《紅樓夢》 國文與憲法 2"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-國文與憲法-7",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 7,
+      "type": "single",
+      "stem": "魯夫想要以魏晉南北朝的文學作品寫作一篇小論文，請問下列哪篇文章符合他的需求？",
+      "options": {
+        "A": "陶淵明〈桃花源記〉",
+        "B": "歐陽修〈醉翁亭記〉",
+        "C": "袁宏道〈晚遊六橋待月記〉",
+        "D": "柳宗元〈始得西山宴遊記〉"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-國文與憲法-8",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 8,
+      "type": "single",
+      "stem": "儒、墨兩家在戰國時期並稱「顯學」 ，下列關於兩家的思想理論何者正確？",
+      "options": {
+        "A": "儒家提倡「王道」 ；墨家提倡「霸道」",
+        "B": "儒家主張「非樂」 ；墨家重視「禮樂」",
+        "C": "儒家提倡「仁愛」 ；墨家提倡「兼愛」",
+        "D": "儒家主張「薄葬」 ；墨家主張「厚葬」"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-國文與憲法-9",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "國文與憲法",
+      "number": 9,
+      "type": "single",
+      "stem": "《史記．晏嬰列傳》 ： 「越石父賢，在縲紲中。晏子出，遭之塗，解左驂贖之，載歸。」關\n於上述引文之解釋，下列何者正確？",
+      "options": {
+        "A": "「越石父賢」 ：越石的父親很賢能",
+        "B": "「在縲紲中」 ：遭到牢獄之災",
+        "C": "「遭之塗」 ：晏子因此事而感到困惑",
+        "D": "「載歸」 ：晏子走路回家"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐消佐海佐班試題--國文與憲法.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-警察勤務-1",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 1,
+      "type": "single",
+      "stem": "依據司法院大法官釋字第 307 號解釋意旨，地方警察得就其業務所需經費依法定程序編列預\n算，如確屬不足時，得依下列何種法規之規定呈請補助 ?",
+      "options": {
+        "A": "警察職權行使法",
+        "B": "內政部警政署組織法",
+        "C": "警察法",
+        "D": "地方制度法"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-警察勤務-10",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 10,
+      "type": "single",
+      "stem": "依據《警察法施行細則》規定，下列何者係屬於縣立法之事項 ?",
+      "options": {
+        "A": "警察人員升遷之資格要件",
+        "B": "警察人員著用之服式",
+        "C": "警察常年訓練之實施事項",
+        "D": "駐衛警察使用警械之管理辦法"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-警察勤務-11",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 11,
+      "type": "single",
+      "stem": "依據《警察勤務條例》第 13 條規定，巡邏勤務之實施應視下列何種情況，分別採用步巡、車\n巡、騎巡、船巡、空中巡邏等方式實施之？",
+      "options": {
+        "A": "工作繁簡，地方特性",
+        "B": "轄區面積及治安、地理、交通情形",
+        "C": "面積廣狹，交通電信設施",
+        "D": "地區特性，警力多寡"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-警察勤務-12",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 12,
+      "type": "single",
+      "stem": "警察組織基本原則，其中之一為「全面性的分布」 ，下列何者不屬之？",
+      "options": {
+        "A": "要及於國家領土的每一部分",
+        "B": "以有人居住為必要",
+        "C": "隨同國家主權而進退",
+        "D": "隨著民眾需要而存在"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-警察勤務-13",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 13,
+      "type": "single",
+      "stem": "各級警察機關 、中央警察大學 、臺灣警察專科學校之武器彈藥 ， 其統籌調配辦法 ， 由何者定之？",
+      "options": {
+        "A": "行政院",
+        "B": "國安局",
+        "C": "內政部",
+        "D": "警政署"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-警察勤務-14",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 14,
+      "type": "single",
+      "stem": "下列何者是勤務規劃監督及重點性勤務執行機構，負責規劃、指揮、管制、督導及考核轄區各\n勤務執行機構之勤務實施，並執行重點性勤務？",
+      "options": {
+        "A": "派出所",
+        "B": "分駐所",
+        "C": "警察分局",
+        "D": "警察局"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-警察勤務-15",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 15,
+      "type": "single",
+      "stem": "依據《警察職權行使法》第 6 條規定，刑事及外事警察得配合下列何者劃分其責任區？",
+      "options": {
+        "A": "分駐所",
+        "B": "派出所",
+        "C": "駐在所",
+        "D": "警勤區"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-警察勤務-16",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 16,
+      "type": "single",
+      "stem": "關於警察行使職權時之異議與紀錄，依據《警察職權行使法》第 29 條規定，下列敘述何者錯\n誤？",
+      "options": {
+        "A": "義務人或利害關係人得於警察行使職權時，當場陳述理由表示異議",
+        "B": "警察認為異議有理由者，應立即停止或更正執行行為",
+        "C": "義務人或利害關係人對於警察行使職權之方法、應遵守之程序或其他侵害利益之情事，僅 能於執行結束後，提起行政訴訟",
+        "D": "經義務人或利害關係人請求時，警察應將異議之理由製作紀錄交付之"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-警察勤務-17",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 17,
+      "type": "single",
+      "stem": "依據《警察勤務條例》規定，有關勤前教育之敘述，下列何者正確？",
+      "options": {
+        "A": "基層勤前教育以警察分局為實施單位",
+        "B": "聯合勤前教育以警察局為實施單位",
+        "C": "專案勤前教育由分駐所、派出所平日實施",
+        "D": "勤前教育之實施，由警察機關視所轄勤務機構實際情形，規定其實施方式、時間及次數"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-警察勤務-18",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 18,
+      "type": "single",
+      "stem": "2001 年美國發生自殺式恐怖襲擊的 911 事件後，興起重視以下何種警政策略？",
+      "options": {
+        "A": "專業化警政",
+        "B": "社區警政",
+        "C": "情資主導警政",
+        "D": "問題導向警政"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-警察勤務-19",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 19,
+      "type": "single",
+      "stem": "依據《警察勤務裝備機具配備標準》規定，下列何者不屬於防護型裝備機具？",
+      "options": {
+        "A": "防彈頭盔",
+        "B": "防暴網",
+        "C": "反光背心",
+        "D": "手電筒 警察勤務3"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-警察勤務-2",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 2,
+      "type": "single",
+      "stem": "依據「處理性侵害案件作業程序」規定，下列敘述何者錯誤 ?",
+      "options": {
+        "A": "初步人別詢問及案情瞭解，確認屬性侵害案件後，通知警察（分）局性侵害案件專責處理 人員接案處理，同時知會偵查隊值日小隊及防治組家庭暴力防治官即時介入及協助處理",
+        "B": "必要時，由同性別專責人員著便服、攜服務證、開偵防車陪同驗傷；並 於被害人筆錄製作 完成後二十四小時內，填報及輸入刑案（發生）紀錄表",
+        "C": "未滿十八歲之人、心智障礙者或被害人經申請適用減述要點者，應通知社工人員到場進行 減述作業詢（訊）前訪視",
+        "D": "將處理情形填寫於「員警工作紀錄簿」 ，並注意被害人身分保密，避免個人資料洩漏"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-警察勤務-20",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 20,
+      "type": "single",
+      "stem": "依據「警察機關勤務指揮中心作業規定」，有關各級勤指中心對勤務事項之管制項目，下列何\n者錯誤 ?",
+      "options": {
+        "A": "勤務查詢",
+        "B": "計畫管制",
+        "C": "勤務動態管制",
+        "D": "事故通報 二、多重選擇題：(每題 3 分，共 60 分)"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-警察勤務-21",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 21,
+      "type": "multiple",
+      "stem": "依據《警察勤務條例》規定，有關警察勤務機構之內容，下列敘述何者正確 ?",
+      "options": {
+        "A": "區分為四級",
+        "B": "警察勤務區為警察勤務基本單位",
+        "C": "警察分駐所為勤務執行機構",
+        "D": "警察分局屬於勤務規劃機構",
+        "E": "警察局於必要時，得設警察駐在所，在特定地區執行守護任務"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-警察勤務-22",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 22,
+      "type": "multiple",
+      "stem": "依據「警察機關勤前教育實施規定」，有關勤前教育的實施，下列敘述何者正確 ?",
+      "options": {
+        "A": "基層勤前教育時間以不超過二十分鐘為度",
+        "B": "基層勤前教育於出勤前集中實施為原則",
+        "C": "派出所警力為五人者，隔日實施基層勤前教育",
+        "D": "山地派出所，勤務單純者，每星期實施一次基層勤前教育",
+        "E": "分局每月舉行一次聯合勤前教育為原則"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-警察勤務-23",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 23,
+      "type": "multiple",
+      "stem": "依據「警察機關勤務督察實施規定」，下列敘述何者正確 ?",
+      "options": {
+        "A": "勤務督導分為駐區督導、分層督導（含機動督導） 、專案督導及聯合督導等四類",
+        "B": "勤務督導之規劃，警察局係由督察長按週實施",
+        "C": "勤務督導之規劃，分局係由督察組長按週實施",
+        "D": "專業警察機關勤務督導之規劃，由督察主管按週實施",
+        "E": "各級督察（查）人員以逐級督導為原則，不得越級督導至基層"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-警察勤務-24",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 24,
+      "type": "multiple",
+      "stem": "依據《警察勤務區訪查辦法》規定，下列敘述何者正確 ?",
+      "options": {
+        "A": "該辦法係依《警察職權行使法》第 11 條第 1 款規定訂定之",
+        "B": "治安顧慮人口之查訪，係依警察勤務區訪查相關法令規定辦理",
+        "C": "警勤區訪查之目的係為達成犯罪預防、為民服務及警民合作等任務",
+        "D": "警勤區員警實施訪查，得以遞送警勤區員警聯繫卡片，載明與警察聯繫方法，提供社區居 民聯繫及諮詢",
+        "E": "警勤區訪查，以座談會方式實施者，應將訪查時間及地點，於訪查日三日前，以書面通知 受訪查者"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-警察勤務-25",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 25,
+      "type": "multiple",
+      "stem": "依據「警察機關辦理特定人員尿液採驗作業要點」規定，應接受尿液採驗之特定人員範圍，下\n列何者錯誤 ?",
+      "options": {
+        "A": "假釋出獄之更生人",
+        "B": "生活、勤務不正常，有施用毒品嫌疑之警察人員",
+        "C": "與涉嫌組織犯罪分子交往頻繁之警察人員",
+        "D": "毒品檢驗及證物室保管之警察人員",
+        "E": "治安顧慮人口"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-警察勤務-26",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 26,
+      "type": "multiple",
+      "stem": "依據「各級警察機關處理刑案逐級報告紀律規定」，下列何者屬於特殊刑案 ?",
+      "options": {
+        "A": "犯罪手段殘酷、情節離奇之案件",
+        "B": "國人於國外遭買賣、質押或拘禁等限制人身自由案件",
+        "C": "槍擊案件",
+        "D": "重大縱火、群毆械鬥案件",
+        "E": "重大恐嚇取財案件 警察勤務4"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-警察勤務-27",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 27,
+      "type": "multiple",
+      "stem": "依據「員警飲用酒類禁止服勤規定」 ，下列敘述何者正確 ?",
+      "options": {
+        "A": "員警服勤前飲用酒類，於服勤時間仍有酒容或酒味者，應立即請假，不應調整勤務時段",
+        "B": "各級警察機關及勤務機構主官、主管有事實足認員警有飲用酒類情形，必要時得於出勤前 施以酒精濃度檢測",
+        "C": "員警二人以上共同服勤時，應相互規勸不得飲用酒類",
+        "D": "勤務機構內，嚴禁飲用酒類",
+        "E": "各級警察機關及勤務機構主官、主管實施酒測之紀錄，應黏貼於員警工作紀錄簿備查"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-警察勤務-28",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 28,
+      "type": "multiple",
+      "stem": "依據《警察勤務條例》規定，有關警勤區之劃分，下列敘述何者正確 ?",
+      "options": {
+        "A": "轄區不得跨越村（里）自治區域",
+        "B": "轄區不得分割村（里）自治區域",
+        "C": "依人口疏密，以二千人口或五百戶以下劃設一警勤區",
+        "D": "警勤區之劃分，應參酌治安狀況、地區特性、警力多寡、工作繁簡、面積廣狹、交通電信 設施及未來發展趨勢等情形，適當調整之",
+        "E": "刑事、外事警察，得配合警勤區劃分其責任區"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-警察勤務-29",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 29,
+      "type": "multiple",
+      "stem": "依據《治安顧慮人口查訪辦法》規定，得定期實施查訪之對象為下列何者?",
+      "options": {
+        "A": "曾犯搶奪罪者",
+        "B": "曾犯恐嚇取財罪者",
+        "C": "曾犯傷害罪者",
+        "D": "曾犯竊盜罪者",
+        "E": "曾犯製造槍砲彈藥刀械罪者"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-警察勤務-3",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 3,
+      "type": "single",
+      "stem": "依據「警察機關受理訴訟文書寄存應行注意事項」規定，寄存之民事、刑事或行政訴訟文書逾\n多久，應受送達人未前來領取，得逕予銷燬或以其他方式處理之 ?",
+      "options": {
+        "A": "一個月",
+        "B": "二個月",
+        "C": "三個月",
+        "D": "六個月"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-警察勤務-30",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 30,
+      "type": "multiple",
+      "stem": "依據「警察人員與特定對象接觸交往規定」，警察人員除法令另有規定外，未經核准，禁止與\n下列何者特定對象接觸交往?",
+      "options": {
+        "A": "假釋出獄人口",
+        "B": "經營砂石土方業者",
+        "C": "治安顧慮人口",
+        "D": "不良幫派組合成員",
+        "E": "經營色情、賭博、破壞國土及其他不法業者"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-警察勤務-31",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 31,
+      "type": "multiple",
+      "stem": "依據「執行備勤勤務作業程序」規定，有關備勤之工作項目，下列何者錯誤 ?",
+      "options": {
+        "A": "受理報告",
+        "B": "替補缺勤之派遣",
+        "C": "駐地安全之維護",
+        "D": "為民服務",
+        "E": "傳達重要公文"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-警察勤務-32",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 32,
+      "type": "multiple",
+      "stem": "警政學者 Bayley 之綜合警政策略 ， 提出社區警政的四個核心要素 ， 將其簡稱為CAMPS 策略，\n四個核心要素為下列何者？",
+      "options": {
+        "A": "諮詢 Consultation",
+        "B": "問題解決 Problem-solving",
+        "C": "調適 Adaptation",
+        "D": "授權 Authorization",
+        "E": "動員 Mobilization"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-警察勤務-33",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 33,
+      "type": "multiple",
+      "stem": "依據《警察勤務條例》第 26 條規定，特殊時間、地點應加強勤務督導，下列何者是該條例規\n定的特殊時間、地點？",
+      "options": {
+        "A": "暴風、雨、雪",
+        "B": "重要節日及特殊地區",
+        "C": "黎明",
+        "D": "黃昏",
+        "E": "深夜"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-警察勤務-34",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 34,
+      "type": "multiple",
+      "stem": "問題導向警政策略（Problem-Oriented Policing, POP ）的模式中，認為問題解決的過程應包括\n四個階段，稱為 S.A.R.A. 模式，下列何者屬於該模式的四個階段？",
+      "options": {
+        "A": "掃描（Scanning）",
+        "B": "評估（Assessment）",
+        "C": "分析（Analysis）",
+        "D": "考核（Appraisal）",
+        "E": "反應（Response） 警察勤務5"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-警察勤務-35",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 35,
+      "type": "multiple",
+      "stem": "警察勤務方式分為「個別勤務」與「共同勤務」 。下列關於勤務方式之敘述，何者正確？",
+      "options": {
+        "A": "巡邏、臨檢、守望、值班與勤區查察均屬於共同勤務，由服勤人員輪流交替實施",
+        "B": "勤區查察為個別勤務，由警勤區員警專責擔任，以家戶訪查方式執行任務",
+        "C": "值班勤務是指於衝要地點設置崗位，由服勤人員在一定位置瞭望",
+        "D": "守望勤務以擔任通訊連絡、傳達命令、接受報告為主",
+        "E": "巡邏勤務為劃分巡邏區（線） ，由服勤人員循指定區（線）巡視，以查察奸宄，防止危害為 主"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-警察勤務-36",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 36,
+      "type": "multiple",
+      "stem": "依據《各級警察機關學校武器彈藥統籌調配辦法》規定， 有關警用武器彈藥之預算與管理權限 ，\n下列敘述何者正確？",
+      "options": {
+        "A": "各級警用武器彈藥由中央編列預算，統籌辦理調配、購置或商請國防部代為製造",
+        "B": "武器彈藥之保養及修理，由使用機關自行編列預算辦理",
+        "C": "武器卡應記載武器號碼、使用人姓名、職別、射擊彈數及整修情形",
+        "D": "發給槍枝時，應併同發給警槍執照，由使用人隨槍攜帶",
+        "E": "警槍執照應加蓋內政部部長官章"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-警察勤務-37",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 37,
+      "type": "multiple",
+      "stem": "依據《警察勤務區查訪辦法》規定，警勤區員警實施訪查應遵守之事項，下列敘述何者正確？",
+      "options": {
+        "A": "應尊重當事人權益，並以誠實信用方法為之",
+        "B": "訪查內容與範圍應與訪查目的具有正當合理之關聯",
+        "C": "視員警需要，任意蒐集與訪查目的無關之私人隱私資料",
+        "D": "應嚴守行政中立，不得偏袒特定政治立場",
+        "E": "非有正當理由，不得對訪查對象為差別待遇"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-警察勤務-38",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 38,
+      "type": "multiple",
+      "stem": "依據《警察勤務條例》規定，下列何者是勤務督導的主要目的？",
+      "options": {
+        "A": "激勵工作士氣",
+        "B": "受理民眾申訴",
+        "C": "補充基層警力",
+        "D": "考核勤務績效",
+        "E": "指導工作方法"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-警察勤務-39",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 39,
+      "type": "multiple",
+      "stem": "依據「取締酒後駕車作業程序」規定，有關員警執行酒精濃度測試之流程及注意事項，下列敘\n述何者正確 ?",
+      "options": {
+        "A": "詢問受測者飲酒結束時間，若距檢測時已達十分鐘以上，即予檢測",
+        "B": "若受測者不告知飲酒結束時間，應強制將其帶回派出所管束三小時後再測",
+        "C": "應告知受測者酒測器檢測之流程，並請其連續吐氣至取樣完成",
+        "D": "實施檢測過程應全程連續錄影",
+        "E": "如因酒測器問題或受測者未符合檢測流程，致酒測器檢測失敗，應向受測者說明檢測失敗 原因，請其重新接受檢測"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-警察勤務-4",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 4,
+      "type": "single",
+      "stem": "依據「各級警察機關辦理勤務審核作業規定」 ，有關勤務分配審核表保存年限為幾年 ?",
+      "options": {
+        "A": "一年",
+        "B": "二年",
+        "C": "三年",
+        "D": "五年"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-警察勤務-40",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 40,
+      "type": "multiple",
+      "stem": "依據「警察人員使用防護型應勤裝備注意要點」 規定，關於使用防護型應勤裝備，下列敘述何\n者正確 ?",
+      "options": {
+        "A": "該要點所稱防護型應勤裝備，係指以瓦斯化學成分製造之防護型噴霧器及其他防護型應勤 裝備",
+        "B": "警察人員依法執行職務遭受強暴、脅迫、抗拒或其他事實需要，經報告派出所主管准許後， 即得使用",
+        "C": "使用防護型噴霧器應先口頭警告相對人，仍不聽從時，即得使 用。但情況急迫時，不在此 限",
+        "D": "使用防護型噴霧器時，應考量地形及地物之狀況，避免造成相對人其他傷害",
+        "E": "使用防護型噴霧器後，應提供必要之救護或醫療協助，並將使用經過情形報告該管長官"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.9
+    },
+    {
+      "id": "115-警察勤務-5",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 5,
+      "type": "single",
+      "stem": "依據《警察遴選第三人蒐集資料辦法》規定，警察遴選第三人，應查核下列何種事項 ? ①忠誠\n度及信賴度②前科素行及人脈背景③工作及生活背景④合作意願及動機",
+      "options": {
+        "A": "①②③",
+        "B": "①②④",
+        "C": "①③④",
+        "D": "②③④"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-警察勤務-6",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 6,
+      "type": "single",
+      "stem": "依據「警察人員駕車安全考核實施要點」規定，各警察機關辦理員警交通事故案件，應於多久\n內查處，並依規定辦理 ?",
+      "options": {
+        "A": "十日內",
+        "B": "一個月內",
+        "C": "二個月內",
+        "D": "三個月內"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-警察勤務-7",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 7,
+      "type": "single",
+      "stem": "依據「警察人員使用警銬規範」規定，對於下列何者以不使用警銬為宜，但經審認確有使用之\n必要者，不在此限 ?",
+      "options": {
+        "A": "甫生產之婦女",
+        "B": "傷病或肢體障礙者",
+        "C": "通緝期間自行到案者",
+        "D": "少年 警察勤務2"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-警察勤務-8",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 8,
+      "type": "single",
+      "stem": "依據「取締酒後駕車作業程序」規定 ，酒精測試器使用多久，須送經濟部標準檢驗局檢驗一次，\n或使用幾次後，必須送廠商校正及檢定，以符施檢規範之規定 ?",
+      "options": {
+        "A": "每半年、一千次",
+        "B": "每半年、二千次",
+        "C": "每年、一千次",
+        "D": "每年、二千次"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-警察勤務-9",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察勤務",
+      "number": 9,
+      "type": "single",
+      "stem": "依據「警察機關勤務督察實施規定」，督導所見情形，應填寫督導報告，於督導完畢後幾個上\n班日內陳報 ?",
+      "options": {
+        "A": "一個上班日",
+        "B": "二個上班日",
+        "C": "三個上班日",
+        "D": "五個上班日"
+      },
+      "answer": null,
+      "answerAccepted": null,
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察勤務.pdf",
+      "importConfidence": 0.85
+    },
+    {
+      "id": "115-警察法規-1",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 1,
+      "type": "single",
+      "stem": "警察對於交通工具之駕駛人有異常舉動而合理懷疑其將有危害行為時，乃強制駕駛人離車，依\n最高行政法院見解，該強制離車措施係屬於下列何種法律性質？",
+      "options": {
+        "A": "行政處分",
+        "B": "事實行為",
+        "C": "行政指導",
+        "D": "犯罪偵查"
+      },
+      "answer": [
+        "B"
+      ],
+      "answerAccepted": [
+        "B"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-10",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 10,
+      "type": "single",
+      "stem": "下列依據《警察法》規定，有關警察職權與其執行之敘述，何者錯誤？",
+      "options": {
+        "A": "警察執行勤務之意涵，在於警察日常依《警察勤務條例》第 11 條規定之日常勤務事項，以 及非依《警察勤務條例》規定，而依指示就特定案件為執行警察職權之狀態",
+        "B": "警察勤務指派之目的，乃在於組織內部之人力分配以及勤務目的之分工",
+        "C": "警察依內部組織、種類及規範之不同，就其日常勤務之調配，限依《警察勤務條例》之規 範，無不同勤務之指派",
+        "D": "警察職權中本即授權有處理交通勤務之權限，警察執行勤務肩負多項職權之狀況為現行警 務狀態之必然"
+      },
+      "answer": [
+        "C"
+      ],
+      "answerAccepted": [
+        "C"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-11",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 11,
+      "type": "single",
+      "stem": "警察人員加給分勤務加給、技術加給、專業加給、職務加給、地域加給；其各種加給之給與，\n由下列何者訂定？",
+      "options": {
+        "A": "行政院",
+        "B": "內政部",
+        "C": "人事行政總處",
+        "D": "考試院"
+      },
+      "answer": [
+        "A"
+      ],
+      "answerAccepted": [
+        "A"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-12",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 12,
+      "type": "single",
+      "stem": "下列對於《警察職權行使法》第 8 條第 2 項規定之敘述，何者錯誤？",
+      "options": {
+        "A": "「強制其離車」 ，並不以施加肢體上的強制力為限，即駕駛人或乘客受警察之命而負有容忍 義務者，亦屬之",
+        "B": "「駕駛人或乘客有異常舉動」 ，除駕駛人或乘客於路檢當時客觀可見之行為舉止外，應不包 括交通工具客觀上所呈現異常狀態",
+        "C": "「有事實足認其有犯罪之虞」 ，則是以客觀事實為基礎，依當下合理的判斷，認為有構成犯 罪之可能性，即為已足",
+        "D": "「合理懷疑」 ，係指根據當時客觀事實，警察據其執法（專業）經驗，所作成之合理推論或 推理，而非單純臆測"
+      },
+      "answer": [
+        "B"
+      ],
+      "answerAccepted": [
+        "B"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-13",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 13,
+      "type": "single",
+      "stem": "下列對警察行政罰與管制性不利處分之敘述，何者錯誤？",
+      "options": {
+        "A": "二者所不同者，僅在達成公共秩序維護之功能方法上，有所不同",
+        "B": "管制性不利處分，則為國家基於對維護公共秩序之必要，以具體干預人民自由或權利之處 分，積極且直接地排除對公共秩序已生之實害，或預防將發生之危害",
+        "C": "管制性不利處分實施之目的，重在秩序之回復調整，處分相對人須具有可責性之可非難要 素",
+        "D": "行政罰與管制性不利處分，性質上本均屬廣義警察法下，為達成一定之公共秩序，對特定 人民自由或權利所為之具體干預措施"
+      },
+      "answer": [
+        "C"
+      ],
+      "answerAccepted": [
+        "C"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-14",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 14,
+      "type": "single",
+      "stem": "下列對於《社會秩序維護法》之敘述，何者錯誤？",
+      "options": {
+        "A": "稱以上、以下、以內者，俱連本數計算",
+        "B": "在中華民國領域內違反本法者，適用本法",
+        "C": "行為後本法有變更者，適用裁處時之規定。但裁處前之規定有利於行為人者，適用最有利於 行為人之規定",
+        "D": "違反社會秩序行為之處罰，以裁處時本法有明文規定者為限 警察法規3"
+      },
+      "answer": [
+        "D"
+      ],
+      "answerAccepted": [
+        "D"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-15",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 15,
+      "type": "single",
+      "stem": "警察人員應基於急迫需要，合理使用槍械，不得逾越必要程度。為下列何法律原則之要求？",
+      "options": {
+        "A": "平等原則",
+        "B": "緊急避難原則",
+        "C": "比例原則",
+        "D": "誠信原則"
+      },
+      "answer": [
+        "C"
+      ],
+      "answerAccepted": [
+        "C"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-16",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 16,
+      "type": "single",
+      "stem": "依據《警械使用條例》規定，內政部應遴聘相關機關（構）代表及專家學者組成調查小組，並\n得依職權或依司法警察機關之申請，就所屬人員使用警械之下列何種事件 ，對其有關使用時\n機、過程與相關行政責任進行調查及提供意見？",
+      "options": {
+        "A": "致人受一般傷害爭議事件",
+        "B": "致人死亡或重傷爭議事件",
+        "C": "致他人受輕傷或財損爭議事件",
+        "D": "致他人受損傷或違法使用事件"
+      },
+      "answer": [
+        "B"
+      ],
+      "answerAccepted": [
+        "B"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-17",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 17,
+      "type": "single",
+      "stem": "依據《警械使用條例》規定，警察人員執行職務違反本條例規定使用警械，致侵害人民自由或\n權利時，依據《國家賠償法》規定辦理。下列有關之敘述，何者錯誤？",
+      "options": {
+        "A": "國家賠償請求權為公法上之請求權，依《行政程序法》規定公法上之請求權，因時效完成 而當然消滅",
+        "B": "知有國家賠償責任之原因事實 ， 指知悉所受損害 ， 係由於公務員於執行職務行使公權力時， 因故意或過失不法行為，所致而言",
+        "C": "賠償請求權，自請求權人知有損害時起，因三年間不行使而消滅；自損害發生時起，逾六 年者亦同",
+        "D": "公務員於執行職務行使公權力時，因故意或過失不法侵害人民自由或權利者，國家應負損 害賠償責任"
+      },
+      "answer": [
+        "C"
+      ],
+      "answerAccepted": [
+        "C"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-18",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 18,
+      "type": "single",
+      "stem": "下列何者並非由中央立法並執行之，或交由直轄市、縣（市）執行之事項？",
+      "options": {
+        "A": "警察勤務制度",
+        "B": "直轄市警政",
+        "C": "警察服制",
+        "D": "警察官制"
+      },
+      "answer": [
+        "B"
+      ],
+      "answerAccepted": [
+        "B"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-19",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 19,
+      "type": "single",
+      "stem": "直轄市之駐衛警察由各駐在單位依規定遴選適當人員， 並送請下列何者加以審查合格後，自費\n僱用？",
+      "options": {
+        "A": "內政部",
+        "B": "內政部警政署",
+        "C": "直轄市政府",
+        "D": "直轄市政府警察局"
+      },
+      "answer": [
+        "D"
+      ],
+      "answerAccepted": [
+        "D"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-2",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 2,
+      "type": "single",
+      "stem": "依據《警察職權行使法》規定，警察為查證人民身分，得採取下列何種必要措施？",
+      "options": {
+        "A": "要求受檢人接受酒精濃度測試之檢定",
+        "B": "逕行檢查其交通工具",
+        "C": "對於拒絕提供人別資訊者予以管束",
+        "D": "對於有明顯事實足認其有攜帶足以傷害他人生命或身體之物者，檢查其身體及所攜帶之物"
+      },
+      "answer": [
+        "D"
+      ],
+      "answerAccepted": [
+        "D"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-20",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 20,
+      "type": "single",
+      "stem": "配合核能發電廠執行核安、反恐、緊急應變等演習工作，為下列何者之任務職掌事項？",
+      "options": {
+        "A": "內政部警政署保安警察第七總隊",
+        "B": "內政部警政署保安警察第三總隊",
+        "C": "內政部警政署保安警察第一總隊",
+        "D": "內政部警政署保安警察第二總隊 二、多重選擇題：(每題 3 分，共 60 分)"
+      },
+      "answer": [
+        "D"
+      ],
+      "answerAccepted": [
+        "D"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-21",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 21,
+      "type": "multiple",
+      "stem": "下列何者係屬《警察法》第 9 條所稱之警察命令？",
+      "options": {
+        "A": "警械使用事件補償辦法",
+        "B": "警察機關配備警械種類",
+        "C": "警察機關輪班輪休人員勤休實施要點",
+        "D": "臺北市政府警察局勤務實施細則",
+        "E": "警察局長針對違法集會群眾命令解散"
+      },
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "answerAccepted": [
+        "ABC"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-22",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 22,
+      "type": "multiple",
+      "stem": "依據《警察職權行使法》規定之救濟，下列敘述何者錯誤？",
+      "options": {
+        "A": "利害關係人亦得提起救濟",
+        "B": "警察違法行使職權，人民得依法請求損失補償",
+        "C": "對於警察機關所為損失補償之決定不服者，應逕行提起行政訴訟",
+        "D": "如人民有可歸責之事由時，一律不予損失補償",
+        "E": "警察依法行使職權，因人民特別犧牲，致其財產遭受損失時，人民得請求補償"
+      },
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "answerAccepted": [
+        "BCD"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-23",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 23,
+      "type": "multiple",
+      "stem": "有關警察人員勤務加給之敘述，下列何者正確？",
+      "options": {
+        "A": "其支給數額原則上區分為三級",
+        "B": "中央與地方各級警察機關所屬警察人員均得支給",
+        "C": "中央警察大學及臺灣警察專科學校所屬警察人員不得支給",
+        "D": "勤務加給之加成支給，僅限地方警察局所屬警察人員方得支給",
+        "E": "勤務繁重加成支給，僅限直轄市政府警察局所屬警察人員方得支給 警察法規4"
+      },
+      "answer": [
+        "A",
+        "B"
+      ],
+      "answerAccepted": [
+        "AB"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-24",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 24,
+      "type": "multiple",
+      "stem": "有關警察官規之敘述，下列何者正確？",
+      "options": {
+        "A": "由中央與地方分別立法，分別執行之",
+        "B": "中央與地方各級警察人員之職務等階事項屬之",
+        "C": "內政部警政署組織法屬之",
+        "D": "警察人員獎懲標準屬之",
+        "E": "升官等任用為警監警察官者，不受 50 歲限制"
+      },
+      "answer": [
+        "B",
+        "D",
+        "E"
+      ],
+      "answerAccepted": [
+        "BDE"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-25",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 25,
+      "type": "multiple",
+      "stem": "下列有關警察預算經費之敘述，何者正確？",
+      "options": {
+        "A": "協助偵查犯罪事項，警察執行機關應編列警察事業費預算",
+        "B": "新竹市警察局經費不足時，得報由內政部警政署轉請內政部核定補助",
+        "C": "各級警察機關之武器彈藥，由中央編列預算",
+        "D": "警察深造教育所需經費，由中央警察大學編列年度預算",
+        "E": "警察遴選第三人秘密蒐集特定人相關資料所支給實際需要工作費用，其經費由 中央統一編 列預算支應"
+      },
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerAccepted": [
+        "ABCD"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-26",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 26,
+      "type": "multiple",
+      "stem": "依據《警械使用事件補償辦法》規定，下列敘述何者正確？",
+      "options": {
+        "A": "補償以使用警械之警察人員所屬各級政府為補償機關",
+        "B": "補償僅限第三人生命、身體或財產遭受損失時，方得請求之",
+        "C": "以金錢補償為原則，回復原狀為例外",
+        "D": "補償之請求權時效，依《行政訴訟法》規定辦理",
+        "E": "補償所需經費，由各級政府依預算法令編列預算"
+      },
+      "answer": [
+        "B",
+        "E"
+      ],
+      "answerAccepted": [
+        "BE"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-27",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 27,
+      "type": "multiple",
+      "stem": "下列機關何者有許可警械定製、售賣、持有之權限？",
+      "options": {
+        "A": "內政部",
+        "B": "內政部警政署",
+        "C": "臺中市政府警察局",
+        "D": "宜蘭縣政府警察局",
+        "E": "內政部警政署刑事警察局"
+      },
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerAccepted": [
+        "ABCD"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-28",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 28,
+      "type": "multiple",
+      "stem": "《社會秩序維護法》有關停止營業之規定，下列敘述何者正確？",
+      "options": {
+        "A": "停止營業應交由地方法院簡易庭裁定之",
+        "B": "停止營業之法定罰最高為 20 日",
+        "C": "同一營業處所經裁處多數停止營業者，其執行合計不得逾 30 日",
+        "D": "不服停止營業之處罰，應向地方法院普通庭提起抗告",
+        "E": "停止營業應於裁處確定後，交由警察機關執行之"
+      },
+      "answer": [
+        "A",
+        "B",
+        "E"
+      ],
+      "answerAccepted": [
+        "ABE",
+        "ABDE"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-29",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 29,
+      "type": "multiple",
+      "stem": "《社會秩序維護法》有關性交易管理暨處罰之敘述，何者正確？",
+      "options": {
+        "A": "在公眾得出入之場所，意圖與人性交易而拉客，處新臺幣三萬元以下罰鍰",
+        "B": "在公眾得出入之場所，意圖媒合性交易而拉客，其情節重大者，得加重拘留至 5 日",
+        "C": "直轄市可制定自治條例，規劃得從事性交易之區域及其管理",
+        "D": "性交易場所應辦理登記，但毋須申請執照",
+        "E": "得於公眾得出入之場所，為媒合性交易廣告之行為"
+      },
+      "answer": [
+        "A",
+        "B"
+      ],
+      "answerAccepted": [
+        "AB",
+        "ABC"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-3",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 3,
+      "type": "single",
+      "stem": "刑事警察人員之警勤加給，依最新修正標準各按原支等級數額加多少支給？",
+      "options": {
+        "A": "二成五",
+        "B": "三成五",
+        "C": "六成",
+        "D": "八成"
+      },
+      "answer": [
+        "D"
+      ],
+      "answerAccepted": [
+        "D"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-30",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 30,
+      "type": "multiple",
+      "stem": "有關治安顧慮人口查訪之敘述，下列何者正確？",
+      "options": {
+        "A": "查訪目的主要在防制其再犯",
+        "B": "查訪期間，以刑執行完畢或假釋出獄後 3 年內為限",
+        "C": "查訪辦法由內政部定之",
+        "D": "查訪作業規定由內政部警政署定之",
+        "E": "由實際住居所在地警察機關每個月實施查訪一次"
+      },
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "answerAccepted": [
+        "ABCD"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-31",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 31,
+      "type": "multiple",
+      "stem": "依規定內政部警政署辦理「社會保防與社會治安調查」之下列何事項？",
+      "options": {
+        "A": "指示",
+        "B": "執行",
+        "C": "督導",
+        "D": "協調",
+        "E": "規劃 警察法規5"
+      },
+      "answer": [
+        "C",
+        "D",
+        "E"
+      ],
+      "answerAccepted": [
+        "CDE"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-32",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 32,
+      "type": "multiple",
+      "stem": "下列何種警察教育之班別，在入學前得免實施身家調查？",
+      "options": {
+        "A": "警佐班",
+        "B": "警正班",
+        "C": "中央警察大學二年制技術系",
+        "D": "中央警察大學四年制各學系",
+        "E": "中央警察大學研究所碩士班全時在職生"
+      },
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "answerAccepted": [
+        "ABCE"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-33",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 33,
+      "type": "multiple",
+      "stem": "依據《警察常年訓練辦法》規定，個人訓練內容之術科訓練範圍，主要包括下列何者？",
+      "options": {
+        "A": "執勤技能",
+        "B": "各種武器射擊技術",
+        "C": "執勤要領",
+        "D": "專業知識",
+        "E": "鍛鍊體魄"
+      },
+      "answer": [
+        "A",
+        "B",
+        "E"
+      ],
+      "answerAccepted": [
+        "ABE"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-34",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 34,
+      "type": "multiple",
+      "stem": "下列對《警察職權行使法》第 6 條第 1 項之敘述，何者正確？",
+      "options": {
+        "A": "其第 1 款所定「合理懷疑其有犯罪之嫌疑或有犯罪之虞者」 ，必須限於員警依照身分查證當 時之客觀情狀，綜合推斷認定受檢人有犯罪之嫌疑或犯罪之虞，始得對其進行身分查證",
+        "B": "合理懷疑之事實基礎包括：情報判斷之合理懷疑、由現場觀察之合理懷疑、由環境與其他 狀況綜合研判之合理懷疑、由可疑行為之合理懷疑等",
+        "C": "以前案紀錄作為查證身分之依據，使員警得以憑「直覺」盤查「具有犯罪前案」之人，亦 屬合法適當警察職權",
+        "D": "「合理懷疑」指警察參考相關資料作為判斷基礎，依據警察執法專業經驗，所做成的單純 臆測",
+        "E": "其第 1 款規定，所稱「合理懷疑」為一不確定法律概念"
+      },
+      "answer": [
+        "A",
+        "B",
+        "E"
+      ],
+      "answerAccepted": [
+        "ABE"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-35",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 35,
+      "type": "multiple",
+      "stem": "下列對《警察職權行使法》第 6 條及第 7 條規定之敘述，何者正確？",
+      "options": {
+        "A": "巡邏員警獲報系爭車輛在該處已停留甚久，到場時發現原告躺在系爭車輛駕駛座且敲擊車 窗甚久始將原告喚醒，係屬符合經驗法則之合法判斷",
+        "B": "其各該規定之立法目的無非均在平衡兼顧維持公共秩序、保護社會安全，與憲法所保障之 隱私權、行動自由及人性尊嚴",
+        "C": "第 7 條規定查證身分之程序，警察為查證身分，得為攔停、詢問姓名及年籍資料、命出示 身分證明文件、有明顯事實時得檢查身體及所攜帶物品等措施",
+        "D": "警察在指定區域巡邏係預防性工作中，如轉而處理發現犯罪之犯罪調查，將違反法律授權 程序",
+        "E": "警察執行巡邏、臨檢等勤務限於執行警察行政任務，不能及於刑事訴訟領域"
+      },
+      "answer": [
+        "A",
+        "B"
+      ],
+      "answerAccepted": [
+        "AB"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-36",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 36,
+      "type": "multiple",
+      "stem": "下列有關《警察人員人事條例》規定之敘述，何者正確？",
+      "options": {
+        "A": "所謂「官職分立」，即任官與任職分開，「職」由國家依個人之資格條件或功績表現而任命， 「官」則得由政府機關依據法令規定及業務需要而派充之",
+        "B": "「官」 ， 乃警察官在警察機關中所掌理之職務 ， 以處 （副） 長 、 局 （副） 長 、 科 （課） 長 （員） 、 分局（副）長（員） 、巡官、巡佐、警員等之稱",
+        "C": "所謂「官」，如《警察法》及本條例定為警監、警正、警佐，乃「官位」之意義",
+        "D": "《警察法》第 11 條規定警察官職採分立制，其立意乃以警察工作，具有強制作用，內部體 制應藉高度品位觀念，貫徹層級節制及命令服從關係，以嚴肅團體紀律，發揮整體功能",
+        "E": "警察官、職分立，官受保障，職得調任，非依法不得免官或免職"
+      },
+      "answer": [
+        "C",
+        "D",
+        "E"
+      ],
+      "answerAccepted": [
+        "CDE"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-37",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 37,
+      "type": "multiple",
+      "stem": "下列對 「無正當理由攜帶具有殺傷力之器械 、 化學製劑或其他危險物品者」 之敘述 ， 何者正確？",
+      "options": {
+        "A": "其法定罰處 3 日以下拘留或新臺幣 1 萬 8,000 元以下罰鍰",
+        "B": "當以行為人是否已持之要脅他人生命、身體而產生實質危險為斷",
+        "C": "因該器械在客觀上本具殺傷力之故，易造成社會秩序不安及存在不穩定危險之狀態",
+        "D": "依當時客觀環境及一般社會通念，該持有行為因已逾該器械原通常使用之目的及範疇",
+        "E": "「無正當理由」當指行為人若所持目的與該器械於通常上所使用之目的不同 警察法規6"
+      },
+      "answer": [
+        "C",
+        "D",
+        "E"
+      ],
+      "answerAccepted": [
+        "CDE"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-38",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 38,
+      "type": "multiple",
+      "stem": "下列對「藉端滋擾住戶、工廠、公司行號、公共場所或公眾得出入之場所者」之敘述，何者正\n確？",
+      "options": {
+        "A": "以行為人言語並非悅耳、聲量較大或所為粗暴、逾矩，作為認定行為人所為已將事端擴大 發揮，即構成「藉端滋擾」之要件",
+        "B": "其要件，除考量客觀上場所安寧秩序有無遭到一定程度以上之破壞外 ， 亦應綜合一切情事， 判斷行為人舉止之意圖",
+        "C": "「藉端滋擾」 ，係指行為人本於滋擾之意圖，以言語、行動等方式，藉特定事端擴大發揮， 逾越該事端在一般社會大眾觀念中所容許之合理範圍",
+        "D": "法定罰處 3 日以下拘留或新臺幣 1 萬 2,000 元以下罰鍰",
+        "E": "為《社會秩序維護法》第 78 條第 1 項第 2 款之規定"
+      },
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "answerAccepted": [
+        "BCD"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-39",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 39,
+      "type": "multiple",
+      "stem": "依據《警察職權行使法》第 15 條第 1 項第 1 款規定之治安顧慮人口，包括犯下列何罪，經執\n行完畢或假釋出獄者？",
+      "options": {
+        "A": "詐欺",
+        "B": "傷害",
+        "C": "竊盜",
+        "D": "侵佔",
+        "E": "妨害自由"
+      },
+      "answer": [
+        "A",
+        "C",
+        "E"
+      ],
+      "answerAccepted": [
+        "ACE"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-4",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 4,
+      "type": "single",
+      "stem": "下列違警處分之救濟，何者採訴願前置主義？",
+      "options": {
+        "A": "依《道路交通管理處罰條例》科處之罰鍰",
+        "B": "依《集會遊行法》科處之罰鍰",
+        "C": "依《社會秩序維護法》裁處之罰鍰",
+        "D": "依《社會秩序維護法》裁定之拘留"
+      },
+      "answer": [
+        "B"
+      ],
+      "answerAccepted": [
+        "B"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-40",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 40,
+      "type": "multiple",
+      "stem": "依據《警察職權行使法》規定所為之扣留，下列敘述何者正確？",
+      "options": {
+        "A": "其法律性質為直接強制",
+        "B": "須為預防危害之必要，方得為之",
+        "C": "扣留原因未消失時，得延長之，其延長期間不得逾三個月",
+        "D": "扣留之物如保管所費過鉅，得予變賣",
+        "E": "扣留之物返還時，得收取扣留及保管費用"
+      },
+      "answer": [
+        "B",
+        "D",
+        "E"
+      ],
+      "answerAccepted": [
+        "BDE"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.9,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-5",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 5,
+      "type": "single",
+      "stem": "警械使用事件之補償因協議不成立， 受理補償請求之警察機關乃逕行核定補償金額， 其法律性\n質為何？",
+      "options": {
+        "A": "行政契約",
+        "B": "行政處分",
+        "C": "事實行為",
+        "D": "民事契約"
+      },
+      "answer": [
+        "B"
+      ],
+      "answerAccepted": [
+        "B"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-6",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 6,
+      "type": "single",
+      "stem": "臺北市政府警察局與新北市政府警察局對於某一違反《社會秩序維護法》案件之管轄權有爭議\n時，應如何處理？",
+      "options": {
+        "A": "由二警察局協議管轄",
+        "B": "由二市政府協議管轄",
+        "C": "由內政部警政署指定管轄",
+        "D": "由二地方法院簡易庭裁定管轄 警察法規2"
+      },
+      "answer": [
+        "C"
+      ],
+      "answerAccepted": [
+        "C"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-7",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 7,
+      "type": "single",
+      "stem": "下列有關《社會秩序維護法》特種工商業之敘述，何者錯誤？",
+      "options": {
+        "A": "其受雇人關於業務上之違序行為，應轉嫁處罰其營業負責人",
+        "B": "係指與社會秩序或善良風俗有關之營業",
+        "C": "其範圍，由內政部定之",
+        "D": "警械業屬之"
+      },
+      "answer": [
+        "A"
+      ],
+      "answerAccepted": [
+        "A"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-8",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 8,
+      "type": "single",
+      "stem": "直轄市政府警察局交通警察大隊與內政部警政署間，其法律關係為何？",
+      "options": {
+        "A": "受警政署之指揮監督",
+        "B": "二者間並無法律關係",
+        "C": "為隸屬於警政署",
+        "D": "受警政署之指導協調"
+      },
+      "answer": [
+        "A"
+      ],
+      "answerAccepted": [
+        "A"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
+    },
+    {
+      "id": "115-警察法規-9",
+      "sourceType": "official",
+      "year": 115,
+      "subject": "警察法規",
+      "number": 9,
+      "type": "single",
+      "stem": "直轄市政府警察局組織規程之法律性質為何？",
+      "options": {
+        "A": "法律",
+        "B": "行政規則",
+        "C": "法規命令",
+        "D": "自治法規"
+      },
+      "answer": [
+        "D"
+      ],
+      "answerAccepted": [
+        "D"
+      ],
+      "tags": [],
+      "optionTags": {},
+      "sourceUrl": "https://se.cpu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Memc0TDNCMFlWOHlPVEkyTWw4M05EQTBNVGMyWHpjd01EQTJMbnBwY0E9PQ==&fname=WW54RPOKIC4441MPHCLKWTJGRK302514B0FGSSMKQP25FG40OKROLOPOWS10B4SSSSWWCDYTA404PO14QOSWTSMOKL34GCMK41JDXWTS14ZWZS01USOOXSFCUSXWOO00DGA0YSWTTWDG40YSUSB0443541GDUT21SSUSJGB0GGA4RKUSIC44410544LKIGGDIG30OOXS20ROTWXSQPMPPO50NKRO54A4LOSSIGOK20DC41KKHCPONKZWPKNKJD34",
+      "sourceFile": "115年警佐班試題--警察法規.pdf",
+      "importConfidence": 0.85,
+      "answerVersion": "115.03.18更正版",
+      "answerSource": "https://se.cpu.edu.tw/p/404-1006-45649.php"
     }
   ],
   "diagnosticQuestions": [
